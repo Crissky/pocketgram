@@ -1,0 +1,3 @@
+class Pocketmon:
+    def __init__(self):
+        ...
