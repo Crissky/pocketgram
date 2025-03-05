@@ -14,19 +14,34 @@ class Stats:
         speed: int,
         max_value: int,
     ):
+        # Validações: todos os valores devem ser positivos.
+        if hp < 0:
+            raise ValueError('hp não pode ser um valor negativo.')
+        if attack < 0:
+            raise ValueError('attack não pode ser um valor negativo.')
+        if defense < 0:
+            raise ValueError('defense não pode ser um valor negativo.')
+        if special_attack < 0:
+            raise ValueError('special_attack não pode ser um valor negativo.')
+        if special_defense < 0:
+            raise ValueError('special_defense não pode ser um valor negativo.')
+        if speed < 0:
+            raise ValueError('speed não pode ser um valor negativo.')
+
+        # Validações: todos os valores devem ser menor/igual que o max_value
         if max_value:
-            if max_value < hp:
-                raise ValueError('hp é maior que o max_value')
-            if max_value < attack:
-                raise ValueError('attack é maior que o max_value')
-            if max_value < defense:
-                raise ValueError('defense é maior que o max_value')
-            if max_value < special_attack:
-                raise ValueError('special_attack é maior que o max_value')
-            if max_value < special_defense:
-                raise ValueError('special_defense é maior que o max_value')
-            if max_value < speed:
-                raise ValueError('speed é maior que o max_value')
+            if hp > max_value:
+                raise ValueError('hp é maior que o max_value.')
+            if attack > max_value:
+                raise ValueError('attack é maior que o max_value.')
+            if defense > max_value:
+                raise ValueError('defense é maior que o max_value.')
+            if special_attack > max_value:
+                raise ValueError('special_attack é maior que o max_value.')
+            if special_defense > max_value:
+                raise ValueError('special_defense é maior que o max_value.')
+            if speed > max_value:
+                raise ValueError('speed é maior que o max_value.')
 
         self.hp = int(hp)
         self.attack = int(attack)
@@ -51,39 +66,36 @@ class Stats:
             f'MAX={self.max_value})'
         )
 
-    def __getitem__(self, key: str):
-        key = key.upper()
-
-        if key == StatsEnum.HP.name:
+    def __getitem__(self, key: StatsEnum):
+        if key == StatsEnum.HP:
             return self.hp
-        elif key == StatsEnum.ATTACK.name:
+        elif key == StatsEnum.ATTACK:
             return self.attack
-        elif key == StatsEnum.DEFENSE.name:
+        elif key == StatsEnum.DEFENSE:
             return self.defense
-        elif key in StatsEnum.SPECIAL_ATTACK.name:
+        elif key in StatsEnum.SPECIAL_ATTACK:
             return self.special_attack
-        elif key in StatsEnum.SPECIAL_DEFENSE.name:
+        elif key in StatsEnum.SPECIAL_DEFENSE:
             return self.special_defense
-        elif key == StatsEnum.SPEED.name:
+        elif key == StatsEnum.SPEED:
             return self.speed
         else:
             raise KeyError(f'Chave "{key}" não encontrada.')
 
-    def __setitem__(self, key: str, value: int):
-        key = key.upper()
+    def __setitem__(self, key: StatsEnum, value: int):
         value = int(value)
 
-        if key == StatsEnum.HP.name:
+        if key == StatsEnum.HP:
             self.hp = value
-        elif key == StatsEnum.ATTACK.name:
+        elif key == StatsEnum.ATTACK:
             self.attack = value
-        elif key == StatsEnum.DEFENSE.name:
+        elif key == StatsEnum.DEFENSE:
             self.defense = value
-        elif key == StatsEnum.SPECIAL_ATTACK.name:
+        elif key == StatsEnum.SPECIAL_ATTACK:
             self.special_attack = value
-        elif key == StatsEnum.SPECIAL_DEFENSE.name:
+        elif key == StatsEnum.SPECIAL_DEFENSE:
             self.special_defense = value
-        elif key == StatsEnum.SPEED.name:
+        elif key == StatsEnum.SPEED:
             self.speed = value
 
 
