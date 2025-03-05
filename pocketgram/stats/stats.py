@@ -28,13 +28,13 @@ class Stats:
             if max_value < speed:
                 raise ValueError('speed é maior que o max_value')
 
-        self.hp = hp
-        self.attack = attack
-        self.defense = defense
-        self.special_attack = special_attack
-        self.special_defense = special_defense
-        self.speed = speed
-        self.max_value = max_value
+        self.hp = int(hp)
+        self.attack = int(attack)
+        self.defense = int(defense)
+        self.special_attack = int(special_attack)
+        self.special_defense = int(special_defense)
+        self.speed = int(speed)
+        self.max_value = int(max_value)
 
     def __repr__(self):
         return self.__str__()
