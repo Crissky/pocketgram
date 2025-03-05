@@ -14,42 +14,14 @@ class Stats:
         speed: int,
         max_value: int,
     ):
-        # Validações: todos os valores devem ser positivos.
-        if hp < 0:
-            raise ValueError('hp não pode ser um valor negativo.')
-        if attack < 0:
-            raise ValueError('attack não pode ser um valor negativo.')
-        if defense < 0:
-            raise ValueError('defense não pode ser um valor negativo.')
-        if special_attack < 0:
-            raise ValueError('special_attack não pode ser um valor negativo.')
-        if special_defense < 0:
-            raise ValueError('special_defense não pode ser um valor negativo.')
-        if speed < 0:
-            raise ValueError('speed não pode ser um valor negativo.')
 
-        # Validações: todos os valores devem ser menor/igual que o max_value
-        if max_value:
-            if hp > max_value:
-                raise ValueError('hp é maior que o max_value.')
-            if attack > max_value:
-                raise ValueError('attack é maior que o max_value.')
-            if defense > max_value:
-                raise ValueError('defense é maior que o max_value.')
-            if special_attack > max_value:
-                raise ValueError('special_attack é maior que o max_value.')
-            if special_defense > max_value:
-                raise ValueError('special_defense é maior que o max_value.')
-            if speed > max_value:
-                raise ValueError('speed é maior que o max_value.')
-
-        self.hp = int(hp)
-        self.attack = int(attack)
-        self.defense = int(defense)
-        self.special_attack = int(special_attack)
-        self.special_defense = int(special_defense)
-        self.speed = int(speed)
         self.max_value = int(max_value)
+        self[StatsEnum.HP] = int(hp)
+        self[StatsEnum.ATTACK] = int(attack)
+        self[StatsEnum.DEFENSE] = int(defense)
+        self[StatsEnum.SPECIAL_ATTACK] = int(special_attack)
+        self[StatsEnum.SPECIAL_DEFENSE] = int(special_defense)
+        self[StatsEnum.SPEED] = int(speed)
 
     def __repr__(self):
         return self.__str__()
@@ -67,6 +39,10 @@ class Stats:
         )
 
     def __getitem__(self, key: StatsEnum):
+        if not isinstance(key, StatsEnum):
+            error_text = f'Chave "{key}" não é do tipo {StatsEnum.__name__}.'
+            raise TypeError(error_text)
+
         if key == StatsEnum.HP:
             return self.hp
         elif key == StatsEnum.ATTACK:
@@ -85,6 +61,19 @@ class Stats:
     def __setitem__(self, key: StatsEnum, value: int):
         value = int(value)
 
+        if not isinstance(key, StatsEnum):
+            error_text = f'Chave "{key}" não é do tipo {StatsEnum.__name__}.'
+            raise TypeError(error_text)
+
+        # Não pode setar um valor maior que o max_value
+        if value > self.max_value:
+            raise ValueError(
+                f'{key.value} não pode ser maior que {self.max_value}.'
+            )
+        # Não pode setar um valor negativo
+        if value < 0:
+            raise ValueError(f'{key.value} não pode ser negativo.')
+
         if key == StatsEnum.HP:
             self.hp = value
         elif key == StatsEnum.ATTACK:
@@ -97,6 +86,8 @@ class Stats:
             self.special_defense = value
         elif key == StatsEnum.SPEED:
             self.speed = value
+        else:
+            raise KeyError(f'Chave "{key}" não encontrada.')
 
 
 if __name__ == '__main__':
