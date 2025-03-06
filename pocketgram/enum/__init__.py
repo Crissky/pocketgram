@@ -1,1 +1,1 @@
-from pocketgram.enum.stats import StatsEnum
+from pocketgram.enum.stats import StatsEnum  # noqa
