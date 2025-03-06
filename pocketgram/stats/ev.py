@@ -1,4 +1,5 @@
 import logging
+
 from pocketgram.enum.stats import StatsEnum
 from pocketgram.stats.stats import Stats
 
@@ -45,14 +46,7 @@ class EVStats(Stats):
 
     @property
     def current_ev(self) -> int:
-        return int(
-            self.hp +
-            self.attack +
-            self.defense +
-            self.special_attack +
-            self.special_defense +
-            self.speed
-        )
+        return self.TOTAL
 
     @property
     def remaining_ev(self) -> int:
@@ -86,7 +80,9 @@ if __name__ == '__main__':
     stats = EVStats(0, 0, 0, 0, 0, 0)
     print(stats)
     print('remaining_ev:', stats.remaining_ev)
+    print(stats.show_ev)
     stats = EVStats(100, 100, 100, 100, 100, 0)
     print(stats)
     print('remaining_ev:', stats.remaining_ev)
+    print(stats.show_ev)
     stats.add_ev(StatsEnum.HP, 10)

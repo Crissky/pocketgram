@@ -2,7 +2,10 @@ from pocketgram.enum.stats import StatsEnum
 
 
 class Stats:
-    '''Classe base para os demais Stats'''
+    '''Classe base para os demais Stats
+
+    `max_value` é o valor máximo que cada stat pode ter, exibido como "MAX".
+    '''
 
     def __init__(
         self,
@@ -23,6 +26,17 @@ class Stats:
         self[StatsEnum.SPECIAL_DEFENSE] = int(special_defense)
         self[StatsEnum.SPEED] = int(speed)
 
+    @property
+    def TOTAL(self) -> int:
+        return int(
+            self.hp +
+            self.attack +
+            self.defense +
+            self.special_attack +
+            self.special_defense +
+            self.speed
+        )
+
     def __repr__(self):
         return self.__str__()
 
@@ -35,7 +49,9 @@ class Stats:
             f'{StatsEnum.SPECIAL_ATTACK.value}={self.special_attack}, '
             f'{StatsEnum.SPECIAL_DEFENSE.value}={self.special_defense}, '
             f'{StatsEnum.SPEED.value}={self.speed}, '
-            f'MAX={self.max_value})'
+            f'MAX={self.max_value}, '
+            f'TOTAL={self.TOTAL}'
+            f')'
         )
 
     def __getitem__(self, key: StatsEnum):
