@@ -17,14 +17,23 @@ class Stats:
         speed: int,
         max_value: int,
     ):
+        if max_value <= 0:
+            raise ValueError('max_value deve ser maior que 0.')
 
         self.max_value = int(max_value)
-        self[StatsEnum.HP] = int(hp)
-        self[StatsEnum.ATTACK] = int(attack)
-        self[StatsEnum.DEFENSE] = int(defense)
-        self[StatsEnum.SPECIAL_ATTACK] = int(special_attack)
-        self[StatsEnum.SPECIAL_DEFENSE] = int(special_defense)
-        self[StatsEnum.SPEED] = int(speed)
+        self[StatsEnum.HP] = hp
+        self[StatsEnum.ATTACK] = attack
+        self[StatsEnum.DEFENSE] = defense
+        self[StatsEnum.SPECIAL_ATTACK] = special_attack
+        self[StatsEnum.SPECIAL_DEFENSE] = special_defense
+        self[StatsEnum.SPEED] = speed
+
+    @property
+    def total(self) -> int:
+        ''' Retorna a soma de todos os stats.
+        '''
+
+        return sum([self[stats_enum] for stats_enum in StatsEnum])
 
     @property
     def TOTAL(self) -> int:
@@ -50,7 +59,7 @@ class Stats:
             f'{StatsEnum.SPECIAL_DEFENSE.value}={self.special_defense}, '
             f'{StatsEnum.SPEED.value}={self.speed}, '
             f'MAX={self.max_value}, '
-            f'TOTAL={self.TOTAL}'
+            f'TOTAL={self.total}'
             f')'
         )
 

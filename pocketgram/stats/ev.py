@@ -34,28 +34,28 @@ class EVStats(Stats):
             max_value=255
         )
 
-        if self.current_ev > self.MAX_EV:
+        if self.current_ev > self.max_ev:
             raise ValueError(
                 f'O valor total dos EVs não pode ser maior que 510. '
                 f'Valor atual: {self.current_ev}.'
             )
 
     @property
-    def MAX_EV(self) -> int:
+    def max_ev(self) -> int:
         return 510
 
     @property
     def current_ev(self) -> int:
-        return self.TOTAL
+        return self.total
 
     @property
     def remaining_ev(self) -> int:
-        return self.MAX_EV - self.current_ev
+        return self.max_ev - self.current_ev
 
     @property
     def show_ev(self) -> str:
         return (
-            f'EVs: {self.current_ev}/{self.MAX_EV}'
+            f'EVs: {self.current_ev}/{self.max_ev}'
             f'({self.remaining_ev} restantes)'
         )
 
