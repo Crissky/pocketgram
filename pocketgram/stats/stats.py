@@ -50,14 +50,13 @@ class Stats:
         return self.__str__()
 
     def __str__(self):
+        stats_text = ', '.join([
+            f'{stat_enum.value}={self[stat_enum]}'
+            for stat_enum in StatsEnum
+        ])
         return (
             f'{self.__class__.__name__}('
-            f'{StatsEnum.HP.value}={self.hp}, '
-            f'{StatsEnum.ATTACK.value}={self.attack}, '
-            f'{StatsEnum.DEFENSE.value}={self.defense}, '
-            f'{StatsEnum.SPECIAL_ATTACK.value}={self.special_attack}, '
-            f'{StatsEnum.SPECIAL_DEFENSE.value}={self.special_defense}, '
-            f'{StatsEnum.SPEED.value}={self.speed}, '
+            f'{stats_text}, '
             f'MAX={self.max_value}, '
             f'TOTAL={self.total}'
             f')'
