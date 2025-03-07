@@ -2,7 +2,7 @@
 import pytest
 import unittest
 
-from pocketgram.enum.stats import StatsEnum
+from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.ev import EVStats
 
 

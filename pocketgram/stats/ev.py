@@ -1,6 +1,6 @@
 import logging
 
-from pocketgram.enum.stats import StatsEnum
+from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.stats import Stats
 
 

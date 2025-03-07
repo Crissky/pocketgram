@@ -1,4 +1,4 @@
-from pocketgram.enum.stats import StatsEnum
+from pocketgram.enums.stats import StatsEnum
 
 
 class Stats:
