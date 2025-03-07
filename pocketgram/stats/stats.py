@@ -7,10 +7,7 @@ class Stats:
     `max_value` é o valor máximo que cada stat pode ter, exibido como "MAX".
     '''
 
-    __slots__ = ('max_value',) + tuple(
-        f'_{stat_enum.name.lower()}'
-        for stat_enum in StatsEnum
-    )
+    __slots__ = ['max_value'] + [f'_{enum.name.lower()}' for enum in StatsEnum]
 
     def __init__(
         self,
@@ -38,7 +35,7 @@ class Stats:
         ''' Retorna a soma de todos os stats.
         '''
 
-        return sum([self[stats_enum] for stats_enum in StatsEnum])
+        return sum([self[enum] for enum in StatsEnum])
 
     @property
     def stats_map(self) -> dict:
@@ -46,19 +43,13 @@ class Stats:
         {<StatsEnum>: _StatsEnum.name.lower}
         '''
 
-        return {
-            stat_enum: f'_{stat_enum.name.lower()}'
-            for stat_enum in StatsEnum
-        }
+        return {enum: f'_{enum.name.lower()}' for enum in StatsEnum}
 
     def __repr__(self):
         return self.__str__()
 
     def __str__(self):
-        stats_text = ', '.join([
-            f'{stat_enum.value}={self[stat_enum]}'
-            for stat_enum in StatsEnum
-        ])
+        stats_text = ', '.join([f'{e.value}={self[e]}' for e in StatsEnum])
         return (
             f'{self.__class__.__name__}('
             f'{stats_text}, '
