@@ -67,20 +67,24 @@ class Nature(Stats):
         modifiers = {}
         for stat_enum in StatsEnum:
             modifiers[stat_enum] = 1.0
-            if self._nature in self.increases[stat_enum]:
+            if self._nature in self.natures_increase(stat_enum):
                 modifiers[stat_enum] += 0.1
-            if self._nature in self.decreases[stat_enum]:
+            if self._nature in self.natures_decrease(stat_enum):
                 modifiers[stat_enum] -= 0.1
 
         return modifiers
 
-    @property
-    def increases(self) -> Dict[StatsEnum, List[NaturesEnum]]:
-        return self._INCREASES
+    def natures_increase(self, stat_enum: StatsEnum) -> List[NaturesEnum]:
+        if not isinstance(stat_enum, StatsEnum):
+            raise TypeError(f'stat_enum deve ser um StatsEnum. ({stat_enum})')
 
-    @property
-    def decreases(self) -> Dict[StatsEnum, List[NaturesEnum]]:
-        return self._DECREASES
+        return self._INCREASES[stat_enum]
+
+    def natures_decrease(self, stat_enum: StatsEnum) -> List[NaturesEnum]:
+        if not isinstance(stat_enum, StatsEnum):
+            raise TypeError(f'stat_enum deve ser um StatsEnum. ({stat_enum})')
+
+        return self._DECREASES[stat_enum]
 
     @property
     def max_value(self) -> float:
