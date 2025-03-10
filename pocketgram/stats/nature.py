@@ -58,7 +58,7 @@ class Nature(Stats):
         if isinstance(nature, str):
             nature = NaturesEnum[nature]
         if not isinstance(nature, NaturesEnum):
-            raise TypeError('nature deve ser um NaturesEnum.')
+            raise TypeError(f'nature deve ser um NaturesEnum. ({nature})')
 
         self._nature = nature
         self._stat_modifiers = self.calculate_stat_modifiers()
@@ -102,6 +102,9 @@ class Nature(Stats):
         return f'{self._nature.value} ' + super().__str__()
 
     def __getitem__(self, key: StatsEnum) -> float:
+        if not isinstance(key, StatsEnum):
+            raise TypeError(f'key deve ser um StatsEnum. ({key})')
+
         return self._stat_modifiers[key]
 
     def __setitem__(self, key: StatsEnum, value: int):
