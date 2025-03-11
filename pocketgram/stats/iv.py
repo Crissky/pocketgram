@@ -22,17 +22,17 @@ class IVStats(Stats):
         if random_init is True:
             init_error = ''
             if hp is not None:
-                init_error += f'hp ({hp}), '
+                init_error += f'hp={hp}, '
             if attack is not None:
-                init_error += f'attack ({attack}), '
+                init_error += f'attack={attack}, '
             if defense is not None:
-                init_error += f'defense ({defense}), '
+                init_error += f'defense={defense}, '
             if special_attack is not None:
-                init_error += f'special_attack ({special_attack}), '
+                init_error += f'special_attack={special_attack}, '
             if special_defense is not None:
-                init_error += f'special_defense ({special_defense}), '
+                init_error += f'special_defense={special_defense}, '
             if speed is not None:
-                init_error += f'speed ({speed}), '
+                init_error += f'speed={speed}, '
 
             if init_error != '':
                 init_error = init_error[:-2]
