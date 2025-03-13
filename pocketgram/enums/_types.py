@@ -2,6 +2,9 @@ from enum import Enum
 
 
 class TypesEnum(Enum):
+    '''Enum que representa os Tipos dos Monstrinhos e dos Movimentos.
+    '''
+
     BUG = 'Bug'
     DARK = 'Dark'
     DRAGON = 'Dragon'
@@ -23,6 +26,9 @@ class TypesEnum(Enum):
 
 
 class TypesEmojiEnum(Enum):
+    '''Enum que representa os Emojis dos Tipos
+    '''
+
     BUG = '🐛'
     DARK = '🌑'
     DRAGON = '🐲'
@@ -44,6 +50,10 @@ class TypesEmojiEnum(Enum):
 
 
 class TypesSuperEffectiveEnum(Enum):
+    '''Enum que representa os Tipos que cada Tipo é Super Efetivo (causa
+    o dobro de dano).
+    '''
+
     BUG = [TypesEnum.DARK, TypesEnum.GRASS, TypesEnum.PSYCHIC]
     DARK = [TypesEnum.GHOST, TypesEnum.PSYCHIC]
     DRAGON = [TypesEnum.DRAGON]
@@ -73,6 +83,10 @@ class TypesSuperEffectiveEnum(Enum):
 
 
 class TypesNotVeryEffectiveEnum(Enum):
+    '''Enum que representa os Tipos que cada Tipo é Não Muito Efetivo (causa
+    o metade de dano).
+    '''
+
     BUG = [
         TypesEnum.FAIRY, TypesEnum.FIGHTING, TypesEnum.FIRE, TypesEnum.FLYING,
         TypesEnum.GHOST, TypesEnum.POISON, TypesEnum.STEEL
@@ -107,6 +121,10 @@ class TypesNotVeryEffectiveEnum(Enum):
 
 
 class TypesNoEffectiveEnum(Enum):
+    '''Enum que representa os Tipos que cada Tipo é Sem Efeito (não causa
+    dano ou efeito).
+    '''
+
     BUG = []
     DARK = []
     DRAGON = [TypesEnum.FAIRY]
