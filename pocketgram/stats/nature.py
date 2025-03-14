@@ -91,6 +91,10 @@ class Nature(Stats):
         return 1.1
 
     @property
+    def min_value(self) -> float:
+        return 0.9
+
+    @property
     def name(self) -> str:
         return self._nature.name
 

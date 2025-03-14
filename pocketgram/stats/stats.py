@@ -7,7 +7,9 @@ class Stats:
     `max_value` é o valor máximo que cada stat pode ter, exibido como "MAX".
     '''
 
-    __slots__ = ['max_value'] + [f'_{enum.name.lower()}' for enum in StatsEnum]
+    __slots__ = [
+        'max_value', 'min_value'
+    ] + [f'_{enum.name.lower()}' for enum in StatsEnum]
 
     def __init__(
         self,
@@ -18,11 +20,18 @@ class Stats:
         special_defense: int,
         speed: int,
         max_value: int,
+        min_value: int = 0,
     ):
         if max_value <= 0:
             raise ValueError('max_value deve ser maior que 0.')
+        if min_value >= max_value:
+            raise ValueError(
+                f'max_value deve ser maior que min_value. '
+                f'max_value={max_value}, min_value={min_value}.'
+            )
 
         self.max_value = int(max_value)
+        self.min_value = int(min_value)
         self[StatsEnum.HP] = hp
         self[StatsEnum.ATTACK] = attack
         self[StatsEnum.DEFENSE] = defense
@@ -54,6 +63,7 @@ class Stats:
             f'{self.__class__.__name__}('
             f'{stats_text}, '
             f'MAX={self.max_value}, '
+            f'MIN={self.min_value}, '
             f'TOTAL={self.total}'
             f')'
         )
@@ -81,8 +91,10 @@ class Stats:
             raise ValueError(
                 f'{key.value} não pode ser maior que {self.max_value}.'
             )
-        elif value < 0:
-            raise ValueError(f'{key.value} não pode ser negativo.')
+        elif value < self.min_value:
+            raise ValueError(
+                f'{key.value} não pode ser menor que {self.min_value}.'
+            )
 
         try:
             stat_name = self.stats_map[key]

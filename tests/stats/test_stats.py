@@ -53,17 +53,43 @@ class TestStats(unittest.TestCase):
         stats = Stats(50, 50, 50, 50, 50, 50, max_value=50.5)
         assert stats.max_value == 50
 
+    def test_init_min_value_int_validation(self):
+        '''Teste que verifica se o método __init__ está convertendo
+        corretamente o parâmetro min_value para inteiro.
+        '''
+
+        stats = Stats(50, 50, 50, 50, 50, 50, max_value=50, min_value=0.1)
+        assert stats.min_value == 0
+
     def test_init_negative_stat_value(self):
         ''' Teste que verifica se a exceção é lançada pelo método __init__
         quando um valor negativo é passado.
         '''
 
-        expected_match_1 = 'HP não pode ser negativo.'
+        expected_match_1 = 'HP não pode ser menor que 0.'
         expected_match_2 = 'max_value deve ser maior que 0.'
         with pytest.raises(ValueError, match=expected_match_1):
             Stats(-1, 50, 50, 50, 50, 50, max_value=100)
         with pytest.raises(ValueError, match=expected_match_2):
             Stats(50, 50, 50, 50, 50, 50, max_value=-100)
+
+    def test_init_min_value_gt_max_value(self):
+        ''' Teste que verifica se a exceção é lançada pelo método __init__
+        quando o min_value não é menor que o max_value.
+        '''
+
+        expected_match_1 = (
+            'max_value deve ser maior que min_value. '
+            'max_value=100, min_value=100.'
+        )
+        expected_match_2 = (
+            'max_value deve ser maior que min_value. '
+            'max_value=100, min_value=101.'
+        )
+        with pytest.raises(ValueError, match=expected_match_1):
+            Stats(50, 50, 50, 50, 50, 50, max_value=100, min_value=100)
+        with pytest.raises(ValueError, match=expected_match_2):
+            Stats(50, 50, 50, 50, 50, 50, max_value=100, min_value=101)
 
     def test_getitem_invalid_key_type(self):
         '''Teste que verifica se a exceção é lançada quando a chave passada
@@ -137,7 +163,7 @@ class TestStats(unittest.TestCase):
 
         stats = Stats(50, 50, 50, 50, 50, 50, max_value=100)
         for stat_enum in StatsEnum:
-            expected_match = f'{stat_enum.value} não pode ser negativo.'
+            expected_match = f'{stat_enum.value} não pode ser menor que 0.'
             with pytest.raises(ValueError, match=expected_match):
                 stats[stat_enum] = -1
 
