@@ -35,7 +35,10 @@ class TestEv(unittest.TestCase):
 
         expected = 'O valor total dos EVs não pode ser maior que 510. '
         with self.assertRaises(ValueError) as context:
-            EVStats(255, 255, 1, 0, 0, 0)
+            EVStats(
+                hp=255, attack=255, defense=1,
+                special_attack=0, special_defense=0, speed=0
+            )
 
         self.assertIn(expected, str(context.exception))
 
@@ -43,7 +46,10 @@ class TestEv(unittest.TestCase):
         '''Teste que verifica o método add_ev para adicionar um valor de EV.
         '''
 
-        ev_stats = EVStats(0, 0, 0, 0, 0, 0)
+        ev_stats = EVStats(
+            hp=0, attack=0, defense=0,
+            special_attack=0, special_defense=0, speed=0
+        )
 
         for stat_enum in StatsEnum:
             ev_stats.add_ev(stat_enum, 10)
@@ -60,7 +66,10 @@ class TestEv(unittest.TestCase):
         '''
 
         expected_log = 'O valor não pode ser maior que o valor restante do EV.'
-        stats = EVStats(100, 100, 100, 100, 100, 0)
+        stats = EVStats(
+            hp=100, attack=100, defense=100,
+            special_attack=100, special_defense=100, speed=0
+        )
         initial_stats_map = {enum: stats[enum] for enum in StatsEnum}
 
         with self.assertLogs(level='WARNING') as log:
@@ -75,7 +84,10 @@ class TestEv(unittest.TestCase):
         '''Teste que verifica o método add_ev para adicionar um valor negativo.
         '''
 
-        ev_stats = EVStats(10, 10, 10, 10, 10, 10)
+        ev_stats = EVStats(
+            hp=10, attack=10, defense=10,
+            special_attack=10, special_defense=10, speed=10
+        )
         expected_match = 'O valor do EV não pode ser negativo.'
         with pytest.raises(ValueError, match=expected_match):
             ev_stats.add_ev(StatsEnum.HP, -1)
@@ -84,7 +96,10 @@ class TestEv(unittest.TestCase):
         '''Teste que verifica se o valor máximo de EV é 510.
         '''
 
-        ev_stats = EVStats(0, 0, 0, 0, 0, 0)
+        ev_stats = EVStats(
+            hp=0, attack=0, defense=0,
+            special_attack=0, special_defense=0, speed=0
+        )
         assert ev_stats.max_ev == self.expected_max_ev
 
     def test_remaining_ev(self):
@@ -92,9 +107,13 @@ class TestEv(unittest.TestCase):
         calculados corretamente.
         '''
 
-        stats_arg = (10, 20, 30, 40, 50, 60)
-        stats = EVStats(*stats_arg)
-        expected_remaining_ev = self.expected_max_ev - sum(stats_arg)
+        stats_arg = dict(
+            hp=10, attack=20, defense=30,
+            special_attack=40, special_defense=50, speed=60
+        )
+        stats = EVStats(**stats_arg)
+        stats_sum = sum(stats_arg.values())
+        expected_remaining_ev = self.expected_max_ev - stats_sum
         assert stats.remaining_ev == expected_remaining_ev
 
     def test_show_ev(self):
@@ -102,10 +121,13 @@ class TestEv(unittest.TestCase):
         corretamente
         '''
 
-        stats_arg = (100, 100, 100, 100, 100, 0)
-        stats_sum = sum(stats_arg)
+        stats_arg = dict(
+            hp=100, attack=100, defense=100,
+            special_attack=100, special_defense=100, speed=0
+        )
+        stats_sum = sum(stats_arg.values())
         remaining_ev = self.expected_max_ev - stats_sum
-        ev_stats = EVStats(*stats_arg)
+        ev_stats = EVStats(**stats_arg)
         show_ev = ev_stats.show_ev
         expected_output = (
             f'EVs: {stats_sum}/{self.expected_max_ev}'

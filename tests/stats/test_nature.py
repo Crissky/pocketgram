@@ -43,14 +43,14 @@ class TestNature(unittest.TestCase):
 
         expected_match = re.escape('nature deve ser um NaturesEnum. (123)')
         with pytest.raises(TypeError, match=expected_match):
-            Nature(123)
+            Nature(nature=123)
 
     def test_getitem(self):
         '''Testa que verifica se o método __getitem__ retorna o valor correto
         para uma chave StatsEnum.
         '''
 
-        nature = Nature(NaturesEnum.ADAMANT)
+        nature = Nature(nature=NaturesEnum.ADAMANT)
         self.assertEqual(nature[StatsEnum.HP], 1.0)
         self.assertEqual(nature[StatsEnum.ATTACK], 1.1)
         self.assertEqual(nature[StatsEnum.DEFENSE], 1.0)
@@ -63,7 +63,7 @@ class TestNature(unittest.TestCase):
         KeyError quando passado uma chave inválida.
         '''
 
-        nature = Nature(NaturesEnum.ADAMANT)
+        nature = Nature(nature=NaturesEnum.ADAMANT)
         with pytest.raises(TypeError):
             nature['INVALID_KEY']
             nature[123]
@@ -73,7 +73,7 @@ class TestNature(unittest.TestCase):
         quando se tenta modificar alguma chave do objeto.
         '''
 
-        nature = Nature(NaturesEnum.ADAMANT)
+        nature = Nature(nature=NaturesEnum.ADAMANT)
         expected_match = 'Nature não pode ser alterada.'
         with pytest.raises(AttributeError, match=expected_match):
             nature[StatsEnum.ATTACK] = 1.2
@@ -83,7 +83,7 @@ class TestNature(unittest.TestCase):
         correta da nature como uma string.
         '''
 
-        nature = Nature(NaturesEnum.ADAMANT)
+        nature = Nature(nature=NaturesEnum.ADAMANT)
         expected_string = (
             f'{NaturesEnum.ADAMANT.value} ' + super(Nature, nature).__str__()
         )
@@ -93,7 +93,7 @@ class TestNature(unittest.TestCase):
         '''Teste que verifica se o método calculate_stat_modifiers retorna
         os modificadores de stats corretos para uma nature.
         '''
-        nature = Nature(NaturesEnum.BOLD)
+        nature = Nature(nature=NaturesEnum.BOLD)
         modifiers = nature.calculate_stat_modifiers()
 
         self.assertEqual(modifiers[StatsEnum.HP], 1.0)
@@ -108,7 +108,7 @@ class TestNature(unittest.TestCase):
         os modificadores de stats corretos para uma nature.
         '''
 
-        nature = Nature(choice(list(NaturesEnum)))
+        nature = Nature(nature=choice(list(NaturesEnum)))
         modifiers = nature.calculate_stat_modifiers()
         assert isinstance(modifiers, dict)
 
@@ -123,7 +123,7 @@ class TestNature(unittest.TestCase):
         quando passado um valor inválido.
         '''
 
-        nature = Nature(NaturesEnum.ADAMANT)
+        nature = Nature(nature=NaturesEnum.ADAMANT)
         expected_match = re.escape(
             'stat_enum deve ser um StatsEnum. (INVALID_INPUT)'
         )
@@ -135,7 +135,7 @@ class TestNature(unittest.TestCase):
         quando passado um valor inválido.
         '''
 
-        nature = Nature(NaturesEnum.ADAMANT)
+        nature = Nature(nature=NaturesEnum.ADAMANT)
         expected_match = re.escape(
             'stat_enum deve ser um StatsEnum. (INVALID_INPUT)'
         )
