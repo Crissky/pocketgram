@@ -106,8 +106,11 @@ class Nature(Stats):
         return f'{self._nature.value} ' + super().__str__()
 
     def __getitem__(self, key: StatsEnum) -> float:
-        if not isinstance(key, StatsEnum):
-            raise TypeError(f'key deve ser um StatsEnum. ({key})')
+        if not isinstance(key, self.get_set_classes):
+            enum_names = '/'.join([e.__name__ for e in self.get_set_classes])
+            error_text = f'Chave "{key}" não é do tipo {enum_names}.'
+
+            raise TypeError(error_text)
 
         return self._stat_modifiers[key]
 
