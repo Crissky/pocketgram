@@ -1,3 +1,6 @@
+from enum import Enum
+from typing import Tuple
+
 from pocketgram.enums.stats import StatsEnum
 
 
@@ -44,7 +47,11 @@ class Stats:
         ''' Retorna a soma de todos os stats.
         '''
 
-        return sum([self[enum] for enum in StatsEnum])
+        return sum([
+            self[enum_obj]
+            for enum_class in self.get_set_classes
+            for enum_obj in enum_class
+        ])
 
     @property
     def stats_map(self) -> dict:
@@ -52,13 +59,28 @@ class Stats:
         {<StatsEnum>: _StatsEnum.name.lower}
         '''
 
-        return {enum: f'_{enum.name.lower()}' for enum in StatsEnum}
+        return {
+            enum_obj: f'_{enum_obj.name.lower()}'
+            for enum_class in self.get_set_classes
+            for enum_obj in enum_class
+        }
+
+    @property
+    def get_set_classes(self) -> Tuple[Enum]:
+        ''' Retorna uma tupla com as classes dos Enums usados nos Gets e Sets
+        '''
+
+        return (StatsEnum,)
 
     def __repr__(self):
         return self.__str__()
 
     def __str__(self):
-        stats_text = ', '.join([f'{e.value}={self[e]}' for e in StatsEnum])
+        stats_text = ', '.join([
+            f'{enum_obj.value}={self[enum_obj]}'
+            for enum_class in self.get_set_classes
+            for enum_obj in enum_class
+        ])
         return (
             f'{self.__class__.__name__}('
             f'{stats_text}, '
@@ -69,8 +91,10 @@ class Stats:
         )
 
     def __getitem__(self, key: StatsEnum):
-        if not isinstance(key, StatsEnum):
-            error_text = f'Chave "{key}" não é do tipo {StatsEnum.__name__}.'
+        if not isinstance(key, self.get_set_classes):
+            enum_names = '/'.join([e.__name__ for e in self.get_set_classes])
+            error_text = f'Chave "{key}" não é do tipo {enum_names}.'
+
             raise TypeError(error_text)
 
         try:
@@ -82,8 +106,10 @@ class Stats:
     def __setitem__(self, key: StatsEnum, value: int):
         value = int(value)
 
-        if not isinstance(key, StatsEnum):
-            error_text = f'Chave "{key}" não é do tipo {StatsEnum.__name__}.'
+        if not isinstance(key, self.get_set_classes):
+            enum_names = '/'.join([e.__name__ for e in self.get_set_classes])
+            error_text = f'Chave "{key}" não é do tipo {enum_names}.'
+
             raise TypeError(error_text)
 
         # Validando o range de value
