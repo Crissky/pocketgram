@@ -18,3 +18,10 @@ class StatsEnum(Enum):
     SPECIAL_ATTACK = 'Special Attack'
     SPECIAL_DEFENSE = 'Special Defense'
     SPEED = 'Speed'
+
+
+class BattleStatsEnum(Enum):
+    ACCURACY = 'Accuracy'
+    EVASIVENESS = 'Evasiveness'
+
+ALL_STATS_ENUM_CLASSES = (StatsEnum, BattleStatsEnum)
