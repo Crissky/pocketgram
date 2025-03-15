@@ -55,7 +55,7 @@ class TestStats(unittest.TestCase):
             special_attack=50, special_defense=50, speed=50,
             max_value=50.5
         )
-        assert stats.max_value == 50
+        self.assertEqual(stats.max_value, 50)
 
     def test_init_min_value_int_validation(self):
         '''Teste que verifica se o método __init__ está convertendo
@@ -67,7 +67,7 @@ class TestStats(unittest.TestCase):
             special_attack=50, special_defense=50, speed=50,
             max_value=50, min_value=0.1
         )
-        assert stats.min_value == 0
+        self.assertEqual(stats.min_value, 0)
 
     def test_init_negative_stat_value(self):
         ''' Teste que verifica se a exceção é lançada pelo método __init__
@@ -225,7 +225,7 @@ class TestStats(unittest.TestCase):
             special_attack=50, special_defense=50, speed=50,
             max_value=100
         )
-        assert stats.total == 300
+        self.assertEqual(stats.total, 300)
 
     def test_stats_map(self):
         '''Teste que verifica se o método stats_map está retornando
@@ -239,4 +239,7 @@ class TestStats(unittest.TestCase):
         )
         stats_map = stats.stats_map
         for stat_enum in StatsEnum:
-            assert stats_map[stat_enum] == f'_{stat_enum.name.lower()}'
+            self.assertEqual(
+                stats_map[stat_enum],
+                f'_{stat_enum.name.lower()}'
+            )

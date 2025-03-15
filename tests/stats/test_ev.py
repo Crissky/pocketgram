@@ -15,14 +15,15 @@ class TestEv(unittest.TestCase):
         '''
 
         ev_stats = EVStats(100, 100, 100, 100, 100, 10)
-        assert ev_stats[StatsEnum.HP] == 100
-        assert ev_stats[StatsEnum.ATTACK] == 100
-        assert ev_stats[StatsEnum.DEFENSE] == 100
-        assert ev_stats[StatsEnum.SPECIAL_ATTACK] == 100
-        assert ev_stats[StatsEnum.SPECIAL_DEFENSE] == 100
-        assert ev_stats[StatsEnum.SPEED] == 10
-        assert ev_stats.current_ev == 510
-        assert ev_stats.remaining_ev == 0
+
+        self.assertEqual(ev_stats[StatsEnum.HP], 100)
+        self.assertEqual(ev_stats[StatsEnum.ATTACK], 100)
+        self.assertEqual(ev_stats[StatsEnum.DEFENSE], 100)
+        self.assertEqual(ev_stats[StatsEnum.SPECIAL_ATTACK], 100)
+        self.assertEqual(ev_stats[StatsEnum.SPECIAL_DEFENSE], 100)
+        self.assertEqual(ev_stats[StatsEnum.SPEED], 10)
+        self.assertEqual(ev_stats.current_ev, 510)
+        self.assertEqual(ev_stats.remaining_ev, 0)
 
     def test_init_stat_gt_max_value(self):
         '''Teste a inicialização de EVStats com valores que excedem o
@@ -100,7 +101,7 @@ class TestEv(unittest.TestCase):
             hp=0, attack=0, defense=0,
             special_attack=0, special_defense=0, speed=0
         )
-        assert ev_stats.max_ev == self.expected_max_ev
+        self.assertEqual(ev_stats.max_ev, self.expected_max_ev)
 
     def test_remaining_ev(self):
         '''Teste que verifica se o valor restante dos EVs estão sendo
@@ -114,7 +115,7 @@ class TestEv(unittest.TestCase):
         stats = EVStats(**stats_arg)
         stats_sum = sum(stats_arg.values())
         expected_remaining_ev = self.expected_max_ev - stats_sum
-        assert stats.remaining_ev == expected_remaining_ev
+        self.assertEqual(stats.remaining_ev, expected_remaining_ev)
 
     def test_show_ev(self):
         '''Teste que verifica se o método show_ev está retornando a string

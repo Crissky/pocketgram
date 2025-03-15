@@ -54,7 +54,7 @@ class TestIv(unittest.TestCase):
             'random_init: hp=10, attack=20, defense=30, '
             'special_attack=40, special_defense=50, speed=60.'
         )
-        assert str(exc_info.value) == expected_error_message
+        self.assertEqual(str(exc_info.value), expected_error_message)
 
     def test_init_invalid_values(self):
         '''Teste que verifica se o construtor retorna uma exceção quando os

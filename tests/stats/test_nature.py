@@ -18,11 +18,11 @@ class TestNature(unittest.TestCase):
 
         for nature_enum in NaturesEnum:
             nature = Nature(nature_enum)
-            assert isinstance(nature._nature, NaturesEnum)
-            assert nature._nature == nature_enum
-            assert nature.name == nature_enum.name
-            assert nature.value == nature_enum.value
-            assert nature.max_value == 1.1
+            self.assertIsInstance(nature._nature, NaturesEnum)
+            self.assertEqual(nature._nature, nature_enum)
+            self.assertEqual(nature.name, nature_enum.name)
+            self.assertEqual(nature.value, nature_enum.value)
+            self.assertEqual(nature.max_value, 1.1)
 
     def test_init_str(self):
         '''Teste que verifica a inicialização usando uma string.
@@ -30,11 +30,11 @@ class TestNature(unittest.TestCase):
 
         for nature_enum in NaturesEnum:
             nature = Nature(nature_enum.name)
-            assert isinstance(nature._nature, NaturesEnum)
-            assert nature._nature == nature_enum
-            assert nature.name == nature_enum.name
-            assert nature.value == nature_enum.value
-            assert nature.max_value == 1.1
+            self.assertIsInstance(nature._nature, NaturesEnum)
+            self.assertEqual(nature._nature, nature_enum)
+            self.assertEqual(nature.name, nature_enum.name)
+            self.assertEqual(nature.value, nature_enum.value)
+            self.assertEqual(nature.max_value, 1.1)
 
     def test_init_invalid_type(self):
         '''Teste que verifica se o construtor da classe retorna um erro
@@ -87,7 +87,7 @@ class TestNature(unittest.TestCase):
         expected_string = (
             f'{NaturesEnum.ADAMANT.value} ' + super(Nature, nature).__str__()
         )
-        assert str(nature) == expected_string
+        self.assertEqual(str(nature), expected_string)
 
     def test_calculate_stat_modifiers_2(self):
         '''Teste que verifica se o método calculate_stat_modifiers retorna
@@ -110,13 +110,13 @@ class TestNature(unittest.TestCase):
 
         nature = Nature(nature=choice(list(NaturesEnum)))
         modifiers = nature.calculate_stat_modifiers()
-        assert isinstance(modifiers, dict)
+        self.assertIsInstance(modifiers, dict)
 
         for stat_enum in StatsEnum:
-            assert stat_enum in modifiers.keys()
+            self.assertIn(stat_enum, modifiers.keys())
 
         for value in modifiers.values():
-            assert value in (0.9, 1.0, 1.1)
+            self.assertIn(value, (0.9, 1.0, 1.1))
 
     def test_natures_decrease_invalid_input(self):
         '''Teste que verifica se o método natures_decrease levanta uma exceção
