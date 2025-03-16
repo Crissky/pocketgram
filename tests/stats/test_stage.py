@@ -167,3 +167,70 @@ class TestStage(unittest.TestCase):
         self.assertEqual(stage_stats_0.total, 0)
         self.assertEqual(stage_stats_1.total, 48)
         self.assertEqual(stage_stats_2.total, -48)
+
+    def test_get_multiplier_hp_raises_error(self):
+        '''Teste que verifica se o método get_multiplier levanta uma excessão
+        quando passado StatsEnum.HP.
+        '''
+
+        stage_stats = StageStats()
+        expected_text = 'HP não possui multiplicador.'
+        with self.assertRaises(ValueError) as context:
+            stage_stats.get_multiplier(StatsEnum.HP)
+        self.assertEqual(str(context.exception), expected_text)
+
+    def test_get_multiplier_stats_enum(self):
+        '''Teste que verifica se o método get_multiplier retorna o valor
+        correto para os stats baseados em StatsEnum.
+        '''
+
+        expected = {
+            -6: 2 / (6 + 2),
+            -5: 2 / (5 + 2),
+            -4: 2 / (4 + 2),
+            -3: 2 / (3 + 2),
+            -2: 2 / (2 + 2),
+            -1: 2 / (1 + 2),
+            0: (0 + 2) / 2,
+            1: (1 + 2) / 2,
+            2: (2 + 2) / 2,
+            3: (3 + 2) / 2,
+            4: (4 + 2) / 2,
+            5: (5 + 2) / 2,
+            6: (6 + 2) / 2,
+        }
+        for stats, expected_value in expected.items():
+            for stats_enum in StatsEnum:
+                if stats_enum == StatsEnum.HP:
+                    continue
+                stage_stats = StageStats()
+                stage_stats[stats_enum] = stats
+                result = stage_stats.get_multiplier(stats_enum)
+                self.assertAlmostEqual(result, expected_value, places=6)
+
+    def test_get_multiplier_battle_stats_enum(self):
+        '''Teste que verifica se o método get_multiplier retorna o valor
+        correto para os stats baseados em BattleStatsEnum.
+        '''
+
+        expected = {
+            -6: 3 / (6 + 3),
+            -5: 3 / (5 + 3),
+            -4: 3 / (4 + 3),
+            -3: 3 / (3 + 3),
+            -2: 3 / (2 + 3),
+            -1: 3 / (1 + 3),
+            0: (0 + 3) / 3,
+            1: (1 + 3) / 3,
+            2: (2 + 3) / 3,
+            3: (3 + 3) / 3,
+            4: (4 + 3) / 3,
+            5: (5 + 3) / 3,
+            6: (6 + 3) / 3,
+        }
+        for stats, expected_value in expected.items():
+            for stats_enum in BattleStatsEnum:
+                stage_stats = StageStats()
+                stage_stats[stats_enum] = stats
+                result = stage_stats.get_multiplier(stats_enum)
+                self.assertAlmostEqual(result, expected_value, places=6)

@@ -1,6 +1,7 @@
 from enum import Enum
-from typing import Tuple
-from pocketgram.enums.stats import BattleStatsEnum
+from typing import Tuple, Union
+
+from pocketgram.enums.stats import BattleStatsEnum, StatsEnum
 from pocketgram.stats.stats import Stats
 
 
@@ -56,6 +57,32 @@ class StageStats(Stats):
             for enum_class in self.get_set_classes
             for enum_obj in enum_class
         ])
+
+    def get_multiplier(
+        self,
+        stat_enum: Union[StatsEnum, BattleStatsEnum]
+    ) -> float:
+        ''' Retorna o multiplicador do stat.
+        '''
+
+        if stat_enum == StatsEnum.HP:
+            raise ValueError('HP não possui multiplicador.')
+
+        stat = self[stat_enum]
+        if isinstance(stat_enum, StatsEnum):
+            plus = 2.0
+        elif isinstance(stat_enum, BattleStatsEnum):
+            plus = 3.0
+
+        stat_plus = abs(stat) + plus
+        stat_multiplier = (
+            stat_plus / plus
+            if stat >= 0
+            else plus / stat_plus
+        )
+
+        return stat_multiplier
+
 
 if __name__ == '__main__':
     stats = StageStats(
