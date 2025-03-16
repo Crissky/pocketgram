@@ -45,6 +45,17 @@ class StageStats(Stats):
 
         return (*super_enum, BattleStatsEnum)
 
+    @property
+    def stats_text(self):
+        ''' Retorna uma string com os stats e seus valores,
+        separados por vírgula.
+        '''
+
+        return ', '.join([
+            f'{enum_obj.value}={self[enum_obj]:+}'
+            for enum_class in self.get_set_classes
+            for enum_obj in enum_class
+        ])
 
 if __name__ == '__main__':
     stats = StageStats(
