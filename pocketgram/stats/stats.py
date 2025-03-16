@@ -72,18 +72,25 @@ class Stats:
 
         return (StatsEnum,)
 
-    def __repr__(self):
-        return self.__str__()
+    @property
+    def stats_text(self):
+        ''' Retorna uma string com os stats e seus valores,
+        separados por vírgula.
+        '''
 
-    def __str__(self):
-        stats_text = ', '.join([
+        return ', '.join([
             f'{enum_obj.value}={self[enum_obj]}'
             for enum_class in self.get_set_classes
             for enum_obj in enum_class
         ])
+
+    def __repr__(self):
+        return self.__str__()
+
+    def __str__(self):
         return (
             f'{self.__class__.__name__}('
-            f'{stats_text}, '
+            f'{self.stats_text}, '
             f'MAX={self.max_value}, '
             f'MIN={self.min_value}, '
             f'TOTAL={self.total}'
