@@ -7,6 +7,7 @@ from pocketgram.stats.base import BaseStats
 from pocketgram.stats.ev import EVStats
 from pocketgram.stats.iv import IVStats
 from pocketgram.stats.nature import Nature
+from pocketgram.stats.stage import StageStats
 
 
 class PocketMonster:
@@ -35,7 +36,15 @@ class PocketMonster:
         iv_special_attack: int = None,
         iv_special_defense: int = None,
         iv_speed: int = None,
-        random_init: bool = False
+        iv_random_init: bool = False,
+        stage_hp: int = 0,
+        stage_attack: int = 0,
+        stage_defense: int = 0,
+        stage_special_attack: int = 0,
+        stage_special_defense: int = 0,
+        stage_speed: int = 0,
+        stage_accuracy: int = 0,
+        stage_evasiveness: int = 0,
     ):
         self._number = number
         self.level = level
@@ -65,7 +74,17 @@ class PocketMonster:
             special_attack=iv_special_attack,
             special_defense=iv_special_defense,
             speed=iv_speed,
-            random_init=random_init,
+            random_init=iv_random_init,
+        )
+        self._stage_stats = StageStats(
+            hp=stage_hp,
+            attack=stage_attack,
+            defense=stage_defense,
+            special_attack=stage_special_attack,
+            special_defense=stage_special_defense,
+            speed=stage_speed,
+            accuracy=stage_accuracy,
+            evasiveness=stage_evasiveness,
         )
 
     @property
