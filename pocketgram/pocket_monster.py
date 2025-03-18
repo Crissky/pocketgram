@@ -1,6 +1,8 @@
 from math import floor
-from typing import Union
+from typing import List, Union
 
+from pocketgram._types import Types
+from pocketgram.enums._types import TypesEnum
 from pocketgram.enums.natures import NaturesEnum
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.base import BaseStats
@@ -18,6 +20,7 @@ class PocketMonster:
         name: str,
         nickname: str,
         nature: Union[NaturesEnum, str],
+        _types: Union[List[Union[TypesEnum, str]], Union[TypesEnum, str]],
         base_hp: int,
         base_attack: int,
         base_defense: int,
@@ -51,6 +54,9 @@ class PocketMonster:
         self._name = name
         self._nickname = nickname
         self._nature = Nature(nature=nature)
+        _types = _types if isinstance(_types, list) else [_types]
+        self._types = Types(*_types)
+
         self._base_stats = BaseStats(
             hp=base_hp,
             attack=base_attack,
@@ -153,6 +159,7 @@ if __name__ == '__main__':
         name='Pikachu',
         nickname='Pika Modesta',
         nature=NaturesEnum.MODEST,
+        _types=TypesEnum.ELECTRIC,
         **pika_stats
     )
     pm2 = PocketMonster(
@@ -161,6 +168,7 @@ if __name__ == '__main__':
         name='Pikachu',
         nickname='Pika Durinha',
         nature=NaturesEnum.HARDY,
+        _types=TypesEnum.ELECTRIC,
         **pika_stats
     )
     print('base_stats:', pm1._base_stats)
