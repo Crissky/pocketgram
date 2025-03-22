@@ -3,6 +3,7 @@ from typing import List, Union
 
 from pocketgram._types import Types
 from pocketgram.enums._types import TypesEnum
+from pocketgram.enums.form import FormEnum
 from pocketgram.enums.natures import NaturesEnum
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.base import BaseStats
@@ -48,7 +49,9 @@ class PocketMonster:
         stage_speed: int = 0,
         stage_accuracy: int = 0,
         stage_evasiveness: int = 0,
+        form: Union[FormEnum, str] = None,
     ):
+        check_form = isinstance(form, FormEnum) or form is None
         self._number = number
         self.level = level
         self._name = name
@@ -56,6 +59,7 @@ class PocketMonster:
         self._nature = Nature(nature=nature)
         _types = _types if isinstance(_types, list) else [_types]
         self._types = Types(*_types)
+        self._form = form if check_form else FormEnum[form]
 
         self._base_stats = BaseStats(
             hp=base_hp,
@@ -128,11 +132,14 @@ class PocketMonster:
 
     def __str__(self):
         stats_text = ', '.join([f'{e.value}={self[e]}' for e in StatsEnum])
+        form_text = f'form={self._form.value}, ' if self._form else ''
+        form_text = form_text.format(pocket_monster=self._name)
         return (
             f'{self.__class__.__name__}('
             f'number={self.number}, '
             f'level={self.level}, '
             f'name={self._name}, '
+            f'{form_text}'
             f'nickname={self._nickname}, '
             f'nature={self._nature.value}, '
             f'{stats_text}, '
@@ -169,6 +176,7 @@ if __name__ == '__main__':
         nickname='Pika Durinha',
         nature=NaturesEnum.HARDY,
         _types=TypesEnum.ELECTRIC,
+        form=FormEnum.PARTNER,
         **pika_stats
     )
     print('base_stats:', pm1._base_stats)
