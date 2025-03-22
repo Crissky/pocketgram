@@ -10,5 +10,19 @@ class Types:
         type_1: TypesEnum,
         type_2: TypesEnum = None,
     ):
-        self.type_1 = type_1
-        self.type_2 = type_2
+        self._type_1 = type_1
+        self._type_2 = type_2
+
+    @property
+    def primary(self) -> TypesEnum:
+        '''Retorna o tipo primário do Monstrinho.
+        '''
+
+        return self._type_1
+
+    @property
+    def secondary(self) -> TypesEnum:
+        '''Retorna o tipo secundário do Monstrinho.
+        '''
+
+        return self._type_2

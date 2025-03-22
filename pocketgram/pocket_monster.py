@@ -53,7 +53,7 @@ class PocketMonster:
     ):
         check_form = isinstance(form, FormEnum) or form is None
         self._number = number
-        self.level = level
+        self._level = level
         self._name = name
         self._nickname = nickname
         self._nature = Nature(nature=nature)
@@ -112,6 +112,14 @@ class PocketMonster:
 
         return sum([self[enum] for enum in StatsEnum])
 
+    @property
+    def primary_type(self) -> TypesEnum:
+        return self._types.primary
+
+    @property
+    def secondary_type(self) -> TypesEnum:
+        return self._types.secondary
+
     # HP = floor(
         # 0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + Level + 10
     # Other Stats = (floor(
@@ -120,7 +128,7 @@ class PocketMonster:
         base = self._base_stats[key]
         ev = floor(0.25 * self._ev_stats[key])
         iv = self._iv_stats[key]
-        level = self.level
+        level = self._level
         plus_value = level + 10 if key == StatsEnum.HP else 5
         nature = self._nature[key]
         stat = (2 * base) + iv + ev
@@ -137,7 +145,7 @@ class PocketMonster:
         return (
             f'{self.__class__.__name__}('
             f'number={self.number}, '
-            f'level={self.level}, '
+            f'level={self._level}, '
             f'name={self._name}, '
             f'{form_text}'
             f'nickname={self._nickname}, '
