@@ -19,7 +19,6 @@ class PocketMonster:
         number: int,
         level: int,
         name: str,
-        nickname: str,
         nature: Union[NaturesEnum, str],
         _types: Union[List[Union[TypesEnum, str]], Union[TypesEnum, str]],
         base_hp: int,
@@ -49,6 +48,7 @@ class PocketMonster:
         stage_speed: int = 0,
         stage_accuracy: int = 0,
         stage_evasiveness: int = 0,
+        nickname: str = None,
         form: Union[FormEnum, str] = None,
     ):
         check_form = isinstance(form, FormEnum) or form is None
