@@ -194,3 +194,61 @@ class TestPocketMonster(unittest.TestCase):
         )
 
         self.assertEqual(repr(pm), str(pm))
+
+    def test_invalid_form_input(self):
+        '''Teste se fornecer o form como uma string inválida gera um KeyError.
+        Isso testa o caso extremo em que o parâmetro de form é uma string
+        que não corresponde a nenhum valor FormEnum.
+        '''
+
+        with pytest.raises(KeyError):
+            PocketMonster(
+                number=151, level=100,
+                name='Mew', nickname='Testy',
+                nature=NaturesEnum.MODEST, _types=TypesEnum.PSYCHIC,
+                base_hp=100, base_attack=100, base_defense=100,
+                base_special_attack=100, base_special_defense=100,
+                base_speed=100,
+                ev_hp=0, ev_attack=0, ev_defense=0,
+                ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+                iv_hp=31, iv_attack=31, iv_defense=31,
+                iv_special_attack=31, iv_special_defense=31, iv_speed=31,
+                form='INVALID_FORM'
+            )
+
+    def test_name_returns_nickname_when_set(self):
+        '''Teste se a propriedade name retorna o nickname quando definido.
+        '''
+
+        pm = PocketMonster(
+            number=151, level=100,
+            name='Mew', nickname='Testy',
+            nature=NaturesEnum.MODEST, _types=TypesEnum.PSYCHIC,
+            base_hp=100, base_attack=100, base_defense=100,
+            base_special_attack=100, base_special_defense=100, base_speed=100,
+            ev_hp=0, ev_attack=0, ev_defense=0,
+            ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+            iv_hp=31, iv_attack=31, iv_defense=31,
+            iv_special_attack=31, iv_special_defense=31, iv_speed=31
+        )
+        self.assertEqual(pm.name, 'Testy')
+
+    def test_name_returns_when_nickname_unset(self):
+        '''Teste se a propriedade name retorna o name quando
+        o nickname não for definido.
+        '''
+
+        pm = PocketMonster(
+            number=151, level=100,
+            name='Mew',
+            nature=NaturesEnum.MODEST, _types=TypesEnum.PSYCHIC,
+            base_hp=100, base_attack=100, base_defense=100,
+            base_special_attack=100, base_special_defense=100, base_speed=100,
+            ev_hp=0, ev_attack=0, ev_defense=0,
+            ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+            iv_hp=31, iv_attack=31, iv_defense=31,
+            iv_special_attack=31, iv_special_defense=31, iv_speed=31
+        )
+
+        self.assertEqual(pm.name, 'Mew')
+
