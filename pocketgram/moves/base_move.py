@@ -3,7 +3,7 @@ from typing import List
 
 from pocketgram.enums._types import TypesEnum
 from pocketgram.enums.move_category import MoveCategoryEnum
-from pocketgram.move_effect.base_move_effect import BaseMoveEffect
+from pocketgram.move_effects.base_move_effect import BaseMoveEffect
 
 
 class BaseMove(ABC):
