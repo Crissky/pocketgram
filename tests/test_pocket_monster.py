@@ -252,3 +252,74 @@ class TestPocketMonster(unittest.TestCase):
 
         self.assertEqual(pm.name, 'Mew')
 
+    def test_number_formatting(self):
+        '''Teste se a propriedade number retorna uma representação em string
+        de três dígitos com zeros a esquerda do número do PocketMonster.
+        '''
+
+        pm1 = PocketMonster(
+            number=6, level=100,
+            name='Charizard', nickname='Fuegon',
+            nature=NaturesEnum.MODEST,
+            _types=[TypesEnum.FIRE, TypesEnum.FLYING],
+            base_hp=60, base_attack=90, base_defense=55,
+            base_special_attack=90, base_special_defense=80, base_speed=110,
+            ev_hp=0, ev_attack=0, ev_defense=0,
+            ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+            iv_hp=31, iv_attack=31, iv_defense=31,
+            iv_special_attack=31, iv_special_defense=31, iv_speed=31
+        )
+        pm2 = PocketMonster(
+            number=25, level=100,
+            name='Raichu', nickname='Fathunder',
+            nature=NaturesEnum.MODEST, _types=TypesEnum.ELECTRIC,
+            base_hp=78, base_attack=84, base_defense=78,
+            base_special_attack=109, base_special_defense=85, base_speed=100,
+            ev_hp=0, ev_attack=0, ev_defense=0,
+            ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+            iv_hp=31, iv_attack=31, iv_defense=31,
+            iv_special_attack=31, iv_special_defense=31, iv_speed=31
+        )
+
+        self.assertEqual(pm1.number, '006')
+        self.assertEqual(pm2.number, '025')
+
+    def test_total_returns_sum_of_all_stats(self):
+        '''Teste se a propriedade total retorna a soma de todas as
+        estatísticas de um PocketMonster.
+        '''
+
+        pm = PocketMonster(
+            number=151, level=100,
+            name='Mew', nickname='Testy',
+            nature=NaturesEnum.MODEST, _types=TypesEnum.PSYCHIC,
+            base_hp=100, base_attack=100, base_defense=100,
+            base_special_attack=100, base_special_defense=100, base_speed=100,
+            ev_hp=0, ev_attack=0, ev_defense=0,
+            ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+            iv_hp=31, iv_attack=31, iv_defense=31,
+            iv_special_attack=31, iv_special_defense=31, iv_speed=31
+        )
+
+        expected_total = sum([pm[enum] for enum in StatsEnum])
+
+        self.assertEqual(pm.total, expected_total)
+
+    def test_total_with_zero_stats(self):
+        '''Teste o método total quando todas as estatísticas forem zero.
+        Este é um caso extremo em que a soma deve ser zero.
+        '''
+
+        pm = PocketMonster(
+            number=0, level=1,
+            name='Zeerou', nickname='Zeresty',
+            nature=NaturesEnum.MODEST, _types=TypesEnum.PSYCHIC,
+            base_hp=0, base_attack=0, base_defense=0,
+            base_special_attack=0, base_special_defense=0, base_speed=0,
+            ev_hp=0, ev_attack=0, ev_defense=0,
+            ev_special_attack=0, ev_special_defense=0, ev_speed=0,
+            iv_hp=0, iv_attack=0, iv_defense=0,
+            iv_special_attack=0, iv_special_defense=0, iv_speed=0
+        )
+
+        self.assertEqual(pm.total, 35)
