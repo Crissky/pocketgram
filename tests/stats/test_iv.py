@@ -1,8 +1,8 @@
+import pytest
+import unittest
 
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.iv import IVStats
-import pytest
-import unittest
 
 
 class TestIv(unittest.TestCase):

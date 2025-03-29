@@ -1,9 +1,10 @@
+import pytest
+import unittest
+
 from pocketgram.enums._types import TypesEnum
 from pocketgram.enums.natures import NaturesEnum
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.pocket_monster import PocketMonster
-import pytest
-import unittest
 
 
 class TestPocketMonster(unittest.TestCase):

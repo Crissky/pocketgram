@@ -1,4 +1,5 @@
 import unittest
+
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.base import BaseStats
 
