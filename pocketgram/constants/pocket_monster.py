@@ -1,15 +1,18 @@
-pocket_monsters_dict = {
+from pocketgram.enums.stats import StatsEnum
+
+
+POCKET_MONSTERS_DICT = {
     "0001": {
         None: {
             "Name": "Bulbasaur",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 45,
-            "Attack": 49,
-            "Defense": 49,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 49,
+            StatsEnum.DEFENSE: 49,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         }
     },
     "0002": {
@@ -17,12 +20,12 @@ pocket_monsters_dict = {
             "Name": "Ivysaur",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 62,
-            "Defense": 63,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 62,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 60
         }
     },
     "0003": {
@@ -30,23 +33,23 @@ pocket_monsters_dict = {
             "Name": "Venusaur",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 82,
-            "Defense": 83,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 83,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 80
         },
         "Mega Venusaur": {
             "Name": "Venusaur",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 123,
-            "Special Attack": 122,
-            "Special Defense": 120,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 123,
+            StatsEnum.SPECIAL_ATTACK: 122,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 80
         }
     },
     "0004": {
@@ -54,12 +57,12 @@ pocket_monsters_dict = {
             "Name": "Charmander",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 39,
-            "Attack": 52,
-            "Defense": 43,
-            "Special Attack": 60,
-            "Special Defense": 50,
-            "Speed": 65
+            StatsEnum.HP: 39,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 43,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 65
         }
     },
     "0005": {
@@ -67,12 +70,12 @@ pocket_monsters_dict = {
             "Name": "Charmeleon",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 58,
-            "Attack": 64,
-            "Defense": 58,
-            "Special Attack": 80,
-            "Special Defense": 65,
-            "Speed": 80
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 80
         }
     },
     "0006": {
@@ -80,34 +83,34 @@ pocket_monsters_dict = {
             "Name": "Charizard",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 78,
-            "Attack": 84,
-            "Defense": 78,
-            "Special Attack": 109,
-            "Special Defense": 85,
-            "Speed": 100
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 84,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 109,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 100
         },
         "Mega Charizard X": {
             "Name": "Charizard",
             "Type 1": "Fire",
             "Type 2": "Dragon",
-            "HP": 78,
-            "Attack": 130,
-            "Defense": 111,
-            "Special Attack": 130,
-            "Special Defense": 85,
-            "Speed": 100
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 111,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 100
         },
         "Mega Charizard Y": {
             "Name": "Charizard",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 78,
-            "Attack": 104,
-            "Defense": 78,
-            "Special Attack": 159,
-            "Special Defense": 115,
-            "Speed": 100
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 104,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 159,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 100
         }
     },
     "0007": {
@@ -115,12 +118,12 @@ pocket_monsters_dict = {
             "Name": "Squirtle",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 44,
-            "Attack": 48,
-            "Defense": 65,
-            "Special Attack": 50,
-            "Special Defense": 64,
-            "Speed": 43
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 64,
+            StatsEnum.SPEED: 43
         }
     },
     "0008": {
@@ -128,12 +131,12 @@ pocket_monsters_dict = {
             "Name": "Wartortle",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 59,
-            "Attack": 63,
-            "Defense": 80,
-            "Special Attack": 65,
-            "Special Defense": 80,
-            "Speed": 58
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 58
         }
     },
     "0009": {
@@ -141,23 +144,23 @@ pocket_monsters_dict = {
             "Name": "Blastoise",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 79,
-            "Attack": 83,
-            "Defense": 100,
-            "Special Attack": 85,
-            "Special Defense": 105,
-            "Speed": 78
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 83,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 78
         },
         "Mega Blastoise": {
             "Name": "Blastoise",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 79,
-            "Attack": 103,
-            "Defense": 120,
-            "Special Attack": 135,
-            "Special Defense": 115,
-            "Speed": 78
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 103,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 78
         }
     },
     "0010": {
@@ -165,12 +168,12 @@ pocket_monsters_dict = {
             "Name": "Caterpie",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 35,
-            "Special Attack": 20,
-            "Special Defense": 20,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 45
         }
     },
     "0011": {
@@ -178,12 +181,12 @@ pocket_monsters_dict = {
             "Name": "Metapod",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 20,
-            "Defense": 55,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 30
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 30
         }
     },
     "0012": {
@@ -191,12 +194,12 @@ pocket_monsters_dict = {
             "Name": "Butterfree",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 45,
-            "Defense": 50,
-            "Special Attack": 90,
-            "Special Defense": 80,
-            "Speed": 70
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 70
         }
     },
     "0013": {
@@ -204,12 +207,12 @@ pocket_monsters_dict = {
             "Name": "Weedle",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 40,
-            "Attack": 35,
-            "Defense": 30,
-            "Special Attack": 20,
-            "Special Defense": 20,
-            "Speed": 50
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 50
         }
     },
     "0014": {
@@ -217,12 +220,12 @@ pocket_monsters_dict = {
             "Name": "Kakuna",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 45,
-            "Attack": 25,
-            "Defense": 50,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 35
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 35
         }
     },
     "0015": {
@@ -230,23 +233,23 @@ pocket_monsters_dict = {
             "Name": "Beedrill",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 40,
-            "Special Attack": 45,
-            "Special Defense": 80,
-            "Speed": 75
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 75
         },
         "Mega Beedrill": {
             "Name": "Beedrill",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 65,
-            "Attack": 150,
-            "Defense": 40,
-            "Special Attack": 15,
-            "Special Defense": 80,
-            "Speed": 145
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 15,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 145
         }
     },
     "0016": {
@@ -254,12 +257,12 @@ pocket_monsters_dict = {
             "Name": "Pidgey",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 56
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 56
         }
     },
     "0017": {
@@ -267,12 +270,12 @@ pocket_monsters_dict = {
             "Name": "Pidgeotto",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 63,
-            "Attack": 60,
-            "Defense": 55,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 71
+            StatsEnum.HP: 63,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 71
         }
     },
     "0018": {
@@ -280,23 +283,23 @@ pocket_monsters_dict = {
             "Name": "Pidgeot",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 83,
-            "Attack": 80,
-            "Defense": 75,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 101
+            StatsEnum.HP: 83,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 101
         },
         "Mega Pidgeot": {
             "Name": "Pidgeot",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 83,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 135,
-            "Special Defense": 80,
-            "Speed": 121
+            StatsEnum.HP: 83,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 121
         }
     },
     "0019": {
@@ -304,23 +307,23 @@ pocket_monsters_dict = {
             "Name": "Rattata",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 56,
-            "Defense": 35,
-            "Special Attack": 25,
-            "Special Defense": 35,
-            "Speed": 72
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 56,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 72
         },
         "Alolan Rattata": {
             "Name": "Rattata",
             "Type 1": "Dark",
             "Type 2": "Normal",
-            "HP": 30,
-            "Attack": 56,
-            "Defense": 35,
-            "Special Attack": 25,
-            "Special Defense": 35,
-            "Speed": 72
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 56,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 72
         }
     },
     "0020": {
@@ -328,23 +331,23 @@ pocket_monsters_dict = {
             "Name": "Raticate",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 81,
-            "Defense": 60,
-            "Special Attack": 50,
-            "Special Defense": 70,
-            "Speed": 97
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 81,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 97
         },
         "Alolan Raticate": {
             "Name": "Raticate",
             "Type 1": "Dark",
             "Type 2": "Normal",
-            "HP": 75,
-            "Attack": 71,
-            "Defense": 70,
-            "Special Attack": 40,
-            "Special Defense": 80,
-            "Speed": 77
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 71,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 77
         }
     },
     "0021": {
@@ -352,12 +355,12 @@ pocket_monsters_dict = {
             "Name": "Spearow",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 60,
-            "Defense": 30,
-            "Special Attack": 31,
-            "Special Defense": 31,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 31,
+            StatsEnum.SPECIAL_DEFENSE: 31,
+            StatsEnum.SPEED: 70
         }
     },
     "0022": {
@@ -365,12 +368,12 @@ pocket_monsters_dict = {
             "Name": "Fearow",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 65,
-            "Special Attack": 61,
-            "Special Defense": 61,
-            "Speed": 100
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 61,
+            StatsEnum.SPEED: 100
         }
     },
     "0023": {
@@ -378,12 +381,12 @@ pocket_monsters_dict = {
             "Name": "Ekans",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 60,
-            "Defense": 44,
-            "Special Attack": 40,
-            "Special Defense": 54,
-            "Speed": 55
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 44,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 54,
+            StatsEnum.SPEED: 55
         }
     },
     "0024": {
@@ -391,12 +394,12 @@ pocket_monsters_dict = {
             "Name": "Arbok",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 95,
-            "Defense": 69,
-            "Special Attack": 65,
-            "Special Defense": 79,
-            "Speed": 80
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 69,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 79,
+            StatsEnum.SPEED: 80
         }
     },
     "0025": {
@@ -404,23 +407,23 @@ pocket_monsters_dict = {
             "Name": "Pikachu",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 55,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 90
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 90
         },
         "Partner Pikachu": {
             "Name": "Pikachu",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 75,
-            "Special Defense": 60,
-            "Speed": 120
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 120
         }
     },
     "0026": {
@@ -428,23 +431,23 @@ pocket_monsters_dict = {
             "Name": "Raichu",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 90,
-            "Defense": 55,
-            "Special Attack": 90,
-            "Special Defense": 80,
-            "Speed": 110
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 110
         },
         "Alolan Raichu": {
             "Name": "Raichu",
             "Type 1": "Electric",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 50,
-            "Special Attack": 95,
-            "Special Defense": 85,
-            "Speed": 110
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 110
         }
     },
     "0027": {
@@ -452,23 +455,23 @@ pocket_monsters_dict = {
             "Name": "Sandshrew",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 75,
-            "Defense": 85,
-            "Special Attack": 20,
-            "Special Defense": 30,
-            "Speed": 40
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 40
         },
         "Alolan Sandshrew": {
             "Name": "Sandshrew",
             "Type 1": "Ice",
             "Type 2": "Steel",
-            "HP": 50,
-            "Attack": 75,
-            "Defense": 90,
-            "Special Attack": 10,
-            "Special Defense": 35,
-            "Speed": 40
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 10,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 40
         }
     },
     "0028": {
@@ -476,23 +479,23 @@ pocket_monsters_dict = {
             "Name": "Sandslash",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 100,
-            "Defense": 110,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 65
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 65
         },
         "Alolan Sandslash": {
             "Name": "Sandslash",
             "Type 1": "Ice",
             "Type 2": "Steel",
-            "HP": 75,
-            "Attack": 100,
-            "Defense": 120,
-            "Special Attack": 25,
-            "Special Defense": 65,
-            "Speed": 65
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 65
         }
     },
     "0029": {
@@ -500,12 +503,12 @@ pocket_monsters_dict = {
             "Name": "Nidoran♀",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 47,
-            "Defense": 52,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 41
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 47,
+            StatsEnum.DEFENSE: 52,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 41
         }
     },
     "0030": {
@@ -513,12 +516,12 @@ pocket_monsters_dict = {
             "Name": "Nidorina",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 62,
-            "Defense": 67,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 56
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 62,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 56
         }
     },
     "0031": {
@@ -526,12 +529,12 @@ pocket_monsters_dict = {
             "Name": "Nidoqueen",
             "Type 1": "Poison",
             "Type 2": "Ground",
-            "HP": 90,
-            "Attack": 92,
-            "Defense": 87,
-            "Special Attack": 75,
-            "Special Defense": 85,
-            "Speed": 76
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 87,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 76
         }
     },
     "0032": {
@@ -539,12 +542,12 @@ pocket_monsters_dict = {
             "Name": "Nidoran♂",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 46,
-            "Attack": 57,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 50
+            StatsEnum.HP: 46,
+            StatsEnum.ATTACK: 57,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 50
         }
     },
     "0033": {
@@ -552,12 +555,12 @@ pocket_monsters_dict = {
             "Name": "Nidorino",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 61,
-            "Attack": 72,
-            "Defense": 57,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 65
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 57,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 65
         }
     },
     "0034": {
@@ -565,12 +568,12 @@ pocket_monsters_dict = {
             "Name": "Nidoking",
             "Type 1": "Poison",
             "Type 2": "Ground",
-            "HP": 81,
-            "Attack": 102,
-            "Defense": 77,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 85
+            StatsEnum.HP: 81,
+            StatsEnum.ATTACK: 102,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 85
         }
     },
     "0035": {
@@ -578,12 +581,12 @@ pocket_monsters_dict = {
             "Name": "Clefairy",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 45,
-            "Defense": 48,
-            "Special Attack": 60,
-            "Special Defense": 65,
-            "Speed": 35
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 35
         }
     },
     "0036": {
@@ -591,12 +594,12 @@ pocket_monsters_dict = {
             "Name": "Clefable",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 70,
-            "Defense": 73,
-            "Special Attack": 95,
-            "Special Defense": 90,
-            "Speed": 60
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 73,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 60
         }
     },
     "0037": {
@@ -604,23 +607,23 @@ pocket_monsters_dict = {
             "Name": "Vulpix",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 41,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 65,
-            "Speed": 65
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 41,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 65
         },
         "Alolan Vulpix": {
             "Name": "Vulpix",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 41,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 65,
-            "Speed": 65
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 41,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 65
         }
     },
     "0038": {
@@ -628,23 +631,23 @@ pocket_monsters_dict = {
             "Name": "Ninetales",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 73,
-            "Attack": 76,
-            "Defense": 75,
-            "Special Attack": 81,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 76,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         },
         "Alolan Ninetales": {
             "Name": "Ninetales",
             "Type 1": "Ice",
             "Type 2": "Fairy",
-            "HP": 73,
-            "Attack": 67,
-            "Defense": 75,
-            "Special Attack": 81,
-            "Special Defense": 100,
-            "Speed": 109
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 67,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 109
         }
     },
     "0039": {
@@ -652,12 +655,12 @@ pocket_monsters_dict = {
             "Name": "Jigglypuff",
             "Type 1": "Normal",
             "Type 2": "Fairy",
-            "HP": 115,
-            "Attack": 45,
-            "Defense": 20,
-            "Special Attack": 45,
-            "Special Defense": 25,
-            "Speed": 20
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 20
         }
     },
     "0040": {
@@ -665,12 +668,12 @@ pocket_monsters_dict = {
             "Name": "Wigglytuff",
             "Type 1": "Normal",
             "Type 2": "Fairy",
-            "HP": 140,
-            "Attack": 70,
-            "Defense": 45,
-            "Special Attack": 85,
-            "Special Defense": 50,
-            "Speed": 45
+            StatsEnum.HP: 140,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 45
         }
     },
     "0041": {
@@ -678,12 +681,12 @@ pocket_monsters_dict = {
             "Name": "Zubat",
             "Type 1": "Poison",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 35,
-            "Special Attack": 30,
-            "Special Defense": 40,
-            "Speed": 55
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 55
         }
     },
     "0042": {
@@ -691,12 +694,12 @@ pocket_monsters_dict = {
             "Name": "Golbat",
             "Type 1": "Poison",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 75,
-            "Speed": 90
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 90
         }
     },
     "0043": {
@@ -704,12 +707,12 @@ pocket_monsters_dict = {
             "Name": "Oddish",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 45,
-            "Attack": 50,
-            "Defense": 55,
-            "Special Attack": 75,
-            "Special Defense": 65,
-            "Speed": 30
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 30
         }
     },
     "0044": {
@@ -717,12 +720,12 @@ pocket_monsters_dict = {
             "Name": "Gloom",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 65,
-            "Defense": 70,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 40
         }
     },
     "0045": {
@@ -730,12 +733,12 @@ pocket_monsters_dict = {
             "Name": "Vileplume",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 85,
-            "Special Attack": 110,
-            "Special Defense": 90,
-            "Speed": 50
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 50
         }
     },
     "0046": {
@@ -743,12 +746,12 @@ pocket_monsters_dict = {
             "Name": "Paras",
             "Type 1": "Bug",
             "Type 2": "Grass",
-            "HP": 35,
-            "Attack": 70,
-            "Defense": 55,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 25
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 25
         }
     },
     "0047": {
@@ -756,12 +759,12 @@ pocket_monsters_dict = {
             "Name": "Parasect",
             "Type 1": "Bug",
             "Type 2": "Grass",
-            "HP": 60,
-            "Attack": 95,
-            "Defense": 80,
-            "Special Attack": 60,
-            "Special Defense": 80,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 30
         }
     },
     "0048": {
@@ -769,12 +772,12 @@ pocket_monsters_dict = {
             "Name": "Venonat",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 55,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 55,
-            "Speed": 45
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 45
         }
     },
     "0049": {
@@ -782,12 +785,12 @@ pocket_monsters_dict = {
             "Name": "Venomoth",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 70,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 90,
-            "Special Defense": 75,
-            "Speed": 90
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 90
         }
     },
     "0050": {
@@ -795,23 +798,23 @@ pocket_monsters_dict = {
             "Name": "Diglett",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 10,
-            "Attack": 55,
-            "Defense": 25,
-            "Special Attack": 35,
-            "Special Defense": 45,
-            "Speed": 95
+            StatsEnum.HP: 10,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 25,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 95
         },
         "Alolan Diglett": {
             "Name": "Diglett",
             "Type 1": "Ground",
             "Type 2": "Steel",
-            "HP": 10,
-            "Attack": 55,
-            "Defense": 30,
-            "Special Attack": 35,
-            "Special Defense": 45,
-            "Speed": 90
+            StatsEnum.HP: 10,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 90
         }
     },
     "0051": {
@@ -819,23 +822,23 @@ pocket_monsters_dict = {
             "Name": "Dugtrio",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 100,
-            "Defense": 50,
-            "Special Attack": 50,
-            "Special Defense": 70,
-            "Speed": 120
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 120
         },
         "Alolan Dugtrio": {
             "Name": "Dugtrio",
             "Type 1": "Ground",
             "Type 2": "Steel",
-            "HP": 35,
-            "Attack": 100,
-            "Defense": 60,
-            "Special Attack": 50,
-            "Special Defense": 70,
-            "Speed": 110
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 110
         }
     },
     "0052": {
@@ -843,34 +846,34 @@ pocket_monsters_dict = {
             "Name": "Meowth",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 35,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 90
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 90
         },
         "Alolan Meowth": {
             "Name": "Meowth",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 35,
-            "Defense": 35,
-            "Special Attack": 50,
-            "Special Defense": 40,
-            "Speed": 90
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 90
         },
         "Galarian Meowth": {
             "Name": "Meowth",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 55,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 40
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 40
         }
     },
     "0053": {
@@ -878,23 +881,23 @@ pocket_monsters_dict = {
             "Name": "Persian",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 70,
-            "Defense": 60,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 115
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 115
         },
         "Alolan Persian": {
             "Name": "Persian",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 75,
-            "Special Defense": 65,
-            "Speed": 115
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 115
         }
     },
     "0054": {
@@ -902,12 +905,12 @@ pocket_monsters_dict = {
             "Name": "Psyduck",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 52,
-            "Defense": 48,
-            "Special Attack": 65,
-            "Special Defense": 50,
-            "Speed": 55
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 55
         }
     },
     "0055": {
@@ -915,12 +918,12 @@ pocket_monsters_dict = {
             "Name": "Golduck",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 82,
-            "Defense": 78,
-            "Special Attack": 95,
-            "Special Defense": 80,
-            "Speed": 85
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 85
         }
     },
     "0056": {
@@ -928,12 +931,12 @@ pocket_monsters_dict = {
             "Name": "Mankey",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 80,
-            "Defense": 35,
-            "Special Attack": 35,
-            "Special Defense": 45,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 70
         }
     },
     "0057": {
@@ -941,12 +944,12 @@ pocket_monsters_dict = {
             "Name": "Primeape",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 105,
-            "Defense": 60,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 95
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 95
         }
     },
     "0058": {
@@ -954,23 +957,23 @@ pocket_monsters_dict = {
             "Name": "Growlithe",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 70,
-            "Defense": 45,
-            "Special Attack": 70,
-            "Special Defense": 50,
-            "Speed": 60
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 60
         },
         "Hisuian Growlithe": {
             "Name": "Growlithe",
             "Type 1": "Fire",
             "Type 2": "Rock",
-            "HP": 60,
-            "Attack": 75,
-            "Defense": 45,
-            "Special Attack": 65,
-            "Special Defense": 50,
-            "Speed": 55
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 55
         }
     },
     "0059": {
@@ -978,23 +981,23 @@ pocket_monsters_dict = {
             "Name": "Arcanine",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 110,
-            "Defense": 80,
-            "Special Attack": 100,
-            "Special Defense": 80,
-            "Speed": 95
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 95
         },
         "Hisuian Arcanine": {
             "Name": "Arcanine",
             "Type 1": "Fire",
             "Type 2": "Rock",
-            "HP": 95,
-            "Attack": 115,
-            "Defense": 80,
-            "Special Attack": 95,
-            "Special Defense": 80,
-            "Speed": 90
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 90
         }
     },
     "0060": {
@@ -1002,12 +1005,12 @@ pocket_monsters_dict = {
             "Name": "Poliwag",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 50,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 90
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 90
         }
     },
     "0061": {
@@ -1015,12 +1018,12 @@ pocket_monsters_dict = {
             "Name": "Poliwhirl",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 90
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 90
         }
     },
     "0062": {
@@ -1028,12 +1031,12 @@ pocket_monsters_dict = {
             "Name": "Poliwrath",
             "Type 1": "Water",
             "Type 2": "Fighting",
-            "HP": 90,
-            "Attack": 95,
-            "Defense": 95,
-            "Special Attack": 70,
-            "Special Defense": 90,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 70
         }
     },
     "0063": {
@@ -1041,12 +1044,12 @@ pocket_monsters_dict = {
             "Name": "Abra",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 25,
-            "Attack": 20,
-            "Defense": 15,
-            "Special Attack": 105,
-            "Special Defense": 55,
-            "Speed": 90
+            StatsEnum.HP: 25,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 15,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 90
         }
     },
     "0064": {
@@ -1054,12 +1057,12 @@ pocket_monsters_dict = {
             "Name": "Kadabra",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 35,
-            "Defense": 30,
-            "Special Attack": 120,
-            "Special Defense": 70,
-            "Speed": 105
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 105
         }
     },
     "0065": {
@@ -1067,23 +1070,23 @@ pocket_monsters_dict = {
             "Name": "Alakazam",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 50,
-            "Defense": 45,
-            "Special Attack": 135,
-            "Special Defense": 95,
-            "Speed": 120
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 120
         },
         "Mega Alakazam": {
             "Name": "Alakazam",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 50,
-            "Defense": 65,
-            "Special Attack": 175,
-            "Special Defense": 105,
-            "Speed": 150
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 175,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 150
         }
     },
     "0066": {
@@ -1091,12 +1094,12 @@ pocket_monsters_dict = {
             "Name": "Machop",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 35
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 35
         }
     },
     "0067": {
@@ -1104,12 +1107,12 @@ pocket_monsters_dict = {
             "Name": "Machoke",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 50,
-            "Special Defense": 60,
-            "Speed": 45
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 45
         }
     },
     "0068": {
@@ -1117,12 +1120,12 @@ pocket_monsters_dict = {
             "Name": "Machamp",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 130,
-            "Defense": 80,
-            "Special Attack": 65,
-            "Special Defense": 85,
-            "Speed": 55
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 55
         }
     },
     "0069": {
@@ -1130,12 +1133,12 @@ pocket_monsters_dict = {
             "Name": "Bellsprout",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 50,
-            "Attack": 75,
-            "Defense": 35,
-            "Special Attack": 70,
-            "Special Defense": 30,
-            "Speed": 40
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 40
         }
     },
     "0070": {
@@ -1143,12 +1146,12 @@ pocket_monsters_dict = {
             "Name": "Weepinbell",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 50,
-            "Special Attack": 85,
-            "Special Defense": 45,
-            "Speed": 55
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 55
         }
     },
     "0071": {
@@ -1156,12 +1159,12 @@ pocket_monsters_dict = {
             "Name": "Victreebel",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 105,
-            "Defense": 65,
-            "Special Attack": 100,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         }
     },
     "0072": {
@@ -1169,12 +1172,12 @@ pocket_monsters_dict = {
             "Name": "Tentacool",
             "Type 1": "Water",
             "Type 2": "Poison",
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 35,
-            "Special Attack": 50,
-            "Special Defense": 100,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 70
         }
     },
     "0073": {
@@ -1182,12 +1185,12 @@ pocket_monsters_dict = {
             "Name": "Tentacruel",
             "Type 1": "Water",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 70,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 120,
-            "Speed": 100
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 100
         }
     },
     "0074": {
@@ -1195,23 +1198,23 @@ pocket_monsters_dict = {
             "Name": "Geodude",
             "Type 1": "Rock",
             "Type 2": "Ground",
-            "HP": 40,
-            "Attack": 80,
-            "Defense": 100,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 20
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 20
         },
         "Alolan Geodude": {
             "Name": "Geodude",
             "Type 1": "Rock",
             "Type 2": "Electric",
-            "HP": 40,
-            "Attack": 80,
-            "Defense": 100,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 20
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 20
         }
     },
     "0075": {
@@ -1219,23 +1222,23 @@ pocket_monsters_dict = {
             "Name": "Graveler",
             "Type 1": "Rock",
             "Type 2": "Ground",
-            "HP": 55,
-            "Attack": 95,
-            "Defense": 115,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 35
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 35
         },
         "Alolan Graveler": {
             "Name": "Graveler",
             "Type 1": "Rock",
             "Type 2": "Electric",
-            "HP": 55,
-            "Attack": 95,
-            "Defense": 115,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 35
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 35
         }
     },
     "0076": {
@@ -1243,23 +1246,23 @@ pocket_monsters_dict = {
             "Name": "Golem",
             "Type 1": "Rock",
             "Type 2": "Ground",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 130,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         },
         "Alolan Golem": {
             "Name": "Golem",
             "Type 1": "Rock",
             "Type 2": "Electric",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 130,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         }
     },
     "0077": {
@@ -1267,23 +1270,23 @@ pocket_monsters_dict = {
             "Name": "Ponyta",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 85,
-            "Defense": 55,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 90
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 90
         },
         "Galarian Ponyta": {
             "Name": "Ponyta",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 85,
-            "Defense": 55,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 90
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 90
         }
     },
     "0078": {
@@ -1291,23 +1294,23 @@ pocket_monsters_dict = {
             "Name": "Rapidash",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 105
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 105
         },
         "Galarian Rapidash": {
             "Name": "Rapidash",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 65,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 105
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 105
         }
     },
     "0079": {
@@ -1315,23 +1318,23 @@ pocket_monsters_dict = {
             "Name": "Slowpoke",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 15
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 15
         },
         "Galarian Slowpoke": {
             "Name": "Slowpoke",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 15
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 15
         }
     },
     "0080": {
@@ -1339,34 +1342,34 @@ pocket_monsters_dict = {
             "Name": "Slowbro",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 95,
-            "Attack": 75,
-            "Defense": 110,
-            "Special Attack": 100,
-            "Special Defense": 80,
-            "Speed": 30
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 30
         },
         "Mega Slowbro": {
             "Name": "Slowbro",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 95,
-            "Attack": 75,
-            "Defense": 180,
-            "Special Attack": 130,
-            "Special Defense": 80,
-            "Speed": 30
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 180,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 30
         },
         "Galarian Slowbro": {
             "Name": "Slowbro",
             "Type 1": "Poison",
             "Type 2": "Psychic",
-            "HP": 95,
-            "Attack": 100,
-            "Defense": 95,
-            "Special Attack": 100,
-            "Special Defense": 70,
-            "Speed": 30
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 30
         }
     },
     "0081": {
@@ -1374,12 +1377,12 @@ pocket_monsters_dict = {
             "Name": "Magnemite",
             "Type 1": "Electric",
             "Type 2": "Steel",
-            "HP": 25,
-            "Attack": 35,
-            "Defense": 70,
-            "Special Attack": 95,
-            "Special Defense": 55,
-            "Speed": 45
+            StatsEnum.HP: 25,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 45
         }
     },
     "0082": {
@@ -1387,12 +1390,12 @@ pocket_monsters_dict = {
             "Name": "Magneton",
             "Type 1": "Electric",
             "Type 2": "Steel",
-            "HP": 50,
-            "Attack": 60,
-            "Defense": 95,
-            "Special Attack": 120,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         }
     },
     "0083": {
@@ -1400,23 +1403,23 @@ pocket_monsters_dict = {
             "Name": "Farfetch'd",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 52,
-            "Attack": 90,
-            "Defense": 55,
-            "Special Attack": 58,
-            "Special Defense": 62,
-            "Speed": 60
+            StatsEnum.HP: 52,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 62,
+            StatsEnum.SPEED: 60
         },
         "Galarian Farfetch'd": {
             "Name": "Farfetch'd",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 52,
-            "Attack": 95,
-            "Defense": 55,
-            "Special Attack": 58,
-            "Special Defense": 62,
-            "Speed": 55
+            StatsEnum.HP: 52,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 62,
+            StatsEnum.SPEED: 55
         }
     },
     "0084": {
@@ -1424,12 +1427,12 @@ pocket_monsters_dict = {
             "Name": "Doduo",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 35,
-            "Attack": 85,
-            "Defense": 45,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 75
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 75
         }
     },
     "0085": {
@@ -1437,12 +1440,12 @@ pocket_monsters_dict = {
             "Name": "Dodrio",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 110,
-            "Defense": 70,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 110
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 110
         }
     },
     "0086": {
@@ -1450,12 +1453,12 @@ pocket_monsters_dict = {
             "Name": "Seel",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 45,
-            "Defense": 55,
-            "Special Attack": 45,
-            "Special Defense": 70,
-            "Speed": 45
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 45
         }
     },
     "0087": {
@@ -1463,12 +1466,12 @@ pocket_monsters_dict = {
             "Name": "Dewgong",
             "Type 1": "Water",
             "Type 2": "Ice",
-            "HP": 90,
-            "Attack": 70,
-            "Defense": 80,
-            "Special Attack": 70,
-            "Special Defense": 95,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 70
         }
     },
     "0088": {
@@ -1476,23 +1479,23 @@ pocket_monsters_dict = {
             "Name": "Grimer",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 25
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 25
         },
         "Alolan Grimer": {
             "Name": "Grimer",
             "Type 1": "Poison",
             "Type 2": "Dark",
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 25
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 25
         }
     },
     "0089": {
@@ -1500,23 +1503,23 @@ pocket_monsters_dict = {
             "Name": "Muk",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 105,
-            "Attack": 105,
-            "Defense": 75,
-            "Special Attack": 65,
-            "Special Defense": 100,
-            "Speed": 50
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 50
         },
         "Alolan Muk": {
             "Name": "Muk",
             "Type 1": "Poison",
             "Type 2": "Dark",
-            "HP": 105,
-            "Attack": 105,
-            "Defense": 75,
-            "Special Attack": 65,
-            "Special Defense": 100,
-            "Speed": 50
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 50
         }
     },
     "0090": {
@@ -1524,12 +1527,12 @@ pocket_monsters_dict = {
             "Name": "Shellder",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 65,
-            "Defense": 100,
-            "Special Attack": 45,
-            "Special Defense": 25,
-            "Speed": 40
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 40
         }
     },
     "0091": {
@@ -1537,12 +1540,12 @@ pocket_monsters_dict = {
             "Name": "Cloyster",
             "Type 1": "Water",
             "Type 2": "Ice",
-            "HP": 50,
-            "Attack": 95,
-            "Defense": 180,
-            "Special Attack": 85,
-            "Special Defense": 45,
-            "Speed": 70
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 180,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 70
         }
     },
     "0092": {
@@ -1550,12 +1553,12 @@ pocket_monsters_dict = {
             "Name": "Gastly",
             "Type 1": "Ghost",
             "Type 2": "Poison",
-            "HP": 30,
-            "Attack": 35,
-            "Defense": 30,
-            "Special Attack": 100,
-            "Special Defense": 35,
-            "Speed": 80
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 80
         }
     },
     "0093": {
@@ -1563,12 +1566,12 @@ pocket_monsters_dict = {
             "Name": "Haunter",
             "Type 1": "Ghost",
             "Type 2": "Poison",
-            "HP": 45,
-            "Attack": 50,
-            "Defense": 45,
-            "Special Attack": 115,
-            "Special Defense": 55,
-            "Speed": 95
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 95
         }
     },
     "0094": {
@@ -1576,23 +1579,23 @@ pocket_monsters_dict = {
             "Name": "Gengar",
             "Type 1": "Ghost",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 130,
-            "Special Defense": 75,
-            "Speed": 110
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 110
         },
         "Mega Gengar": {
             "Name": "Gengar",
             "Type 1": "Ghost",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 65,
-            "Defense": 80,
-            "Special Attack": 170,
-            "Special Defense": 95,
-            "Speed": 130
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 170,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 130
         }
     },
     "0095": {
@@ -1600,12 +1603,12 @@ pocket_monsters_dict = {
             "Name": "Onix",
             "Type 1": "Rock",
             "Type 2": "Ground",
-            "HP": 35,
-            "Attack": 45,
-            "Defense": 160,
-            "Special Attack": 30,
-            "Special Defense": 45,
-            "Speed": 70
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 160,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 70
         }
     },
     "0096": {
@@ -1613,12 +1616,12 @@ pocket_monsters_dict = {
             "Name": "Drowzee",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 48,
-            "Defense": 45,
-            "Special Attack": 43,
-            "Special Defense": 90,
-            "Speed": 42
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 43,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 42
         }
     },
     "0097": {
@@ -1626,12 +1629,12 @@ pocket_monsters_dict = {
             "Name": "Hypno",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 73,
-            "Defense": 70,
-            "Special Attack": 73,
-            "Special Defense": 115,
-            "Speed": 67
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 73,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 67
         }
     },
     "0098": {
@@ -1639,12 +1642,12 @@ pocket_monsters_dict = {
             "Name": "Krabby",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 105,
-            "Defense": 90,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 50
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 50
         }
     },
     "0099": {
@@ -1652,12 +1655,12 @@ pocket_monsters_dict = {
             "Name": "Kingler",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 130,
-            "Defense": 115,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 75
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 75
         }
     },
     "0100": {
@@ -1665,23 +1668,23 @@ pocket_monsters_dict = {
             "Name": "Voltorb",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 50,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 100
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 100
         },
         "Hisuian Voltorb": {
             "Name": "Voltorb",
             "Type 1": "Electric",
             "Type 2": "Grass",
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 50,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 100
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 100
         }
     },
     "0101": {
@@ -1689,23 +1692,23 @@ pocket_monsters_dict = {
             "Name": "Electrode",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 150
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 150
         },
         "Hisuian Electrode": {
             "Name": "Electrode",
             "Type 1": "Electric",
             "Type 2": "Grass",
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 150
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 150
         }
     },
     "0102": {
@@ -1713,12 +1716,12 @@ pocket_monsters_dict = {
             "Name": "Exeggcute",
             "Type 1": "Grass",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 40,
-            "Defense": 80,
-            "Special Attack": 60,
-            "Special Defense": 45,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 40
         }
     },
     "0103": {
@@ -1726,23 +1729,23 @@ pocket_monsters_dict = {
             "Name": "Exeggutor",
             "Type 1": "Grass",
             "Type 2": "Psychic",
-            "HP": 95,
-            "Attack": 95,
-            "Defense": 85,
-            "Special Attack": 125,
-            "Special Defense": 75,
-            "Speed": 55
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 55
         },
         "Alolan Exeggutor": {
             "Name": "Exeggutor",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 95,
-            "Attack": 105,
-            "Defense": 85,
-            "Special Attack": 125,
-            "Special Defense": 75,
-            "Speed": 45
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 45
         }
     },
     "0104": {
@@ -1750,12 +1753,12 @@ pocket_monsters_dict = {
             "Name": "Cubone",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 95,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 35
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 35
         }
     },
     "0105": {
@@ -1763,23 +1766,23 @@ pocket_monsters_dict = {
             "Name": "Marowak",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 80,
-            "Defense": 110,
-            "Special Attack": 50,
-            "Special Defense": 80,
-            "Speed": 45
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 45
         },
         "Alolan Marowak": {
             "Name": "Marowak",
             "Type 1": "Fire",
             "Type 2": "Ghost",
-            "HP": 60,
-            "Attack": 80,
-            "Defense": 110,
-            "Special Attack": 50,
-            "Special Defense": 80,
-            "Speed": 45
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 45
         }
     },
     "0106": {
@@ -1787,12 +1790,12 @@ pocket_monsters_dict = {
             "Name": "Hitmonlee",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 120,
-            "Defense": 53,
-            "Special Attack": 35,
-            "Special Defense": 110,
-            "Speed": 87
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 87
         }
     },
     "0107": {
@@ -1800,12 +1803,12 @@ pocket_monsters_dict = {
             "Name": "Hitmonchan",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 105,
-            "Defense": 79,
-            "Special Attack": 35,
-            "Special Defense": 110,
-            "Speed": 76
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 79,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 76
         }
     },
     "0108": {
@@ -1813,12 +1816,12 @@ pocket_monsters_dict = {
             "Name": "Lickitung",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 55,
-            "Defense": 75,
-            "Special Attack": 60,
-            "Special Defense": 75,
-            "Speed": 30
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 30
         }
     },
     "0109": {
@@ -1826,12 +1829,12 @@ pocket_monsters_dict = {
             "Name": "Koffing",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 65,
-            "Defense": 95,
-            "Special Attack": 60,
-            "Special Defense": 45,
-            "Speed": 35
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 35
         }
     },
     "0110": {
@@ -1839,23 +1842,23 @@ pocket_monsters_dict = {
             "Name": "Weezing",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 120,
-            "Special Attack": 85,
-            "Special Defense": 70,
-            "Speed": 60
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 60
         },
         "Galarian Weezing": {
             "Name": "Weezing",
             "Type 1": "Poison",
             "Type 2": "Fairy",
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 120,
-            "Special Attack": 85,
-            "Special Defense": 70,
-            "Speed": 60
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 60
         }
     },
     "0111": {
@@ -1863,12 +1866,12 @@ pocket_monsters_dict = {
             "Name": "Rhyhorn",
             "Type 1": "Ground",
             "Type 2": "Rock",
-            "HP": 80,
-            "Attack": 85,
-            "Defense": 95,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 25
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 25
         }
     },
     "0112": {
@@ -1876,12 +1879,12 @@ pocket_monsters_dict = {
             "Name": "Rhydon",
             "Type 1": "Ground",
             "Type 2": "Rock",
-            "HP": 105,
-            "Attack": 130,
-            "Defense": 120,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 40
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 40
         }
     },
     "0113": {
@@ -1889,12 +1892,12 @@ pocket_monsters_dict = {
             "Name": "Chansey",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 250,
-            "Attack": 5,
-            "Defense": 5,
-            "Special Attack": 35,
-            "Special Defense": 105,
-            "Speed": 50
+            StatsEnum.HP: 250,
+            StatsEnum.ATTACK: 5,
+            StatsEnum.DEFENSE: 5,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 50
         }
     },
     "0114": {
@@ -1902,12 +1905,12 @@ pocket_monsters_dict = {
             "Name": "Tangela",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 55,
-            "Defense": 115,
-            "Special Attack": 100,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         }
     },
     "0115": {
@@ -1915,23 +1918,23 @@ pocket_monsters_dict = {
             "Name": "Kangaskhan",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 105,
-            "Attack": 95,
-            "Defense": 80,
-            "Special Attack": 40,
-            "Special Defense": 80,
-            "Speed": 90
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 90
         },
         "Mega Kangaskhan": {
             "Name": "Kangaskhan",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 105,
-            "Attack": 125,
-            "Defense": 100,
-            "Special Attack": 60,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         }
     },
     "0116": {
@@ -1939,12 +1942,12 @@ pocket_monsters_dict = {
             "Name": "Horsea",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 40,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 25,
-            "Speed": 60
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 60
         }
     },
     "0117": {
@@ -1952,12 +1955,12 @@ pocket_monsters_dict = {
             "Name": "Seadra",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 65,
-            "Defense": 95,
-            "Special Attack": 95,
-            "Special Defense": 45,
-            "Speed": 85
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 85
         }
     },
     "0118": {
@@ -1965,12 +1968,12 @@ pocket_monsters_dict = {
             "Name": "Goldeen",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 67,
-            "Defense": 60,
-            "Special Attack": 35,
-            "Special Defense": 50,
-            "Speed": 63
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 67,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 63
         }
     },
     "0119": {
@@ -1978,12 +1981,12 @@ pocket_monsters_dict = {
             "Name": "Seaking",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 92,
-            "Defense": 65,
-            "Special Attack": 65,
-            "Special Defense": 80,
-            "Speed": 68
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 68
         }
     },
     "0120": {
@@ -1991,12 +1994,12 @@ pocket_monsters_dict = {
             "Name": "Staryu",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 45,
-            "Defense": 55,
-            "Special Attack": 70,
-            "Special Defense": 55,
-            "Speed": 85
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 85
         }
     },
     "0121": {
@@ -2004,12 +2007,12 @@ pocket_monsters_dict = {
             "Name": "Starmie",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 75,
-            "Defense": 85,
-            "Special Attack": 100,
-            "Special Defense": 85,
-            "Speed": 115
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 115
         }
     },
     "0122": {
@@ -2017,23 +2020,23 @@ pocket_monsters_dict = {
             "Name": "Mr. Mime",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 65,
-            "Special Attack": 100,
-            "Special Defense": 120,
-            "Speed": 90
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 90
         },
         "Galarian Mr. Mime": {
             "Name": "Mr. Mime",
             "Type 1": "Ice",
             "Type 2": "Psychic",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 90,
-            "Special Defense": 90,
-            "Speed": 100
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 100
         }
     },
     "0123": {
@@ -2041,12 +2044,12 @@ pocket_monsters_dict = {
             "Name": "Scyther",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 110,
-            "Defense": 80,
-            "Special Attack": 55,
-            "Special Defense": 80,
-            "Speed": 105
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 105
         }
     },
     "0124": {
@@ -2054,12 +2057,12 @@ pocket_monsters_dict = {
             "Name": "Jynx",
             "Type 1": "Ice",
             "Type 2": "Psychic",
-            "HP": 65,
-            "Attack": 50,
-            "Defense": 35,
-            "Special Attack": 115,
-            "Special Defense": 95,
-            "Speed": 95
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 95
         }
     },
     "0125": {
@@ -2067,12 +2070,12 @@ pocket_monsters_dict = {
             "Name": "Electabuzz",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 83,
-            "Defense": 57,
-            "Special Attack": 95,
-            "Special Defense": 85,
-            "Speed": 105
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 83,
+            StatsEnum.DEFENSE: 57,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 105
         }
     },
     "0126": {
@@ -2080,12 +2083,12 @@ pocket_monsters_dict = {
             "Name": "Magmar",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 95,
-            "Defense": 57,
-            "Special Attack": 100,
-            "Special Defense": 85,
-            "Speed": 93
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 57,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 93
         }
     },
     "0127": {
@@ -2093,23 +2096,23 @@ pocket_monsters_dict = {
             "Name": "Pinsir",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 125,
-            "Defense": 100,
-            "Special Attack": 55,
-            "Special Defense": 70,
-            "Speed": 85
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 85
         },
         "Mega Pinsir": {
             "Name": "Pinsir",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 155,
-            "Defense": 120,
-            "Special Attack": 65,
-            "Special Defense": 90,
-            "Speed": 105
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 155,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 105
         }
     },
     "0128": {
@@ -2117,45 +2120,45 @@ pocket_monsters_dict = {
             "Name": "Tauros",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 100,
-            "Defense": 95,
-            "Special Attack": 40,
-            "Special Defense": 70,
-            "Speed": 110
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 110
         },
         "Combat Breed": {
             "Name": "Tauros",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 110,
-            "Defense": 105,
-            "Special Attack": 30,
-            "Special Defense": 70,
-            "Speed": 100
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 100
         },
         "Blaze Breed": {
             "Name": "Tauros",
             "Type 1": "Fighting",
             "Type 2": "Fire",
-            "HP": 75,
-            "Attack": 110,
-            "Defense": 105,
-            "Special Attack": 30,
-            "Special Defense": 70,
-            "Speed": 100
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 100
         },
         "Aqua Breed": {
             "Name": "Tauros",
             "Type 1": "Fighting",
             "Type 2": "Water",
-            "HP": 75,
-            "Attack": 110,
-            "Defense": 105,
-            "Special Attack": 30,
-            "Special Defense": 70,
-            "Speed": 100
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 100
         }
     },
     "0129": {
@@ -2163,12 +2166,12 @@ pocket_monsters_dict = {
             "Name": "Magikarp",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 20,
-            "Attack": 10,
-            "Defense": 55,
-            "Special Attack": 15,
-            "Special Defense": 20,
-            "Speed": 80
+            StatsEnum.HP: 20,
+            StatsEnum.ATTACK: 10,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 15,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 80
         }
     },
     "0130": {
@@ -2176,23 +2179,23 @@ pocket_monsters_dict = {
             "Name": "Gyarados",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 95,
-            "Attack": 125,
-            "Defense": 79,
-            "Special Attack": 60,
-            "Special Defense": 100,
-            "Speed": 81
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 79,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 81
         },
         "Mega Gyarados": {
             "Name": "Gyarados",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 95,
-            "Attack": 155,
-            "Defense": 109,
-            "Special Attack": 70,
-            "Special Defense": 130,
-            "Speed": 81
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 155,
+            StatsEnum.DEFENSE: 109,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 81
         }
     },
     "0131": {
@@ -2200,12 +2203,12 @@ pocket_monsters_dict = {
             "Name": "Lapras",
             "Type 1": "Water",
             "Type 2": "Ice",
-            "HP": 130,
-            "Attack": 85,
-            "Defense": 80,
-            "Special Attack": 85,
-            "Special Defense": 95,
-            "Speed": 60
+            StatsEnum.HP: 130,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 60
         }
     },
     "0132": {
@@ -2213,12 +2216,12 @@ pocket_monsters_dict = {
             "Name": "Ditto",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 48,
-            "Attack": 48,
-            "Defense": 48,
-            "Special Attack": 48,
-            "Special Defense": 48,
-            "Speed": 48
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 48,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 48
         }
     },
     "0133": {
@@ -2226,23 +2229,23 @@ pocket_monsters_dict = {
             "Name": "Eevee",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 55,
-            "Defense": 50,
-            "Special Attack": 45,
-            "Special Defense": 65,
-            "Speed": 55
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 55
         },
         "Partner Eevee": {
             "Name": "Eevee",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 75,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 85,
-            "Speed": 75
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 75
         }
     },
     "0134": {
@@ -2250,12 +2253,12 @@ pocket_monsters_dict = {
             "Name": "Vaporeon",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 130,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 110,
-            "Special Defense": 95,
-            "Speed": 65
+            StatsEnum.HP: 130,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 65
         }
     },
     "0135": {
@@ -2263,12 +2266,12 @@ pocket_monsters_dict = {
             "Name": "Jolteon",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 110,
-            "Special Defense": 95,
-            "Speed": 130
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 130
         }
     },
     "0136": {
@@ -2276,12 +2279,12 @@ pocket_monsters_dict = {
             "Name": "Flareon",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 130,
-            "Defense": 60,
-            "Special Attack": 95,
-            "Special Defense": 110,
-            "Speed": 65
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 65
         }
     },
     "0137": {
@@ -2289,12 +2292,12 @@ pocket_monsters_dict = {
             "Name": "Porygon",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 60,
-            "Defense": 70,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 40
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 40
         }
     },
     "0138": {
@@ -2302,12 +2305,12 @@ pocket_monsters_dict = {
             "Name": "Omanyte",
             "Type 1": "Rock",
             "Type 2": "Water",
-            "HP": 35,
-            "Attack": 40,
-            "Defense": 100,
-            "Special Attack": 90,
-            "Special Defense": 55,
-            "Speed": 35
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 35
         }
     },
     "0139": {
@@ -2315,12 +2318,12 @@ pocket_monsters_dict = {
             "Name": "Omastar",
             "Type 1": "Rock",
             "Type 2": "Water",
-            "HP": 70,
-            "Attack": 60,
-            "Defense": 125,
-            "Special Attack": 115,
-            "Special Defense": 70,
-            "Speed": 55
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 55
         }
     },
     "0140": {
@@ -2328,12 +2331,12 @@ pocket_monsters_dict = {
             "Name": "Kabuto",
             "Type 1": "Rock",
             "Type 2": "Water",
-            "HP": 30,
-            "Attack": 80,
-            "Defense": 90,
-            "Special Attack": 55,
-            "Special Defense": 45,
-            "Speed": 55
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 55
         }
     },
     "0141": {
@@ -2341,12 +2344,12 @@ pocket_monsters_dict = {
             "Name": "Kabutops",
             "Type 1": "Rock",
             "Type 2": "Water",
-            "HP": 60,
-            "Attack": 115,
-            "Defense": 105,
-            "Special Attack": 65,
-            "Special Defense": 70,
-            "Speed": 80
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 80
         }
     },
     "0142": {
@@ -2354,23 +2357,23 @@ pocket_monsters_dict = {
             "Name": "Aerodactyl",
             "Type 1": "Rock",
             "Type 2": "Flying",
-            "HP": 80,
-            "Attack": 105,
-            "Defense": 65,
-            "Special Attack": 60,
-            "Special Defense": 75,
-            "Speed": 130
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 130
         },
         "Mega Aerodactyl": {
             "Name": "Aerodactyl",
             "Type 1": "Rock",
             "Type 2": "Flying",
-            "HP": 80,
-            "Attack": 135,
-            "Defense": 85,
-            "Special Attack": 70,
-            "Special Defense": 95,
-            "Speed": 150
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 150
         }
     },
     "0143": {
@@ -2378,12 +2381,12 @@ pocket_monsters_dict = {
             "Name": "Snorlax",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 160,
-            "Attack": 110,
-            "Defense": 65,
-            "Special Attack": 65,
-            "Special Defense": 110,
-            "Speed": 30
+            StatsEnum.HP: 160,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 30
         }
     },
     "0144": {
@@ -2391,23 +2394,23 @@ pocket_monsters_dict = {
             "Name": "Articuno",
             "Type 1": "Ice",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 85,
-            "Defense": 100,
-            "Special Attack": 95,
-            "Special Defense": 125,
-            "Speed": 85
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 125,
+            StatsEnum.SPEED: 85
         },
         "Galarian Articuno": {
             "Name": "Articuno",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 85,
-            "Defense": 85,
-            "Special Attack": 125,
-            "Special Defense": 100,
-            "Speed": 95
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 95
         }
     },
     "0145": {
@@ -2415,23 +2418,23 @@ pocket_monsters_dict = {
             "Name": "Zapdos",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 90,
-            "Defense": 85,
-            "Special Attack": 125,
-            "Special Defense": 90,
-            "Speed": 100
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 100
         },
         "Galarian Zapdos": {
             "Name": "Zapdos",
             "Type 1": "Fighting",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 125,
-            "Defense": 90,
-            "Special Attack": 85,
-            "Special Defense": 90,
-            "Speed": 100
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 100
         }
     },
     "0146": {
@@ -2439,23 +2442,23 @@ pocket_monsters_dict = {
             "Name": "Moltres",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 100,
-            "Defense": 90,
-            "Special Attack": 125,
-            "Special Defense": 85,
-            "Speed": 90
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 90
         },
         "Galarian Moltres": {
             "Name": "Moltres",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 85,
-            "Defense": 90,
-            "Special Attack": 100,
-            "Special Defense": 125,
-            "Speed": 90
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 125,
+            StatsEnum.SPEED: 90
         }
     },
     "0147": {
@@ -2463,12 +2466,12 @@ pocket_monsters_dict = {
             "Name": "Dratini",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 41,
-            "Attack": 64,
-            "Defense": 45,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 50
+            StatsEnum.HP: 41,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 50
         }
     },
     "0148": {
@@ -2476,12 +2479,12 @@ pocket_monsters_dict = {
             "Name": "Dragonair",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 61,
-            "Attack": 84,
-            "Defense": 65,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 84,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         }
     },
     "0149": {
@@ -2489,12 +2492,12 @@ pocket_monsters_dict = {
             "Name": "Dragonite",
             "Type 1": "Dragon",
             "Type 2": "Flying",
-            "HP": 91,
-            "Attack": 134,
-            "Defense": 95,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 80
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 134,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 80
         }
     },
     "0150": {
@@ -2502,34 +2505,34 @@ pocket_monsters_dict = {
             "Name": "Mewtwo",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 106,
-            "Attack": 110,
-            "Defense": 90,
-            "Special Attack": 154,
-            "Special Defense": 90,
-            "Speed": 130
+            StatsEnum.HP: 106,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 154,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 130
         },
         "Mega Mewtwo X": {
             "Name": "Mewtwo",
             "Type 1": "Psychic",
             "Type 2": "Fighting",
-            "HP": 106,
-            "Attack": 190,
-            "Defense": 100,
-            "Special Attack": 154,
-            "Special Defense": 100,
-            "Speed": 130
+            StatsEnum.HP: 106,
+            StatsEnum.ATTACK: 190,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 154,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 130
         },
         "Mega Mewtwo Y": {
             "Name": "Mewtwo",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 106,
-            "Attack": 150,
-            "Defense": 70,
-            "Special Attack": 194,
-            "Special Defense": 120,
-            "Speed": 140
+            StatsEnum.HP: 106,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 194,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 140
         }
     },
     "0151": {
@@ -2537,12 +2540,12 @@ pocket_monsters_dict = {
             "Name": "Mew",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         }
     },
     "0152": {
@@ -2550,12 +2553,12 @@ pocket_monsters_dict = {
             "Name": "Chikorita",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 49,
-            "Defense": 65,
-            "Special Attack": 49,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 49,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 49,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         }
     },
     "0153": {
@@ -2563,12 +2566,12 @@ pocket_monsters_dict = {
             "Name": "Bayleef",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 62,
-            "Defense": 80,
-            "Special Attack": 63,
-            "Special Defense": 80,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 62,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 60
         }
     },
     "0154": {
@@ -2576,12 +2579,12 @@ pocket_monsters_dict = {
             "Name": "Meganium",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 82,
-            "Defense": 100,
-            "Special Attack": 83,
-            "Special Defense": 100,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 80
         }
     },
     "0155": {
@@ -2589,12 +2592,12 @@ pocket_monsters_dict = {
             "Name": "Cyndaquil",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 39,
-            "Attack": 52,
-            "Defense": 43,
-            "Special Attack": 60,
-            "Special Defense": 50,
-            "Speed": 65
+            StatsEnum.HP: 39,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 43,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 65
         }
     },
     "0156": {
@@ -2602,12 +2605,12 @@ pocket_monsters_dict = {
             "Name": "Quilava",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 58,
-            "Attack": 64,
-            "Defense": 58,
-            "Special Attack": 80,
-            "Special Defense": 65,
-            "Speed": 80
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 80
         }
     },
     "0157": {
@@ -2615,23 +2618,23 @@ pocket_monsters_dict = {
             "Name": "Typhlosion",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 78,
-            "Attack": 84,
-            "Defense": 78,
-            "Special Attack": 109,
-            "Special Defense": 85,
-            "Speed": 100
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 84,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 109,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 100
         },
         "Hisuian Typhlosion": {
             "Name": "Typhlosion",
             "Type 1": "Fire",
             "Type 2": "Ghost",
-            "HP": 73,
-            "Attack": 84,
-            "Defense": 78,
-            "Special Attack": 119,
-            "Special Defense": 85,
-            "Speed": 95
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 84,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 119,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 95
         }
     },
     "0158": {
@@ -2639,12 +2642,12 @@ pocket_monsters_dict = {
             "Name": "Totodile",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 64,
-            "Special Attack": 44,
-            "Special Defense": 48,
-            "Speed": 43
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 64,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 43
         }
     },
     "0159": {
@@ -2652,12 +2655,12 @@ pocket_monsters_dict = {
             "Name": "Croconaw",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 59,
-            "Special Defense": 63,
-            "Speed": 58
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 58
         }
     },
     "0160": {
@@ -2665,12 +2668,12 @@ pocket_monsters_dict = {
             "Name": "Feraligatr",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 105,
-            "Defense": 100,
-            "Special Attack": 79,
-            "Special Defense": 83,
-            "Speed": 78
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 79,
+            StatsEnum.SPECIAL_DEFENSE: 83,
+            StatsEnum.SPEED: 78
         }
     },
     "0161": {
@@ -2678,12 +2681,12 @@ pocket_monsters_dict = {
             "Name": "Sentret",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 46,
-            "Defense": 34,
-            "Special Attack": 35,
-            "Special Defense": 45,
-            "Speed": 20
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 46,
+            StatsEnum.DEFENSE: 34,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 20
         }
     },
     "0162": {
@@ -2691,12 +2694,12 @@ pocket_monsters_dict = {
             "Name": "Furret",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 76,
-            "Defense": 64,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 90
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 76,
+            StatsEnum.DEFENSE: 64,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 90
         }
     },
     "0163": {
@@ -2704,12 +2707,12 @@ pocket_monsters_dict = {
             "Name": "Hoothoot",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 30,
-            "Defense": 30,
-            "Special Attack": 36,
-            "Special Defense": 56,
-            "Speed": 50
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 36,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 50
         }
     },
     "0164": {
@@ -2717,12 +2720,12 @@ pocket_monsters_dict = {
             "Name": "Noctowl",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 100,
-            "Attack": 50,
-            "Defense": 50,
-            "Special Attack": 86,
-            "Special Defense": 96,
-            "Speed": 70
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 86,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 70
         }
     },
     "0165": {
@@ -2730,12 +2733,12 @@ pocket_monsters_dict = {
             "Name": "Ledyba",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 20,
-            "Defense": 30,
-            "Special Attack": 40,
-            "Special Defense": 80,
-            "Speed": 55
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 55
         }
     },
     "0166": {
@@ -2743,12 +2746,12 @@ pocket_monsters_dict = {
             "Name": "Ledian",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 35,
-            "Defense": 50,
-            "Special Attack": 55,
-            "Special Defense": 110,
-            "Speed": 85
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 85
         }
     },
     "0167": {
@@ -2756,12 +2759,12 @@ pocket_monsters_dict = {
             "Name": "Spinarak",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 40,
-            "Attack": 60,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 30
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 30
         }
     },
     "0168": {
@@ -2769,12 +2772,12 @@ pocket_monsters_dict = {
             "Name": "Ariados",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 70,
-            "Attack": 90,
-            "Defense": 70,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 40
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 40
         }
     },
     "0169": {
@@ -2782,12 +2785,12 @@ pocket_monsters_dict = {
             "Name": "Crobat",
             "Type 1": "Poison",
             "Type 2": "Flying",
-            "HP": 85,
-            "Attack": 90,
-            "Defense": 80,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 130
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 130
         }
     },
     "0170": {
@@ -2795,12 +2798,12 @@ pocket_monsters_dict = {
             "Name": "Chinchou",
             "Type 1": "Water",
             "Type 2": "Electric",
-            "HP": 75,
-            "Attack": 38,
-            "Defense": 38,
-            "Special Attack": 56,
-            "Special Defense": 56,
-            "Speed": 67
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 38,
+            StatsEnum.DEFENSE: 38,
+            StatsEnum.SPECIAL_ATTACK: 56,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 67
         }
     },
     "0171": {
@@ -2808,12 +2811,12 @@ pocket_monsters_dict = {
             "Name": "Lanturn",
             "Type 1": "Water",
             "Type 2": "Electric",
-            "HP": 125,
-            "Attack": 58,
-            "Defense": 58,
-            "Special Attack": 76,
-            "Special Defense": 76,
-            "Speed": 67
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 58,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 76,
+            StatsEnum.SPECIAL_DEFENSE: 76,
+            StatsEnum.SPEED: 67
         }
     },
     "0172": {
@@ -2821,12 +2824,12 @@ pocket_monsters_dict = {
             "Name": "Pichu",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 20,
-            "Attack": 40,
-            "Defense": 15,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 60
+            StatsEnum.HP: 20,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 15,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 60
         }
     },
     "0173": {
@@ -2834,12 +2837,12 @@ pocket_monsters_dict = {
             "Name": "Cleffa",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 25,
-            "Defense": 28,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 15
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 28,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 15
         }
     },
     "0174": {
@@ -2847,12 +2850,12 @@ pocket_monsters_dict = {
             "Name": "Igglybuff",
             "Type 1": "Normal",
             "Type 2": "Fairy",
-            "HP": 90,
-            "Attack": 30,
-            "Defense": 15,
-            "Special Attack": 40,
-            "Special Defense": 20,
-            "Speed": 15
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 15,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 15
         }
     },
     "0175": {
@@ -2860,12 +2863,12 @@ pocket_monsters_dict = {
             "Name": "Togepi",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 20,
-            "Defense": 65,
-            "Special Attack": 40,
-            "Special Defense": 65,
-            "Speed": 20
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 20
         }
     },
     "0176": {
@@ -2873,12 +2876,12 @@ pocket_monsters_dict = {
             "Name": "Togetic",
             "Type 1": "Fairy",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 40,
-            "Defense": 85,
-            "Special Attack": 80,
-            "Special Defense": 105,
-            "Speed": 40
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 40
         }
     },
     "0177": {
@@ -2886,12 +2889,12 @@ pocket_monsters_dict = {
             "Name": "Natu",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 50,
-            "Defense": 45,
-            "Special Attack": 70,
-            "Special Defense": 45,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 70
         }
     },
     "0178": {
@@ -2899,12 +2902,12 @@ pocket_monsters_dict = {
             "Name": "Xatu",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 75,
-            "Defense": 70,
-            "Special Attack": 95,
-            "Special Defense": 70,
-            "Speed": 95
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 95
         }
     },
     "0179": {
@@ -2912,12 +2915,12 @@ pocket_monsters_dict = {
             "Name": "Mareep",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 40,
-            "Defense": 40,
-            "Special Attack": 65,
-            "Special Defense": 45,
-            "Speed": 35
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 35
         }
     },
     "0180": {
@@ -2925,12 +2928,12 @@ pocket_monsters_dict = {
             "Name": "Flaaffy",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 55,
-            "Defense": 55,
-            "Special Attack": 80,
-            "Special Defense": 60,
-            "Speed": 45
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 45
         }
     },
     "0181": {
@@ -2938,23 +2941,23 @@ pocket_monsters_dict = {
             "Name": "Ampharos",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 75,
-            "Defense": 85,
-            "Special Attack": 115,
-            "Special Defense": 90,
-            "Speed": 55
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 55
         },
         "Mega Ampharos": {
             "Name": "Ampharos",
             "Type 1": "Electric",
             "Type 2": "Dragon",
-            "HP": 90,
-            "Attack": 95,
-            "Defense": 105,
-            "Special Attack": 165,
-            "Special Defense": 110,
-            "Speed": 45
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 165,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 45
         }
     },
     "0182": {
@@ -2962,12 +2965,12 @@ pocket_monsters_dict = {
             "Name": "Bellossom",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 95,
-            "Special Attack": 90,
-            "Special Defense": 100,
-            "Speed": 50
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 50
         }
     },
     "0183": {
@@ -2975,12 +2978,12 @@ pocket_monsters_dict = {
             "Name": "Marill",
             "Type 1": "Water",
             "Type 2": "Fairy",
-            "HP": 70,
-            "Attack": 20,
-            "Defense": 50,
-            "Special Attack": 20,
-            "Special Defense": 50,
-            "Speed": 40
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 40
         }
     },
     "0184": {
@@ -2988,12 +2991,12 @@ pocket_monsters_dict = {
             "Name": "Azumarill",
             "Type 1": "Water",
             "Type 2": "Fairy",
-            "HP": 100,
-            "Attack": 50,
-            "Defense": 80,
-            "Special Attack": 60,
-            "Special Defense": 80,
-            "Speed": 50
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 50
         }
     },
     "0185": {
@@ -3001,12 +3004,12 @@ pocket_monsters_dict = {
             "Name": "Sudowoodo",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 100,
-            "Defense": 115,
-            "Special Attack": 30,
-            "Special Defense": 65,
-            "Speed": 30
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 30
         }
     },
     "0186": {
@@ -3014,12 +3017,12 @@ pocket_monsters_dict = {
             "Name": "Politoed",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 75,
-            "Defense": 75,
-            "Special Attack": 90,
-            "Special Defense": 100,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 70
         }
     },
     "0187": {
@@ -3027,12 +3030,12 @@ pocket_monsters_dict = {
             "Name": "Hoppip",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 35,
-            "Attack": 35,
-            "Defense": 40,
-            "Special Attack": 35,
-            "Special Defense": 55,
-            "Speed": 50
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 50
         }
     },
     "0188": {
@@ -3040,12 +3043,12 @@ pocket_monsters_dict = {
             "Name": "Skiploom",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 45,
-            "Defense": 50,
-            "Special Attack": 45,
-            "Special Defense": 65,
-            "Speed": 80
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 80
         }
     },
     "0189": {
@@ -3053,12 +3056,12 @@ pocket_monsters_dict = {
             "Name": "Jumpluff",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 55,
-            "Defense": 70,
-            "Special Attack": 55,
-            "Special Defense": 95,
-            "Speed": 110
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 110
         }
     },
     "0190": {
@@ -3066,12 +3069,12 @@ pocket_monsters_dict = {
             "Name": "Aipom",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 70,
-            "Defense": 55,
-            "Special Attack": 40,
-            "Special Defense": 55,
-            "Speed": 85
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 85
         }
     },
     "0191": {
@@ -3079,12 +3082,12 @@ pocket_monsters_dict = {
             "Name": "Sunkern",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 30,
-            "Defense": 30,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 30
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 30
         }
     },
     "0192": {
@@ -3092,12 +3095,12 @@ pocket_monsters_dict = {
             "Name": "Sunflora",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 75,
-            "Defense": 55,
-            "Special Attack": 105,
-            "Special Defense": 85,
-            "Speed": 30
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 30
         }
     },
     "0193": {
@@ -3105,12 +3108,12 @@ pocket_monsters_dict = {
             "Name": "Yanma",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 65,
-            "Defense": 45,
-            "Special Attack": 75,
-            "Special Defense": 45,
-            "Speed": 95
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 95
         }
     },
     "0194": {
@@ -3118,23 +3121,23 @@ pocket_monsters_dict = {
             "Name": "Wooper",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 55,
-            "Attack": 45,
-            "Defense": 45,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 15
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 15
         },
         "Paldean Wooper": {
             "Name": "Wooper",
             "Type 1": "Poison",
             "Type 2": "Ground",
-            "HP": 55,
-            "Attack": 45,
-            "Defense": 45,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 15
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 15
         }
     },
     "0195": {
@@ -3142,12 +3145,12 @@ pocket_monsters_dict = {
             "Name": "Quagsire",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 95,
-            "Attack": 85,
-            "Defense": 85,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 35
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 35
         }
     },
     "0196": {
@@ -3155,12 +3158,12 @@ pocket_monsters_dict = {
             "Name": "Espeon",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 130,
-            "Special Defense": 95,
-            "Speed": 110
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 110
         }
     },
     "0197": {
@@ -3168,12 +3171,12 @@ pocket_monsters_dict = {
             "Name": "Umbreon",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 65,
-            "Defense": 110,
-            "Special Attack": 60,
-            "Special Defense": 130,
-            "Speed": 65
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 65
         }
     },
     "0198": {
@@ -3181,12 +3184,12 @@ pocket_monsters_dict = {
             "Name": "Murkrow",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 42,
-            "Special Attack": 85,
-            "Special Defense": 42,
-            "Speed": 91
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 42,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 42,
+            StatsEnum.SPEED: 91
         }
     },
     "0199": {
@@ -3194,23 +3197,23 @@ pocket_monsters_dict = {
             "Name": "Slowking",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 95,
-            "Attack": 75,
-            "Defense": 80,
-            "Special Attack": 100,
-            "Special Defense": 110,
-            "Speed": 30
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 30
         },
         "Galarian Slowking": {
             "Name": "Slowking",
             "Type 1": "Poison",
             "Type 2": "Psychic",
-            "HP": 95,
-            "Attack": 65,
-            "Defense": 80,
-            "Special Attack": 110,
-            "Special Defense": 110,
-            "Speed": 30
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 30
         }
     },
     "0200": {
@@ -3218,12 +3221,12 @@ pocket_monsters_dict = {
             "Name": "Misdreavus",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 85,
-            "Special Defense": 85,
-            "Speed": 85
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 85
         }
     },
     "0201": {
@@ -3231,12 +3234,12 @@ pocket_monsters_dict = {
             "Name": "Unown",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 48,
-            "Attack": 72,
-            "Defense": 48,
-            "Special Attack": 72,
-            "Special Defense": 48,
-            "Speed": 48
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 72,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 48
         }
     },
     "0202": {
@@ -3244,12 +3247,12 @@ pocket_monsters_dict = {
             "Name": "Wobbuffet",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 190,
-            "Attack": 33,
-            "Defense": 58,
-            "Special Attack": 33,
-            "Special Defense": 58,
-            "Speed": 33
+            StatsEnum.HP: 190,
+            StatsEnum.ATTACK: 33,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 33,
+            StatsEnum.SPECIAL_DEFENSE: 58,
+            StatsEnum.SPEED: 33
         }
     },
     "0203": {
@@ -3257,12 +3260,12 @@ pocket_monsters_dict = {
             "Name": "Girafarig",
             "Type 1": "Normal",
             "Type 2": "Psychic",
-            "HP": 70,
-            "Attack": 80,
-            "Defense": 65,
-            "Special Attack": 90,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "0204": {
@@ -3270,12 +3273,12 @@ pocket_monsters_dict = {
             "Name": "Pineco",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 90,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 15
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 15
         }
     },
     "0205": {
@@ -3283,12 +3286,12 @@ pocket_monsters_dict = {
             "Name": "Forretress",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 75,
-            "Attack": 90,
-            "Defense": 140,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 40
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 40
         }
     },
     "0206": {
@@ -3296,12 +3299,12 @@ pocket_monsters_dict = {
             "Name": "Dunsparce",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         }
     },
     "0207": {
@@ -3309,12 +3312,12 @@ pocket_monsters_dict = {
             "Name": "Gligar",
             "Type 1": "Ground",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 75,
-            "Defense": 105,
-            "Special Attack": 35,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "0208": {
@@ -3322,23 +3325,23 @@ pocket_monsters_dict = {
             "Name": "Steelix",
             "Type 1": "Steel",
             "Type 2": "Ground",
-            "HP": 75,
-            "Attack": 85,
-            "Defense": 200,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 30
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 200,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 30
         },
         "Mega Steelix": {
             "Name": "Steelix",
             "Type 1": "Steel",
             "Type 2": "Ground",
-            "HP": 75,
-            "Attack": 125,
-            "Defense": 230,
-            "Special Attack": 55,
-            "Special Defense": 95,
-            "Speed": 30
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 230,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 30
         }
     },
     "0209": {
@@ -3346,12 +3349,12 @@ pocket_monsters_dict = {
             "Name": "Snubbull",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 30
         }
     },
     "0210": {
@@ -3359,12 +3362,12 @@ pocket_monsters_dict = {
             "Name": "Granbull",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 120,
-            "Defense": 75,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 45
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 45
         }
     },
     "0211": {
@@ -3372,23 +3375,23 @@ pocket_monsters_dict = {
             "Name": "Qwilfish",
             "Type 1": "Water",
             "Type 2": "Poison",
-            "HP": 65,
-            "Attack": 95,
-            "Defense": 85,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 85
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 85
         },
         "Hisuian Qwilfish": {
             "Name": "Qwilfish",
             "Type 1": "Dark",
             "Type 2": "Poison",
-            "HP": 65,
-            "Attack": 95,
-            "Defense": 85,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 85
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 85
         }
     },
     "0212": {
@@ -3396,23 +3399,23 @@ pocket_monsters_dict = {
             "Name": "Scizor",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 70,
-            "Attack": 130,
-            "Defense": 100,
-            "Special Attack": 55,
-            "Special Defense": 80,
-            "Speed": 65
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 65
         },
         "Mega Scizor": {
             "Name": "Scizor",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 70,
-            "Attack": 150,
-            "Defense": 140,
-            "Special Attack": 65,
-            "Special Defense": 100,
-            "Speed": 75
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 75
         }
     },
     "0213": {
@@ -3420,12 +3423,12 @@ pocket_monsters_dict = {
             "Name": "Shuckle",
             "Type 1": "Bug",
             "Type 2": "Rock",
-            "HP": 20,
-            "Attack": 10,
-            "Defense": 230,
-            "Special Attack": 10,
-            "Special Defense": 230,
-            "Speed": 5
+            StatsEnum.HP: 20,
+            StatsEnum.ATTACK: 10,
+            StatsEnum.DEFENSE: 230,
+            StatsEnum.SPECIAL_ATTACK: 10,
+            StatsEnum.SPECIAL_DEFENSE: 230,
+            StatsEnum.SPEED: 5
         }
     },
     "0214": {
@@ -3433,23 +3436,23 @@ pocket_monsters_dict = {
             "Name": "Heracross",
             "Type 1": "Bug",
             "Type 2": "Fighting",
-            "HP": 80,
-            "Attack": 125,
-            "Defense": 75,
-            "Special Attack": 40,
-            "Special Defense": 95,
-            "Speed": 85
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 85
         },
         "Mega Heracross": {
             "Name": "Heracross",
             "Type 1": "Bug",
             "Type 2": "Fighting",
-            "HP": 80,
-            "Attack": 185,
-            "Defense": 115,
-            "Special Attack": 40,
-            "Special Defense": 105,
-            "Speed": 75
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 185,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 75
         }
     },
     "0215": {
@@ -3457,23 +3460,23 @@ pocket_monsters_dict = {
             "Name": "Sneasel",
             "Type 1": "Dark",
             "Type 2": "Ice",
-            "HP": 55,
-            "Attack": 95,
-            "Defense": 55,
-            "Special Attack": 35,
-            "Special Defense": 75,
-            "Speed": 115
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 115
         },
         "Hisuian Sneasel": {
             "Name": "Sneasel",
             "Type 1": "Fighting",
             "Type 2": "Poison",
-            "HP": 55,
-            "Attack": 95,
-            "Defense": 55,
-            "Special Attack": 35,
-            "Special Defense": 75,
-            "Speed": 115
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 115
         }
     },
     "0216": {
@@ -3481,12 +3484,12 @@ pocket_monsters_dict = {
             "Name": "Teddiursa",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 40
         }
     },
     "0217": {
@@ -3494,12 +3497,12 @@ pocket_monsters_dict = {
             "Name": "Ursaring",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 130,
-            "Defense": 75,
-            "Special Attack": 75,
-            "Special Defense": 75,
-            "Speed": 55
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 55
         }
     },
     "0218": {
@@ -3507,12 +3510,12 @@ pocket_monsters_dict = {
             "Name": "Slugma",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 40,
-            "Special Attack": 70,
-            "Special Defense": 40,
-            "Speed": 20
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 20
         }
     },
     "0219": {
@@ -3520,12 +3523,12 @@ pocket_monsters_dict = {
             "Name": "Magcargo",
             "Type 1": "Fire",
             "Type 2": "Rock",
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 120,
-            "Special Attack": 90,
-            "Special Defense": 80,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 30
         }
     },
     "0220": {
@@ -3533,12 +3536,12 @@ pocket_monsters_dict = {
             "Name": "Swinub",
             "Type 1": "Ice",
             "Type 2": "Ground",
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 40,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 50
         }
     },
     "0221": {
@@ -3546,12 +3549,12 @@ pocket_monsters_dict = {
             "Name": "Piloswine",
             "Type 1": "Ice",
             "Type 2": "Ground",
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 80,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 50
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 50
         }
     },
     "0222": {
@@ -3559,23 +3562,23 @@ pocket_monsters_dict = {
             "Name": "Corsola",
             "Type 1": "Water",
             "Type 2": "Rock",
-            "HP": 65,
-            "Attack": 55,
-            "Defense": 95,
-            "Special Attack": 65,
-            "Special Defense": 95,
-            "Speed": 35
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 35
         },
         "Galarian Corsola": {
             "Name": "Corsola",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 55,
-            "Defense": 100,
-            "Special Attack": 65,
-            "Special Defense": 100,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 30
         }
     },
     "0223": {
@@ -3583,12 +3586,12 @@ pocket_monsters_dict = {
             "Name": "Remoraid",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 65,
-            "Defense": 35,
-            "Special Attack": 65,
-            "Special Defense": 35,
-            "Speed": 65
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 65
         }
     },
     "0224": {
@@ -3596,12 +3599,12 @@ pocket_monsters_dict = {
             "Name": "Octillery",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 105,
-            "Defense": 75,
-            "Special Attack": 105,
-            "Special Defense": 75,
-            "Speed": 45
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 45
         }
     },
     "0225": {
@@ -3609,12 +3612,12 @@ pocket_monsters_dict = {
             "Name": "Delibird",
             "Type 1": "Ice",
             "Type 2": "Flying",
-            "HP": 45,
-            "Attack": 55,
-            "Defense": 45,
-            "Special Attack": 65,
-            "Special Defense": 45,
-            "Speed": 75
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 75
         }
     },
     "0226": {
@@ -3622,12 +3625,12 @@ pocket_monsters_dict = {
             "Name": "Mantine",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 85,
-            "Attack": 40,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 140,
-            "Speed": 70
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 140,
+            StatsEnum.SPEED: 70
         }
     },
     "0227": {
@@ -3635,12 +3638,12 @@ pocket_monsters_dict = {
             "Name": "Skarmory",
             "Type 1": "Steel",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 80,
-            "Defense": 140,
-            "Special Attack": 40,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         }
     },
     "0228": {
@@ -3648,12 +3651,12 @@ pocket_monsters_dict = {
             "Name": "Houndour",
             "Type 1": "Dark",
             "Type 2": "Fire",
-            "HP": 45,
-            "Attack": 60,
-            "Defense": 30,
-            "Special Attack": 80,
-            "Special Defense": 50,
-            "Speed": 65
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 65
         }
     },
     "0229": {
@@ -3661,23 +3664,23 @@ pocket_monsters_dict = {
             "Name": "Houndoom",
             "Type 1": "Dark",
             "Type 2": "Fire",
-            "HP": 75,
-            "Attack": 90,
-            "Defense": 50,
-            "Special Attack": 110,
-            "Special Defense": 80,
-            "Speed": 95
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 95
         },
         "Mega Houndoom": {
             "Name": "Houndoom",
             "Type 1": "Dark",
             "Type 2": "Fire",
-            "HP": 75,
-            "Attack": 90,
-            "Defense": 90,
-            "Special Attack": 140,
-            "Special Defense": 90,
-            "Speed": 115
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 115
         }
     },
     "0230": {
@@ -3685,12 +3688,12 @@ pocket_monsters_dict = {
             "Name": "Kingdra",
             "Type 1": "Water",
             "Type 2": "Dragon",
-            "HP": 75,
-            "Attack": 95,
-            "Defense": 95,
-            "Special Attack": 95,
-            "Special Defense": 95,
-            "Speed": 85
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 85
         }
     },
     "0231": {
@@ -3698,12 +3701,12 @@ pocket_monsters_dict = {
             "Name": "Phanpy",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 40
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 40
         }
     },
     "0232": {
@@ -3711,12 +3714,12 @@ pocket_monsters_dict = {
             "Name": "Donphan",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 120,
-            "Defense": 120,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 50
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 50
         }
     },
     "0233": {
@@ -3724,12 +3727,12 @@ pocket_monsters_dict = {
             "Name": "Porygon2",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 80,
-            "Defense": 90,
-            "Special Attack": 105,
-            "Special Defense": 95,
-            "Speed": 60
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 60
         }
     },
     "0234": {
@@ -3737,12 +3740,12 @@ pocket_monsters_dict = {
             "Name": "Stantler",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 73,
-            "Attack": 95,
-            "Defense": 62,
-            "Special Attack": 85,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "0235": {
@@ -3750,12 +3753,12 @@ pocket_monsters_dict = {
             "Name": "Smeargle",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 20,
-            "Defense": 35,
-            "Special Attack": 20,
-            "Special Defense": 45,
-            "Speed": 75
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 75
         }
     },
     "0236": {
@@ -3763,12 +3766,12 @@ pocket_monsters_dict = {
             "Name": "Tyrogue",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 35,
-            "Defense": 35,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 35
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 35
         }
     },
     "0237": {
@@ -3776,12 +3779,12 @@ pocket_monsters_dict = {
             "Name": "Hitmontop",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 95,
-            "Defense": 95,
-            "Special Attack": 35,
-            "Special Defense": 110,
-            "Speed": 70
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 70
         }
     },
     "0238": {
@@ -3789,12 +3792,12 @@ pocket_monsters_dict = {
             "Name": "Smoochum",
             "Type 1": "Ice",
             "Type 2": "Psychic",
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 15,
-            "Special Attack": 85,
-            "Special Defense": 65,
-            "Speed": 65
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 15,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 65
         }
     },
     "0239": {
@@ -3802,12 +3805,12 @@ pocket_monsters_dict = {
             "Name": "Elekid",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 63,
-            "Defense": 37,
-            "Special Attack": 65,
-            "Special Defense": 55,
-            "Speed": 95
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 37,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 95
         }
     },
     "0240": {
@@ -3815,12 +3818,12 @@ pocket_monsters_dict = {
             "Name": "Magby",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 75,
-            "Defense": 37,
-            "Special Attack": 70,
-            "Special Defense": 55,
-            "Speed": 83
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 37,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 83
         }
     },
     "0241": {
@@ -3828,12 +3831,12 @@ pocket_monsters_dict = {
             "Name": "Miltank",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 80,
-            "Defense": 105,
-            "Special Attack": 40,
-            "Special Defense": 70,
-            "Speed": 100
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 100
         }
     },
     "0242": {
@@ -3841,12 +3844,12 @@ pocket_monsters_dict = {
             "Name": "Blissey",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 255,
-            "Attack": 10,
-            "Defense": 10,
-            "Special Attack": 75,
-            "Special Defense": 135,
-            "Speed": 55
+            StatsEnum.HP: 255,
+            StatsEnum.ATTACK: 10,
+            StatsEnum.DEFENSE: 10,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 55
         }
     },
     "0243": {
@@ -3854,12 +3857,12 @@ pocket_monsters_dict = {
             "Name": "Raikou",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 85,
-            "Defense": 75,
-            "Special Attack": 115,
-            "Special Defense": 100,
-            "Speed": 115
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 115
         }
     },
     "0244": {
@@ -3867,12 +3870,12 @@ pocket_monsters_dict = {
             "Name": "Entei",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 115,
-            "Attack": 115,
-            "Defense": 85,
-            "Special Attack": 90,
-            "Special Defense": 75,
-            "Speed": 100
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 100
         }
     },
     "0245": {
@@ -3880,12 +3883,12 @@ pocket_monsters_dict = {
             "Name": "Suicune",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 75,
-            "Defense": 115,
-            "Special Attack": 90,
-            "Special Defense": 115,
-            "Speed": 85
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 85
         }
     },
     "0246": {
@@ -3893,12 +3896,12 @@ pocket_monsters_dict = {
             "Name": "Larvitar",
             "Type 1": "Rock",
             "Type 2": "Ground",
-            "HP": 50,
-            "Attack": 64,
-            "Defense": 50,
-            "Special Attack": 45,
-            "Special Defense": 50,
-            "Speed": 41
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 41
         }
     },
     "0247": {
@@ -3906,12 +3909,12 @@ pocket_monsters_dict = {
             "Name": "Pupitar",
             "Type 1": "Rock",
             "Type 2": "Ground",
-            "HP": 70,
-            "Attack": 84,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 70,
-            "Speed": 51
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 84,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 51
         }
     },
     "0248": {
@@ -3919,23 +3922,23 @@ pocket_monsters_dict = {
             "Name": "Tyranitar",
             "Type 1": "Rock",
             "Type 2": "Dark",
-            "HP": 100,
-            "Attack": 134,
-            "Defense": 110,
-            "Special Attack": 95,
-            "Special Defense": 100,
-            "Speed": 61
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 134,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 61
         },
         "Mega Tyranitar": {
             "Name": "Tyranitar",
             "Type 1": "Rock",
             "Type 2": "Dark",
-            "HP": 100,
-            "Attack": 164,
-            "Defense": 150,
-            "Special Attack": 95,
-            "Special Defense": 120,
-            "Speed": 71
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 164,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 71
         }
     },
     "0249": {
@@ -3943,12 +3946,12 @@ pocket_monsters_dict = {
             "Name": "Lugia",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 106,
-            "Attack": 90,
-            "Defense": 130,
-            "Special Attack": 90,
-            "Special Defense": 154,
-            "Speed": 110
+            StatsEnum.HP: 106,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 154,
+            StatsEnum.SPEED: 110
         }
     },
     "0250": {
@@ -3956,12 +3959,12 @@ pocket_monsters_dict = {
             "Name": "Ho-oh",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 106,
-            "Attack": 130,
-            "Defense": 90,
-            "Special Attack": 110,
-            "Special Defense": 154,
-            "Speed": 90
+            StatsEnum.HP: 106,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 154,
+            StatsEnum.SPEED: 90
         }
     },
     "0251": {
@@ -3969,12 +3972,12 @@ pocket_monsters_dict = {
             "Name": "Celebi",
             "Type 1": "Psychic",
             "Type 2": "Grass",
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         }
     },
     "0252": {
@@ -3982,12 +3985,12 @@ pocket_monsters_dict = {
             "Name": "Treecko",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 35,
-            "Special Attack": 65,
-            "Special Defense": 55,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 70
         }
     },
     "0253": {
@@ -3995,12 +3998,12 @@ pocket_monsters_dict = {
             "Name": "Grovyle",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 45,
-            "Special Attack": 85,
-            "Special Defense": 65,
-            "Speed": 95
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 95
         }
     },
     "0254": {
@@ -4008,23 +4011,23 @@ pocket_monsters_dict = {
             "Name": "Sceptile",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 65,
-            "Special Attack": 105,
-            "Special Defense": 85,
-            "Speed": 120
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 120
         },
         "Mega Sceptile": {
             "Name": "Sceptile",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 70,
-            "Attack": 110,
-            "Defense": 75,
-            "Special Attack": 145,
-            "Special Defense": 85,
-            "Speed": 145
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 145
         }
     },
     "0255": {
@@ -4032,12 +4035,12 @@ pocket_monsters_dict = {
             "Name": "Torchic",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 60,
-            "Defense": 40,
-            "Special Attack": 70,
-            "Special Defense": 50,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 45
         }
     },
     "0256": {
@@ -4045,12 +4048,12 @@ pocket_monsters_dict = {
             "Name": "Combusken",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 60,
-            "Special Attack": 85,
-            "Special Defense": 60,
-            "Speed": 55
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 55
         }
     },
     "0257": {
@@ -4058,23 +4061,23 @@ pocket_monsters_dict = {
             "Name": "Blaziken",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 70,
-            "Special Attack": 110,
-            "Special Defense": 70,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 80
         },
         "Mega Blaziken": {
             "Name": "Blaziken",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 80,
-            "Attack": 160,
-            "Defense": 80,
-            "Special Attack": 130,
-            "Special Defense": 80,
-            "Speed": 100
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 100
         }
     },
     "0258": {
@@ -4082,12 +4085,12 @@ pocket_monsters_dict = {
             "Name": "Mudkip",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 70,
-            "Defense": 50,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 40
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 40
         }
     },
     "0259": {
@@ -4095,12 +4098,12 @@ pocket_monsters_dict = {
             "Name": "Marshtomp",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 70,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 50
         }
     },
     "0260": {
@@ -4108,23 +4111,23 @@ pocket_monsters_dict = {
             "Name": "Swampert",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 100,
-            "Attack": 110,
-            "Defense": 90,
-            "Special Attack": 85,
-            "Special Defense": 90,
-            "Speed": 60
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 60
         },
         "Mega Swampert": {
             "Name": "Swampert",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 100,
-            "Attack": 150,
-            "Defense": 110,
-            "Special Attack": 95,
-            "Special Defense": 110,
-            "Speed": 70
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 70
         }
     },
     "0261": {
@@ -4132,12 +4135,12 @@ pocket_monsters_dict = {
             "Name": "Poochyena",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 55,
-            "Defense": 35,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 35
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 35
         }
     },
     "0262": {
@@ -4145,12 +4148,12 @@ pocket_monsters_dict = {
             "Name": "Mightyena",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 90,
-            "Defense": 70,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 70
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 70
         }
     },
     "0263": {
@@ -4158,23 +4161,23 @@ pocket_monsters_dict = {
             "Name": "Zigzagoon",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 30,
-            "Defense": 41,
-            "Special Attack": 30,
-            "Special Defense": 41,
-            "Speed": 60
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 41,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 41,
+            StatsEnum.SPEED: 60
         },
         "Galarian Zigzagoon": {
             "Name": "Zigzagoon",
             "Type 1": "Dark",
             "Type 2": "Normal",
-            "HP": 38,
-            "Attack": 30,
-            "Defense": 41,
-            "Special Attack": 30,
-            "Special Defense": 41,
-            "Speed": 60
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 41,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 41,
+            StatsEnum.SPEED: 60
         }
     },
     "0264": {
@@ -4182,23 +4185,23 @@ pocket_monsters_dict = {
             "Name": "Linoone",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 78,
-            "Attack": 70,
-            "Defense": 61,
-            "Special Attack": 50,
-            "Special Defense": 61,
-            "Speed": 100
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 61,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 61,
+            StatsEnum.SPEED: 100
         },
         "Galarian Linoone": {
             "Name": "Linoone",
             "Type 1": "Dark",
             "Type 2": "Normal",
-            "HP": 78,
-            "Attack": 70,
-            "Defense": 61,
-            "Special Attack": 50,
-            "Special Defense": 61,
-            "Speed": 100
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 61,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 61,
+            StatsEnum.SPEED: 100
         }
     },
     "0265": {
@@ -4206,12 +4209,12 @@ pocket_monsters_dict = {
             "Name": "Wurmple",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 45,
-            "Defense": 35,
-            "Special Attack": 20,
-            "Special Defense": 30,
-            "Speed": 20
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 20
         }
     },
     "0266": {
@@ -4219,12 +4222,12 @@ pocket_monsters_dict = {
             "Name": "Silcoon",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 35,
-            "Defense": 55,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 15
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 15
         }
     },
     "0267": {
@@ -4232,12 +4235,12 @@ pocket_monsters_dict = {
             "Name": "Beautifly",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 70,
-            "Defense": 50,
-            "Special Attack": 100,
-            "Special Defense": 50,
-            "Speed": 65
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 65
         }
     },
     "0268": {
@@ -4245,12 +4248,12 @@ pocket_monsters_dict = {
             "Name": "Cascoon",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 35,
-            "Defense": 55,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 15
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 15
         }
     },
     "0269": {
@@ -4258,12 +4261,12 @@ pocket_monsters_dict = {
             "Name": "Dustox",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 70,
-            "Special Attack": 50,
-            "Special Defense": 90,
-            "Speed": 65
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 65
         }
     },
     "0270": {
@@ -4271,12 +4274,12 @@ pocket_monsters_dict = {
             "Name": "Lotad",
             "Type 1": "Water",
             "Type 2": "Grass",
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 30,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 30
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 30
         }
     },
     "0271": {
@@ -4284,12 +4287,12 @@ pocket_monsters_dict = {
             "Name": "Lombre",
             "Type 1": "Water",
             "Type 2": "Grass",
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 50,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 50
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 50
         }
     },
     "0272": {
@@ -4297,12 +4300,12 @@ pocket_monsters_dict = {
             "Name": "Ludicolo",
             "Type 1": "Water",
             "Type 2": "Grass",
-            "HP": 80,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 90,
-            "Special Defense": 100,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 70
         }
     },
     "0273": {
@@ -4310,12 +4313,12 @@ pocket_monsters_dict = {
             "Name": "Seedot",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 50,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 30
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 30
         }
     },
     "0274": {
@@ -4323,12 +4326,12 @@ pocket_monsters_dict = {
             "Name": "Nuzleaf",
             "Type 1": "Grass",
             "Type 2": "Dark",
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 40,
-            "Special Attack": 60,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         }
     },
     "0275": {
@@ -4336,12 +4339,12 @@ pocket_monsters_dict = {
             "Name": "Shiftry",
             "Type 1": "Grass",
             "Type 2": "Dark",
-            "HP": 90,
-            "Attack": 100,
-            "Defense": 60,
-            "Special Attack": 90,
-            "Special Defense": 60,
-            "Speed": 80
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 80
         }
     },
     "0276": {
@@ -4349,12 +4352,12 @@ pocket_monsters_dict = {
             "Name": "Taillow",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 55,
-            "Defense": 30,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 85
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 85
         }
     },
     "0277": {
@@ -4362,12 +4365,12 @@ pocket_monsters_dict = {
             "Name": "Swellow",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 60,
-            "Special Attack": 75,
-            "Special Defense": 50,
-            "Speed": 125
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 125
         }
     },
     "0278": {
@@ -4375,12 +4378,12 @@ pocket_monsters_dict = {
             "Name": "Wingull",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 30,
-            "Special Attack": 55,
-            "Special Defense": 30,
-            "Speed": 85
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 85
         }
     },
     "0279": {
@@ -4388,12 +4391,12 @@ pocket_monsters_dict = {
             "Name": "Pelipper",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 100,
-            "Special Attack": 95,
-            "Special Defense": 70,
-            "Speed": 65
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 65
         }
     },
     "0280": {
@@ -4401,12 +4404,12 @@ pocket_monsters_dict = {
             "Name": "Ralts",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 28,
-            "Attack": 25,
-            "Defense": 25,
-            "Special Attack": 45,
-            "Special Defense": 35,
-            "Speed": 40
+            StatsEnum.HP: 28,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 25,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 40
         }
     },
     "0281": {
@@ -4414,12 +4417,12 @@ pocket_monsters_dict = {
             "Name": "Kirlia",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 38,
-            "Attack": 35,
-            "Defense": 35,
-            "Special Attack": 65,
-            "Special Defense": 55,
-            "Speed": 50
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 50
         }
     },
     "0282": {
@@ -4427,23 +4430,23 @@ pocket_monsters_dict = {
             "Name": "Gardevoir",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 68,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 125,
-            "Special Defense": 115,
-            "Speed": 80
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 80
         },
         "Mega Gardevoir": {
             "Name": "Gardevoir",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 68,
-            "Attack": 85,
-            "Defense": 65,
-            "Special Attack": 165,
-            "Special Defense": 135,
-            "Speed": 100
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 165,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 100
         }
     },
     "0283": {
@@ -4451,12 +4454,12 @@ pocket_monsters_dict = {
             "Name": "Surskit",
             "Type 1": "Bug",
             "Type 2": "Water",
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 32,
-            "Special Attack": 50,
-            "Special Defense": 52,
-            "Speed": 65
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 32,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 52,
+            StatsEnum.SPEED: 65
         }
     },
     "0284": {
@@ -4464,12 +4467,12 @@ pocket_monsters_dict = {
             "Name": "Masquerain",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 60,
-            "Defense": 62,
-            "Special Attack": 100,
-            "Special Defense": 82,
-            "Speed": 80
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 82,
+            StatsEnum.SPEED: 80
         }
     },
     "0285": {
@@ -4477,12 +4480,12 @@ pocket_monsters_dict = {
             "Name": "Shroomish",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 40,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 60,
-            "Speed": 35
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 35
         }
     },
     "0286": {
@@ -4490,12 +4493,12 @@ pocket_monsters_dict = {
             "Name": "Breloom",
             "Type 1": "Grass",
             "Type 2": "Fighting",
-            "HP": 60,
-            "Attack": 130,
-            "Defense": 80,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 70
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 70
         }
     },
     "0287": {
@@ -4503,12 +4506,12 @@ pocket_monsters_dict = {
             "Name": "Slakoth",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 30
         }
     },
     "0288": {
@@ -4516,12 +4519,12 @@ pocket_monsters_dict = {
             "Name": "Vigoroth",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 90
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 90
         }
     },
     "0289": {
@@ -4529,12 +4532,12 @@ pocket_monsters_dict = {
             "Name": "Slaking",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 150,
-            "Attack": 160,
-            "Defense": 100,
-            "Special Attack": 95,
-            "Special Defense": 65,
-            "Speed": 100
+            StatsEnum.HP: 150,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 100
         }
     },
     "0290": {
@@ -4542,12 +4545,12 @@ pocket_monsters_dict = {
             "Name": "Nincada",
             "Type 1": "Bug",
             "Type 2": "Ground",
-            "HP": 31,
-            "Attack": 45,
-            "Defense": 90,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 40
+            StatsEnum.HP: 31,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 40
         }
     },
     "0291": {
@@ -4555,12 +4558,12 @@ pocket_monsters_dict = {
             "Name": "Ninjask",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 61,
-            "Attack": 90,
-            "Defense": 45,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 160
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 160
         }
     },
     "0292": {
@@ -4568,12 +4571,12 @@ pocket_monsters_dict = {
             "Name": "Shedinja",
             "Type 1": "Bug",
             "Type 2": "Ghost",
-            "HP": 1,
-            "Attack": 90,
-            "Defense": 45,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 40
+            StatsEnum.HP: 1,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 40
         }
     },
     "0293": {
@@ -4581,12 +4584,12 @@ pocket_monsters_dict = {
             "Name": "Whismur",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 64,
-            "Attack": 51,
-            "Defense": 23,
-            "Special Attack": 51,
-            "Special Defense": 23,
-            "Speed": 28
+            StatsEnum.HP: 64,
+            StatsEnum.ATTACK: 51,
+            StatsEnum.DEFENSE: 23,
+            StatsEnum.SPECIAL_ATTACK: 51,
+            StatsEnum.SPECIAL_DEFENSE: 23,
+            StatsEnum.SPEED: 28
         }
     },
     "0294": {
@@ -4594,12 +4597,12 @@ pocket_monsters_dict = {
             "Name": "Loudred",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 84,
-            "Attack": 71,
-            "Defense": 43,
-            "Special Attack": 71,
-            "Special Defense": 43,
-            "Speed": 48
+            StatsEnum.HP: 84,
+            StatsEnum.ATTACK: 71,
+            StatsEnum.DEFENSE: 43,
+            StatsEnum.SPECIAL_ATTACK: 71,
+            StatsEnum.SPECIAL_DEFENSE: 43,
+            StatsEnum.SPEED: 48
         }
     },
     "0295": {
@@ -4607,12 +4610,12 @@ pocket_monsters_dict = {
             "Name": "Exploud",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 104,
-            "Attack": 91,
-            "Defense": 63,
-            "Special Attack": 91,
-            "Special Defense": 73,
-            "Speed": 68
+            StatsEnum.HP: 104,
+            StatsEnum.ATTACK: 91,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 91,
+            StatsEnum.SPECIAL_DEFENSE: 73,
+            StatsEnum.SPEED: 68
         }
     },
     "0296": {
@@ -4620,12 +4623,12 @@ pocket_monsters_dict = {
             "Name": "Makuhita",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 72,
-            "Attack": 60,
-            "Defense": 30,
-            "Special Attack": 20,
-            "Special Defense": 30,
-            "Speed": 25
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 25
         }
     },
     "0297": {
@@ -4633,12 +4636,12 @@ pocket_monsters_dict = {
             "Name": "Hariyama",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 144,
-            "Attack": 120,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 60,
-            "Speed": 50
+            StatsEnum.HP: 144,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 50
         }
     },
     "0298": {
@@ -4646,12 +4649,12 @@ pocket_monsters_dict = {
             "Name": "Azurill",
             "Type 1": "Normal",
             "Type 2": "Fairy",
-            "HP": 50,
-            "Attack": 20,
-            "Defense": 40,
-            "Special Attack": 20,
-            "Special Defense": 40,
-            "Speed": 20
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 20
         }
     },
     "0299": {
@@ -4659,12 +4662,12 @@ pocket_monsters_dict = {
             "Name": "Nosepass",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 45,
-            "Defense": 135,
-            "Special Attack": 45,
-            "Special Defense": 90,
-            "Speed": 30
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 135,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 30
         }
     },
     "0300": {
@@ -4672,12 +4675,12 @@ pocket_monsters_dict = {
             "Name": "Skitty",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 45,
-            "Defense": 45,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 50
         }
     },
     "0301": {
@@ -4685,12 +4688,12 @@ pocket_monsters_dict = {
             "Name": "Delcatty",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 90
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 90
         }
     },
     "0302": {
@@ -4698,23 +4701,23 @@ pocket_monsters_dict = {
             "Name": "Sableye",
             "Type 1": "Dark",
             "Type 2": "Ghost",
-            "HP": 50,
-            "Attack": 75,
-            "Defense": 75,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 50
         },
         "Mega Sableye": {
             "Name": "Sableye",
             "Type 1": "Dark",
             "Type 2": "Ghost",
-            "HP": 50,
-            "Attack": 85,
-            "Defense": 125,
-            "Special Attack": 85,
-            "Special Defense": 115,
-            "Speed": 20
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 20
         }
     },
     "0303": {
@@ -4722,23 +4725,23 @@ pocket_monsters_dict = {
             "Name": "Mawile",
             "Type 1": "Steel",
             "Type 2": "Fairy",
-            "HP": 50,
-            "Attack": 85,
-            "Defense": 85,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 50
         },
         "Mega Mawile": {
             "Name": "Mawile",
             "Type 1": "Steel",
             "Type 2": "Fairy",
-            "HP": 50,
-            "Attack": 105,
-            "Defense": 125,
-            "Special Attack": 55,
-            "Special Defense": 95,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 50
         }
     },
     "0304": {
@@ -4746,12 +4749,12 @@ pocket_monsters_dict = {
             "Name": "Aron",
             "Type 1": "Steel",
             "Type 2": "Rock",
-            "HP": 50,
-            "Attack": 70,
-            "Defense": 100,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 30
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 30
         }
     },
     "0305": {
@@ -4759,12 +4762,12 @@ pocket_monsters_dict = {
             "Name": "Lairon",
             "Type 1": "Steel",
             "Type 2": "Rock",
-            "HP": 60,
-            "Attack": 90,
-            "Defense": 140,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 40
         }
     },
     "0306": {
@@ -4772,23 +4775,23 @@ pocket_monsters_dict = {
             "Name": "Aggron",
             "Type 1": "Steel",
             "Type 2": "Rock",
-            "HP": 70,
-            "Attack": 110,
-            "Defense": 180,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 180,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 50
         },
         "Mega Aggron": {
             "Name": "Aggron",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 140,
-            "Defense": 230,
-            "Special Attack": 60,
-            "Special Defense": 80,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 230,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 50
         }
     },
     "0307": {
@@ -4796,12 +4799,12 @@ pocket_monsters_dict = {
             "Name": "Meditite",
             "Type 1": "Fighting",
             "Type 2": "Psychic",
-            "HP": 30,
-            "Attack": 40,
-            "Defense": 55,
-            "Special Attack": 40,
-            "Special Defense": 55,
-            "Speed": 60
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 60
         }
     },
     "0308": {
@@ -4809,23 +4812,23 @@ pocket_monsters_dict = {
             "Name": "Medicham",
             "Type 1": "Fighting",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 75,
-            "Special Attack": 60,
-            "Special Defense": 75,
-            "Speed": 80
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 80
         },
         "Mega Medicham": {
             "Name": "Medicham",
             "Type 1": "Fighting",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 100,
-            "Defense": 85,
-            "Special Attack": 80,
-            "Special Defense": 85,
-            "Speed": 100
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 100
         }
     },
     "0309": {
@@ -4833,12 +4836,12 @@ pocket_monsters_dict = {
             "Name": "Electrike",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 65,
-            "Special Defense": 40,
-            "Speed": 65
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 65
         }
     },
     "0310": {
@@ -4846,23 +4849,23 @@ pocket_monsters_dict = {
             "Name": "Manectric",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 75,
-            "Defense": 60,
-            "Special Attack": 105,
-            "Special Defense": 60,
-            "Speed": 105
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 105
         },
         "Mega Manectric": {
             "Name": "Manectric",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 75,
-            "Defense": 80,
-            "Special Attack": 135,
-            "Special Defense": 80,
-            "Speed": 135
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 135
         }
     },
     "0311": {
@@ -4870,12 +4873,12 @@ pocket_monsters_dict = {
             "Name": "Plusle",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 40,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 95
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 95
         }
     },
     "0312": {
@@ -4883,12 +4886,12 @@ pocket_monsters_dict = {
             "Name": "Minun",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 40,
-            "Defense": 50,
-            "Special Attack": 75,
-            "Special Defense": 85,
-            "Speed": 95
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 95
         }
     },
     "0313": {
@@ -4896,12 +4899,12 @@ pocket_monsters_dict = {
             "Name": "Volbeat",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 73,
-            "Defense": 75,
-            "Special Attack": 47,
-            "Special Defense": 85,
-            "Speed": 85
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 47,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 85
         }
     },
     "0314": {
@@ -4909,12 +4912,12 @@ pocket_monsters_dict = {
             "Name": "Illumise",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 47,
-            "Defense": 75,
-            "Special Attack": 73,
-            "Special Defense": 85,
-            "Speed": 85
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 47,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 73,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 85
         }
     },
     "0315": {
@@ -4922,12 +4925,12 @@ pocket_monsters_dict = {
             "Name": "Roselia",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 50,
-            "Attack": 60,
-            "Defense": 45,
-            "Special Attack": 100,
-            "Special Defense": 80,
-            "Speed": 65
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 65
         }
     },
     "0316": {
@@ -4935,12 +4938,12 @@ pocket_monsters_dict = {
             "Name": "Gulpin",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 43,
-            "Defense": 53,
-            "Special Attack": 43,
-            "Special Defense": 53,
-            "Speed": 40
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 43,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 43,
+            StatsEnum.SPECIAL_DEFENSE: 53,
+            StatsEnum.SPEED: 40
         }
     },
     "0317": {
@@ -4948,12 +4951,12 @@ pocket_monsters_dict = {
             "Name": "Swalot",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 73,
-            "Defense": 83,
-            "Special Attack": 73,
-            "Special Defense": 83,
-            "Speed": 55
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 83,
+            StatsEnum.SPECIAL_ATTACK: 73,
+            StatsEnum.SPECIAL_DEFENSE: 83,
+            StatsEnum.SPEED: 55
         }
     },
     "0318": {
@@ -4961,12 +4964,12 @@ pocket_monsters_dict = {
             "Name": "Carvanha",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 45,
-            "Attack": 90,
-            "Defense": 20,
-            "Special Attack": 65,
-            "Special Defense": 20,
-            "Speed": 65
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 65
         }
     },
     "0319": {
@@ -4974,23 +4977,23 @@ pocket_monsters_dict = {
             "Name": "Sharpedo",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 70,
-            "Attack": 120,
-            "Defense": 40,
-            "Special Attack": 95,
-            "Special Defense": 40,
-            "Speed": 95
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 95
         },
         "Mega Sharpedo": {
             "Name": "Sharpedo",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 70,
-            "Attack": 140,
-            "Defense": 70,
-            "Special Attack": 110,
-            "Special Defense": 65,
-            "Speed": 105
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 105
         }
     },
     "0320": {
@@ -4998,12 +5001,12 @@ pocket_monsters_dict = {
             "Name": "Wailmer",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 130,
-            "Attack": 70,
-            "Defense": 35,
-            "Special Attack": 70,
-            "Special Defense": 35,
-            "Speed": 60
+            StatsEnum.HP: 130,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 60
         }
     },
     "0321": {
@@ -5011,12 +5014,12 @@ pocket_monsters_dict = {
             "Name": "Wailord",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 170,
-            "Attack": 90,
-            "Defense": 45,
-            "Special Attack": 90,
-            "Special Defense": 45,
-            "Speed": 60
+            StatsEnum.HP: 170,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 60
         }
     },
     "0322": {
@@ -5024,12 +5027,12 @@ pocket_monsters_dict = {
             "Name": "Numel",
             "Type 1": "Fire",
             "Type 2": "Ground",
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 40,
-            "Special Attack": 65,
-            "Special Defense": 45,
-            "Speed": 35
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 35
         }
     },
     "0323": {
@@ -5037,23 +5040,23 @@ pocket_monsters_dict = {
             "Name": "Camerupt",
             "Type 1": "Fire",
             "Type 2": "Ground",
-            "HP": 70,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 105,
-            "Special Defense": 75,
-            "Speed": 40
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 40
         },
         "Mega Camerupt": {
             "Name": "Camerupt",
             "Type 1": "Fire",
             "Type 2": "Ground",
-            "HP": 70,
-            "Attack": 120,
-            "Defense": 100,
-            "Special Attack": 145,
-            "Special Defense": 105,
-            "Speed": 20
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 20
         }
     },
     "0324": {
@@ -5061,12 +5064,12 @@ pocket_monsters_dict = {
             "Name": "Torkoal",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 140,
-            "Special Attack": 85,
-            "Special Defense": 70,
-            "Speed": 20
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 20
         }
     },
     "0325": {
@@ -5074,12 +5077,12 @@ pocket_monsters_dict = {
             "Name": "Spoink",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 25,
-            "Defense": 35,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 60
         }
     },
     "0326": {
@@ -5087,12 +5090,12 @@ pocket_monsters_dict = {
             "Name": "Grumpig",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 45,
-            "Defense": 65,
-            "Special Attack": 90,
-            "Special Defense": 110,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 80
         }
     },
     "0327": {
@@ -5100,12 +5103,12 @@ pocket_monsters_dict = {
             "Name": "Spinda",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 60
         }
     },
     "0328": {
@@ -5113,12 +5116,12 @@ pocket_monsters_dict = {
             "Name": "Trapinch",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 100,
-            "Defense": 45,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 10
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 10
         }
     },
     "0329": {
@@ -5126,12 +5129,12 @@ pocket_monsters_dict = {
             "Name": "Vibrava",
             "Type 1": "Ground",
             "Type 2": "Dragon",
-            "HP": 50,
-            "Attack": 70,
-            "Defense": 50,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 70
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 70
         }
     },
     "0330": {
@@ -5139,12 +5142,12 @@ pocket_monsters_dict = {
             "Name": "Flygon",
             "Type 1": "Ground",
             "Type 2": "Dragon",
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 80,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 100
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 100
         }
     },
     "0331": {
@@ -5152,12 +5155,12 @@ pocket_monsters_dict = {
             "Name": "Cacnea",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 85,
-            "Defense": 40,
-            "Special Attack": 85,
-            "Special Defense": 40,
-            "Speed": 35
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 35
         }
     },
     "0332": {
@@ -5165,12 +5168,12 @@ pocket_monsters_dict = {
             "Name": "Cacturne",
             "Type 1": "Grass",
             "Type 2": "Dark",
-            "HP": 70,
-            "Attack": 115,
-            "Defense": 60,
-            "Special Attack": 115,
-            "Special Defense": 60,
-            "Speed": 55
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 55
         }
     },
     "0333": {
@@ -5178,12 +5181,12 @@ pocket_monsters_dict = {
             "Name": "Swablu",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 45,
-            "Attack": 40,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 75,
-            "Speed": 50
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 50
         }
     },
     "0334": {
@@ -5191,23 +5194,23 @@ pocket_monsters_dict = {
             "Name": "Altaria",
             "Type 1": "Dragon",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 70,
-            "Defense": 90,
-            "Special Attack": 70,
-            "Special Defense": 105,
-            "Speed": 80
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 80
         },
         "Mega Altaria": {
             "Name": "Altaria",
             "Type 1": "Dragon",
             "Type 2": "Fairy",
-            "HP": 75,
-            "Attack": 110,
-            "Defense": 110,
-            "Special Attack": 110,
-            "Special Defense": 105,
-            "Speed": 80
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 80
         }
     },
     "0335": {
@@ -5215,12 +5218,12 @@ pocket_monsters_dict = {
             "Name": "Zangoose",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 73,
-            "Attack": 115,
-            "Defense": 60,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 90
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 90
         }
     },
     "0336": {
@@ -5228,12 +5231,12 @@ pocket_monsters_dict = {
             "Name": "Seviper",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 73,
-            "Attack": 100,
-            "Defense": 60,
-            "Special Attack": 100,
-            "Special Defense": 60,
-            "Speed": 65
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 65
         }
     },
     "0337": {
@@ -5241,12 +5244,12 @@ pocket_monsters_dict = {
             "Name": "Lunatone",
             "Type 1": "Rock",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 55,
-            "Defense": 65,
-            "Special Attack": 95,
-            "Special Defense": 85,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 70
         }
     },
     "0338": {
@@ -5254,12 +5257,12 @@ pocket_monsters_dict = {
             "Name": "Solrock",
             "Type 1": "Rock",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 95,
-            "Defense": 85,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 70
         }
     },
     "0339": {
@@ -5267,12 +5270,12 @@ pocket_monsters_dict = {
             "Name": "Barboach",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 50,
-            "Attack": 48,
-            "Defense": 43,
-            "Special Attack": 46,
-            "Special Defense": 41,
-            "Speed": 60
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 43,
+            StatsEnum.SPECIAL_ATTACK: 46,
+            StatsEnum.SPECIAL_DEFENSE: 41,
+            StatsEnum.SPEED: 60
         }
     },
     "0340": {
@@ -5280,12 +5283,12 @@ pocket_monsters_dict = {
             "Name": "Whiscash",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 110,
-            "Attack": 78,
-            "Defense": 73,
-            "Special Attack": 76,
-            "Special Defense": 71,
-            "Speed": 60
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 78,
+            StatsEnum.DEFENSE: 73,
+            StatsEnum.SPECIAL_ATTACK: 76,
+            StatsEnum.SPECIAL_DEFENSE: 71,
+            StatsEnum.SPEED: 60
         }
     },
     "0341": {
@@ -5293,12 +5296,12 @@ pocket_monsters_dict = {
             "Name": "Corphish",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 43,
-            "Attack": 80,
-            "Defense": 65,
-            "Special Attack": 50,
-            "Special Defense": 35,
-            "Speed": 35
+            StatsEnum.HP: 43,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 35
         }
     },
     "0342": {
@@ -5306,12 +5309,12 @@ pocket_monsters_dict = {
             "Name": "Crawdaunt",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 63,
-            "Attack": 120,
-            "Defense": 85,
-            "Special Attack": 90,
-            "Special Defense": 55,
-            "Speed": 55
+            StatsEnum.HP: 63,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 55
         }
     },
     "0343": {
@@ -5319,12 +5322,12 @@ pocket_monsters_dict = {
             "Name": "Baltoy",
             "Type 1": "Ground",
             "Type 2": "Psychic",
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 55,
-            "Special Attack": 40,
-            "Special Defense": 70,
-            "Speed": 55
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 55
         }
     },
     "0344": {
@@ -5332,12 +5335,12 @@ pocket_monsters_dict = {
             "Name": "Claydol",
             "Type 1": "Ground",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 70,
-            "Defense": 105,
-            "Special Attack": 70,
-            "Special Defense": 120,
-            "Speed": 75
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 75
         }
     },
     "0345": {
@@ -5345,12 +5348,12 @@ pocket_monsters_dict = {
             "Name": "Lileep",
             "Type 1": "Rock",
             "Type 2": "Grass",
-            "HP": 66,
-            "Attack": 41,
-            "Defense": 77,
-            "Special Attack": 61,
-            "Special Defense": 87,
-            "Speed": 23
+            StatsEnum.HP: 66,
+            StatsEnum.ATTACK: 41,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 87,
+            StatsEnum.SPEED: 23
         }
     },
     "0346": {
@@ -5358,12 +5361,12 @@ pocket_monsters_dict = {
             "Name": "Cradily",
             "Type 1": "Rock",
             "Type 2": "Grass",
-            "HP": 86,
-            "Attack": 81,
-            "Defense": 97,
-            "Special Attack": 81,
-            "Special Defense": 107,
-            "Speed": 43
+            StatsEnum.HP: 86,
+            StatsEnum.ATTACK: 81,
+            StatsEnum.DEFENSE: 97,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 43
         }
     },
     "0347": {
@@ -5371,12 +5374,12 @@ pocket_monsters_dict = {
             "Name": "Anorith",
             "Type 1": "Rock",
             "Type 2": "Bug",
-            "HP": 45,
-            "Attack": 95,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 75
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 75
         }
     },
     "0348": {
@@ -5384,12 +5387,12 @@ pocket_monsters_dict = {
             "Name": "Armaldo",
             "Type 1": "Rock",
             "Type 2": "Bug",
-            "HP": 75,
-            "Attack": 125,
-            "Defense": 100,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 45
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 45
         }
     },
     "0349": {
@@ -5397,12 +5400,12 @@ pocket_monsters_dict = {
             "Name": "Feebas",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 20,
-            "Attack": 15,
-            "Defense": 20,
-            "Special Attack": 10,
-            "Special Defense": 55,
-            "Speed": 80
+            StatsEnum.HP: 20,
+            StatsEnum.ATTACK: 15,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 10,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 80
         }
     },
     "0350": {
@@ -5410,12 +5413,12 @@ pocket_monsters_dict = {
             "Name": "Milotic",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 60,
-            "Defense": 79,
-            "Special Attack": 100,
-            "Special Defense": 125,
-            "Speed": 81
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 79,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 125,
+            StatsEnum.SPEED: 81
         }
     },
     "0351": {
@@ -5423,45 +5426,45 @@ pocket_monsters_dict = {
             "Name": "Castform",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         },
         "Sunny Form": {
             "Name": "Castform",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         },
         "Rainy Form": {
             "Name": "Castform",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         },
         "Snowy Form": {
             "Name": "Castform",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         }
     },
     "0352": {
@@ -5469,12 +5472,12 @@ pocket_monsters_dict = {
             "Name": "Kecleon",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 90,
-            "Defense": 70,
-            "Special Attack": 60,
-            "Special Defense": 120,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 40
         }
     },
     "0353": {
@@ -5482,12 +5485,12 @@ pocket_monsters_dict = {
             "Name": "Shuppet",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 44,
-            "Attack": 75,
-            "Defense": 35,
-            "Special Attack": 63,
-            "Special Defense": 33,
-            "Speed": 45
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 33,
+            StatsEnum.SPEED: 45
         }
     },
     "0354": {
@@ -5495,23 +5498,23 @@ pocket_monsters_dict = {
             "Name": "Banette",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 64,
-            "Attack": 115,
-            "Defense": 65,
-            "Special Attack": 83,
-            "Special Defense": 63,
-            "Speed": 65
+            StatsEnum.HP: 64,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 65
         },
         "Mega Banette": {
             "Name": "Banette",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 64,
-            "Attack": 165,
-            "Defense": 75,
-            "Special Attack": 93,
-            "Special Defense": 83,
-            "Speed": 75
+            StatsEnum.HP: 64,
+            StatsEnum.ATTACK: 165,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 93,
+            StatsEnum.SPECIAL_DEFENSE: 83,
+            StatsEnum.SPEED: 75
         }
     },
     "0355": {
@@ -5519,12 +5522,12 @@ pocket_monsters_dict = {
             "Name": "Duskull",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 20,
-            "Attack": 40,
-            "Defense": 90,
-            "Special Attack": 30,
-            "Special Defense": 90,
-            "Speed": 25
+            StatsEnum.HP: 20,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 25
         }
     },
     "0356": {
@@ -5532,12 +5535,12 @@ pocket_monsters_dict = {
             "Name": "Dusclops",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 70,
-            "Defense": 130,
-            "Special Attack": 60,
-            "Special Defense": 130,
-            "Speed": 25
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 25
         }
     },
     "0357": {
@@ -5545,12 +5548,12 @@ pocket_monsters_dict = {
             "Name": "Tropius",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 99,
-            "Attack": 68,
-            "Defense": 83,
-            "Special Attack": 72,
-            "Special Defense": 87,
-            "Speed": 51
+            StatsEnum.HP: 99,
+            StatsEnum.ATTACK: 68,
+            StatsEnum.DEFENSE: 83,
+            StatsEnum.SPECIAL_ATTACK: 72,
+            StatsEnum.SPECIAL_DEFENSE: 87,
+            StatsEnum.SPEED: 51
         }
     },
     "0358": {
@@ -5558,12 +5561,12 @@ pocket_monsters_dict = {
             "Name": "Chimecho",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 50,
-            "Defense": 80,
-            "Special Attack": 95,
-            "Special Defense": 90,
-            "Speed": 65
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 65
         }
     },
     "0359": {
@@ -5571,23 +5574,23 @@ pocket_monsters_dict = {
             "Name": "Absol",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 130,
-            "Defense": 60,
-            "Special Attack": 75,
-            "Special Defense": 60,
-            "Speed": 75
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 75
         },
         "Mega Absol": {
             "Name": "Absol",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 150,
-            "Defense": 60,
-            "Special Attack": 115,
-            "Special Defense": 60,
-            "Speed": 115
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 115
         }
     },
     "0360": {
@@ -5595,12 +5598,12 @@ pocket_monsters_dict = {
             "Name": "Wynaut",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 23,
-            "Defense": 48,
-            "Special Attack": 23,
-            "Special Defense": 48,
-            "Speed": 23
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 23,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 23,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 23
         }
     },
     "0361": {
@@ -5608,12 +5611,12 @@ pocket_monsters_dict = {
             "Name": "Snorunt",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 50,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 50
         }
     },
     "0362": {
@@ -5621,23 +5624,23 @@ pocket_monsters_dict = {
             "Name": "Glalie",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 80
         },
         "Mega Glalie": {
             "Name": "Glalie",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 80,
-            "Special Attack": 120,
-            "Special Defense": 80,
-            "Speed": 100
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 100
         }
     },
     "0363": {
@@ -5645,12 +5648,12 @@ pocket_monsters_dict = {
             "Name": "Spheal",
             "Type 1": "Ice",
             "Type 2": "Water",
-            "HP": 70,
-            "Attack": 40,
-            "Defense": 50,
-            "Special Attack": 55,
-            "Special Defense": 50,
-            "Speed": 25
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 25
         }
     },
     "0364": {
@@ -5658,12 +5661,12 @@ pocket_monsters_dict = {
             "Name": "Sealeo",
             "Type 1": "Ice",
             "Type 2": "Water",
-            "HP": 90,
-            "Attack": 60,
-            "Defense": 70,
-            "Special Attack": 75,
-            "Special Defense": 70,
-            "Speed": 45
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 45
         }
     },
     "0365": {
@@ -5671,12 +5674,12 @@ pocket_monsters_dict = {
             "Name": "Walrein",
             "Type 1": "Ice",
             "Type 2": "Water",
-            "HP": 110,
-            "Attack": 80,
-            "Defense": 90,
-            "Special Attack": 95,
-            "Special Defense": 90,
-            "Speed": 65
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 65
         }
     },
     "0366": {
@@ -5684,12 +5687,12 @@ pocket_monsters_dict = {
             "Name": "Clamperl",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 64,
-            "Defense": 85,
-            "Special Attack": 74,
-            "Special Defense": 55,
-            "Speed": 32
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 32
         }
     },
     "0367": {
@@ -5697,12 +5700,12 @@ pocket_monsters_dict = {
             "Name": "Huntail",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 104,
-            "Defense": 105,
-            "Special Attack": 94,
-            "Special Defense": 75,
-            "Speed": 52
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 104,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 94,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 52
         }
     },
     "0368": {
@@ -5710,12 +5713,12 @@ pocket_monsters_dict = {
             "Name": "Gorebyss",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 84,
-            "Defense": 105,
-            "Special Attack": 114,
-            "Special Defense": 75,
-            "Speed": 52
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 84,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 114,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 52
         }
     },
     "0369": {
@@ -5723,12 +5726,12 @@ pocket_monsters_dict = {
             "Name": "Relicanth",
             "Type 1": "Water",
             "Type 2": "Rock",
-            "HP": 100,
-            "Attack": 90,
-            "Defense": 130,
-            "Special Attack": 45,
-            "Special Defense": 65,
-            "Speed": 55
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 55
         }
     },
     "0370": {
@@ -5736,12 +5739,12 @@ pocket_monsters_dict = {
             "Name": "Luvdisc",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 43,
-            "Attack": 30,
-            "Defense": 55,
-            "Special Attack": 40,
-            "Special Defense": 65,
-            "Speed": 97
+            StatsEnum.HP: 43,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 97
         }
     },
     "0371": {
@@ -5749,12 +5752,12 @@ pocket_monsters_dict = {
             "Name": "Bagon",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 75,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 30,
-            "Speed": 50
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 50
         }
     },
     "0372": {
@@ -5762,12 +5765,12 @@ pocket_monsters_dict = {
             "Name": "Shelgon",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 95,
-            "Defense": 100,
-            "Special Attack": 60,
-            "Special Defense": 50,
-            "Speed": 50
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 50
         }
     },
     "0373": {
@@ -5775,23 +5778,23 @@ pocket_monsters_dict = {
             "Name": "Salamence",
             "Type 1": "Dragon",
             "Type 2": "Flying",
-            "HP": 95,
-            "Attack": 135,
-            "Defense": 80,
-            "Special Attack": 110,
-            "Special Defense": 80,
-            "Speed": 100
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 100
         },
         "Mega Salamence": {
             "Name": "Salamence",
             "Type 1": "Dragon",
             "Type 2": "Flying",
-            "HP": 95,
-            "Attack": 145,
-            "Defense": 130,
-            "Special Attack": 120,
-            "Special Defense": 90,
-            "Speed": 120
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 120
         }
     },
     "0374": {
@@ -5799,12 +5802,12 @@ pocket_monsters_dict = {
             "Name": "Beldum",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 40,
-            "Attack": 55,
-            "Defense": 80,
-            "Special Attack": 35,
-            "Special Defense": 60,
-            "Speed": 30
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 30
         }
     },
     "0375": {
@@ -5812,12 +5815,12 @@ pocket_monsters_dict = {
             "Name": "Metang",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 75,
-            "Defense": 100,
-            "Special Attack": 55,
-            "Special Defense": 80,
-            "Speed": 50
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 50
         }
     },
     "0376": {
@@ -5825,23 +5828,23 @@ pocket_monsters_dict = {
             "Name": "Metagross",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 135,
-            "Defense": 130,
-            "Special Attack": 95,
-            "Special Defense": 90,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 70
         },
         "Mega Metagross": {
             "Name": "Metagross",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 145,
-            "Defense": 150,
-            "Special Attack": 105,
-            "Special Defense": 110,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 110
         }
     },
     "0377": {
@@ -5849,12 +5852,12 @@ pocket_monsters_dict = {
             "Name": "Regirock",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 200,
-            "Special Attack": 50,
-            "Special Defense": 100,
-            "Speed": 50
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 200,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 50
         }
     },
     "0378": {
@@ -5862,12 +5865,12 @@ pocket_monsters_dict = {
             "Name": "Regice",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 50,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 200,
-            "Speed": 50
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 200,
+            StatsEnum.SPEED: 50
         }
     },
     "0379": {
@@ -5875,12 +5878,12 @@ pocket_monsters_dict = {
             "Name": "Registeel",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 75,
-            "Defense": 150,
-            "Special Attack": 75,
-            "Special Defense": 150,
-            "Speed": 50
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 50
         }
     },
     "0380": {
@@ -5888,23 +5891,23 @@ pocket_monsters_dict = {
             "Name": "Latias",
             "Type 1": "Dragon",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 90,
-            "Special Attack": 110,
-            "Special Defense": 130,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 110
         },
         "Mega Latias": {
             "Name": "Latias",
             "Type 1": "Dragon",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 120,
-            "Special Attack": 140,
-            "Special Defense": 150,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 110
         }
     },
     "0381": {
@@ -5912,23 +5915,23 @@ pocket_monsters_dict = {
             "Name": "Latios",
             "Type 1": "Dragon",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 90,
-            "Defense": 80,
-            "Special Attack": 130,
-            "Special Defense": 110,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 110
         },
         "Mega Latios": {
             "Name": "Latios",
             "Type 1": "Dragon",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 130,
-            "Defense": 100,
-            "Special Attack": 160,
-            "Special Defense": 120,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 160,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 110
         }
     },
     "0382": {
@@ -5936,23 +5939,23 @@ pocket_monsters_dict = {
             "Name": "Kyogre",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 90,
-            "Special Attack": 150,
-            "Special Defense": 140,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 140,
+            StatsEnum.SPEED: 90
         },
         "Primal Kyogre": {
             "Name": "Kyogre",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 150,
-            "Defense": 90,
-            "Special Attack": 180,
-            "Special Defense": 160,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 180,
+            StatsEnum.SPECIAL_DEFENSE: 160,
+            StatsEnum.SPEED: 90
         }
     },
     "0383": {
@@ -5960,23 +5963,23 @@ pocket_monsters_dict = {
             "Name": "Groudon",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 150,
-            "Defense": 140,
-            "Special Attack": 100,
-            "Special Defense": 90,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 90
         },
         "Primal Groudon": {
             "Name": "Groudon",
             "Type 1": "Ground",
             "Type 2": "Fire",
-            "HP": 100,
-            "Attack": 180,
-            "Defense": 160,
-            "Special Attack": 150,
-            "Special Defense": 90,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 180,
+            StatsEnum.DEFENSE: 160,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 90
         }
     },
     "0384": {
@@ -5984,23 +5987,23 @@ pocket_monsters_dict = {
             "Name": "Rayquaza",
             "Type 1": "Dragon",
             "Type 2": "Flying",
-            "HP": 105,
-            "Attack": 150,
-            "Defense": 90,
-            "Special Attack": 150,
-            "Special Defense": 90,
-            "Speed": 95
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 95
         },
         "Mega Rayquaza": {
             "Name": "Rayquaza",
             "Type 1": "Dragon",
             "Type 2": "Flying",
-            "HP": 105,
-            "Attack": 180,
-            "Defense": 100,
-            "Special Attack": 180,
-            "Special Defense": 100,
-            "Speed": 115
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 180,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 180,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 115
         }
     },
     "0385": {
@@ -6008,12 +6011,12 @@ pocket_monsters_dict = {
             "Name": "Jirachi",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         }
     },
     "0386": {
@@ -6021,45 +6024,45 @@ pocket_monsters_dict = {
             "Name": "Deoxys",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 150,
-            "Defense": 50,
-            "Special Attack": 150,
-            "Special Defense": 50,
-            "Speed": 150
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 150
         },
         "Attack Forme": {
             "Name": "Deoxys",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 180,
-            "Defense": 20,
-            "Special Attack": 180,
-            "Special Defense": 20,
-            "Speed": 150
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 180,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 180,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 150
         },
         "Defense Forme": {
             "Name": "Deoxys",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 70,
-            "Defense": 160,
-            "Special Attack": 70,
-            "Special Defense": 160,
-            "Speed": 90
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 160,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 160,
+            StatsEnum.SPEED: 90
         },
         "Speed Forme": {
             "Name": "Deoxys",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 95,
-            "Defense": 90,
-            "Special Attack": 95,
-            "Special Defense": 90,
-            "Speed": 180
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 180
         }
     },
     "0387": {
@@ -6067,12 +6070,12 @@ pocket_monsters_dict = {
             "Name": "Turtwig",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 68,
-            "Defense": 64,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 31
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 68,
+            StatsEnum.DEFENSE: 64,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 31
         }
     },
     "0388": {
@@ -6080,12 +6083,12 @@ pocket_monsters_dict = {
             "Name": "Grotle",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 89,
-            "Defense": 85,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 36
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 89,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 36
         }
     },
     "0389": {
@@ -6093,12 +6096,12 @@ pocket_monsters_dict = {
             "Name": "Torterra",
             "Type 1": "Grass",
             "Type 2": "Ground",
-            "HP": 95,
-            "Attack": 109,
-            "Defense": 105,
-            "Special Attack": 75,
-            "Special Defense": 85,
-            "Speed": 56
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 109,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 56
         }
     },
     "0390": {
@@ -6106,12 +6109,12 @@ pocket_monsters_dict = {
             "Name": "Chimchar",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 44,
-            "Attack": 58,
-            "Defense": 44,
-            "Special Attack": 58,
-            "Special Defense": 44,
-            "Speed": 61
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 58,
+            StatsEnum.DEFENSE: 44,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 44,
+            StatsEnum.SPEED: 61
         }
     },
     "0391": {
@@ -6119,12 +6122,12 @@ pocket_monsters_dict = {
             "Name": "Monferno",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 64,
-            "Attack": 78,
-            "Defense": 52,
-            "Special Attack": 78,
-            "Special Defense": 52,
-            "Speed": 81
+            StatsEnum.HP: 64,
+            StatsEnum.ATTACK: 78,
+            StatsEnum.DEFENSE: 52,
+            StatsEnum.SPECIAL_ATTACK: 78,
+            StatsEnum.SPECIAL_DEFENSE: 52,
+            StatsEnum.SPEED: 81
         }
     },
     "0392": {
@@ -6132,12 +6135,12 @@ pocket_monsters_dict = {
             "Name": "Infernape",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 76,
-            "Attack": 104,
-            "Defense": 71,
-            "Special Attack": 104,
-            "Special Defense": 71,
-            "Speed": 108
+            StatsEnum.HP: 76,
+            StatsEnum.ATTACK: 104,
+            StatsEnum.DEFENSE: 71,
+            StatsEnum.SPECIAL_ATTACK: 104,
+            StatsEnum.SPECIAL_DEFENSE: 71,
+            StatsEnum.SPEED: 108
         }
     },
     "0393": {
@@ -6145,12 +6148,12 @@ pocket_monsters_dict = {
             "Name": "Piplup",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 53,
-            "Attack": 51,
-            "Defense": 53,
-            "Special Attack": 61,
-            "Special Defense": 56,
-            "Speed": 40
+            StatsEnum.HP: 53,
+            StatsEnum.ATTACK: 51,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 40
         }
     },
     "0394": {
@@ -6158,12 +6161,12 @@ pocket_monsters_dict = {
             "Name": "Prinplup",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 64,
-            "Attack": 66,
-            "Defense": 68,
-            "Special Attack": 81,
-            "Special Defense": 76,
-            "Speed": 50
+            StatsEnum.HP: 64,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 68,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 76,
+            StatsEnum.SPEED: 50
         }
     },
     "0395": {
@@ -6171,12 +6174,12 @@ pocket_monsters_dict = {
             "Name": "Empoleon",
             "Type 1": "Water",
             "Type 2": "Steel",
-            "HP": 84,
-            "Attack": 86,
-            "Defense": 88,
-            "Special Attack": 111,
-            "Special Defense": 101,
-            "Speed": 60
+            StatsEnum.HP: 84,
+            StatsEnum.ATTACK: 86,
+            StatsEnum.DEFENSE: 88,
+            StatsEnum.SPECIAL_ATTACK: 111,
+            StatsEnum.SPECIAL_DEFENSE: 101,
+            StatsEnum.SPEED: 60
         }
     },
     "0396": {
@@ -6184,12 +6187,12 @@ pocket_monsters_dict = {
             "Name": "Starly",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 55,
-            "Defense": 30,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 60
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 60
         }
     },
     "0397": {
@@ -6197,12 +6200,12 @@ pocket_monsters_dict = {
             "Name": "Staravia",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 75,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 80
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 80
         }
     },
     "0398": {
@@ -6210,12 +6213,12 @@ pocket_monsters_dict = {
             "Name": "Staraptor",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 85,
-            "Attack": 120,
-            "Defense": 70,
-            "Special Attack": 50,
-            "Special Defense": 60,
-            "Speed": 100
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 100
         }
     },
     "0399": {
@@ -6223,12 +6226,12 @@ pocket_monsters_dict = {
             "Name": "Bidoof",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 59,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 35,
-            "Special Defense": 40,
-            "Speed": 31
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 31
         }
     },
     "0400": {
@@ -6236,12 +6239,12 @@ pocket_monsters_dict = {
             "Name": "Bibarel",
             "Type 1": "Normal",
             "Type 2": "Water",
-            "HP": 79,
-            "Attack": 85,
-            "Defense": 60,
-            "Special Attack": 55,
-            "Special Defense": 60,
-            "Speed": 71
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 71
         }
     },
     "0401": {
@@ -6249,12 +6252,12 @@ pocket_monsters_dict = {
             "Name": "Kricketot",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 37,
-            "Attack": 25,
-            "Defense": 41,
-            "Special Attack": 25,
-            "Special Defense": 41,
-            "Speed": 25
+            StatsEnum.HP: 37,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 41,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 41,
+            StatsEnum.SPEED: 25
         }
     },
     "0402": {
@@ -6262,12 +6265,12 @@ pocket_monsters_dict = {
             "Name": "Kricketune",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 77,
-            "Attack": 85,
-            "Defense": 51,
-            "Special Attack": 55,
-            "Special Defense": 51,
-            "Speed": 65
+            StatsEnum.HP: 77,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 51,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 65
         }
     },
     "0403": {
@@ -6275,12 +6278,12 @@ pocket_monsters_dict = {
             "Name": "Shinx",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 65,
-            "Defense": 34,
-            "Special Attack": 40,
-            "Special Defense": 34,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 34,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 34,
+            StatsEnum.SPEED: 45
         }
     },
     "0404": {
@@ -6288,12 +6291,12 @@ pocket_monsters_dict = {
             "Name": "Luxio",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 49,
-            "Special Attack": 60,
-            "Special Defense": 49,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 49,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 49,
+            StatsEnum.SPEED: 60
         }
     },
     "0405": {
@@ -6301,12 +6304,12 @@ pocket_monsters_dict = {
             "Name": "Luxray",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 79,
-            "Special Attack": 95,
-            "Special Defense": 79,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 79,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 79,
+            StatsEnum.SPEED: 70
         }
     },
     "0406": {
@@ -6314,12 +6317,12 @@ pocket_monsters_dict = {
             "Name": "Budew",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 35,
-            "Special Attack": 50,
-            "Special Defense": 70,
-            "Speed": 55
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 55
         }
     },
     "0407": {
@@ -6327,12 +6330,12 @@ pocket_monsters_dict = {
             "Name": "Roserade",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 70,
-            "Defense": 65,
-            "Special Attack": 125,
-            "Special Defense": 105,
-            "Speed": 90
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 90
         }
     },
     "0408": {
@@ -6340,12 +6343,12 @@ pocket_monsters_dict = {
             "Name": "Cranidos",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 67,
-            "Attack": 125,
-            "Defense": 40,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 58
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 58
         }
     },
     "0409": {
@@ -6353,12 +6356,12 @@ pocket_monsters_dict = {
             "Name": "Rampardos",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 97,
-            "Attack": 165,
-            "Defense": 60,
-            "Special Attack": 65,
-            "Special Defense": 50,
-            "Speed": 58
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 165,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 58
         }
     },
     "0410": {
@@ -6366,12 +6369,12 @@ pocket_monsters_dict = {
             "Name": "Shieldon",
             "Type 1": "Rock",
             "Type 2": "Steel",
-            "HP": 30,
-            "Attack": 42,
-            "Defense": 118,
-            "Special Attack": 42,
-            "Special Defense": 88,
-            "Speed": 30
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 42,
+            StatsEnum.DEFENSE: 118,
+            StatsEnum.SPECIAL_ATTACK: 42,
+            StatsEnum.SPECIAL_DEFENSE: 88,
+            StatsEnum.SPEED: 30
         }
     },
     "0411": {
@@ -6379,12 +6382,12 @@ pocket_monsters_dict = {
             "Name": "Bastiodon",
             "Type 1": "Rock",
             "Type 2": "Steel",
-            "HP": 60,
-            "Attack": 52,
-            "Defense": 168,
-            "Special Attack": 47,
-            "Special Defense": 138,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 168,
+            StatsEnum.SPECIAL_ATTACK: 47,
+            StatsEnum.SPECIAL_DEFENSE: 138,
+            StatsEnum.SPEED: 30
         }
     },
     "0412": {
@@ -6392,34 +6395,34 @@ pocket_monsters_dict = {
             "Name": "Burmy",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 29,
-            "Defense": 45,
-            "Special Attack": 29,
-            "Special Defense": 45,
-            "Speed": 36
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 29,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 29,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 36
         },
         "Sandy Cloak": {
             "Name": "Burmy",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 29,
-            "Defense": 45,
-            "Special Attack": 29,
-            "Special Defense": 45,
-            "Speed": 36
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 29,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 29,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 36
         },
         "Trash Cloak": {
             "Name": "Burmy",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 29,
-            "Defense": 45,
-            "Special Attack": 29,
-            "Special Defense": 45,
-            "Speed": 36
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 29,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 29,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 36
         }
     },
     "0413": {
@@ -6427,34 +6430,34 @@ pocket_monsters_dict = {
             "Name": "Wormadam",
             "Type 1": "Bug",
             "Type 2": "Grass",
-            "HP": 60,
-            "Attack": 59,
-            "Defense": 85,
-            "Special Attack": 79,
-            "Special Defense": 105,
-            "Speed": 36
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 59,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 79,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 36
         },
         "Sandy Cloak": {
             "Name": "Wormadam",
             "Type 1": "Bug",
             "Type 2": "Ground",
-            "HP": 60,
-            "Attack": 79,
-            "Defense": 105,
-            "Special Attack": 59,
-            "Special Defense": 85,
-            "Speed": 36
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 79,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 36
         },
         "Trash Cloak": {
             "Name": "Wormadam",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 60,
-            "Attack": 69,
-            "Defense": 95,
-            "Special Attack": 69,
-            "Special Defense": 95,
-            "Speed": 36
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 69,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 69,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 36
         }
     },
     "0414": {
@@ -6462,12 +6465,12 @@ pocket_monsters_dict = {
             "Name": "Mothim",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 94,
-            "Defense": 50,
-            "Special Attack": 94,
-            "Special Defense": 50,
-            "Speed": 66
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 94,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 94,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 66
         }
     },
     "0415": {
@@ -6475,12 +6478,12 @@ pocket_monsters_dict = {
             "Name": "Combee",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 30,
-            "Attack": 30,
-            "Defense": 42,
-            "Special Attack": 30,
-            "Special Defense": 42,
-            "Speed": 70
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 42,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 42,
+            StatsEnum.SPEED: 70
         }
     },
     "0416": {
@@ -6488,12 +6491,12 @@ pocket_monsters_dict = {
             "Name": "Vespiquen",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 80,
-            "Defense": 102,
-            "Special Attack": 80,
-            "Special Defense": 102,
-            "Speed": 40
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 102,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 102,
+            StatsEnum.SPEED: 40
         }
     },
     "0417": {
@@ -6501,12 +6504,12 @@ pocket_monsters_dict = {
             "Name": "Pachirisu",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 45,
-            "Defense": 70,
-            "Special Attack": 45,
-            "Special Defense": 90,
-            "Speed": 95
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 95
         }
     },
     "0418": {
@@ -6514,12 +6517,12 @@ pocket_monsters_dict = {
             "Name": "Buizel",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 65,
-            "Defense": 35,
-            "Special Attack": 60,
-            "Special Defense": 30,
-            "Speed": 85
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 85
         }
     },
     "0419": {
@@ -6527,12 +6530,12 @@ pocket_monsters_dict = {
             "Name": "Floatzel",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 105,
-            "Defense": 55,
-            "Special Attack": 85,
-            "Special Defense": 50,
-            "Speed": 115
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 115
         }
     },
     "0420": {
@@ -6540,12 +6543,12 @@ pocket_monsters_dict = {
             "Name": "Cherubi",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 35,
-            "Defense": 45,
-            "Special Attack": 62,
-            "Special Defense": 53,
-            "Speed": 35
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 53,
+            StatsEnum.SPEED: 35
         }
     },
     "0421": {
@@ -6553,12 +6556,12 @@ pocket_monsters_dict = {
             "Name": "Cherrim",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 60,
-            "Defense": 70,
-            "Special Attack": 87,
-            "Special Defense": 78,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 87,
+            StatsEnum.SPECIAL_DEFENSE: 78,
+            StatsEnum.SPEED: 85
         }
     },
     "0422": {
@@ -6566,12 +6569,12 @@ pocket_monsters_dict = {
             "Name": "Shellos",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 76,
-            "Attack": 48,
-            "Defense": 48,
-            "Special Attack": 57,
-            "Special Defense": 62,
-            "Speed": 34
+            StatsEnum.HP: 76,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 57,
+            StatsEnum.SPECIAL_DEFENSE: 62,
+            StatsEnum.SPEED: 34
         }
     },
     "0423": {
@@ -6579,12 +6582,12 @@ pocket_monsters_dict = {
             "Name": "Gastrodon",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 111,
-            "Attack": 83,
-            "Defense": 68,
-            "Special Attack": 92,
-            "Special Defense": 82,
-            "Speed": 39
+            StatsEnum.HP: 111,
+            StatsEnum.ATTACK: 83,
+            StatsEnum.DEFENSE: 68,
+            StatsEnum.SPECIAL_ATTACK: 92,
+            StatsEnum.SPECIAL_DEFENSE: 82,
+            StatsEnum.SPEED: 39
         }
     },
     "0424": {
@@ -6592,12 +6595,12 @@ pocket_monsters_dict = {
             "Name": "Ambipom",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 100,
-            "Defense": 66,
-            "Special Attack": 60,
-            "Special Defense": 66,
-            "Speed": 115
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 66,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 66,
+            StatsEnum.SPEED: 115
         }
     },
     "0425": {
@@ -6605,12 +6608,12 @@ pocket_monsters_dict = {
             "Name": "Drifloon",
             "Type 1": "Ghost",
             "Type 2": "Flying",
-            "HP": 90,
-            "Attack": 50,
-            "Defense": 34,
-            "Special Attack": 60,
-            "Special Defense": 44,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 34,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 44,
+            StatsEnum.SPEED: 70
         }
     },
     "0426": {
@@ -6618,12 +6621,12 @@ pocket_monsters_dict = {
             "Name": "Drifblim",
             "Type 1": "Ghost",
             "Type 2": "Flying",
-            "HP": 150,
-            "Attack": 80,
-            "Defense": 44,
-            "Special Attack": 90,
-            "Special Defense": 54,
-            "Speed": 80
+            StatsEnum.HP: 150,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 44,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 54,
+            StatsEnum.SPEED: 80
         }
     },
     "0427": {
@@ -6631,12 +6634,12 @@ pocket_monsters_dict = {
             "Name": "Buneary",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 66,
-            "Defense": 44,
-            "Special Attack": 44,
-            "Special Defense": 56,
-            "Speed": 85
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 44,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 85
         }
     },
     "0428": {
@@ -6644,23 +6647,23 @@ pocket_monsters_dict = {
             "Name": "Lopunny",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 76,
-            "Defense": 84,
-            "Special Attack": 54,
-            "Special Defense": 96,
-            "Speed": 105
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 76,
+            StatsEnum.DEFENSE: 84,
+            StatsEnum.SPECIAL_ATTACK: 54,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 105
         },
         "Mega Lopunny": {
             "Name": "Lopunny",
             "Type 1": "Normal",
             "Type 2": "Fighting",
-            "HP": 65,
-            "Attack": 136,
-            "Defense": 94,
-            "Special Attack": 54,
-            "Special Defense": 96,
-            "Speed": 135
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 136,
+            StatsEnum.DEFENSE: 94,
+            StatsEnum.SPECIAL_ATTACK: 54,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 135
         }
     },
     "0429": {
@@ -6668,12 +6671,12 @@ pocket_monsters_dict = {
             "Name": "Mismagius",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 105,
-            "Special Defense": 105,
-            "Speed": 105
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 105
         }
     },
     "0430": {
@@ -6681,12 +6684,12 @@ pocket_monsters_dict = {
             "Name": "Honchkrow",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 100,
-            "Attack": 125,
-            "Defense": 52,
-            "Special Attack": 105,
-            "Special Defense": 52,
-            "Speed": 71
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 52,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 52,
+            StatsEnum.SPEED: 71
         }
     },
     "0431": {
@@ -6694,12 +6697,12 @@ pocket_monsters_dict = {
             "Name": "Glameow",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 49,
-            "Attack": 55,
-            "Defense": 42,
-            "Special Attack": 42,
-            "Special Defense": 37,
-            "Speed": 85
+            StatsEnum.HP: 49,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 42,
+            StatsEnum.SPECIAL_ATTACK: 42,
+            StatsEnum.SPECIAL_DEFENSE: 37,
+            StatsEnum.SPEED: 85
         }
     },
     "0432": {
@@ -6707,12 +6710,12 @@ pocket_monsters_dict = {
             "Name": "Purugly",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 71,
-            "Attack": 82,
-            "Defense": 64,
-            "Special Attack": 64,
-            "Special Defense": 59,
-            "Speed": 112
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 64,
+            StatsEnum.SPECIAL_ATTACK: 64,
+            StatsEnum.SPECIAL_DEFENSE: 59,
+            StatsEnum.SPEED: 112
         }
     },
     "0433": {
@@ -6720,12 +6723,12 @@ pocket_monsters_dict = {
             "Name": "Chingling",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 50,
-            "Special Attack": 65,
-            "Special Defense": 50,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 45
         }
     },
     "0434": {
@@ -6733,12 +6736,12 @@ pocket_monsters_dict = {
             "Name": "Stunky",
             "Type 1": "Poison",
             "Type 2": "Dark",
-            "HP": 63,
-            "Attack": 63,
-            "Defense": 47,
-            "Special Attack": 41,
-            "Special Defense": 41,
-            "Speed": 74
+            StatsEnum.HP: 63,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 47,
+            StatsEnum.SPECIAL_ATTACK: 41,
+            StatsEnum.SPECIAL_DEFENSE: 41,
+            StatsEnum.SPEED: 74
         }
     },
     "0435": {
@@ -6746,12 +6749,12 @@ pocket_monsters_dict = {
             "Name": "Skuntank",
             "Type 1": "Poison",
             "Type 2": "Dark",
-            "HP": 103,
-            "Attack": 93,
-            "Defense": 67,
-            "Special Attack": 71,
-            "Special Defense": 61,
-            "Speed": 84
+            StatsEnum.HP: 103,
+            StatsEnum.ATTACK: 93,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 71,
+            StatsEnum.SPECIAL_DEFENSE: 61,
+            StatsEnum.SPEED: 84
         }
     },
     "0436": {
@@ -6759,12 +6762,12 @@ pocket_monsters_dict = {
             "Name": "Bronzor",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 57,
-            "Attack": 24,
-            "Defense": 86,
-            "Special Attack": 24,
-            "Special Defense": 86,
-            "Speed": 23
+            StatsEnum.HP: 57,
+            StatsEnum.ATTACK: 24,
+            StatsEnum.DEFENSE: 86,
+            StatsEnum.SPECIAL_ATTACK: 24,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 23
         }
     },
     "0437": {
@@ -6772,12 +6775,12 @@ pocket_monsters_dict = {
             "Name": "Bronzong",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 67,
-            "Attack": 89,
-            "Defense": 116,
-            "Special Attack": 79,
-            "Special Defense": 116,
-            "Speed": 33
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 89,
+            StatsEnum.DEFENSE: 116,
+            StatsEnum.SPECIAL_ATTACK: 79,
+            StatsEnum.SPECIAL_DEFENSE: 116,
+            StatsEnum.SPEED: 33
         }
     },
     "0438": {
@@ -6785,12 +6788,12 @@ pocket_monsters_dict = {
             "Name": "Bonsly",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 80,
-            "Defense": 95,
-            "Special Attack": 10,
-            "Special Defense": 45,
-            "Speed": 10
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 10,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 10
         }
     },
     "0439": {
@@ -6798,12 +6801,12 @@ pocket_monsters_dict = {
             "Name": "Mime Jr.",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 20,
-            "Attack": 25,
-            "Defense": 45,
-            "Special Attack": 70,
-            "Special Defense": 90,
-            "Speed": 60
+            StatsEnum.HP: 20,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 60
         }
     },
     "0440": {
@@ -6811,12 +6814,12 @@ pocket_monsters_dict = {
             "Name": "Happiny",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 5,
-            "Defense": 5,
-            "Special Attack": 15,
-            "Special Defense": 65,
-            "Speed": 30
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 5,
+            StatsEnum.DEFENSE: 5,
+            StatsEnum.SPECIAL_ATTACK: 15,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 30
         }
     },
     "0441": {
@@ -6824,12 +6827,12 @@ pocket_monsters_dict = {
             "Name": "Chatot",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 76,
-            "Attack": 65,
-            "Defense": 45,
-            "Special Attack": 92,
-            "Special Defense": 42,
-            "Speed": 91
+            StatsEnum.HP: 76,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 92,
+            StatsEnum.SPECIAL_DEFENSE: 42,
+            StatsEnum.SPEED: 91
         }
     },
     "0442": {
@@ -6837,12 +6840,12 @@ pocket_monsters_dict = {
             "Name": "Spiritomb",
             "Type 1": "Ghost",
             "Type 2": "Dark",
-            "HP": 50,
-            "Attack": 92,
-            "Defense": 108,
-            "Special Attack": 92,
-            "Special Defense": 108,
-            "Speed": 35
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 108,
+            StatsEnum.SPECIAL_ATTACK: 92,
+            StatsEnum.SPECIAL_DEFENSE: 108,
+            StatsEnum.SPEED: 35
         }
     },
     "0443": {
@@ -6850,12 +6853,12 @@ pocket_monsters_dict = {
             "Name": "Gible",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 58,
-            "Attack": 70,
-            "Defense": 45,
-            "Special Attack": 40,
-            "Special Defense": 45,
-            "Speed": 42
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 42
         }
     },
     "0444": {
@@ -6863,12 +6866,12 @@ pocket_monsters_dict = {
             "Name": "Gabite",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 68,
-            "Attack": 90,
-            "Defense": 65,
-            "Special Attack": 50,
-            "Special Defense": 55,
-            "Speed": 82
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 82
         }
     },
     "0445": {
@@ -6876,23 +6879,23 @@ pocket_monsters_dict = {
             "Name": "Garchomp",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 108,
-            "Attack": 130,
-            "Defense": 95,
-            "Special Attack": 80,
-            "Special Defense": 85,
-            "Speed": 102
+            StatsEnum.HP: 108,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 102
         },
         "Mega Garchomp": {
             "Name": "Garchomp",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 108,
-            "Attack": 170,
-            "Defense": 115,
-            "Special Attack": 120,
-            "Special Defense": 95,
-            "Speed": 92
+            StatsEnum.HP: 108,
+            StatsEnum.ATTACK: 170,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 92
         }
     },
     "0446": {
@@ -6900,12 +6903,12 @@ pocket_monsters_dict = {
             "Name": "Munchlax",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 135,
-            "Attack": 85,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 85,
-            "Speed": 5
+            StatsEnum.HP: 135,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 5
         }
     },
     "0447": {
@@ -6913,12 +6916,12 @@ pocket_monsters_dict = {
             "Name": "Riolu",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 70,
-            "Defense": 40,
-            "Special Attack": 35,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         }
     },
     "0448": {
@@ -6926,23 +6929,23 @@ pocket_monsters_dict = {
             "Name": "Lucario",
             "Type 1": "Fighting",
             "Type 2": "Steel",
-            "HP": 70,
-            "Attack": 110,
-            "Defense": 70,
-            "Special Attack": 115,
-            "Special Defense": 70,
-            "Speed": 90
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 90
         },
         "Mega Lucario": {
             "Name": "Lucario",
             "Type 1": "Fighting",
             "Type 2": "Steel",
-            "HP": 70,
-            "Attack": 145,
-            "Defense": 88,
-            "Special Attack": 140,
-            "Special Defense": 70,
-            "Speed": 112
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 88,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 112
         }
     },
     "0449": {
@@ -6950,12 +6953,12 @@ pocket_monsters_dict = {
             "Name": "Hippopotas",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 68,
-            "Attack": 72,
-            "Defense": 78,
-            "Special Attack": 38,
-            "Special Defense": 42,
-            "Speed": 32
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 38,
+            StatsEnum.SPECIAL_DEFENSE: 42,
+            StatsEnum.SPEED: 32
         }
     },
     "0450": {
@@ -6963,12 +6966,12 @@ pocket_monsters_dict = {
             "Name": "Hippowdon",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 108,
-            "Attack": 112,
-            "Defense": 118,
-            "Special Attack": 68,
-            "Special Defense": 72,
-            "Speed": 47
+            StatsEnum.HP: 108,
+            StatsEnum.ATTACK: 112,
+            StatsEnum.DEFENSE: 118,
+            StatsEnum.SPECIAL_ATTACK: 68,
+            StatsEnum.SPECIAL_DEFENSE: 72,
+            StatsEnum.SPEED: 47
         }
     },
     "0451": {
@@ -6976,12 +6979,12 @@ pocket_monsters_dict = {
             "Name": "Skorupi",
             "Type 1": "Poison",
             "Type 2": "Bug",
-            "HP": 40,
-            "Attack": 50,
-            "Defense": 90,
-            "Special Attack": 30,
-            "Special Defense": 55,
-            "Speed": 65
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 65
         }
     },
     "0452": {
@@ -6989,12 +6992,12 @@ pocket_monsters_dict = {
             "Name": "Drapion",
             "Type 1": "Poison",
             "Type 2": "Dark",
-            "HP": 70,
-            "Attack": 90,
-            "Defense": 110,
-            "Special Attack": 60,
-            "Special Defense": 75,
-            "Speed": 95
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 95
         }
     },
     "0453": {
@@ -7002,12 +7005,12 @@ pocket_monsters_dict = {
             "Name": "Croagunk",
             "Type 1": "Poison",
             "Type 2": "Fighting",
-            "HP": 48,
-            "Attack": 61,
-            "Defense": 40,
-            "Special Attack": 61,
-            "Special Defense": 40,
-            "Speed": 50
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 61,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 50
         }
     },
     "0454": {
@@ -7015,12 +7018,12 @@ pocket_monsters_dict = {
             "Name": "Toxicroak",
             "Type 1": "Poison",
             "Type 2": "Fighting",
-            "HP": 83,
-            "Attack": 106,
-            "Defense": 65,
-            "Special Attack": 86,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 83,
+            StatsEnum.ATTACK: 106,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 86,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "0455": {
@@ -7028,12 +7031,12 @@ pocket_monsters_dict = {
             "Name": "Carnivine",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 74,
-            "Attack": 100,
-            "Defense": 72,
-            "Special Attack": 90,
-            "Special Defense": 72,
-            "Speed": 46
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 72,
+            StatsEnum.SPEED: 46
         }
     },
     "0456": {
@@ -7041,12 +7044,12 @@ pocket_monsters_dict = {
             "Name": "Finneon",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 49,
-            "Attack": 49,
-            "Defense": 56,
-            "Special Attack": 49,
-            "Special Defense": 61,
-            "Speed": 66
+            StatsEnum.HP: 49,
+            StatsEnum.ATTACK: 49,
+            StatsEnum.DEFENSE: 56,
+            StatsEnum.SPECIAL_ATTACK: 49,
+            StatsEnum.SPECIAL_DEFENSE: 61,
+            StatsEnum.SPEED: 66
         }
     },
     "0457": {
@@ -7054,12 +7057,12 @@ pocket_monsters_dict = {
             "Name": "Lumineon",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 69,
-            "Attack": 69,
-            "Defense": 76,
-            "Special Attack": 69,
-            "Special Defense": 86,
-            "Speed": 91
+            StatsEnum.HP: 69,
+            StatsEnum.ATTACK: 69,
+            StatsEnum.DEFENSE: 76,
+            StatsEnum.SPECIAL_ATTACK: 69,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 91
         }
     },
     "0458": {
@@ -7067,12 +7070,12 @@ pocket_monsters_dict = {
             "Name": "Mantyke",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 45,
-            "Attack": 20,
-            "Defense": 50,
-            "Special Attack": 60,
-            "Special Defense": 120,
-            "Speed": 50
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 50
         }
     },
     "0459": {
@@ -7080,12 +7083,12 @@ pocket_monsters_dict = {
             "Name": "Snover",
             "Type 1": "Grass",
             "Type 2": "Ice",
-            "HP": 60,
-            "Attack": 62,
-            "Defense": 50,
-            "Special Attack": 62,
-            "Special Defense": 60,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 62,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 40
         }
     },
     "0460": {
@@ -7093,23 +7096,23 @@ pocket_monsters_dict = {
             "Name": "Abomasnow",
             "Type 1": "Grass",
             "Type 2": "Ice",
-            "HP": 90,
-            "Attack": 92,
-            "Defense": 75,
-            "Special Attack": 92,
-            "Special Defense": 85,
-            "Speed": 60
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 92,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 60
         },
         "Mega Abomasnow": {
             "Name": "Abomasnow",
             "Type 1": "Grass",
             "Type 2": "Ice",
-            "HP": 90,
-            "Attack": 132,
-            "Defense": 105,
-            "Special Attack": 132,
-            "Special Defense": 105,
-            "Speed": 30
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 132,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 132,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 30
         }
     },
     "0461": {
@@ -7117,12 +7120,12 @@ pocket_monsters_dict = {
             "Name": "Weavile",
             "Type 1": "Dark",
             "Type 2": "Ice",
-            "HP": 70,
-            "Attack": 120,
-            "Defense": 65,
-            "Special Attack": 45,
-            "Special Defense": 85,
-            "Speed": 125
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 125
         }
     },
     "0462": {
@@ -7130,12 +7133,12 @@ pocket_monsters_dict = {
             "Name": "Magnezone",
             "Type 1": "Electric",
             "Type 2": "Steel",
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 115,
-            "Special Attack": 130,
-            "Special Defense": 90,
-            "Speed": 60
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 60
         }
     },
     "0463": {
@@ -7143,12 +7146,12 @@ pocket_monsters_dict = {
             "Name": "Lickilicky",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 110,
-            "Attack": 85,
-            "Defense": 95,
-            "Special Attack": 80,
-            "Special Defense": 95,
-            "Speed": 50
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 50
         }
     },
     "0464": {
@@ -7156,12 +7159,12 @@ pocket_monsters_dict = {
             "Name": "Rhyperior",
             "Type 1": "Ground",
             "Type 2": "Rock",
-            "HP": 115,
-            "Attack": 140,
-            "Defense": 130,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 40
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 40
         }
     },
     "0465": {
@@ -7169,12 +7172,12 @@ pocket_monsters_dict = {
             "Name": "Tangrowth",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 125,
-            "Special Attack": 110,
-            "Special Defense": 50,
-            "Speed": 50
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 50
         }
     },
     "0466": {
@@ -7182,12 +7185,12 @@ pocket_monsters_dict = {
             "Name": "Electivire",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 123,
-            "Defense": 67,
-            "Special Attack": 95,
-            "Special Defense": 85,
-            "Speed": 95
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 123,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 95
         }
     },
     "0467": {
@@ -7195,12 +7198,12 @@ pocket_monsters_dict = {
             "Name": "Magmortar",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 95,
-            "Defense": 67,
-            "Special Attack": 125,
-            "Special Defense": 95,
-            "Speed": 83
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 83
         }
     },
     "0468": {
@@ -7208,12 +7211,12 @@ pocket_monsters_dict = {
             "Name": "Togekiss",
             "Type 1": "Fairy",
             "Type 2": "Flying",
-            "HP": 85,
-            "Attack": 50,
-            "Defense": 95,
-            "Special Attack": 120,
-            "Special Defense": 115,
-            "Speed": 80
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 80
         }
     },
     "0469": {
@@ -7221,12 +7224,12 @@ pocket_monsters_dict = {
             "Name": "Yanmega",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 86,
-            "Attack": 76,
-            "Defense": 86,
-            "Special Attack": 116,
-            "Special Defense": 56,
-            "Speed": 95
+            StatsEnum.HP: 86,
+            StatsEnum.ATTACK: 76,
+            StatsEnum.DEFENSE: 86,
+            StatsEnum.SPECIAL_ATTACK: 116,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 95
         }
     },
     "0470": {
@@ -7234,12 +7237,12 @@ pocket_monsters_dict = {
             "Name": "Leafeon",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 110,
-            "Defense": 130,
-            "Special Attack": 60,
-            "Special Defense": 65,
-            "Speed": 95
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 95
         }
     },
     "0471": {
@@ -7247,12 +7250,12 @@ pocket_monsters_dict = {
             "Name": "Glaceon",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 60,
-            "Defense": 110,
-            "Special Attack": 130,
-            "Special Defense": 95,
-            "Speed": 65
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 65
         }
     },
     "0472": {
@@ -7260,12 +7263,12 @@ pocket_monsters_dict = {
             "Name": "Gliscor",
             "Type 1": "Ground",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 95,
-            "Defense": 125,
-            "Special Attack": 45,
-            "Special Defense": 75,
-            "Speed": 95
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 95
         }
     },
     "0473": {
@@ -7273,12 +7276,12 @@ pocket_monsters_dict = {
             "Name": "Mamoswine",
             "Type 1": "Ice",
             "Type 2": "Ground",
-            "HP": 110,
-            "Attack": 130,
-            "Defense": 80,
-            "Special Attack": 70,
-            "Special Defense": 60,
-            "Speed": 80
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 80
         }
     },
     "0474": {
@@ -7286,12 +7289,12 @@ pocket_monsters_dict = {
             "Name": "Porygon-Z",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 80,
-            "Defense": 70,
-            "Special Attack": 135,
-            "Special Defense": 75,
-            "Speed": 90
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 90
         }
     },
     "0475": {
@@ -7299,23 +7302,23 @@ pocket_monsters_dict = {
             "Name": "Gallade",
             "Type 1": "Psychic",
             "Type 2": "Fighting",
-            "HP": 68,
-            "Attack": 125,
-            "Defense": 65,
-            "Special Attack": 65,
-            "Special Defense": 115,
-            "Speed": 80
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 80
         },
         "Mega Gallade": {
             "Name": "Gallade",
             "Type 1": "Psychic",
             "Type 2": "Fighting",
-            "HP": 68,
-            "Attack": 165,
-            "Defense": 95,
-            "Special Attack": 65,
-            "Special Defense": 115,
-            "Speed": 110
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 165,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 110
         }
     },
     "0476": {
@@ -7323,12 +7326,12 @@ pocket_monsters_dict = {
             "Name": "Probopass",
             "Type 1": "Rock",
             "Type 2": "Steel",
-            "HP": 60,
-            "Attack": 55,
-            "Defense": 145,
-            "Special Attack": 75,
-            "Special Defense": 150,
-            "Speed": 40
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 145,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 40
         }
     },
     "0477": {
@@ -7336,12 +7339,12 @@ pocket_monsters_dict = {
             "Name": "Dusknoir",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 100,
-            "Defense": 135,
-            "Special Attack": 65,
-            "Special Defense": 135,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 135,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 45
         }
     },
     "0478": {
@@ -7349,12 +7352,12 @@ pocket_monsters_dict = {
             "Name": "Froslass",
             "Type 1": "Ice",
             "Type 2": "Ghost",
-            "HP": 70,
-            "Attack": 80,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 70,
-            "Speed": 110
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 110
         }
     },
     "0479": {
@@ -7362,67 +7365,67 @@ pocket_monsters_dict = {
             "Name": "Rotom",
             "Type 1": "Electric",
             "Type 2": "Ghost",
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 77,
-            "Special Attack": 95,
-            "Special Defense": 77,
-            "Speed": 91
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 77,
+            StatsEnum.SPEED: 91
         },
         "Heat Rotom": {
             "Name": "Rotom",
             "Type 1": "Electric",
             "Type 2": "Fire",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 107,
-            "Special Attack": 105,
-            "Special Defense": 107,
-            "Speed": 86
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 107,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 86
         },
         "Wash Rotom": {
             "Name": "Rotom",
             "Type 1": "Electric",
             "Type 2": "Water",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 107,
-            "Special Attack": 105,
-            "Special Defense": 107,
-            "Speed": 86
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 107,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 86
         },
         "Frost Rotom": {
             "Name": "Rotom",
             "Type 1": "Electric",
             "Type 2": "Ice",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 107,
-            "Special Attack": 105,
-            "Special Defense": 107,
-            "Speed": 86
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 107,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 86
         },
         "Fan Rotom": {
             "Name": "Rotom",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 107,
-            "Special Attack": 105,
-            "Special Defense": 107,
-            "Speed": 86
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 107,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 86
         },
         "Mow Rotom": {
             "Name": "Rotom",
             "Type 1": "Electric",
             "Type 2": "Grass",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 107,
-            "Special Attack": 105,
-            "Special Defense": 107,
-            "Speed": 86
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 107,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 86
         }
     },
     "0480": {
@@ -7430,12 +7433,12 @@ pocket_monsters_dict = {
             "Name": "Uxie",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 75,
-            "Defense": 130,
-            "Special Attack": 75,
-            "Special Defense": 130,
-            "Speed": 95
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 95
         }
     },
     "0481": {
@@ -7443,12 +7446,12 @@ pocket_monsters_dict = {
             "Name": "Mesprit",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 105,
-            "Defense": 105,
-            "Special Attack": 105,
-            "Special Defense": 105,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 80
         }
     },
     "0482": {
@@ -7456,12 +7459,12 @@ pocket_monsters_dict = {
             "Name": "Azelf",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 125,
-            "Defense": 70,
-            "Special Attack": 125,
-            "Special Defense": 70,
-            "Speed": 115
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 115
         }
     },
     "0483": {
@@ -7469,23 +7472,23 @@ pocket_monsters_dict = {
             "Name": "Dialga",
             "Type 1": "Steel",
             "Type 2": "Dragon",
-            "HP": 100,
-            "Attack": 120,
-            "Defense": 120,
-            "Special Attack": 150,
-            "Special Defense": 100,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 90
         },
         "Origin Forme": {
             "Name": "Dialga",
             "Type 1": "Steel",
             "Type 2": "Dragon",
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 120,
-            "Special Attack": 150,
-            "Special Defense": 120,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 90
         }
     },
     "0484": {
@@ -7493,23 +7496,23 @@ pocket_monsters_dict = {
             "Name": "Palkia",
             "Type 1": "Water",
             "Type 2": "Dragon",
-            "HP": 90,
-            "Attack": 120,
-            "Defense": 100,
-            "Special Attack": 150,
-            "Special Defense": 120,
-            "Speed": 100
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 100
         },
         "Origin Forme": {
             "Name": "Palkia",
             "Type 1": "Water",
             "Type 2": "Dragon",
-            "HP": 90,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 150,
-            "Special Defense": 120,
-            "Speed": 120
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 120
         }
     },
     "0485": {
@@ -7517,12 +7520,12 @@ pocket_monsters_dict = {
             "Name": "Heatran",
             "Type 1": "Fire",
             "Type 2": "Steel",
-            "HP": 91,
-            "Attack": 90,
-            "Defense": 106,
-            "Special Attack": 130,
-            "Special Defense": 106,
-            "Speed": 77
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 106,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 106,
+            StatsEnum.SPEED: 77
         }
     },
     "0486": {
@@ -7530,12 +7533,12 @@ pocket_monsters_dict = {
             "Name": "Regigigas",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 110,
-            "Attack": 160,
-            "Defense": 110,
-            "Special Attack": 80,
-            "Special Defense": 110,
-            "Speed": 100
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 100
         }
     },
     "0487": {
@@ -7543,23 +7546,23 @@ pocket_monsters_dict = {
             "Name": "Giratina",
             "Type 1": "Ghost",
             "Type 2": "Dragon",
-            "HP": 150,
-            "Attack": 100,
-            "Defense": 120,
-            "Special Attack": 100,
-            "Special Defense": 120,
-            "Speed": 90
+            StatsEnum.HP: 150,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 90
         },
         "Origin Forme": {
             "Name": "Giratina",
             "Type 1": "Ghost",
             "Type 2": "Dragon",
-            "HP": 150,
-            "Attack": 120,
-            "Defense": 100,
-            "Special Attack": 120,
-            "Special Defense": 100,
-            "Speed": 90
+            StatsEnum.HP: 150,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 90
         }
     },
     "0488": {
@@ -7567,12 +7570,12 @@ pocket_monsters_dict = {
             "Name": "Cresselia",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 120,
-            "Attack": 70,
-            "Defense": 110,
-            "Special Attack": 75,
-            "Special Defense": 120,
-            "Speed": 85
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 85
         }
     },
     "0489": {
@@ -7580,12 +7583,12 @@ pocket_monsters_dict = {
             "Name": "Phione",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 80
         }
     },
     "0490": {
@@ -7593,12 +7596,12 @@ pocket_monsters_dict = {
             "Name": "Manaphy",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         }
     },
     "0491": {
@@ -7606,12 +7609,12 @@ pocket_monsters_dict = {
             "Name": "Darkrai",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 90,
-            "Defense": 90,
-            "Special Attack": 135,
-            "Special Defense": 90,
-            "Speed": 125
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 125
         }
     },
     "0492": {
@@ -7619,23 +7622,23 @@ pocket_monsters_dict = {
             "Name": "Shaymin",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         },
         "Sky Forme": {
             "Name": "Shaymin",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 100,
-            "Attack": 103,
-            "Defense": 75,
-            "Special Attack": 120,
-            "Special Defense": 75,
-            "Speed": 127
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 103,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 127
         }
     },
     "0493": {
@@ -7643,12 +7646,12 @@ pocket_monsters_dict = {
             "Name": "Arceus",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 120,
-            "Attack": 120,
-            "Defense": 120,
-            "Special Attack": 120,
-            "Special Defense": 120,
-            "Speed": 120
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 120
         }
     },
     "0494": {
@@ -7656,12 +7659,12 @@ pocket_monsters_dict = {
             "Name": "Victini",
             "Type 1": "Psychic",
             "Type 2": "Fire",
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 100
         }
     },
     "0495": {
@@ -7669,12 +7672,12 @@ pocket_monsters_dict = {
             "Name": "Snivy",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 45,
-            "Defense": 55,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 63
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 63
         }
     },
     "0496": {
@@ -7682,12 +7685,12 @@ pocket_monsters_dict = {
             "Name": "Servine",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 75,
-            "Special Attack": 60,
-            "Special Defense": 75,
-            "Speed": 83
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 83
         }
     },
     "0497": {
@@ -7695,12 +7698,12 @@ pocket_monsters_dict = {
             "Name": "Serperior",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 75,
-            "Defense": 95,
-            "Special Attack": 75,
-            "Special Defense": 95,
-            "Speed": 113
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 113
         }
     },
     "0498": {
@@ -7708,12 +7711,12 @@ pocket_monsters_dict = {
             "Name": "Tepig",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 63,
-            "Defense": 45,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 45
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 45
         }
     },
     "0499": {
@@ -7721,12 +7724,12 @@ pocket_monsters_dict = {
             "Name": "Pignite",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 90,
-            "Attack": 93,
-            "Defense": 55,
-            "Special Attack": 70,
-            "Special Defense": 55,
-            "Speed": 55
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 93,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 55
         }
     },
     "0500": {
@@ -7734,12 +7737,12 @@ pocket_monsters_dict = {
             "Name": "Emboar",
             "Type 1": "Fire",
             "Type 2": "Fighting",
-            "HP": 110,
-            "Attack": 123,
-            "Defense": 65,
-            "Special Attack": 100,
-            "Special Defense": 65,
-            "Speed": 65
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 123,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 65
         }
     },
     "0501": {
@@ -7747,12 +7750,12 @@ pocket_monsters_dict = {
             "Name": "Oshawott",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 55,
-            "Defense": 45,
-            "Special Attack": 63,
-            "Special Defense": 45,
-            "Speed": 45
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 45
         }
     },
     "0502": {
@@ -7760,12 +7763,12 @@ pocket_monsters_dict = {
             "Name": "Dewott",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 75,
-            "Defense": 60,
-            "Special Attack": 83,
-            "Special Defense": 60,
-            "Speed": 60
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 60
         }
     },
     "0503": {
@@ -7773,23 +7776,23 @@ pocket_monsters_dict = {
             "Name": "Samurott",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 100,
-            "Defense": 85,
-            "Special Attack": 108,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 108,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         },
         "Hisuian Samurott": {
             "Name": "Samurott",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 90,
-            "Attack": 108,
-            "Defense": 80,
-            "Special Attack": 100,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 108,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "0504": {
@@ -7797,12 +7800,12 @@ pocket_monsters_dict = {
             "Name": "Patrat",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 55,
-            "Defense": 39,
-            "Special Attack": 35,
-            "Special Defense": 39,
-            "Speed": 42
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 39,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 39,
+            StatsEnum.SPEED: 42
         }
     },
     "0505": {
@@ -7810,12 +7813,12 @@ pocket_monsters_dict = {
             "Name": "Watchog",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 69,
-            "Special Attack": 60,
-            "Special Defense": 69,
-            "Speed": 77
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 69,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 69,
+            StatsEnum.SPEED: 77
         }
     },
     "0506": {
@@ -7823,12 +7826,12 @@ pocket_monsters_dict = {
             "Name": "Lillipup",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 60,
-            "Defense": 45,
-            "Special Attack": 25,
-            "Special Defense": 45,
-            "Speed": 55
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 55
         }
     },
     "0507": {
@@ -7836,12 +7839,12 @@ pocket_monsters_dict = {
             "Name": "Herdier",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 80,
-            "Defense": 65,
-            "Special Attack": 35,
-            "Special Defense": 65,
-            "Speed": 60
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 60
         }
     },
     "0508": {
@@ -7849,12 +7852,12 @@ pocket_monsters_dict = {
             "Name": "Stoutland",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 110,
-            "Defense": 90,
-            "Special Attack": 45,
-            "Special Defense": 90,
-            "Speed": 80
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 80
         }
     },
     "0509": {
@@ -7862,12 +7865,12 @@ pocket_monsters_dict = {
             "Name": "Purrloin",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 41,
-            "Attack": 50,
-            "Defense": 37,
-            "Special Attack": 50,
-            "Special Defense": 37,
-            "Speed": 66
+            StatsEnum.HP: 41,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 37,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 37,
+            StatsEnum.SPEED: 66
         }
     },
     "0510": {
@@ -7875,12 +7878,12 @@ pocket_monsters_dict = {
             "Name": "Liepard",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 64,
-            "Attack": 88,
-            "Defense": 50,
-            "Special Attack": 88,
-            "Special Defense": 50,
-            "Speed": 106
+            StatsEnum.HP: 64,
+            StatsEnum.ATTACK: 88,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 88,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 106
         }
     },
     "0511": {
@@ -7888,12 +7891,12 @@ pocket_monsters_dict = {
             "Name": "Pansage",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 53,
-            "Defense": 48,
-            "Special Attack": 53,
-            "Special Defense": 48,
-            "Speed": 64
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 64
         }
     },
     "0512": {
@@ -7901,12 +7904,12 @@ pocket_monsters_dict = {
             "Name": "Simisage",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 98,
-            "Defense": 63,
-            "Special Attack": 98,
-            "Special Defense": 63,
-            "Speed": 101
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 98,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 101
         }
     },
     "0513": {
@@ -7914,12 +7917,12 @@ pocket_monsters_dict = {
             "Name": "Pansear",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 53,
-            "Defense": 48,
-            "Special Attack": 53,
-            "Special Defense": 48,
-            "Speed": 64
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 64
         }
     },
     "0514": {
@@ -7927,12 +7930,12 @@ pocket_monsters_dict = {
             "Name": "Simisear",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 98,
-            "Defense": 63,
-            "Special Attack": 98,
-            "Special Defense": 63,
-            "Speed": 101
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 98,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 101
         }
     },
     "0515": {
@@ -7940,12 +7943,12 @@ pocket_monsters_dict = {
             "Name": "Panpour",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 53,
-            "Defense": 48,
-            "Special Attack": 53,
-            "Special Defense": 48,
-            "Speed": 64
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 64
         }
     },
     "0516": {
@@ -7953,12 +7956,12 @@ pocket_monsters_dict = {
             "Name": "Simipour",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 98,
-            "Defense": 63,
-            "Special Attack": 98,
-            "Special Defense": 63,
-            "Speed": 101
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 98,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 101
         }
     },
     "0517": {
@@ -7966,12 +7969,12 @@ pocket_monsters_dict = {
             "Name": "Munna",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 76,
-            "Attack": 25,
-            "Defense": 45,
-            "Special Attack": 67,
-            "Special Defense": 55,
-            "Speed": 24
+            StatsEnum.HP: 76,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 67,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 24
         }
     },
     "0518": {
@@ -7979,12 +7982,12 @@ pocket_monsters_dict = {
             "Name": "Musharna",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 116,
-            "Attack": 55,
-            "Defense": 85,
-            "Special Attack": 107,
-            "Special Defense": 95,
-            "Speed": 29
+            StatsEnum.HP: 116,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 107,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 29
         }
     },
     "0519": {
@@ -7992,12 +7995,12 @@ pocket_monsters_dict = {
             "Name": "Pidove",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 50,
-            "Attack": 55,
-            "Defense": 50,
-            "Special Attack": 36,
-            "Special Defense": 30,
-            "Speed": 43
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 36,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 43
         }
     },
     "0520": {
@@ -8005,12 +8008,12 @@ pocket_monsters_dict = {
             "Name": "Tranquill",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 62,
-            "Attack": 77,
-            "Defense": 62,
-            "Special Attack": 50,
-            "Special Defense": 42,
-            "Speed": 65
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 77,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 42,
+            StatsEnum.SPEED: 65
         }
     },
     "0521": {
@@ -8018,12 +8021,12 @@ pocket_monsters_dict = {
             "Name": "Unfezant",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 80,
-            "Attack": 115,
-            "Defense": 80,
-            "Special Attack": 65,
-            "Special Defense": 55,
-            "Speed": 93
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 93
         }
     },
     "0522": {
@@ -8031,12 +8034,12 @@ pocket_monsters_dict = {
             "Name": "Blitzle",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 60,
-            "Defense": 32,
-            "Special Attack": 50,
-            "Special Defense": 32,
-            "Speed": 76
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 32,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 32,
+            StatsEnum.SPEED: 76
         }
     },
     "0523": {
@@ -8044,12 +8047,12 @@ pocket_monsters_dict = {
             "Name": "Zebstrika",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 100,
-            "Defense": 63,
-            "Special Attack": 80,
-            "Special Defense": 63,
-            "Speed": 116
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 116
         }
     },
     "0524": {
@@ -8057,12 +8060,12 @@ pocket_monsters_dict = {
             "Name": "Roggenrola",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 75,
-            "Defense": 85,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 15
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 15
         }
     },
     "0525": {
@@ -8070,12 +8073,12 @@ pocket_monsters_dict = {
             "Name": "Boldore",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 105,
-            "Defense": 105,
-            "Special Attack": 50,
-            "Special Defense": 40,
-            "Speed": 20
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 20
         }
     },
     "0526": {
@@ -8083,12 +8086,12 @@ pocket_monsters_dict = {
             "Name": "Gigalith",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 135,
-            "Defense": 130,
-            "Special Attack": 60,
-            "Special Defense": 80,
-            "Speed": 25
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 25
         }
     },
     "0527": {
@@ -8096,12 +8099,12 @@ pocket_monsters_dict = {
             "Name": "Woobat",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 65,
-            "Attack": 45,
-            "Defense": 43,
-            "Special Attack": 55,
-            "Special Defense": 43,
-            "Speed": 72
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 43,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 43,
+            StatsEnum.SPEED: 72
         }
     },
     "0528": {
@@ -8109,12 +8112,12 @@ pocket_monsters_dict = {
             "Name": "Swoobat",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 67,
-            "Attack": 57,
-            "Defense": 55,
-            "Special Attack": 77,
-            "Special Defense": 55,
-            "Speed": 114
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 57,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 77,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 114
         }
     },
     "0529": {
@@ -8122,12 +8125,12 @@ pocket_monsters_dict = {
             "Name": "Drilbur",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 85,
-            "Defense": 40,
-            "Special Attack": 30,
-            "Special Defense": 45,
-            "Speed": 68
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 68
         }
     },
     "0530": {
@@ -8135,12 +8138,12 @@ pocket_monsters_dict = {
             "Name": "Excadrill",
             "Type 1": "Ground",
             "Type 2": "Steel",
-            "HP": 110,
-            "Attack": 135,
-            "Defense": 60,
-            "Special Attack": 50,
-            "Special Defense": 65,
-            "Speed": 88
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 88
         }
     },
     "0531": {
@@ -8148,23 +8151,23 @@ pocket_monsters_dict = {
             "Name": "Audino",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 103,
-            "Attack": 60,
-            "Defense": 86,
-            "Special Attack": 60,
-            "Special Defense": 86,
-            "Speed": 50
+            StatsEnum.HP: 103,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 86,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 50
         },
         "Mega Audino": {
             "Name": "Audino",
             "Type 1": "Normal",
             "Type 2": "Fairy",
-            "HP": 103,
-            "Attack": 60,
-            "Defense": 126,
-            "Special Attack": 80,
-            "Special Defense": 126,
-            "Speed": 50
+            StatsEnum.HP: 103,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 126,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 126,
+            StatsEnum.SPEED: 50
         }
     },
     "0532": {
@@ -8172,12 +8175,12 @@ pocket_monsters_dict = {
             "Name": "Timburr",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 55,
-            "Special Attack": 25,
-            "Special Defense": 35,
-            "Speed": 35
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 35
         }
     },
     "0533": {
@@ -8185,12 +8188,12 @@ pocket_monsters_dict = {
             "Name": "Gurdurr",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 105,
-            "Defense": 85,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 40
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 40
         }
     },
     "0534": {
@@ -8198,12 +8201,12 @@ pocket_monsters_dict = {
             "Name": "Conkeldurr",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 105,
-            "Attack": 140,
-            "Defense": 95,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         }
     },
     "0535": {
@@ -8211,12 +8214,12 @@ pocket_monsters_dict = {
             "Name": "Tympole",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 40,
-            "Speed": 64
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 64
         }
     },
     "0536": {
@@ -8224,12 +8227,12 @@ pocket_monsters_dict = {
             "Name": "Palpitoad",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 75,
-            "Attack": 65,
-            "Defense": 55,
-            "Special Attack": 65,
-            "Special Defense": 55,
-            "Speed": 69
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 69
         }
     },
     "0537": {
@@ -8237,12 +8240,12 @@ pocket_monsters_dict = {
             "Name": "Seismitoad",
             "Type 1": "Water",
             "Type 2": "Ground",
-            "HP": 105,
-            "Attack": 95,
-            "Defense": 75,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 74
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 74
         }
     },
     "0538": {
@@ -8250,12 +8253,12 @@ pocket_monsters_dict = {
             "Name": "Throh",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 120,
-            "Attack": 100,
-            "Defense": 85,
-            "Special Attack": 30,
-            "Special Defense": 85,
-            "Speed": 45
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 45
         }
     },
     "0539": {
@@ -8263,12 +8266,12 @@ pocket_monsters_dict = {
             "Name": "Sawk",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 125,
-            "Defense": 75,
-            "Special Attack": 30,
-            "Special Defense": 75,
-            "Speed": 85
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 85
         }
     },
     "0540": {
@@ -8276,12 +8279,12 @@ pocket_monsters_dict = {
             "Name": "Sewaddle",
             "Type 1": "Bug",
             "Type 2": "Grass",
-            "HP": 45,
-            "Attack": 53,
-            "Defense": 70,
-            "Special Attack": 40,
-            "Special Defense": 60,
-            "Speed": 42
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 42
         }
     },
     "0541": {
@@ -8289,12 +8292,12 @@ pocket_monsters_dict = {
             "Name": "Swadloon",
             "Type 1": "Bug",
             "Type 2": "Grass",
-            "HP": 55,
-            "Attack": 63,
-            "Defense": 90,
-            "Special Attack": 50,
-            "Special Defense": 80,
-            "Speed": 42
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 42
         }
     },
     "0542": {
@@ -8302,12 +8305,12 @@ pocket_monsters_dict = {
             "Name": "Leavanny",
             "Type 1": "Bug",
             "Type 2": "Grass",
-            "HP": 75,
-            "Attack": 103,
-            "Defense": 80,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 92
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 103,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 92
         }
     },
     "0543": {
@@ -8315,12 +8318,12 @@ pocket_monsters_dict = {
             "Name": "Venipede",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 30,
-            "Attack": 45,
-            "Defense": 59,
-            "Special Attack": 30,
-            "Special Defense": 39,
-            "Speed": 57
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 59,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 39,
+            StatsEnum.SPEED: 57
         }
     },
     "0544": {
@@ -8328,12 +8331,12 @@ pocket_monsters_dict = {
             "Name": "Whirlipede",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 40,
-            "Attack": 55,
-            "Defense": 99,
-            "Special Attack": 40,
-            "Special Defense": 79,
-            "Speed": 47
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 99,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 79,
+            StatsEnum.SPEED: 47
         }
     },
     "0545": {
@@ -8341,12 +8344,12 @@ pocket_monsters_dict = {
             "Name": "Scolipede",
             "Type 1": "Bug",
             "Type 2": "Poison",
-            "HP": 60,
-            "Attack": 100,
-            "Defense": 89,
-            "Special Attack": 55,
-            "Special Defense": 69,
-            "Speed": 112
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 89,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 69,
+            StatsEnum.SPEED: 112
         }
     },
     "0546": {
@@ -8354,12 +8357,12 @@ pocket_monsters_dict = {
             "Name": "Cottonee",
             "Type 1": "Grass",
             "Type 2": "Fairy",
-            "HP": 40,
-            "Attack": 27,
-            "Defense": 60,
-            "Special Attack": 37,
-            "Special Defense": 50,
-            "Speed": 66
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 27,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 37,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 66
         }
     },
     "0547": {
@@ -8367,12 +8370,12 @@ pocket_monsters_dict = {
             "Name": "Whimsicott",
             "Type 1": "Grass",
             "Type 2": "Fairy",
-            "HP": 60,
-            "Attack": 67,
-            "Defense": 85,
-            "Special Attack": 77,
-            "Special Defense": 75,
-            "Speed": 116
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 67,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 77,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 116
         }
     },
     "0548": {
@@ -8380,12 +8383,12 @@ pocket_monsters_dict = {
             "Name": "Petilil",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 35,
-            "Defense": 50,
-            "Special Attack": 70,
-            "Special Defense": 50,
-            "Speed": 30
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 30
         }
     },
     "0549": {
@@ -8393,23 +8396,23 @@ pocket_monsters_dict = {
             "Name": "Lilligant",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 60,
-            "Defense": 75,
-            "Special Attack": 110,
-            "Special Defense": 75,
-            "Speed": 90
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 90
         },
         "Hisuian Lilligant": {
             "Name": "Lilligant",
             "Type 1": "Grass",
             "Type 2": "Fighting",
-            "HP": 70,
-            "Attack": 105,
-            "Defense": 75,
-            "Special Attack": 50,
-            "Special Defense": 75,
-            "Speed": 105
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 105
         }
     },
     "0550": {
@@ -8417,34 +8420,34 @@ pocket_monsters_dict = {
             "Name": "Basculin",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 92,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 55,
-            "Speed": 98
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 98
         },
         "Blue-Striped Form": {
             "Name": "Basculin",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 92,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 55,
-            "Speed": 98
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 98
         },
         "White-Striped Form": {
             "Name": "Basculin",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 92,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 55,
-            "Speed": 98
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 98
         }
     },
     "0551": {
@@ -8452,12 +8455,12 @@ pocket_monsters_dict = {
             "Name": "Sandile",
             "Type 1": "Ground",
             "Type 2": "Dark",
-            "HP": 50,
-            "Attack": 72,
-            "Defense": 35,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 65
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 65
         }
     },
     "0552": {
@@ -8465,12 +8468,12 @@ pocket_monsters_dict = {
             "Name": "Krokorok",
             "Type 1": "Ground",
             "Type 2": "Dark",
-            "HP": 60,
-            "Attack": 82,
-            "Defense": 45,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 74
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 74
         }
     },
     "0553": {
@@ -8478,12 +8481,12 @@ pocket_monsters_dict = {
             "Name": "Krookodile",
             "Type 1": "Ground",
             "Type 2": "Dark",
-            "HP": 95,
-            "Attack": 117,
-            "Defense": 80,
-            "Special Attack": 65,
-            "Special Defense": 70,
-            "Speed": 92
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 117,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 92
         }
     },
     "0554": {
@@ -8491,23 +8494,23 @@ pocket_monsters_dict = {
             "Name": "Darumaka",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 90,
-            "Defense": 45,
-            "Special Attack": 15,
-            "Special Defense": 45,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 15,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 50
         },
         "Galarian Darumaka": {
             "Name": "Darumaka",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 90,
-            "Defense": 45,
-            "Special Attack": 15,
-            "Special Defense": 45,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 15,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 50
         }
     },
     "0555": {
@@ -8515,45 +8518,45 @@ pocket_monsters_dict = {
             "Name": "Darmanitan",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 105,
-            "Attack": 140,
-            "Defense": 55,
-            "Special Attack": 30,
-            "Special Defense": 55,
-            "Speed": 95
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 95
         },
         "Zen Mode": {
             "Name": "Darmanitan",
             "Type 1": "Fire",
             "Type 2": "Psychic",
-            "HP": 105,
-            "Attack": 30,
-            "Defense": 105,
-            "Special Attack": 140,
-            "Special Defense": 105,
-            "Speed": 55
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 55
         },
         "Galarian Standard Mode": {
             "Name": "Darmanitan",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 105,
-            "Attack": 140,
-            "Defense": 55,
-            "Special Attack": 30,
-            "Special Defense": 55,
-            "Speed": 95
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 95
         },
         "Galarian Zen Mode": {
             "Name": "Darmanitan",
             "Type 1": "Ice",
             "Type 2": "Fire",
-            "HP": 105,
-            "Attack": 160,
-            "Defense": 55,
-            "Special Attack": 30,
-            "Special Defense": 55,
-            "Speed": 135
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 135
         }
     },
     "0556": {
@@ -8561,12 +8564,12 @@ pocket_monsters_dict = {
             "Name": "Maractus",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 86,
-            "Defense": 67,
-            "Special Attack": 106,
-            "Special Defense": 67,
-            "Speed": 60
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 86,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 106,
+            StatsEnum.SPECIAL_DEFENSE: 67,
+            StatsEnum.SPEED: 60
         }
     },
     "0557": {
@@ -8574,12 +8577,12 @@ pocket_monsters_dict = {
             "Name": "Dwebble",
             "Type 1": "Bug",
             "Type 2": "Rock",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 85,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 55
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 55
         }
     },
     "0558": {
@@ -8587,12 +8590,12 @@ pocket_monsters_dict = {
             "Name": "Crustle",
             "Type 1": "Bug",
             "Type 2": "Rock",
-            "HP": 70,
-            "Attack": 105,
-            "Defense": 125,
-            "Special Attack": 65,
-            "Special Defense": 75,
-            "Speed": 45
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 45
         }
     },
     "0559": {
@@ -8600,12 +8603,12 @@ pocket_monsters_dict = {
             "Name": "Scraggy",
             "Type 1": "Dark",
             "Type 2": "Fighting",
-            "HP": 50,
-            "Attack": 75,
-            "Defense": 70,
-            "Special Attack": 35,
-            "Special Defense": 70,
-            "Speed": 48
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 48
         }
     },
     "0560": {
@@ -8613,12 +8616,12 @@ pocket_monsters_dict = {
             "Name": "Scrafty",
             "Type 1": "Dark",
             "Type 2": "Fighting",
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 115,
-            "Special Attack": 45,
-            "Special Defense": 115,
-            "Speed": 58
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 58
         }
     },
     "0561": {
@@ -8626,12 +8629,12 @@ pocket_monsters_dict = {
             "Name": "Sigilyph",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 72,
-            "Attack": 58,
-            "Defense": 80,
-            "Special Attack": 103,
-            "Special Defense": 80,
-            "Speed": 97
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 58,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 103,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 97
         }
     },
     "0562": {
@@ -8639,23 +8642,23 @@ pocket_monsters_dict = {
             "Name": "Yamask",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 30,
-            "Defense": 85,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 30
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 30
         },
         "Galarian Yamask": {
             "Name": "Yamask",
             "Type 1": "Ground",
             "Type 2": "Ghost",
-            "HP": 38,
-            "Attack": 55,
-            "Defense": 85,
-            "Special Attack": 30,
-            "Special Defense": 65,
-            "Speed": 30
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 30
         }
     },
     "0563": {
@@ -8663,12 +8666,12 @@ pocket_monsters_dict = {
             "Name": "Cofagrigus",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 58,
-            "Attack": 50,
-            "Defense": 145,
-            "Special Attack": 95,
-            "Special Defense": 105,
-            "Speed": 30
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 145,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 30
         }
     },
     "0564": {
@@ -8676,12 +8679,12 @@ pocket_monsters_dict = {
             "Name": "Tirtouga",
             "Type 1": "Water",
             "Type 2": "Rock",
-            "HP": 54,
-            "Attack": 78,
-            "Defense": 103,
-            "Special Attack": 53,
-            "Special Defense": 45,
-            "Speed": 22
+            StatsEnum.HP: 54,
+            StatsEnum.ATTACK: 78,
+            StatsEnum.DEFENSE: 103,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 22
         }
     },
     "0565": {
@@ -8689,12 +8692,12 @@ pocket_monsters_dict = {
             "Name": "Carracosta",
             "Type 1": "Water",
             "Type 2": "Rock",
-            "HP": 74,
-            "Attack": 108,
-            "Defense": 133,
-            "Special Attack": 83,
-            "Special Defense": 65,
-            "Speed": 32
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 108,
+            StatsEnum.DEFENSE: 133,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 32
         }
     },
     "0566": {
@@ -8702,12 +8705,12 @@ pocket_monsters_dict = {
             "Name": "Archen",
             "Type 1": "Rock",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 112,
-            "Defense": 45,
-            "Special Attack": 74,
-            "Special Defense": 45,
-            "Speed": 70
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 112,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 70
         }
     },
     "0567": {
@@ -8715,12 +8718,12 @@ pocket_monsters_dict = {
             "Name": "Archeops",
             "Type 1": "Rock",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 140,
-            "Defense": 65,
-            "Special Attack": 112,
-            "Special Defense": 65,
-            "Speed": 110
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 112,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 110
         }
     },
     "0568": {
@@ -8728,12 +8731,12 @@ pocket_monsters_dict = {
             "Name": "Trubbish",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 62,
-            "Special Attack": 40,
-            "Special Defense": 62,
-            "Speed": 65
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 62,
+            StatsEnum.SPEED: 65
         }
     },
     "0569": {
@@ -8741,12 +8744,12 @@ pocket_monsters_dict = {
             "Name": "Garbodor",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 95,
-            "Defense": 82,
-            "Special Attack": 60,
-            "Special Defense": 82,
-            "Speed": 75
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 82,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 82,
+            StatsEnum.SPEED: 75
         }
     },
     "0570": {
@@ -8754,23 +8757,23 @@ pocket_monsters_dict = {
             "Name": "Zorua",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 65,
-            "Defense": 40,
-            "Special Attack": 80,
-            "Special Defense": 40,
-            "Speed": 65
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 65
         },
         "Hisuian Zorua": {
             "Name": "Zorua",
             "Type 1": "Normal",
             "Type 2": "Ghost",
-            "HP": 35,
-            "Attack": 60,
-            "Defense": 40,
-            "Special Attack": 85,
-            "Special Defense": 40,
-            "Speed": 70
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 70
         }
     },
     "0571": {
@@ -8778,23 +8781,23 @@ pocket_monsters_dict = {
             "Name": "Zoroark",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 105,
-            "Defense": 60,
-            "Special Attack": 120,
-            "Special Defense": 60,
-            "Speed": 105
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 105
         },
         "Hisuian Zoroark": {
             "Name": "Zoroark",
             "Type 1": "Normal",
             "Type 2": "Ghost",
-            "HP": 55,
-            "Attack": 100,
-            "Defense": 60,
-            "Special Attack": 125,
-            "Special Defense": 60,
-            "Speed": 110
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 110
         }
     },
     "0572": {
@@ -8802,12 +8805,12 @@ pocket_monsters_dict = {
             "Name": "Minccino",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 50,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 75
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 75
         }
     },
     "0573": {
@@ -8815,12 +8818,12 @@ pocket_monsters_dict = {
             "Name": "Cinccino",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 95,
-            "Defense": 60,
-            "Special Attack": 65,
-            "Special Defense": 60,
-            "Speed": 115
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 115
         }
     },
     "0574": {
@@ -8828,12 +8831,12 @@ pocket_monsters_dict = {
             "Name": "Gothita",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 50,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 45
         }
     },
     "0575": {
@@ -8841,12 +8844,12 @@ pocket_monsters_dict = {
             "Name": "Gothorita",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 45,
-            "Defense": 70,
-            "Special Attack": 75,
-            "Special Defense": 85,
-            "Speed": 55
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 55
         }
     },
     "0576": {
@@ -8854,12 +8857,12 @@ pocket_monsters_dict = {
             "Name": "Gothitelle",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 55,
-            "Defense": 95,
-            "Special Attack": 95,
-            "Special Defense": 110,
-            "Speed": 65
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 65
         }
     },
     "0577": {
@@ -8867,12 +8870,12 @@ pocket_monsters_dict = {
             "Name": "Solosis",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 40,
-            "Special Attack": 105,
-            "Special Defense": 50,
-            "Speed": 20
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 20
         }
     },
     "0578": {
@@ -8880,12 +8883,12 @@ pocket_monsters_dict = {
             "Name": "Duosion",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 40,
-            "Defense": 50,
-            "Special Attack": 125,
-            "Special Defense": 60,
-            "Speed": 30
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 30
         }
     },
     "0579": {
@@ -8893,12 +8896,12 @@ pocket_monsters_dict = {
             "Name": "Reuniclus",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 110,
-            "Attack": 65,
-            "Defense": 75,
-            "Special Attack": 125,
-            "Special Defense": 85,
-            "Speed": 30
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 30
         }
     },
     "0580": {
@@ -8906,12 +8909,12 @@ pocket_monsters_dict = {
             "Name": "Ducklett",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 62,
-            "Attack": 44,
-            "Defense": 50,
-            "Special Attack": 44,
-            "Special Defense": 50,
-            "Speed": 55
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 44,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 55
         }
     },
     "0581": {
@@ -8919,12 +8922,12 @@ pocket_monsters_dict = {
             "Name": "Swanna",
             "Type 1": "Water",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 87,
-            "Defense": 63,
-            "Special Attack": 87,
-            "Special Defense": 63,
-            "Speed": 98
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 87,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 87,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 98
         }
     },
     "0582": {
@@ -8932,12 +8935,12 @@ pocket_monsters_dict = {
             "Name": "Vanillite",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 36,
-            "Attack": 50,
-            "Defense": 50,
-            "Special Attack": 65,
-            "Special Defense": 60,
-            "Speed": 44
+            StatsEnum.HP: 36,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 44
         }
     },
     "0583": {
@@ -8945,12 +8948,12 @@ pocket_monsters_dict = {
             "Name": "Vanillish",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 51,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 75,
-            "Speed": 59
+            StatsEnum.HP: 51,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 59
         }
     },
     "0584": {
@@ -8958,12 +8961,12 @@ pocket_monsters_dict = {
             "Name": "Vanilluxe",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 71,
-            "Attack": 95,
-            "Defense": 85,
-            "Special Attack": 110,
-            "Special Defense": 95,
-            "Speed": 79
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 79
         }
     },
     "0585": {
@@ -8971,12 +8974,12 @@ pocket_monsters_dict = {
             "Name": "Deerling",
             "Type 1": "Normal",
             "Type 2": "Grass",
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 75
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 75
         }
     },
     "0586": {
@@ -8984,12 +8987,12 @@ pocket_monsters_dict = {
             "Name": "Sawsbuck",
             "Type 1": "Normal",
             "Type 2": "Grass",
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 95
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 95
         }
     },
     "0587": {
@@ -8997,12 +9000,12 @@ pocket_monsters_dict = {
             "Name": "Emolga",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 75,
-            "Defense": 60,
-            "Special Attack": 75,
-            "Special Defense": 60,
-            "Speed": 103
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 103
         }
     },
     "0588": {
@@ -9010,12 +9013,12 @@ pocket_monsters_dict = {
             "Name": "Karrablast",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 75,
-            "Defense": 45,
-            "Special Attack": 40,
-            "Special Defense": 45,
-            "Speed": 60
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 60
         }
     },
     "0589": {
@@ -9023,12 +9026,12 @@ pocket_monsters_dict = {
             "Name": "Escavalier",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 70,
-            "Attack": 135,
-            "Defense": 105,
-            "Special Attack": 60,
-            "Special Defense": 105,
-            "Speed": 20
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 20
         }
     },
     "0590": {
@@ -9036,12 +9039,12 @@ pocket_monsters_dict = {
             "Name": "Foongus",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 69,
-            "Attack": 55,
-            "Defense": 45,
-            "Special Attack": 55,
-            "Special Defense": 55,
-            "Speed": 15
+            StatsEnum.HP: 69,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 15
         }
     },
     "0591": {
@@ -9049,12 +9052,12 @@ pocket_monsters_dict = {
             "Name": "Amoonguss",
             "Type 1": "Grass",
             "Type 2": "Poison",
-            "HP": 114,
-            "Attack": 85,
-            "Defense": 70,
-            "Special Attack": 85,
-            "Special Defense": 80,
-            "Speed": 30
+            StatsEnum.HP: 114,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 30
         }
     },
     "0592": {
@@ -9062,12 +9065,12 @@ pocket_monsters_dict = {
             "Name": "Frillish",
             "Type 1": "Water",
             "Type 2": "Ghost",
-            "HP": 55,
-            "Attack": 40,
-            "Defense": 50,
-            "Special Attack": 65,
-            "Special Defense": 85,
-            "Speed": 40
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 40
         }
     },
     "0593": {
@@ -9075,12 +9078,12 @@ pocket_monsters_dict = {
             "Name": "Jellicent",
             "Type 1": "Water",
             "Type 2": "Ghost",
-            "HP": 100,
-            "Attack": 60,
-            "Defense": 70,
-            "Special Attack": 85,
-            "Special Defense": 105,
-            "Speed": 60
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 60
         }
     },
     "0594": {
@@ -9088,12 +9091,12 @@ pocket_monsters_dict = {
             "Name": "Alomomola",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 165,
-            "Attack": 75,
-            "Defense": 80,
-            "Special Attack": 40,
-            "Special Defense": 45,
-            "Speed": 65
+            StatsEnum.HP: 165,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 65
         }
     },
     "0595": {
@@ -9101,12 +9104,12 @@ pocket_monsters_dict = {
             "Name": "Joltik",
             "Type 1": "Bug",
             "Type 2": "Electric",
-            "HP": 50,
-            "Attack": 47,
-            "Defense": 50,
-            "Special Attack": 57,
-            "Special Defense": 50,
-            "Speed": 65
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 47,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 57,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 65
         }
     },
     "0596": {
@@ -9114,12 +9117,12 @@ pocket_monsters_dict = {
             "Name": "Galvantula",
             "Type 1": "Bug",
             "Type 2": "Electric",
-            "HP": 70,
-            "Attack": 77,
-            "Defense": 60,
-            "Special Attack": 97,
-            "Special Defense": 60,
-            "Speed": 108
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 77,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 97,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 108
         }
     },
     "0597": {
@@ -9127,12 +9130,12 @@ pocket_monsters_dict = {
             "Name": "Ferroseed",
             "Type 1": "Grass",
             "Type 2": "Steel",
-            "HP": 44,
-            "Attack": 50,
-            "Defense": 91,
-            "Special Attack": 24,
-            "Special Defense": 86,
-            "Speed": 10
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 91,
+            StatsEnum.SPECIAL_ATTACK: 24,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 10
         }
     },
     "0598": {
@@ -9140,12 +9143,12 @@ pocket_monsters_dict = {
             "Name": "Ferrothorn",
             "Type 1": "Grass",
             "Type 2": "Steel",
-            "HP": 74,
-            "Attack": 94,
-            "Defense": 131,
-            "Special Attack": 54,
-            "Special Defense": 116,
-            "Speed": 20
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 94,
+            StatsEnum.DEFENSE: 131,
+            StatsEnum.SPECIAL_ATTACK: 54,
+            StatsEnum.SPECIAL_DEFENSE: 116,
+            StatsEnum.SPEED: 20
         }
     },
     "0599": {
@@ -9153,12 +9156,12 @@ pocket_monsters_dict = {
             "Name": "Klink",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 55,
-            "Defense": 70,
-            "Special Attack": 45,
-            "Special Defense": 60,
-            "Speed": 30
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 30
         }
     },
     "0600": {
@@ -9166,12 +9169,12 @@ pocket_monsters_dict = {
             "Name": "Klang",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 80,
-            "Defense": 95,
-            "Special Attack": 70,
-            "Special Defense": 85,
-            "Speed": 50
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 50
         }
     },
     "0601": {
@@ -9179,12 +9182,12 @@ pocket_monsters_dict = {
             "Name": "Klinklang",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 100,
-            "Defense": 115,
-            "Special Attack": 70,
-            "Special Defense": 85,
-            "Speed": 90
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 90
         }
     },
     "0602": {
@@ -9192,12 +9195,12 @@ pocket_monsters_dict = {
             "Name": "Tynamo",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 55,
-            "Defense": 40,
-            "Special Attack": 45,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         }
     },
     "0603": {
@@ -9205,12 +9208,12 @@ pocket_monsters_dict = {
             "Name": "Eelektrik",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 85,
-            "Defense": 70,
-            "Special Attack": 75,
-            "Special Defense": 70,
-            "Speed": 40
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 40
         }
     },
     "0604": {
@@ -9218,12 +9221,12 @@ pocket_monsters_dict = {
             "Name": "Eelektross",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 115,
-            "Defense": 80,
-            "Special Attack": 105,
-            "Special Defense": 80,
-            "Speed": 50
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 50
         }
     },
     "0605": {
@@ -9231,12 +9234,12 @@ pocket_monsters_dict = {
             "Name": "Elgyem",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 55,
-            "Defense": 55,
-            "Special Attack": 85,
-            "Special Defense": 55,
-            "Speed": 30
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 30
         }
     },
     "0606": {
@@ -9244,12 +9247,12 @@ pocket_monsters_dict = {
             "Name": "Beheeyem",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 75,
-            "Defense": 75,
-            "Special Attack": 125,
-            "Special Defense": 95,
-            "Speed": 40
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 40
         }
     },
     "0607": {
@@ -9257,12 +9260,12 @@ pocket_monsters_dict = {
             "Name": "Litwick",
             "Type 1": "Ghost",
             "Type 2": "Fire",
-            "HP": 50,
-            "Attack": 30,
-            "Defense": 55,
-            "Special Attack": 65,
-            "Special Defense": 55,
-            "Speed": 20
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 20
         }
     },
     "0608": {
@@ -9270,12 +9273,12 @@ pocket_monsters_dict = {
             "Name": "Lampent",
             "Type 1": "Ghost",
             "Type 2": "Fire",
-            "HP": 60,
-            "Attack": 40,
-            "Defense": 60,
-            "Special Attack": 95,
-            "Special Defense": 60,
-            "Speed": 55
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 55
         }
     },
     "0609": {
@@ -9283,12 +9286,12 @@ pocket_monsters_dict = {
             "Name": "Chandelure",
             "Type 1": "Ghost",
             "Type 2": "Fire",
-            "HP": 60,
-            "Attack": 55,
-            "Defense": 90,
-            "Special Attack": 145,
-            "Special Defense": 90,
-            "Speed": 80
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 80
         }
     },
     "0610": {
@@ -9296,12 +9299,12 @@ pocket_monsters_dict = {
             "Name": "Axew",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 46,
-            "Attack": 87,
-            "Defense": 60,
-            "Special Attack": 30,
-            "Special Defense": 40,
-            "Speed": 57
+            StatsEnum.HP: 46,
+            StatsEnum.ATTACK: 87,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 57
         }
     },
     "0611": {
@@ -9309,12 +9312,12 @@ pocket_monsters_dict = {
             "Name": "Fraxure",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 66,
-            "Attack": 117,
-            "Defense": 70,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 67
+            StatsEnum.HP: 66,
+            StatsEnum.ATTACK: 117,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 67
         }
     },
     "0612": {
@@ -9322,12 +9325,12 @@ pocket_monsters_dict = {
             "Name": "Haxorus",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 76,
-            "Attack": 147,
-            "Defense": 90,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 97
+            StatsEnum.HP: 76,
+            StatsEnum.ATTACK: 147,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 97
         }
     },
     "0613": {
@@ -9335,12 +9338,12 @@ pocket_monsters_dict = {
             "Name": "Cubchoo",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 70,
-            "Defense": 40,
-            "Special Attack": 60,
-            "Special Defense": 40,
-            "Speed": 40
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 40
         }
     },
     "0614": {
@@ -9348,12 +9351,12 @@ pocket_monsters_dict = {
             "Name": "Beartic",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 130,
-            "Defense": 80,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 50
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 50
         }
     },
     "0615": {
@@ -9361,12 +9364,12 @@ pocket_monsters_dict = {
             "Name": "Cryogonal",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 50,
-            "Defense": 50,
-            "Special Attack": 95,
-            "Special Defense": 135,
-            "Speed": 105
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 105
         }
     },
     "0616": {
@@ -9374,12 +9377,12 @@ pocket_monsters_dict = {
             "Name": "Shelmet",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 40,
-            "Defense": 85,
-            "Special Attack": 40,
-            "Special Defense": 65,
-            "Speed": 25
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 25
         }
     },
     "0617": {
@@ -9387,12 +9390,12 @@ pocket_monsters_dict = {
             "Name": "Accelgor",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 70,
-            "Defense": 40,
-            "Special Attack": 100,
-            "Special Defense": 60,
-            "Speed": 145
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 145
         }
     },
     "0618": {
@@ -9400,23 +9403,23 @@ pocket_monsters_dict = {
             "Name": "Stunfisk",
             "Type 1": "Ground",
             "Type 2": "Electric",
-            "HP": 109,
-            "Attack": 66,
-            "Defense": 84,
-            "Special Attack": 81,
-            "Special Defense": 99,
-            "Speed": 32
+            StatsEnum.HP: 109,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 84,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 99,
+            StatsEnum.SPEED: 32
         },
         "Galarian Stunfisk": {
             "Name": "Stunfisk",
             "Type 1": "Ground",
             "Type 2": "Steel",
-            "HP": 109,
-            "Attack": 81,
-            "Defense": 99,
-            "Special Attack": 66,
-            "Special Defense": 84,
-            "Speed": 32
+            StatsEnum.HP: 109,
+            StatsEnum.ATTACK: 81,
+            StatsEnum.DEFENSE: 99,
+            StatsEnum.SPECIAL_ATTACK: 66,
+            StatsEnum.SPECIAL_DEFENSE: 84,
+            StatsEnum.SPEED: 32
         }
     },
     "0619": {
@@ -9424,12 +9427,12 @@ pocket_monsters_dict = {
             "Name": "Mienfoo",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 85,
-            "Defense": 50,
-            "Special Attack": 55,
-            "Special Defense": 50,
-            "Speed": 65
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 65
         }
     },
     "0620": {
@@ -9437,12 +9440,12 @@ pocket_monsters_dict = {
             "Name": "Mienshao",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 125,
-            "Defense": 60,
-            "Special Attack": 95,
-            "Special Defense": 60,
-            "Speed": 105
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 105
         }
     },
     "0621": {
@@ -9450,12 +9453,12 @@ pocket_monsters_dict = {
             "Name": "Druddigon",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 77,
-            "Attack": 120,
-            "Defense": 90,
-            "Special Attack": 60,
-            "Special Defense": 90,
-            "Speed": 48
+            StatsEnum.HP: 77,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 48
         }
     },
     "0622": {
@@ -9463,12 +9466,12 @@ pocket_monsters_dict = {
             "Name": "Golett",
             "Type 1": "Ground",
             "Type 2": "Ghost",
-            "HP": 59,
-            "Attack": 74,
-            "Defense": 50,
-            "Special Attack": 35,
-            "Special Defense": 50,
-            "Speed": 35
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 74,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 35
         }
     },
     "0623": {
@@ -9476,12 +9479,12 @@ pocket_monsters_dict = {
             "Name": "Golurk",
             "Type 1": "Ground",
             "Type 2": "Ghost",
-            "HP": 89,
-            "Attack": 124,
-            "Defense": 80,
-            "Special Attack": 55,
-            "Special Defense": 80,
-            "Speed": 55
+            StatsEnum.HP: 89,
+            StatsEnum.ATTACK: 124,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 55
         }
     },
     "0624": {
@@ -9489,12 +9492,12 @@ pocket_monsters_dict = {
             "Name": "Pawniard",
             "Type 1": "Dark",
             "Type 2": "Steel",
-            "HP": 45,
-            "Attack": 85,
-            "Defense": 70,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         }
     },
     "0625": {
@@ -9502,12 +9505,12 @@ pocket_monsters_dict = {
             "Name": "Bisharp",
             "Type 1": "Dark",
             "Type 2": "Steel",
-            "HP": 65,
-            "Attack": 125,
-            "Defense": 100,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 70
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 70
         }
     },
     "0626": {
@@ -9515,12 +9518,12 @@ pocket_monsters_dict = {
             "Name": "Bouffalant",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 110,
-            "Defense": 95,
-            "Special Attack": 40,
-            "Special Defense": 95,
-            "Speed": 55
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 55
         }
     },
     "0627": {
@@ -9528,12 +9531,12 @@ pocket_monsters_dict = {
             "Name": "Rufflet",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 83,
-            "Defense": 50,
-            "Special Attack": 37,
-            "Special Defense": 50,
-            "Speed": 60
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 83,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 37,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 60
         }
     },
     "0628": {
@@ -9541,23 +9544,23 @@ pocket_monsters_dict = {
             "Name": "Braviary",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 100,
-            "Attack": 123,
-            "Defense": 75,
-            "Special Attack": 57,
-            "Special Defense": 75,
-            "Speed": 80
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 123,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 57,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 80
         },
         "Hisuian Braviary": {
             "Name": "Braviary",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 110,
-            "Attack": 83,
-            "Defense": 70,
-            "Special Attack": 112,
-            "Special Defense": 70,
-            "Speed": 65
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 83,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 112,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 65
         }
     },
     "0629": {
@@ -9565,12 +9568,12 @@ pocket_monsters_dict = {
             "Name": "Vullaby",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 55,
-            "Defense": 75,
-            "Special Attack": 45,
-            "Special Defense": 65,
-            "Speed": 60
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 60
         }
     },
     "0630": {
@@ -9578,12 +9581,12 @@ pocket_monsters_dict = {
             "Name": "Mandibuzz",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 110,
-            "Attack": 65,
-            "Defense": 105,
-            "Special Attack": 55,
-            "Special Defense": 95,
-            "Speed": 80
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 80
         }
     },
     "0631": {
@@ -9591,12 +9594,12 @@ pocket_monsters_dict = {
             "Name": "Heatmor",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 97,
-            "Defense": 66,
-            "Special Attack": 105,
-            "Special Defense": 66,
-            "Speed": 65
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 97,
+            StatsEnum.DEFENSE: 66,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 66,
+            StatsEnum.SPEED: 65
         }
     },
     "0632": {
@@ -9604,12 +9607,12 @@ pocket_monsters_dict = {
             "Name": "Durant",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 58,
-            "Attack": 109,
-            "Defense": 112,
-            "Special Attack": 48,
-            "Special Defense": 48,
-            "Speed": 109
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 109,
+            StatsEnum.DEFENSE: 112,
+            StatsEnum.SPECIAL_ATTACK: 48,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 109
         }
     },
     "0633": {
@@ -9617,12 +9620,12 @@ pocket_monsters_dict = {
             "Name": "Deino",
             "Type 1": "Dark",
             "Type 2": "Dragon",
-            "HP": 52,
-            "Attack": 65,
-            "Defense": 50,
-            "Special Attack": 45,
-            "Special Defense": 50,
-            "Speed": 38
+            StatsEnum.HP: 52,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 38
         }
     },
     "0634": {
@@ -9630,12 +9633,12 @@ pocket_monsters_dict = {
             "Name": "Zweilous",
             "Type 1": "Dark",
             "Type 2": "Dragon",
-            "HP": 72,
-            "Attack": 85,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 70,
-            "Speed": 58
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 58
         }
     },
     "0635": {
@@ -9643,12 +9646,12 @@ pocket_monsters_dict = {
             "Name": "Hydreigon",
             "Type 1": "Dark",
             "Type 2": "Dragon",
-            "HP": 92,
-            "Attack": 105,
-            "Defense": 90,
-            "Special Attack": 125,
-            "Special Defense": 90,
-            "Speed": 98
+            StatsEnum.HP: 92,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 98
         }
     },
     "0636": {
@@ -9656,12 +9659,12 @@ pocket_monsters_dict = {
             "Name": "Larvesta",
             "Type 1": "Bug",
             "Type 2": "Fire",
-            "HP": 55,
-            "Attack": 85,
-            "Defense": 55,
-            "Special Attack": 50,
-            "Special Defense": 55,
-            "Speed": 60
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 60
         }
     },
     "0637": {
@@ -9669,12 +9672,12 @@ pocket_monsters_dict = {
             "Name": "Volcarona",
             "Type 1": "Bug",
             "Type 2": "Fire",
-            "HP": 85,
-            "Attack": 60,
-            "Defense": 65,
-            "Special Attack": 135,
-            "Special Defense": 105,
-            "Speed": 100
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 100
         }
     },
     "0638": {
@@ -9682,12 +9685,12 @@ pocket_monsters_dict = {
             "Name": "Cobalion",
             "Type 1": "Steel",
             "Type 2": "Fighting",
-            "HP": 91,
-            "Attack": 90,
-            "Defense": 129,
-            "Special Attack": 90,
-            "Special Defense": 72,
-            "Speed": 108
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 129,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 72,
+            StatsEnum.SPEED: 108
         }
     },
     "0639": {
@@ -9695,12 +9698,12 @@ pocket_monsters_dict = {
             "Name": "Terrakion",
             "Type 1": "Rock",
             "Type 2": "Fighting",
-            "HP": 91,
-            "Attack": 129,
-            "Defense": 90,
-            "Special Attack": 72,
-            "Special Defense": 90,
-            "Speed": 108
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 129,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 72,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 108
         }
     },
     "0640": {
@@ -9708,12 +9711,12 @@ pocket_monsters_dict = {
             "Name": "Virizion",
             "Type 1": "Grass",
             "Type 2": "Fighting",
-            "HP": 91,
-            "Attack": 90,
-            "Defense": 72,
-            "Special Attack": 90,
-            "Special Defense": 129,
-            "Speed": 108
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 129,
+            StatsEnum.SPEED: 108
         }
     },
     "0641": {
@@ -9721,23 +9724,23 @@ pocket_monsters_dict = {
             "Name": "Tornadus",
             "Type 1": "Flying",
             "Type 2": None,
-            "HP": 79,
-            "Attack": 115,
-            "Defense": 70,
-            "Special Attack": 125,
-            "Special Defense": 80,
-            "Speed": 111
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 111
         },
         "Therian Forme": {
             "Name": "Tornadus",
             "Type 1": "Flying",
             "Type 2": None,
-            "HP": 79,
-            "Attack": 100,
-            "Defense": 80,
-            "Special Attack": 110,
-            "Special Defense": 90,
-            "Speed": 121
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 121
         }
     },
     "0642": {
@@ -9745,23 +9748,23 @@ pocket_monsters_dict = {
             "Name": "Thundurus",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 79,
-            "Attack": 115,
-            "Defense": 70,
-            "Special Attack": 125,
-            "Special Defense": 80,
-            "Speed": 111
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 111
         },
         "Therian Forme": {
             "Name": "Thundurus",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 79,
-            "Attack": 105,
-            "Defense": 70,
-            "Special Attack": 145,
-            "Special Defense": 80,
-            "Speed": 101
+            StatsEnum.HP: 79,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 101
         }
     },
     "0643": {
@@ -9769,12 +9772,12 @@ pocket_monsters_dict = {
             "Name": "Reshiram",
             "Type 1": "Dragon",
             "Type 2": "Fire",
-            "HP": 100,
-            "Attack": 120,
-            "Defense": 100,
-            "Special Attack": 150,
-            "Special Defense": 120,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 90
         }
     },
     "0644": {
@@ -9782,12 +9785,12 @@ pocket_monsters_dict = {
             "Name": "Zekrom",
             "Type 1": "Dragon",
             "Type 2": "Electric",
-            "HP": 100,
-            "Attack": 150,
-            "Defense": 120,
-            "Special Attack": 120,
-            "Special Defense": 100,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 90
         }
     },
     "0645": {
@@ -9795,23 +9798,23 @@ pocket_monsters_dict = {
             "Name": "Landorus",
             "Type 1": "Ground",
             "Type 2": "Flying",
-            "HP": 89,
-            "Attack": 125,
-            "Defense": 90,
-            "Special Attack": 115,
-            "Special Defense": 80,
-            "Speed": 101
+            StatsEnum.HP: 89,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 101
         },
         "Therian Forme": {
             "Name": "Landorus",
             "Type 1": "Ground",
             "Type 2": "Flying",
-            "HP": 89,
-            "Attack": 145,
-            "Defense": 90,
-            "Special Attack": 105,
-            "Special Defense": 80,
-            "Speed": 91
+            StatsEnum.HP: 89,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 91
         }
     },
     "0646": {
@@ -9819,34 +9822,34 @@ pocket_monsters_dict = {
             "Name": "Kyurem",
             "Type 1": "Dragon",
             "Type 2": "Ice",
-            "HP": 125,
-            "Attack": 130,
-            "Defense": 90,
-            "Special Attack": 130,
-            "Special Defense": 90,
-            "Speed": 95
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 95
         },
         "White Kyurem": {
             "Name": "Kyurem",
             "Type 1": "Dragon",
             "Type 2": "Ice",
-            "HP": 125,
-            "Attack": 120,
-            "Defense": 90,
-            "Special Attack": 170,
-            "Special Defense": 100,
-            "Speed": 95
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 170,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 95
         },
         "Black Kyurem": {
             "Name": "Kyurem",
             "Type 1": "Dragon",
             "Type 2": "Ice",
-            "HP": 125,
-            "Attack": 170,
-            "Defense": 100,
-            "Special Attack": 120,
-            "Special Defense": 90,
-            "Speed": 95
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 170,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 95
         }
     },
     "0647": {
@@ -9854,23 +9857,23 @@ pocket_monsters_dict = {
             "Name": "Keldeo",
             "Type 1": "Water",
             "Type 2": "Fighting",
-            "HP": 91,
-            "Attack": 72,
-            "Defense": 90,
-            "Special Attack": 129,
-            "Special Defense": 90,
-            "Speed": 108
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 129,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 108
         },
         "Resolute Form": {
             "Name": "Keldeo",
             "Type 1": "Water",
             "Type 2": "Fighting",
-            "HP": 91,
-            "Attack": 72,
-            "Defense": 90,
-            "Special Attack": 129,
-            "Special Defense": 90,
-            "Speed": 108
+            StatsEnum.HP: 91,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 129,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 108
         }
     },
     "0648": {
@@ -9878,23 +9881,23 @@ pocket_monsters_dict = {
             "Name": "Meloetta",
             "Type 1": "Normal",
             "Type 2": "Psychic",
-            "HP": 100,
-            "Attack": 77,
-            "Defense": 77,
-            "Special Attack": 128,
-            "Special Defense": 128,
-            "Speed": 90
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 77,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 128,
+            StatsEnum.SPECIAL_DEFENSE: 128,
+            StatsEnum.SPEED: 90
         },
         "Pirouette Forme": {
             "Name": "Meloetta",
             "Type 1": "Normal",
             "Type 2": "Fighting",
-            "HP": 100,
-            "Attack": 128,
-            "Defense": 90,
-            "Special Attack": 77,
-            "Special Defense": 77,
-            "Speed": 128
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 128,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 77,
+            StatsEnum.SPECIAL_DEFENSE: 77,
+            StatsEnum.SPEED: 128
         }
     },
     "0649": {
@@ -9902,12 +9905,12 @@ pocket_monsters_dict = {
             "Name": "Genesect",
             "Type 1": "Bug",
             "Type 2": "Steel",
-            "HP": 71,
-            "Attack": 120,
-            "Defense": 95,
-            "Special Attack": 120,
-            "Special Defense": 95,
-            "Speed": 99
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 99
         }
     },
     "0650": {
@@ -9915,12 +9918,12 @@ pocket_monsters_dict = {
             "Name": "Chespin",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 56,
-            "Attack": 61,
-            "Defense": 65,
-            "Special Attack": 48,
-            "Special Defense": 45,
-            "Speed": 38
+            StatsEnum.HP: 56,
+            StatsEnum.ATTACK: 61,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 48,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 38
         }
     },
     "0651": {
@@ -9928,12 +9931,12 @@ pocket_monsters_dict = {
             "Name": "Quilladin",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 61,
-            "Attack": 78,
-            "Defense": 95,
-            "Special Attack": 56,
-            "Special Defense": 58,
-            "Speed": 57
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 78,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 56,
+            StatsEnum.SPECIAL_DEFENSE: 58,
+            StatsEnum.SPEED: 57
         }
     },
     "0652": {
@@ -9941,12 +9944,12 @@ pocket_monsters_dict = {
             "Name": "Chesnaught",
             "Type 1": "Grass",
             "Type 2": "Fighting",
-            "HP": 88,
-            "Attack": 107,
-            "Defense": 122,
-            "Special Attack": 74,
-            "Special Defense": 75,
-            "Speed": 64
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 107,
+            StatsEnum.DEFENSE: 122,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 64
         }
     },
     "0653": {
@@ -9954,12 +9957,12 @@ pocket_monsters_dict = {
             "Name": "Fennekin",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 62,
-            "Special Defense": 60,
-            "Speed": 60
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 60
         }
     },
     "0654": {
@@ -9967,12 +9970,12 @@ pocket_monsters_dict = {
             "Name": "Braixen",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 59,
-            "Attack": 59,
-            "Defense": 58,
-            "Special Attack": 90,
-            "Special Defense": 70,
-            "Speed": 73
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 59,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 73
         }
     },
     "0655": {
@@ -9980,12 +9983,12 @@ pocket_monsters_dict = {
             "Name": "Delphox",
             "Type 1": "Fire",
             "Type 2": "Psychic",
-            "HP": 75,
-            "Attack": 69,
-            "Defense": 72,
-            "Special Attack": 114,
-            "Special Defense": 100,
-            "Speed": 104
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 69,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 114,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 104
         }
     },
     "0656": {
@@ -9993,12 +9996,12 @@ pocket_monsters_dict = {
             "Name": "Froakie",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 41,
-            "Attack": 56,
-            "Defense": 40,
-            "Special Attack": 62,
-            "Special Defense": 44,
-            "Speed": 71
+            StatsEnum.HP: 41,
+            StatsEnum.ATTACK: 56,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 44,
+            StatsEnum.SPEED: 71
         }
     },
     "0657": {
@@ -10006,12 +10009,12 @@ pocket_monsters_dict = {
             "Name": "Frogadier",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 54,
-            "Attack": 63,
-            "Defense": 52,
-            "Special Attack": 83,
-            "Special Defense": 56,
-            "Speed": 97
+            StatsEnum.HP: 54,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 52,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 97
         }
     },
     "0658": {
@@ -10019,23 +10022,23 @@ pocket_monsters_dict = {
             "Name": "Greninja",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 72,
-            "Attack": 95,
-            "Defense": 67,
-            "Special Attack": 103,
-            "Special Defense": 71,
-            "Speed": 122
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 103,
+            StatsEnum.SPECIAL_DEFENSE: 71,
+            StatsEnum.SPEED: 122
         },
         "Ash-Greninja": {
             "Name": "Greninja",
             "Type 1": "Water",
             "Type 2": "Dark",
-            "HP": 72,
-            "Attack": 145,
-            "Defense": 67,
-            "Special Attack": 153,
-            "Special Defense": 71,
-            "Speed": 132
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 153,
+            StatsEnum.SPECIAL_DEFENSE: 71,
+            StatsEnum.SPEED: 132
         }
     },
     "0659": {
@@ -10043,12 +10046,12 @@ pocket_monsters_dict = {
             "Name": "Bunnelby",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 36,
-            "Defense": 38,
-            "Special Attack": 32,
-            "Special Defense": 36,
-            "Speed": 57
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 36,
+            StatsEnum.DEFENSE: 38,
+            StatsEnum.SPECIAL_ATTACK: 32,
+            StatsEnum.SPECIAL_DEFENSE: 36,
+            StatsEnum.SPEED: 57
         }
     },
     "0660": {
@@ -10056,12 +10059,12 @@ pocket_monsters_dict = {
             "Name": "Diggersby",
             "Type 1": "Normal",
             "Type 2": "Ground",
-            "HP": 85,
-            "Attack": 56,
-            "Defense": 77,
-            "Special Attack": 50,
-            "Special Defense": 77,
-            "Speed": 78
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 56,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 77,
+            StatsEnum.SPEED: 78
         }
     },
     "0661": {
@@ -10069,12 +10072,12 @@ pocket_monsters_dict = {
             "Name": "Fletchling",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 45,
-            "Attack": 50,
-            "Defense": 43,
-            "Special Attack": 40,
-            "Special Defense": 38,
-            "Speed": 62
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 43,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 38,
+            StatsEnum.SPEED: 62
         }
     },
     "0662": {
@@ -10082,12 +10085,12 @@ pocket_monsters_dict = {
             "Name": "Fletchinder",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 62,
-            "Attack": 73,
-            "Defense": 55,
-            "Special Attack": 56,
-            "Special Defense": 52,
-            "Speed": 84
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 56,
+            StatsEnum.SPECIAL_DEFENSE: 52,
+            StatsEnum.SPEED: 84
         }
     },
     "0663": {
@@ -10095,12 +10098,12 @@ pocket_monsters_dict = {
             "Name": "Talonflame",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 78,
-            "Attack": 81,
-            "Defense": 71,
-            "Special Attack": 74,
-            "Special Defense": 69,
-            "Speed": 126
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 81,
+            StatsEnum.DEFENSE: 71,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 69,
+            StatsEnum.SPEED: 126
         }
     },
     "0664": {
@@ -10108,12 +10111,12 @@ pocket_monsters_dict = {
             "Name": "Scatterbug",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 35,
-            "Defense": 40,
-            "Special Attack": 27,
-            "Special Defense": 25,
-            "Speed": 35
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 27,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 35
         }
     },
     "0665": {
@@ -10121,12 +10124,12 @@ pocket_monsters_dict = {
             "Name": "Spewpa",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 22,
-            "Defense": 60,
-            "Special Attack": 27,
-            "Special Defense": 30,
-            "Speed": 29
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 22,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 27,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 29
         }
     },
     "0666": {
@@ -10134,12 +10137,12 @@ pocket_monsters_dict = {
             "Name": "Vivillon",
             "Type 1": "Bug",
             "Type 2": "Flying",
-            "HP": 80,
-            "Attack": 52,
-            "Defense": 50,
-            "Special Attack": 90,
-            "Special Defense": 50,
-            "Speed": 89
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 89
         }
     },
     "0667": {
@@ -10147,12 +10150,12 @@ pocket_monsters_dict = {
             "Name": "Litleo",
             "Type 1": "Fire",
             "Type 2": "Normal",
-            "HP": 62,
-            "Attack": 50,
-            "Defense": 58,
-            "Special Attack": 73,
-            "Special Defense": 54,
-            "Speed": 72
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 73,
+            StatsEnum.SPECIAL_DEFENSE: 54,
+            StatsEnum.SPEED: 72
         }
     },
     "0668": {
@@ -10160,12 +10163,12 @@ pocket_monsters_dict = {
             "Name": "Pyroar",
             "Type 1": "Fire",
             "Type 2": "Normal",
-            "HP": 86,
-            "Attack": 68,
-            "Defense": 72,
-            "Special Attack": 109,
-            "Special Defense": 66,
-            "Speed": 106
+            StatsEnum.HP: 86,
+            StatsEnum.ATTACK: 68,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 109,
+            StatsEnum.SPECIAL_DEFENSE: 66,
+            StatsEnum.SPEED: 106
         }
     },
     "0669": {
@@ -10173,12 +10176,12 @@ pocket_monsters_dict = {
             "Name": "Flabébé",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 44,
-            "Attack": 38,
-            "Defense": 39,
-            "Special Attack": 61,
-            "Special Defense": 79,
-            "Speed": 42
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 38,
+            StatsEnum.DEFENSE: 39,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 79,
+            StatsEnum.SPEED: 42
         }
     },
     "0670": {
@@ -10186,12 +10189,12 @@ pocket_monsters_dict = {
             "Name": "Floette",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 54,
-            "Attack": 45,
-            "Defense": 47,
-            "Special Attack": 75,
-            "Special Defense": 98,
-            "Speed": 52
+            StatsEnum.HP: 54,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 47,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 98,
+            StatsEnum.SPEED: 52
         }
     },
     "0671": {
@@ -10199,12 +10202,12 @@ pocket_monsters_dict = {
             "Name": "Florges",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 78,
-            "Attack": 65,
-            "Defense": 68,
-            "Special Attack": 112,
-            "Special Defense": 154,
-            "Speed": 75
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 68,
+            StatsEnum.SPECIAL_ATTACK: 112,
+            StatsEnum.SPECIAL_DEFENSE: 154,
+            StatsEnum.SPEED: 75
         }
     },
     "0672": {
@@ -10212,12 +10215,12 @@ pocket_monsters_dict = {
             "Name": "Skiddo",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 66,
-            "Attack": 65,
-            "Defense": 48,
-            "Special Attack": 62,
-            "Special Defense": 57,
-            "Speed": 52
+            StatsEnum.HP: 66,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 57,
+            StatsEnum.SPEED: 52
         }
     },
     "0673": {
@@ -10225,12 +10228,12 @@ pocket_monsters_dict = {
             "Name": "Gogoat",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 123,
-            "Attack": 100,
-            "Defense": 62,
-            "Special Attack": 97,
-            "Special Defense": 81,
-            "Speed": 68
+            StatsEnum.HP: 123,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 97,
+            StatsEnum.SPECIAL_DEFENSE: 81,
+            StatsEnum.SPEED: 68
         }
     },
     "0674": {
@@ -10238,12 +10241,12 @@ pocket_monsters_dict = {
             "Name": "Pancham",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 67,
-            "Attack": 82,
-            "Defense": 62,
-            "Special Attack": 46,
-            "Special Defense": 48,
-            "Speed": 43
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 46,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 43
         }
     },
     "0675": {
@@ -10251,12 +10254,12 @@ pocket_monsters_dict = {
             "Name": "Pangoro",
             "Type 1": "Fighting",
             "Type 2": "Dark",
-            "HP": 95,
-            "Attack": 124,
-            "Defense": 78,
-            "Special Attack": 69,
-            "Special Defense": 71,
-            "Speed": 58
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 124,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 69,
+            StatsEnum.SPECIAL_DEFENSE: 71,
+            StatsEnum.SPEED: 58
         }
     },
     "0676": {
@@ -10264,12 +10267,12 @@ pocket_monsters_dict = {
             "Name": "Furfrou",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 60,
-            "Special Attack": 65,
-            "Special Defense": 90,
-            "Speed": 102
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 102
         }
     },
     "0677": {
@@ -10277,12 +10280,12 @@ pocket_monsters_dict = {
             "Name": "Espurr",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 62,
-            "Attack": 48,
-            "Defense": 54,
-            "Special Attack": 63,
-            "Special Defense": 60,
-            "Speed": 68
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 54,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 68
         }
     },
     "0678": {
@@ -10290,23 +10293,23 @@ pocket_monsters_dict = {
             "Name": "Meowstic",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 74,
-            "Attack": 48,
-            "Defense": 76,
-            "Special Attack": 83,
-            "Special Defense": 81,
-            "Speed": 104
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 76,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 81,
+            StatsEnum.SPEED: 104
         },
         "Female": {
             "Name": "Meowstic",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 74,
-            "Attack": 48,
-            "Defense": 76,
-            "Special Attack": 83,
-            "Special Defense": 81,
-            "Speed": 104
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 76,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 81,
+            StatsEnum.SPEED: 104
         }
     },
     "0679": {
@@ -10314,12 +10317,12 @@ pocket_monsters_dict = {
             "Name": "Honedge",
             "Type 1": "Steel",
             "Type 2": "Ghost",
-            "HP": 45,
-            "Attack": 80,
-            "Defense": 100,
-            "Special Attack": 35,
-            "Special Defense": 37,
-            "Speed": 28
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 37,
+            StatsEnum.SPEED: 28
         }
     },
     "0680": {
@@ -10327,12 +10330,12 @@ pocket_monsters_dict = {
             "Name": "Doublade",
             "Type 1": "Steel",
             "Type 2": "Ghost",
-            "HP": 59,
-            "Attack": 110,
-            "Defense": 150,
-            "Special Attack": 45,
-            "Special Defense": 49,
-            "Speed": 35
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 49,
+            StatsEnum.SPEED: 35
         }
     },
     "0681": {
@@ -10340,23 +10343,23 @@ pocket_monsters_dict = {
             "Name": "Aegislash",
             "Type 1": "Steel",
             "Type 2": "Ghost",
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 140,
-            "Special Attack": 50,
-            "Special Defense": 140,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 140,
+            StatsEnum.SPEED: 60
         },
         "Blade Forme": {
             "Name": "Aegislash",
             "Type 1": "Steel",
             "Type 2": "Ghost",
-            "HP": 60,
-            "Attack": 140,
-            "Defense": 50,
-            "Special Attack": 140,
-            "Special Defense": 50,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 60
         }
     },
     "0682": {
@@ -10364,12 +10367,12 @@ pocket_monsters_dict = {
             "Name": "Spritzee",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 78,
-            "Attack": 52,
-            "Defense": 60,
-            "Special Attack": 63,
-            "Special Defense": 65,
-            "Speed": 23
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 23
         }
     },
     "0683": {
@@ -10377,12 +10380,12 @@ pocket_monsters_dict = {
             "Name": "Aromatisse",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 101,
-            "Attack": 72,
-            "Defense": 72,
-            "Special Attack": 99,
-            "Special Defense": 89,
-            "Speed": 29
+            StatsEnum.HP: 101,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 99,
+            StatsEnum.SPECIAL_DEFENSE: 89,
+            StatsEnum.SPEED: 29
         }
     },
     "0684": {
@@ -10390,12 +10393,12 @@ pocket_monsters_dict = {
             "Name": "Swirlix",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 62,
-            "Attack": 48,
-            "Defense": 66,
-            "Special Attack": 59,
-            "Special Defense": 57,
-            "Speed": 49
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 48,
+            StatsEnum.DEFENSE: 66,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 57,
+            StatsEnum.SPEED: 49
         }
     },
     "0685": {
@@ -10403,12 +10406,12 @@ pocket_monsters_dict = {
             "Name": "Slurpuff",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 82,
-            "Attack": 80,
-            "Defense": 86,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 72
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 86,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 72
         }
     },
     "0686": {
@@ -10416,12 +10419,12 @@ pocket_monsters_dict = {
             "Name": "Inkay",
             "Type 1": "Dark",
             "Type 2": "Psychic",
-            "HP": 53,
-            "Attack": 54,
-            "Defense": 53,
-            "Special Attack": 37,
-            "Special Defense": 46,
-            "Speed": 45
+            StatsEnum.HP: 53,
+            StatsEnum.ATTACK: 54,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 37,
+            StatsEnum.SPECIAL_DEFENSE: 46,
+            StatsEnum.SPEED: 45
         }
     },
     "0687": {
@@ -10429,12 +10432,12 @@ pocket_monsters_dict = {
             "Name": "Malamar",
             "Type 1": "Dark",
             "Type 2": "Psychic",
-            "HP": 86,
-            "Attack": 92,
-            "Defense": 88,
-            "Special Attack": 68,
-            "Special Defense": 75,
-            "Speed": 73
+            StatsEnum.HP: 86,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 88,
+            StatsEnum.SPECIAL_ATTACK: 68,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 73
         }
     },
     "0688": {
@@ -10442,12 +10445,12 @@ pocket_monsters_dict = {
             "Name": "Binacle",
             "Type 1": "Rock",
             "Type 2": "Water",
-            "HP": 42,
-            "Attack": 52,
-            "Defense": 67,
-            "Special Attack": 39,
-            "Special Defense": 56,
-            "Speed": 50
+            StatsEnum.HP: 42,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 39,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 50
         }
     },
     "0689": {
@@ -10455,12 +10458,12 @@ pocket_monsters_dict = {
             "Name": "Barbaracle",
             "Type 1": "Rock",
             "Type 2": "Water",
-            "HP": 72,
-            "Attack": 105,
-            "Defense": 115,
-            "Special Attack": 54,
-            "Special Defense": 86,
-            "Speed": 68
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 54,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 68
         }
     },
     "0690": {
@@ -10468,12 +10471,12 @@ pocket_monsters_dict = {
             "Name": "Skrelp",
             "Type 1": "Poison",
             "Type 2": "Water",
-            "HP": 50,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 60,
-            "Special Defense": 60,
-            "Speed": 30
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 30
         }
     },
     "0691": {
@@ -10481,12 +10484,12 @@ pocket_monsters_dict = {
             "Name": "Dragalge",
             "Type 1": "Poison",
             "Type 2": "Dragon",
-            "HP": 65,
-            "Attack": 75,
-            "Defense": 90,
-            "Special Attack": 97,
-            "Special Defense": 123,
-            "Speed": 44
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 97,
+            StatsEnum.SPECIAL_DEFENSE: 123,
+            StatsEnum.SPEED: 44
         }
     },
     "0692": {
@@ -10494,12 +10497,12 @@ pocket_monsters_dict = {
             "Name": "Clauncher",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 53,
-            "Defense": 62,
-            "Special Attack": 58,
-            "Special Defense": 63,
-            "Speed": 44
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 44
         }
     },
     "0693": {
@@ -10507,12 +10510,12 @@ pocket_monsters_dict = {
             "Name": "Clawitzer",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 71,
-            "Attack": 73,
-            "Defense": 88,
-            "Special Attack": 120,
-            "Special Defense": 89,
-            "Speed": 59
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 88,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 89,
+            StatsEnum.SPEED: 59
         }
     },
     "0694": {
@@ -10520,12 +10523,12 @@ pocket_monsters_dict = {
             "Name": "Helioptile",
             "Type 1": "Electric",
             "Type 2": "Normal",
-            "HP": 44,
-            "Attack": 38,
-            "Defense": 33,
-            "Special Attack": 61,
-            "Special Defense": 43,
-            "Speed": 70
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 38,
+            StatsEnum.DEFENSE: 33,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 43,
+            StatsEnum.SPEED: 70
         }
     },
     "0695": {
@@ -10533,12 +10536,12 @@ pocket_monsters_dict = {
             "Name": "Heliolisk",
             "Type 1": "Electric",
             "Type 2": "Normal",
-            "HP": 62,
-            "Attack": 55,
-            "Defense": 52,
-            "Special Attack": 109,
-            "Special Defense": 94,
-            "Speed": 109
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 52,
+            StatsEnum.SPECIAL_ATTACK: 109,
+            StatsEnum.SPECIAL_DEFENSE: 94,
+            StatsEnum.SPEED: 109
         }
     },
     "0696": {
@@ -10546,12 +10549,12 @@ pocket_monsters_dict = {
             "Name": "Tyrunt",
             "Type 1": "Rock",
             "Type 2": "Dragon",
-            "HP": 58,
-            "Attack": 89,
-            "Defense": 77,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 48
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 89,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 48
         }
     },
     "0697": {
@@ -10559,12 +10562,12 @@ pocket_monsters_dict = {
             "Name": "Tyrantrum",
             "Type 1": "Rock",
             "Type 2": "Dragon",
-            "HP": 82,
-            "Attack": 121,
-            "Defense": 119,
-            "Special Attack": 69,
-            "Special Defense": 59,
-            "Speed": 71
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 121,
+            StatsEnum.DEFENSE: 119,
+            StatsEnum.SPECIAL_ATTACK: 69,
+            StatsEnum.SPECIAL_DEFENSE: 59,
+            StatsEnum.SPEED: 71
         }
     },
     "0698": {
@@ -10572,12 +10575,12 @@ pocket_monsters_dict = {
             "Name": "Amaura",
             "Type 1": "Rock",
             "Type 2": "Ice",
-            "HP": 77,
-            "Attack": 59,
-            "Defense": 50,
-            "Special Attack": 67,
-            "Special Defense": 63,
-            "Speed": 46
+            StatsEnum.HP: 77,
+            StatsEnum.ATTACK: 59,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 67,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 46
         }
     },
     "0699": {
@@ -10585,12 +10588,12 @@ pocket_monsters_dict = {
             "Name": "Aurorus",
             "Type 1": "Rock",
             "Type 2": "Ice",
-            "HP": 123,
-            "Attack": 77,
-            "Defense": 72,
-            "Special Attack": 99,
-            "Special Defense": 92,
-            "Speed": 58
+            StatsEnum.HP: 123,
+            StatsEnum.ATTACK: 77,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 99,
+            StatsEnum.SPECIAL_DEFENSE: 92,
+            StatsEnum.SPEED: 58
         }
     },
     "0700": {
@@ -10598,12 +10601,12 @@ pocket_monsters_dict = {
             "Name": "Sylveon",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 110,
-            "Special Defense": 130,
-            "Speed": 60
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 60
         }
     },
     "0701": {
@@ -10611,12 +10614,12 @@ pocket_monsters_dict = {
             "Name": "Hawlucha",
             "Type 1": "Fighting",
             "Type 2": "Flying",
-            "HP": 78,
-            "Attack": 92,
-            "Defense": 75,
-            "Special Attack": 74,
-            "Special Defense": 63,
-            "Speed": 118
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 118
         }
     },
     "0702": {
@@ -10624,12 +10627,12 @@ pocket_monsters_dict = {
             "Name": "Dedenne",
             "Type 1": "Electric",
             "Type 2": "Fairy",
-            "HP": 67,
-            "Attack": 58,
-            "Defense": 57,
-            "Special Attack": 81,
-            "Special Defense": 67,
-            "Speed": 101
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 58,
+            StatsEnum.DEFENSE: 57,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 67,
+            StatsEnum.SPEED: 101
         }
     },
     "0703": {
@@ -10637,12 +10640,12 @@ pocket_monsters_dict = {
             "Name": "Carbink",
             "Type 1": "Rock",
             "Type 2": "Fairy",
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 150,
-            "Special Attack": 50,
-            "Special Defense": 150,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 50
         }
     },
     "0704": {
@@ -10650,12 +10653,12 @@ pocket_monsters_dict = {
             "Name": "Goomy",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 50,
-            "Defense": 35,
-            "Special Attack": 55,
-            "Special Defense": 75,
-            "Speed": 40
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 40
         }
     },
     "0705": {
@@ -10663,23 +10666,23 @@ pocket_monsters_dict = {
             "Name": "Sliggoo",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 68,
-            "Attack": 75,
-            "Defense": 53,
-            "Special Attack": 83,
-            "Special Defense": 113,
-            "Speed": 60
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 113,
+            StatsEnum.SPEED: 60
         },
         "Hisuian Sliggoo": {
             "Name": "Sliggoo",
             "Type 1": "Steel",
             "Type 2": "Dragon",
-            "HP": 58,
-            "Attack": 75,
-            "Defense": 83,
-            "Special Attack": 83,
-            "Special Defense": 113,
-            "Speed": 40
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 83,
+            StatsEnum.SPECIAL_ATTACK: 83,
+            StatsEnum.SPECIAL_DEFENSE: 113,
+            StatsEnum.SPEED: 40
         }
     },
     "0706": {
@@ -10687,23 +10690,23 @@ pocket_monsters_dict = {
             "Name": "Goodra",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 110,
-            "Special Defense": 150,
-            "Speed": 80
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 80
         },
         "Hisuian Goodra": {
             "Name": "Goodra",
             "Type 1": "Steel",
             "Type 2": "Dragon",
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 110,
-            "Special Defense": 150,
-            "Speed": 60
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 60
         }
     },
     "0707": {
@@ -10711,12 +10714,12 @@ pocket_monsters_dict = {
             "Name": "Klefki",
             "Type 1": "Steel",
             "Type 2": "Fairy",
-            "HP": 57,
-            "Attack": 80,
-            "Defense": 91,
-            "Special Attack": 80,
-            "Special Defense": 87,
-            "Speed": 75
+            StatsEnum.HP: 57,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 91,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 87,
+            StatsEnum.SPEED: 75
         }
     },
     "0708": {
@@ -10724,12 +10727,12 @@ pocket_monsters_dict = {
             "Name": "Phantump",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 43,
-            "Attack": 70,
-            "Defense": 48,
-            "Special Attack": 50,
-            "Special Defense": 60,
-            "Speed": 38
+            StatsEnum.HP: 43,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 38
         }
     },
     "0709": {
@@ -10737,12 +10740,12 @@ pocket_monsters_dict = {
             "Name": "TreveNonet",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 85,
-            "Attack": 110,
-            "Defense": 76,
-            "Special Attack": 65,
-            "Special Defense": 82,
-            "Speed": 56
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 76,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 82,
+            StatsEnum.SPEED: 56
         }
     },
     "0710": {
@@ -10750,45 +10753,45 @@ pocket_monsters_dict = {
             "Name": "Pumpkaboo",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 49,
-            "Attack": 66,
-            "Defense": 70,
-            "Special Attack": 44,
-            "Special Defense": 55,
-            "Speed": 51
+            StatsEnum.HP: 49,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 51
         },
         "Small Size": {
             "Name": "Pumpkaboo",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 44,
-            "Attack": 66,
-            "Defense": 70,
-            "Special Attack": 44,
-            "Special Defense": 55,
-            "Speed": 56
+            StatsEnum.HP: 44,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 56
         },
         "Large Size": {
             "Name": "Pumpkaboo",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 54,
-            "Attack": 66,
-            "Defense": 70,
-            "Special Attack": 44,
-            "Special Defense": 55,
-            "Speed": 46
+            StatsEnum.HP: 54,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 46
         },
         "Super Size": {
             "Name": "Pumpkaboo",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 59,
-            "Attack": 66,
-            "Defense": 70,
-            "Special Attack": 44,
-            "Special Defense": 55,
-            "Speed": 41
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 66,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 41
         }
     },
     "0711": {
@@ -10796,45 +10799,45 @@ pocket_monsters_dict = {
             "Name": "Gourgeist",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 65,
-            "Attack": 90,
-            "Defense": 122,
-            "Special Attack": 58,
-            "Special Defense": 75,
-            "Speed": 84
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 122,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 84
         },
         "Small Size": {
             "Name": "Gourgeist",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 55,
-            "Attack": 85,
-            "Defense": 122,
-            "Special Attack": 58,
-            "Special Defense": 75,
-            "Speed": 99
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 122,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 99
         },
         "Large Size": {
             "Name": "Gourgeist",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 75,
-            "Attack": 95,
-            "Defense": 122,
-            "Special Attack": 58,
-            "Special Defense": 75,
-            "Speed": 69
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 122,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 69
         },
         "Super Size": {
             "Name": "Gourgeist",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 85,
-            "Attack": 100,
-            "Defense": 122,
-            "Special Attack": 58,
-            "Special Defense": 75,
-            "Speed": 54
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 122,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 54
         }
     },
     "0712": {
@@ -10842,12 +10845,12 @@ pocket_monsters_dict = {
             "Name": "Bergmite",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 69,
-            "Defense": 85,
-            "Special Attack": 32,
-            "Special Defense": 35,
-            "Speed": 28
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 69,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 32,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 28
         }
     },
     "0713": {
@@ -10855,23 +10858,23 @@ pocket_monsters_dict = {
             "Name": "Avalugg",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 117,
-            "Defense": 184,
-            "Special Attack": 44,
-            "Special Defense": 46,
-            "Speed": 28
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 117,
+            StatsEnum.DEFENSE: 184,
+            StatsEnum.SPECIAL_ATTACK: 44,
+            StatsEnum.SPECIAL_DEFENSE: 46,
+            StatsEnum.SPEED: 28
         },
         "Hisuian Avalugg": {
             "Name": "Avalugg",
             "Type 1": "Ice",
             "Type 2": "Rock",
-            "HP": 95,
-            "Attack": 127,
-            "Defense": 184,
-            "Special Attack": 34,
-            "Special Defense": 36,
-            "Speed": 38
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 127,
+            StatsEnum.DEFENSE: 184,
+            StatsEnum.SPECIAL_ATTACK: 34,
+            StatsEnum.SPECIAL_DEFENSE: 36,
+            StatsEnum.SPEED: 38
         }
     },
     "0714": {
@@ -10879,12 +10882,12 @@ pocket_monsters_dict = {
             "Name": "Noibat",
             "Type 1": "Flying",
             "Type 2": "Dragon",
-            "HP": 40,
-            "Attack": 30,
-            "Defense": 35,
-            "Special Attack": 45,
-            "Special Defense": 40,
-            "Speed": 55
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 55
         }
     },
     "0715": {
@@ -10892,12 +10895,12 @@ pocket_monsters_dict = {
             "Name": "Noivern",
             "Type 1": "Flying",
             "Type 2": "Dragon",
-            "HP": 85,
-            "Attack": 70,
-            "Defense": 80,
-            "Special Attack": 97,
-            "Special Defense": 80,
-            "Speed": 123
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 97,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 123
         }
     },
     "0716": {
@@ -10905,12 +10908,12 @@ pocket_monsters_dict = {
             "Name": "Xerneas",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 126,
-            "Attack": 131,
-            "Defense": 95,
-            "Special Attack": 131,
-            "Special Defense": 98,
-            "Speed": 99
+            StatsEnum.HP: 126,
+            StatsEnum.ATTACK: 131,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 131,
+            StatsEnum.SPECIAL_DEFENSE: 98,
+            StatsEnum.SPEED: 99
         }
     },
     "0717": {
@@ -10918,12 +10921,12 @@ pocket_monsters_dict = {
             "Name": "Yveltal",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 126,
-            "Attack": 131,
-            "Defense": 95,
-            "Special Attack": 131,
-            "Special Defense": 98,
-            "Speed": 99
+            StatsEnum.HP: 126,
+            StatsEnum.ATTACK: 131,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 131,
+            StatsEnum.SPECIAL_DEFENSE: 98,
+            StatsEnum.SPEED: 99
         }
     },
     "0718": {
@@ -10931,34 +10934,34 @@ pocket_monsters_dict = {
             "Name": "Zygarde",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 108,
-            "Attack": 100,
-            "Defense": 121,
-            "Special Attack": 81,
-            "Special Defense": 95,
-            "Speed": 95
+            StatsEnum.HP: 108,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 121,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 95
         },
         "10% Forme": {
             "Name": "Zygarde",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 54,
-            "Attack": 100,
-            "Defense": 71,
-            "Special Attack": 61,
-            "Special Defense": 85,
-            "Speed": 115
+            StatsEnum.HP: 54,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 71,
+            StatsEnum.SPECIAL_ATTACK: 61,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 115
         },
         "Complete Forme": {
             "Name": "Zygarde",
             "Type 1": "Dragon",
             "Type 2": "Ground",
-            "HP": 216,
-            "Attack": 100,
-            "Defense": 121,
-            "Special Attack": 91,
-            "Special Defense": 95,
-            "Speed": 85
+            StatsEnum.HP: 216,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 121,
+            StatsEnum.SPECIAL_ATTACK: 91,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 85
         }
     },
     "0719": {
@@ -10966,23 +10969,23 @@ pocket_monsters_dict = {
             "Name": "Diancie",
             "Type 1": "Rock",
             "Type 2": "Fairy",
-            "HP": 50,
-            "Attack": 100,
-            "Defense": 150,
-            "Special Attack": 100,
-            "Special Defense": 150,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 150,
+            StatsEnum.SPEED: 50
         },
         "Mega Diancie": {
             "Name": "Diancie",
             "Type 1": "Rock",
             "Type 2": "Fairy",
-            "HP": 50,
-            "Attack": 160,
-            "Defense": 110,
-            "Special Attack": 160,
-            "Special Defense": 110,
-            "Speed": 110
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 160,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 110
         }
     },
     "0720": {
@@ -10990,23 +10993,23 @@ pocket_monsters_dict = {
             "Name": "Hoopa",
             "Type 1": "Psychic",
             "Type 2": "Ghost",
-            "HP": 80,
-            "Attack": 110,
-            "Defense": 60,
-            "Special Attack": 150,
-            "Special Defense": 130,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 150,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 70
         },
         "Hoopa Unbound": {
             "Name": "Hoopa",
             "Type 1": "Psychic",
             "Type 2": "Dark",
-            "HP": 80,
-            "Attack": 160,
-            "Defense": 60,
-            "Special Attack": 170,
-            "Special Defense": 130,
-            "Speed": 80
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 170,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 80
         }
     },
     "0721": {
@@ -11014,12 +11017,12 @@ pocket_monsters_dict = {
             "Name": "Volcanion",
             "Type 1": "Fire",
             "Type 2": "Water",
-            "HP": 80,
-            "Attack": 110,
-            "Defense": 120,
-            "Special Attack": 130,
-            "Special Defense": 90,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 70
         }
     },
     "0722": {
@@ -11027,12 +11030,12 @@ pocket_monsters_dict = {
             "Name": "Rowlet",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 68,
-            "Attack": 55,
-            "Defense": 55,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 42
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 42
         }
     },
     "0723": {
@@ -11040,12 +11043,12 @@ pocket_monsters_dict = {
             "Name": "Dartrix",
             "Type 1": "Grass",
             "Type 2": "Flying",
-            "HP": 78,
-            "Attack": 75,
-            "Defense": 75,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 52
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 52
         }
     },
     "0724": {
@@ -11053,23 +11056,23 @@ pocket_monsters_dict = {
             "Name": "Decidueye",
             "Type 1": "Grass",
             "Type 2": "Ghost",
-            "HP": 78,
-            "Attack": 107,
-            "Defense": 75,
-            "Special Attack": 100,
-            "Special Defense": 100,
-            "Speed": 70
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 107,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 70
         },
         "Hisuian Decidueye": {
             "Name": "Decidueye",
             "Type 1": "Grass",
             "Type 2": "Fighting",
-            "HP": 88,
-            "Attack": 112,
-            "Defense": 80,
-            "Special Attack": 95,
-            "Special Defense": 95,
-            "Speed": 60
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 112,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 60
         }
     },
     "0725": {
@@ -11077,12 +11080,12 @@ pocket_monsters_dict = {
             "Name": "Litten",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 65,
-            "Defense": 40,
-            "Special Attack": 60,
-            "Special Defense": 40,
-            "Speed": 70
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 70
         }
     },
     "0726": {
@@ -11090,12 +11093,12 @@ pocket_monsters_dict = {
             "Name": "Torracat",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 85,
-            "Defense": 50,
-            "Special Attack": 80,
-            "Special Defense": 50,
-            "Speed": 90
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 90
         }
     },
     "0727": {
@@ -11103,12 +11106,12 @@ pocket_monsters_dict = {
             "Name": "Incineroar",
             "Type 1": "Fire",
             "Type 2": "Dark",
-            "HP": 95,
-            "Attack": 115,
-            "Defense": 90,
-            "Special Attack": 80,
-            "Special Defense": 90,
-            "Speed": 60
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 60
         }
     },
     "0728": {
@@ -11116,12 +11119,12 @@ pocket_monsters_dict = {
             "Name": "Popplio",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 54,
-            "Defense": 54,
-            "Special Attack": 66,
-            "Special Defense": 56,
-            "Speed": 40
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 54,
+            StatsEnum.DEFENSE: 54,
+            StatsEnum.SPECIAL_ATTACK: 66,
+            StatsEnum.SPECIAL_DEFENSE: 56,
+            StatsEnum.SPEED: 40
         }
     },
     "0729": {
@@ -11129,12 +11132,12 @@ pocket_monsters_dict = {
             "Name": "Brionne",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 69,
-            "Defense": 69,
-            "Special Attack": 91,
-            "Special Defense": 81,
-            "Speed": 50
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 69,
+            StatsEnum.DEFENSE: 69,
+            StatsEnum.SPECIAL_ATTACK: 91,
+            StatsEnum.SPECIAL_DEFENSE: 81,
+            StatsEnum.SPEED: 50
         }
     },
     "0730": {
@@ -11142,12 +11145,12 @@ pocket_monsters_dict = {
             "Name": "Primarina",
             "Type 1": "Water",
             "Type 2": "Fairy",
-            "HP": 80,
-            "Attack": 74,
-            "Defense": 74,
-            "Special Attack": 126,
-            "Special Defense": 116,
-            "Speed": 60
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 74,
+            StatsEnum.DEFENSE: 74,
+            StatsEnum.SPECIAL_ATTACK: 126,
+            StatsEnum.SPECIAL_DEFENSE: 116,
+            StatsEnum.SPEED: 60
         }
     },
     "0731": {
@@ -11155,12 +11158,12 @@ pocket_monsters_dict = {
             "Name": "Pikipek",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 35,
-            "Attack": 75,
-            "Defense": 30,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 65
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 65
         }
     },
     "0732": {
@@ -11168,12 +11171,12 @@ pocket_monsters_dict = {
             "Name": "Trumbeak",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 55,
-            "Attack": 85,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 75
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 75
         }
     },
     "0733": {
@@ -11181,12 +11184,12 @@ pocket_monsters_dict = {
             "Name": "Toucannon",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 75,
-            "Special Attack": 75,
-            "Special Defense": 75,
-            "Speed": 60
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 60
         }
     },
     "0734": {
@@ -11194,12 +11197,12 @@ pocket_monsters_dict = {
             "Name": "Yungoos",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 48,
-            "Attack": 70,
-            "Defense": 30,
-            "Special Attack": 30,
-            "Special Defense": 30,
-            "Speed": 45
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 45
         }
     },
     "0735": {
@@ -11207,12 +11210,12 @@ pocket_monsters_dict = {
             "Name": "Gumshoos",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 88,
-            "Attack": 110,
-            "Defense": 60,
-            "Special Attack": 55,
-            "Special Defense": 60,
-            "Speed": 45
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 45
         }
     },
     "0736": {
@@ -11220,12 +11223,12 @@ pocket_monsters_dict = {
             "Name": "Grubbin",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 47,
-            "Attack": 62,
-            "Defense": 45,
-            "Special Attack": 55,
-            "Special Defense": 45,
-            "Speed": 46
+            StatsEnum.HP: 47,
+            StatsEnum.ATTACK: 62,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 46
         }
     },
     "0737": {
@@ -11233,12 +11236,12 @@ pocket_monsters_dict = {
             "Name": "Charjabug",
             "Type 1": "Bug",
             "Type 2": "Electric",
-            "HP": 57,
-            "Attack": 82,
-            "Defense": 95,
-            "Special Attack": 55,
-            "Special Defense": 75,
-            "Speed": 36
+            StatsEnum.HP: 57,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 36
         }
     },
     "0738": {
@@ -11246,12 +11249,12 @@ pocket_monsters_dict = {
             "Name": "Vikavolt",
             "Type 1": "Bug",
             "Type 2": "Electric",
-            "HP": 77,
-            "Attack": 70,
-            "Defense": 90,
-            "Special Attack": 145,
-            "Special Defense": 75,
-            "Speed": 43
+            StatsEnum.HP: 77,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 43
         }
     },
     "0739": {
@@ -11259,12 +11262,12 @@ pocket_monsters_dict = {
             "Name": "Crabrawler",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 47,
-            "Attack": 82,
-            "Defense": 57,
-            "Special Attack": 42,
-            "Special Defense": 47,
-            "Speed": 63
+            StatsEnum.HP: 47,
+            StatsEnum.ATTACK: 82,
+            StatsEnum.DEFENSE: 57,
+            StatsEnum.SPECIAL_ATTACK: 42,
+            StatsEnum.SPECIAL_DEFENSE: 47,
+            StatsEnum.SPEED: 63
         }
     },
     "0740": {
@@ -11272,12 +11275,12 @@ pocket_monsters_dict = {
             "Name": "Crabominable",
             "Type 1": "Fighting",
             "Type 2": "Ice",
-            "HP": 97,
-            "Attack": 132,
-            "Defense": 77,
-            "Special Attack": 62,
-            "Special Defense": 67,
-            "Speed": 43
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 132,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 67,
+            StatsEnum.SPEED: 43
         }
     },
     "0741": {
@@ -11285,45 +11288,45 @@ pocket_monsters_dict = {
             "Name": "Oricorio",
             "Type 1": "Fire",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 98,
-            "Special Defense": 70,
-            "Speed": 93
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 93
         },
         "Pom-Pom Style": {
             "Name": "Oricorio",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 98,
-            "Special Defense": 70,
-            "Speed": 93
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 93
         },
         "Pa'u Style": {
             "Name": "Oricorio",
             "Type 1": "Psychic",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 98,
-            "Special Defense": 70,
-            "Speed": 93
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 93
         },
         "Sensu Style": {
             "Name": "Oricorio",
             "Type 1": "Ghost",
             "Type 2": "Flying",
-            "HP": 75,
-            "Attack": 70,
-            "Defense": 70,
-            "Special Attack": 98,
-            "Special Defense": 70,
-            "Speed": 93
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 98,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 93
         }
     },
     "0742": {
@@ -11331,12 +11334,12 @@ pocket_monsters_dict = {
             "Name": "Cutiefly",
             "Type 1": "Bug",
             "Type 2": "Fairy",
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 55,
-            "Special Defense": 40,
-            "Speed": 84
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 84
         }
     },
     "0743": {
@@ -11344,12 +11347,12 @@ pocket_monsters_dict = {
             "Name": "Ribombee",
             "Type 1": "Bug",
             "Type 2": "Fairy",
-            "HP": 60,
-            "Attack": 55,
-            "Defense": 60,
-            "Special Attack": 95,
-            "Special Defense": 70,
-            "Speed": 124
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 124
         }
     },
     "0744": {
@@ -11357,23 +11360,23 @@ pocket_monsters_dict = {
             "Name": "Rockruff",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 65,
-            "Defense": 40,
-            "Special Attack": 30,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         },
         "Own Tempo Rockruff": {
             "Name": "Rockruff",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 65,
-            "Defense": 40,
-            "Special Attack": 30,
-            "Special Defense": 40,
-            "Speed": 60
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 60
         }
     },
     "0745": {
@@ -11381,34 +11384,34 @@ pocket_monsters_dict = {
             "Name": "Lycanroc",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 115,
-            "Defense": 65,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 112
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 112
         },
         "Midnight Form": {
             "Name": "Lycanroc",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 85,
-            "Attack": 115,
-            "Defense": 75,
-            "Special Attack": 55,
-            "Special Defense": 75,
-            "Speed": 82
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 82
         },
         "Dusk Form": {
             "Name": "Lycanroc",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 117,
-            "Defense": 65,
-            "Special Attack": 55,
-            "Special Defense": 65,
-            "Speed": 110
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 117,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 110
         }
     },
     "0746": {
@@ -11416,23 +11419,23 @@ pocket_monsters_dict = {
             "Name": "Wishiwashi",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 20,
-            "Defense": 20,
-            "Special Attack": 25,
-            "Special Defense": 25,
-            "Speed": 40
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 40
         },
         "School Form": {
             "Name": "Wishiwashi",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 140,
-            "Defense": 130,
-            "Special Attack": 140,
-            "Special Defense": 135,
-            "Speed": 30
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 30
         }
     },
     "0747": {
@@ -11440,12 +11443,12 @@ pocket_monsters_dict = {
             "Name": "Mareanie",
             "Type 1": "Poison",
             "Type 2": "Water",
-            "HP": 50,
-            "Attack": 53,
-            "Defense": 62,
-            "Special Attack": 43,
-            "Special Defense": 52,
-            "Speed": 45
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 62,
+            StatsEnum.SPECIAL_ATTACK: 43,
+            StatsEnum.SPECIAL_DEFENSE: 52,
+            StatsEnum.SPEED: 45
         }
     },
     "0748": {
@@ -11453,12 +11456,12 @@ pocket_monsters_dict = {
             "Name": "Toxapex",
             "Type 1": "Poison",
             "Type 2": "Water",
-            "HP": 50,
-            "Attack": 63,
-            "Defense": 152,
-            "Special Attack": 53,
-            "Special Defense": 142,
-            "Speed": 35
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 152,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 142,
+            StatsEnum.SPEED: 35
         }
     },
     "0749": {
@@ -11466,12 +11469,12 @@ pocket_monsters_dict = {
             "Name": "Mudbray",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 100,
-            "Defense": 70,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 45
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 45
         }
     },
     "0750": {
@@ -11479,12 +11482,12 @@ pocket_monsters_dict = {
             "Name": "Mudsdale",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 125,
-            "Defense": 100,
-            "Special Attack": 55,
-            "Special Defense": 85,
-            "Speed": 35
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 35
         }
     },
     "0751": {
@@ -11492,12 +11495,12 @@ pocket_monsters_dict = {
             "Name": "Dewpider",
             "Type 1": "Water",
             "Type 2": "Bug",
-            "HP": 38,
-            "Attack": 40,
-            "Defense": 52,
-            "Special Attack": 40,
-            "Special Defense": 72,
-            "Speed": 27
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 52,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 72,
+            StatsEnum.SPEED: 27
         }
     },
     "0752": {
@@ -11505,12 +11508,12 @@ pocket_monsters_dict = {
             "Name": "Araquanid",
             "Type 1": "Water",
             "Type 2": "Bug",
-            "HP": 68,
-            "Attack": 70,
-            "Defense": 92,
-            "Special Attack": 50,
-            "Special Defense": 132,
-            "Speed": 42
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 92,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 132,
+            StatsEnum.SPEED: 42
         }
     },
     "0753": {
@@ -11518,12 +11521,12 @@ pocket_monsters_dict = {
             "Name": "Fomantis",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 55,
-            "Defense": 35,
-            "Special Attack": 50,
-            "Special Defense": 35,
-            "Speed": 35
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 35
         }
     },
     "0754": {
@@ -11531,12 +11534,12 @@ pocket_monsters_dict = {
             "Name": "Lurantis",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 105,
-            "Defense": 90,
-            "Special Attack": 80,
-            "Special Defense": 90,
-            "Speed": 45
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 45
         }
     },
     "0755": {
@@ -11544,12 +11547,12 @@ pocket_monsters_dict = {
             "Name": "Morelull",
             "Type 1": "Grass",
             "Type 2": "Fairy",
-            "HP": 40,
-            "Attack": 35,
-            "Defense": 55,
-            "Special Attack": 65,
-            "Special Defense": 75,
-            "Speed": 15
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 15
         }
     },
     "0756": {
@@ -11557,12 +11560,12 @@ pocket_monsters_dict = {
             "Name": "Shiinotic",
             "Type 1": "Grass",
             "Type 2": "Fairy",
-            "HP": 60,
-            "Attack": 45,
-            "Defense": 80,
-            "Special Attack": 90,
-            "Special Defense": 100,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 30
         }
     },
     "0757": {
@@ -11570,12 +11573,12 @@ pocket_monsters_dict = {
             "Name": "Salandit",
             "Type 1": "Poison",
             "Type 2": "Fire",
-            "HP": 48,
-            "Attack": 44,
-            "Defense": 40,
-            "Special Attack": 71,
-            "Special Defense": 40,
-            "Speed": 77
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 44,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 71,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 77
         }
     },
     "0758": {
@@ -11583,12 +11586,12 @@ pocket_monsters_dict = {
             "Name": "Salazzle",
             "Type 1": "Poison",
             "Type 2": "Fire",
-            "HP": 68,
-            "Attack": 64,
-            "Defense": 60,
-            "Special Attack": 111,
-            "Special Defense": 60,
-            "Speed": 117
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 111,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 117
         }
     },
     "0759": {
@@ -11596,12 +11599,12 @@ pocket_monsters_dict = {
             "Name": "Stufful",
             "Type 1": "Normal",
             "Type 2": "Fighting",
-            "HP": 70,
-            "Attack": 75,
-            "Defense": 50,
-            "Special Attack": 45,
-            "Special Defense": 50,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 50
         }
     },
     "0760": {
@@ -11609,12 +11612,12 @@ pocket_monsters_dict = {
             "Name": "Bewear",
             "Type 1": "Normal",
             "Type 2": "Fighting",
-            "HP": 120,
-            "Attack": 125,
-            "Defense": 80,
-            "Special Attack": 55,
-            "Special Defense": 60,
-            "Speed": 60
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 60
         }
     },
     "0761": {
@@ -11622,12 +11625,12 @@ pocket_monsters_dict = {
             "Name": "Bounsweet",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 42,
-            "Attack": 30,
-            "Defense": 38,
-            "Special Attack": 30,
-            "Special Defense": 38,
-            "Speed": 32
+            StatsEnum.HP: 42,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 38,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 38,
+            StatsEnum.SPEED: 32
         }
     },
     "0762": {
@@ -11635,12 +11638,12 @@ pocket_monsters_dict = {
             "Name": "Steenee",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 52,
-            "Attack": 40,
-            "Defense": 48,
-            "Special Attack": 40,
-            "Special Defense": 48,
-            "Speed": 62
+            StatsEnum.HP: 52,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 48,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 48,
+            StatsEnum.SPEED: 62
         }
     },
     "0763": {
@@ -11648,12 +11651,12 @@ pocket_monsters_dict = {
             "Name": "Tsareena",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 72,
-            "Attack": 120,
-            "Defense": 98,
-            "Special Attack": 50,
-            "Special Defense": 98,
-            "Speed": 72
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 98,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 98,
+            StatsEnum.SPEED: 72
         }
     },
     "0764": {
@@ -11661,12 +11664,12 @@ pocket_monsters_dict = {
             "Name": "Comfey",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 51,
-            "Attack": 52,
-            "Defense": 90,
-            "Special Attack": 82,
-            "Special Defense": 110,
-            "Speed": 100
+            StatsEnum.HP: 51,
+            StatsEnum.ATTACK: 52,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 82,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 100
         }
     },
     "0765": {
@@ -11674,12 +11677,12 @@ pocket_monsters_dict = {
             "Name": "Oranguru",
             "Type 1": "Normal",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 60,
-            "Defense": 80,
-            "Special Attack": 90,
-            "Special Defense": 110,
-            "Speed": 60
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 60
         }
     },
     "0766": {
@@ -11687,12 +11690,12 @@ pocket_monsters_dict = {
             "Name": "Passimian",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 120,
-            "Defense": 90,
-            "Special Attack": 40,
-            "Special Defense": 60,
-            "Speed": 80
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 80
         }
     },
     "0767": {
@@ -11700,12 +11703,12 @@ pocket_monsters_dict = {
             "Name": "Wimpod",
             "Type 1": "Bug",
             "Type 2": "Water",
-            "HP": 25,
-            "Attack": 35,
-            "Defense": 40,
-            "Special Attack": 20,
-            "Special Defense": 30,
-            "Speed": 80
+            StatsEnum.HP: 25,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 80
         }
     },
     "0768": {
@@ -11713,12 +11716,12 @@ pocket_monsters_dict = {
             "Name": "Golisopod",
             "Type 1": "Bug",
             "Type 2": "Water",
-            "HP": 75,
-            "Attack": 125,
-            "Defense": 140,
-            "Special Attack": 60,
-            "Special Defense": 90,
-            "Speed": 40
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 40
         }
     },
     "0769": {
@@ -11726,12 +11729,12 @@ pocket_monsters_dict = {
             "Name": "Sandygast",
             "Type 1": "Ghost",
             "Type 2": "Ground",
-            "HP": 55,
-            "Attack": 55,
-            "Defense": 80,
-            "Special Attack": 70,
-            "Special Defense": 45,
-            "Speed": 15
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 15
         }
     },
     "0770": {
@@ -11739,12 +11742,12 @@ pocket_monsters_dict = {
             "Name": "Palossand",
             "Type 1": "Ghost",
             "Type 2": "Ground",
-            "HP": 85,
-            "Attack": 75,
-            "Defense": 110,
-            "Special Attack": 100,
-            "Special Defense": 75,
-            "Speed": 35
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 35
         }
     },
     "0771": {
@@ -11752,12 +11755,12 @@ pocket_monsters_dict = {
             "Name": "Pyukumuku",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 60,
-            "Defense": 130,
-            "Special Attack": 30,
-            "Special Defense": 130,
-            "Speed": 5
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 5
         }
     },
     "0772": {
@@ -11765,12 +11768,12 @@ pocket_monsters_dict = {
             "Name": "Type: Null",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 95,
-            "Defense": 95,
-            "Special Attack": 95,
-            "Special Defense": 95,
-            "Speed": 59
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 59
         }
     },
     "0773": {
@@ -11778,12 +11781,12 @@ pocket_monsters_dict = {
             "Name": "Silvally",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 95,
-            "Defense": 95,
-            "Special Attack": 95,
-            "Special Defense": 95,
-            "Speed": 95
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 95
         }
     },
     "0774": {
@@ -11791,23 +11794,23 @@ pocket_monsters_dict = {
             "Name": "Minior",
             "Type 1": "Rock",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 100,
-            "Special Attack": 60,
-            "Special Defense": 100,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 60
         },
         "Core Form": {
             "Name": "Minior",
             "Type 1": "Rock",
             "Type 2": "Flying",
-            "HP": 60,
-            "Attack": 100,
-            "Defense": 60,
-            "Special Attack": 100,
-            "Special Defense": 60,
-            "Speed": 120
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 120
         }
     },
     "0775": {
@@ -11815,12 +11818,12 @@ pocket_monsters_dict = {
             "Name": "Komala",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 115,
-            "Defense": 65,
-            "Special Attack": 75,
-            "Special Defense": 95,
-            "Speed": 65
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 65
         }
     },
     "0776": {
@@ -11828,12 +11831,12 @@ pocket_monsters_dict = {
             "Name": "Turtonator",
             "Type 1": "Fire",
             "Type 2": "Dragon",
-            "HP": 60,
-            "Attack": 78,
-            "Defense": 135,
-            "Special Attack": 91,
-            "Special Defense": 85,
-            "Speed": 36
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 78,
+            StatsEnum.DEFENSE: 135,
+            StatsEnum.SPECIAL_ATTACK: 91,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 36
         }
     },
     "0777": {
@@ -11841,12 +11844,12 @@ pocket_monsters_dict = {
             "Name": "Togedemaru",
             "Type 1": "Electric",
             "Type 2": "Steel",
-            "HP": 65,
-            "Attack": 98,
-            "Defense": 63,
-            "Special Attack": 40,
-            "Special Defense": 73,
-            "Speed": 96
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 98,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 73,
+            StatsEnum.SPEED: 96
         }
     },
     "0778": {
@@ -11854,12 +11857,12 @@ pocket_monsters_dict = {
             "Name": "Mimikyu",
             "Type 1": "Ghost",
             "Type 2": "Fairy",
-            "HP": 55,
-            "Attack": 90,
-            "Defense": 80,
-            "Special Attack": 50,
-            "Special Defense": 105,
-            "Speed": 96
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 96
         }
     },
     "0779": {
@@ -11867,12 +11870,12 @@ pocket_monsters_dict = {
             "Name": "Bruxish",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 68,
-            "Attack": 105,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 70,
-            "Speed": 92
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 92
         }
     },
     "0780": {
@@ -11880,12 +11883,12 @@ pocket_monsters_dict = {
             "Name": "Drampa",
             "Type 1": "Normal",
             "Type 2": "Dragon",
-            "HP": 78,
-            "Attack": 60,
-            "Defense": 85,
-            "Special Attack": 135,
-            "Special Defense": 91,
-            "Speed": 36
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 91,
+            StatsEnum.SPEED: 36
         }
     },
     "0781": {
@@ -11893,12 +11896,12 @@ pocket_monsters_dict = {
             "Name": "Dhelmise",
             "Type 1": "Ghost",
             "Type 2": "Grass",
-            "HP": 70,
-            "Attack": 131,
-            "Defense": 100,
-            "Special Attack": 86,
-            "Special Defense": 90,
-            "Speed": 40
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 131,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 86,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 40
         }
     },
     "0782": {
@@ -11906,12 +11909,12 @@ pocket_monsters_dict = {
             "Name": "Jangmo-o",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 55,
-            "Defense": 65,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 45
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 45
         }
     },
     "0783": {
@@ -11919,12 +11922,12 @@ pocket_monsters_dict = {
             "Name": "Hakamo-o",
             "Type 1": "Dragon",
             "Type 2": "Fighting",
-            "HP": 55,
-            "Attack": 75,
-            "Defense": 90,
-            "Special Attack": 65,
-            "Special Defense": 70,
-            "Speed": 65
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 65
         }
     },
     "0784": {
@@ -11932,12 +11935,12 @@ pocket_monsters_dict = {
             "Name": "Kommo-o",
             "Type 1": "Dragon",
             "Type 2": "Fighting",
-            "HP": 75,
-            "Attack": 110,
-            "Defense": 125,
-            "Special Attack": 100,
-            "Special Defense": 105,
-            "Speed": 85
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 85
         }
     },
     "0785": {
@@ -11945,12 +11948,12 @@ pocket_monsters_dict = {
             "Name": "Tapu Koko",
             "Type 1": "Electric",
             "Type 2": "Fairy",
-            "HP": 70,
-            "Attack": 115,
-            "Defense": 85,
-            "Special Attack": 95,
-            "Special Defense": 75,
-            "Speed": 130
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 130
         }
     },
     "0786": {
@@ -11958,12 +11961,12 @@ pocket_monsters_dict = {
             "Name": "Tapu Lele",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 75,
-            "Special Attack": 130,
-            "Special Defense": 115,
-            "Speed": 95
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 95
         }
     },
     "0787": {
@@ -11971,12 +11974,12 @@ pocket_monsters_dict = {
             "Name": "Tapu Bulu",
             "Type 1": "Grass",
             "Type 2": "Fairy",
-            "HP": 70,
-            "Attack": 130,
-            "Defense": 115,
-            "Special Attack": 85,
-            "Special Defense": 95,
-            "Speed": 75
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 75
         }
     },
     "0788": {
@@ -11984,12 +11987,12 @@ pocket_monsters_dict = {
             "Name": "Tapu Fini",
             "Type 1": "Water",
             "Type 2": "Fairy",
-            "HP": 70,
-            "Attack": 75,
-            "Defense": 115,
-            "Special Attack": 95,
-            "Special Defense": 130,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 85
         }
     },
     "0789": {
@@ -11997,12 +12000,12 @@ pocket_monsters_dict = {
             "Name": "Cosmog",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 43,
-            "Attack": 29,
-            "Defense": 31,
-            "Special Attack": 29,
-            "Special Defense": 31,
-            "Speed": 37
+            StatsEnum.HP: 43,
+            StatsEnum.ATTACK: 29,
+            StatsEnum.DEFENSE: 31,
+            StatsEnum.SPECIAL_ATTACK: 29,
+            StatsEnum.SPECIAL_DEFENSE: 31,
+            StatsEnum.SPEED: 37
         }
     },
     "0790": {
@@ -12010,12 +12013,12 @@ pocket_monsters_dict = {
             "Name": "Cosmoem",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 43,
-            "Attack": 29,
-            "Defense": 131,
-            "Special Attack": 29,
-            "Special Defense": 131,
-            "Speed": 37
+            StatsEnum.HP: 43,
+            StatsEnum.ATTACK: 29,
+            StatsEnum.DEFENSE: 131,
+            StatsEnum.SPECIAL_ATTACK: 29,
+            StatsEnum.SPECIAL_DEFENSE: 131,
+            StatsEnum.SPEED: 37
         }
     },
     "0791": {
@@ -12023,12 +12026,12 @@ pocket_monsters_dict = {
             "Name": "Solgaleo",
             "Type 1": "Psychic",
             "Type 2": "Steel",
-            "HP": 137,
-            "Attack": 137,
-            "Defense": 107,
-            "Special Attack": 113,
-            "Special Defense": 89,
-            "Speed": 97
+            StatsEnum.HP: 137,
+            StatsEnum.ATTACK: 137,
+            StatsEnum.DEFENSE: 107,
+            StatsEnum.SPECIAL_ATTACK: 113,
+            StatsEnum.SPECIAL_DEFENSE: 89,
+            StatsEnum.SPEED: 97
         }
     },
     "0792": {
@@ -12036,12 +12039,12 @@ pocket_monsters_dict = {
             "Name": "Lunala",
             "Type 1": "Psychic",
             "Type 2": "Ghost",
-            "HP": 137,
-            "Attack": 113,
-            "Defense": 89,
-            "Special Attack": 137,
-            "Special Defense": 107,
-            "Speed": 97
+            StatsEnum.HP: 137,
+            StatsEnum.ATTACK: 113,
+            StatsEnum.DEFENSE: 89,
+            StatsEnum.SPECIAL_ATTACK: 137,
+            StatsEnum.SPECIAL_DEFENSE: 107,
+            StatsEnum.SPEED: 97
         }
     },
     "0793": {
@@ -12049,12 +12052,12 @@ pocket_monsters_dict = {
             "Name": "Nihilego",
             "Type 1": "Rock",
             "Type 2": "Poison",
-            "HP": 109,
-            "Attack": 53,
-            "Defense": 47,
-            "Special Attack": 127,
-            "Special Defense": 131,
-            "Speed": 103
+            StatsEnum.HP: 109,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 47,
+            StatsEnum.SPECIAL_ATTACK: 127,
+            StatsEnum.SPECIAL_DEFENSE: 131,
+            StatsEnum.SPEED: 103
         }
     },
     "0794": {
@@ -12062,12 +12065,12 @@ pocket_monsters_dict = {
             "Name": "Buzzwole",
             "Type 1": "Bug",
             "Type 2": "Fighting",
-            "HP": 107,
-            "Attack": 139,
-            "Defense": 139,
-            "Special Attack": 53,
-            "Special Defense": 53,
-            "Speed": 79
+            StatsEnum.HP: 107,
+            StatsEnum.ATTACK: 139,
+            StatsEnum.DEFENSE: 139,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 53,
+            StatsEnum.SPEED: 79
         }
     },
     "0795": {
@@ -12075,12 +12078,12 @@ pocket_monsters_dict = {
             "Name": "Pheromosa",
             "Type 1": "Bug",
             "Type 2": "Fighting",
-            "HP": 71,
-            "Attack": 137,
-            "Defense": 37,
-            "Special Attack": 137,
-            "Special Defense": 37,
-            "Speed": 151
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 137,
+            StatsEnum.DEFENSE: 37,
+            StatsEnum.SPECIAL_ATTACK: 137,
+            StatsEnum.SPECIAL_DEFENSE: 37,
+            StatsEnum.SPEED: 151
         }
     },
     "0796": {
@@ -12088,12 +12091,12 @@ pocket_monsters_dict = {
             "Name": "Xurkitree",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 83,
-            "Attack": 89,
-            "Defense": 71,
-            "Special Attack": 173,
-            "Special Defense": 71,
-            "Speed": 83
+            StatsEnum.HP: 83,
+            StatsEnum.ATTACK: 89,
+            StatsEnum.DEFENSE: 71,
+            StatsEnum.SPECIAL_ATTACK: 173,
+            StatsEnum.SPECIAL_DEFENSE: 71,
+            StatsEnum.SPEED: 83
         }
     },
     "0797": {
@@ -12101,12 +12104,12 @@ pocket_monsters_dict = {
             "Name": "Celesteela",
             "Type 1": "Steel",
             "Type 2": "Flying",
-            "HP": 97,
-            "Attack": 101,
-            "Defense": 103,
-            "Special Attack": 107,
-            "Special Defense": 101,
-            "Speed": 61
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 101,
+            StatsEnum.DEFENSE: 103,
+            StatsEnum.SPECIAL_ATTACK: 107,
+            StatsEnum.SPECIAL_DEFENSE: 101,
+            StatsEnum.SPEED: 61
         }
     },
     "0798": {
@@ -12114,12 +12117,12 @@ pocket_monsters_dict = {
             "Name": "Kartana",
             "Type 1": "Grass",
             "Type 2": "Steel",
-            "HP": 59,
-            "Attack": 181,
-            "Defense": 131,
-            "Special Attack": 59,
-            "Special Defense": 31,
-            "Speed": 109
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 181,
+            StatsEnum.DEFENSE: 131,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 31,
+            StatsEnum.SPEED: 109
         }
     },
     "0799": {
@@ -12127,12 +12130,12 @@ pocket_monsters_dict = {
             "Name": "Guzzlord",
             "Type 1": "Dark",
             "Type 2": "Dragon",
-            "HP": 223,
-            "Attack": 101,
-            "Defense": 53,
-            "Special Attack": 97,
-            "Special Defense": 53,
-            "Speed": 43
+            StatsEnum.HP: 223,
+            StatsEnum.ATTACK: 101,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 97,
+            StatsEnum.SPECIAL_DEFENSE: 53,
+            StatsEnum.SPEED: 43
         }
     },
     "0800": {
@@ -12140,45 +12143,45 @@ pocket_monsters_dict = {
             "Name": "Necrozma",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 97,
-            "Attack": 107,
-            "Defense": 101,
-            "Special Attack": 127,
-            "Special Defense": 89,
-            "Speed": 79
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 107,
+            StatsEnum.DEFENSE: 101,
+            StatsEnum.SPECIAL_ATTACK: 127,
+            StatsEnum.SPECIAL_DEFENSE: 89,
+            StatsEnum.SPEED: 79
         },
         "Dusk Mane Necrozma": {
             "Name": "Necrozma",
             "Type 1": "Psychic",
             "Type 2": "Steel",
-            "HP": 97,
-            "Attack": 157,
-            "Defense": 127,
-            "Special Attack": 113,
-            "Special Defense": 109,
-            "Speed": 77
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 157,
+            StatsEnum.DEFENSE: 127,
+            StatsEnum.SPECIAL_ATTACK: 113,
+            StatsEnum.SPECIAL_DEFENSE: 109,
+            StatsEnum.SPEED: 77
         },
         "Dawn Wings Necrozma": {
             "Name": "Necrozma",
             "Type 1": "Psychic",
             "Type 2": "Ghost",
-            "HP": 97,
-            "Attack": 113,
-            "Defense": 109,
-            "Special Attack": 157,
-            "Special Defense": 127,
-            "Speed": 77
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 113,
+            StatsEnum.DEFENSE: 109,
+            StatsEnum.SPECIAL_ATTACK: 157,
+            StatsEnum.SPECIAL_DEFENSE: 127,
+            StatsEnum.SPEED: 77
         },
         "Ultra Necrozma": {
             "Name": "Necrozma",
             "Type 1": "Psychic",
             "Type 2": "Dragon",
-            "HP": 97,
-            "Attack": 167,
-            "Defense": 97,
-            "Special Attack": 167,
-            "Special Defense": 97,
-            "Speed": 129
+            StatsEnum.HP: 97,
+            StatsEnum.ATTACK: 167,
+            StatsEnum.DEFENSE: 97,
+            StatsEnum.SPECIAL_ATTACK: 167,
+            StatsEnum.SPECIAL_DEFENSE: 97,
+            StatsEnum.SPEED: 129
         }
     },
     "0801": {
@@ -12186,12 +12189,12 @@ pocket_monsters_dict = {
             "Name": "Magearna",
             "Type 1": "Steel",
             "Type 2": "Fairy",
-            "HP": 80,
-            "Attack": 95,
-            "Defense": 115,
-            "Special Attack": 130,
-            "Special Defense": 115,
-            "Speed": 65
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 65
         }
     },
     "0802": {
@@ -12199,12 +12202,12 @@ pocket_monsters_dict = {
             "Name": "Marshadow",
             "Type 1": "Fighting",
             "Type 2": "Ghost",
-            "HP": 90,
-            "Attack": 125,
-            "Defense": 80,
-            "Special Attack": 90,
-            "Special Defense": 90,
-            "Speed": 125
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 125
         }
     },
     "0803": {
@@ -12212,12 +12215,12 @@ pocket_monsters_dict = {
             "Name": "Poipole",
             "Type 1": "Poison",
             "Type 2": None,
-            "HP": 67,
-            "Attack": 73,
-            "Defense": 67,
-            "Special Attack": 73,
-            "Special Defense": 67,
-            "Speed": 73
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 67,
+            StatsEnum.SPECIAL_ATTACK: 73,
+            StatsEnum.SPECIAL_DEFENSE: 67,
+            StatsEnum.SPEED: 73
         }
     },
     "0804": {
@@ -12225,12 +12228,12 @@ pocket_monsters_dict = {
             "Name": "Naganadel",
             "Type 1": "Poison",
             "Type 2": "Dragon",
-            "HP": 73,
-            "Attack": 73,
-            "Defense": 73,
-            "Special Attack": 127,
-            "Special Defense": 73,
-            "Speed": 121
+            StatsEnum.HP: 73,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 73,
+            StatsEnum.SPECIAL_ATTACK: 127,
+            StatsEnum.SPECIAL_DEFENSE: 73,
+            StatsEnum.SPEED: 121
         }
     },
     "0805": {
@@ -12238,12 +12241,12 @@ pocket_monsters_dict = {
             "Name": "Stakataka",
             "Type 1": "Rock",
             "Type 2": "Steel",
-            "HP": 61,
-            "Attack": 131,
-            "Defense": 211,
-            "Special Attack": 53,
-            "Special Defense": 101,
-            "Speed": 13
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 131,
+            StatsEnum.DEFENSE: 211,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 101,
+            StatsEnum.SPEED: 13
         }
     },
     "0806": {
@@ -12251,12 +12254,12 @@ pocket_monsters_dict = {
             "Name": "Blacephalon",
             "Type 1": "Fire",
             "Type 2": "Ghost",
-            "HP": 53,
-            "Attack": 127,
-            "Defense": 53,
-            "Special Attack": 151,
-            "Special Defense": 79,
-            "Speed": 107
+            StatsEnum.HP: 53,
+            StatsEnum.ATTACK: 127,
+            StatsEnum.DEFENSE: 53,
+            StatsEnum.SPECIAL_ATTACK: 151,
+            StatsEnum.SPECIAL_DEFENSE: 79,
+            StatsEnum.SPEED: 107
         }
     },
     "0807": {
@@ -12264,12 +12267,12 @@ pocket_monsters_dict = {
             "Name": "Zeraora",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 88,
-            "Attack": 112,
-            "Defense": 75,
-            "Special Attack": 102,
-            "Special Defense": 80,
-            "Speed": 143
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 112,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 102,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 143
         }
     },
     "0808": {
@@ -12277,12 +12280,12 @@ pocket_monsters_dict = {
             "Name": "Meltan",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 46,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 55,
-            "Special Defense": 35,
-            "Speed": 34
+            StatsEnum.HP: 46,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 34
         }
     },
     "0809": {
@@ -12290,12 +12293,12 @@ pocket_monsters_dict = {
             "Name": "Melmetal",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 135,
-            "Attack": 143,
-            "Defense": 143,
-            "Special Attack": 80,
-            "Special Defense": 65,
-            "Speed": 34
+            StatsEnum.HP: 135,
+            StatsEnum.ATTACK: 143,
+            StatsEnum.DEFENSE: 143,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 34
         }
     },
     "0810": {
@@ -12303,12 +12306,12 @@ pocket_monsters_dict = {
             "Name": "Grookey",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 65
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 65
         }
     },
     "0811": {
@@ -12316,12 +12319,12 @@ pocket_monsters_dict = {
             "Name": "Thwackey",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 70,
-            "Special Attack": 55,
-            "Special Defense": 60,
-            "Speed": 80
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 80
         }
     },
     "0812": {
@@ -12329,12 +12332,12 @@ pocket_monsters_dict = {
             "Name": "Rillaboom",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 125,
-            "Defense": 90,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 85
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 85
         }
     },
     "0813": {
@@ -12342,12 +12345,12 @@ pocket_monsters_dict = {
             "Name": "Scorbunny",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 71,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 69
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 71,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 69
         }
     },
     "0814": {
@@ -12355,12 +12358,12 @@ pocket_monsters_dict = {
             "Name": "Raboot",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 86,
-            "Defense": 60,
-            "Special Attack": 55,
-            "Special Defense": 60,
-            "Speed": 94
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 86,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 94
         }
     },
     "0815": {
@@ -12368,12 +12371,12 @@ pocket_monsters_dict = {
             "Name": "Cinderace",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 116,
-            "Defense": 75,
-            "Special Attack": 65,
-            "Special Defense": 75,
-            "Speed": 119
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 116,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 119
         }
     },
     "0816": {
@@ -12381,12 +12384,12 @@ pocket_monsters_dict = {
             "Name": "Sobble",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 40,
-            "Defense": 40,
-            "Special Attack": 70,
-            "Special Defense": 40,
-            "Speed": 70
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 70
         }
     },
     "0817": {
@@ -12394,12 +12397,12 @@ pocket_monsters_dict = {
             "Name": "Drizzile",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 60,
-            "Defense": 55,
-            "Special Attack": 95,
-            "Special Defense": 55,
-            "Speed": 90
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 90
         }
     },
     "0818": {
@@ -12407,12 +12410,12 @@ pocket_monsters_dict = {
             "Name": "Inteleon",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 65,
-            "Special Attack": 125,
-            "Special Defense": 65,
-            "Speed": 120
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 120
         }
     },
     "0819": {
@@ -12420,12 +12423,12 @@ pocket_monsters_dict = {
             "Name": "Skwovet",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 55,
-            "Defense": 55,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 25
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 25
         }
     },
     "0820": {
@@ -12433,12 +12436,12 @@ pocket_monsters_dict = {
             "Name": "Greedent",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 120,
-            "Attack": 95,
-            "Defense": 95,
-            "Special Attack": 55,
-            "Special Defense": 75,
-            "Speed": 20
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 20
         }
     },
     "0821": {
@@ -12446,12 +12449,12 @@ pocket_monsters_dict = {
             "Name": "Rookidee",
             "Type 1": "Flying",
             "Type 2": None,
-            "HP": 38,
-            "Attack": 47,
-            "Defense": 35,
-            "Special Attack": 33,
-            "Special Defense": 35,
-            "Speed": 57
+            StatsEnum.HP: 38,
+            StatsEnum.ATTACK: 47,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 33,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 57
         }
     },
     "0822": {
@@ -12459,12 +12462,12 @@ pocket_monsters_dict = {
             "Name": "Corvisquire",
             "Type 1": "Flying",
             "Type 2": None,
-            "HP": 68,
-            "Attack": 67,
-            "Defense": 55,
-            "Special Attack": 43,
-            "Special Defense": 55,
-            "Speed": 77
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 67,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 43,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 77
         }
     },
     "0823": {
@@ -12472,12 +12475,12 @@ pocket_monsters_dict = {
             "Name": "Corviknight",
             "Type 1": "Flying",
             "Type 2": "Steel",
-            "HP": 98,
-            "Attack": 87,
-            "Defense": 105,
-            "Special Attack": 53,
-            "Special Defense": 85,
-            "Speed": 67
+            StatsEnum.HP: 98,
+            StatsEnum.ATTACK: 87,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 67
         }
     },
     "0824": {
@@ -12485,12 +12488,12 @@ pocket_monsters_dict = {
             "Name": "Blipbug",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 25,
-            "Attack": 20,
-            "Defense": 20,
-            "Special Attack": 25,
-            "Special Defense": 45,
-            "Speed": 45
+            StatsEnum.HP: 25,
+            StatsEnum.ATTACK: 20,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 25,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 45
         }
     },
     "0825": {
@@ -12498,12 +12501,12 @@ pocket_monsters_dict = {
             "Name": "Dottler",
             "Type 1": "Bug",
             "Type 2": "Psychic",
-            "HP": 50,
-            "Attack": 35,
-            "Defense": 80,
-            "Special Attack": 50,
-            "Special Defense": 90,
-            "Speed": 30
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 30
         }
     },
     "0826": {
@@ -12511,12 +12514,12 @@ pocket_monsters_dict = {
             "Name": "Orbeetle",
             "Type 1": "Bug",
             "Type 2": "Psychic",
-            "HP": 60,
-            "Attack": 45,
-            "Defense": 110,
-            "Special Attack": 80,
-            "Special Defense": 120,
-            "Speed": 90
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 90
         }
     },
     "0827": {
@@ -12524,12 +12527,12 @@ pocket_monsters_dict = {
             "Name": "Nickit",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 28,
-            "Defense": 28,
-            "Special Attack": 47,
-            "Special Defense": 52,
-            "Speed": 50
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 28,
+            StatsEnum.DEFENSE: 28,
+            StatsEnum.SPECIAL_ATTACK: 47,
+            StatsEnum.SPECIAL_DEFENSE: 52,
+            StatsEnum.SPEED: 50
         }
     },
     "0828": {
@@ -12537,12 +12540,12 @@ pocket_monsters_dict = {
             "Name": "Thievul",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 58,
-            "Defense": 58,
-            "Special Attack": 87,
-            "Special Defense": 92,
-            "Speed": 90
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 58,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 87,
+            StatsEnum.SPECIAL_DEFENSE: 92,
+            StatsEnum.SPEED: 90
         }
     },
     "0829": {
@@ -12550,12 +12553,12 @@ pocket_monsters_dict = {
             "Name": "Gossifleur",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 60,
-            "Speed": 10
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 10
         }
     },
     "0830": {
@@ -12563,12 +12566,12 @@ pocket_monsters_dict = {
             "Name": "Eldegoss",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 50,
-            "Defense": 90,
-            "Special Attack": 80,
-            "Special Defense": 120,
-            "Speed": 60
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 60
         }
     },
     "0831": {
@@ -12576,12 +12579,12 @@ pocket_monsters_dict = {
             "Name": "Wooloo",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 42,
-            "Attack": 40,
-            "Defense": 55,
-            "Special Attack": 40,
-            "Special Defense": 45,
-            "Speed": 48
+            StatsEnum.HP: 42,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 48
         }
     },
     "0832": {
@@ -12589,12 +12592,12 @@ pocket_monsters_dict = {
             "Name": "Dubwool",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 72,
-            "Attack": 80,
-            "Defense": 100,
-            "Special Attack": 60,
-            "Special Defense": 90,
-            "Speed": 88
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 88
         }
     },
     "0833": {
@@ -12602,12 +12605,12 @@ pocket_monsters_dict = {
             "Name": "Chewtle",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 64,
-            "Defense": 50,
-            "Special Attack": 38,
-            "Special Defense": 38,
-            "Speed": 44
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 38,
+            StatsEnum.SPECIAL_DEFENSE: 38,
+            StatsEnum.SPEED: 44
         }
     },
     "0834": {
@@ -12615,12 +12618,12 @@ pocket_monsters_dict = {
             "Name": "Drednaw",
             "Type 1": "Water",
             "Type 2": "Rock",
-            "HP": 90,
-            "Attack": 115,
-            "Defense": 90,
-            "Special Attack": 48,
-            "Special Defense": 68,
-            "Speed": 74
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 48,
+            StatsEnum.SPECIAL_DEFENSE: 68,
+            StatsEnum.SPEED: 74
         }
     },
     "0835": {
@@ -12628,12 +12631,12 @@ pocket_monsters_dict = {
             "Name": "Yamper",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 59,
-            "Attack": 45,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 26
+            StatsEnum.HP: 59,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 26
         }
     },
     "0836": {
@@ -12641,12 +12644,12 @@ pocket_monsters_dict = {
             "Name": "Boltund",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 69,
-            "Attack": 90,
-            "Defense": 60,
-            "Special Attack": 90,
-            "Special Defense": 60,
-            "Speed": 121
+            StatsEnum.HP: 69,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 121
         }
     },
     "0837": {
@@ -12654,12 +12657,12 @@ pocket_monsters_dict = {
             "Name": "Rolycoly",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 40,
-            "Defense": 50,
-            "Special Attack": 40,
-            "Special Defense": 50,
-            "Speed": 30
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 30
         }
     },
     "0838": {
@@ -12667,12 +12670,12 @@ pocket_monsters_dict = {
             "Name": "Carkol",
             "Type 1": "Rock",
             "Type 2": "Fire",
-            "HP": 80,
-            "Attack": 60,
-            "Defense": 90,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 50
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 50
         }
     },
     "0839": {
@@ -12680,12 +12683,12 @@ pocket_monsters_dict = {
             "Name": "Coalossal",
             "Type 1": "Rock",
             "Type 2": "Fire",
-            "HP": 110,
-            "Attack": 80,
-            "Defense": 120,
-            "Special Attack": 80,
-            "Special Defense": 90,
-            "Speed": 30
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 30
         }
     },
     "0840": {
@@ -12693,12 +12696,12 @@ pocket_monsters_dict = {
             "Name": "Applin",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 80,
-            "Special Attack": 40,
-            "Special Defense": 40,
-            "Speed": 20
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 20
         }
     },
     "0841": {
@@ -12706,12 +12709,12 @@ pocket_monsters_dict = {
             "Name": "Flapple",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 70,
-            "Attack": 110,
-            "Defense": 80,
-            "Special Attack": 95,
-            "Special Defense": 60,
-            "Speed": 70
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 70
         }
     },
     "0842": {
@@ -12719,12 +12722,12 @@ pocket_monsters_dict = {
             "Name": "Appletun",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 110,
-            "Attack": 85,
-            "Defense": 80,
-            "Special Attack": 100,
-            "Special Defense": 80,
-            "Speed": 30
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 30
         }
     },
     "0843": {
@@ -12732,12 +12735,12 @@ pocket_monsters_dict = {
             "Name": "Silicobra",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 52,
-            "Attack": 57,
-            "Defense": 75,
-            "Special Attack": 35,
-            "Special Defense": 50,
-            "Speed": 46
+            StatsEnum.HP: 52,
+            StatsEnum.ATTACK: 57,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 46
         }
     },
     "0844": {
@@ -12745,12 +12748,12 @@ pocket_monsters_dict = {
             "Name": "Sandaconda",
             "Type 1": "Ground",
             "Type 2": None,
-            "HP": 72,
-            "Attack": 107,
-            "Defense": 125,
-            "Special Attack": 65,
-            "Special Defense": 70,
-            "Speed": 71
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 107,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 71
         }
     },
     "0845": {
@@ -12758,12 +12761,12 @@ pocket_monsters_dict = {
             "Name": "Cramorant",
             "Type 1": "Flying",
             "Type 2": "Water",
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 55,
-            "Special Attack": 85,
-            "Special Defense": 95,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 85
         }
     },
     "0846": {
@@ -12771,12 +12774,12 @@ pocket_monsters_dict = {
             "Name": "Arrokuda",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 41,
-            "Attack": 63,
-            "Defense": 40,
-            "Special Attack": 40,
-            "Special Defense": 30,
-            "Speed": 66
+            StatsEnum.HP: 41,
+            StatsEnum.ATTACK: 63,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 66
         }
     },
     "0847": {
@@ -12784,12 +12787,12 @@ pocket_monsters_dict = {
             "Name": "Barraskewda",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 61,
-            "Attack": 123,
-            "Defense": 60,
-            "Special Attack": 60,
-            "Special Defense": 50,
-            "Speed": 136
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 123,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 136
         }
     },
     "0848": {
@@ -12797,12 +12800,12 @@ pocket_monsters_dict = {
             "Name": "Toxel",
             "Type 1": "Electric",
             "Type 2": "Poison",
-            "HP": 40,
-            "Attack": 38,
-            "Defense": 35,
-            "Special Attack": 54,
-            "Special Defense": 35,
-            "Speed": 40
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 38,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 54,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 40
         }
     },
     "0849": {
@@ -12810,23 +12813,23 @@ pocket_monsters_dict = {
             "Name": "Toxtricity",
             "Type 1": "Electric",
             "Type 2": "Poison",
-            "HP": 75,
-            "Attack": 98,
-            "Defense": 70,
-            "Special Attack": 114,
-            "Special Defense": 70,
-            "Speed": 75
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 98,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 114,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 75
         },
         "Low Key Form": {
             "Name": "Toxtricity",
             "Type 1": "Electric",
             "Type 2": "Poison",
-            "HP": 75,
-            "Attack": 98,
-            "Defense": 70,
-            "Special Attack": 114,
-            "Special Defense": 70,
-            "Speed": 75
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 98,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 114,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 75
         }
     },
     "0850": {
@@ -12834,12 +12837,12 @@ pocket_monsters_dict = {
             "Name": "Sizzlipede",
             "Type 1": "Fire",
             "Type 2": "Bug",
-            "HP": 50,
-            "Attack": 65,
-            "Defense": 45,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 45
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 45
         }
     },
     "0851": {
@@ -12847,12 +12850,12 @@ pocket_monsters_dict = {
             "Name": "Centiskorch",
             "Type 1": "Fire",
             "Type 2": "Bug",
-            "HP": 100,
-            "Attack": 115,
-            "Defense": 65,
-            "Special Attack": 90,
-            "Special Defense": 90,
-            "Speed": 65
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 65
         }
     },
     "0852": {
@@ -12860,12 +12863,12 @@ pocket_monsters_dict = {
             "Name": "Clobbopus",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 68,
-            "Defense": 60,
-            "Special Attack": 50,
-            "Special Defense": 50,
-            "Speed": 32
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 68,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 32
         }
     },
     "0853": {
@@ -12873,12 +12876,12 @@ pocket_monsters_dict = {
             "Name": "Grapploct",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 118,
-            "Defense": 90,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 42
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 118,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 42
         }
     },
     "0854": {
@@ -12886,12 +12889,12 @@ pocket_monsters_dict = {
             "Name": "Sinistea",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 45,
-            "Special Attack": 74,
-            "Special Defense": 54,
-            "Speed": 50
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 54,
+            StatsEnum.SPEED: 50
         }
     },
     "0855": {
@@ -12899,12 +12902,12 @@ pocket_monsters_dict = {
             "Name": "Polteageist",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 65,
-            "Defense": 65,
-            "Special Attack": 134,
-            "Special Defense": 114,
-            "Speed": 70
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 134,
+            StatsEnum.SPECIAL_DEFENSE: 114,
+            StatsEnum.SPEED: 70
         }
     },
     "0856": {
@@ -12912,12 +12915,12 @@ pocket_monsters_dict = {
             "Name": "Hatenna",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 42,
-            "Attack": 30,
-            "Defense": 45,
-            "Special Attack": 56,
-            "Special Defense": 53,
-            "Speed": 39
+            StatsEnum.HP: 42,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 56,
+            StatsEnum.SPECIAL_DEFENSE: 53,
+            StatsEnum.SPEED: 39
         }
     },
     "0857": {
@@ -12925,12 +12928,12 @@ pocket_monsters_dict = {
             "Name": "Hattrem",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 57,
-            "Attack": 40,
-            "Defense": 65,
-            "Special Attack": 86,
-            "Special Defense": 73,
-            "Speed": 49
+            StatsEnum.HP: 57,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 86,
+            StatsEnum.SPECIAL_DEFENSE: 73,
+            StatsEnum.SPEED: 49
         }
     },
     "0858": {
@@ -12938,12 +12941,12 @@ pocket_monsters_dict = {
             "Name": "Hatterene",
             "Type 1": "Psychic",
             "Type 2": "Fairy",
-            "HP": 57,
-            "Attack": 90,
-            "Defense": 95,
-            "Special Attack": 136,
-            "Special Defense": 103,
-            "Speed": 29
+            StatsEnum.HP: 57,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 136,
+            StatsEnum.SPECIAL_DEFENSE: 103,
+            StatsEnum.SPEED: 29
         }
     },
     "0859": {
@@ -12951,12 +12954,12 @@ pocket_monsters_dict = {
             "Name": "Impidimp",
             "Type 1": "Dark",
             "Type 2": "Fairy",
-            "HP": 45,
-            "Attack": 45,
-            "Defense": 30,
-            "Special Attack": 55,
-            "Special Defense": 40,
-            "Speed": 50
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 50
         }
     },
     "0860": {
@@ -12964,12 +12967,12 @@ pocket_monsters_dict = {
             "Name": "Morgrem",
             "Type 1": "Dark",
             "Type 2": "Fairy",
-            "HP": 65,
-            "Attack": 60,
-            "Defense": 45,
-            "Special Attack": 75,
-            "Special Defense": 55,
-            "Speed": 70
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 70
         }
     },
     "0861": {
@@ -12977,12 +12980,12 @@ pocket_monsters_dict = {
             "Name": "Grimmsnarl",
             "Type 1": "Dark",
             "Type 2": "Fairy",
-            "HP": 95,
-            "Attack": 120,
-            "Defense": 65,
-            "Special Attack": 95,
-            "Special Defense": 75,
-            "Speed": 60
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 60
         }
     },
     "0862": {
@@ -12990,12 +12993,12 @@ pocket_monsters_dict = {
             "Name": "Obstagoon",
             "Type 1": "Dark",
             "Type 2": "Normal",
-            "HP": 93,
-            "Attack": 90,
-            "Defense": 101,
-            "Special Attack": 60,
-            "Special Defense": 81,
-            "Speed": 95
+            StatsEnum.HP: 93,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 101,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 81,
+            StatsEnum.SPEED: 95
         }
     },
     "0863": {
@@ -13003,12 +13006,12 @@ pocket_monsters_dict = {
             "Name": "Perrserker",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 110,
-            "Defense": 100,
-            "Special Attack": 50,
-            "Special Defense": 60,
-            "Speed": 50
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 50
         }
     },
     "0864": {
@@ -13016,12 +13019,12 @@ pocket_monsters_dict = {
             "Name": "Cursola",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 95,
-            "Defense": 50,
-            "Special Attack": 145,
-            "Special Defense": 130,
-            "Speed": 30
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 30
         }
     },
     "0865": {
@@ -13029,12 +13032,12 @@ pocket_monsters_dict = {
             "Name": "Sirfetch'd",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 62,
-            "Attack": 135,
-            "Defense": 95,
-            "Special Attack": 68,
-            "Special Defense": 82,
-            "Speed": 65
+            StatsEnum.HP: 62,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 68,
+            StatsEnum.SPECIAL_DEFENSE: 82,
+            StatsEnum.SPEED: 65
         }
     },
     "0866": {
@@ -13042,12 +13045,12 @@ pocket_monsters_dict = {
             "Name": "Mr. Rime",
             "Type 1": "Ice",
             "Type 2": "Psychic",
-            "HP": 80,
-            "Attack": 85,
-            "Defense": 75,
-            "Special Attack": 110,
-            "Special Defense": 100,
-            "Speed": 70
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 70
         }
     },
     "0867": {
@@ -13055,12 +13058,12 @@ pocket_monsters_dict = {
             "Name": "Runerigus",
             "Type 1": "Ground",
             "Type 2": "Ghost",
-            "HP": 58,
-            "Attack": 95,
-            "Defense": 145,
-            "Special Attack": 50,
-            "Special Defense": 105,
-            "Speed": 30
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 145,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 30
         }
     },
     "0868": {
@@ -13068,12 +13071,12 @@ pocket_monsters_dict = {
             "Name": "Milcery",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 40,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 61,
-            "Speed": 34
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 61,
+            StatsEnum.SPEED: 34
         }
     },
     "0869": {
@@ -13081,12 +13084,12 @@ pocket_monsters_dict = {
             "Name": "Alcremie",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 60,
-            "Defense": 75,
-            "Special Attack": 110,
-            "Special Defense": 121,
-            "Speed": 64
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 121,
+            StatsEnum.SPEED: 64
         }
     },
     "0870": {
@@ -13094,12 +13097,12 @@ pocket_monsters_dict = {
             "Name": "Falinks",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 65,
-            "Attack": 100,
-            "Defense": 100,
-            "Special Attack": 70,
-            "Special Defense": 60,
-            "Speed": 75
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 75
         }
     },
     "0871": {
@@ -13107,12 +13110,12 @@ pocket_monsters_dict = {
             "Name": "Pincurchin",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 48,
-            "Attack": 101,
-            "Defense": 95,
-            "Special Attack": 91,
-            "Special Defense": 85,
-            "Speed": 15
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 101,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 91,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 15
         }
     },
     "0872": {
@@ -13120,12 +13123,12 @@ pocket_monsters_dict = {
             "Name": "Snom",
             "Type 1": "Ice",
             "Type 2": "Bug",
-            "HP": 30,
-            "Attack": 25,
-            "Defense": 35,
-            "Special Attack": 45,
-            "Special Defense": 30,
-            "Speed": 20
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 25,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 20
         }
     },
     "0873": {
@@ -13133,12 +13136,12 @@ pocket_monsters_dict = {
             "Name": "Frosmoth",
             "Type 1": "Ice",
             "Type 2": "Bug",
-            "HP": 70,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 125,
-            "Special Defense": 90,
-            "Speed": 65
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 65
         }
     },
     "0874": {
@@ -13146,12 +13149,12 @@ pocket_monsters_dict = {
             "Name": "Stonjourner",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 125,
-            "Defense": 135,
-            "Special Attack": 20,
-            "Special Defense": 20,
-            "Speed": 70
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 135,
+            StatsEnum.SPECIAL_ATTACK: 20,
+            StatsEnum.SPECIAL_DEFENSE: 20,
+            StatsEnum.SPEED: 70
         }
     },
     "0875": {
@@ -13159,23 +13162,23 @@ pocket_monsters_dict = {
             "Name": "Eiscue",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 110,
-            "Special Attack": 65,
-            "Special Defense": 90,
-            "Speed": 50
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 50
         },
         "Noice Face": {
             "Name": "Eiscue",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 75,
-            "Attack": 80,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 50,
-            "Speed": 130
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 130
         }
     },
     "0876": {
@@ -13183,23 +13186,23 @@ pocket_monsters_dict = {
             "Name": "Indeedee",
             "Type 1": "Psychic",
             "Type 2": "Normal",
-            "HP": 60,
-            "Attack": 65,
-            "Defense": 55,
-            "Special Attack": 105,
-            "Special Defense": 95,
-            "Speed": 95
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 95
         },
         "Female": {
             "Name": "Indeedee",
             "Type 1": "Psychic",
             "Type 2": "Normal",
-            "HP": 70,
-            "Attack": 55,
-            "Defense": 65,
-            "Special Attack": 95,
-            "Special Defense": 105,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 85
         }
     },
     "0877": {
@@ -13207,23 +13210,23 @@ pocket_monsters_dict = {
             "Name": "Morpeko",
             "Type 1": "Electric",
             "Type 2": "Dark",
-            "HP": 58,
-            "Attack": 95,
-            "Defense": 58,
-            "Special Attack": 70,
-            "Special Defense": 58,
-            "Speed": 97
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 58,
+            StatsEnum.SPEED: 97
         },
         "Hangry Mode": {
             "Name": "Morpeko",
             "Type 1": "Electric",
             "Type 2": "Dark",
-            "HP": 58,
-            "Attack": 95,
-            "Defense": 58,
-            "Special Attack": 70,
-            "Special Defense": 58,
-            "Speed": 97
+            StatsEnum.HP: 58,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 58,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 58,
+            StatsEnum.SPEED: 97
         }
     },
     "0878": {
@@ -13231,12 +13234,12 @@ pocket_monsters_dict = {
             "Name": "Cufant",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 72,
-            "Attack": 80,
-            "Defense": 49,
-            "Special Attack": 40,
-            "Special Defense": 49,
-            "Speed": 40
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 49,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 49,
+            StatsEnum.SPEED: 40
         }
     },
     "0879": {
@@ -13244,12 +13247,12 @@ pocket_monsters_dict = {
             "Name": "Copperajah",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 122,
-            "Attack": 130,
-            "Defense": 69,
-            "Special Attack": 80,
-            "Special Defense": 69,
-            "Speed": 30
+            StatsEnum.HP: 122,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 69,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 69,
+            StatsEnum.SPEED: 30
         }
     },
     "0880": {
@@ -13257,12 +13260,12 @@ pocket_monsters_dict = {
             "Name": "Dracozolt",
             "Type 1": "Electric",
             "Type 2": "Dragon",
-            "HP": 90,
-            "Attack": 100,
-            "Defense": 90,
-            "Special Attack": 80,
-            "Special Defense": 70,
-            "Speed": 75
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 75
         }
     },
     "0881": {
@@ -13270,12 +13273,12 @@ pocket_monsters_dict = {
             "Name": "Arctozolt",
             "Type 1": "Electric",
             "Type 2": "Ice",
-            "HP": 90,
-            "Attack": 100,
-            "Defense": 90,
-            "Special Attack": 90,
-            "Special Defense": 80,
-            "Speed": 55
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 55
         }
     },
     "0882": {
@@ -13283,12 +13286,12 @@ pocket_monsters_dict = {
             "Name": "Dracovish",
             "Type 1": "Water",
             "Type 2": "Dragon",
-            "HP": 90,
-            "Attack": 90,
-            "Defense": 100,
-            "Special Attack": 70,
-            "Special Defense": 80,
-            "Speed": 75
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 75
         }
     },
     "0883": {
@@ -13296,12 +13299,12 @@ pocket_monsters_dict = {
             "Name": "Arctovish",
             "Type 1": "Water",
             "Type 2": "Ice",
-            "HP": 90,
-            "Attack": 90,
-            "Defense": 100,
-            "Special Attack": 80,
-            "Special Defense": 90,
-            "Speed": 55
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 55
         }
     },
     "0884": {
@@ -13309,12 +13312,12 @@ pocket_monsters_dict = {
             "Name": "Duraludon",
             "Type 1": "Steel",
             "Type 2": "Dragon",
-            "HP": 70,
-            "Attack": 95,
-            "Defense": 115,
-            "Special Attack": 120,
-            "Special Defense": 50,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 85
         }
     },
     "0885": {
@@ -13322,12 +13325,12 @@ pocket_monsters_dict = {
             "Name": "Dreepy",
             "Type 1": "Dragon",
             "Type 2": "Ghost",
-            "HP": 28,
-            "Attack": 60,
-            "Defense": 30,
-            "Special Attack": 40,
-            "Special Defense": 30,
-            "Speed": 82
+            StatsEnum.HP: 28,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 82
         }
     },
     "0886": {
@@ -13335,12 +13338,12 @@ pocket_monsters_dict = {
             "Name": "Drakloak",
             "Type 1": "Dragon",
             "Type 2": "Ghost",
-            "HP": 68,
-            "Attack": 80,
-            "Defense": 50,
-            "Special Attack": 60,
-            "Special Defense": 50,
-            "Speed": 102
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 102
         }
     },
     "0887": {
@@ -13348,12 +13351,12 @@ pocket_monsters_dict = {
             "Name": "Dragapult",
             "Type 1": "Dragon",
             "Type 2": "Ghost",
-            "HP": 88,
-            "Attack": 120,
-            "Defense": 75,
-            "Special Attack": 100,
-            "Special Defense": 75,
-            "Speed": 142
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 142
         }
     },
     "0888": {
@@ -13361,23 +13364,23 @@ pocket_monsters_dict = {
             "Name": "Zacian",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 92,
-            "Attack": 120,
-            "Defense": 115,
-            "Special Attack": 80,
-            "Special Defense": 115,
-            "Speed": 138
+            StatsEnum.HP: 92,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 138
         },
         "Crowned Sword": {
             "Name": "Zacian",
             "Type 1": "Fairy",
             "Type 2": "Steel",
-            "HP": 92,
-            "Attack": 150,
-            "Defense": 115,
-            "Special Attack": 80,
-            "Special Defense": 115,
-            "Speed": 148
+            StatsEnum.HP: 92,
+            StatsEnum.ATTACK: 150,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 148
         }
     },
     "0889": {
@@ -13385,23 +13388,23 @@ pocket_monsters_dict = {
             "Name": "Zamazenta",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 92,
-            "Attack": 120,
-            "Defense": 115,
-            "Special Attack": 80,
-            "Special Defense": 115,
-            "Speed": 138
+            StatsEnum.HP: 92,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 138
         },
         "Crowned Shield": {
             "Name": "Zamazenta",
             "Type 1": "Fighting",
             "Type 2": "Steel",
-            "HP": 92,
-            "Attack": 120,
-            "Defense": 140,
-            "Special Attack": 80,
-            "Special Defense": 140,
-            "Speed": 128
+            StatsEnum.HP: 92,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 140,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 140,
+            StatsEnum.SPEED: 128
         }
     },
     "0890": {
@@ -13409,23 +13412,23 @@ pocket_monsters_dict = {
             "Name": "Eternatus",
             "Type 1": "Poison",
             "Type 2": "Dragon",
-            "HP": 140,
-            "Attack": 85,
-            "Defense": 95,
-            "Special Attack": 145,
-            "Special Defense": 95,
-            "Speed": 130
+            StatsEnum.HP: 140,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 130
         },
         "Eternamax": {
             "Name": "Eternatus",
             "Type 1": "Poison",
             "Type 2": "Dragon",
-            "HP": 255,
-            "Attack": 115,
-            "Defense": 250,
-            "Special Attack": 125,
-            "Special Defense": 250,
-            "Speed": 130
+            StatsEnum.HP: 255,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 250,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 250,
+            StatsEnum.SPEED: 130
         }
     },
     "0891": {
@@ -13433,12 +13436,12 @@ pocket_monsters_dict = {
             "Name": "Kubfu",
             "Type 1": "Fighting",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 90,
-            "Defense": 60,
-            "Special Attack": 53,
-            "Special Defense": 50,
-            "Speed": 72
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 72
         }
     },
     "0892": {
@@ -13446,23 +13449,23 @@ pocket_monsters_dict = {
             "Name": "Urshifu",
             "Type 1": "Fighting",
             "Type 2": "Dark",
-            "HP": 100,
-            "Attack": 130,
-            "Defense": 100,
-            "Special Attack": 63,
-            "Special Defense": 60,
-            "Speed": 97
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 97
         },
         "Rapid Strike Style": {
             "Name": "Urshifu",
             "Type 1": "Fighting",
             "Type 2": "Water",
-            "HP": 100,
-            "Attack": 130,
-            "Defense": 100,
-            "Special Attack": 63,
-            "Special Defense": 60,
-            "Speed": 97
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 97
         }
     },
     "0893": {
@@ -13470,12 +13473,12 @@ pocket_monsters_dict = {
             "Name": "Zarude",
             "Type 1": "Dark",
             "Type 2": "Grass",
-            "HP": 105,
-            "Attack": 120,
-            "Defense": 105,
-            "Special Attack": 70,
-            "Special Defense": 95,
-            "Speed": 105
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 105
         }
     },
     "0894": {
@@ -13483,12 +13486,12 @@ pocket_monsters_dict = {
             "Name": "Regieleki",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 100,
-            "Defense": 50,
-            "Special Attack": 100,
-            "Special Defense": 50,
-            "Speed": 200
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 200
         }
     },
     "0895": {
@@ -13496,12 +13499,12 @@ pocket_monsters_dict = {
             "Name": "Regidrago",
             "Type 1": "Dragon",
             "Type 2": None,
-            "HP": 200,
-            "Attack": 100,
-            "Defense": 50,
-            "Special Attack": 100,
-            "Special Defense": 50,
-            "Speed": 80
+            StatsEnum.HP: 200,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 50,
+            StatsEnum.SPEED: 80
         }
     },
     "0896": {
@@ -13509,12 +13512,12 @@ pocket_monsters_dict = {
             "Name": "Glastrier",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 145,
-            "Defense": 130,
-            "Special Attack": 65,
-            "Special Defense": 110,
-            "Speed": 30
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 30
         }
     },
     "0897": {
@@ -13522,12 +13525,12 @@ pocket_monsters_dict = {
             "Name": "Spectrier",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 65,
-            "Defense": 60,
-            "Special Attack": 145,
-            "Special Defense": 80,
-            "Speed": 130
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 145,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 130
         }
     },
     "0898": {
@@ -13535,34 +13538,34 @@ pocket_monsters_dict = {
             "Name": "Calyrex",
             "Type 1": "Psychic",
             "Type 2": "Grass",
-            "HP": 100,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 80,
-            "Special Defense": 80,
-            "Speed": 80
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 80
         },
         "Ice Rider": {
             "Name": "Calyrex",
             "Type 1": "Psychic",
             "Type 2": "Ice",
-            "HP": 100,
-            "Attack": 165,
-            "Defense": 150,
-            "Special Attack": 85,
-            "Special Defense": 130,
-            "Speed": 50
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 165,
+            StatsEnum.DEFENSE: 150,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 130,
+            StatsEnum.SPEED: 50
         },
         "Shadow Rider": {
             "Name": "Calyrex",
             "Type 1": "Psychic",
             "Type 2": "Ghost",
-            "HP": 100,
-            "Attack": 85,
-            "Defense": 80,
-            "Special Attack": 165,
-            "Special Defense": 100,
-            "Speed": 150
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 165,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 150
         }
     },
     "0899": {
@@ -13570,12 +13573,12 @@ pocket_monsters_dict = {
             "Name": "Wyrdeer",
             "Type 1": "Normal",
             "Type 2": "Psychic",
-            "HP": 103,
-            "Attack": 105,
-            "Defense": 72,
-            "Special Attack": 105,
-            "Special Defense": 75,
-            "Speed": 65
+            StatsEnum.HP: 103,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 65
         }
     },
     "0900": {
@@ -13583,12 +13586,12 @@ pocket_monsters_dict = {
             "Name": "Kleavor",
             "Type 1": "Bug",
             "Type 2": "Rock",
-            "HP": 70,
-            "Attack": 135,
-            "Defense": 95,
-            "Special Attack": 45,
-            "Special Defense": 70,
-            "Speed": 85
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 85
         }
     },
     "0901": {
@@ -13596,23 +13599,23 @@ pocket_monsters_dict = {
             "Name": "Ursaluna",
             "Type 1": "Ground",
             "Type 2": "Normal",
-            "HP": 130,
-            "Attack": 140,
-            "Defense": 105,
-            "Special Attack": 45,
-            "Special Defense": 80,
-            "Speed": 50
+            StatsEnum.HP: 130,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 105,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 50
         },
         "Bloodmoon": {
             "Name": "Ursaluna",
             "Type 1": "Ground",
             "Type 2": "Normal",
-            "HP": 113,
-            "Attack": 70,
-            "Defense": 120,
-            "Special Attack": 135,
-            "Special Defense": 65,
-            "Speed": 52
+            StatsEnum.HP: 113,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 52
         }
     },
     "0902": {
@@ -13620,23 +13623,23 @@ pocket_monsters_dict = {
             "Name": "Basculegion",
             "Type 1": "Water",
             "Type 2": "Ghost",
-            "HP": 120,
-            "Attack": 112,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 75,
-            "Speed": 78
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 112,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 78
         },
         "Female": {
             "Name": "Basculegion",
             "Type 1": "Water",
             "Type 2": "Ghost",
-            "HP": 120,
-            "Attack": 92,
-            "Defense": 65,
-            "Special Attack": 100,
-            "Special Defense": 75,
-            "Speed": 78
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 92,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 100,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 78
         }
     },
     "0903": {
@@ -13644,12 +13647,12 @@ pocket_monsters_dict = {
             "Name": "Sneasler",
             "Type 1": "Fighting",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 130,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 80,
-            "Speed": 120
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 120
         }
     },
     "0904": {
@@ -13657,12 +13660,12 @@ pocket_monsters_dict = {
             "Name": "Overqwil",
             "Type 1": "Dark",
             "Type 2": "Poison",
-            "HP": 85,
-            "Attack": 115,
-            "Defense": 95,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "0905": {
@@ -13670,23 +13673,23 @@ pocket_monsters_dict = {
             "Name": "Enamorus",
             "Type 1": "Fairy",
             "Type 2": "Flying",
-            "HP": 74,
-            "Attack": 115,
-            "Defense": 70,
-            "Special Attack": 135,
-            "Special Defense": 80,
-            "Speed": 106
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 106
         },
         "Therian Forme": {
             "Name": "Enamorus",
             "Type 1": "Fairy",
             "Type 2": "Flying",
-            "HP": 74,
-            "Attack": 115,
-            "Defense": 110,
-            "Special Attack": 135,
-            "Special Defense": 100,
-            "Speed": 46
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 46
         }
     },
     "0906": {
@@ -13694,12 +13697,12 @@ pocket_monsters_dict = {
             "Name": "Sprigatito",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 61,
-            "Defense": 54,
-            "Special Attack": 45,
-            "Special Defense": 45,
-            "Speed": 65
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 61,
+            StatsEnum.DEFENSE: 54,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 65
         }
     },
     "0907": {
@@ -13707,12 +13710,12 @@ pocket_monsters_dict = {
             "Name": "Floragato",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 61,
-            "Attack": 80,
-            "Defense": 63,
-            "Special Attack": 60,
-            "Special Defense": 63,
-            "Speed": 83
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 63,
+            StatsEnum.SPEED: 83
         }
     },
     "0908": {
@@ -13720,12 +13723,12 @@ pocket_monsters_dict = {
             "Name": "Meowscarada",
             "Type 1": "Grass",
             "Type 2": "Dark",
-            "HP": 76,
-            "Attack": 110,
-            "Defense": 70,
-            "Special Attack": 81,
-            "Special Defense": 70,
-            "Speed": 123
+            StatsEnum.HP: 76,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 81,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 123
         }
     },
     "0909": {
@@ -13733,12 +13736,12 @@ pocket_monsters_dict = {
             "Name": "Fuecoco",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 67,
-            "Attack": 45,
-            "Defense": 59,
-            "Special Attack": 63,
-            "Special Defense": 40,
-            "Speed": 36
+            StatsEnum.HP: 67,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 59,
+            StatsEnum.SPECIAL_ATTACK: 63,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 36
         }
     },
     "0910": {
@@ -13746,12 +13749,12 @@ pocket_monsters_dict = {
             "Name": "Crocalor",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 81,
-            "Attack": 55,
-            "Defense": 78,
-            "Special Attack": 90,
-            "Special Defense": 58,
-            "Speed": 49
+            StatsEnum.HP: 81,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 58,
+            StatsEnum.SPEED: 49
         }
     },
     "0911": {
@@ -13759,12 +13762,12 @@ pocket_monsters_dict = {
             "Name": "Skeledirge",
             "Type 1": "Fire",
             "Type 2": "Ghost",
-            "HP": 104,
-            "Attack": 75,
-            "Defense": 100,
-            "Special Attack": 110,
-            "Special Defense": 75,
-            "Speed": 66
+            StatsEnum.HP: 104,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 66
         }
     },
     "0912": {
@@ -13772,12 +13775,12 @@ pocket_monsters_dict = {
             "Name": "Quaxly",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 65,
-            "Defense": 45,
-            "Special Attack": 50,
-            "Special Defense": 45,
-            "Speed": 50
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 50
         }
     },
     "0913": {
@@ -13785,12 +13788,12 @@ pocket_monsters_dict = {
             "Name": "Quaxwell",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 65,
-            "Special Attack": 65,
-            "Special Defense": 60,
-            "Speed": 65
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 65
         }
     },
     "0914": {
@@ -13798,12 +13801,12 @@ pocket_monsters_dict = {
             "Name": "Quaquaval",
             "Type 1": "Water",
             "Type 2": "Fighting",
-            "HP": 85,
-            "Attack": 120,
-            "Defense": 80,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 85
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 85
         }
     },
     "0915": {
@@ -13811,12 +13814,12 @@ pocket_monsters_dict = {
             "Name": "Lechonk",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 54,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 35,
-            "Special Defense": 45,
-            "Speed": 35
+            StatsEnum.HP: 54,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 35
         }
     },
     "0916": {
@@ -13824,23 +13827,23 @@ pocket_monsters_dict = {
             "Name": "Oinkologne",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 110,
-            "Attack": 100,
-            "Defense": 75,
-            "Special Attack": 59,
-            "Special Defense": 80,
-            "Speed": 65
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 65
         },
         "Female": {
             "Name": "Oinkologne",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 115,
-            "Attack": 90,
-            "Defense": 70,
-            "Special Attack": 59,
-            "Special Defense": 90,
-            "Speed": 65
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 65
         }
     },
     "0917": {
@@ -13848,12 +13851,12 @@ pocket_monsters_dict = {
             "Name": "Tarountula",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 41,
-            "Defense": 45,
-            "Special Attack": 29,
-            "Special Defense": 40,
-            "Speed": 20
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 41,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 29,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 20
         }
     },
     "0918": {
@@ -13861,12 +13864,12 @@ pocket_monsters_dict = {
             "Name": "Spidops",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 79,
-            "Defense": 92,
-            "Special Attack": 52,
-            "Special Defense": 86,
-            "Speed": 35
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 79,
+            StatsEnum.DEFENSE: 92,
+            StatsEnum.SPECIAL_ATTACK: 52,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 35
         }
     },
     "0919": {
@@ -13874,12 +13877,12 @@ pocket_monsters_dict = {
             "Name": "Nymble",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 33,
-            "Attack": 46,
-            "Defense": 40,
-            "Special Attack": 21,
-            "Special Defense": 25,
-            "Speed": 45
+            StatsEnum.HP: 33,
+            StatsEnum.ATTACK: 46,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 21,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 45
         }
     },
     "0920": {
@@ -13887,12 +13890,12 @@ pocket_monsters_dict = {
             "Name": "Lokix",
             "Type 1": "Bug",
             "Type 2": "Dark",
-            "HP": 71,
-            "Attack": 102,
-            "Defense": 78,
-            "Special Attack": 52,
-            "Special Defense": 55,
-            "Speed": 92
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 102,
+            StatsEnum.DEFENSE: 78,
+            StatsEnum.SPECIAL_ATTACK: 52,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 92
         }
     },
     "0921": {
@@ -13900,12 +13903,12 @@ pocket_monsters_dict = {
             "Name": "Pawmi",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 50,
-            "Defense": 20,
-            "Special Attack": 40,
-            "Special Defense": 25,
-            "Speed": 60
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 20,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 60
         }
     },
     "0922": {
@@ -13913,12 +13916,12 @@ pocket_monsters_dict = {
             "Name": "Pawmo",
             "Type 1": "Electric",
             "Type 2": "Fighting",
-            "HP": 60,
-            "Attack": 75,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 40,
-            "Speed": 85
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 85
         }
     },
     "0923": {
@@ -13926,12 +13929,12 @@ pocket_monsters_dict = {
             "Name": "Pawmot",
             "Type 1": "Electric",
             "Type 2": "Fighting",
-            "HP": 70,
-            "Attack": 115,
-            "Defense": 70,
-            "Special Attack": 70,
-            "Special Defense": 60,
-            "Speed": 105
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 105
         }
     },
     "0924": {
@@ -13939,12 +13942,12 @@ pocket_monsters_dict = {
             "Name": "Tandemaus",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 50,
-            "Defense": 45,
-            "Special Attack": 40,
-            "Special Defense": 45,
-            "Speed": 75
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 75
         }
     },
     "0925": {
@@ -13952,23 +13955,23 @@ pocket_monsters_dict = {
             "Name": "Maushold",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 74,
-            "Attack": 75,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 75,
-            "Speed": 111
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 111
         },
         "Family of Three": {
             "Name": "Maushold",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 74,
-            "Attack": 75,
-            "Defense": 70,
-            "Special Attack": 65,
-            "Special Defense": 75,
-            "Speed": 111
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 111
         }
     },
     "0926": {
@@ -13976,12 +13979,12 @@ pocket_monsters_dict = {
             "Name": "Fidough",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 37,
-            "Attack": 55,
-            "Defense": 70,
-            "Special Attack": 30,
-            "Special Defense": 55,
-            "Speed": 65
+            StatsEnum.HP: 37,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 65
         }
     },
     "0927": {
@@ -13989,12 +13992,12 @@ pocket_monsters_dict = {
             "Name": "Dachsbun",
             "Type 1": "Fairy",
             "Type 2": None,
-            "HP": 57,
-            "Attack": 80,
-            "Defense": 115,
-            "Special Attack": 50,
-            "Special Defense": 80,
-            "Speed": 95
+            StatsEnum.HP: 57,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 95
         }
     },
     "0928": {
@@ -14002,12 +14005,12 @@ pocket_monsters_dict = {
             "Name": "Smoliv",
             "Type 1": "Grass",
             "Type 2": "Normal",
-            "HP": 41,
-            "Attack": 35,
-            "Defense": 45,
-            "Special Attack": 58,
-            "Special Defense": 51,
-            "Speed": 30
+            StatsEnum.HP: 41,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 30
         }
     },
     "0929": {
@@ -14015,12 +14018,12 @@ pocket_monsters_dict = {
             "Name": "Dolliv",
             "Type 1": "Grass",
             "Type 2": "Normal",
-            "HP": 52,
-            "Attack": 53,
-            "Defense": 60,
-            "Special Attack": 78,
-            "Special Defense": 78,
-            "Speed": 33
+            StatsEnum.HP: 52,
+            StatsEnum.ATTACK: 53,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 78,
+            StatsEnum.SPECIAL_DEFENSE: 78,
+            StatsEnum.SPEED: 33
         }
     },
     "0930": {
@@ -14028,12 +14031,12 @@ pocket_monsters_dict = {
             "Name": "Arboliva",
             "Type 1": "Grass",
             "Type 2": "Normal",
-            "HP": 78,
-            "Attack": 69,
-            "Defense": 90,
-            "Special Attack": 125,
-            "Special Defense": 109,
-            "Speed": 39
+            StatsEnum.HP: 78,
+            StatsEnum.ATTACK: 69,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 109,
+            StatsEnum.SPEED: 39
         }
     },
     "0931": {
@@ -14041,45 +14044,45 @@ pocket_monsters_dict = {
             "Name": "Squawkabilly",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 82,
-            "Attack": 96,
-            "Defense": 51,
-            "Special Attack": 45,
-            "Special Defense": 51,
-            "Speed": 92
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 96,
+            StatsEnum.DEFENSE: 51,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 92
         },
         "Blue Plumage": {
             "Name": "Squawkabilly",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 82,
-            "Attack": 96,
-            "Defense": 51,
-            "Special Attack": 45,
-            "Special Defense": 51,
-            "Speed": 92
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 96,
+            StatsEnum.DEFENSE: 51,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 92
         },
         "Yellow Plumage": {
             "Name": "Squawkabilly",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 82,
-            "Attack": 96,
-            "Defense": 51,
-            "Special Attack": 45,
-            "Special Defense": 51,
-            "Speed": 92
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 96,
+            StatsEnum.DEFENSE: 51,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 92
         },
         "White Plumage": {
             "Name": "Squawkabilly",
             "Type 1": "Normal",
             "Type 2": "Flying",
-            "HP": 82,
-            "Attack": 96,
-            "Defense": 51,
-            "Special Attack": 45,
-            "Special Defense": 51,
-            "Speed": 92
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 96,
+            StatsEnum.DEFENSE: 51,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 92
         }
     },
     "0932": {
@@ -14087,12 +14090,12 @@ pocket_monsters_dict = {
             "Name": "Nacli",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 55,
-            "Attack": 55,
-            "Defense": 75,
-            "Special Attack": 35,
-            "Special Defense": 35,
-            "Speed": 25
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 75,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 25
         }
     },
     "0933": {
@@ -14100,12 +14103,12 @@ pocket_monsters_dict = {
             "Name": "Naclstack",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 60,
-            "Defense": 100,
-            "Special Attack": 35,
-            "Special Defense": 65,
-            "Speed": 35
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 35
         }
     },
     "0934": {
@@ -14113,12 +14116,12 @@ pocket_monsters_dict = {
             "Name": "Garganacl",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 100,
-            "Defense": 130,
-            "Special Attack": 45,
-            "Special Defense": 90,
-            "Speed": 35
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 35
         }
     },
     "0935": {
@@ -14126,12 +14129,12 @@ pocket_monsters_dict = {
             "Name": "Charcadet",
             "Type 1": "Fire",
             "Type 2": None,
-            "HP": 40,
-            "Attack": 50,
-            "Defense": 40,
-            "Special Attack": 50,
-            "Special Defense": 40,
-            "Speed": 35
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 35
         }
     },
     "0936": {
@@ -14139,12 +14142,12 @@ pocket_monsters_dict = {
             "Name": "Armarouge",
             "Type 1": "Fire",
             "Type 2": "Psychic",
-            "HP": 85,
-            "Attack": 60,
-            "Defense": 100,
-            "Special Attack": 125,
-            "Special Defense": 80,
-            "Speed": 75
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 75
         }
     },
     "0937": {
@@ -14152,12 +14155,12 @@ pocket_monsters_dict = {
             "Name": "Ceruledge",
             "Type 1": "Fire",
             "Type 2": "Ghost",
-            "HP": 75,
-            "Attack": 125,
-            "Defense": 80,
-            "Special Attack": 60,
-            "Special Defense": 100,
-            "Speed": 85
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 125,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 85
         }
     },
     "0938": {
@@ -14165,12 +14168,12 @@ pocket_monsters_dict = {
             "Name": "Tadbulb",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 61,
-            "Attack": 31,
-            "Defense": 41,
-            "Special Attack": 59,
-            "Special Defense": 35,
-            "Speed": 45
+            StatsEnum.HP: 61,
+            StatsEnum.ATTACK: 31,
+            StatsEnum.DEFENSE: 41,
+            StatsEnum.SPECIAL_ATTACK: 59,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 45
         }
     },
     "0939": {
@@ -14178,12 +14181,12 @@ pocket_monsters_dict = {
             "Name": "Bellibolt",
             "Type 1": "Electric",
             "Type 2": None,
-            "HP": 109,
-            "Attack": 64,
-            "Defense": 91,
-            "Special Attack": 103,
-            "Special Defense": 83,
-            "Speed": 45
+            StatsEnum.HP: 109,
+            StatsEnum.ATTACK: 64,
+            StatsEnum.DEFENSE: 91,
+            StatsEnum.SPECIAL_ATTACK: 103,
+            StatsEnum.SPECIAL_DEFENSE: 83,
+            StatsEnum.SPEED: 45
         }
     },
     "0940": {
@@ -14191,12 +14194,12 @@ pocket_monsters_dict = {
             "Name": "Wattrel",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 35,
-            "Special Attack": 55,
-            "Special Defense": 40,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 70
         }
     },
     "0941": {
@@ -14204,12 +14207,12 @@ pocket_monsters_dict = {
             "Name": "Kilowattrel",
             "Type 1": "Electric",
             "Type 2": "Flying",
-            "HP": 70,
-            "Attack": 70,
-            "Defense": 60,
-            "Special Attack": 105,
-            "Special Defense": 60,
-            "Speed": 125
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 125
         }
     },
     "0942": {
@@ -14217,12 +14220,12 @@ pocket_monsters_dict = {
             "Name": "Maschiff",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 60,
-            "Attack": 78,
-            "Defense": 60,
-            "Special Attack": 40,
-            "Special Defense": 51,
-            "Speed": 51
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 78,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 51,
+            StatsEnum.SPEED: 51
         }
     },
     "0943": {
@@ -14230,12 +14233,12 @@ pocket_monsters_dict = {
             "Name": "Mabosstiff",
             "Type 1": "Dark",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 90,
-            "Special Attack": 60,
-            "Special Defense": 70,
-            "Speed": 85
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 85
         }
     },
     "0944": {
@@ -14243,12 +14246,12 @@ pocket_monsters_dict = {
             "Name": "Shroodle",
             "Type 1": "Poison",
             "Type 2": "Normal",
-            "HP": 40,
-            "Attack": 65,
-            "Defense": 35,
-            "Special Attack": 40,
-            "Special Defense": 35,
-            "Speed": 75
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 40,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 75
         }
     },
     "0945": {
@@ -14256,12 +14259,12 @@ pocket_monsters_dict = {
             "Name": "Grafaiai",
             "Type 1": "Poison",
             "Type 2": "Normal",
-            "HP": 63,
-            "Attack": 95,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 72,
-            "Speed": 110
+            StatsEnum.HP: 63,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 72,
+            StatsEnum.SPEED: 110
         }
     },
     "0946": {
@@ -14269,12 +14272,12 @@ pocket_monsters_dict = {
             "Name": "Bramblin",
             "Type 1": "Grass",
             "Type 2": "Ghost",
-            "HP": 40,
-            "Attack": 65,
-            "Defense": 30,
-            "Special Attack": 45,
-            "Special Defense": 35,
-            "Speed": 60
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 35,
+            StatsEnum.SPEED: 60
         }
     },
     "0947": {
@@ -14282,12 +14285,12 @@ pocket_monsters_dict = {
             "Name": "Brambleghast",
             "Type 1": "Grass",
             "Type 2": "Ghost",
-            "HP": 55,
-            "Attack": 115,
-            "Defense": 70,
-            "Special Attack": 80,
-            "Special Defense": 70,
-            "Speed": 90
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 90
         }
     },
     "0948": {
@@ -14295,12 +14298,12 @@ pocket_monsters_dict = {
             "Name": "Toedscool",
             "Type 1": "Ground",
             "Type 2": "Grass",
-            "HP": 40,
-            "Attack": 40,
-            "Defense": 35,
-            "Special Attack": 50,
-            "Special Defense": 100,
-            "Speed": 70
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 40,
+            StatsEnum.DEFENSE: 35,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 70
         }
     },
     "0949": {
@@ -14308,12 +14311,12 @@ pocket_monsters_dict = {
             "Name": "Toedscruel",
             "Type 1": "Ground",
             "Type 2": "Grass",
-            "HP": 80,
-            "Attack": 70,
-            "Defense": 65,
-            "Special Attack": 80,
-            "Special Defense": 120,
-            "Speed": 100
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 80,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 100
         }
     },
     "0950": {
@@ -14321,12 +14324,12 @@ pocket_monsters_dict = {
             "Name": "Klawf",
             "Type 1": "Rock",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 100,
-            "Defense": 115,
-            "Special Attack": 35,
-            "Special Defense": 55,
-            "Speed": 75
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 75
         }
     },
     "0951": {
@@ -14334,12 +14337,12 @@ pocket_monsters_dict = {
             "Name": "Capsakid",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 62,
-            "Defense": 40,
-            "Special Attack": 62,
-            "Special Defense": 40,
-            "Speed": 50
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 62,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 62,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 50
         }
     },
     "0952": {
@@ -14347,12 +14350,12 @@ pocket_monsters_dict = {
             "Name": "Scovillain",
             "Type 1": "Grass",
             "Type 2": "Fire",
-            "HP": 65,
-            "Attack": 108,
-            "Defense": 65,
-            "Special Attack": 108,
-            "Special Defense": 65,
-            "Speed": 75
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 108,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 108,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 75
         }
     },
     "0953": {
@@ -14360,12 +14363,12 @@ pocket_monsters_dict = {
             "Name": "Rellor",
             "Type 1": "Bug",
             "Type 2": None,
-            "HP": 41,
-            "Attack": 50,
-            "Defense": 60,
-            "Special Attack": 31,
-            "Special Defense": 58,
-            "Speed": 30
+            StatsEnum.HP: 41,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 31,
+            StatsEnum.SPECIAL_DEFENSE: 58,
+            StatsEnum.SPEED: 30
         }
     },
     "0954": {
@@ -14373,12 +14376,12 @@ pocket_monsters_dict = {
             "Name": "Rabsca",
             "Type 1": "Bug",
             "Type 2": "Psychic",
-            "HP": 75,
-            "Attack": 50,
-            "Defense": 85,
-            "Special Attack": 115,
-            "Special Defense": 100,
-            "Speed": 45
+            StatsEnum.HP: 75,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 115,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 45
         }
     },
     "0955": {
@@ -14386,12 +14389,12 @@ pocket_monsters_dict = {
             "Name": "Flittle",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 30,
-            "Attack": 35,
-            "Defense": 30,
-            "Special Attack": 55,
-            "Special Defense": 30,
-            "Speed": 75
+            StatsEnum.HP: 30,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 30,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 30,
+            StatsEnum.SPEED: 75
         }
     },
     "0956": {
@@ -14399,12 +14402,12 @@ pocket_monsters_dict = {
             "Name": "Espathra",
             "Type 1": "Psychic",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 60,
-            "Defense": 60,
-            "Special Attack": 101,
-            "Special Defense": 60,
-            "Speed": 105
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 101,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 105
         }
     },
     "0957": {
@@ -14412,12 +14415,12 @@ pocket_monsters_dict = {
             "Name": "Tinkatink",
             "Type 1": "Fairy",
             "Type 2": "Steel",
-            "HP": 50,
-            "Attack": 45,
-            "Defense": 45,
-            "Special Attack": 35,
-            "Special Defense": 64,
-            "Speed": 58
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 64,
+            StatsEnum.SPEED: 58
         }
     },
     "0958": {
@@ -14425,12 +14428,12 @@ pocket_monsters_dict = {
             "Name": "Tinkatuff",
             "Type 1": "Fairy",
             "Type 2": "Steel",
-            "HP": 65,
-            "Attack": 55,
-            "Defense": 55,
-            "Special Attack": 45,
-            "Special Defense": 82,
-            "Speed": 78
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 82,
+            StatsEnum.SPEED: 78
         }
     },
     "0959": {
@@ -14438,12 +14441,12 @@ pocket_monsters_dict = {
             "Name": "Tinkaton",
             "Type 1": "Fairy",
             "Type 2": "Steel",
-            "HP": 85,
-            "Attack": 75,
-            "Defense": 77,
-            "Special Attack": 70,
-            "Special Defense": 105,
-            "Speed": 94
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 77,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 94
         }
     },
     "0960": {
@@ -14451,12 +14454,12 @@ pocket_monsters_dict = {
             "Name": "Wiglett",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 10,
-            "Attack": 55,
-            "Defense": 25,
-            "Special Attack": 35,
-            "Special Defense": 25,
-            "Speed": 95
+            StatsEnum.HP: 10,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 25,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 25,
+            StatsEnum.SPEED: 95
         }
     },
     "0961": {
@@ -14464,12 +14467,12 @@ pocket_monsters_dict = {
             "Name": "Wugtrio",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 35,
-            "Attack": 100,
-            "Defense": 50,
-            "Special Attack": 50,
-            "Special Defense": 70,
-            "Speed": 120
+            StatsEnum.HP: 35,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 50,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 120
         }
     },
     "0962": {
@@ -14477,12 +14480,12 @@ pocket_monsters_dict = {
             "Name": "Bombirdier",
             "Type 1": "Flying",
             "Type 2": "Dark",
-            "HP": 70,
-            "Attack": 103,
-            "Defense": 85,
-            "Special Attack": 60,
-            "Special Defense": 85,
-            "Speed": 82
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 103,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 82
         }
     },
     "0963": {
@@ -14490,12 +14493,12 @@ pocket_monsters_dict = {
             "Name": "Finizen",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 45,
-            "Defense": 40,
-            "Special Attack": 45,
-            "Special Defense": 40,
-            "Speed": 75
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 40,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 75
         }
     },
     "0964": {
@@ -14503,23 +14506,23 @@ pocket_monsters_dict = {
             "Name": "Palafin",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 70,
-            "Defense": 72,
-            "Special Attack": 53,
-            "Special Defense": 62,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 72,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 62,
+            StatsEnum.SPEED: 100
         },
         "Hero Form": {
             "Name": "Palafin",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 100,
-            "Attack": 160,
-            "Defense": 97,
-            "Special Attack": 106,
-            "Special Defense": 87,
-            "Speed": 100
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 160,
+            StatsEnum.DEFENSE: 97,
+            StatsEnum.SPECIAL_ATTACK: 106,
+            StatsEnum.SPECIAL_DEFENSE: 87,
+            StatsEnum.SPEED: 100
         }
     },
     "0965": {
@@ -14527,12 +14530,12 @@ pocket_monsters_dict = {
             "Name": "Varoom",
             "Type 1": "Steel",
             "Type 2": "Poison",
-            "HP": 45,
-            "Attack": 70,
-            "Defense": 63,
-            "Special Attack": 30,
-            "Special Defense": 45,
-            "Speed": 47
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 63,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 47
         }
     },
     "0966": {
@@ -14540,12 +14543,12 @@ pocket_monsters_dict = {
             "Name": "Revavroom",
             "Type 1": "Steel",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 119,
-            "Defense": 90,
-            "Special Attack": 54,
-            "Special Defense": 67,
-            "Speed": 90
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 119,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 54,
+            StatsEnum.SPECIAL_DEFENSE: 67,
+            StatsEnum.SPEED: 90
         }
     },
     "0967": {
@@ -14553,12 +14556,12 @@ pocket_monsters_dict = {
             "Name": "Cyclizar",
             "Type 1": "Dragon",
             "Type 2": "Normal",
-            "HP": 70,
-            "Attack": 95,
-            "Defense": 65,
-            "Special Attack": 85,
-            "Special Defense": 65,
-            "Speed": 121
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 121
         }
     },
     "0968": {
@@ -14566,12 +14569,12 @@ pocket_monsters_dict = {
             "Name": "Orthworm",
             "Type 1": "Steel",
             "Type 2": None,
-            "HP": 70,
-            "Attack": 85,
-            "Defense": 145,
-            "Special Attack": 60,
-            "Special Defense": 55,
-            "Speed": 65
+            StatsEnum.HP: 70,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 145,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 65
         }
     },
     "0969": {
@@ -14579,12 +14582,12 @@ pocket_monsters_dict = {
             "Name": "Glimmet",
             "Type 1": "Rock",
             "Type 2": "Poison",
-            "HP": 48,
-            "Attack": 35,
-            "Defense": 42,
-            "Special Attack": 105,
-            "Special Defense": 60,
-            "Speed": 60
+            StatsEnum.HP: 48,
+            StatsEnum.ATTACK: 35,
+            StatsEnum.DEFENSE: 42,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 60
         }
     },
     "0970": {
@@ -14592,12 +14595,12 @@ pocket_monsters_dict = {
             "Name": "Glimmora",
             "Type 1": "Rock",
             "Type 2": "Poison",
-            "HP": 83,
-            "Attack": 55,
-            "Defense": 90,
-            "Special Attack": 130,
-            "Special Defense": 81,
-            "Speed": 86
+            StatsEnum.HP: 83,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 81,
+            StatsEnum.SPEED: 86
         }
     },
     "0971": {
@@ -14605,12 +14608,12 @@ pocket_monsters_dict = {
             "Name": "Greavard",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 50,
-            "Attack": 61,
-            "Defense": 60,
-            "Special Attack": 30,
-            "Special Defense": 55,
-            "Speed": 34
+            StatsEnum.HP: 50,
+            StatsEnum.ATTACK: 61,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 34
         }
     },
     "0972": {
@@ -14618,12 +14621,12 @@ pocket_monsters_dict = {
             "Name": "Houndstone",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 72,
-            "Attack": 101,
-            "Defense": 100,
-            "Special Attack": 50,
-            "Special Defense": 97,
-            "Speed": 68
+            StatsEnum.HP: 72,
+            StatsEnum.ATTACK: 101,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 97,
+            StatsEnum.SPEED: 68
         }
     },
     "0973": {
@@ -14631,12 +14634,12 @@ pocket_monsters_dict = {
             "Name": "Flamigo",
             "Type 1": "Flying",
             "Type 2": "Fighting",
-            "HP": 82,
-            "Attack": 115,
-            "Defense": 74,
-            "Special Attack": 75,
-            "Special Defense": 64,
-            "Speed": 90
+            StatsEnum.HP: 82,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 74,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 64,
+            StatsEnum.SPEED: 90
         }
     },
     "0974": {
@@ -14644,12 +14647,12 @@ pocket_monsters_dict = {
             "Name": "Cetoddle",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 108,
-            "Attack": 68,
-            "Defense": 45,
-            "Special Attack": 30,
-            "Special Defense": 40,
-            "Speed": 43
+            StatsEnum.HP: 108,
+            StatsEnum.ATTACK: 68,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 30,
+            StatsEnum.SPECIAL_DEFENSE: 40,
+            StatsEnum.SPEED: 43
         }
     },
     "0975": {
@@ -14657,12 +14660,12 @@ pocket_monsters_dict = {
             "Name": "Cetitan",
             "Type 1": "Ice",
             "Type 2": None,
-            "HP": 170,
-            "Attack": 113,
-            "Defense": 65,
-            "Special Attack": 45,
-            "Special Defense": 55,
-            "Speed": 73
+            StatsEnum.HP: 170,
+            StatsEnum.ATTACK: 113,
+            StatsEnum.DEFENSE: 65,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 55,
+            StatsEnum.SPEED: 73
         }
     },
     "0976": {
@@ -14670,12 +14673,12 @@ pocket_monsters_dict = {
             "Name": "Veluza",
             "Type 1": "Water",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 102,
-            "Defense": 73,
-            "Special Attack": 78,
-            "Special Defense": 65,
-            "Speed": 70
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 102,
+            StatsEnum.DEFENSE: 73,
+            StatsEnum.SPECIAL_ATTACK: 78,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 70
         }
     },
     "0977": {
@@ -14683,12 +14686,12 @@ pocket_monsters_dict = {
             "Name": "Dondozo",
             "Type 1": "Water",
             "Type 2": None,
-            "HP": 150,
-            "Attack": 100,
-            "Defense": 115,
-            "Special Attack": 65,
-            "Special Defense": 65,
-            "Speed": 35
+            StatsEnum.HP: 150,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 35
         }
     },
     "0978": {
@@ -14696,34 +14699,34 @@ pocket_monsters_dict = {
             "Name": "Tatsugiri",
             "Type 1": "Dragon",
             "Type 2": "Water",
-            "HP": 68,
-            "Attack": 50,
-            "Defense": 60,
-            "Special Attack": 120,
-            "Special Defense": 95,
-            "Speed": 82
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 82
         },
         "Droopy Form": {
             "Name": "Tatsugiri",
             "Type 1": "Dragon",
             "Type 2": "Water",
-            "HP": 68,
-            "Attack": 50,
-            "Defense": 60,
-            "Special Attack": 120,
-            "Special Defense": 95,
-            "Speed": 82
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 82
         },
         "Stretchy Form": {
             "Name": "Tatsugiri",
             "Type 1": "Dragon",
             "Type 2": "Water",
-            "HP": 68,
-            "Attack": 50,
-            "Defense": 60,
-            "Special Attack": 120,
-            "Special Defense": 95,
-            "Speed": 82
+            StatsEnum.HP: 68,
+            StatsEnum.ATTACK: 50,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 82
         }
     },
     "0979": {
@@ -14731,12 +14734,12 @@ pocket_monsters_dict = {
             "Name": "Annihilape",
             "Type 1": "Fighting",
             "Type 2": "Ghost",
-            "HP": 110,
-            "Attack": 115,
-            "Defense": 80,
-            "Special Attack": 50,
-            "Special Defense": 90,
-            "Speed": 90
+            StatsEnum.HP: 110,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 90
         }
     },
     "0980": {
@@ -14744,12 +14747,12 @@ pocket_monsters_dict = {
             "Name": "Clodsire",
             "Type 1": "Poison",
             "Type 2": "Ground",
-            "HP": 130,
-            "Attack": 75,
-            "Defense": 60,
-            "Special Attack": 45,
-            "Special Defense": 100,
-            "Speed": 20
+            StatsEnum.HP: 130,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 20
         }
     },
     "0981": {
@@ -14757,12 +14760,12 @@ pocket_monsters_dict = {
             "Name": "Farigiraf",
             "Type 1": "Normal",
             "Type 2": "Psychic",
-            "HP": 120,
-            "Attack": 90,
-            "Defense": 70,
-            "Special Attack": 110,
-            "Special Defense": 70,
-            "Speed": 60
+            StatsEnum.HP: 120,
+            StatsEnum.ATTACK: 90,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 110,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 60
         }
     },
     "0982": {
@@ -14770,23 +14773,23 @@ pocket_monsters_dict = {
             "Name": "Dudunsparce",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 125,
-            "Attack": 100,
-            "Defense": 80,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 55
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 55
         },
         "Three-Segment Form": {
             "Name": "Dudunsparce",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 125,
-            "Attack": 100,
-            "Defense": 80,
-            "Special Attack": 85,
-            "Special Defense": 75,
-            "Speed": 55
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 75,
+            StatsEnum.SPEED: 55
         }
     },
     "0983": {
@@ -14794,12 +14797,12 @@ pocket_monsters_dict = {
             "Name": "Kingambit",
             "Type 1": "Dark",
             "Type 2": "Steel",
-            "HP": 100,
-            "Attack": 135,
-            "Defense": 120,
-            "Special Attack": 60,
-            "Special Defense": 85,
-            "Speed": 50
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 50
         }
     },
     "0984": {
@@ -14807,12 +14810,12 @@ pocket_monsters_dict = {
             "Name": "Great Tusk",
             "Type 1": "Ground",
             "Type 2": "Fighting",
-            "HP": 115,
-            "Attack": 131,
-            "Defense": 131,
-            "Special Attack": 53,
-            "Special Defense": 53,
-            "Speed": 87
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 131,
+            StatsEnum.DEFENSE: 131,
+            StatsEnum.SPECIAL_ATTACK: 53,
+            StatsEnum.SPECIAL_DEFENSE: 53,
+            StatsEnum.SPEED: 87
         }
     },
     "0985": {
@@ -14820,12 +14823,12 @@ pocket_monsters_dict = {
             "Name": "Scream Tail",
             "Type 1": "Fairy",
             "Type 2": "Psychic",
-            "HP": 115,
-            "Attack": 65,
-            "Defense": 99,
-            "Special Attack": 65,
-            "Special Defense": 115,
-            "Speed": 111
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 99,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 111
         }
     },
     "0986": {
@@ -14833,12 +14836,12 @@ pocket_monsters_dict = {
             "Name": "Brute Bonnet",
             "Type 1": "Grass",
             "Type 2": "Dark",
-            "HP": 111,
-            "Attack": 127,
-            "Defense": 99,
-            "Special Attack": 79,
-            "Special Defense": 99,
-            "Speed": 55
+            StatsEnum.HP: 111,
+            StatsEnum.ATTACK: 127,
+            StatsEnum.DEFENSE: 99,
+            StatsEnum.SPECIAL_ATTACK: 79,
+            StatsEnum.SPECIAL_DEFENSE: 99,
+            StatsEnum.SPEED: 55
         }
     },
     "0987": {
@@ -14846,12 +14849,12 @@ pocket_monsters_dict = {
             "Name": "Flutter Mane",
             "Type 1": "Ghost",
             "Type 2": "Fairy",
-            "HP": 55,
-            "Attack": 55,
-            "Defense": 55,
-            "Special Attack": 135,
-            "Special Defense": 135,
-            "Speed": 135
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 55,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 135
         }
     },
     "0988": {
@@ -14859,12 +14862,12 @@ pocket_monsters_dict = {
             "Name": "Slither Wing",
             "Type 1": "Bug",
             "Type 2": "Fighting",
-            "HP": 85,
-            "Attack": 135,
-            "Defense": 79,
-            "Special Attack": 85,
-            "Special Defense": 105,
-            "Speed": 81
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 79,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 105,
+            StatsEnum.SPEED: 81
         }
     },
     "0989": {
@@ -14872,12 +14875,12 @@ pocket_monsters_dict = {
             "Name": "Sandy Shocks",
             "Type 1": "Electric",
             "Type 2": "Ground",
-            "HP": 85,
-            "Attack": 81,
-            "Defense": 97,
-            "Special Attack": 121,
-            "Special Defense": 85,
-            "Speed": 101
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 81,
+            StatsEnum.DEFENSE: 97,
+            StatsEnum.SPECIAL_ATTACK: 121,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 101
         }
     },
     "0990": {
@@ -14885,12 +14888,12 @@ pocket_monsters_dict = {
             "Name": "Iron Treads",
             "Type 1": "Ground",
             "Type 2": "Steel",
-            "HP": 90,
-            "Attack": 112,
-            "Defense": 120,
-            "Special Attack": 72,
-            "Special Defense": 70,
-            "Speed": 106
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 112,
+            StatsEnum.DEFENSE: 120,
+            StatsEnum.SPECIAL_ATTACK: 72,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 106
         }
     },
     "0991": {
@@ -14898,12 +14901,12 @@ pocket_monsters_dict = {
             "Name": "Iron Bundle",
             "Type 1": "Ice",
             "Type 2": "Water",
-            "HP": 56,
-            "Attack": 80,
-            "Defense": 114,
-            "Special Attack": 124,
-            "Special Defense": 60,
-            "Speed": 136
+            StatsEnum.HP: 56,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 114,
+            StatsEnum.SPECIAL_ATTACK: 124,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 136
         }
     },
     "0992": {
@@ -14911,12 +14914,12 @@ pocket_monsters_dict = {
             "Name": "Iron Hands",
             "Type 1": "Fighting",
             "Type 2": "Electric",
-            "HP": 154,
-            "Attack": 140,
-            "Defense": 108,
-            "Special Attack": 50,
-            "Special Defense": 68,
-            "Speed": 50
+            StatsEnum.HP: 154,
+            StatsEnum.ATTACK: 140,
+            StatsEnum.DEFENSE: 108,
+            StatsEnum.SPECIAL_ATTACK: 50,
+            StatsEnum.SPECIAL_DEFENSE: 68,
+            StatsEnum.SPEED: 50
         }
     },
     "0993": {
@@ -14924,12 +14927,12 @@ pocket_monsters_dict = {
             "Name": "Iron Jugulis",
             "Type 1": "Dark",
             "Type 2": "Flying",
-            "HP": 94,
-            "Attack": 80,
-            "Defense": 86,
-            "Special Attack": 122,
-            "Special Defense": 80,
-            "Speed": 108
+            StatsEnum.HP: 94,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 86,
+            StatsEnum.SPECIAL_ATTACK: 122,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 108
         }
     },
     "0994": {
@@ -14937,12 +14940,12 @@ pocket_monsters_dict = {
             "Name": "Iron Moth",
             "Type 1": "Fire",
             "Type 2": "Poison",
-            "HP": 80,
-            "Attack": 70,
-            "Defense": 60,
-            "Special Attack": 140,
-            "Special Defense": 110,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 70,
+            StatsEnum.DEFENSE: 60,
+            StatsEnum.SPECIAL_ATTACK: 140,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 110
         }
     },
     "0995": {
@@ -14950,12 +14953,12 @@ pocket_monsters_dict = {
             "Name": "Iron Thorns",
             "Type 1": "Rock",
             "Type 2": "Electric",
-            "HP": 100,
-            "Attack": 134,
-            "Defense": 110,
-            "Special Attack": 70,
-            "Special Defense": 84,
-            "Speed": 72
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 134,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 84,
+            StatsEnum.SPEED: 72
         }
     },
     "0996": {
@@ -14963,12 +14966,12 @@ pocket_monsters_dict = {
             "Name": "Frigibax",
             "Type 1": "Dragon",
             "Type 2": "Ice",
-            "HP": 65,
-            "Attack": 75,
-            "Defense": 45,
-            "Special Attack": 35,
-            "Special Defense": 45,
-            "Speed": 55
+            StatsEnum.HP: 65,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 35,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 55
         }
     },
     "0997": {
@@ -14976,12 +14979,12 @@ pocket_monsters_dict = {
             "Name": "Arctibax",
             "Type 1": "Dragon",
             "Type 2": "Ice",
-            "HP": 90,
-            "Attack": 95,
-            "Defense": 66,
-            "Special Attack": 45,
-            "Special Defense": 65,
-            "Speed": 62
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 66,
+            StatsEnum.SPECIAL_ATTACK: 45,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 62
         }
     },
     "0998": {
@@ -14989,12 +14992,12 @@ pocket_monsters_dict = {
             "Name": "Baxcalibur",
             "Type 1": "Dragon",
             "Type 2": "Ice",
-            "HP": 115,
-            "Attack": 145,
-            "Defense": 92,
-            "Special Attack": 75,
-            "Special Defense": 86,
-            "Speed": 87
+            StatsEnum.HP: 115,
+            StatsEnum.ATTACK: 145,
+            StatsEnum.DEFENSE: 92,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 87
         }
     },
     "0999": {
@@ -15002,23 +15005,23 @@ pocket_monsters_dict = {
             "Name": "Gimmighoul",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 70,
-            "Special Attack": 75,
-            "Special Defense": 70,
-            "Speed": 10
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 70,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 70,
+            StatsEnum.SPEED: 10
         },
         "Roaming Form": {
             "Name": "Gimmighoul",
             "Type 1": "Ghost",
             "Type 2": None,
-            "HP": 45,
-            "Attack": 30,
-            "Defense": 25,
-            "Special Attack": 75,
-            "Special Defense": 45,
-            "Speed": 80
+            StatsEnum.HP: 45,
+            StatsEnum.ATTACK: 30,
+            StatsEnum.DEFENSE: 25,
+            StatsEnum.SPECIAL_ATTACK: 75,
+            StatsEnum.SPECIAL_DEFENSE: 45,
+            StatsEnum.SPEED: 80
         }
     },
     "1000": {
@@ -15026,12 +15029,12 @@ pocket_monsters_dict = {
             "Name": "Gholdengo",
             "Type 1": "Steel",
             "Type 2": "Ghost",
-            "HP": 87,
-            "Attack": 60,
-            "Defense": 95,
-            "Special Attack": 133,
-            "Special Defense": 91,
-            "Speed": 84
+            StatsEnum.HP: 87,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 133,
+            StatsEnum.SPECIAL_DEFENSE: 91,
+            StatsEnum.SPEED: 84
         }
     },
     "1001": {
@@ -15039,12 +15042,12 @@ pocket_monsters_dict = {
             "Name": "Wo-Chien",
             "Type 1": "Dark",
             "Type 2": "Grass",
-            "HP": 85,
-            "Attack": 85,
-            "Defense": 100,
-            "Special Attack": 95,
-            "Special Defense": 135,
-            "Speed": 70
+            StatsEnum.HP: 85,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 135,
+            StatsEnum.SPEED: 70
         }
     },
     "1002": {
@@ -15052,12 +15055,12 @@ pocket_monsters_dict = {
             "Name": "Chien-Pao",
             "Type 1": "Dark",
             "Type 2": "Ice",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 80,
-            "Special Attack": 90,
-            "Special Defense": 65,
-            "Speed": 135
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 135
         }
     },
     "1003": {
@@ -15065,12 +15068,12 @@ pocket_monsters_dict = {
             "Name": "Ting-Lu",
             "Type 1": "Dark",
             "Type 2": "Ground",
-            "HP": 155,
-            "Attack": 110,
-            "Defense": 125,
-            "Special Attack": 55,
-            "Special Defense": 80,
-            "Speed": 45
+            StatsEnum.HP: 155,
+            StatsEnum.ATTACK: 110,
+            StatsEnum.DEFENSE: 125,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 45
         }
     },
     "1004": {
@@ -15078,12 +15081,12 @@ pocket_monsters_dict = {
             "Name": "Chi-Yu",
             "Type 1": "Dark",
             "Type 2": "Fire",
-            "HP": 55,
-            "Attack": 80,
-            "Defense": 80,
-            "Special Attack": 135,
-            "Special Defense": 120,
-            "Speed": 100
+            StatsEnum.HP: 55,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 120,
+            StatsEnum.SPEED: 100
         }
     },
     "1005": {
@@ -15091,12 +15094,12 @@ pocket_monsters_dict = {
             "Name": "Roaring Moon",
             "Type 1": "Dragon",
             "Type 2": "Dark",
-            "HP": 105,
-            "Attack": 139,
-            "Defense": 71,
-            "Special Attack": 55,
-            "Special Defense": 101,
-            "Speed": 119
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 139,
+            StatsEnum.DEFENSE: 71,
+            StatsEnum.SPECIAL_ATTACK: 55,
+            StatsEnum.SPECIAL_DEFENSE: 101,
+            StatsEnum.SPEED: 119
         }
     },
     "1006": {
@@ -15104,12 +15107,12 @@ pocket_monsters_dict = {
             "Name": "Iron Valiant",
             "Type 1": "Fairy",
             "Type 2": "Fighting",
-            "HP": 74,
-            "Attack": 130,
-            "Defense": 90,
-            "Special Attack": 120,
-            "Special Defense": 60,
-            "Speed": 116
+            StatsEnum.HP: 74,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 90,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 60,
+            StatsEnum.SPEED: 116
         }
     },
     "1007": {
@@ -15117,12 +15120,12 @@ pocket_monsters_dict = {
             "Name": "Koraidon",
             "Type 1": "Fighting",
             "Type 2": "Dragon",
-            "HP": 100,
-            "Attack": 135,
-            "Defense": 115,
-            "Special Attack": 85,
-            "Special Defense": 100,
-            "Speed": 135
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 85,
+            StatsEnum.SPECIAL_DEFENSE: 100,
+            StatsEnum.SPEED: 135
         }
     },
     "1008": {
@@ -15130,12 +15133,12 @@ pocket_monsters_dict = {
             "Name": "Miraidon",
             "Type 1": "Electric",
             "Type 2": "Dragon",
-            "HP": 100,
-            "Attack": 85,
-            "Defense": 100,
-            "Special Attack": 135,
-            "Special Defense": 115,
-            "Speed": 135
+            StatsEnum.HP: 100,
+            StatsEnum.ATTACK: 85,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 135,
+            StatsEnum.SPECIAL_DEFENSE: 115,
+            StatsEnum.SPEED: 135
         }
     },
     "1009": {
@@ -15143,12 +15146,12 @@ pocket_monsters_dict = {
             "Name": "Walking Wake",
             "Type 1": "Water",
             "Type 2": "Dragon",
-            "HP": 99,
-            "Attack": 83,
-            "Defense": 91,
-            "Special Attack": 125,
-            "Special Defense": 83,
-            "Speed": 109
+            StatsEnum.HP: 99,
+            StatsEnum.ATTACK: 83,
+            StatsEnum.DEFENSE: 91,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 83,
+            StatsEnum.SPEED: 109
         }
     },
     "1010": {
@@ -15156,12 +15159,12 @@ pocket_monsters_dict = {
             "Name": "Iron Leaves",
             "Type 1": "Grass",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 130,
-            "Defense": 88,
-            "Special Attack": 70,
-            "Special Defense": 108,
-            "Speed": 104
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 130,
+            StatsEnum.DEFENSE: 88,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 108,
+            StatsEnum.SPEED: 104
         }
     },
     "1011": {
@@ -15169,12 +15172,12 @@ pocket_monsters_dict = {
             "Name": "Dipplin",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 80,
-            "Attack": 80,
-            "Defense": 110,
-            "Special Attack": 95,
-            "Special Defense": 80,
-            "Speed": 40
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 95,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 40
         }
     },
     "1012": {
@@ -15182,12 +15185,12 @@ pocket_monsters_dict = {
             "Name": "Poltchageist",
             "Type 1": "Grass",
             "Type 2": "Ghost",
-            "HP": 40,
-            "Attack": 45,
-            "Defense": 45,
-            "Special Attack": 74,
-            "Special Defense": 54,
-            "Speed": 50
+            StatsEnum.HP: 40,
+            StatsEnum.ATTACK: 45,
+            StatsEnum.DEFENSE: 45,
+            StatsEnum.SPECIAL_ATTACK: 74,
+            StatsEnum.SPECIAL_DEFENSE: 54,
+            StatsEnum.SPEED: 50
         }
     },
     "1013": {
@@ -15195,12 +15198,12 @@ pocket_monsters_dict = {
             "Name": "Sinistcha",
             "Type 1": "Grass",
             "Type 2": "Ghost",
-            "HP": 71,
-            "Attack": 60,
-            "Defense": 106,
-            "Special Attack": 121,
-            "Special Defense": 80,
-            "Speed": 70
+            StatsEnum.HP: 71,
+            StatsEnum.ATTACK: 60,
+            StatsEnum.DEFENSE: 106,
+            StatsEnum.SPECIAL_ATTACK: 121,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 70
         }
     },
     "1014": {
@@ -15208,12 +15211,12 @@ pocket_monsters_dict = {
             "Name": "Okidogi",
             "Type 1": "Poison",
             "Type 2": "Fighting",
-            "HP": 88,
-            "Attack": 128,
-            "Defense": 115,
-            "Special Attack": 58,
-            "Special Defense": 86,
-            "Speed": 80
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 128,
+            StatsEnum.DEFENSE: 115,
+            StatsEnum.SPECIAL_ATTACK: 58,
+            StatsEnum.SPECIAL_DEFENSE: 86,
+            StatsEnum.SPEED: 80
         }
     },
     "1015": {
@@ -15221,12 +15224,12 @@ pocket_monsters_dict = {
             "Name": "Munkidori",
             "Type 1": "Poison",
             "Type 2": "Psychic",
-            "HP": 88,
-            "Attack": 75,
-            "Defense": 66,
-            "Special Attack": 130,
-            "Special Defense": 90,
-            "Speed": 106
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 75,
+            StatsEnum.DEFENSE: 66,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 90,
+            StatsEnum.SPEED: 106
         }
     },
     "1016": {
@@ -15234,12 +15237,12 @@ pocket_monsters_dict = {
             "Name": "Fezandipiti",
             "Type 1": "Poison",
             "Type 2": "Fairy",
-            "HP": 88,
-            "Attack": 91,
-            "Defense": 82,
-            "Special Attack": 70,
-            "Special Defense": 125,
-            "Speed": 99
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 91,
+            StatsEnum.DEFENSE: 82,
+            StatsEnum.SPECIAL_ATTACK: 70,
+            StatsEnum.SPECIAL_DEFENSE: 125,
+            StatsEnum.SPEED: 99
         }
     },
     "1017": {
@@ -15247,45 +15250,45 @@ pocket_monsters_dict = {
             "Name": "Ogerpon",
             "Type 1": "Grass",
             "Type 2": None,
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 84,
-            "Special Attack": 60,
-            "Special Defense": 96,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 84,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 110
         },
         "Wellspring Mask": {
             "Name": "Ogerpon",
             "Type 1": "Grass",
             "Type 2": "Water",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 84,
-            "Special Attack": 60,
-            "Special Defense": 96,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 84,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 110
         },
         "Hearthflame Mask": {
             "Name": "Ogerpon",
             "Type 1": "Grass",
             "Type 2": "Fire",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 84,
-            "Special Attack": 60,
-            "Special Defense": 96,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 84,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 110
         },
         "Cornerstone Mask": {
             "Name": "Ogerpon",
             "Type 1": "Grass",
             "Type 2": "Rock",
-            "HP": 80,
-            "Attack": 120,
-            "Defense": 84,
-            "Special Attack": 60,
-            "Special Defense": 96,
-            "Speed": 110
+            StatsEnum.HP: 80,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 84,
+            StatsEnum.SPECIAL_ATTACK: 60,
+            StatsEnum.SPECIAL_DEFENSE: 96,
+            StatsEnum.SPEED: 110
         }
     },
     "1018": {
@@ -15293,12 +15296,12 @@ pocket_monsters_dict = {
             "Name": "Archaludon",
             "Type 1": "Steel",
             "Type 2": "Dragon",
-            "HP": 90,
-            "Attack": 105,
-            "Defense": 130,
-            "Special Attack": 125,
-            "Special Defense": 65,
-            "Speed": 85
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 130,
+            StatsEnum.SPECIAL_ATTACK: 125,
+            StatsEnum.SPECIAL_DEFENSE: 65,
+            StatsEnum.SPEED: 85
         }
     },
     "1019": {
@@ -15306,12 +15309,12 @@ pocket_monsters_dict = {
             "Name": "Hydrapple",
             "Type 1": "Grass",
             "Type 2": "Dragon",
-            "HP": 106,
-            "Attack": 80,
-            "Defense": 110,
-            "Special Attack": 120,
-            "Special Defense": 80,
-            "Speed": 44
+            StatsEnum.HP: 106,
+            StatsEnum.ATTACK: 80,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 120,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 44
         }
     },
     "1020": {
@@ -15319,12 +15322,12 @@ pocket_monsters_dict = {
             "Name": "Gouging Fire",
             "Type 1": "Fire",
             "Type 2": "Dragon",
-            "HP": 105,
-            "Attack": 115,
-            "Defense": 121,
-            "Special Attack": 65,
-            "Special Defense": 93,
-            "Speed": 91
+            StatsEnum.HP: 105,
+            StatsEnum.ATTACK: 115,
+            StatsEnum.DEFENSE: 121,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 93,
+            StatsEnum.SPEED: 91
         }
     },
     "1021": {
@@ -15332,12 +15335,12 @@ pocket_monsters_dict = {
             "Name": "Raging Bolt",
             "Type 1": "Electric",
             "Type 2": "Dragon",
-            "HP": 125,
-            "Attack": 73,
-            "Defense": 91,
-            "Special Attack": 137,
-            "Special Defense": 89,
-            "Speed": 75
+            StatsEnum.HP: 125,
+            StatsEnum.ATTACK: 73,
+            StatsEnum.DEFENSE: 91,
+            StatsEnum.SPECIAL_ATTACK: 137,
+            StatsEnum.SPECIAL_DEFENSE: 89,
+            StatsEnum.SPEED: 75
         }
     },
     "1022": {
@@ -15345,12 +15348,12 @@ pocket_monsters_dict = {
             "Name": "Iron Boulder",
             "Type 1": "Rock",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 120,
-            "Defense": 80,
-            "Special Attack": 68,
-            "Special Defense": 108,
-            "Speed": 124
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 120,
+            StatsEnum.DEFENSE: 80,
+            StatsEnum.SPECIAL_ATTACK: 68,
+            StatsEnum.SPECIAL_DEFENSE: 108,
+            StatsEnum.SPEED: 124
         }
     },
     "1023": {
@@ -15358,12 +15361,12 @@ pocket_monsters_dict = {
             "Name": "Iron Crown",
             "Type 1": "Steel",
             "Type 2": "Psychic",
-            "HP": 90,
-            "Attack": 72,
-            "Defense": 100,
-            "Special Attack": 122,
-            "Special Defense": 108,
-            "Speed": 98
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 72,
+            StatsEnum.DEFENSE: 100,
+            StatsEnum.SPECIAL_ATTACK: 122,
+            StatsEnum.SPECIAL_DEFENSE: 108,
+            StatsEnum.SPEED: 98
         }
     },
     "1024": {
@@ -15371,34 +15374,34 @@ pocket_monsters_dict = {
             "Name": "Terapagos",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 90,
-            "Attack": 65,
-            "Defense": 85,
-            "Special Attack": 65,
-            "Special Defense": 85,
-            "Speed": 60
+            StatsEnum.HP: 90,
+            StatsEnum.ATTACK: 65,
+            StatsEnum.DEFENSE: 85,
+            StatsEnum.SPECIAL_ATTACK: 65,
+            StatsEnum.SPECIAL_DEFENSE: 85,
+            StatsEnum.SPEED: 60
         },
         "Terastal Form": {
             "Name": "Terapagos",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 95,
-            "Attack": 95,
-            "Defense": 110,
-            "Special Attack": 105,
-            "Special Defense": 110,
-            "Speed": 85
+            StatsEnum.HP: 95,
+            StatsEnum.ATTACK: 95,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 105,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 85
         },
         "Stellar Form": {
             "Name": "Terapagos",
             "Type 1": "Normal",
             "Type 2": None,
-            "HP": 160,
-            "Attack": 105,
-            "Defense": 110,
-            "Special Attack": 130,
-            "Special Defense": 110,
-            "Speed": 85
+            StatsEnum.HP: 160,
+            StatsEnum.ATTACK: 105,
+            StatsEnum.DEFENSE: 110,
+            StatsEnum.SPECIAL_ATTACK: 130,
+            StatsEnum.SPECIAL_DEFENSE: 110,
+            StatsEnum.SPEED: 85
         }
     },
     "1025": {
@@ -15406,12 +15409,12 @@ pocket_monsters_dict = {
             "Name": "Pecharunt",
             "Type 1": "Poison",
             "Type 2": "Ghost",
-            "HP": 88,
-            "Attack": 88,
-            "Defense": 160,
-            "Special Attack": 88,
-            "Special Defense": 88,
-            "Speed": 88
+            StatsEnum.HP: 88,
+            StatsEnum.ATTACK: 88,
+            StatsEnum.DEFENSE: 160,
+            StatsEnum.SPECIAL_ATTACK: 88,
+            StatsEnum.SPECIAL_DEFENSE: 88,
+            StatsEnum.SPEED: 88
         }
     }
 }
