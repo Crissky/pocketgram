@@ -24,3 +24,12 @@ class TestPocketMonsterDict(unittest.TestCase):
             for pm_dict in pocket_monsters_dict.values():
                 for stat_enum in StatsEnum:
                     self.assertIsInstance(pm_dict[stat_enum], int)
+
+    def test_name(self):
+        '''Testa se os nomes dos monstros são do tipo correto.
+        '''
+
+        for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
+            for pm_dict in pocket_monsters_dict.values():
+                self.assertIsInstance(pm_dict['Name'], str)
+
