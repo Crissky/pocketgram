@@ -1,12 +1,13 @@
 from pocketgram.enums.stats import StatsEnum
+from pocketgram.enums._types import TypesEnum
 
 
 POCKET_MONSTERS_DICT = {
     "0001": {
         None: {
             "Name": "Bulbasaur",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 49,
             StatsEnum.DEFENSE: 49,
@@ -18,8 +19,8 @@ POCKET_MONSTERS_DICT = {
     "0002": {
         None: {
             "Name": "Ivysaur",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 62,
             StatsEnum.DEFENSE: 63,
@@ -31,8 +32,8 @@ POCKET_MONSTERS_DICT = {
     "0003": {
         None: {
             "Name": "Venusaur",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 82,
             StatsEnum.DEFENSE: 83,
@@ -42,8 +43,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Venusaur": {
             "Name": "Venusaur",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 123,
@@ -55,7 +56,7 @@ POCKET_MONSTERS_DICT = {
     "0004": {
         None: {
             "Name": "Charmander",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 39,
             StatsEnum.ATTACK: 52,
@@ -68,7 +69,7 @@ POCKET_MONSTERS_DICT = {
     "0005": {
         None: {
             "Name": "Charmeleon",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 64,
@@ -81,8 +82,8 @@ POCKET_MONSTERS_DICT = {
     "0006": {
         None: {
             "Name": "Charizard",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 84,
             StatsEnum.DEFENSE: 78,
@@ -92,8 +93,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Charizard X": {
             "Name": "Charizard",
-            "Type 1": "Fire",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 111,
@@ -103,8 +104,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Charizard Y": {
             "Name": "Charizard",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 104,
             StatsEnum.DEFENSE: 78,
@@ -116,7 +117,7 @@ POCKET_MONSTERS_DICT = {
     "0007": {
         None: {
             "Name": "Squirtle",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 48,
@@ -129,7 +130,7 @@ POCKET_MONSTERS_DICT = {
     "0008": {
         None: {
             "Name": "Wartortle",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 63,
@@ -142,7 +143,7 @@ POCKET_MONSTERS_DICT = {
     "0009": {
         None: {
             "Name": "Blastoise",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 83,
@@ -153,7 +154,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Blastoise": {
             "Name": "Blastoise",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 103,
@@ -166,7 +167,7 @@ POCKET_MONSTERS_DICT = {
     "0010": {
         None: {
             "Name": "Caterpie",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
@@ -179,7 +180,7 @@ POCKET_MONSTERS_DICT = {
     "0011": {
         None: {
             "Name": "Metapod",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 20,
@@ -192,8 +193,8 @@ POCKET_MONSTERS_DICT = {
     "0012": {
         None: {
             "Name": "Butterfree",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 50,
@@ -205,8 +206,8 @@ POCKET_MONSTERS_DICT = {
     "0013": {
         None: {
             "Name": "Weedle",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 30,
@@ -218,8 +219,8 @@ POCKET_MONSTERS_DICT = {
     "0014": {
         None: {
             "Name": "Kakuna",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 25,
             StatsEnum.DEFENSE: 50,
@@ -231,8 +232,8 @@ POCKET_MONSTERS_DICT = {
     "0015": {
         None: {
             "Name": "Beedrill",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 40,
@@ -242,8 +243,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Beedrill": {
             "Name": "Beedrill",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 150,
             StatsEnum.DEFENSE: 40,
@@ -255,8 +256,8 @@ POCKET_MONSTERS_DICT = {
     "0016": {
         None: {
             "Name": "Pidgey",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 40,
@@ -268,8 +269,8 @@ POCKET_MONSTERS_DICT = {
     "0017": {
         None: {
             "Name": "Pidgeotto",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 63,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 55,
@@ -281,8 +282,8 @@ POCKET_MONSTERS_DICT = {
     "0018": {
         None: {
             "Name": "Pidgeot",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 83,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 75,
@@ -292,8 +293,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Pidgeot": {
             "Name": "Pidgeot",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 83,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 80,
@@ -305,7 +306,7 @@ POCKET_MONSTERS_DICT = {
     "0019": {
         None: {
             "Name": "Rattata",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 56,
@@ -316,8 +317,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Rattata": {
             "Name": "Rattata",
-            "Type 1": "Dark",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 56,
             StatsEnum.DEFENSE: 35,
@@ -329,7 +330,7 @@ POCKET_MONSTERS_DICT = {
     "0020": {
         None: {
             "Name": "Raticate",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 81,
@@ -340,8 +341,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Raticate": {
             "Name": "Raticate",
-            "Type 1": "Dark",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 71,
             StatsEnum.DEFENSE: 70,
@@ -353,8 +354,8 @@ POCKET_MONSTERS_DICT = {
     "0021": {
         None: {
             "Name": "Spearow",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 30,
@@ -366,8 +367,8 @@ POCKET_MONSTERS_DICT = {
     "0022": {
         None: {
             "Name": "Fearow",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 65,
@@ -379,7 +380,7 @@ POCKET_MONSTERS_DICT = {
     "0023": {
         None: {
             "Name": "Ekans",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 60,
@@ -392,7 +393,7 @@ POCKET_MONSTERS_DICT = {
     "0024": {
         None: {
             "Name": "Arbok",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 95,
@@ -405,7 +406,7 @@ POCKET_MONSTERS_DICT = {
     "0025": {
         None: {
             "Name": "Pikachu",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 55,
@@ -416,7 +417,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Partner Pikachu": {
             "Name": "Pikachu",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 80,
@@ -429,7 +430,7 @@ POCKET_MONSTERS_DICT = {
     "0026": {
         None: {
             "Name": "Raichu",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 90,
@@ -440,8 +441,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Raichu": {
             "Name": "Raichu",
-            "Type 1": "Electric",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 50,
@@ -453,7 +454,7 @@ POCKET_MONSTERS_DICT = {
     "0027": {
         None: {
             "Name": "Sandshrew",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 75,
@@ -464,8 +465,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Sandshrew": {
             "Name": "Sandshrew",
-            "Type 1": "Ice",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 90,
@@ -477,7 +478,7 @@ POCKET_MONSTERS_DICT = {
     "0028": {
         None: {
             "Name": "Sandslash",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 100,
@@ -488,8 +489,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Sandslash": {
             "Name": "Sandslash",
-            "Type 1": "Ice",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 120,
@@ -501,7 +502,7 @@ POCKET_MONSTERS_DICT = {
     "0029": {
         None: {
             "Name": "Nidoran♀",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 47,
@@ -514,7 +515,7 @@ POCKET_MONSTERS_DICT = {
     "0030": {
         None: {
             "Name": "Nidorina",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 62,
@@ -527,8 +528,8 @@ POCKET_MONSTERS_DICT = {
     "0031": {
         None: {
             "Name": "Nidoqueen",
-            "Type 1": "Poison",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 92,
             StatsEnum.DEFENSE: 87,
@@ -540,7 +541,7 @@ POCKET_MONSTERS_DICT = {
     "0032": {
         None: {
             "Name": "Nidoran♂",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 46,
             StatsEnum.ATTACK: 57,
@@ -553,7 +554,7 @@ POCKET_MONSTERS_DICT = {
     "0033": {
         None: {
             "Name": "Nidorino",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 72,
@@ -566,8 +567,8 @@ POCKET_MONSTERS_DICT = {
     "0034": {
         None: {
             "Name": "Nidoking",
-            "Type 1": "Poison",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 81,
             StatsEnum.ATTACK: 102,
             StatsEnum.DEFENSE: 77,
@@ -579,7 +580,7 @@ POCKET_MONSTERS_DICT = {
     "0035": {
         None: {
             "Name": "Clefairy",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 45,
@@ -592,7 +593,7 @@ POCKET_MONSTERS_DICT = {
     "0036": {
         None: {
             "Name": "Clefable",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 70,
@@ -605,7 +606,7 @@ POCKET_MONSTERS_DICT = {
     "0037": {
         None: {
             "Name": "Vulpix",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 41,
@@ -616,7 +617,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Vulpix": {
             "Name": "Vulpix",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 41,
@@ -629,7 +630,7 @@ POCKET_MONSTERS_DICT = {
     "0038": {
         None: {
             "Name": "Ninetales",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 76,
@@ -640,8 +641,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Ninetales": {
             "Name": "Ninetales",
-            "Type 1": "Ice",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 67,
             StatsEnum.DEFENSE: 75,
@@ -653,8 +654,8 @@ POCKET_MONSTERS_DICT = {
     "0039": {
         None: {
             "Name": "Jigglypuff",
-            "Type 1": "Normal",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 20,
@@ -666,8 +667,8 @@ POCKET_MONSTERS_DICT = {
     "0040": {
         None: {
             "Name": "Wigglytuff",
-            "Type 1": "Normal",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 140,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 45,
@@ -679,8 +680,8 @@ POCKET_MONSTERS_DICT = {
     "0041": {
         None: {
             "Name": "Zubat",
-            "Type 1": "Poison",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 35,
@@ -692,8 +693,8 @@ POCKET_MONSTERS_DICT = {
     "0042": {
         None: {
             "Name": "Golbat",
-            "Type 1": "Poison",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 70,
@@ -705,8 +706,8 @@ POCKET_MONSTERS_DICT = {
     "0043": {
         None: {
             "Name": "Oddish",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 55,
@@ -718,8 +719,8 @@ POCKET_MONSTERS_DICT = {
     "0044": {
         None: {
             "Name": "Gloom",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 70,
@@ -731,8 +732,8 @@ POCKET_MONSTERS_DICT = {
     "0045": {
         None: {
             "Name": "Vileplume",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 85,
@@ -744,8 +745,8 @@ POCKET_MONSTERS_DICT = {
     "0046": {
         None: {
             "Name": "Paras",
-            "Type 1": "Bug",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 55,
@@ -757,8 +758,8 @@ POCKET_MONSTERS_DICT = {
     "0047": {
         None: {
             "Name": "Parasect",
-            "Type 1": "Bug",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 80,
@@ -770,8 +771,8 @@ POCKET_MONSTERS_DICT = {
     "0048": {
         None: {
             "Name": "Venonat",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 50,
@@ -783,8 +784,8 @@ POCKET_MONSTERS_DICT = {
     "0049": {
         None: {
             "Name": "Venomoth",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 60,
@@ -796,7 +797,7 @@ POCKET_MONSTERS_DICT = {
     "0050": {
         None: {
             "Name": "Diglett",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 10,
             StatsEnum.ATTACK: 55,
@@ -807,8 +808,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Diglett": {
             "Name": "Diglett",
-            "Type 1": "Ground",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 10,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 30,
@@ -820,7 +821,7 @@ POCKET_MONSTERS_DICT = {
     "0051": {
         None: {
             "Name": "Dugtrio",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 100,
@@ -831,8 +832,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Dugtrio": {
             "Name": "Dugtrio",
-            "Type 1": "Ground",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 60,
@@ -844,7 +845,7 @@ POCKET_MONSTERS_DICT = {
     "0052": {
         None: {
             "Name": "Meowth",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
@@ -855,7 +856,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Meowth": {
             "Name": "Meowth",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 35,
@@ -866,7 +867,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Meowth": {
             "Name": "Meowth",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
@@ -879,7 +880,7 @@ POCKET_MONSTERS_DICT = {
     "0053": {
         None: {
             "Name": "Persian",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 70,
@@ -890,7 +891,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Persian": {
             "Name": "Persian",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 60,
@@ -903,7 +904,7 @@ POCKET_MONSTERS_DICT = {
     "0054": {
         None: {
             "Name": "Psyduck",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 52,
@@ -916,7 +917,7 @@ POCKET_MONSTERS_DICT = {
     "0055": {
         None: {
             "Name": "Golduck",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 82,
@@ -929,7 +930,7 @@ POCKET_MONSTERS_DICT = {
     "0056": {
         None: {
             "Name": "Mankey",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 80,
@@ -942,7 +943,7 @@ POCKET_MONSTERS_DICT = {
     "0057": {
         None: {
             "Name": "Primeape",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 105,
@@ -955,7 +956,7 @@ POCKET_MONSTERS_DICT = {
     "0058": {
         None: {
             "Name": "Growlithe",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 70,
@@ -966,8 +967,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Growlithe": {
             "Name": "Growlithe",
-            "Type 1": "Fire",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 45,
@@ -979,7 +980,7 @@ POCKET_MONSTERS_DICT = {
     "0059": {
         None: {
             "Name": "Arcanine",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 110,
@@ -990,8 +991,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Arcanine": {
             "Name": "Arcanine",
-            "Type 1": "Fire",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 80,
@@ -1003,7 +1004,7 @@ POCKET_MONSTERS_DICT = {
     "0060": {
         None: {
             "Name": "Poliwag",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 50,
@@ -1016,7 +1017,7 @@ POCKET_MONSTERS_DICT = {
     "0061": {
         None: {
             "Name": "Poliwhirl",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 65,
@@ -1029,8 +1030,8 @@ POCKET_MONSTERS_DICT = {
     "0062": {
         None: {
             "Name": "Poliwrath",
-            "Type 1": "Water",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 95,
@@ -1042,7 +1043,7 @@ POCKET_MONSTERS_DICT = {
     "0063": {
         None: {
             "Name": "Abra",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 25,
             StatsEnum.ATTACK: 20,
@@ -1055,7 +1056,7 @@ POCKET_MONSTERS_DICT = {
     "0064": {
         None: {
             "Name": "Kadabra",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 35,
@@ -1068,7 +1069,7 @@ POCKET_MONSTERS_DICT = {
     "0065": {
         None: {
             "Name": "Alakazam",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 50,
@@ -1079,7 +1080,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Alakazam": {
             "Name": "Alakazam",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 50,
@@ -1092,7 +1093,7 @@ POCKET_MONSTERS_DICT = {
     "0066": {
         None: {
             "Name": "Machop",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 80,
@@ -1105,7 +1106,7 @@ POCKET_MONSTERS_DICT = {
     "0067": {
         None: {
             "Name": "Machoke",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
@@ -1118,7 +1119,7 @@ POCKET_MONSTERS_DICT = {
     "0068": {
         None: {
             "Name": "Machamp",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 130,
@@ -1131,8 +1132,8 @@ POCKET_MONSTERS_DICT = {
     "0069": {
         None: {
             "Name": "Bellsprout",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 35,
@@ -1144,8 +1145,8 @@ POCKET_MONSTERS_DICT = {
     "0070": {
         None: {
             "Name": "Weepinbell",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 50,
@@ -1157,8 +1158,8 @@ POCKET_MONSTERS_DICT = {
     "0071": {
         None: {
             "Name": "Victreebel",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 65,
@@ -1170,8 +1171,8 @@ POCKET_MONSTERS_DICT = {
     "0072": {
         None: {
             "Name": "Tentacool",
-            "Type 1": "Water",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 35,
@@ -1183,8 +1184,8 @@ POCKET_MONSTERS_DICT = {
     "0073": {
         None: {
             "Name": "Tentacruel",
-            "Type 1": "Water",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 65,
@@ -1196,8 +1197,8 @@ POCKET_MONSTERS_DICT = {
     "0074": {
         None: {
             "Name": "Geodude",
-            "Type 1": "Rock",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 100,
@@ -1207,8 +1208,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Geodude": {
             "Name": "Geodude",
-            "Type 1": "Rock",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 100,
@@ -1220,8 +1221,8 @@ POCKET_MONSTERS_DICT = {
     "0075": {
         None: {
             "Name": "Graveler",
-            "Type 1": "Rock",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 115,
@@ -1231,8 +1232,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Graveler": {
             "Name": "Graveler",
-            "Type 1": "Rock",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 115,
@@ -1244,8 +1245,8 @@ POCKET_MONSTERS_DICT = {
     "0076": {
         None: {
             "Name": "Golem",
-            "Type 1": "Rock",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 130,
@@ -1255,8 +1256,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Golem": {
             "Name": "Golem",
-            "Type 1": "Rock",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 130,
@@ -1268,7 +1269,7 @@ POCKET_MONSTERS_DICT = {
     "0077": {
         None: {
             "Name": "Ponyta",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 85,
@@ -1279,7 +1280,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Ponyta": {
             "Name": "Ponyta",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 85,
@@ -1292,7 +1293,7 @@ POCKET_MONSTERS_DICT = {
     "0078": {
         None: {
             "Name": "Rapidash",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 100,
@@ -1303,8 +1304,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Rapidash": {
             "Name": "Rapidash",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 70,
@@ -1316,8 +1317,8 @@ POCKET_MONSTERS_DICT = {
     "0079": {
         None: {
             "Name": "Slowpoke",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 65,
@@ -1327,7 +1328,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Slowpoke": {
             "Name": "Slowpoke",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 65,
@@ -1340,8 +1341,8 @@ POCKET_MONSTERS_DICT = {
     "0080": {
         None: {
             "Name": "Slowbro",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 110,
@@ -1351,8 +1352,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Slowbro": {
             "Name": "Slowbro",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 180,
@@ -1362,8 +1363,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Slowbro": {
             "Name": "Slowbro",
-            "Type 1": "Poison",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 95,
@@ -1375,8 +1376,8 @@ POCKET_MONSTERS_DICT = {
     "0081": {
         None: {
             "Name": "Magnemite",
-            "Type 1": "Electric",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 25,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 70,
@@ -1388,8 +1389,8 @@ POCKET_MONSTERS_DICT = {
     "0082": {
         None: {
             "Name": "Magneton",
-            "Type 1": "Electric",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 95,
@@ -1401,8 +1402,8 @@ POCKET_MONSTERS_DICT = {
     "0083": {
         None: {
             "Name": "Farfetch'd",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 52,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 55,
@@ -1412,7 +1413,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Farfetch'd": {
             "Name": "Farfetch'd",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 52,
             StatsEnum.ATTACK: 95,
@@ -1425,8 +1426,8 @@ POCKET_MONSTERS_DICT = {
     "0084": {
         None: {
             "Name": "Doduo",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 45,
@@ -1438,8 +1439,8 @@ POCKET_MONSTERS_DICT = {
     "0085": {
         None: {
             "Name": "Dodrio",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 70,
@@ -1451,7 +1452,7 @@ POCKET_MONSTERS_DICT = {
     "0086": {
         None: {
             "Name": "Seel",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 45,
@@ -1464,8 +1465,8 @@ POCKET_MONSTERS_DICT = {
     "0087": {
         None: {
             "Name": "Dewgong",
-            "Type 1": "Water",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 80,
@@ -1477,7 +1478,7 @@ POCKET_MONSTERS_DICT = {
     "0088": {
         None: {
             "Name": "Grimer",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
@@ -1488,8 +1489,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Grimer": {
             "Name": "Grimer",
-            "Type 1": "Poison",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 50,
@@ -1501,7 +1502,7 @@ POCKET_MONSTERS_DICT = {
     "0089": {
         None: {
             "Name": "Muk",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 105,
@@ -1512,8 +1513,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Muk": {
             "Name": "Muk",
-            "Type 1": "Poison",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 75,
@@ -1525,7 +1526,7 @@ POCKET_MONSTERS_DICT = {
     "0090": {
         None: {
             "Name": "Shellder",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 65,
@@ -1538,8 +1539,8 @@ POCKET_MONSTERS_DICT = {
     "0091": {
         None: {
             "Name": "Cloyster",
-            "Type 1": "Water",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 180,
@@ -1551,8 +1552,8 @@ POCKET_MONSTERS_DICT = {
     "0092": {
         None: {
             "Name": "Gastly",
-            "Type 1": "Ghost",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 30,
@@ -1564,8 +1565,8 @@ POCKET_MONSTERS_DICT = {
     "0093": {
         None: {
             "Name": "Haunter",
-            "Type 1": "Ghost",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 45,
@@ -1577,8 +1578,8 @@ POCKET_MONSTERS_DICT = {
     "0094": {
         None: {
             "Name": "Gengar",
-            "Type 1": "Ghost",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 60,
@@ -1588,8 +1589,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Gengar": {
             "Name": "Gengar",
-            "Type 1": "Ghost",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 80,
@@ -1601,8 +1602,8 @@ POCKET_MONSTERS_DICT = {
     "0095": {
         None: {
             "Name": "Onix",
-            "Type 1": "Rock",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 160,
@@ -1614,7 +1615,7 @@ POCKET_MONSTERS_DICT = {
     "0096": {
         None: {
             "Name": "Drowzee",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 48,
@@ -1627,7 +1628,7 @@ POCKET_MONSTERS_DICT = {
     "0097": {
         None: {
             "Name": "Hypno",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 73,
@@ -1640,7 +1641,7 @@ POCKET_MONSTERS_DICT = {
     "0098": {
         None: {
             "Name": "Krabby",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 105,
@@ -1653,7 +1654,7 @@ POCKET_MONSTERS_DICT = {
     "0099": {
         None: {
             "Name": "Kingler",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 130,
@@ -1666,7 +1667,7 @@ POCKET_MONSTERS_DICT = {
     "0100": {
         None: {
             "Name": "Voltorb",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
@@ -1677,8 +1678,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Voltorb": {
             "Name": "Voltorb",
-            "Type 1": "Electric",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 50,
@@ -1690,7 +1691,7 @@ POCKET_MONSTERS_DICT = {
     "0101": {
         None: {
             "Name": "Electrode",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
@@ -1701,8 +1702,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Electrode": {
             "Name": "Electrode",
-            "Type 1": "Electric",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 70,
@@ -1714,8 +1715,8 @@ POCKET_MONSTERS_DICT = {
     "0102": {
         None: {
             "Name": "Exeggcute",
-            "Type 1": "Grass",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 80,
@@ -1727,8 +1728,8 @@ POCKET_MONSTERS_DICT = {
     "0103": {
         None: {
             "Name": "Exeggutor",
-            "Type 1": "Grass",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 85,
@@ -1738,8 +1739,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Exeggutor": {
             "Name": "Exeggutor",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 85,
@@ -1751,7 +1752,7 @@ POCKET_MONSTERS_DICT = {
     "0104": {
         None: {
             "Name": "Cubone",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
@@ -1764,7 +1765,7 @@ POCKET_MONSTERS_DICT = {
     "0105": {
         None: {
             "Name": "Marowak",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 80,
@@ -1775,8 +1776,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Alolan Marowak": {
             "Name": "Marowak",
-            "Type 1": "Fire",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 110,
@@ -1788,7 +1789,7 @@ POCKET_MONSTERS_DICT = {
     "0106": {
         None: {
             "Name": "Hitmonlee",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 120,
@@ -1801,7 +1802,7 @@ POCKET_MONSTERS_DICT = {
     "0107": {
         None: {
             "Name": "Hitmonchan",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 105,
@@ -1814,7 +1815,7 @@ POCKET_MONSTERS_DICT = {
     "0108": {
         None: {
             "Name": "Lickitung",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 55,
@@ -1827,7 +1828,7 @@ POCKET_MONSTERS_DICT = {
     "0109": {
         None: {
             "Name": "Koffing",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 65,
@@ -1840,7 +1841,7 @@ POCKET_MONSTERS_DICT = {
     "0110": {
         None: {
             "Name": "Weezing",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
@@ -1851,8 +1852,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Weezing": {
             "Name": "Weezing",
-            "Type 1": "Poison",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 120,
@@ -1864,8 +1865,8 @@ POCKET_MONSTERS_DICT = {
     "0111": {
         None: {
             "Name": "Rhyhorn",
-            "Type 1": "Ground",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 95,
@@ -1877,8 +1878,8 @@ POCKET_MONSTERS_DICT = {
     "0112": {
         None: {
             "Name": "Rhydon",
-            "Type 1": "Ground",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 120,
@@ -1890,7 +1891,7 @@ POCKET_MONSTERS_DICT = {
     "0113": {
         None: {
             "Name": "Chansey",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 250,
             StatsEnum.ATTACK: 5,
@@ -1903,7 +1904,7 @@ POCKET_MONSTERS_DICT = {
     "0114": {
         None: {
             "Name": "Tangela",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 55,
@@ -1916,7 +1917,7 @@ POCKET_MONSTERS_DICT = {
     "0115": {
         None: {
             "Name": "Kangaskhan",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 95,
@@ -1927,7 +1928,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Kangaskhan": {
             "Name": "Kangaskhan",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 125,
@@ -1940,7 +1941,7 @@ POCKET_MONSTERS_DICT = {
     "0116": {
         None: {
             "Name": "Horsea",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 40,
@@ -1953,7 +1954,7 @@ POCKET_MONSTERS_DICT = {
     "0117": {
         None: {
             "Name": "Seadra",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 65,
@@ -1966,7 +1967,7 @@ POCKET_MONSTERS_DICT = {
     "0118": {
         None: {
             "Name": "Goldeen",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 67,
@@ -1979,7 +1980,7 @@ POCKET_MONSTERS_DICT = {
     "0119": {
         None: {
             "Name": "Seaking",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 92,
@@ -1992,7 +1993,7 @@ POCKET_MONSTERS_DICT = {
     "0120": {
         None: {
             "Name": "Staryu",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 45,
@@ -2005,8 +2006,8 @@ POCKET_MONSTERS_DICT = {
     "0121": {
         None: {
             "Name": "Starmie",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 85,
@@ -2018,8 +2019,8 @@ POCKET_MONSTERS_DICT = {
     "0122": {
         None: {
             "Name": "Mr. Mime",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 65,
@@ -2029,8 +2030,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Mr. Mime": {
             "Name": "Mr. Mime",
-            "Type 1": "Ice",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 65,
@@ -2042,8 +2043,8 @@ POCKET_MONSTERS_DICT = {
     "0123": {
         None: {
             "Name": "Scyther",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 80,
@@ -2055,8 +2056,8 @@ POCKET_MONSTERS_DICT = {
     "0124": {
         None: {
             "Name": "Jynx",
-            "Type 1": "Ice",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 35,
@@ -2068,7 +2069,7 @@ POCKET_MONSTERS_DICT = {
     "0125": {
         None: {
             "Name": "Electabuzz",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 83,
@@ -2081,7 +2082,7 @@ POCKET_MONSTERS_DICT = {
     "0126": {
         None: {
             "Name": "Magmar",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 95,
@@ -2094,7 +2095,7 @@ POCKET_MONSTERS_DICT = {
     "0127": {
         None: {
             "Name": "Pinsir",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 125,
@@ -2105,8 +2106,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Pinsir": {
             "Name": "Pinsir",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 155,
             StatsEnum.DEFENSE: 120,
@@ -2118,7 +2119,7 @@ POCKET_MONSTERS_DICT = {
     "0128": {
         None: {
             "Name": "Tauros",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 100,
@@ -2129,7 +2130,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Combat Breed": {
             "Name": "Tauros",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 110,
@@ -2140,8 +2141,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Blaze Breed": {
             "Name": "Tauros",
-            "Type 1": "Fighting",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 105,
@@ -2151,8 +2152,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Aqua Breed": {
             "Name": "Tauros",
-            "Type 1": "Fighting",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 105,
@@ -2164,7 +2165,7 @@ POCKET_MONSTERS_DICT = {
     "0129": {
         None: {
             "Name": "Magikarp",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 20,
             StatsEnum.ATTACK: 10,
@@ -2177,8 +2178,8 @@ POCKET_MONSTERS_DICT = {
     "0130": {
         None: {
             "Name": "Gyarados",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 79,
@@ -2188,8 +2189,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Gyarados": {
             "Name": "Gyarados",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 155,
             StatsEnum.DEFENSE: 109,
@@ -2201,8 +2202,8 @@ POCKET_MONSTERS_DICT = {
     "0131": {
         None: {
             "Name": "Lapras",
-            "Type 1": "Water",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 130,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 80,
@@ -2214,7 +2215,7 @@ POCKET_MONSTERS_DICT = {
     "0132": {
         None: {
             "Name": "Ditto",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 48,
@@ -2227,7 +2228,7 @@ POCKET_MONSTERS_DICT = {
     "0133": {
         None: {
             "Name": "Eevee",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 55,
@@ -2238,7 +2239,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Partner Eevee": {
             "Name": "Eevee",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 75,
@@ -2251,7 +2252,7 @@ POCKET_MONSTERS_DICT = {
     "0134": {
         None: {
             "Name": "Vaporeon",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 130,
             StatsEnum.ATTACK: 65,
@@ -2264,7 +2265,7 @@ POCKET_MONSTERS_DICT = {
     "0135": {
         None: {
             "Name": "Jolteon",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 65,
@@ -2277,7 +2278,7 @@ POCKET_MONSTERS_DICT = {
     "0136": {
         None: {
             "Name": "Flareon",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 130,
@@ -2290,7 +2291,7 @@ POCKET_MONSTERS_DICT = {
     "0137": {
         None: {
             "Name": "Porygon",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 60,
@@ -2303,8 +2304,8 @@ POCKET_MONSTERS_DICT = {
     "0138": {
         None: {
             "Name": "Omanyte",
-            "Type 1": "Rock",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 100,
@@ -2316,8 +2317,8 @@ POCKET_MONSTERS_DICT = {
     "0139": {
         None: {
             "Name": "Omastar",
-            "Type 1": "Rock",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 125,
@@ -2329,8 +2330,8 @@ POCKET_MONSTERS_DICT = {
     "0140": {
         None: {
             "Name": "Kabuto",
-            "Type 1": "Rock",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 90,
@@ -2342,8 +2343,8 @@ POCKET_MONSTERS_DICT = {
     "0141": {
         None: {
             "Name": "Kabutops",
-            "Type 1": "Rock",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 105,
@@ -2355,8 +2356,8 @@ POCKET_MONSTERS_DICT = {
     "0142": {
         None: {
             "Name": "Aerodactyl",
-            "Type 1": "Rock",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 65,
@@ -2366,8 +2367,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Aerodactyl": {
             "Name": "Aerodactyl",
-            "Type 1": "Rock",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 85,
@@ -2379,7 +2380,7 @@ POCKET_MONSTERS_DICT = {
     "0143": {
         None: {
             "Name": "Snorlax",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 160,
             StatsEnum.ATTACK: 110,
@@ -2392,8 +2393,8 @@ POCKET_MONSTERS_DICT = {
     "0144": {
         None: {
             "Name": "Articuno",
-            "Type 1": "Ice",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 100,
@@ -2403,8 +2404,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Articuno": {
             "Name": "Articuno",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 85,
@@ -2416,8 +2417,8 @@ POCKET_MONSTERS_DICT = {
     "0145": {
         None: {
             "Name": "Zapdos",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 85,
@@ -2427,8 +2428,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Zapdos": {
             "Name": "Zapdos",
-            "Type 1": "Fighting",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 90,
@@ -2440,8 +2441,8 @@ POCKET_MONSTERS_DICT = {
     "0146": {
         None: {
             "Name": "Moltres",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 90,
@@ -2451,8 +2452,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Moltres": {
             "Name": "Moltres",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 90,
@@ -2464,7 +2465,7 @@ POCKET_MONSTERS_DICT = {
     "0147": {
         None: {
             "Name": "Dratini",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 41,
             StatsEnum.ATTACK: 64,
@@ -2477,7 +2478,7 @@ POCKET_MONSTERS_DICT = {
     "0148": {
         None: {
             "Name": "Dragonair",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 84,
@@ -2490,8 +2491,8 @@ POCKET_MONSTERS_DICT = {
     "0149": {
         None: {
             "Name": "Dragonite",
-            "Type 1": "Dragon",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 134,
             StatsEnum.DEFENSE: 95,
@@ -2503,7 +2504,7 @@ POCKET_MONSTERS_DICT = {
     "0150": {
         None: {
             "Name": "Mewtwo",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 106,
             StatsEnum.ATTACK: 110,
@@ -2514,8 +2515,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Mewtwo X": {
             "Name": "Mewtwo",
-            "Type 1": "Psychic",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 106,
             StatsEnum.ATTACK: 190,
             StatsEnum.DEFENSE: 100,
@@ -2525,7 +2526,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Mewtwo Y": {
             "Name": "Mewtwo",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 106,
             StatsEnum.ATTACK: 150,
@@ -2538,7 +2539,7 @@ POCKET_MONSTERS_DICT = {
     "0151": {
         None: {
             "Name": "Mew",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
@@ -2551,7 +2552,7 @@ POCKET_MONSTERS_DICT = {
     "0152": {
         None: {
             "Name": "Chikorita",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 49,
@@ -2564,7 +2565,7 @@ POCKET_MONSTERS_DICT = {
     "0153": {
         None: {
             "Name": "Bayleef",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 62,
@@ -2577,7 +2578,7 @@ POCKET_MONSTERS_DICT = {
     "0154": {
         None: {
             "Name": "Meganium",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 82,
@@ -2590,7 +2591,7 @@ POCKET_MONSTERS_DICT = {
     "0155": {
         None: {
             "Name": "Cyndaquil",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 39,
             StatsEnum.ATTACK: 52,
@@ -2603,7 +2604,7 @@ POCKET_MONSTERS_DICT = {
     "0156": {
         None: {
             "Name": "Quilava",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 64,
@@ -2616,7 +2617,7 @@ POCKET_MONSTERS_DICT = {
     "0157": {
         None: {
             "Name": "Typhlosion",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 84,
@@ -2627,8 +2628,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Typhlosion": {
             "Name": "Typhlosion",
-            "Type 1": "Fire",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 84,
             StatsEnum.DEFENSE: 78,
@@ -2640,7 +2641,7 @@ POCKET_MONSTERS_DICT = {
     "0158": {
         None: {
             "Name": "Totodile",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
@@ -2653,7 +2654,7 @@ POCKET_MONSTERS_DICT = {
     "0159": {
         None: {
             "Name": "Croconaw",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 80,
@@ -2666,7 +2667,7 @@ POCKET_MONSTERS_DICT = {
     "0160": {
         None: {
             "Name": "Feraligatr",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 105,
@@ -2679,7 +2680,7 @@ POCKET_MONSTERS_DICT = {
     "0161": {
         None: {
             "Name": "Sentret",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 46,
@@ -2692,7 +2693,7 @@ POCKET_MONSTERS_DICT = {
     "0162": {
         None: {
             "Name": "Furret",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 76,
@@ -2705,8 +2706,8 @@ POCKET_MONSTERS_DICT = {
     "0163": {
         None: {
             "Name": "Hoothoot",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 30,
@@ -2718,8 +2719,8 @@ POCKET_MONSTERS_DICT = {
     "0164": {
         None: {
             "Name": "Noctowl",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 50,
@@ -2731,8 +2732,8 @@ POCKET_MONSTERS_DICT = {
     "0165": {
         None: {
             "Name": "Ledyba",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 20,
             StatsEnum.DEFENSE: 30,
@@ -2744,8 +2745,8 @@ POCKET_MONSTERS_DICT = {
     "0166": {
         None: {
             "Name": "Ledian",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 50,
@@ -2757,8 +2758,8 @@ POCKET_MONSTERS_DICT = {
     "0167": {
         None: {
             "Name": "Spinarak",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 40,
@@ -2770,8 +2771,8 @@ POCKET_MONSTERS_DICT = {
     "0168": {
         None: {
             "Name": "Ariados",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 70,
@@ -2783,8 +2784,8 @@ POCKET_MONSTERS_DICT = {
     "0169": {
         None: {
             "Name": "Crobat",
-            "Type 1": "Poison",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 80,
@@ -2796,8 +2797,8 @@ POCKET_MONSTERS_DICT = {
     "0170": {
         None: {
             "Name": "Chinchou",
-            "Type 1": "Water",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 38,
             StatsEnum.DEFENSE: 38,
@@ -2809,8 +2810,8 @@ POCKET_MONSTERS_DICT = {
     "0171": {
         None: {
             "Name": "Lanturn",
-            "Type 1": "Water",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 58,
             StatsEnum.DEFENSE: 58,
@@ -2822,7 +2823,7 @@ POCKET_MONSTERS_DICT = {
     "0172": {
         None: {
             "Name": "Pichu",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 20,
             StatsEnum.ATTACK: 40,
@@ -2835,7 +2836,7 @@ POCKET_MONSTERS_DICT = {
     "0173": {
         None: {
             "Name": "Cleffa",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 25,
@@ -2848,8 +2849,8 @@ POCKET_MONSTERS_DICT = {
     "0174": {
         None: {
             "Name": "Igglybuff",
-            "Type 1": "Normal",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 15,
@@ -2861,7 +2862,7 @@ POCKET_MONSTERS_DICT = {
     "0175": {
         None: {
             "Name": "Togepi",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 20,
@@ -2874,8 +2875,8 @@ POCKET_MONSTERS_DICT = {
     "0176": {
         None: {
             "Name": "Togetic",
-            "Type 1": "Fairy",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 85,
@@ -2887,8 +2888,8 @@ POCKET_MONSTERS_DICT = {
     "0177": {
         None: {
             "Name": "Natu",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 45,
@@ -2900,8 +2901,8 @@ POCKET_MONSTERS_DICT = {
     "0178": {
         None: {
             "Name": "Xatu",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 70,
@@ -2913,7 +2914,7 @@ POCKET_MONSTERS_DICT = {
     "0179": {
         None: {
             "Name": "Mareep",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 40,
@@ -2926,7 +2927,7 @@ POCKET_MONSTERS_DICT = {
     "0180": {
         None: {
             "Name": "Flaaffy",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 55,
@@ -2939,7 +2940,7 @@ POCKET_MONSTERS_DICT = {
     "0181": {
         None: {
             "Name": "Ampharos",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 75,
@@ -2950,8 +2951,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Ampharos": {
             "Name": "Ampharos",
-            "Type 1": "Electric",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 105,
@@ -2963,7 +2964,7 @@ POCKET_MONSTERS_DICT = {
     "0182": {
         None: {
             "Name": "Bellossom",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
@@ -2976,8 +2977,8 @@ POCKET_MONSTERS_DICT = {
     "0183": {
         None: {
             "Name": "Marill",
-            "Type 1": "Water",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 20,
             StatsEnum.DEFENSE: 50,
@@ -2989,8 +2990,8 @@ POCKET_MONSTERS_DICT = {
     "0184": {
         None: {
             "Name": "Azumarill",
-            "Type 1": "Water",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 80,
@@ -3002,7 +3003,7 @@ POCKET_MONSTERS_DICT = {
     "0185": {
         None: {
             "Name": "Sudowoodo",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 100,
@@ -3015,7 +3016,7 @@ POCKET_MONSTERS_DICT = {
     "0186": {
         None: {
             "Name": "Politoed",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 75,
@@ -3028,8 +3029,8 @@ POCKET_MONSTERS_DICT = {
     "0187": {
         None: {
             "Name": "Hoppip",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 40,
@@ -3041,8 +3042,8 @@ POCKET_MONSTERS_DICT = {
     "0188": {
         None: {
             "Name": "Skiploom",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 50,
@@ -3054,8 +3055,8 @@ POCKET_MONSTERS_DICT = {
     "0189": {
         None: {
             "Name": "Jumpluff",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 70,
@@ -3067,7 +3068,7 @@ POCKET_MONSTERS_DICT = {
     "0190": {
         None: {
             "Name": "Aipom",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 70,
@@ -3080,7 +3081,7 @@ POCKET_MONSTERS_DICT = {
     "0191": {
         None: {
             "Name": "Sunkern",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 30,
@@ -3093,7 +3094,7 @@ POCKET_MONSTERS_DICT = {
     "0192": {
         None: {
             "Name": "Sunflora",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 75,
@@ -3106,8 +3107,8 @@ POCKET_MONSTERS_DICT = {
     "0193": {
         None: {
             "Name": "Yanma",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 45,
@@ -3119,8 +3120,8 @@ POCKET_MONSTERS_DICT = {
     "0194": {
         None: {
             "Name": "Wooper",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 45,
@@ -3130,8 +3131,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Paldean Wooper": {
             "Name": "Wooper",
-            "Type 1": "Poison",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 45,
@@ -3143,8 +3144,8 @@ POCKET_MONSTERS_DICT = {
     "0195": {
         None: {
             "Name": "Quagsire",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 85,
@@ -3156,7 +3157,7 @@ POCKET_MONSTERS_DICT = {
     "0196": {
         None: {
             "Name": "Espeon",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 65,
@@ -3169,7 +3170,7 @@ POCKET_MONSTERS_DICT = {
     "0197": {
         None: {
             "Name": "Umbreon",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 65,
@@ -3182,8 +3183,8 @@ POCKET_MONSTERS_DICT = {
     "0198": {
         None: {
             "Name": "Murkrow",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 42,
@@ -3195,8 +3196,8 @@ POCKET_MONSTERS_DICT = {
     "0199": {
         None: {
             "Name": "Slowking",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 80,
@@ -3206,8 +3207,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Slowking": {
             "Name": "Slowking",
-            "Type 1": "Poison",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 80,
@@ -3219,7 +3220,7 @@ POCKET_MONSTERS_DICT = {
     "0200": {
         None: {
             "Name": "Misdreavus",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
@@ -3232,7 +3233,7 @@ POCKET_MONSTERS_DICT = {
     "0201": {
         None: {
             "Name": "Unown",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 72,
@@ -3245,7 +3246,7 @@ POCKET_MONSTERS_DICT = {
     "0202": {
         None: {
             "Name": "Wobbuffet",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 190,
             StatsEnum.ATTACK: 33,
@@ -3258,8 +3259,8 @@ POCKET_MONSTERS_DICT = {
     "0203": {
         None: {
             "Name": "Girafarig",
-            "Type 1": "Normal",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 65,
@@ -3271,7 +3272,7 @@ POCKET_MONSTERS_DICT = {
     "0204": {
         None: {
             "Name": "Pineco",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
@@ -3284,8 +3285,8 @@ POCKET_MONSTERS_DICT = {
     "0205": {
         None: {
             "Name": "Forretress",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 140,
@@ -3297,7 +3298,7 @@ POCKET_MONSTERS_DICT = {
     "0206": {
         None: {
             "Name": "Dunsparce",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 70,
@@ -3310,8 +3311,8 @@ POCKET_MONSTERS_DICT = {
     "0207": {
         None: {
             "Name": "Gligar",
-            "Type 1": "Ground",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 105,
@@ -3323,8 +3324,8 @@ POCKET_MONSTERS_DICT = {
     "0208": {
         None: {
             "Name": "Steelix",
-            "Type 1": "Steel",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 200,
@@ -3334,8 +3335,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Steelix": {
             "Name": "Steelix",
-            "Type 1": "Steel",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 230,
@@ -3347,7 +3348,7 @@ POCKET_MONSTERS_DICT = {
     "0209": {
         None: {
             "Name": "Snubbull",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 80,
@@ -3360,7 +3361,7 @@ POCKET_MONSTERS_DICT = {
     "0210": {
         None: {
             "Name": "Granbull",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 120,
@@ -3373,8 +3374,8 @@ POCKET_MONSTERS_DICT = {
     "0211": {
         None: {
             "Name": "Qwilfish",
-            "Type 1": "Water",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 85,
@@ -3384,8 +3385,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Qwilfish": {
             "Name": "Qwilfish",
-            "Type 1": "Dark",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 85,
@@ -3397,8 +3398,8 @@ POCKET_MONSTERS_DICT = {
     "0212": {
         None: {
             "Name": "Scizor",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 100,
@@ -3408,8 +3409,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Scizor": {
             "Name": "Scizor",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 150,
             StatsEnum.DEFENSE: 140,
@@ -3421,8 +3422,8 @@ POCKET_MONSTERS_DICT = {
     "0213": {
         None: {
             "Name": "Shuckle",
-            "Type 1": "Bug",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 20,
             StatsEnum.ATTACK: 10,
             StatsEnum.DEFENSE: 230,
@@ -3434,8 +3435,8 @@ POCKET_MONSTERS_DICT = {
     "0214": {
         None: {
             "Name": "Heracross",
-            "Type 1": "Bug",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 75,
@@ -3445,8 +3446,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Heracross": {
             "Name": "Heracross",
-            "Type 1": "Bug",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 185,
             StatsEnum.DEFENSE: 115,
@@ -3458,8 +3459,8 @@ POCKET_MONSTERS_DICT = {
     "0215": {
         None: {
             "Name": "Sneasel",
-            "Type 1": "Dark",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 55,
@@ -3469,8 +3470,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Sneasel": {
             "Name": "Sneasel",
-            "Type 1": "Fighting",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 55,
@@ -3482,7 +3483,7 @@ POCKET_MONSTERS_DICT = {
     "0216": {
         None: {
             "Name": "Teddiursa",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 80,
@@ -3495,7 +3496,7 @@ POCKET_MONSTERS_DICT = {
     "0217": {
         None: {
             "Name": "Ursaring",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 130,
@@ -3508,7 +3509,7 @@ POCKET_MONSTERS_DICT = {
     "0218": {
         None: {
             "Name": "Slugma",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
@@ -3521,8 +3522,8 @@ POCKET_MONSTERS_DICT = {
     "0219": {
         None: {
             "Name": "Magcargo",
-            "Type 1": "Fire",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 120,
@@ -3534,8 +3535,8 @@ POCKET_MONSTERS_DICT = {
     "0220": {
         None: {
             "Name": "Swinub",
-            "Type 1": "Ice",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 40,
@@ -3547,8 +3548,8 @@ POCKET_MONSTERS_DICT = {
     "0221": {
         None: {
             "Name": "Piloswine",
-            "Type 1": "Ice",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 80,
@@ -3560,8 +3561,8 @@ POCKET_MONSTERS_DICT = {
     "0222": {
         None: {
             "Name": "Corsola",
-            "Type 1": "Water",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 95,
@@ -3571,7 +3572,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Corsola": {
             "Name": "Corsola",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 55,
@@ -3584,7 +3585,7 @@ POCKET_MONSTERS_DICT = {
     "0223": {
         None: {
             "Name": "Remoraid",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 65,
@@ -3597,7 +3598,7 @@ POCKET_MONSTERS_DICT = {
     "0224": {
         None: {
             "Name": "Octillery",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 105,
@@ -3610,8 +3611,8 @@ POCKET_MONSTERS_DICT = {
     "0225": {
         None: {
             "Name": "Delibird",
-            "Type 1": "Ice",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 45,
@@ -3623,8 +3624,8 @@ POCKET_MONSTERS_DICT = {
     "0226": {
         None: {
             "Name": "Mantine",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 70,
@@ -3636,8 +3637,8 @@ POCKET_MONSTERS_DICT = {
     "0227": {
         None: {
             "Name": "Skarmory",
-            "Type 1": "Steel",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 140,
@@ -3649,8 +3650,8 @@ POCKET_MONSTERS_DICT = {
     "0228": {
         None: {
             "Name": "Houndour",
-            "Type 1": "Dark",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 30,
@@ -3662,8 +3663,8 @@ POCKET_MONSTERS_DICT = {
     "0229": {
         None: {
             "Name": "Houndoom",
-            "Type 1": "Dark",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 50,
@@ -3673,8 +3674,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Houndoom": {
             "Name": "Houndoom",
-            "Type 1": "Dark",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 90,
@@ -3686,8 +3687,8 @@ POCKET_MONSTERS_DICT = {
     "0230": {
         None: {
             "Name": "Kingdra",
-            "Type 1": "Water",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 95,
@@ -3699,7 +3700,7 @@ POCKET_MONSTERS_DICT = {
     "0231": {
         None: {
             "Name": "Phanpy",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 60,
@@ -3712,7 +3713,7 @@ POCKET_MONSTERS_DICT = {
     "0232": {
         None: {
             "Name": "Donphan",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 120,
@@ -3725,7 +3726,7 @@ POCKET_MONSTERS_DICT = {
     "0233": {
         None: {
             "Name": "Porygon2",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 80,
@@ -3738,7 +3739,7 @@ POCKET_MONSTERS_DICT = {
     "0234": {
         None: {
             "Name": "Stantler",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 95,
@@ -3751,7 +3752,7 @@ POCKET_MONSTERS_DICT = {
     "0235": {
         None: {
             "Name": "Smeargle",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 20,
@@ -3764,7 +3765,7 @@ POCKET_MONSTERS_DICT = {
     "0236": {
         None: {
             "Name": "Tyrogue",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 35,
@@ -3777,7 +3778,7 @@ POCKET_MONSTERS_DICT = {
     "0237": {
         None: {
             "Name": "Hitmontop",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 95,
@@ -3790,8 +3791,8 @@ POCKET_MONSTERS_DICT = {
     "0238": {
         None: {
             "Name": "Smoochum",
-            "Type 1": "Ice",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 15,
@@ -3803,7 +3804,7 @@ POCKET_MONSTERS_DICT = {
     "0239": {
         None: {
             "Name": "Elekid",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 63,
@@ -3816,7 +3817,7 @@ POCKET_MONSTERS_DICT = {
     "0240": {
         None: {
             "Name": "Magby",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 75,
@@ -3829,7 +3830,7 @@ POCKET_MONSTERS_DICT = {
     "0241": {
         None: {
             "Name": "Miltank",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 80,
@@ -3842,7 +3843,7 @@ POCKET_MONSTERS_DICT = {
     "0242": {
         None: {
             "Name": "Blissey",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 255,
             StatsEnum.ATTACK: 10,
@@ -3855,7 +3856,7 @@ POCKET_MONSTERS_DICT = {
     "0243": {
         None: {
             "Name": "Raikou",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 85,
@@ -3868,7 +3869,7 @@ POCKET_MONSTERS_DICT = {
     "0244": {
         None: {
             "Name": "Entei",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 115,
@@ -3881,7 +3882,7 @@ POCKET_MONSTERS_DICT = {
     "0245": {
         None: {
             "Name": "Suicune",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 75,
@@ -3894,8 +3895,8 @@ POCKET_MONSTERS_DICT = {
     "0246": {
         None: {
             "Name": "Larvitar",
-            "Type 1": "Rock",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 64,
             StatsEnum.DEFENSE: 50,
@@ -3907,8 +3908,8 @@ POCKET_MONSTERS_DICT = {
     "0247": {
         None: {
             "Name": "Pupitar",
-            "Type 1": "Rock",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 84,
             StatsEnum.DEFENSE: 70,
@@ -3920,8 +3921,8 @@ POCKET_MONSTERS_DICT = {
     "0248": {
         None: {
             "Name": "Tyranitar",
-            "Type 1": "Rock",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 134,
             StatsEnum.DEFENSE: 110,
@@ -3931,8 +3932,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Tyranitar": {
             "Name": "Tyranitar",
-            "Type 1": "Rock",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 164,
             StatsEnum.DEFENSE: 150,
@@ -3944,8 +3945,8 @@ POCKET_MONSTERS_DICT = {
     "0249": {
         None: {
             "Name": "Lugia",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 106,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 130,
@@ -3957,8 +3958,8 @@ POCKET_MONSTERS_DICT = {
     "0250": {
         None: {
             "Name": "Ho-oh",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 106,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 90,
@@ -3970,8 +3971,8 @@ POCKET_MONSTERS_DICT = {
     "0251": {
         None: {
             "Name": "Celebi",
-            "Type 1": "Psychic",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 100,
@@ -3983,7 +3984,7 @@ POCKET_MONSTERS_DICT = {
     "0252": {
         None: {
             "Name": "Treecko",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
@@ -3996,7 +3997,7 @@ POCKET_MONSTERS_DICT = {
     "0253": {
         None: {
             "Name": "Grovyle",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
@@ -4009,7 +4010,7 @@ POCKET_MONSTERS_DICT = {
     "0254": {
         None: {
             "Name": "Sceptile",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
@@ -4020,8 +4021,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Sceptile": {
             "Name": "Sceptile",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 75,
@@ -4033,7 +4034,7 @@ POCKET_MONSTERS_DICT = {
     "0255": {
         None: {
             "Name": "Torchic",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 60,
@@ -4046,8 +4047,8 @@ POCKET_MONSTERS_DICT = {
     "0256": {
         None: {
             "Name": "Combusken",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 60,
@@ -4059,8 +4060,8 @@ POCKET_MONSTERS_DICT = {
     "0257": {
         None: {
             "Name": "Blaziken",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 70,
@@ -4070,8 +4071,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Blaziken": {
             "Name": "Blaziken",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 160,
             StatsEnum.DEFENSE: 80,
@@ -4083,7 +4084,7 @@ POCKET_MONSTERS_DICT = {
     "0258": {
         None: {
             "Name": "Mudkip",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 70,
@@ -4096,8 +4097,8 @@ POCKET_MONSTERS_DICT = {
     "0259": {
         None: {
             "Name": "Marshtomp",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 70,
@@ -4109,8 +4110,8 @@ POCKET_MONSTERS_DICT = {
     "0260": {
         None: {
             "Name": "Swampert",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 90,
@@ -4120,8 +4121,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Swampert": {
             "Name": "Swampert",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 150,
             StatsEnum.DEFENSE: 110,
@@ -4133,7 +4134,7 @@ POCKET_MONSTERS_DICT = {
     "0261": {
         None: {
             "Name": "Poochyena",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 55,
@@ -4146,7 +4147,7 @@ POCKET_MONSTERS_DICT = {
     "0262": {
         None: {
             "Name": "Mightyena",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 90,
@@ -4159,7 +4160,7 @@ POCKET_MONSTERS_DICT = {
     "0263": {
         None: {
             "Name": "Zigzagoon",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 30,
@@ -4170,8 +4171,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Zigzagoon": {
             "Name": "Zigzagoon",
-            "Type 1": "Dark",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 41,
@@ -4183,7 +4184,7 @@ POCKET_MONSTERS_DICT = {
     "0264": {
         None: {
             "Name": "Linoone",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 70,
@@ -4194,8 +4195,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Linoone": {
             "Name": "Linoone",
-            "Type 1": "Dark",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 61,
@@ -4207,7 +4208,7 @@ POCKET_MONSTERS_DICT = {
     "0265": {
         None: {
             "Name": "Wurmple",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 45,
@@ -4220,7 +4221,7 @@ POCKET_MONSTERS_DICT = {
     "0266": {
         None: {
             "Name": "Silcoon",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 35,
@@ -4233,8 +4234,8 @@ POCKET_MONSTERS_DICT = {
     "0267": {
         None: {
             "Name": "Beautifly",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 50,
@@ -4246,7 +4247,7 @@ POCKET_MONSTERS_DICT = {
     "0268": {
         None: {
             "Name": "Cascoon",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 35,
@@ -4259,8 +4260,8 @@ POCKET_MONSTERS_DICT = {
     "0269": {
         None: {
             "Name": "Dustox",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 70,
@@ -4272,8 +4273,8 @@ POCKET_MONSTERS_DICT = {
     "0270": {
         None: {
             "Name": "Lotad",
-            "Type 1": "Water",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 30,
@@ -4285,8 +4286,8 @@ POCKET_MONSTERS_DICT = {
     "0271": {
         None: {
             "Name": "Lombre",
-            "Type 1": "Water",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 50,
@@ -4298,8 +4299,8 @@ POCKET_MONSTERS_DICT = {
     "0272": {
         None: {
             "Name": "Ludicolo",
-            "Type 1": "Water",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 70,
@@ -4311,7 +4312,7 @@ POCKET_MONSTERS_DICT = {
     "0273": {
         None: {
             "Name": "Seedot",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
@@ -4324,8 +4325,8 @@ POCKET_MONSTERS_DICT = {
     "0274": {
         None: {
             "Name": "Nuzleaf",
-            "Type 1": "Grass",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 40,
@@ -4337,8 +4338,8 @@ POCKET_MONSTERS_DICT = {
     "0275": {
         None: {
             "Name": "Shiftry",
-            "Type 1": "Grass",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 60,
@@ -4350,8 +4351,8 @@ POCKET_MONSTERS_DICT = {
     "0276": {
         None: {
             "Name": "Taillow",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 30,
@@ -4363,8 +4364,8 @@ POCKET_MONSTERS_DICT = {
     "0277": {
         None: {
             "Name": "Swellow",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 60,
@@ -4376,8 +4377,8 @@ POCKET_MONSTERS_DICT = {
     "0278": {
         None: {
             "Name": "Wingull",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 30,
@@ -4389,8 +4390,8 @@ POCKET_MONSTERS_DICT = {
     "0279": {
         None: {
             "Name": "Pelipper",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 100,
@@ -4402,8 +4403,8 @@ POCKET_MONSTERS_DICT = {
     "0280": {
         None: {
             "Name": "Ralts",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 28,
             StatsEnum.ATTACK: 25,
             StatsEnum.DEFENSE: 25,
@@ -4415,8 +4416,8 @@ POCKET_MONSTERS_DICT = {
     "0281": {
         None: {
             "Name": "Kirlia",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 35,
@@ -4428,8 +4429,8 @@ POCKET_MONSTERS_DICT = {
     "0282": {
         None: {
             "Name": "Gardevoir",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 65,
@@ -4439,8 +4440,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Gardevoir": {
             "Name": "Gardevoir",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 65,
@@ -4452,8 +4453,8 @@ POCKET_MONSTERS_DICT = {
     "0283": {
         None: {
             "Name": "Surskit",
-            "Type 1": "Bug",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 32,
@@ -4465,8 +4466,8 @@ POCKET_MONSTERS_DICT = {
     "0284": {
         None: {
             "Name": "Masquerain",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 62,
@@ -4478,7 +4479,7 @@ POCKET_MONSTERS_DICT = {
     "0285": {
         None: {
             "Name": "Shroomish",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 40,
@@ -4491,8 +4492,8 @@ POCKET_MONSTERS_DICT = {
     "0286": {
         None: {
             "Name": "Breloom",
-            "Type 1": "Grass",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 80,
@@ -4504,7 +4505,7 @@ POCKET_MONSTERS_DICT = {
     "0287": {
         None: {
             "Name": "Slakoth",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
@@ -4517,7 +4518,7 @@ POCKET_MONSTERS_DICT = {
     "0288": {
         None: {
             "Name": "Vigoroth",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
@@ -4530,7 +4531,7 @@ POCKET_MONSTERS_DICT = {
     "0289": {
         None: {
             "Name": "Slaking",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 150,
             StatsEnum.ATTACK: 160,
@@ -4543,8 +4544,8 @@ POCKET_MONSTERS_DICT = {
     "0290": {
         None: {
             "Name": "Nincada",
-            "Type 1": "Bug",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 31,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 90,
@@ -4556,8 +4557,8 @@ POCKET_MONSTERS_DICT = {
     "0291": {
         None: {
             "Name": "Ninjask",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 45,
@@ -4569,8 +4570,8 @@ POCKET_MONSTERS_DICT = {
     "0292": {
         None: {
             "Name": "Shedinja",
-            "Type 1": "Bug",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 1,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 45,
@@ -4582,7 +4583,7 @@ POCKET_MONSTERS_DICT = {
     "0293": {
         None: {
             "Name": "Whismur",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 64,
             StatsEnum.ATTACK: 51,
@@ -4595,7 +4596,7 @@ POCKET_MONSTERS_DICT = {
     "0294": {
         None: {
             "Name": "Loudred",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 84,
             StatsEnum.ATTACK: 71,
@@ -4608,7 +4609,7 @@ POCKET_MONSTERS_DICT = {
     "0295": {
         None: {
             "Name": "Exploud",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 104,
             StatsEnum.ATTACK: 91,
@@ -4621,7 +4622,7 @@ POCKET_MONSTERS_DICT = {
     "0296": {
         None: {
             "Name": "Makuhita",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 60,
@@ -4634,7 +4635,7 @@ POCKET_MONSTERS_DICT = {
     "0297": {
         None: {
             "Name": "Hariyama",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 144,
             StatsEnum.ATTACK: 120,
@@ -4647,8 +4648,8 @@ POCKET_MONSTERS_DICT = {
     "0298": {
         None: {
             "Name": "Azurill",
-            "Type 1": "Normal",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 20,
             StatsEnum.DEFENSE: 40,
@@ -4660,7 +4661,7 @@ POCKET_MONSTERS_DICT = {
     "0299": {
         None: {
             "Name": "Nosepass",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 45,
@@ -4673,7 +4674,7 @@ POCKET_MONSTERS_DICT = {
     "0300": {
         None: {
             "Name": "Skitty",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 45,
@@ -4686,7 +4687,7 @@ POCKET_MONSTERS_DICT = {
     "0301": {
         None: {
             "Name": "Delcatty",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 65,
@@ -4699,8 +4700,8 @@ POCKET_MONSTERS_DICT = {
     "0302": {
         None: {
             "Name": "Sableye",
-            "Type 1": "Dark",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 75,
@@ -4710,8 +4711,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Sableye": {
             "Name": "Sableye",
-            "Type 1": "Dark",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 125,
@@ -4723,8 +4724,8 @@ POCKET_MONSTERS_DICT = {
     "0303": {
         None: {
             "Name": "Mawile",
-            "Type 1": "Steel",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 85,
@@ -4734,8 +4735,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Mawile": {
             "Name": "Mawile",
-            "Type 1": "Steel",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 125,
@@ -4747,8 +4748,8 @@ POCKET_MONSTERS_DICT = {
     "0304": {
         None: {
             "Name": "Aron",
-            "Type 1": "Steel",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 100,
@@ -4760,8 +4761,8 @@ POCKET_MONSTERS_DICT = {
     "0305": {
         None: {
             "Name": "Lairon",
-            "Type 1": "Steel",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 140,
@@ -4773,8 +4774,8 @@ POCKET_MONSTERS_DICT = {
     "0306": {
         None: {
             "Name": "Aggron",
-            "Type 1": "Steel",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 180,
@@ -4784,7 +4785,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Aggron": {
             "Name": "Aggron",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 140,
@@ -4797,8 +4798,8 @@ POCKET_MONSTERS_DICT = {
     "0307": {
         None: {
             "Name": "Meditite",
-            "Type 1": "Fighting",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 55,
@@ -4810,8 +4811,8 @@ POCKET_MONSTERS_DICT = {
     "0308": {
         None: {
             "Name": "Medicham",
-            "Type 1": "Fighting",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 75,
@@ -4821,8 +4822,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Medicham": {
             "Name": "Medicham",
-            "Type 1": "Fighting",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 85,
@@ -4834,7 +4835,7 @@ POCKET_MONSTERS_DICT = {
     "0309": {
         None: {
             "Name": "Electrike",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
@@ -4847,7 +4848,7 @@ POCKET_MONSTERS_DICT = {
     "0310": {
         None: {
             "Name": "Manectric",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 75,
@@ -4858,7 +4859,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Manectric": {
             "Name": "Manectric",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 75,
@@ -4871,7 +4872,7 @@ POCKET_MONSTERS_DICT = {
     "0311": {
         None: {
             "Name": "Plusle",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
@@ -4884,7 +4885,7 @@ POCKET_MONSTERS_DICT = {
     "0312": {
         None: {
             "Name": "Minun",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 40,
@@ -4897,7 +4898,7 @@ POCKET_MONSTERS_DICT = {
     "0313": {
         None: {
             "Name": "Volbeat",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 73,
@@ -4910,7 +4911,7 @@ POCKET_MONSTERS_DICT = {
     "0314": {
         None: {
             "Name": "Illumise",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 47,
@@ -4923,8 +4924,8 @@ POCKET_MONSTERS_DICT = {
     "0315": {
         None: {
             "Name": "Roselia",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 45,
@@ -4936,7 +4937,7 @@ POCKET_MONSTERS_DICT = {
     "0316": {
         None: {
             "Name": "Gulpin",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 43,
@@ -4949,7 +4950,7 @@ POCKET_MONSTERS_DICT = {
     "0317": {
         None: {
             "Name": "Swalot",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 73,
@@ -4962,8 +4963,8 @@ POCKET_MONSTERS_DICT = {
     "0318": {
         None: {
             "Name": "Carvanha",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 20,
@@ -4975,8 +4976,8 @@ POCKET_MONSTERS_DICT = {
     "0319": {
         None: {
             "Name": "Sharpedo",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 40,
@@ -4986,8 +4987,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Sharpedo": {
             "Name": "Sharpedo",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 140,
             StatsEnum.DEFENSE: 70,
@@ -4999,7 +5000,7 @@ POCKET_MONSTERS_DICT = {
     "0320": {
         None: {
             "Name": "Wailmer",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 130,
             StatsEnum.ATTACK: 70,
@@ -5012,7 +5013,7 @@ POCKET_MONSTERS_DICT = {
     "0321": {
         None: {
             "Name": "Wailord",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 170,
             StatsEnum.ATTACK: 90,
@@ -5025,8 +5026,8 @@ POCKET_MONSTERS_DICT = {
     "0322": {
         None: {
             "Name": "Numel",
-            "Type 1": "Fire",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 40,
@@ -5038,8 +5039,8 @@ POCKET_MONSTERS_DICT = {
     "0323": {
         None: {
             "Name": "Camerupt",
-            "Type 1": "Fire",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 70,
@@ -5049,8 +5050,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Camerupt": {
             "Name": "Camerupt",
-            "Type 1": "Fire",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 100,
@@ -5062,7 +5063,7 @@ POCKET_MONSTERS_DICT = {
     "0324": {
         None: {
             "Name": "Torkoal",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
@@ -5075,7 +5076,7 @@ POCKET_MONSTERS_DICT = {
     "0325": {
         None: {
             "Name": "Spoink",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 25,
@@ -5088,7 +5089,7 @@ POCKET_MONSTERS_DICT = {
     "0326": {
         None: {
             "Name": "Grumpig",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 45,
@@ -5101,7 +5102,7 @@ POCKET_MONSTERS_DICT = {
     "0327": {
         None: {
             "Name": "Spinda",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
@@ -5114,7 +5115,7 @@ POCKET_MONSTERS_DICT = {
     "0328": {
         None: {
             "Name": "Trapinch",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 100,
@@ -5127,8 +5128,8 @@ POCKET_MONSTERS_DICT = {
     "0329": {
         None: {
             "Name": "Vibrava",
-            "Type 1": "Ground",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 50,
@@ -5140,8 +5141,8 @@ POCKET_MONSTERS_DICT = {
     "0330": {
         None: {
             "Name": "Flygon",
-            "Type 1": "Ground",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 80,
@@ -5153,7 +5154,7 @@ POCKET_MONSTERS_DICT = {
     "0331": {
         None: {
             "Name": "Cacnea",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 85,
@@ -5166,8 +5167,8 @@ POCKET_MONSTERS_DICT = {
     "0332": {
         None: {
             "Name": "Cacturne",
-            "Type 1": "Grass",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 60,
@@ -5179,8 +5180,8 @@ POCKET_MONSTERS_DICT = {
     "0333": {
         None: {
             "Name": "Swablu",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 60,
@@ -5192,8 +5193,8 @@ POCKET_MONSTERS_DICT = {
     "0334": {
         None: {
             "Name": "Altaria",
-            "Type 1": "Dragon",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 90,
@@ -5203,8 +5204,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Altaria": {
             "Name": "Altaria",
-            "Type 1": "Dragon",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 110,
@@ -5216,7 +5217,7 @@ POCKET_MONSTERS_DICT = {
     "0335": {
         None: {
             "Name": "Zangoose",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 115,
@@ -5229,7 +5230,7 @@ POCKET_MONSTERS_DICT = {
     "0336": {
         None: {
             "Name": "Seviper",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 100,
@@ -5242,8 +5243,8 @@ POCKET_MONSTERS_DICT = {
     "0337": {
         None: {
             "Name": "Lunatone",
-            "Type 1": "Rock",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 65,
@@ -5255,8 +5256,8 @@ POCKET_MONSTERS_DICT = {
     "0338": {
         None: {
             "Name": "Solrock",
-            "Type 1": "Rock",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 85,
@@ -5268,8 +5269,8 @@ POCKET_MONSTERS_DICT = {
     "0339": {
         None: {
             "Name": "Barboach",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 48,
             StatsEnum.DEFENSE: 43,
@@ -5281,8 +5282,8 @@ POCKET_MONSTERS_DICT = {
     "0340": {
         None: {
             "Name": "Whiscash",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 78,
             StatsEnum.DEFENSE: 73,
@@ -5294,7 +5295,7 @@ POCKET_MONSTERS_DICT = {
     "0341": {
         None: {
             "Name": "Corphish",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 43,
             StatsEnum.ATTACK: 80,
@@ -5307,8 +5308,8 @@ POCKET_MONSTERS_DICT = {
     "0342": {
         None: {
             "Name": "Crawdaunt",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 63,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 85,
@@ -5320,8 +5321,8 @@ POCKET_MONSTERS_DICT = {
     "0343": {
         None: {
             "Name": "Baltoy",
-            "Type 1": "Ground",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 55,
@@ -5333,8 +5334,8 @@ POCKET_MONSTERS_DICT = {
     "0344": {
         None: {
             "Name": "Claydol",
-            "Type 1": "Ground",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 105,
@@ -5346,8 +5347,8 @@ POCKET_MONSTERS_DICT = {
     "0345": {
         None: {
             "Name": "Lileep",
-            "Type 1": "Rock",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 66,
             StatsEnum.ATTACK: 41,
             StatsEnum.DEFENSE: 77,
@@ -5359,8 +5360,8 @@ POCKET_MONSTERS_DICT = {
     "0346": {
         None: {
             "Name": "Cradily",
-            "Type 1": "Rock",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 86,
             StatsEnum.ATTACK: 81,
             StatsEnum.DEFENSE: 97,
@@ -5372,8 +5373,8 @@ POCKET_MONSTERS_DICT = {
     "0347": {
         None: {
             "Name": "Anorith",
-            "Type 1": "Rock",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 50,
@@ -5385,8 +5386,8 @@ POCKET_MONSTERS_DICT = {
     "0348": {
         None: {
             "Name": "Armaldo",
-            "Type 1": "Rock",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 100,
@@ -5398,7 +5399,7 @@ POCKET_MONSTERS_DICT = {
     "0349": {
         None: {
             "Name": "Feebas",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 20,
             StatsEnum.ATTACK: 15,
@@ -5411,7 +5412,7 @@ POCKET_MONSTERS_DICT = {
     "0350": {
         None: {
             "Name": "Milotic",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 60,
@@ -5424,7 +5425,7 @@ POCKET_MONSTERS_DICT = {
     "0351": {
         None: {
             "Name": "Castform",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
@@ -5435,7 +5436,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Sunny Form": {
             "Name": "Castform",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
@@ -5446,7 +5447,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Rainy Form": {
             "Name": "Castform",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
@@ -5457,7 +5458,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Snowy Form": {
             "Name": "Castform",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
@@ -5470,7 +5471,7 @@ POCKET_MONSTERS_DICT = {
     "0352": {
         None: {
             "Name": "Kecleon",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 90,
@@ -5483,7 +5484,7 @@ POCKET_MONSTERS_DICT = {
     "0353": {
         None: {
             "Name": "Shuppet",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 75,
@@ -5496,7 +5497,7 @@ POCKET_MONSTERS_DICT = {
     "0354": {
         None: {
             "Name": "Banette",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 64,
             StatsEnum.ATTACK: 115,
@@ -5507,7 +5508,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Banette": {
             "Name": "Banette",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 64,
             StatsEnum.ATTACK: 165,
@@ -5520,7 +5521,7 @@ POCKET_MONSTERS_DICT = {
     "0355": {
         None: {
             "Name": "Duskull",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 20,
             StatsEnum.ATTACK: 40,
@@ -5533,7 +5534,7 @@ POCKET_MONSTERS_DICT = {
     "0356": {
         None: {
             "Name": "Dusclops",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 70,
@@ -5546,8 +5547,8 @@ POCKET_MONSTERS_DICT = {
     "0357": {
         None: {
             "Name": "Tropius",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 99,
             StatsEnum.ATTACK: 68,
             StatsEnum.DEFENSE: 83,
@@ -5559,7 +5560,7 @@ POCKET_MONSTERS_DICT = {
     "0358": {
         None: {
             "Name": "Chimecho",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 50,
@@ -5572,7 +5573,7 @@ POCKET_MONSTERS_DICT = {
     "0359": {
         None: {
             "Name": "Absol",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 130,
@@ -5583,7 +5584,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Absol": {
             "Name": "Absol",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 150,
@@ -5596,7 +5597,7 @@ POCKET_MONSTERS_DICT = {
     "0360": {
         None: {
             "Name": "Wynaut",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 23,
@@ -5609,7 +5610,7 @@ POCKET_MONSTERS_DICT = {
     "0361": {
         None: {
             "Name": "Snorunt",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
@@ -5622,7 +5623,7 @@ POCKET_MONSTERS_DICT = {
     "0362": {
         None: {
             "Name": "Glalie",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
@@ -5633,7 +5634,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Glalie": {
             "Name": "Glalie",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
@@ -5646,8 +5647,8 @@ POCKET_MONSTERS_DICT = {
     "0363": {
         None: {
             "Name": "Spheal",
-            "Type 1": "Ice",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 50,
@@ -5659,8 +5660,8 @@ POCKET_MONSTERS_DICT = {
     "0364": {
         None: {
             "Name": "Sealeo",
-            "Type 1": "Ice",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 70,
@@ -5672,8 +5673,8 @@ POCKET_MONSTERS_DICT = {
     "0365": {
         None: {
             "Name": "Walrein",
-            "Type 1": "Ice",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 90,
@@ -5685,7 +5686,7 @@ POCKET_MONSTERS_DICT = {
     "0366": {
         None: {
             "Name": "Clamperl",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 64,
@@ -5698,7 +5699,7 @@ POCKET_MONSTERS_DICT = {
     "0367": {
         None: {
             "Name": "Huntail",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 104,
@@ -5711,7 +5712,7 @@ POCKET_MONSTERS_DICT = {
     "0368": {
         None: {
             "Name": "Gorebyss",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 84,
@@ -5724,8 +5725,8 @@ POCKET_MONSTERS_DICT = {
     "0369": {
         None: {
             "Name": "Relicanth",
-            "Type 1": "Water",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 130,
@@ -5737,7 +5738,7 @@ POCKET_MONSTERS_DICT = {
     "0370": {
         None: {
             "Name": "Luvdisc",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 43,
             StatsEnum.ATTACK: 30,
@@ -5750,7 +5751,7 @@ POCKET_MONSTERS_DICT = {
     "0371": {
         None: {
             "Name": "Bagon",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 75,
@@ -5763,7 +5764,7 @@ POCKET_MONSTERS_DICT = {
     "0372": {
         None: {
             "Name": "Shelgon",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 95,
@@ -5776,8 +5777,8 @@ POCKET_MONSTERS_DICT = {
     "0373": {
         None: {
             "Name": "Salamence",
-            "Type 1": "Dragon",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 80,
@@ -5787,8 +5788,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Salamence": {
             "Name": "Salamence",
-            "Type 1": "Dragon",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 145,
             StatsEnum.DEFENSE: 130,
@@ -5800,8 +5801,8 @@ POCKET_MONSTERS_DICT = {
     "0374": {
         None: {
             "Name": "Beldum",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 80,
@@ -5813,8 +5814,8 @@ POCKET_MONSTERS_DICT = {
     "0375": {
         None: {
             "Name": "Metang",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 100,
@@ -5826,8 +5827,8 @@ POCKET_MONSTERS_DICT = {
     "0376": {
         None: {
             "Name": "Metagross",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 130,
@@ -5837,8 +5838,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Metagross": {
             "Name": "Metagross",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 145,
             StatsEnum.DEFENSE: 150,
@@ -5850,7 +5851,7 @@ POCKET_MONSTERS_DICT = {
     "0377": {
         None: {
             "Name": "Regirock",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
@@ -5863,7 +5864,7 @@ POCKET_MONSTERS_DICT = {
     "0378": {
         None: {
             "Name": "Regice",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 50,
@@ -5876,7 +5877,7 @@ POCKET_MONSTERS_DICT = {
     "0379": {
         None: {
             "Name": "Registeel",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 75,
@@ -5889,8 +5890,8 @@ POCKET_MONSTERS_DICT = {
     "0380": {
         None: {
             "Name": "Latias",
-            "Type 1": "Dragon",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 90,
@@ -5900,8 +5901,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Latias": {
             "Name": "Latias",
-            "Type 1": "Dragon",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 120,
@@ -5913,8 +5914,8 @@ POCKET_MONSTERS_DICT = {
     "0381": {
         None: {
             "Name": "Latios",
-            "Type 1": "Dragon",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 80,
@@ -5924,8 +5925,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Latios": {
             "Name": "Latios",
-            "Type 1": "Dragon",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 100,
@@ -5937,7 +5938,7 @@ POCKET_MONSTERS_DICT = {
     "0382": {
         None: {
             "Name": "Kyogre",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
@@ -5948,7 +5949,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Primal Kyogre": {
             "Name": "Kyogre",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 150,
@@ -5961,7 +5962,7 @@ POCKET_MONSTERS_DICT = {
     "0383": {
         None: {
             "Name": "Groudon",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 150,
@@ -5972,8 +5973,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Primal Groudon": {
             "Name": "Groudon",
-            "Type 1": "Ground",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 180,
             StatsEnum.DEFENSE: 160,
@@ -5985,8 +5986,8 @@ POCKET_MONSTERS_DICT = {
     "0384": {
         None: {
             "Name": "Rayquaza",
-            "Type 1": "Dragon",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 150,
             StatsEnum.DEFENSE: 90,
@@ -5996,8 +5997,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Rayquaza": {
             "Name": "Rayquaza",
-            "Type 1": "Dragon",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 180,
             StatsEnum.DEFENSE: 100,
@@ -6009,8 +6010,8 @@ POCKET_MONSTERS_DICT = {
     "0385": {
         None: {
             "Name": "Jirachi",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 100,
@@ -6022,7 +6023,7 @@ POCKET_MONSTERS_DICT = {
     "0386": {
         "Normal Forme": {
             "Name": "Deoxys",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 150,
@@ -6033,7 +6034,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Attack Forme": {
             "Name": "Deoxys",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 180,
@@ -6044,7 +6045,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Defense Forme": {
             "Name": "Deoxys",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 70,
@@ -6055,7 +6056,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Speed Forme": {
             "Name": "Deoxys",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 95,
@@ -6068,7 +6069,7 @@ POCKET_MONSTERS_DICT = {
     "0387": {
         None: {
             "Name": "Turtwig",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 68,
@@ -6081,7 +6082,7 @@ POCKET_MONSTERS_DICT = {
     "0388": {
         None: {
             "Name": "Grotle",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 89,
@@ -6094,8 +6095,8 @@ POCKET_MONSTERS_DICT = {
     "0389": {
         None: {
             "Name": "Torterra",
-            "Type 1": "Grass",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 109,
             StatsEnum.DEFENSE: 105,
@@ -6107,7 +6108,7 @@ POCKET_MONSTERS_DICT = {
     "0390": {
         None: {
             "Name": "Chimchar",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 58,
@@ -6120,8 +6121,8 @@ POCKET_MONSTERS_DICT = {
     "0391": {
         None: {
             "Name": "Monferno",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 64,
             StatsEnum.ATTACK: 78,
             StatsEnum.DEFENSE: 52,
@@ -6133,8 +6134,8 @@ POCKET_MONSTERS_DICT = {
     "0392": {
         None: {
             "Name": "Infernape",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 76,
             StatsEnum.ATTACK: 104,
             StatsEnum.DEFENSE: 71,
@@ -6146,7 +6147,7 @@ POCKET_MONSTERS_DICT = {
     "0393": {
         None: {
             "Name": "Piplup",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 53,
             StatsEnum.ATTACK: 51,
@@ -6159,7 +6160,7 @@ POCKET_MONSTERS_DICT = {
     "0394": {
         None: {
             "Name": "Prinplup",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 64,
             StatsEnum.ATTACK: 66,
@@ -6172,8 +6173,8 @@ POCKET_MONSTERS_DICT = {
     "0395": {
         None: {
             "Name": "Empoleon",
-            "Type 1": "Water",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 84,
             StatsEnum.ATTACK: 86,
             StatsEnum.DEFENSE: 88,
@@ -6185,8 +6186,8 @@ POCKET_MONSTERS_DICT = {
     "0396": {
         None: {
             "Name": "Starly",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 30,
@@ -6198,8 +6199,8 @@ POCKET_MONSTERS_DICT = {
     "0397": {
         None: {
             "Name": "Staravia",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 50,
@@ -6211,8 +6212,8 @@ POCKET_MONSTERS_DICT = {
     "0398": {
         None: {
             "Name": "Staraptor",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 70,
@@ -6224,7 +6225,7 @@ POCKET_MONSTERS_DICT = {
     "0399": {
         None: {
             "Name": "Bidoof",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 45,
@@ -6237,8 +6238,8 @@ POCKET_MONSTERS_DICT = {
     "0400": {
         None: {
             "Name": "Bibarel",
-            "Type 1": "Normal",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 60,
@@ -6250,7 +6251,7 @@ POCKET_MONSTERS_DICT = {
     "0401": {
         None: {
             "Name": "Kricketot",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 37,
             StatsEnum.ATTACK: 25,
@@ -6263,7 +6264,7 @@ POCKET_MONSTERS_DICT = {
     "0402": {
         None: {
             "Name": "Kricketune",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 77,
             StatsEnum.ATTACK: 85,
@@ -6276,7 +6277,7 @@ POCKET_MONSTERS_DICT = {
     "0403": {
         None: {
             "Name": "Shinx",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 65,
@@ -6289,7 +6290,7 @@ POCKET_MONSTERS_DICT = {
     "0404": {
         None: {
             "Name": "Luxio",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
@@ -6302,7 +6303,7 @@ POCKET_MONSTERS_DICT = {
     "0405": {
         None: {
             "Name": "Luxray",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
@@ -6315,8 +6316,8 @@ POCKET_MONSTERS_DICT = {
     "0406": {
         None: {
             "Name": "Budew",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 35,
@@ -6328,8 +6329,8 @@ POCKET_MONSTERS_DICT = {
     "0407": {
         None: {
             "Name": "Roserade",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 65,
@@ -6341,7 +6342,7 @@ POCKET_MONSTERS_DICT = {
     "0408": {
         None: {
             "Name": "Cranidos",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 125,
@@ -6354,7 +6355,7 @@ POCKET_MONSTERS_DICT = {
     "0409": {
         None: {
             "Name": "Rampardos",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 165,
@@ -6367,8 +6368,8 @@ POCKET_MONSTERS_DICT = {
     "0410": {
         None: {
             "Name": "Shieldon",
-            "Type 1": "Rock",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 42,
             StatsEnum.DEFENSE: 118,
@@ -6380,8 +6381,8 @@ POCKET_MONSTERS_DICT = {
     "0411": {
         None: {
             "Name": "Bastiodon",
-            "Type 1": "Rock",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 52,
             StatsEnum.DEFENSE: 168,
@@ -6393,7 +6394,7 @@ POCKET_MONSTERS_DICT = {
     "0412": {
         "Plant Cloak": {
             "Name": "Burmy",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 29,
@@ -6404,7 +6405,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Sandy Cloak": {
             "Name": "Burmy",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 29,
@@ -6415,7 +6416,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Trash Cloak": {
             "Name": "Burmy",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 29,
@@ -6428,8 +6429,8 @@ POCKET_MONSTERS_DICT = {
     "0413": {
         "Plant Cloak": {
             "Name": "Wormadam",
-            "Type 1": "Bug",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 59,
             StatsEnum.DEFENSE: 85,
@@ -6439,8 +6440,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Sandy Cloak": {
             "Name": "Wormadam",
-            "Type 1": "Bug",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 79,
             StatsEnum.DEFENSE: 105,
@@ -6450,8 +6451,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Trash Cloak": {
             "Name": "Wormadam",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 69,
             StatsEnum.DEFENSE: 95,
@@ -6463,8 +6464,8 @@ POCKET_MONSTERS_DICT = {
     "0414": {
         None: {
             "Name": "Mothim",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 94,
             StatsEnum.DEFENSE: 50,
@@ -6476,8 +6477,8 @@ POCKET_MONSTERS_DICT = {
     "0415": {
         None: {
             "Name": "Combee",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 42,
@@ -6489,8 +6490,8 @@ POCKET_MONSTERS_DICT = {
     "0416": {
         None: {
             "Name": "Vespiquen",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 102,
@@ -6502,7 +6503,7 @@ POCKET_MONSTERS_DICT = {
     "0417": {
         None: {
             "Name": "Pachirisu",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 45,
@@ -6515,7 +6516,7 @@ POCKET_MONSTERS_DICT = {
     "0418": {
         None: {
             "Name": "Buizel",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 65,
@@ -6528,7 +6529,7 @@ POCKET_MONSTERS_DICT = {
     "0419": {
         None: {
             "Name": "Floatzel",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 105,
@@ -6541,7 +6542,7 @@ POCKET_MONSTERS_DICT = {
     "0420": {
         None: {
             "Name": "Cherubi",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 35,
@@ -6554,7 +6555,7 @@ POCKET_MONSTERS_DICT = {
     "0421": {
         None: {
             "Name": "Cherrim",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 60,
@@ -6567,7 +6568,7 @@ POCKET_MONSTERS_DICT = {
     "0422": {
         None: {
             "Name": "Shellos",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 76,
             StatsEnum.ATTACK: 48,
@@ -6580,8 +6581,8 @@ POCKET_MONSTERS_DICT = {
     "0423": {
         None: {
             "Name": "Gastrodon",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 111,
             StatsEnum.ATTACK: 83,
             StatsEnum.DEFENSE: 68,
@@ -6593,7 +6594,7 @@ POCKET_MONSTERS_DICT = {
     "0424": {
         None: {
             "Name": "Ambipom",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 100,
@@ -6606,8 +6607,8 @@ POCKET_MONSTERS_DICT = {
     "0425": {
         None: {
             "Name": "Drifloon",
-            "Type 1": "Ghost",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 34,
@@ -6619,8 +6620,8 @@ POCKET_MONSTERS_DICT = {
     "0426": {
         None: {
             "Name": "Drifblim",
-            "Type 1": "Ghost",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 150,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 44,
@@ -6632,7 +6633,7 @@ POCKET_MONSTERS_DICT = {
     "0427": {
         None: {
             "Name": "Buneary",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 66,
@@ -6645,7 +6646,7 @@ POCKET_MONSTERS_DICT = {
     "0428": {
         None: {
             "Name": "Lopunny",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 76,
@@ -6656,8 +6657,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Lopunny": {
             "Name": "Lopunny",
-            "Type 1": "Normal",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 136,
             StatsEnum.DEFENSE: 94,
@@ -6669,7 +6670,7 @@ POCKET_MONSTERS_DICT = {
     "0429": {
         None: {
             "Name": "Mismagius",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
@@ -6682,8 +6683,8 @@ POCKET_MONSTERS_DICT = {
     "0430": {
         None: {
             "Name": "Honchkrow",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 52,
@@ -6695,7 +6696,7 @@ POCKET_MONSTERS_DICT = {
     "0431": {
         None: {
             "Name": "Glameow",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 49,
             StatsEnum.ATTACK: 55,
@@ -6708,7 +6709,7 @@ POCKET_MONSTERS_DICT = {
     "0432": {
         None: {
             "Name": "Purugly",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 82,
@@ -6721,7 +6722,7 @@ POCKET_MONSTERS_DICT = {
     "0433": {
         None: {
             "Name": "Chingling",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
@@ -6734,8 +6735,8 @@ POCKET_MONSTERS_DICT = {
     "0434": {
         None: {
             "Name": "Stunky",
-            "Type 1": "Poison",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 63,
             StatsEnum.ATTACK: 63,
             StatsEnum.DEFENSE: 47,
@@ -6747,8 +6748,8 @@ POCKET_MONSTERS_DICT = {
     "0435": {
         None: {
             "Name": "Skuntank",
-            "Type 1": "Poison",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 103,
             StatsEnum.ATTACK: 93,
             StatsEnum.DEFENSE: 67,
@@ -6760,8 +6761,8 @@ POCKET_MONSTERS_DICT = {
     "0436": {
         None: {
             "Name": "Bronzor",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 57,
             StatsEnum.ATTACK: 24,
             StatsEnum.DEFENSE: 86,
@@ -6773,8 +6774,8 @@ POCKET_MONSTERS_DICT = {
     "0437": {
         None: {
             "Name": "Bronzong",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 89,
             StatsEnum.DEFENSE: 116,
@@ -6786,7 +6787,7 @@ POCKET_MONSTERS_DICT = {
     "0438": {
         None: {
             "Name": "Bonsly",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 80,
@@ -6799,8 +6800,8 @@ POCKET_MONSTERS_DICT = {
     "0439": {
         None: {
             "Name": "Mime Jr.",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 20,
             StatsEnum.ATTACK: 25,
             StatsEnum.DEFENSE: 45,
@@ -6812,7 +6813,7 @@ POCKET_MONSTERS_DICT = {
     "0440": {
         None: {
             "Name": "Happiny",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 5,
@@ -6825,8 +6826,8 @@ POCKET_MONSTERS_DICT = {
     "0441": {
         None: {
             "Name": "Chatot",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 76,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 45,
@@ -6838,8 +6839,8 @@ POCKET_MONSTERS_DICT = {
     "0442": {
         None: {
             "Name": "Spiritomb",
-            "Type 1": "Ghost",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 92,
             StatsEnum.DEFENSE: 108,
@@ -6851,8 +6852,8 @@ POCKET_MONSTERS_DICT = {
     "0443": {
         None: {
             "Name": "Gible",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 45,
@@ -6864,8 +6865,8 @@ POCKET_MONSTERS_DICT = {
     "0444": {
         None: {
             "Name": "Gabite",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 65,
@@ -6877,8 +6878,8 @@ POCKET_MONSTERS_DICT = {
     "0445": {
         None: {
             "Name": "Garchomp",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 108,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 95,
@@ -6888,8 +6889,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Garchomp": {
             "Name": "Garchomp",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 108,
             StatsEnum.ATTACK: 170,
             StatsEnum.DEFENSE: 115,
@@ -6901,7 +6902,7 @@ POCKET_MONSTERS_DICT = {
     "0446": {
         None: {
             "Name": "Munchlax",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 135,
             StatsEnum.ATTACK: 85,
@@ -6914,7 +6915,7 @@ POCKET_MONSTERS_DICT = {
     "0447": {
         None: {
             "Name": "Riolu",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 70,
@@ -6927,8 +6928,8 @@ POCKET_MONSTERS_DICT = {
     "0448": {
         None: {
             "Name": "Lucario",
-            "Type 1": "Fighting",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 70,
@@ -6938,8 +6939,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Lucario": {
             "Name": "Lucario",
-            "Type 1": "Fighting",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 145,
             StatsEnum.DEFENSE: 88,
@@ -6951,7 +6952,7 @@ POCKET_MONSTERS_DICT = {
     "0449": {
         None: {
             "Name": "Hippopotas",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 72,
@@ -6964,7 +6965,7 @@ POCKET_MONSTERS_DICT = {
     "0450": {
         None: {
             "Name": "Hippowdon",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 108,
             StatsEnum.ATTACK: 112,
@@ -6977,8 +6978,8 @@ POCKET_MONSTERS_DICT = {
     "0451": {
         None: {
             "Name": "Skorupi",
-            "Type 1": "Poison",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 90,
@@ -6990,8 +6991,8 @@ POCKET_MONSTERS_DICT = {
     "0452": {
         None: {
             "Name": "Drapion",
-            "Type 1": "Poison",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 110,
@@ -7003,8 +7004,8 @@ POCKET_MONSTERS_DICT = {
     "0453": {
         None: {
             "Name": "Croagunk",
-            "Type 1": "Poison",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 61,
             StatsEnum.DEFENSE: 40,
@@ -7016,8 +7017,8 @@ POCKET_MONSTERS_DICT = {
     "0454": {
         None: {
             "Name": "Toxicroak",
-            "Type 1": "Poison",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 83,
             StatsEnum.ATTACK: 106,
             StatsEnum.DEFENSE: 65,
@@ -7029,7 +7030,7 @@ POCKET_MONSTERS_DICT = {
     "0455": {
         None: {
             "Name": "Carnivine",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 100,
@@ -7042,7 +7043,7 @@ POCKET_MONSTERS_DICT = {
     "0456": {
         None: {
             "Name": "Finneon",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 49,
             StatsEnum.ATTACK: 49,
@@ -7055,7 +7056,7 @@ POCKET_MONSTERS_DICT = {
     "0457": {
         None: {
             "Name": "Lumineon",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 69,
             StatsEnum.ATTACK: 69,
@@ -7068,8 +7069,8 @@ POCKET_MONSTERS_DICT = {
     "0458": {
         None: {
             "Name": "Mantyke",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 20,
             StatsEnum.DEFENSE: 50,
@@ -7081,8 +7082,8 @@ POCKET_MONSTERS_DICT = {
     "0459": {
         None: {
             "Name": "Snover",
-            "Type 1": "Grass",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 62,
             StatsEnum.DEFENSE: 50,
@@ -7094,8 +7095,8 @@ POCKET_MONSTERS_DICT = {
     "0460": {
         None: {
             "Name": "Abomasnow",
-            "Type 1": "Grass",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 92,
             StatsEnum.DEFENSE: 75,
@@ -7105,8 +7106,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Abomasnow": {
             "Name": "Abomasnow",
-            "Type 1": "Grass",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 132,
             StatsEnum.DEFENSE: 105,
@@ -7118,8 +7119,8 @@ POCKET_MONSTERS_DICT = {
     "0461": {
         None: {
             "Name": "Weavile",
-            "Type 1": "Dark",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 65,
@@ -7131,8 +7132,8 @@ POCKET_MONSTERS_DICT = {
     "0462": {
         None: {
             "Name": "Magnezone",
-            "Type 1": "Electric",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 115,
@@ -7144,7 +7145,7 @@ POCKET_MONSTERS_DICT = {
     "0463": {
         None: {
             "Name": "Lickilicky",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 85,
@@ -7157,8 +7158,8 @@ POCKET_MONSTERS_DICT = {
     "0464": {
         None: {
             "Name": "Rhyperior",
-            "Type 1": "Ground",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 140,
             StatsEnum.DEFENSE: 130,
@@ -7170,7 +7171,7 @@ POCKET_MONSTERS_DICT = {
     "0465": {
         None: {
             "Name": "Tangrowth",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
@@ -7183,7 +7184,7 @@ POCKET_MONSTERS_DICT = {
     "0466": {
         None: {
             "Name": "Electivire",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 123,
@@ -7196,7 +7197,7 @@ POCKET_MONSTERS_DICT = {
     "0467": {
         None: {
             "Name": "Magmortar",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 95,
@@ -7209,8 +7210,8 @@ POCKET_MONSTERS_DICT = {
     "0468": {
         None: {
             "Name": "Togekiss",
-            "Type 1": "Fairy",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 95,
@@ -7222,8 +7223,8 @@ POCKET_MONSTERS_DICT = {
     "0469": {
         None: {
             "Name": "Yanmega",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 86,
             StatsEnum.ATTACK: 76,
             StatsEnum.DEFENSE: 86,
@@ -7235,7 +7236,7 @@ POCKET_MONSTERS_DICT = {
     "0470": {
         None: {
             "Name": "Leafeon",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 110,
@@ -7248,7 +7249,7 @@ POCKET_MONSTERS_DICT = {
     "0471": {
         None: {
             "Name": "Glaceon",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 60,
@@ -7261,8 +7262,8 @@ POCKET_MONSTERS_DICT = {
     "0472": {
         None: {
             "Name": "Gliscor",
-            "Type 1": "Ground",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 125,
@@ -7274,8 +7275,8 @@ POCKET_MONSTERS_DICT = {
     "0473": {
         None: {
             "Name": "Mamoswine",
-            "Type 1": "Ice",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 80,
@@ -7287,7 +7288,7 @@ POCKET_MONSTERS_DICT = {
     "0474": {
         None: {
             "Name": "Porygon-Z",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 80,
@@ -7300,8 +7301,8 @@ POCKET_MONSTERS_DICT = {
     "0475": {
         None: {
             "Name": "Gallade",
-            "Type 1": "Psychic",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 65,
@@ -7311,8 +7312,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Gallade": {
             "Name": "Gallade",
-            "Type 1": "Psychic",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 165,
             StatsEnum.DEFENSE: 95,
@@ -7324,8 +7325,8 @@ POCKET_MONSTERS_DICT = {
     "0476": {
         None: {
             "Name": "Probopass",
-            "Type 1": "Rock",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 145,
@@ -7337,7 +7338,7 @@ POCKET_MONSTERS_DICT = {
     "0477": {
         None: {
             "Name": "Dusknoir",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 100,
@@ -7350,8 +7351,8 @@ POCKET_MONSTERS_DICT = {
     "0478": {
         None: {
             "Name": "Froslass",
-            "Type 1": "Ice",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 70,
@@ -7363,8 +7364,8 @@ POCKET_MONSTERS_DICT = {
     "0479": {
         None: {
             "Name": "Rotom",
-            "Type 1": "Electric",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 77,
@@ -7374,8 +7375,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Heat Rotom": {
             "Name": "Rotom",
-            "Type 1": "Electric",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 107,
@@ -7385,8 +7386,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Wash Rotom": {
             "Name": "Rotom",
-            "Type 1": "Electric",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 107,
@@ -7396,8 +7397,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Frost Rotom": {
             "Name": "Rotom",
-            "Type 1": "Electric",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 107,
@@ -7407,8 +7408,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Fan Rotom": {
             "Name": "Rotom",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 107,
@@ -7418,8 +7419,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mow Rotom": {
             "Name": "Rotom",
-            "Type 1": "Electric",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 107,
@@ -7431,7 +7432,7 @@ POCKET_MONSTERS_DICT = {
     "0480": {
         None: {
             "Name": "Uxie",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 75,
@@ -7444,7 +7445,7 @@ POCKET_MONSTERS_DICT = {
     "0481": {
         None: {
             "Name": "Mesprit",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 105,
@@ -7457,7 +7458,7 @@ POCKET_MONSTERS_DICT = {
     "0482": {
         None: {
             "Name": "Azelf",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 125,
@@ -7470,8 +7471,8 @@ POCKET_MONSTERS_DICT = {
     "0483": {
         None: {
             "Name": "Dialga",
-            "Type 1": "Steel",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 120,
@@ -7481,8 +7482,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Origin Forme": {
             "Name": "Dialga",
-            "Type 1": "Steel",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 120,
@@ -7494,8 +7495,8 @@ POCKET_MONSTERS_DICT = {
     "0484": {
         None: {
             "Name": "Palkia",
-            "Type 1": "Water",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 100,
@@ -7505,8 +7506,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Origin Forme": {
             "Name": "Palkia",
-            "Type 1": "Water",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 100,
@@ -7518,8 +7519,8 @@ POCKET_MONSTERS_DICT = {
     "0485": {
         None: {
             "Name": "Heatran",
-            "Type 1": "Fire",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 106,
@@ -7531,7 +7532,7 @@ POCKET_MONSTERS_DICT = {
     "0486": {
         None: {
             "Name": "Regigigas",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 160,
@@ -7544,8 +7545,8 @@ POCKET_MONSTERS_DICT = {
     "0487": {
         "Altered Forme": {
             "Name": "Giratina",
-            "Type 1": "Ghost",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 150,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 120,
@@ -7555,8 +7556,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Origin Forme": {
             "Name": "Giratina",
-            "Type 1": "Ghost",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 150,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 100,
@@ -7568,7 +7569,7 @@ POCKET_MONSTERS_DICT = {
     "0488": {
         None: {
             "Name": "Cresselia",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 70,
@@ -7581,7 +7582,7 @@ POCKET_MONSTERS_DICT = {
     "0489": {
         None: {
             "Name": "Phione",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
@@ -7594,7 +7595,7 @@ POCKET_MONSTERS_DICT = {
     "0490": {
         None: {
             "Name": "Manaphy",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
@@ -7607,7 +7608,7 @@ POCKET_MONSTERS_DICT = {
     "0491": {
         None: {
             "Name": "Darkrai",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 90,
@@ -7620,7 +7621,7 @@ POCKET_MONSTERS_DICT = {
     "0492": {
         "Land Forme": {
             "Name": "Shaymin",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
@@ -7631,8 +7632,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Sky Forme": {
             "Name": "Shaymin",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 103,
             StatsEnum.DEFENSE: 75,
@@ -7644,7 +7645,7 @@ POCKET_MONSTERS_DICT = {
     "0493": {
         None: {
             "Name": "Arceus",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 120,
@@ -7657,8 +7658,8 @@ POCKET_MONSTERS_DICT = {
     "0494": {
         None: {
             "Name": "Victini",
-            "Type 1": "Psychic",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 100,
@@ -7670,7 +7671,7 @@ POCKET_MONSTERS_DICT = {
     "0495": {
         None: {
             "Name": "Snivy",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 45,
@@ -7683,7 +7684,7 @@ POCKET_MONSTERS_DICT = {
     "0496": {
         None: {
             "Name": "Servine",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
@@ -7696,7 +7697,7 @@ POCKET_MONSTERS_DICT = {
     "0497": {
         None: {
             "Name": "Serperior",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 75,
@@ -7709,7 +7710,7 @@ POCKET_MONSTERS_DICT = {
     "0498": {
         None: {
             "Name": "Tepig",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 63,
@@ -7722,8 +7723,8 @@ POCKET_MONSTERS_DICT = {
     "0499": {
         None: {
             "Name": "Pignite",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 93,
             StatsEnum.DEFENSE: 55,
@@ -7735,8 +7736,8 @@ POCKET_MONSTERS_DICT = {
     "0500": {
         None: {
             "Name": "Emboar",
-            "Type 1": "Fire",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 123,
             StatsEnum.DEFENSE: 65,
@@ -7748,7 +7749,7 @@ POCKET_MONSTERS_DICT = {
     "0501": {
         None: {
             "Name": "Oshawott",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 55,
@@ -7761,7 +7762,7 @@ POCKET_MONSTERS_DICT = {
     "0502": {
         None: {
             "Name": "Dewott",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 75,
@@ -7774,7 +7775,7 @@ POCKET_MONSTERS_DICT = {
     "0503": {
         None: {
             "Name": "Samurott",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 100,
@@ -7785,8 +7786,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Samurott": {
             "Name": "Samurott",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 108,
             StatsEnum.DEFENSE: 80,
@@ -7798,7 +7799,7 @@ POCKET_MONSTERS_DICT = {
     "0504": {
         None: {
             "Name": "Patrat",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 55,
@@ -7811,7 +7812,7 @@ POCKET_MONSTERS_DICT = {
     "0505": {
         None: {
             "Name": "Watchog",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
@@ -7824,7 +7825,7 @@ POCKET_MONSTERS_DICT = {
     "0506": {
         None: {
             "Name": "Lillipup",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 60,
@@ -7837,7 +7838,7 @@ POCKET_MONSTERS_DICT = {
     "0507": {
         None: {
             "Name": "Herdier",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 80,
@@ -7850,7 +7851,7 @@ POCKET_MONSTERS_DICT = {
     "0508": {
         None: {
             "Name": "Stoutland",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 110,
@@ -7863,7 +7864,7 @@ POCKET_MONSTERS_DICT = {
     "0509": {
         None: {
             "Name": "Purrloin",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 41,
             StatsEnum.ATTACK: 50,
@@ -7876,7 +7877,7 @@ POCKET_MONSTERS_DICT = {
     "0510": {
         None: {
             "Name": "Liepard",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 64,
             StatsEnum.ATTACK: 88,
@@ -7889,7 +7890,7 @@ POCKET_MONSTERS_DICT = {
     "0511": {
         None: {
             "Name": "Pansage",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 53,
@@ -7902,7 +7903,7 @@ POCKET_MONSTERS_DICT = {
     "0512": {
         None: {
             "Name": "Simisage",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 98,
@@ -7915,7 +7916,7 @@ POCKET_MONSTERS_DICT = {
     "0513": {
         None: {
             "Name": "Pansear",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 53,
@@ -7928,7 +7929,7 @@ POCKET_MONSTERS_DICT = {
     "0514": {
         None: {
             "Name": "Simisear",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 98,
@@ -7941,7 +7942,7 @@ POCKET_MONSTERS_DICT = {
     "0515": {
         None: {
             "Name": "Panpour",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 53,
@@ -7954,7 +7955,7 @@ POCKET_MONSTERS_DICT = {
     "0516": {
         None: {
             "Name": "Simipour",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 98,
@@ -7967,7 +7968,7 @@ POCKET_MONSTERS_DICT = {
     "0517": {
         None: {
             "Name": "Munna",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 76,
             StatsEnum.ATTACK: 25,
@@ -7980,7 +7981,7 @@ POCKET_MONSTERS_DICT = {
     "0518": {
         None: {
             "Name": "Musharna",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 116,
             StatsEnum.ATTACK: 55,
@@ -7993,8 +7994,8 @@ POCKET_MONSTERS_DICT = {
     "0519": {
         None: {
             "Name": "Pidove",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 50,
@@ -8006,8 +8007,8 @@ POCKET_MONSTERS_DICT = {
     "0520": {
         None: {
             "Name": "Tranquill",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 77,
             StatsEnum.DEFENSE: 62,
@@ -8019,8 +8020,8 @@ POCKET_MONSTERS_DICT = {
     "0521": {
         None: {
             "Name": "Unfezant",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 80,
@@ -8032,7 +8033,7 @@ POCKET_MONSTERS_DICT = {
     "0522": {
         None: {
             "Name": "Blitzle",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 60,
@@ -8045,7 +8046,7 @@ POCKET_MONSTERS_DICT = {
     "0523": {
         None: {
             "Name": "Zebstrika",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 100,
@@ -8058,7 +8059,7 @@ POCKET_MONSTERS_DICT = {
     "0524": {
         None: {
             "Name": "Roggenrola",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 75,
@@ -8071,7 +8072,7 @@ POCKET_MONSTERS_DICT = {
     "0525": {
         None: {
             "Name": "Boldore",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 105,
@@ -8084,7 +8085,7 @@ POCKET_MONSTERS_DICT = {
     "0526": {
         None: {
             "Name": "Gigalith",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 135,
@@ -8097,8 +8098,8 @@ POCKET_MONSTERS_DICT = {
     "0527": {
         None: {
             "Name": "Woobat",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 43,
@@ -8110,8 +8111,8 @@ POCKET_MONSTERS_DICT = {
     "0528": {
         None: {
             "Name": "Swoobat",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 57,
             StatsEnum.DEFENSE: 55,
@@ -8123,7 +8124,7 @@ POCKET_MONSTERS_DICT = {
     "0529": {
         None: {
             "Name": "Drilbur",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 85,
@@ -8136,8 +8137,8 @@ POCKET_MONSTERS_DICT = {
     "0530": {
         None: {
             "Name": "Excadrill",
-            "Type 1": "Ground",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 60,
@@ -8149,7 +8150,7 @@ POCKET_MONSTERS_DICT = {
     "0531": {
         None: {
             "Name": "Audino",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 103,
             StatsEnum.ATTACK: 60,
@@ -8160,8 +8161,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Audino": {
             "Name": "Audino",
-            "Type 1": "Normal",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 103,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 126,
@@ -8173,7 +8174,7 @@ POCKET_MONSTERS_DICT = {
     "0532": {
         None: {
             "Name": "Timburr",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
@@ -8186,7 +8187,7 @@ POCKET_MONSTERS_DICT = {
     "0533": {
         None: {
             "Name": "Gurdurr",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 105,
@@ -8199,7 +8200,7 @@ POCKET_MONSTERS_DICT = {
     "0534": {
         None: {
             "Name": "Conkeldurr",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 140,
@@ -8212,7 +8213,7 @@ POCKET_MONSTERS_DICT = {
     "0535": {
         None: {
             "Name": "Tympole",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
@@ -8225,8 +8226,8 @@ POCKET_MONSTERS_DICT = {
     "0536": {
         None: {
             "Name": "Palpitoad",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 55,
@@ -8238,8 +8239,8 @@ POCKET_MONSTERS_DICT = {
     "0537": {
         None: {
             "Name": "Seismitoad",
-            "Type 1": "Water",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 75,
@@ -8251,7 +8252,7 @@ POCKET_MONSTERS_DICT = {
     "0538": {
         None: {
             "Name": "Throh",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 100,
@@ -8264,7 +8265,7 @@ POCKET_MONSTERS_DICT = {
     "0539": {
         None: {
             "Name": "Sawk",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 125,
@@ -8277,8 +8278,8 @@ POCKET_MONSTERS_DICT = {
     "0540": {
         None: {
             "Name": "Sewaddle",
-            "Type 1": "Bug",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 53,
             StatsEnum.DEFENSE: 70,
@@ -8290,8 +8291,8 @@ POCKET_MONSTERS_DICT = {
     "0541": {
         None: {
             "Name": "Swadloon",
-            "Type 1": "Bug",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 63,
             StatsEnum.DEFENSE: 90,
@@ -8303,8 +8304,8 @@ POCKET_MONSTERS_DICT = {
     "0542": {
         None: {
             "Name": "Leavanny",
-            "Type 1": "Bug",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 103,
             StatsEnum.DEFENSE: 80,
@@ -8316,8 +8317,8 @@ POCKET_MONSTERS_DICT = {
     "0543": {
         None: {
             "Name": "Venipede",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 59,
@@ -8329,8 +8330,8 @@ POCKET_MONSTERS_DICT = {
     "0544": {
         None: {
             "Name": "Whirlipede",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 99,
@@ -8342,8 +8343,8 @@ POCKET_MONSTERS_DICT = {
     "0545": {
         None: {
             "Name": "Scolipede",
-            "Type 1": "Bug",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 89,
@@ -8355,8 +8356,8 @@ POCKET_MONSTERS_DICT = {
     "0546": {
         None: {
             "Name": "Cottonee",
-            "Type 1": "Grass",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 27,
             StatsEnum.DEFENSE: 60,
@@ -8368,8 +8369,8 @@ POCKET_MONSTERS_DICT = {
     "0547": {
         None: {
             "Name": "Whimsicott",
-            "Type 1": "Grass",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 67,
             StatsEnum.DEFENSE: 85,
@@ -8381,7 +8382,7 @@ POCKET_MONSTERS_DICT = {
     "0548": {
         None: {
             "Name": "Petilil",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 35,
@@ -8394,7 +8395,7 @@ POCKET_MONSTERS_DICT = {
     "0549": {
         None: {
             "Name": "Lilligant",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 60,
@@ -8405,8 +8406,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Lilligant": {
             "Name": "Lilligant",
-            "Type 1": "Grass",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 75,
@@ -8418,7 +8419,7 @@ POCKET_MONSTERS_DICT = {
     "0550": {
         "Red-Striped Form": {
             "Name": "Basculin",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 92,
@@ -8429,7 +8430,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Blue-Striped Form": {
             "Name": "Basculin",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 92,
@@ -8440,7 +8441,7 @@ POCKET_MONSTERS_DICT = {
         },
         "White-Striped Form": {
             "Name": "Basculin",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 92,
@@ -8453,8 +8454,8 @@ POCKET_MONSTERS_DICT = {
     "0551": {
         None: {
             "Name": "Sandile",
-            "Type 1": "Ground",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 72,
             StatsEnum.DEFENSE: 35,
@@ -8466,8 +8467,8 @@ POCKET_MONSTERS_DICT = {
     "0552": {
         None: {
             "Name": "Krokorok",
-            "Type 1": "Ground",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 82,
             StatsEnum.DEFENSE: 45,
@@ -8479,8 +8480,8 @@ POCKET_MONSTERS_DICT = {
     "0553": {
         None: {
             "Name": "Krookodile",
-            "Type 1": "Ground",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 117,
             StatsEnum.DEFENSE: 80,
@@ -8492,7 +8493,7 @@ POCKET_MONSTERS_DICT = {
     "0554": {
         None: {
             "Name": "Darumaka",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 90,
@@ -8503,7 +8504,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Darumaka": {
             "Name": "Darumaka",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 90,
@@ -8516,7 +8517,7 @@ POCKET_MONSTERS_DICT = {
     "0555": {
         "Standard Mode": {
             "Name": "Darmanitan",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 140,
@@ -8527,8 +8528,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Zen Mode": {
             "Name": "Darmanitan",
-            "Type 1": "Fire",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 105,
@@ -8538,7 +8539,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Standard Mode": {
             "Name": "Darmanitan",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 140,
@@ -8549,8 +8550,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Zen Mode": {
             "Name": "Darmanitan",
-            "Type 1": "Ice",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 160,
             StatsEnum.DEFENSE: 55,
@@ -8562,7 +8563,7 @@ POCKET_MONSTERS_DICT = {
     "0556": {
         None: {
             "Name": "Maractus",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 86,
@@ -8575,8 +8576,8 @@ POCKET_MONSTERS_DICT = {
     "0557": {
         None: {
             "Name": "Dwebble",
-            "Type 1": "Bug",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 85,
@@ -8588,8 +8589,8 @@ POCKET_MONSTERS_DICT = {
     "0558": {
         None: {
             "Name": "Crustle",
-            "Type 1": "Bug",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 125,
@@ -8601,8 +8602,8 @@ POCKET_MONSTERS_DICT = {
     "0559": {
         None: {
             "Name": "Scraggy",
-            "Type 1": "Dark",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 70,
@@ -8614,8 +8615,8 @@ POCKET_MONSTERS_DICT = {
     "0560": {
         None: {
             "Name": "Scrafty",
-            "Type 1": "Dark",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 115,
@@ -8627,8 +8628,8 @@ POCKET_MONSTERS_DICT = {
     "0561": {
         None: {
             "Name": "Sigilyph",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 58,
             StatsEnum.DEFENSE: 80,
@@ -8640,7 +8641,7 @@ POCKET_MONSTERS_DICT = {
     "0562": {
         None: {
             "Name": "Yamask",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 30,
@@ -8651,8 +8652,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Yamask": {
             "Name": "Yamask",
-            "Type 1": "Ground",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 85,
@@ -8664,7 +8665,7 @@ POCKET_MONSTERS_DICT = {
     "0563": {
         None: {
             "Name": "Cofagrigus",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 50,
@@ -8677,8 +8678,8 @@ POCKET_MONSTERS_DICT = {
     "0564": {
         None: {
             "Name": "Tirtouga",
-            "Type 1": "Water",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 54,
             StatsEnum.ATTACK: 78,
             StatsEnum.DEFENSE: 103,
@@ -8690,8 +8691,8 @@ POCKET_MONSTERS_DICT = {
     "0565": {
         None: {
             "Name": "Carracosta",
-            "Type 1": "Water",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 108,
             StatsEnum.DEFENSE: 133,
@@ -8703,8 +8704,8 @@ POCKET_MONSTERS_DICT = {
     "0566": {
         None: {
             "Name": "Archen",
-            "Type 1": "Rock",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 112,
             StatsEnum.DEFENSE: 45,
@@ -8716,8 +8717,8 @@ POCKET_MONSTERS_DICT = {
     "0567": {
         None: {
             "Name": "Archeops",
-            "Type 1": "Rock",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 140,
             StatsEnum.DEFENSE: 65,
@@ -8729,7 +8730,7 @@ POCKET_MONSTERS_DICT = {
     "0568": {
         None: {
             "Name": "Trubbish",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
@@ -8742,7 +8743,7 @@ POCKET_MONSTERS_DICT = {
     "0569": {
         None: {
             "Name": "Garbodor",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 95,
@@ -8755,7 +8756,7 @@ POCKET_MONSTERS_DICT = {
     "0570": {
         None: {
             "Name": "Zorua",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 65,
@@ -8766,8 +8767,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Zorua": {
             "Name": "Zorua",
-            "Type 1": "Normal",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 40,
@@ -8779,7 +8780,7 @@ POCKET_MONSTERS_DICT = {
     "0571": {
         None: {
             "Name": "Zoroark",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 105,
@@ -8790,8 +8791,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Zoroark": {
             "Name": "Zoroark",
-            "Type 1": "Normal",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 60,
@@ -8803,7 +8804,7 @@ POCKET_MONSTERS_DICT = {
     "0572": {
         None: {
             "Name": "Minccino",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 50,
@@ -8816,7 +8817,7 @@ POCKET_MONSTERS_DICT = {
     "0573": {
         None: {
             "Name": "Cinccino",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 95,
@@ -8829,7 +8830,7 @@ POCKET_MONSTERS_DICT = {
     "0574": {
         None: {
             "Name": "Gothita",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
@@ -8842,7 +8843,7 @@ POCKET_MONSTERS_DICT = {
     "0575": {
         None: {
             "Name": "Gothorita",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 45,
@@ -8855,7 +8856,7 @@ POCKET_MONSTERS_DICT = {
     "0576": {
         None: {
             "Name": "Gothitelle",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 55,
@@ -8868,7 +8869,7 @@ POCKET_MONSTERS_DICT = {
     "0577": {
         None: {
             "Name": "Solosis",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
@@ -8881,7 +8882,7 @@ POCKET_MONSTERS_DICT = {
     "0578": {
         None: {
             "Name": "Duosion",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 40,
@@ -8894,7 +8895,7 @@ POCKET_MONSTERS_DICT = {
     "0579": {
         None: {
             "Name": "Reuniclus",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 65,
@@ -8907,8 +8908,8 @@ POCKET_MONSTERS_DICT = {
     "0580": {
         None: {
             "Name": "Ducklett",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 44,
             StatsEnum.DEFENSE: 50,
@@ -8920,8 +8921,8 @@ POCKET_MONSTERS_DICT = {
     "0581": {
         None: {
             "Name": "Swanna",
-            "Type 1": "Water",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 87,
             StatsEnum.DEFENSE: 63,
@@ -8933,7 +8934,7 @@ POCKET_MONSTERS_DICT = {
     "0582": {
         None: {
             "Name": "Vanillite",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 36,
             StatsEnum.ATTACK: 50,
@@ -8946,7 +8947,7 @@ POCKET_MONSTERS_DICT = {
     "0583": {
         None: {
             "Name": "Vanillish",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 51,
             StatsEnum.ATTACK: 65,
@@ -8959,7 +8960,7 @@ POCKET_MONSTERS_DICT = {
     "0584": {
         None: {
             "Name": "Vanilluxe",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 95,
@@ -8972,8 +8973,8 @@ POCKET_MONSTERS_DICT = {
     "0585": {
         None: {
             "Name": "Deerling",
-            "Type 1": "Normal",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 50,
@@ -8985,8 +8986,8 @@ POCKET_MONSTERS_DICT = {
     "0586": {
         None: {
             "Name": "Sawsbuck",
-            "Type 1": "Normal",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 70,
@@ -8998,8 +8999,8 @@ POCKET_MONSTERS_DICT = {
     "0587": {
         None: {
             "Name": "Emolga",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 60,
@@ -9011,7 +9012,7 @@ POCKET_MONSTERS_DICT = {
     "0588": {
         None: {
             "Name": "Karrablast",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 75,
@@ -9024,8 +9025,8 @@ POCKET_MONSTERS_DICT = {
     "0589": {
         None: {
             "Name": "Escavalier",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 105,
@@ -9037,8 +9038,8 @@ POCKET_MONSTERS_DICT = {
     "0590": {
         None: {
             "Name": "Foongus",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 69,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 45,
@@ -9050,8 +9051,8 @@ POCKET_MONSTERS_DICT = {
     "0591": {
         None: {
             "Name": "Amoonguss",
-            "Type 1": "Grass",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 114,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 70,
@@ -9063,8 +9064,8 @@ POCKET_MONSTERS_DICT = {
     "0592": {
         None: {
             "Name": "Frillish",
-            "Type 1": "Water",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 50,
@@ -9076,8 +9077,8 @@ POCKET_MONSTERS_DICT = {
     "0593": {
         None: {
             "Name": "Jellicent",
-            "Type 1": "Water",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 70,
@@ -9089,7 +9090,7 @@ POCKET_MONSTERS_DICT = {
     "0594": {
         None: {
             "Name": "Alomomola",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 165,
             StatsEnum.ATTACK: 75,
@@ -9102,8 +9103,8 @@ POCKET_MONSTERS_DICT = {
     "0595": {
         None: {
             "Name": "Joltik",
-            "Type 1": "Bug",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 47,
             StatsEnum.DEFENSE: 50,
@@ -9115,8 +9116,8 @@ POCKET_MONSTERS_DICT = {
     "0596": {
         None: {
             "Name": "Galvantula",
-            "Type 1": "Bug",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 77,
             StatsEnum.DEFENSE: 60,
@@ -9128,8 +9129,8 @@ POCKET_MONSTERS_DICT = {
     "0597": {
         None: {
             "Name": "Ferroseed",
-            "Type 1": "Grass",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 91,
@@ -9141,8 +9142,8 @@ POCKET_MONSTERS_DICT = {
     "0598": {
         None: {
             "Name": "Ferrothorn",
-            "Type 1": "Grass",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 94,
             StatsEnum.DEFENSE: 131,
@@ -9154,7 +9155,7 @@ POCKET_MONSTERS_DICT = {
     "0599": {
         None: {
             "Name": "Klink",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 55,
@@ -9167,7 +9168,7 @@ POCKET_MONSTERS_DICT = {
     "0600": {
         None: {
             "Name": "Klang",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 80,
@@ -9180,7 +9181,7 @@ POCKET_MONSTERS_DICT = {
     "0601": {
         None: {
             "Name": "Klinklang",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 100,
@@ -9193,7 +9194,7 @@ POCKET_MONSTERS_DICT = {
     "0602": {
         None: {
             "Name": "Tynamo",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 55,
@@ -9206,7 +9207,7 @@ POCKET_MONSTERS_DICT = {
     "0603": {
         None: {
             "Name": "Eelektrik",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 85,
@@ -9219,7 +9220,7 @@ POCKET_MONSTERS_DICT = {
     "0604": {
         None: {
             "Name": "Eelektross",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 115,
@@ -9232,7 +9233,7 @@ POCKET_MONSTERS_DICT = {
     "0605": {
         None: {
             "Name": "Elgyem",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 55,
@@ -9245,7 +9246,7 @@ POCKET_MONSTERS_DICT = {
     "0606": {
         None: {
             "Name": "Beheeyem",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 75,
@@ -9258,8 +9259,8 @@ POCKET_MONSTERS_DICT = {
     "0607": {
         None: {
             "Name": "Litwick",
-            "Type 1": "Ghost",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 55,
@@ -9271,8 +9272,8 @@ POCKET_MONSTERS_DICT = {
     "0608": {
         None: {
             "Name": "Lampent",
-            "Type 1": "Ghost",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 60,
@@ -9284,8 +9285,8 @@ POCKET_MONSTERS_DICT = {
     "0609": {
         None: {
             "Name": "Chandelure",
-            "Type 1": "Ghost",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 90,
@@ -9297,7 +9298,7 @@ POCKET_MONSTERS_DICT = {
     "0610": {
         None: {
             "Name": "Axew",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 46,
             StatsEnum.ATTACK: 87,
@@ -9310,7 +9311,7 @@ POCKET_MONSTERS_DICT = {
     "0611": {
         None: {
             "Name": "Fraxure",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 66,
             StatsEnum.ATTACK: 117,
@@ -9323,7 +9324,7 @@ POCKET_MONSTERS_DICT = {
     "0612": {
         None: {
             "Name": "Haxorus",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 76,
             StatsEnum.ATTACK: 147,
@@ -9336,7 +9337,7 @@ POCKET_MONSTERS_DICT = {
     "0613": {
         None: {
             "Name": "Cubchoo",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 70,
@@ -9349,7 +9350,7 @@ POCKET_MONSTERS_DICT = {
     "0614": {
         None: {
             "Name": "Beartic",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 130,
@@ -9362,7 +9363,7 @@ POCKET_MONSTERS_DICT = {
     "0615": {
         None: {
             "Name": "Cryogonal",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 50,
@@ -9375,7 +9376,7 @@ POCKET_MONSTERS_DICT = {
     "0616": {
         None: {
             "Name": "Shelmet",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 40,
@@ -9388,7 +9389,7 @@ POCKET_MONSTERS_DICT = {
     "0617": {
         None: {
             "Name": "Accelgor",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 70,
@@ -9401,8 +9402,8 @@ POCKET_MONSTERS_DICT = {
     "0618": {
         None: {
             "Name": "Stunfisk",
-            "Type 1": "Ground",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 109,
             StatsEnum.ATTACK: 66,
             StatsEnum.DEFENSE: 84,
@@ -9412,8 +9413,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Galarian Stunfisk": {
             "Name": "Stunfisk",
-            "Type 1": "Ground",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 109,
             StatsEnum.ATTACK: 81,
             StatsEnum.DEFENSE: 99,
@@ -9425,7 +9426,7 @@ POCKET_MONSTERS_DICT = {
     "0619": {
         None: {
             "Name": "Mienfoo",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 85,
@@ -9438,7 +9439,7 @@ POCKET_MONSTERS_DICT = {
     "0620": {
         None: {
             "Name": "Mienshao",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 125,
@@ -9451,7 +9452,7 @@ POCKET_MONSTERS_DICT = {
     "0621": {
         None: {
             "Name": "Druddigon",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 77,
             StatsEnum.ATTACK: 120,
@@ -9464,8 +9465,8 @@ POCKET_MONSTERS_DICT = {
     "0622": {
         None: {
             "Name": "Golett",
-            "Type 1": "Ground",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 74,
             StatsEnum.DEFENSE: 50,
@@ -9477,8 +9478,8 @@ POCKET_MONSTERS_DICT = {
     "0623": {
         None: {
             "Name": "Golurk",
-            "Type 1": "Ground",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 89,
             StatsEnum.ATTACK: 124,
             StatsEnum.DEFENSE: 80,
@@ -9490,8 +9491,8 @@ POCKET_MONSTERS_DICT = {
     "0624": {
         None: {
             "Name": "Pawniard",
-            "Type 1": "Dark",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 70,
@@ -9503,8 +9504,8 @@ POCKET_MONSTERS_DICT = {
     "0625": {
         None: {
             "Name": "Bisharp",
-            "Type 1": "Dark",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 100,
@@ -9516,7 +9517,7 @@ POCKET_MONSTERS_DICT = {
     "0626": {
         None: {
             "Name": "Bouffalant",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 110,
@@ -9529,8 +9530,8 @@ POCKET_MONSTERS_DICT = {
     "0627": {
         None: {
             "Name": "Rufflet",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 83,
             StatsEnum.DEFENSE: 50,
@@ -9542,8 +9543,8 @@ POCKET_MONSTERS_DICT = {
     "0628": {
         None: {
             "Name": "Braviary",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 123,
             StatsEnum.DEFENSE: 75,
@@ -9553,8 +9554,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Braviary": {
             "Name": "Braviary",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 83,
             StatsEnum.DEFENSE: 70,
@@ -9566,8 +9567,8 @@ POCKET_MONSTERS_DICT = {
     "0629": {
         None: {
             "Name": "Vullaby",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 75,
@@ -9579,8 +9580,8 @@ POCKET_MONSTERS_DICT = {
     "0630": {
         None: {
             "Name": "Mandibuzz",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 105,
@@ -9592,7 +9593,7 @@ POCKET_MONSTERS_DICT = {
     "0631": {
         None: {
             "Name": "Heatmor",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 97,
@@ -9605,8 +9606,8 @@ POCKET_MONSTERS_DICT = {
     "0632": {
         None: {
             "Name": "Durant",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 109,
             StatsEnum.DEFENSE: 112,
@@ -9618,8 +9619,8 @@ POCKET_MONSTERS_DICT = {
     "0633": {
         None: {
             "Name": "Deino",
-            "Type 1": "Dark",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 52,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 50,
@@ -9631,8 +9632,8 @@ POCKET_MONSTERS_DICT = {
     "0634": {
         None: {
             "Name": "Zweilous",
-            "Type 1": "Dark",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 70,
@@ -9644,8 +9645,8 @@ POCKET_MONSTERS_DICT = {
     "0635": {
         None: {
             "Name": "Hydreigon",
-            "Type 1": "Dark",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 92,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 90,
@@ -9657,8 +9658,8 @@ POCKET_MONSTERS_DICT = {
     "0636": {
         None: {
             "Name": "Larvesta",
-            "Type 1": "Bug",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 55,
@@ -9670,8 +9671,8 @@ POCKET_MONSTERS_DICT = {
     "0637": {
         None: {
             "Name": "Volcarona",
-            "Type 1": "Bug",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 65,
@@ -9683,8 +9684,8 @@ POCKET_MONSTERS_DICT = {
     "0638": {
         None: {
             "Name": "Cobalion",
-            "Type 1": "Steel",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 129,
@@ -9696,8 +9697,8 @@ POCKET_MONSTERS_DICT = {
     "0639": {
         None: {
             "Name": "Terrakion",
-            "Type 1": "Rock",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 129,
             StatsEnum.DEFENSE: 90,
@@ -9709,8 +9710,8 @@ POCKET_MONSTERS_DICT = {
     "0640": {
         None: {
             "Name": "Virizion",
-            "Type 1": "Grass",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 72,
@@ -9722,7 +9723,7 @@ POCKET_MONSTERS_DICT = {
     "0641": {
         "Incarnate Forme": {
             "Name": "Tornadus",
-            "Type 1": "Flying",
+            "Type 1": TypesEnum.FLYING,
             "Type 2": None,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 115,
@@ -9733,7 +9734,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Therian Forme": {
             "Name": "Tornadus",
-            "Type 1": "Flying",
+            "Type 1": TypesEnum.FLYING,
             "Type 2": None,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 100,
@@ -9746,8 +9747,8 @@ POCKET_MONSTERS_DICT = {
     "0642": {
         "Incarnate Forme": {
             "Name": "Thundurus",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 70,
@@ -9757,8 +9758,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Therian Forme": {
             "Name": "Thundurus",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 79,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 70,
@@ -9770,8 +9771,8 @@ POCKET_MONSTERS_DICT = {
     "0643": {
         None: {
             "Name": "Reshiram",
-            "Type 1": "Dragon",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 100,
@@ -9783,8 +9784,8 @@ POCKET_MONSTERS_DICT = {
     "0644": {
         None: {
             "Name": "Zekrom",
-            "Type 1": "Dragon",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 150,
             StatsEnum.DEFENSE: 120,
@@ -9796,8 +9797,8 @@ POCKET_MONSTERS_DICT = {
     "0645": {
         "Incarnate Forme": {
             "Name": "Landorus",
-            "Type 1": "Ground",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 89,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 90,
@@ -9807,8 +9808,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Therian Forme": {
             "Name": "Landorus",
-            "Type 1": "Ground",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 89,
             StatsEnum.ATTACK: 145,
             StatsEnum.DEFENSE: 90,
@@ -9820,8 +9821,8 @@ POCKET_MONSTERS_DICT = {
     "0646": {
         None: {
             "Name": "Kyurem",
-            "Type 1": "Dragon",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 90,
@@ -9831,8 +9832,8 @@ POCKET_MONSTERS_DICT = {
         },
         "White Kyurem": {
             "Name": "Kyurem",
-            "Type 1": "Dragon",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 90,
@@ -9842,8 +9843,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Black Kyurem": {
             "Name": "Kyurem",
-            "Type 1": "Dragon",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 170,
             StatsEnum.DEFENSE: 100,
@@ -9855,8 +9856,8 @@ POCKET_MONSTERS_DICT = {
     "0647": {
         "Ordinary Form": {
             "Name": "Keldeo",
-            "Type 1": "Water",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 72,
             StatsEnum.DEFENSE: 90,
@@ -9866,8 +9867,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Resolute Form": {
             "Name": "Keldeo",
-            "Type 1": "Water",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 91,
             StatsEnum.ATTACK: 72,
             StatsEnum.DEFENSE: 90,
@@ -9879,8 +9880,8 @@ POCKET_MONSTERS_DICT = {
     "0648": {
         "Aria Forme": {
             "Name": "Meloetta",
-            "Type 1": "Normal",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 77,
             StatsEnum.DEFENSE: 77,
@@ -9890,8 +9891,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Pirouette Forme": {
             "Name": "Meloetta",
-            "Type 1": "Normal",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 128,
             StatsEnum.DEFENSE: 90,
@@ -9903,8 +9904,8 @@ POCKET_MONSTERS_DICT = {
     "0649": {
         None: {
             "Name": "Genesect",
-            "Type 1": "Bug",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 95,
@@ -9916,7 +9917,7 @@ POCKET_MONSTERS_DICT = {
     "0650": {
         None: {
             "Name": "Chespin",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 56,
             StatsEnum.ATTACK: 61,
@@ -9929,7 +9930,7 @@ POCKET_MONSTERS_DICT = {
     "0651": {
         None: {
             "Name": "Quilladin",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 78,
@@ -9942,8 +9943,8 @@ POCKET_MONSTERS_DICT = {
     "0652": {
         None: {
             "Name": "Chesnaught",
-            "Type 1": "Grass",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 107,
             StatsEnum.DEFENSE: 122,
@@ -9955,7 +9956,7 @@ POCKET_MONSTERS_DICT = {
     "0653": {
         None: {
             "Name": "Fennekin",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
@@ -9968,7 +9969,7 @@ POCKET_MONSTERS_DICT = {
     "0654": {
         None: {
             "Name": "Braixen",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 59,
@@ -9981,8 +9982,8 @@ POCKET_MONSTERS_DICT = {
     "0655": {
         None: {
             "Name": "Delphox",
-            "Type 1": "Fire",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 69,
             StatsEnum.DEFENSE: 72,
@@ -9994,7 +9995,7 @@ POCKET_MONSTERS_DICT = {
     "0656": {
         None: {
             "Name": "Froakie",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 41,
             StatsEnum.ATTACK: 56,
@@ -10007,7 +10008,7 @@ POCKET_MONSTERS_DICT = {
     "0657": {
         None: {
             "Name": "Frogadier",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 54,
             StatsEnum.ATTACK: 63,
@@ -10020,8 +10021,8 @@ POCKET_MONSTERS_DICT = {
     "0658": {
         None: {
             "Name": "Greninja",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 67,
@@ -10031,8 +10032,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Ash-Greninja": {
             "Name": "Greninja",
-            "Type 1": "Water",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 145,
             StatsEnum.DEFENSE: 67,
@@ -10044,7 +10045,7 @@ POCKET_MONSTERS_DICT = {
     "0659": {
         None: {
             "Name": "Bunnelby",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 36,
@@ -10057,8 +10058,8 @@ POCKET_MONSTERS_DICT = {
     "0660": {
         None: {
             "Name": "Diggersby",
-            "Type 1": "Normal",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 56,
             StatsEnum.DEFENSE: 77,
@@ -10070,8 +10071,8 @@ POCKET_MONSTERS_DICT = {
     "0661": {
         None: {
             "Name": "Fletchling",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 43,
@@ -10083,8 +10084,8 @@ POCKET_MONSTERS_DICT = {
     "0662": {
         None: {
             "Name": "Fletchinder",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 73,
             StatsEnum.DEFENSE: 55,
@@ -10096,8 +10097,8 @@ POCKET_MONSTERS_DICT = {
     "0663": {
         None: {
             "Name": "Talonflame",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 81,
             StatsEnum.DEFENSE: 71,
@@ -10109,7 +10110,7 @@ POCKET_MONSTERS_DICT = {
     "0664": {
         None: {
             "Name": "Scatterbug",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 35,
@@ -10122,7 +10123,7 @@ POCKET_MONSTERS_DICT = {
     "0665": {
         None: {
             "Name": "Spewpa",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 22,
@@ -10135,8 +10136,8 @@ POCKET_MONSTERS_DICT = {
     "0666": {
         None: {
             "Name": "Vivillon",
-            "Type 1": "Bug",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 52,
             StatsEnum.DEFENSE: 50,
@@ -10148,8 +10149,8 @@ POCKET_MONSTERS_DICT = {
     "0667": {
         None: {
             "Name": "Litleo",
-            "Type 1": "Fire",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 58,
@@ -10161,8 +10162,8 @@ POCKET_MONSTERS_DICT = {
     "0668": {
         None: {
             "Name": "Pyroar",
-            "Type 1": "Fire",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 86,
             StatsEnum.ATTACK: 68,
             StatsEnum.DEFENSE: 72,
@@ -10174,7 +10175,7 @@ POCKET_MONSTERS_DICT = {
     "0669": {
         None: {
             "Name": "Flabébé",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 38,
@@ -10187,7 +10188,7 @@ POCKET_MONSTERS_DICT = {
     "0670": {
         None: {
             "Name": "Floette",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 54,
             StatsEnum.ATTACK: 45,
@@ -10200,7 +10201,7 @@ POCKET_MONSTERS_DICT = {
     "0671": {
         None: {
             "Name": "Florges",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 65,
@@ -10213,7 +10214,7 @@ POCKET_MONSTERS_DICT = {
     "0672": {
         None: {
             "Name": "Skiddo",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 66,
             StatsEnum.ATTACK: 65,
@@ -10226,7 +10227,7 @@ POCKET_MONSTERS_DICT = {
     "0673": {
         None: {
             "Name": "Gogoat",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 123,
             StatsEnum.ATTACK: 100,
@@ -10239,7 +10240,7 @@ POCKET_MONSTERS_DICT = {
     "0674": {
         None: {
             "Name": "Pancham",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 82,
@@ -10252,8 +10253,8 @@ POCKET_MONSTERS_DICT = {
     "0675": {
         None: {
             "Name": "Pangoro",
-            "Type 1": "Fighting",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 124,
             StatsEnum.DEFENSE: 78,
@@ -10265,7 +10266,7 @@ POCKET_MONSTERS_DICT = {
     "0676": {
         None: {
             "Name": "Furfrou",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
@@ -10278,7 +10279,7 @@ POCKET_MONSTERS_DICT = {
     "0677": {
         None: {
             "Name": "Espurr",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 48,
@@ -10291,7 +10292,7 @@ POCKET_MONSTERS_DICT = {
     "0678": {
         "Male": {
             "Name": "Meowstic",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 48,
@@ -10302,7 +10303,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Female": {
             "Name": "Meowstic",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 48,
@@ -10315,8 +10316,8 @@ POCKET_MONSTERS_DICT = {
     "0679": {
         None: {
             "Name": "Honedge",
-            "Type 1": "Steel",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 100,
@@ -10328,8 +10329,8 @@ POCKET_MONSTERS_DICT = {
     "0680": {
         None: {
             "Name": "Doublade",
-            "Type 1": "Steel",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 150,
@@ -10341,8 +10342,8 @@ POCKET_MONSTERS_DICT = {
     "0681": {
         "Shield Forme": {
             "Name": "Aegislash",
-            "Type 1": "Steel",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 140,
@@ -10352,8 +10353,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Blade Forme": {
             "Name": "Aegislash",
-            "Type 1": "Steel",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 140,
             StatsEnum.DEFENSE: 50,
@@ -10365,7 +10366,7 @@ POCKET_MONSTERS_DICT = {
     "0682": {
         None: {
             "Name": "Spritzee",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 52,
@@ -10378,7 +10379,7 @@ POCKET_MONSTERS_DICT = {
     "0683": {
         None: {
             "Name": "Aromatisse",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 101,
             StatsEnum.ATTACK: 72,
@@ -10391,7 +10392,7 @@ POCKET_MONSTERS_DICT = {
     "0684": {
         None: {
             "Name": "Swirlix",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 48,
@@ -10404,7 +10405,7 @@ POCKET_MONSTERS_DICT = {
     "0685": {
         None: {
             "Name": "Slurpuff",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 80,
@@ -10417,8 +10418,8 @@ POCKET_MONSTERS_DICT = {
     "0686": {
         None: {
             "Name": "Inkay",
-            "Type 1": "Dark",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 53,
             StatsEnum.ATTACK: 54,
             StatsEnum.DEFENSE: 53,
@@ -10430,8 +10431,8 @@ POCKET_MONSTERS_DICT = {
     "0687": {
         None: {
             "Name": "Malamar",
-            "Type 1": "Dark",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 86,
             StatsEnum.ATTACK: 92,
             StatsEnum.DEFENSE: 88,
@@ -10443,8 +10444,8 @@ POCKET_MONSTERS_DICT = {
     "0688": {
         None: {
             "Name": "Binacle",
-            "Type 1": "Rock",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 42,
             StatsEnum.ATTACK: 52,
             StatsEnum.DEFENSE: 67,
@@ -10456,8 +10457,8 @@ POCKET_MONSTERS_DICT = {
     "0689": {
         None: {
             "Name": "Barbaracle",
-            "Type 1": "Rock",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 115,
@@ -10469,8 +10470,8 @@ POCKET_MONSTERS_DICT = {
     "0690": {
         None: {
             "Name": "Skrelp",
-            "Type 1": "Poison",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 60,
@@ -10482,8 +10483,8 @@ POCKET_MONSTERS_DICT = {
     "0691": {
         None: {
             "Name": "Dragalge",
-            "Type 1": "Poison",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 90,
@@ -10495,7 +10496,7 @@ POCKET_MONSTERS_DICT = {
     "0692": {
         None: {
             "Name": "Clauncher",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 53,
@@ -10508,7 +10509,7 @@ POCKET_MONSTERS_DICT = {
     "0693": {
         None: {
             "Name": "Clawitzer",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 73,
@@ -10521,8 +10522,8 @@ POCKET_MONSTERS_DICT = {
     "0694": {
         None: {
             "Name": "Helioptile",
-            "Type 1": "Electric",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 38,
             StatsEnum.DEFENSE: 33,
@@ -10534,8 +10535,8 @@ POCKET_MONSTERS_DICT = {
     "0695": {
         None: {
             "Name": "Heliolisk",
-            "Type 1": "Electric",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 52,
@@ -10547,8 +10548,8 @@ POCKET_MONSTERS_DICT = {
     "0696": {
         None: {
             "Name": "Tyrunt",
-            "Type 1": "Rock",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 89,
             StatsEnum.DEFENSE: 77,
@@ -10560,8 +10561,8 @@ POCKET_MONSTERS_DICT = {
     "0697": {
         None: {
             "Name": "Tyrantrum",
-            "Type 1": "Rock",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 121,
             StatsEnum.DEFENSE: 119,
@@ -10573,8 +10574,8 @@ POCKET_MONSTERS_DICT = {
     "0698": {
         None: {
             "Name": "Amaura",
-            "Type 1": "Rock",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 77,
             StatsEnum.ATTACK: 59,
             StatsEnum.DEFENSE: 50,
@@ -10586,8 +10587,8 @@ POCKET_MONSTERS_DICT = {
     "0699": {
         None: {
             "Name": "Aurorus",
-            "Type 1": "Rock",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 123,
             StatsEnum.ATTACK: 77,
             StatsEnum.DEFENSE: 72,
@@ -10599,7 +10600,7 @@ POCKET_MONSTERS_DICT = {
     "0700": {
         None: {
             "Name": "Sylveon",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 65,
@@ -10612,8 +10613,8 @@ POCKET_MONSTERS_DICT = {
     "0701": {
         None: {
             "Name": "Hawlucha",
-            "Type 1": "Fighting",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 92,
             StatsEnum.DEFENSE: 75,
@@ -10625,8 +10626,8 @@ POCKET_MONSTERS_DICT = {
     "0702": {
         None: {
             "Name": "Dedenne",
-            "Type 1": "Electric",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 58,
             StatsEnum.DEFENSE: 57,
@@ -10638,8 +10639,8 @@ POCKET_MONSTERS_DICT = {
     "0703": {
         None: {
             "Name": "Carbink",
-            "Type 1": "Rock",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 150,
@@ -10651,7 +10652,7 @@ POCKET_MONSTERS_DICT = {
     "0704": {
         None: {
             "Name": "Goomy",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 50,
@@ -10664,7 +10665,7 @@ POCKET_MONSTERS_DICT = {
     "0705": {
         None: {
             "Name": "Sliggoo",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 75,
@@ -10675,8 +10676,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Sliggoo": {
             "Name": "Sliggoo",
-            "Type 1": "Steel",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 83,
@@ -10688,7 +10689,7 @@ POCKET_MONSTERS_DICT = {
     "0706": {
         None: {
             "Name": "Goodra",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 100,
@@ -10699,8 +10700,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Goodra": {
             "Name": "Goodra",
-            "Type 1": "Steel",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 100,
@@ -10712,8 +10713,8 @@ POCKET_MONSTERS_DICT = {
     "0707": {
         None: {
             "Name": "Klefki",
-            "Type 1": "Steel",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 57,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 91,
@@ -10725,8 +10726,8 @@ POCKET_MONSTERS_DICT = {
     "0708": {
         None: {
             "Name": "Phantump",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 43,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 48,
@@ -10738,8 +10739,8 @@ POCKET_MONSTERS_DICT = {
     "0709": {
         None: {
             "Name": "TreveNonet",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 76,
@@ -10751,8 +10752,8 @@ POCKET_MONSTERS_DICT = {
     "0710": {
         "Average Size": {
             "Name": "Pumpkaboo",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 49,
             StatsEnum.ATTACK: 66,
             StatsEnum.DEFENSE: 70,
@@ -10762,8 +10763,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Small Size": {
             "Name": "Pumpkaboo",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 44,
             StatsEnum.ATTACK: 66,
             StatsEnum.DEFENSE: 70,
@@ -10773,8 +10774,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Large Size": {
             "Name": "Pumpkaboo",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 54,
             StatsEnum.ATTACK: 66,
             StatsEnum.DEFENSE: 70,
@@ -10784,8 +10785,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Super Size": {
             "Name": "Pumpkaboo",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 66,
             StatsEnum.DEFENSE: 70,
@@ -10797,8 +10798,8 @@ POCKET_MONSTERS_DICT = {
     "0711": {
         "Average Size": {
             "Name": "Gourgeist",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 122,
@@ -10808,8 +10809,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Small Size": {
             "Name": "Gourgeist",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 122,
@@ -10819,8 +10820,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Large Size": {
             "Name": "Gourgeist",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 122,
@@ -10830,8 +10831,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Super Size": {
             "Name": "Gourgeist",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 122,
@@ -10843,7 +10844,7 @@ POCKET_MONSTERS_DICT = {
     "0712": {
         None: {
             "Name": "Bergmite",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 69,
@@ -10856,7 +10857,7 @@ POCKET_MONSTERS_DICT = {
     "0713": {
         None: {
             "Name": "Avalugg",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 117,
@@ -10867,8 +10868,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Avalugg": {
             "Name": "Avalugg",
-            "Type 1": "Ice",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 127,
             StatsEnum.DEFENSE: 184,
@@ -10880,8 +10881,8 @@ POCKET_MONSTERS_DICT = {
     "0714": {
         None: {
             "Name": "Noibat",
-            "Type 1": "Flying",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.FLYING,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 30,
             StatsEnum.DEFENSE: 35,
@@ -10893,8 +10894,8 @@ POCKET_MONSTERS_DICT = {
     "0715": {
         None: {
             "Name": "Noivern",
-            "Type 1": "Flying",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.FLYING,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 80,
@@ -10906,7 +10907,7 @@ POCKET_MONSTERS_DICT = {
     "0716": {
         None: {
             "Name": "Xerneas",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 126,
             StatsEnum.ATTACK: 131,
@@ -10919,8 +10920,8 @@ POCKET_MONSTERS_DICT = {
     "0717": {
         None: {
             "Name": "Yveltal",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 126,
             StatsEnum.ATTACK: 131,
             StatsEnum.DEFENSE: 95,
@@ -10932,8 +10933,8 @@ POCKET_MONSTERS_DICT = {
     "0718": {
         "50% Forme": {
             "Name": "Zygarde",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 108,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 121,
@@ -10943,8 +10944,8 @@ POCKET_MONSTERS_DICT = {
         },
         "10% Forme": {
             "Name": "Zygarde",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 54,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 71,
@@ -10954,8 +10955,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Complete Forme": {
             "Name": "Zygarde",
-            "Type 1": "Dragon",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 216,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 121,
@@ -10967,8 +10968,8 @@ POCKET_MONSTERS_DICT = {
     "0719": {
         None: {
             "Name": "Diancie",
-            "Type 1": "Rock",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 150,
@@ -10978,8 +10979,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Mega Diancie": {
             "Name": "Diancie",
-            "Type 1": "Rock",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 160,
             StatsEnum.DEFENSE: 110,
@@ -10991,8 +10992,8 @@ POCKET_MONSTERS_DICT = {
     "0720": {
         "Hoopa Confined": {
             "Name": "Hoopa",
-            "Type 1": "Psychic",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 60,
@@ -11002,8 +11003,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hoopa Unbound": {
             "Name": "Hoopa",
-            "Type 1": "Psychic",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 160,
             StatsEnum.DEFENSE: 60,
@@ -11015,8 +11016,8 @@ POCKET_MONSTERS_DICT = {
     "0721": {
         None: {
             "Name": "Volcanion",
-            "Type 1": "Fire",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 120,
@@ -11028,8 +11029,8 @@ POCKET_MONSTERS_DICT = {
     "0722": {
         None: {
             "Name": "Rowlet",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 55,
@@ -11041,8 +11042,8 @@ POCKET_MONSTERS_DICT = {
     "0723": {
         None: {
             "Name": "Dartrix",
-            "Type 1": "Grass",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 75,
@@ -11054,8 +11055,8 @@ POCKET_MONSTERS_DICT = {
     "0724": {
         None: {
             "Name": "Decidueye",
-            "Type 1": "Grass",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 107,
             StatsEnum.DEFENSE: 75,
@@ -11065,8 +11066,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hisuian Decidueye": {
             "Name": "Decidueye",
-            "Type 1": "Grass",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 112,
             StatsEnum.DEFENSE: 80,
@@ -11078,7 +11079,7 @@ POCKET_MONSTERS_DICT = {
     "0725": {
         None: {
             "Name": "Litten",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 65,
@@ -11091,7 +11092,7 @@ POCKET_MONSTERS_DICT = {
     "0726": {
         None: {
             "Name": "Torracat",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 85,
@@ -11104,8 +11105,8 @@ POCKET_MONSTERS_DICT = {
     "0727": {
         None: {
             "Name": "Incineroar",
-            "Type 1": "Fire",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 90,
@@ -11117,7 +11118,7 @@ POCKET_MONSTERS_DICT = {
     "0728": {
         None: {
             "Name": "Popplio",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 54,
@@ -11130,7 +11131,7 @@ POCKET_MONSTERS_DICT = {
     "0729": {
         None: {
             "Name": "Brionne",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 69,
@@ -11143,8 +11144,8 @@ POCKET_MONSTERS_DICT = {
     "0730": {
         None: {
             "Name": "Primarina",
-            "Type 1": "Water",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 74,
             StatsEnum.DEFENSE: 74,
@@ -11156,8 +11157,8 @@ POCKET_MONSTERS_DICT = {
     "0731": {
         None: {
             "Name": "Pikipek",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 30,
@@ -11169,8 +11170,8 @@ POCKET_MONSTERS_DICT = {
     "0732": {
         None: {
             "Name": "Trumbeak",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 50,
@@ -11182,8 +11183,8 @@ POCKET_MONSTERS_DICT = {
     "0733": {
         None: {
             "Name": "Toucannon",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 75,
@@ -11195,7 +11196,7 @@ POCKET_MONSTERS_DICT = {
     "0734": {
         None: {
             "Name": "Yungoos",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 70,
@@ -11208,7 +11209,7 @@ POCKET_MONSTERS_DICT = {
     "0735": {
         None: {
             "Name": "Gumshoos",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 110,
@@ -11221,7 +11222,7 @@ POCKET_MONSTERS_DICT = {
     "0736": {
         None: {
             "Name": "Grubbin",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 47,
             StatsEnum.ATTACK: 62,
@@ -11234,8 +11235,8 @@ POCKET_MONSTERS_DICT = {
     "0737": {
         None: {
             "Name": "Charjabug",
-            "Type 1": "Bug",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 57,
             StatsEnum.ATTACK: 82,
             StatsEnum.DEFENSE: 95,
@@ -11247,8 +11248,8 @@ POCKET_MONSTERS_DICT = {
     "0738": {
         None: {
             "Name": "Vikavolt",
-            "Type 1": "Bug",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 77,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 90,
@@ -11260,7 +11261,7 @@ POCKET_MONSTERS_DICT = {
     "0739": {
         None: {
             "Name": "Crabrawler",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 47,
             StatsEnum.ATTACK: 82,
@@ -11273,8 +11274,8 @@ POCKET_MONSTERS_DICT = {
     "0740": {
         None: {
             "Name": "Crabominable",
-            "Type 1": "Fighting",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 132,
             StatsEnum.DEFENSE: 77,
@@ -11286,8 +11287,8 @@ POCKET_MONSTERS_DICT = {
     "0741": {
         "Baile Style": {
             "Name": "Oricorio",
-            "Type 1": "Fire",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 70,
@@ -11297,8 +11298,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Pom-Pom Style": {
             "Name": "Oricorio",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 70,
@@ -11308,8 +11309,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Pa'u Style": {
             "Name": "Oricorio",
-            "Type 1": "Psychic",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 70,
@@ -11319,8 +11320,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Sensu Style": {
             "Name": "Oricorio",
-            "Type 1": "Ghost",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 70,
@@ -11332,8 +11333,8 @@ POCKET_MONSTERS_DICT = {
     "0742": {
         None: {
             "Name": "Cutiefly",
-            "Type 1": "Bug",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 40,
@@ -11345,8 +11346,8 @@ POCKET_MONSTERS_DICT = {
     "0743": {
         None: {
             "Name": "Ribombee",
-            "Type 1": "Bug",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 60,
@@ -11358,7 +11359,7 @@ POCKET_MONSTERS_DICT = {
     "0744": {
         None: {
             "Name": "Rockruff",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 65,
@@ -11369,7 +11370,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Own Tempo Rockruff": {
             "Name": "Rockruff",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 65,
@@ -11382,7 +11383,7 @@ POCKET_MONSTERS_DICT = {
     "0745": {
         "Midday Form": {
             "Name": "Lycanroc",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 115,
@@ -11393,7 +11394,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Midnight Form": {
             "Name": "Lycanroc",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 115,
@@ -11404,7 +11405,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Dusk Form": {
             "Name": "Lycanroc",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 117,
@@ -11417,7 +11418,7 @@ POCKET_MONSTERS_DICT = {
     "0746": {
         "Solo Form": {
             "Name": "Wishiwashi",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 20,
@@ -11428,7 +11429,7 @@ POCKET_MONSTERS_DICT = {
         },
         "School Form": {
             "Name": "Wishiwashi",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 140,
@@ -11441,8 +11442,8 @@ POCKET_MONSTERS_DICT = {
     "0747": {
         None: {
             "Name": "Mareanie",
-            "Type 1": "Poison",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 53,
             StatsEnum.DEFENSE: 62,
@@ -11454,8 +11455,8 @@ POCKET_MONSTERS_DICT = {
     "0748": {
         None: {
             "Name": "Toxapex",
-            "Type 1": "Poison",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 63,
             StatsEnum.DEFENSE: 152,
@@ -11467,7 +11468,7 @@ POCKET_MONSTERS_DICT = {
     "0749": {
         None: {
             "Name": "Mudbray",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 100,
@@ -11480,7 +11481,7 @@ POCKET_MONSTERS_DICT = {
     "0750": {
         None: {
             "Name": "Mudsdale",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 125,
@@ -11493,8 +11494,8 @@ POCKET_MONSTERS_DICT = {
     "0751": {
         None: {
             "Name": "Dewpider",
-            "Type 1": "Water",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 52,
@@ -11506,8 +11507,8 @@ POCKET_MONSTERS_DICT = {
     "0752": {
         None: {
             "Name": "Araquanid",
-            "Type 1": "Water",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 92,
@@ -11519,7 +11520,7 @@ POCKET_MONSTERS_DICT = {
     "0753": {
         None: {
             "Name": "Fomantis",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 55,
@@ -11532,7 +11533,7 @@ POCKET_MONSTERS_DICT = {
     "0754": {
         None: {
             "Name": "Lurantis",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 105,
@@ -11545,8 +11546,8 @@ POCKET_MONSTERS_DICT = {
     "0755": {
         None: {
             "Name": "Morelull",
-            "Type 1": "Grass",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 55,
@@ -11558,8 +11559,8 @@ POCKET_MONSTERS_DICT = {
     "0756": {
         None: {
             "Name": "Shiinotic",
-            "Type 1": "Grass",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 80,
@@ -11571,8 +11572,8 @@ POCKET_MONSTERS_DICT = {
     "0757": {
         None: {
             "Name": "Salandit",
-            "Type 1": "Poison",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 44,
             StatsEnum.DEFENSE: 40,
@@ -11584,8 +11585,8 @@ POCKET_MONSTERS_DICT = {
     "0758": {
         None: {
             "Name": "Salazzle",
-            "Type 1": "Poison",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 64,
             StatsEnum.DEFENSE: 60,
@@ -11597,8 +11598,8 @@ POCKET_MONSTERS_DICT = {
     "0759": {
         None: {
             "Name": "Stufful",
-            "Type 1": "Normal",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 50,
@@ -11610,8 +11611,8 @@ POCKET_MONSTERS_DICT = {
     "0760": {
         None: {
             "Name": "Bewear",
-            "Type 1": "Normal",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 80,
@@ -11623,7 +11624,7 @@ POCKET_MONSTERS_DICT = {
     "0761": {
         None: {
             "Name": "Bounsweet",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 42,
             StatsEnum.ATTACK: 30,
@@ -11636,7 +11637,7 @@ POCKET_MONSTERS_DICT = {
     "0762": {
         None: {
             "Name": "Steenee",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 52,
             StatsEnum.ATTACK: 40,
@@ -11649,7 +11650,7 @@ POCKET_MONSTERS_DICT = {
     "0763": {
         None: {
             "Name": "Tsareena",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 120,
@@ -11662,7 +11663,7 @@ POCKET_MONSTERS_DICT = {
     "0764": {
         None: {
             "Name": "Comfey",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 51,
             StatsEnum.ATTACK: 52,
@@ -11675,8 +11676,8 @@ POCKET_MONSTERS_DICT = {
     "0765": {
         None: {
             "Name": "Oranguru",
-            "Type 1": "Normal",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 80,
@@ -11688,7 +11689,7 @@ POCKET_MONSTERS_DICT = {
     "0766": {
         None: {
             "Name": "Passimian",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 120,
@@ -11701,8 +11702,8 @@ POCKET_MONSTERS_DICT = {
     "0767": {
         None: {
             "Name": "Wimpod",
-            "Type 1": "Bug",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 25,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 40,
@@ -11714,8 +11715,8 @@ POCKET_MONSTERS_DICT = {
     "0768": {
         None: {
             "Name": "Golisopod",
-            "Type 1": "Bug",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 140,
@@ -11727,8 +11728,8 @@ POCKET_MONSTERS_DICT = {
     "0769": {
         None: {
             "Name": "Sandygast",
-            "Type 1": "Ghost",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 80,
@@ -11740,8 +11741,8 @@ POCKET_MONSTERS_DICT = {
     "0770": {
         None: {
             "Name": "Palossand",
-            "Type 1": "Ghost",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 110,
@@ -11753,7 +11754,7 @@ POCKET_MONSTERS_DICT = {
     "0771": {
         None: {
             "Name": "Pyukumuku",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 60,
@@ -11766,7 +11767,7 @@ POCKET_MONSTERS_DICT = {
     "0772": {
         None: {
             "Name": "Type: Null",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 95,
@@ -11779,7 +11780,7 @@ POCKET_MONSTERS_DICT = {
     "0773": {
         None: {
             "Name": "Silvally",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 95,
@@ -11792,8 +11793,8 @@ POCKET_MONSTERS_DICT = {
     "0774": {
         "Meteor Form": {
             "Name": "Minior",
-            "Type 1": "Rock",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 100,
@@ -11803,8 +11804,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Core Form": {
             "Name": "Minior",
-            "Type 1": "Rock",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 60,
@@ -11816,7 +11817,7 @@ POCKET_MONSTERS_DICT = {
     "0775": {
         None: {
             "Name": "Komala",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 115,
@@ -11829,8 +11830,8 @@ POCKET_MONSTERS_DICT = {
     "0776": {
         None: {
             "Name": "Turtonator",
-            "Type 1": "Fire",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 78,
             StatsEnum.DEFENSE: 135,
@@ -11842,8 +11843,8 @@ POCKET_MONSTERS_DICT = {
     "0777": {
         None: {
             "Name": "Togedemaru",
-            "Type 1": "Electric",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 98,
             StatsEnum.DEFENSE: 63,
@@ -11855,8 +11856,8 @@ POCKET_MONSTERS_DICT = {
     "0778": {
         None: {
             "Name": "Mimikyu",
-            "Type 1": "Ghost",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 80,
@@ -11868,8 +11869,8 @@ POCKET_MONSTERS_DICT = {
     "0779": {
         None: {
             "Name": "Bruxish",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 70,
@@ -11881,8 +11882,8 @@ POCKET_MONSTERS_DICT = {
     "0780": {
         None: {
             "Name": "Drampa",
-            "Type 1": "Normal",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 85,
@@ -11894,8 +11895,8 @@ POCKET_MONSTERS_DICT = {
     "0781": {
         None: {
             "Name": "Dhelmise",
-            "Type 1": "Ghost",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 131,
             StatsEnum.DEFENSE: 100,
@@ -11907,7 +11908,7 @@ POCKET_MONSTERS_DICT = {
     "0782": {
         None: {
             "Name": "Jangmo-o",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 55,
@@ -11920,8 +11921,8 @@ POCKET_MONSTERS_DICT = {
     "0783": {
         None: {
             "Name": "Hakamo-o",
-            "Type 1": "Dragon",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 90,
@@ -11933,8 +11934,8 @@ POCKET_MONSTERS_DICT = {
     "0784": {
         None: {
             "Name": "Kommo-o",
-            "Type 1": "Dragon",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 125,
@@ -11946,8 +11947,8 @@ POCKET_MONSTERS_DICT = {
     "0785": {
         None: {
             "Name": "Tapu Koko",
-            "Type 1": "Electric",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 85,
@@ -11959,8 +11960,8 @@ POCKET_MONSTERS_DICT = {
     "0786": {
         None: {
             "Name": "Tapu Lele",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 75,
@@ -11972,8 +11973,8 @@ POCKET_MONSTERS_DICT = {
     "0787": {
         None: {
             "Name": "Tapu Bulu",
-            "Type 1": "Grass",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 115,
@@ -11985,8 +11986,8 @@ POCKET_MONSTERS_DICT = {
     "0788": {
         None: {
             "Name": "Tapu Fini",
-            "Type 1": "Water",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 115,
@@ -11998,7 +11999,7 @@ POCKET_MONSTERS_DICT = {
     "0789": {
         None: {
             "Name": "Cosmog",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 43,
             StatsEnum.ATTACK: 29,
@@ -12011,7 +12012,7 @@ POCKET_MONSTERS_DICT = {
     "0790": {
         None: {
             "Name": "Cosmoem",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 43,
             StatsEnum.ATTACK: 29,
@@ -12024,8 +12025,8 @@ POCKET_MONSTERS_DICT = {
     "0791": {
         None: {
             "Name": "Solgaleo",
-            "Type 1": "Psychic",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 137,
             StatsEnum.ATTACK: 137,
             StatsEnum.DEFENSE: 107,
@@ -12037,8 +12038,8 @@ POCKET_MONSTERS_DICT = {
     "0792": {
         None: {
             "Name": "Lunala",
-            "Type 1": "Psychic",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 137,
             StatsEnum.ATTACK: 113,
             StatsEnum.DEFENSE: 89,
@@ -12050,8 +12051,8 @@ POCKET_MONSTERS_DICT = {
     "0793": {
         None: {
             "Name": "Nihilego",
-            "Type 1": "Rock",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 109,
             StatsEnum.ATTACK: 53,
             StatsEnum.DEFENSE: 47,
@@ -12063,8 +12064,8 @@ POCKET_MONSTERS_DICT = {
     "0794": {
         None: {
             "Name": "Buzzwole",
-            "Type 1": "Bug",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 107,
             StatsEnum.ATTACK: 139,
             StatsEnum.DEFENSE: 139,
@@ -12076,8 +12077,8 @@ POCKET_MONSTERS_DICT = {
     "0795": {
         None: {
             "Name": "Pheromosa",
-            "Type 1": "Bug",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 137,
             StatsEnum.DEFENSE: 37,
@@ -12089,7 +12090,7 @@ POCKET_MONSTERS_DICT = {
     "0796": {
         None: {
             "Name": "Xurkitree",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 83,
             StatsEnum.ATTACK: 89,
@@ -12102,8 +12103,8 @@ POCKET_MONSTERS_DICT = {
     "0797": {
         None: {
             "Name": "Celesteela",
-            "Type 1": "Steel",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 101,
             StatsEnum.DEFENSE: 103,
@@ -12115,8 +12116,8 @@ POCKET_MONSTERS_DICT = {
     "0798": {
         None: {
             "Name": "Kartana",
-            "Type 1": "Grass",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 181,
             StatsEnum.DEFENSE: 131,
@@ -12128,8 +12129,8 @@ POCKET_MONSTERS_DICT = {
     "0799": {
         None: {
             "Name": "Guzzlord",
-            "Type 1": "Dark",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 223,
             StatsEnum.ATTACK: 101,
             StatsEnum.DEFENSE: 53,
@@ -12141,7 +12142,7 @@ POCKET_MONSTERS_DICT = {
     "0800": {
         None: {
             "Name": "Necrozma",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 107,
@@ -12152,8 +12153,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Dusk Mane Necrozma": {
             "Name": "Necrozma",
-            "Type 1": "Psychic",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 157,
             StatsEnum.DEFENSE: 127,
@@ -12163,8 +12164,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Dawn Wings Necrozma": {
             "Name": "Necrozma",
-            "Type 1": "Psychic",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 113,
             StatsEnum.DEFENSE: 109,
@@ -12174,8 +12175,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Ultra Necrozma": {
             "Name": "Necrozma",
-            "Type 1": "Psychic",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 97,
             StatsEnum.ATTACK: 167,
             StatsEnum.DEFENSE: 97,
@@ -12187,8 +12188,8 @@ POCKET_MONSTERS_DICT = {
     "0801": {
         None: {
             "Name": "Magearna",
-            "Type 1": "Steel",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 115,
@@ -12200,8 +12201,8 @@ POCKET_MONSTERS_DICT = {
     "0802": {
         None: {
             "Name": "Marshadow",
-            "Type 1": "Fighting",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 80,
@@ -12213,7 +12214,7 @@ POCKET_MONSTERS_DICT = {
     "0803": {
         None: {
             "Name": "Poipole",
-            "Type 1": "Poison",
+            "Type 1": TypesEnum.POISON,
             "Type 2": None,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 73,
@@ -12226,8 +12227,8 @@ POCKET_MONSTERS_DICT = {
     "0804": {
         None: {
             "Name": "Naganadel",
-            "Type 1": "Poison",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 73,
             StatsEnum.ATTACK: 73,
             StatsEnum.DEFENSE: 73,
@@ -12239,8 +12240,8 @@ POCKET_MONSTERS_DICT = {
     "0805": {
         None: {
             "Name": "Stakataka",
-            "Type 1": "Rock",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 131,
             StatsEnum.DEFENSE: 211,
@@ -12252,8 +12253,8 @@ POCKET_MONSTERS_DICT = {
     "0806": {
         None: {
             "Name": "Blacephalon",
-            "Type 1": "Fire",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 53,
             StatsEnum.ATTACK: 127,
             StatsEnum.DEFENSE: 53,
@@ -12265,7 +12266,7 @@ POCKET_MONSTERS_DICT = {
     "0807": {
         None: {
             "Name": "Zeraora",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 112,
@@ -12278,7 +12279,7 @@ POCKET_MONSTERS_DICT = {
     "0808": {
         None: {
             "Name": "Meltan",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 46,
             StatsEnum.ATTACK: 65,
@@ -12291,7 +12292,7 @@ POCKET_MONSTERS_DICT = {
     "0809": {
         None: {
             "Name": "Melmetal",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 135,
             StatsEnum.ATTACK: 143,
@@ -12304,7 +12305,7 @@ POCKET_MONSTERS_DICT = {
     "0810": {
         None: {
             "Name": "Grookey",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
@@ -12317,7 +12318,7 @@ POCKET_MONSTERS_DICT = {
     "0811": {
         None: {
             "Name": "Thwackey",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
@@ -12330,7 +12331,7 @@ POCKET_MONSTERS_DICT = {
     "0812": {
         None: {
             "Name": "Rillaboom",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 125,
@@ -12343,7 +12344,7 @@ POCKET_MONSTERS_DICT = {
     "0813": {
         None: {
             "Name": "Scorbunny",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 71,
@@ -12356,7 +12357,7 @@ POCKET_MONSTERS_DICT = {
     "0814": {
         None: {
             "Name": "Raboot",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 86,
@@ -12369,7 +12370,7 @@ POCKET_MONSTERS_DICT = {
     "0815": {
         None: {
             "Name": "Cinderace",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 116,
@@ -12382,7 +12383,7 @@ POCKET_MONSTERS_DICT = {
     "0816": {
         None: {
             "Name": "Sobble",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 40,
@@ -12395,7 +12396,7 @@ POCKET_MONSTERS_DICT = {
     "0817": {
         None: {
             "Name": "Drizzile",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 60,
@@ -12408,7 +12409,7 @@ POCKET_MONSTERS_DICT = {
     "0818": {
         None: {
             "Name": "Inteleon",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
@@ -12421,7 +12422,7 @@ POCKET_MONSTERS_DICT = {
     "0819": {
         None: {
             "Name": "Skwovet",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 55,
@@ -12434,7 +12435,7 @@ POCKET_MONSTERS_DICT = {
     "0820": {
         None: {
             "Name": "Greedent",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 95,
@@ -12447,7 +12448,7 @@ POCKET_MONSTERS_DICT = {
     "0821": {
         None: {
             "Name": "Rookidee",
-            "Type 1": "Flying",
+            "Type 1": TypesEnum.FLYING,
             "Type 2": None,
             StatsEnum.HP: 38,
             StatsEnum.ATTACK: 47,
@@ -12460,7 +12461,7 @@ POCKET_MONSTERS_DICT = {
     "0822": {
         None: {
             "Name": "Corvisquire",
-            "Type 1": "Flying",
+            "Type 1": TypesEnum.FLYING,
             "Type 2": None,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 67,
@@ -12473,8 +12474,8 @@ POCKET_MONSTERS_DICT = {
     "0823": {
         None: {
             "Name": "Corviknight",
-            "Type 1": "Flying",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FLYING,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 98,
             StatsEnum.ATTACK: 87,
             StatsEnum.DEFENSE: 105,
@@ -12486,7 +12487,7 @@ POCKET_MONSTERS_DICT = {
     "0824": {
         None: {
             "Name": "Blipbug",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 25,
             StatsEnum.ATTACK: 20,
@@ -12499,8 +12500,8 @@ POCKET_MONSTERS_DICT = {
     "0825": {
         None: {
             "Name": "Dottler",
-            "Type 1": "Bug",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 80,
@@ -12512,8 +12513,8 @@ POCKET_MONSTERS_DICT = {
     "0826": {
         None: {
             "Name": "Orbeetle",
-            "Type 1": "Bug",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 110,
@@ -12525,7 +12526,7 @@ POCKET_MONSTERS_DICT = {
     "0827": {
         None: {
             "Name": "Nickit",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 28,
@@ -12538,7 +12539,7 @@ POCKET_MONSTERS_DICT = {
     "0828": {
         None: {
             "Name": "Thievul",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 58,
@@ -12551,7 +12552,7 @@ POCKET_MONSTERS_DICT = {
     "0829": {
         None: {
             "Name": "Gossifleur",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
@@ -12564,7 +12565,7 @@ POCKET_MONSTERS_DICT = {
     "0830": {
         None: {
             "Name": "Eldegoss",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 50,
@@ -12577,7 +12578,7 @@ POCKET_MONSTERS_DICT = {
     "0831": {
         None: {
             "Name": "Wooloo",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 42,
             StatsEnum.ATTACK: 40,
@@ -12590,7 +12591,7 @@ POCKET_MONSTERS_DICT = {
     "0832": {
         None: {
             "Name": "Dubwool",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 80,
@@ -12603,7 +12604,7 @@ POCKET_MONSTERS_DICT = {
     "0833": {
         None: {
             "Name": "Chewtle",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 64,
@@ -12616,8 +12617,8 @@ POCKET_MONSTERS_DICT = {
     "0834": {
         None: {
             "Name": "Drednaw",
-            "Type 1": "Water",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 90,
@@ -12629,7 +12630,7 @@ POCKET_MONSTERS_DICT = {
     "0835": {
         None: {
             "Name": "Yamper",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 59,
             StatsEnum.ATTACK: 45,
@@ -12642,7 +12643,7 @@ POCKET_MONSTERS_DICT = {
     "0836": {
         None: {
             "Name": "Boltund",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 69,
             StatsEnum.ATTACK: 90,
@@ -12655,7 +12656,7 @@ POCKET_MONSTERS_DICT = {
     "0837": {
         None: {
             "Name": "Rolycoly",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 40,
@@ -12668,8 +12669,8 @@ POCKET_MONSTERS_DICT = {
     "0838": {
         None: {
             "Name": "Carkol",
-            "Type 1": "Rock",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 90,
@@ -12681,8 +12682,8 @@ POCKET_MONSTERS_DICT = {
     "0839": {
         None: {
             "Name": "Coalossal",
-            "Type 1": "Rock",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 120,
@@ -12694,8 +12695,8 @@ POCKET_MONSTERS_DICT = {
     "0840": {
         None: {
             "Name": "Applin",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 80,
@@ -12707,8 +12708,8 @@ POCKET_MONSTERS_DICT = {
     "0841": {
         None: {
             "Name": "Flapple",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 80,
@@ -12720,8 +12721,8 @@ POCKET_MONSTERS_DICT = {
     "0842": {
         None: {
             "Name": "Appletun",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 80,
@@ -12733,7 +12734,7 @@ POCKET_MONSTERS_DICT = {
     "0843": {
         None: {
             "Name": "Silicobra",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 52,
             StatsEnum.ATTACK: 57,
@@ -12746,7 +12747,7 @@ POCKET_MONSTERS_DICT = {
     "0844": {
         None: {
             "Name": "Sandaconda",
-            "Type 1": "Ground",
+            "Type 1": TypesEnum.GROUND,
             "Type 2": None,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 107,
@@ -12759,8 +12760,8 @@ POCKET_MONSTERS_DICT = {
     "0845": {
         None: {
             "Name": "Cramorant",
-            "Type 1": "Flying",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.FLYING,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 55,
@@ -12772,7 +12773,7 @@ POCKET_MONSTERS_DICT = {
     "0846": {
         None: {
             "Name": "Arrokuda",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 41,
             StatsEnum.ATTACK: 63,
@@ -12785,7 +12786,7 @@ POCKET_MONSTERS_DICT = {
     "0847": {
         None: {
             "Name": "Barraskewda",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 123,
@@ -12798,8 +12799,8 @@ POCKET_MONSTERS_DICT = {
     "0848": {
         None: {
             "Name": "Toxel",
-            "Type 1": "Electric",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 38,
             StatsEnum.DEFENSE: 35,
@@ -12811,8 +12812,8 @@ POCKET_MONSTERS_DICT = {
     "0849": {
         "Amped Form": {
             "Name": "Toxtricity",
-            "Type 1": "Electric",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 98,
             StatsEnum.DEFENSE: 70,
@@ -12822,8 +12823,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Low Key Form": {
             "Name": "Toxtricity",
-            "Type 1": "Electric",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 98,
             StatsEnum.DEFENSE: 70,
@@ -12835,8 +12836,8 @@ POCKET_MONSTERS_DICT = {
     "0850": {
         None: {
             "Name": "Sizzlipede",
-            "Type 1": "Fire",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 45,
@@ -12848,8 +12849,8 @@ POCKET_MONSTERS_DICT = {
     "0851": {
         None: {
             "Name": "Centiskorch",
-            "Type 1": "Fire",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 65,
@@ -12861,7 +12862,7 @@ POCKET_MONSTERS_DICT = {
     "0852": {
         None: {
             "Name": "Clobbopus",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 68,
@@ -12874,7 +12875,7 @@ POCKET_MONSTERS_DICT = {
     "0853": {
         None: {
             "Name": "Grapploct",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 118,
@@ -12887,7 +12888,7 @@ POCKET_MONSTERS_DICT = {
     "0854": {
         None: {
             "Name": "Sinistea",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
@@ -12900,7 +12901,7 @@ POCKET_MONSTERS_DICT = {
     "0855": {
         None: {
             "Name": "Polteageist",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 65,
@@ -12913,7 +12914,7 @@ POCKET_MONSTERS_DICT = {
     "0856": {
         None: {
             "Name": "Hatenna",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 42,
             StatsEnum.ATTACK: 30,
@@ -12926,7 +12927,7 @@ POCKET_MONSTERS_DICT = {
     "0857": {
         None: {
             "Name": "Hattrem",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 57,
             StatsEnum.ATTACK: 40,
@@ -12939,8 +12940,8 @@ POCKET_MONSTERS_DICT = {
     "0858": {
         None: {
             "Name": "Hatterene",
-            "Type 1": "Psychic",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 57,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 95,
@@ -12952,8 +12953,8 @@ POCKET_MONSTERS_DICT = {
     "0859": {
         None: {
             "Name": "Impidimp",
-            "Type 1": "Dark",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 30,
@@ -12965,8 +12966,8 @@ POCKET_MONSTERS_DICT = {
     "0860": {
         None: {
             "Name": "Morgrem",
-            "Type 1": "Dark",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 45,
@@ -12978,8 +12979,8 @@ POCKET_MONSTERS_DICT = {
     "0861": {
         None: {
             "Name": "Grimmsnarl",
-            "Type 1": "Dark",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 65,
@@ -12991,8 +12992,8 @@ POCKET_MONSTERS_DICT = {
     "0862": {
         None: {
             "Name": "Obstagoon",
-            "Type 1": "Dark",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 93,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 101,
@@ -13004,7 +13005,7 @@ POCKET_MONSTERS_DICT = {
     "0863": {
         None: {
             "Name": "Perrserker",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 110,
@@ -13017,7 +13018,7 @@ POCKET_MONSTERS_DICT = {
     "0864": {
         None: {
             "Name": "Cursola",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 95,
@@ -13030,7 +13031,7 @@ POCKET_MONSTERS_DICT = {
     "0865": {
         None: {
             "Name": "Sirfetch'd",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 62,
             StatsEnum.ATTACK: 135,
@@ -13043,8 +13044,8 @@ POCKET_MONSTERS_DICT = {
     "0866": {
         None: {
             "Name": "Mr. Rime",
-            "Type 1": "Ice",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 75,
@@ -13056,8 +13057,8 @@ POCKET_MONSTERS_DICT = {
     "0867": {
         None: {
             "Name": "Runerigus",
-            "Type 1": "Ground",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 145,
@@ -13069,7 +13070,7 @@ POCKET_MONSTERS_DICT = {
     "0868": {
         None: {
             "Name": "Milcery",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 40,
@@ -13082,7 +13083,7 @@ POCKET_MONSTERS_DICT = {
     "0869": {
         None: {
             "Name": "Alcremie",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 60,
@@ -13095,7 +13096,7 @@ POCKET_MONSTERS_DICT = {
     "0870": {
         None: {
             "Name": "Falinks",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 100,
@@ -13108,7 +13109,7 @@ POCKET_MONSTERS_DICT = {
     "0871": {
         None: {
             "Name": "Pincurchin",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 101,
@@ -13121,8 +13122,8 @@ POCKET_MONSTERS_DICT = {
     "0872": {
         None: {
             "Name": "Snom",
-            "Type 1": "Ice",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 25,
             StatsEnum.DEFENSE: 35,
@@ -13134,8 +13135,8 @@ POCKET_MONSTERS_DICT = {
     "0873": {
         None: {
             "Name": "Frosmoth",
-            "Type 1": "Ice",
-            "Type 2": "Bug",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.BUG,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 60,
@@ -13147,7 +13148,7 @@ POCKET_MONSTERS_DICT = {
     "0874": {
         None: {
             "Name": "Stonjourner",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 125,
@@ -13160,7 +13161,7 @@ POCKET_MONSTERS_DICT = {
     "0875": {
         "Ice Face": {
             "Name": "Eiscue",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
@@ -13171,7 +13172,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Noice Face": {
             "Name": "Eiscue",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 80,
@@ -13184,8 +13185,8 @@ POCKET_MONSTERS_DICT = {
     "0876": {
         "Male": {
             "Name": "Indeedee",
-            "Type 1": "Psychic",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 55,
@@ -13195,8 +13196,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Female": {
             "Name": "Indeedee",
-            "Type 1": "Psychic",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 65,
@@ -13208,8 +13209,8 @@ POCKET_MONSTERS_DICT = {
     "0877": {
         "Full Belly Mode": {
             "Name": "Morpeko",
-            "Type 1": "Electric",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 58,
@@ -13219,8 +13220,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hangry Mode": {
             "Name": "Morpeko",
-            "Type 1": "Electric",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 58,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 58,
@@ -13232,7 +13233,7 @@ POCKET_MONSTERS_DICT = {
     "0878": {
         None: {
             "Name": "Cufant",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 80,
@@ -13245,7 +13246,7 @@ POCKET_MONSTERS_DICT = {
     "0879": {
         None: {
             "Name": "Copperajah",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 122,
             StatsEnum.ATTACK: 130,
@@ -13258,8 +13259,8 @@ POCKET_MONSTERS_DICT = {
     "0880": {
         None: {
             "Name": "Dracozolt",
-            "Type 1": "Electric",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 90,
@@ -13271,8 +13272,8 @@ POCKET_MONSTERS_DICT = {
     "0881": {
         None: {
             "Name": "Arctozolt",
-            "Type 1": "Electric",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 100,
             StatsEnum.DEFENSE: 90,
@@ -13284,8 +13285,8 @@ POCKET_MONSTERS_DICT = {
     "0882": {
         None: {
             "Name": "Dracovish",
-            "Type 1": "Water",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 100,
@@ -13297,8 +13298,8 @@ POCKET_MONSTERS_DICT = {
     "0883": {
         None: {
             "Name": "Arctovish",
-            "Type 1": "Water",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 100,
@@ -13310,8 +13311,8 @@ POCKET_MONSTERS_DICT = {
     "0884": {
         None: {
             "Name": "Duraludon",
-            "Type 1": "Steel",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 115,
@@ -13323,8 +13324,8 @@ POCKET_MONSTERS_DICT = {
     "0885": {
         None: {
             "Name": "Dreepy",
-            "Type 1": "Dragon",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 28,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 30,
@@ -13336,8 +13337,8 @@ POCKET_MONSTERS_DICT = {
     "0886": {
         None: {
             "Name": "Drakloak",
-            "Type 1": "Dragon",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 50,
@@ -13349,8 +13350,8 @@ POCKET_MONSTERS_DICT = {
     "0887": {
         None: {
             "Name": "Dragapult",
-            "Type 1": "Dragon",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 75,
@@ -13362,7 +13363,7 @@ POCKET_MONSTERS_DICT = {
     "0888": {
         "Hero of Many Battles": {
             "Name": "Zacian",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 92,
             StatsEnum.ATTACK: 120,
@@ -13373,8 +13374,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Crowned Sword": {
             "Name": "Zacian",
-            "Type 1": "Fairy",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 92,
             StatsEnum.ATTACK: 150,
             StatsEnum.DEFENSE: 115,
@@ -13386,7 +13387,7 @@ POCKET_MONSTERS_DICT = {
     "0889": {
         "Hero of Many Battles": {
             "Name": "Zamazenta",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 92,
             StatsEnum.ATTACK: 120,
@@ -13397,8 +13398,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Crowned Shield": {
             "Name": "Zamazenta",
-            "Type 1": "Fighting",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 92,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 140,
@@ -13410,8 +13411,8 @@ POCKET_MONSTERS_DICT = {
     "0890": {
         None: {
             "Name": "Eternatus",
-            "Type 1": "Poison",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 140,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 95,
@@ -13421,8 +13422,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Eternamax": {
             "Name": "Eternatus",
-            "Type 1": "Poison",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 255,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 250,
@@ -13434,7 +13435,7 @@ POCKET_MONSTERS_DICT = {
     "0891": {
         None: {
             "Name": "Kubfu",
-            "Type 1": "Fighting",
+            "Type 1": TypesEnum.FIGHTING,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 90,
@@ -13447,8 +13448,8 @@ POCKET_MONSTERS_DICT = {
     "0892": {
         "Single Strike Style": {
             "Name": "Urshifu",
-            "Type 1": "Fighting",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 100,
@@ -13458,8 +13459,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Rapid Strike Style": {
             "Name": "Urshifu",
-            "Type 1": "Fighting",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 100,
@@ -13471,8 +13472,8 @@ POCKET_MONSTERS_DICT = {
     "0893": {
         None: {
             "Name": "Zarude",
-            "Type 1": "Dark",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 105,
@@ -13484,7 +13485,7 @@ POCKET_MONSTERS_DICT = {
     "0894": {
         None: {
             "Name": "Regieleki",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 100,
@@ -13497,7 +13498,7 @@ POCKET_MONSTERS_DICT = {
     "0895": {
         None: {
             "Name": "Regidrago",
-            "Type 1": "Dragon",
+            "Type 1": TypesEnum.DRAGON,
             "Type 2": None,
             StatsEnum.HP: 200,
             StatsEnum.ATTACK: 100,
@@ -13510,7 +13511,7 @@ POCKET_MONSTERS_DICT = {
     "0896": {
         None: {
             "Name": "Glastrier",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 145,
@@ -13523,7 +13524,7 @@ POCKET_MONSTERS_DICT = {
     "0897": {
         None: {
             "Name": "Spectrier",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 65,
@@ -13536,8 +13537,8 @@ POCKET_MONSTERS_DICT = {
     "0898": {
         None: {
             "Name": "Calyrex",
-            "Type 1": "Psychic",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 80,
@@ -13547,8 +13548,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Ice Rider": {
             "Name": "Calyrex",
-            "Type 1": "Psychic",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 165,
             StatsEnum.DEFENSE: 150,
@@ -13558,8 +13559,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Shadow Rider": {
             "Name": "Calyrex",
-            "Type 1": "Psychic",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.PSYCHIC,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 80,
@@ -13571,8 +13572,8 @@ POCKET_MONSTERS_DICT = {
     "0899": {
         None: {
             "Name": "Wyrdeer",
-            "Type 1": "Normal",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 103,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 72,
@@ -13584,8 +13585,8 @@ POCKET_MONSTERS_DICT = {
     "0900": {
         None: {
             "Name": "Kleavor",
-            "Type 1": "Bug",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 95,
@@ -13597,8 +13598,8 @@ POCKET_MONSTERS_DICT = {
     "0901": {
         None: {
             "Name": "Ursaluna",
-            "Type 1": "Ground",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 130,
             StatsEnum.ATTACK: 140,
             StatsEnum.DEFENSE: 105,
@@ -13608,8 +13609,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Bloodmoon": {
             "Name": "Ursaluna",
-            "Type 1": "Ground",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 113,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 120,
@@ -13621,8 +13622,8 @@ POCKET_MONSTERS_DICT = {
     "0902": {
         "Male": {
             "Name": "Basculegion",
-            "Type 1": "Water",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 112,
             StatsEnum.DEFENSE: 65,
@@ -13632,8 +13633,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Female": {
             "Name": "Basculegion",
-            "Type 1": "Water",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 92,
             StatsEnum.DEFENSE: 65,
@@ -13645,8 +13646,8 @@ POCKET_MONSTERS_DICT = {
     "0903": {
         None: {
             "Name": "Sneasler",
-            "Type 1": "Fighting",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 60,
@@ -13658,8 +13659,8 @@ POCKET_MONSTERS_DICT = {
     "0904": {
         None: {
             "Name": "Overqwil",
-            "Type 1": "Dark",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 95,
@@ -13671,8 +13672,8 @@ POCKET_MONSTERS_DICT = {
     "0905": {
         "Incarnate Forme": {
             "Name": "Enamorus",
-            "Type 1": "Fairy",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 70,
@@ -13682,8 +13683,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Therian Forme": {
             "Name": "Enamorus",
-            "Type 1": "Fairy",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 110,
@@ -13695,7 +13696,7 @@ POCKET_MONSTERS_DICT = {
     "0906": {
         None: {
             "Name": "Sprigatito",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 61,
@@ -13708,7 +13709,7 @@ POCKET_MONSTERS_DICT = {
     "0907": {
         None: {
             "Name": "Floragato",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 80,
@@ -13721,8 +13722,8 @@ POCKET_MONSTERS_DICT = {
     "0908": {
         None: {
             "Name": "Meowscarada",
-            "Type 1": "Grass",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 76,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 70,
@@ -13734,7 +13735,7 @@ POCKET_MONSTERS_DICT = {
     "0909": {
         None: {
             "Name": "Fuecoco",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 67,
             StatsEnum.ATTACK: 45,
@@ -13747,7 +13748,7 @@ POCKET_MONSTERS_DICT = {
     "0910": {
         None: {
             "Name": "Crocalor",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 81,
             StatsEnum.ATTACK: 55,
@@ -13760,8 +13761,8 @@ POCKET_MONSTERS_DICT = {
     "0911": {
         None: {
             "Name": "Skeledirge",
-            "Type 1": "Fire",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 104,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 100,
@@ -13773,7 +13774,7 @@ POCKET_MONSTERS_DICT = {
     "0912": {
         None: {
             "Name": "Quaxly",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 65,
@@ -13786,7 +13787,7 @@ POCKET_MONSTERS_DICT = {
     "0913": {
         None: {
             "Name": "Quaxwell",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
@@ -13799,8 +13800,8 @@ POCKET_MONSTERS_DICT = {
     "0914": {
         None: {
             "Name": "Quaquaval",
-            "Type 1": "Water",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 80,
@@ -13812,7 +13813,7 @@ POCKET_MONSTERS_DICT = {
     "0915": {
         None: {
             "Name": "Lechonk",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 54,
             StatsEnum.ATTACK: 45,
@@ -13825,7 +13826,7 @@ POCKET_MONSTERS_DICT = {
     "0916": {
         "Male": {
             "Name": "Oinkologne",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 100,
@@ -13836,7 +13837,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Female": {
             "Name": "Oinkologne",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 90,
@@ -13849,7 +13850,7 @@ POCKET_MONSTERS_DICT = {
     "0917": {
         None: {
             "Name": "Tarountula",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 41,
@@ -13862,7 +13863,7 @@ POCKET_MONSTERS_DICT = {
     "0918": {
         None: {
             "Name": "Spidops",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 79,
@@ -13875,7 +13876,7 @@ POCKET_MONSTERS_DICT = {
     "0919": {
         None: {
             "Name": "Nymble",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 33,
             StatsEnum.ATTACK: 46,
@@ -13888,8 +13889,8 @@ POCKET_MONSTERS_DICT = {
     "0920": {
         None: {
             "Name": "Lokix",
-            "Type 1": "Bug",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 102,
             StatsEnum.DEFENSE: 78,
@@ -13901,7 +13902,7 @@ POCKET_MONSTERS_DICT = {
     "0921": {
         None: {
             "Name": "Pawmi",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 50,
@@ -13914,8 +13915,8 @@ POCKET_MONSTERS_DICT = {
     "0922": {
         None: {
             "Name": "Pawmo",
-            "Type 1": "Electric",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 40,
@@ -13927,8 +13928,8 @@ POCKET_MONSTERS_DICT = {
     "0923": {
         None: {
             "Name": "Pawmot",
-            "Type 1": "Electric",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 70,
@@ -13940,7 +13941,7 @@ POCKET_MONSTERS_DICT = {
     "0924": {
         None: {
             "Name": "Tandemaus",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 50,
@@ -13953,7 +13954,7 @@ POCKET_MONSTERS_DICT = {
     "0925": {
         "Family of Four": {
             "Name": "Maushold",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 75,
@@ -13964,7 +13965,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Family of Three": {
             "Name": "Maushold",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 75,
@@ -13977,7 +13978,7 @@ POCKET_MONSTERS_DICT = {
     "0926": {
         None: {
             "Name": "Fidough",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 37,
             StatsEnum.ATTACK: 55,
@@ -13990,7 +13991,7 @@ POCKET_MONSTERS_DICT = {
     "0927": {
         None: {
             "Name": "Dachsbun",
-            "Type 1": "Fairy",
+            "Type 1": TypesEnum.FAIRY,
             "Type 2": None,
             StatsEnum.HP: 57,
             StatsEnum.ATTACK: 80,
@@ -14003,8 +14004,8 @@ POCKET_MONSTERS_DICT = {
     "0928": {
         None: {
             "Name": "Smoliv",
-            "Type 1": "Grass",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 41,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 45,
@@ -14016,8 +14017,8 @@ POCKET_MONSTERS_DICT = {
     "0929": {
         None: {
             "Name": "Dolliv",
-            "Type 1": "Grass",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 52,
             StatsEnum.ATTACK: 53,
             StatsEnum.DEFENSE: 60,
@@ -14029,8 +14030,8 @@ POCKET_MONSTERS_DICT = {
     "0930": {
         None: {
             "Name": "Arboliva",
-            "Type 1": "Grass",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 78,
             StatsEnum.ATTACK: 69,
             StatsEnum.DEFENSE: 90,
@@ -14042,8 +14043,8 @@ POCKET_MONSTERS_DICT = {
     "0931": {
         "Green Plumage": {
             "Name": "Squawkabilly",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 96,
             StatsEnum.DEFENSE: 51,
@@ -14053,8 +14054,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Blue Plumage": {
             "Name": "Squawkabilly",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 96,
             StatsEnum.DEFENSE: 51,
@@ -14064,8 +14065,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Yellow Plumage": {
             "Name": "Squawkabilly",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 96,
             StatsEnum.DEFENSE: 51,
@@ -14075,8 +14076,8 @@ POCKET_MONSTERS_DICT = {
         },
         "White Plumage": {
             "Name": "Squawkabilly",
-            "Type 1": "Normal",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 96,
             StatsEnum.DEFENSE: 51,
@@ -14088,7 +14089,7 @@ POCKET_MONSTERS_DICT = {
     "0932": {
         None: {
             "Name": "Nacli",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 55,
@@ -14101,7 +14102,7 @@ POCKET_MONSTERS_DICT = {
     "0933": {
         None: {
             "Name": "Naclstack",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 60,
@@ -14114,7 +14115,7 @@ POCKET_MONSTERS_DICT = {
     "0934": {
         None: {
             "Name": "Garganacl",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 100,
@@ -14127,7 +14128,7 @@ POCKET_MONSTERS_DICT = {
     "0935": {
         None: {
             "Name": "Charcadet",
-            "Type 1": "Fire",
+            "Type 1": TypesEnum.FIRE,
             "Type 2": None,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 50,
@@ -14140,8 +14141,8 @@ POCKET_MONSTERS_DICT = {
     "0936": {
         None: {
             "Name": "Armarouge",
-            "Type 1": "Fire",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 100,
@@ -14153,8 +14154,8 @@ POCKET_MONSTERS_DICT = {
     "0937": {
         None: {
             "Name": "Ceruledge",
-            "Type 1": "Fire",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 125,
             StatsEnum.DEFENSE: 80,
@@ -14166,7 +14167,7 @@ POCKET_MONSTERS_DICT = {
     "0938": {
         None: {
             "Name": "Tadbulb",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 61,
             StatsEnum.ATTACK: 31,
@@ -14179,7 +14180,7 @@ POCKET_MONSTERS_DICT = {
     "0939": {
         None: {
             "Name": "Bellibolt",
-            "Type 1": "Electric",
+            "Type 1": TypesEnum.ELECTRIC,
             "Type 2": None,
             StatsEnum.HP: 109,
             StatsEnum.ATTACK: 64,
@@ -14192,8 +14193,8 @@ POCKET_MONSTERS_DICT = {
     "0940": {
         None: {
             "Name": "Wattrel",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 35,
@@ -14205,8 +14206,8 @@ POCKET_MONSTERS_DICT = {
     "0941": {
         None: {
             "Name": "Kilowattrel",
-            "Type 1": "Electric",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 60,
@@ -14218,7 +14219,7 @@ POCKET_MONSTERS_DICT = {
     "0942": {
         None: {
             "Name": "Maschiff",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 60,
             StatsEnum.ATTACK: 78,
@@ -14231,7 +14232,7 @@ POCKET_MONSTERS_DICT = {
     "0943": {
         None: {
             "Name": "Mabosstiff",
-            "Type 1": "Dark",
+            "Type 1": TypesEnum.DARK,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
@@ -14244,8 +14245,8 @@ POCKET_MONSTERS_DICT = {
     "0944": {
         None: {
             "Name": "Shroodle",
-            "Type 1": "Poison",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 35,
@@ -14257,8 +14258,8 @@ POCKET_MONSTERS_DICT = {
     "0945": {
         None: {
             "Name": "Grafaiai",
-            "Type 1": "Poison",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 63,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 65,
@@ -14270,8 +14271,8 @@ POCKET_MONSTERS_DICT = {
     "0946": {
         None: {
             "Name": "Bramblin",
-            "Type 1": "Grass",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 30,
@@ -14283,8 +14284,8 @@ POCKET_MONSTERS_DICT = {
     "0947": {
         None: {
             "Name": "Brambleghast",
-            "Type 1": "Grass",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 70,
@@ -14296,8 +14297,8 @@ POCKET_MONSTERS_DICT = {
     "0948": {
         None: {
             "Name": "Toedscool",
-            "Type 1": "Ground",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 40,
             StatsEnum.DEFENSE: 35,
@@ -14309,8 +14310,8 @@ POCKET_MONSTERS_DICT = {
     "0949": {
         None: {
             "Name": "Toedscruel",
-            "Type 1": "Ground",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 65,
@@ -14322,7 +14323,7 @@ POCKET_MONSTERS_DICT = {
     "0950": {
         None: {
             "Name": "Klawf",
-            "Type 1": "Rock",
+            "Type 1": TypesEnum.ROCK,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 100,
@@ -14335,7 +14336,7 @@ POCKET_MONSTERS_DICT = {
     "0951": {
         None: {
             "Name": "Capsakid",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 62,
@@ -14348,8 +14349,8 @@ POCKET_MONSTERS_DICT = {
     "0952": {
         None: {
             "Name": "Scovillain",
-            "Type 1": "Grass",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 108,
             StatsEnum.DEFENSE: 65,
@@ -14361,7 +14362,7 @@ POCKET_MONSTERS_DICT = {
     "0953": {
         None: {
             "Name": "Rellor",
-            "Type 1": "Bug",
+            "Type 1": TypesEnum.BUG,
             "Type 2": None,
             StatsEnum.HP: 41,
             StatsEnum.ATTACK: 50,
@@ -14374,8 +14375,8 @@ POCKET_MONSTERS_DICT = {
     "0954": {
         None: {
             "Name": "Rabsca",
-            "Type 1": "Bug",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 75,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 85,
@@ -14387,7 +14388,7 @@ POCKET_MONSTERS_DICT = {
     "0955": {
         None: {
             "Name": "Flittle",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 30,
             StatsEnum.ATTACK: 35,
@@ -14400,7 +14401,7 @@ POCKET_MONSTERS_DICT = {
     "0956": {
         None: {
             "Name": "Espathra",
-            "Type 1": "Psychic",
+            "Type 1": TypesEnum.PSYCHIC,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 60,
@@ -14413,8 +14414,8 @@ POCKET_MONSTERS_DICT = {
     "0957": {
         None: {
             "Name": "Tinkatink",
-            "Type 1": "Fairy",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 45,
@@ -14426,8 +14427,8 @@ POCKET_MONSTERS_DICT = {
     "0958": {
         None: {
             "Name": "Tinkatuff",
-            "Type 1": "Fairy",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 55,
@@ -14439,8 +14440,8 @@ POCKET_MONSTERS_DICT = {
     "0959": {
         None: {
             "Name": "Tinkaton",
-            "Type 1": "Fairy",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 77,
@@ -14452,7 +14453,7 @@ POCKET_MONSTERS_DICT = {
     "0960": {
         None: {
             "Name": "Wiglett",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 10,
             StatsEnum.ATTACK: 55,
@@ -14465,7 +14466,7 @@ POCKET_MONSTERS_DICT = {
     "0961": {
         None: {
             "Name": "Wugtrio",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 35,
             StatsEnum.ATTACK: 100,
@@ -14478,8 +14479,8 @@ POCKET_MONSTERS_DICT = {
     "0962": {
         None: {
             "Name": "Bombirdier",
-            "Type 1": "Flying",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.FLYING,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 103,
             StatsEnum.DEFENSE: 85,
@@ -14491,7 +14492,7 @@ POCKET_MONSTERS_DICT = {
     "0963": {
         None: {
             "Name": "Finizen",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 45,
@@ -14504,7 +14505,7 @@ POCKET_MONSTERS_DICT = {
     "0964": {
         "Zero Form": {
             "Name": "Palafin",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 70,
@@ -14515,7 +14516,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Hero Form": {
             "Name": "Palafin",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 160,
@@ -14528,8 +14529,8 @@ POCKET_MONSTERS_DICT = {
     "0965": {
         None: {
             "Name": "Varoom",
-            "Type 1": "Steel",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 63,
@@ -14541,8 +14542,8 @@ POCKET_MONSTERS_DICT = {
     "0966": {
         None: {
             "Name": "Revavroom",
-            "Type 1": "Steel",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 119,
             StatsEnum.DEFENSE: 90,
@@ -14554,8 +14555,8 @@ POCKET_MONSTERS_DICT = {
     "0967": {
         None: {
             "Name": "Cyclizar",
-            "Type 1": "Dragon",
-            "Type 2": "Normal",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.NORMAL,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 65,
@@ -14567,7 +14568,7 @@ POCKET_MONSTERS_DICT = {
     "0968": {
         None: {
             "Name": "Orthworm",
-            "Type 1": "Steel",
+            "Type 1": TypesEnum.STEEL,
             "Type 2": None,
             StatsEnum.HP: 70,
             StatsEnum.ATTACK: 85,
@@ -14580,8 +14581,8 @@ POCKET_MONSTERS_DICT = {
     "0969": {
         None: {
             "Name": "Glimmet",
-            "Type 1": "Rock",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 48,
             StatsEnum.ATTACK: 35,
             StatsEnum.DEFENSE: 42,
@@ -14593,8 +14594,8 @@ POCKET_MONSTERS_DICT = {
     "0970": {
         None: {
             "Name": "Glimmora",
-            "Type 1": "Rock",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 83,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 90,
@@ -14606,7 +14607,7 @@ POCKET_MONSTERS_DICT = {
     "0971": {
         None: {
             "Name": "Greavard",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 50,
             StatsEnum.ATTACK: 61,
@@ -14619,7 +14620,7 @@ POCKET_MONSTERS_DICT = {
     "0972": {
         None: {
             "Name": "Houndstone",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 72,
             StatsEnum.ATTACK: 101,
@@ -14632,8 +14633,8 @@ POCKET_MONSTERS_DICT = {
     "0973": {
         None: {
             "Name": "Flamigo",
-            "Type 1": "Flying",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FLYING,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 82,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 74,
@@ -14645,7 +14646,7 @@ POCKET_MONSTERS_DICT = {
     "0974": {
         None: {
             "Name": "Cetoddle",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 108,
             StatsEnum.ATTACK: 68,
@@ -14658,7 +14659,7 @@ POCKET_MONSTERS_DICT = {
     "0975": {
         None: {
             "Name": "Cetitan",
-            "Type 1": "Ice",
+            "Type 1": TypesEnum.ICE,
             "Type 2": None,
             StatsEnum.HP: 170,
             StatsEnum.ATTACK: 113,
@@ -14671,8 +14672,8 @@ POCKET_MONSTERS_DICT = {
     "0976": {
         None: {
             "Name": "Veluza",
-            "Type 1": "Water",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 102,
             StatsEnum.DEFENSE: 73,
@@ -14684,7 +14685,7 @@ POCKET_MONSTERS_DICT = {
     "0977": {
         None: {
             "Name": "Dondozo",
-            "Type 1": "Water",
+            "Type 1": TypesEnum.WATER,
             "Type 2": None,
             StatsEnum.HP: 150,
             StatsEnum.ATTACK: 100,
@@ -14697,8 +14698,8 @@ POCKET_MONSTERS_DICT = {
     "0978": {
         "Curly Form": {
             "Name": "Tatsugiri",
-            "Type 1": "Dragon",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 60,
@@ -14708,8 +14709,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Droopy Form": {
             "Name": "Tatsugiri",
-            "Type 1": "Dragon",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 60,
@@ -14719,8 +14720,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Stretchy Form": {
             "Name": "Tatsugiri",
-            "Type 1": "Dragon",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 68,
             StatsEnum.ATTACK: 50,
             StatsEnum.DEFENSE: 60,
@@ -14732,8 +14733,8 @@ POCKET_MONSTERS_DICT = {
     "0979": {
         None: {
             "Name": "Annihilape",
-            "Type 1": "Fighting",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 110,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 80,
@@ -14745,8 +14746,8 @@ POCKET_MONSTERS_DICT = {
     "0980": {
         None: {
             "Name": "Clodsire",
-            "Type 1": "Poison",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 130,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 60,
@@ -14758,8 +14759,8 @@ POCKET_MONSTERS_DICT = {
     "0981": {
         None: {
             "Name": "Farigiraf",
-            "Type 1": "Normal",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.NORMAL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 120,
             StatsEnum.ATTACK: 90,
             StatsEnum.DEFENSE: 70,
@@ -14771,7 +14772,7 @@ POCKET_MONSTERS_DICT = {
     "0982": {
         "Two-Segment Form": {
             "Name": "Dudunsparce",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 100,
@@ -14782,7 +14783,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Three-Segment Form": {
             "Name": "Dudunsparce",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 100,
@@ -14795,8 +14796,8 @@ POCKET_MONSTERS_DICT = {
     "0983": {
         None: {
             "Name": "Kingambit",
-            "Type 1": "Dark",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 120,
@@ -14808,8 +14809,8 @@ POCKET_MONSTERS_DICT = {
     "0984": {
         None: {
             "Name": "Great Tusk",
-            "Type 1": "Ground",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 131,
             StatsEnum.DEFENSE: 131,
@@ -14821,8 +14822,8 @@ POCKET_MONSTERS_DICT = {
     "0985": {
         None: {
             "Name": "Scream Tail",
-            "Type 1": "Fairy",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 65,
             StatsEnum.DEFENSE: 99,
@@ -14834,8 +14835,8 @@ POCKET_MONSTERS_DICT = {
     "0986": {
         None: {
             "Name": "Brute Bonnet",
-            "Type 1": "Grass",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 111,
             StatsEnum.ATTACK: 127,
             StatsEnum.DEFENSE: 99,
@@ -14847,8 +14848,8 @@ POCKET_MONSTERS_DICT = {
     "0987": {
         None: {
             "Name": "Flutter Mane",
-            "Type 1": "Ghost",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.GHOST,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 55,
             StatsEnum.DEFENSE: 55,
@@ -14860,8 +14861,8 @@ POCKET_MONSTERS_DICT = {
     "0988": {
         None: {
             "Name": "Slither Wing",
-            "Type 1": "Bug",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.BUG,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 79,
@@ -14873,8 +14874,8 @@ POCKET_MONSTERS_DICT = {
     "0989": {
         None: {
             "Name": "Sandy Shocks",
-            "Type 1": "Electric",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 81,
             StatsEnum.DEFENSE: 97,
@@ -14886,8 +14887,8 @@ POCKET_MONSTERS_DICT = {
     "0990": {
         None: {
             "Name": "Iron Treads",
-            "Type 1": "Ground",
-            "Type 2": "Steel",
+            "Type 1": TypesEnum.GROUND,
+            "Type 2": TypesEnum.STEEL,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 112,
             StatsEnum.DEFENSE: 120,
@@ -14899,8 +14900,8 @@ POCKET_MONSTERS_DICT = {
     "0991": {
         None: {
             "Name": "Iron Bundle",
-            "Type 1": "Ice",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.ICE,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 56,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 114,
@@ -14912,8 +14913,8 @@ POCKET_MONSTERS_DICT = {
     "0992": {
         None: {
             "Name": "Iron Hands",
-            "Type 1": "Fighting",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 154,
             StatsEnum.ATTACK: 140,
             StatsEnum.DEFENSE: 108,
@@ -14925,8 +14926,8 @@ POCKET_MONSTERS_DICT = {
     "0993": {
         None: {
             "Name": "Iron Jugulis",
-            "Type 1": "Dark",
-            "Type 2": "Flying",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FLYING,
             StatsEnum.HP: 94,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 86,
@@ -14938,8 +14939,8 @@ POCKET_MONSTERS_DICT = {
     "0994": {
         None: {
             "Name": "Iron Moth",
-            "Type 1": "Fire",
-            "Type 2": "Poison",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.POISON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 70,
             StatsEnum.DEFENSE: 60,
@@ -14951,8 +14952,8 @@ POCKET_MONSTERS_DICT = {
     "0995": {
         None: {
             "Name": "Iron Thorns",
-            "Type 1": "Rock",
-            "Type 2": "Electric",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.ELECTRIC,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 134,
             StatsEnum.DEFENSE: 110,
@@ -14964,8 +14965,8 @@ POCKET_MONSTERS_DICT = {
     "0996": {
         None: {
             "Name": "Frigibax",
-            "Type 1": "Dragon",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 65,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 45,
@@ -14977,8 +14978,8 @@ POCKET_MONSTERS_DICT = {
     "0997": {
         None: {
             "Name": "Arctibax",
-            "Type 1": "Dragon",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 95,
             StatsEnum.DEFENSE: 66,
@@ -14990,8 +14991,8 @@ POCKET_MONSTERS_DICT = {
     "0998": {
         None: {
             "Name": "Baxcalibur",
-            "Type 1": "Dragon",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 115,
             StatsEnum.ATTACK: 145,
             StatsEnum.DEFENSE: 92,
@@ -15003,7 +15004,7 @@ POCKET_MONSTERS_DICT = {
     "0999": {
         "Chest Form": {
             "Name": "Gimmighoul",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
@@ -15014,7 +15015,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Roaming Form": {
             "Name": "Gimmighoul",
-            "Type 1": "Ghost",
+            "Type 1": TypesEnum.GHOST,
             "Type 2": None,
             StatsEnum.HP: 45,
             StatsEnum.ATTACK: 30,
@@ -15027,8 +15028,8 @@ POCKET_MONSTERS_DICT = {
     "1000": {
         None: {
             "Name": "Gholdengo",
-            "Type 1": "Steel",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 87,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 95,
@@ -15040,8 +15041,8 @@ POCKET_MONSTERS_DICT = {
     "1001": {
         None: {
             "Name": "Wo-Chien",
-            "Type 1": "Dark",
-            "Type 2": "Grass",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.GRASS,
             StatsEnum.HP: 85,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 100,
@@ -15053,8 +15054,8 @@ POCKET_MONSTERS_DICT = {
     "1002": {
         None: {
             "Name": "Chien-Pao",
-            "Type 1": "Dark",
-            "Type 2": "Ice",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.ICE,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 80,
@@ -15066,8 +15067,8 @@ POCKET_MONSTERS_DICT = {
     "1003": {
         None: {
             "Name": "Ting-Lu",
-            "Type 1": "Dark",
-            "Type 2": "Ground",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.GROUND,
             StatsEnum.HP: 155,
             StatsEnum.ATTACK: 110,
             StatsEnum.DEFENSE: 125,
@@ -15079,8 +15080,8 @@ POCKET_MONSTERS_DICT = {
     "1004": {
         None: {
             "Name": "Chi-Yu",
-            "Type 1": "Dark",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.DARK,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 55,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 80,
@@ -15092,8 +15093,8 @@ POCKET_MONSTERS_DICT = {
     "1005": {
         None: {
             "Name": "Roaring Moon",
-            "Type 1": "Dragon",
-            "Type 2": "Dark",
+            "Type 1": TypesEnum.DRAGON,
+            "Type 2": TypesEnum.DARK,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 139,
             StatsEnum.DEFENSE: 71,
@@ -15105,8 +15106,8 @@ POCKET_MONSTERS_DICT = {
     "1006": {
         None: {
             "Name": "Iron Valiant",
-            "Type 1": "Fairy",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.FAIRY,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 74,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 90,
@@ -15118,8 +15119,8 @@ POCKET_MONSTERS_DICT = {
     "1007": {
         None: {
             "Name": "Koraidon",
-            "Type 1": "Fighting",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.FIGHTING,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 135,
             StatsEnum.DEFENSE: 115,
@@ -15131,8 +15132,8 @@ POCKET_MONSTERS_DICT = {
     "1008": {
         None: {
             "Name": "Miraidon",
-            "Type 1": "Electric",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 100,
             StatsEnum.ATTACK: 85,
             StatsEnum.DEFENSE: 100,
@@ -15144,8 +15145,8 @@ POCKET_MONSTERS_DICT = {
     "1009": {
         None: {
             "Name": "Walking Wake",
-            "Type 1": "Water",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.WATER,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 99,
             StatsEnum.ATTACK: 83,
             StatsEnum.DEFENSE: 91,
@@ -15157,8 +15158,8 @@ POCKET_MONSTERS_DICT = {
     "1010": {
         None: {
             "Name": "Iron Leaves",
-            "Type 1": "Grass",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 130,
             StatsEnum.DEFENSE: 88,
@@ -15170,8 +15171,8 @@ POCKET_MONSTERS_DICT = {
     "1011": {
         None: {
             "Name": "Dipplin",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 110,
@@ -15183,8 +15184,8 @@ POCKET_MONSTERS_DICT = {
     "1012": {
         None: {
             "Name": "Poltchageist",
-            "Type 1": "Grass",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 40,
             StatsEnum.ATTACK: 45,
             StatsEnum.DEFENSE: 45,
@@ -15196,8 +15197,8 @@ POCKET_MONSTERS_DICT = {
     "1013": {
         None: {
             "Name": "Sinistcha",
-            "Type 1": "Grass",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 71,
             StatsEnum.ATTACK: 60,
             StatsEnum.DEFENSE: 106,
@@ -15209,8 +15210,8 @@ POCKET_MONSTERS_DICT = {
     "1014": {
         None: {
             "Name": "Okidogi",
-            "Type 1": "Poison",
-            "Type 2": "Fighting",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FIGHTING,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 128,
             StatsEnum.DEFENSE: 115,
@@ -15222,8 +15223,8 @@ POCKET_MONSTERS_DICT = {
     "1015": {
         None: {
             "Name": "Munkidori",
-            "Type 1": "Poison",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 75,
             StatsEnum.DEFENSE: 66,
@@ -15235,8 +15236,8 @@ POCKET_MONSTERS_DICT = {
     "1016": {
         None: {
             "Name": "Fezandipiti",
-            "Type 1": "Poison",
-            "Type 2": "Fairy",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.FAIRY,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 91,
             StatsEnum.DEFENSE: 82,
@@ -15248,7 +15249,7 @@ POCKET_MONSTERS_DICT = {
     "1017": {
         "Teal Mask": {
             "Name": "Ogerpon",
-            "Type 1": "Grass",
+            "Type 1": TypesEnum.GRASS,
             "Type 2": None,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
@@ -15259,8 +15260,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Wellspring Mask": {
             "Name": "Ogerpon",
-            "Type 1": "Grass",
-            "Type 2": "Water",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.WATER,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 84,
@@ -15270,8 +15271,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Hearthflame Mask": {
             "Name": "Ogerpon",
-            "Type 1": "Grass",
-            "Type 2": "Fire",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.FIRE,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 84,
@@ -15281,8 +15282,8 @@ POCKET_MONSTERS_DICT = {
         },
         "Cornerstone Mask": {
             "Name": "Ogerpon",
-            "Type 1": "Grass",
-            "Type 2": "Rock",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.ROCK,
             StatsEnum.HP: 80,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 84,
@@ -15294,8 +15295,8 @@ POCKET_MONSTERS_DICT = {
     "1018": {
         None: {
             "Name": "Archaludon",
-            "Type 1": "Steel",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 105,
             StatsEnum.DEFENSE: 130,
@@ -15307,8 +15308,8 @@ POCKET_MONSTERS_DICT = {
     "1019": {
         None: {
             "Name": "Hydrapple",
-            "Type 1": "Grass",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.GRASS,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 106,
             StatsEnum.ATTACK: 80,
             StatsEnum.DEFENSE: 110,
@@ -15320,8 +15321,8 @@ POCKET_MONSTERS_DICT = {
     "1020": {
         None: {
             "Name": "Gouging Fire",
-            "Type 1": "Fire",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.FIRE,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 105,
             StatsEnum.ATTACK: 115,
             StatsEnum.DEFENSE: 121,
@@ -15333,8 +15334,8 @@ POCKET_MONSTERS_DICT = {
     "1021": {
         None: {
             "Name": "Raging Bolt",
-            "Type 1": "Electric",
-            "Type 2": "Dragon",
+            "Type 1": TypesEnum.ELECTRIC,
+            "Type 2": TypesEnum.DRAGON,
             StatsEnum.HP: 125,
             StatsEnum.ATTACK: 73,
             StatsEnum.DEFENSE: 91,
@@ -15346,8 +15347,8 @@ POCKET_MONSTERS_DICT = {
     "1022": {
         None: {
             "Name": "Iron Boulder",
-            "Type 1": "Rock",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.ROCK,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 120,
             StatsEnum.DEFENSE: 80,
@@ -15359,8 +15360,8 @@ POCKET_MONSTERS_DICT = {
     "1023": {
         None: {
             "Name": "Iron Crown",
-            "Type 1": "Steel",
-            "Type 2": "Psychic",
+            "Type 1": TypesEnum.STEEL,
+            "Type 2": TypesEnum.PSYCHIC,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 72,
             StatsEnum.DEFENSE: 100,
@@ -15372,7 +15373,7 @@ POCKET_MONSTERS_DICT = {
     "1024": {
         "Normal Form": {
             "Name": "Terapagos",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 90,
             StatsEnum.ATTACK: 65,
@@ -15383,7 +15384,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Terastal Form": {
             "Name": "Terapagos",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 95,
             StatsEnum.ATTACK: 95,
@@ -15394,7 +15395,7 @@ POCKET_MONSTERS_DICT = {
         },
         "Stellar Form": {
             "Name": "Terapagos",
-            "Type 1": "Normal",
+            "Type 1": TypesEnum.NORMAL,
             "Type 2": None,
             StatsEnum.HP: 160,
             StatsEnum.ATTACK: 105,
@@ -15407,8 +15408,8 @@ POCKET_MONSTERS_DICT = {
     "1025": {
         None: {
             "Name": "Pecharunt",
-            "Type 1": "Poison",
-            "Type 2": "Ghost",
+            "Type 1": TypesEnum.POISON,
+            "Type 2": TypesEnum.GHOST,
             StatsEnum.HP: 88,
             StatsEnum.ATTACK: 88,
             StatsEnum.DEFENSE: 160,
