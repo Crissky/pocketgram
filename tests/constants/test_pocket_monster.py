@@ -1,7 +1,8 @@
 import unittest
 
-
 from pocketgram.constants.pocket_monster import POCKET_MONSTERS_DICT
+from pocketgram.enums._types import TypesEnum
+from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
 
 
@@ -40,7 +41,9 @@ class TestPocketMonsterDict(unittest.TestCase):
 
         for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
             for pm_dict in pocket_monsters_dict.values():
-                self.assertIsInstance(pm_dict['Name'], str)
+                self.assertIsInstance(
+                    pm_dict[PocketMonsterParamEnum.NAME], str
+                )
 
     def test_type_1(self):
         '''Testa se os tipos 1 dos monstros são do tipo correto.
@@ -48,7 +51,9 @@ class TestPocketMonsterDict(unittest.TestCase):
 
         for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
             for pm_dict in pocket_monsters_dict.values():
-                self.assertIsInstance(pm_dict['Type 1'], TypesEnum)
+                self.assertIsInstance(
+                    pm_dict[PocketMonsterParamEnum.TYPE_1], TypesEnum
+                )
 
     def test_type_2(self):
         '''Testa se os tipos 2 dos monstros são do tipo correto.
@@ -57,4 +62,6 @@ class TestPocketMonsterDict(unittest.TestCase):
         for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
             type_2_types = (TypesEnum, type(None))
             for pm_dict in pocket_monsters_dict.values():
-                self.assertIsInstance(pm_dict['Type 2'], type_2_types)
+                self.assertIsInstance(
+                    pm_dict[PocketMonsterParamEnum.TYPE_2], type_2_types
+                )
