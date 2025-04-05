@@ -1,4 +1,8 @@
 from enum import Enum
+from typing import TYPE_CHECKING, Union
+
+if TYPE_CHECKING:
+    from pocketgram.pocket_monster import PocketMonster
 
 
 class FormEnum(Enum):
@@ -114,3 +118,12 @@ class FormEnum(Enum):
     ZERO_FORM = 'Zero Form'
     CONFINED = '{pocket_monster} Confined'
     UNBOUND = '{pocket_monster} Unbound'
+
+    def get_formated_value(
+        self,
+        pocket_monster: Union['PocketMonster', str]
+    ) -> str:
+        if not isinstance(pocket_monster, str):
+            pocket_monster = pocket_monster.name
+
+        return self.value.format(pocket_monster=pocket_monster)
