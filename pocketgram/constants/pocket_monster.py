@@ -317,7 +317,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 35,
             StatsEnum.SPEED: 72
         },
-        "Alolan Rattata": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Rattata",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -341,7 +341,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 97
         },
-        "Alolan Raticate": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Raticate",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -441,7 +441,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 110
         },
-        "Alolan Raichu": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Raichu",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -465,7 +465,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 30,
             StatsEnum.SPEED: 40
         },
-        "Alolan Sandshrew": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Sandshrew",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -489,7 +489,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 65
         },
-        "Alolan Sandslash": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Sandslash",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -617,7 +617,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 65
         },
-        "Alolan Vulpix": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Vulpix",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -641,7 +641,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 100
         },
-        "Alolan Ninetales": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Ninetales",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -808,7 +808,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 45,
             StatsEnum.SPEED: 95
         },
-        "Alolan Diglett": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Diglett",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -832,7 +832,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 120
         },
-        "Alolan Dugtrio": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Dugtrio",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -856,7 +856,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 40,
             StatsEnum.SPEED: 90
         },
-        "Alolan Meowth": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Meowth",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -891,7 +891,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 115
         },
-        "Alolan Persian": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Persian",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -1208,7 +1208,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 30,
             StatsEnum.SPEED: 20
         },
-        "Alolan Geodude": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Geodude",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ELECTRIC,
@@ -1232,7 +1232,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 45,
             StatsEnum.SPEED: 35
         },
-        "Alolan Graveler": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Graveler",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ELECTRIC,
@@ -1256,7 +1256,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 45
         },
-        "Alolan Golem": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Golem",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ELECTRIC,
@@ -1489,7 +1489,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 50,
             StatsEnum.SPEED: 25
         },
-        "Alolan Grimer": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Grimer",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -1513,7 +1513,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 50
         },
-        "Alolan Muk": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Muk",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -1739,7 +1739,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 55
         },
-        "Alolan Exeggutor": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Exeggutor",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -1776,7 +1776,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 45
         },
-        "Alolan Marowak": {
+        FormEnum.ALOLAN: {
             PocketMonsterParamEnum.NAME: "Marowak",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
