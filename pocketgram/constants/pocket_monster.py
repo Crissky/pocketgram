@@ -1,6 +1,7 @@
 from pocketgram.enums._types import TypesEnum
 from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
+from pocketgram.enums.form import FormEnum
 
 
 POCKET_MONSTERS_DICT = {
@@ -42,7 +43,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 80
         },
-        "Mega Venusaur": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Venusaur",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -92,7 +93,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 100
         },
-        "Mega Charizard X": {
+        FormEnum.MEGA_X: {
             PocketMonsterParamEnum.NAME: "Charizard",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -103,7 +104,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 100
         },
-        "Mega Charizard Y": {
+        FormEnum.MEGA_Y: {
             PocketMonsterParamEnum.NAME: "Charizard",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -153,7 +154,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 105,
             StatsEnum.SPEED: 78
         },
-        "Mega Blastoise": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Blastoise",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -242,7 +243,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 75
         },
-        "Mega Beedrill": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Beedrill",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -292,7 +293,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 101
         },
-        "Mega Pidgeot": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Pidgeot",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -1079,7 +1080,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 120
         },
-        "Mega Alakazam": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Alakazam",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -1351,7 +1352,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 30
         },
-        "Mega Slowbro": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Slowbro",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -1588,7 +1589,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 110
         },
-        "Mega Gengar": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Gengar",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -1927,7 +1928,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 90
         },
-        "Mega Kangaskhan": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Kangaskhan",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -2105,7 +2106,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 85
         },
-        "Mega Pinsir": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Pinsir",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -2188,7 +2189,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 81
         },
-        "Mega Gyarados": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Gyarados",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -2366,7 +2367,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 130
         },
-        "Mega Aerodactyl": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Aerodactyl",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -2514,7 +2515,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 130
         },
-        "Mega Mewtwo X": {
+        FormEnum.MEGA_X: {
             PocketMonsterParamEnum.NAME: "Mewtwo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -2525,7 +2526,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 130
         },
-        "Mega Mewtwo Y": {
+        FormEnum.MEGA_Y: {
             PocketMonsterParamEnum.NAME: "Mewtwo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -2950,7 +2951,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 55
         },
-        "Mega Ampharos": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Ampharos",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -3334,7 +3335,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 30
         },
-        "Mega Steelix": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Steelix",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -3408,7 +3409,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 65
         },
-        "Mega Scizor": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Scizor",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -3445,7 +3446,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 85
         },
-        "Mega Heracross": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Heracross",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -3673,7 +3674,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 95
         },
-        "Mega Houndoom": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Houndoom",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIRE,
@@ -3931,7 +3932,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 61
         },
-        "Mega Tyranitar": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Tyranitar",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -4020,7 +4021,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 120
         },
-        "Mega Sceptile": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Sceptile",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -4070,7 +4071,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 80
         },
-        "Mega Blaziken": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Blaziken",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -4120,7 +4121,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 60
         },
-        "Mega Swampert": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Swampert",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -4439,7 +4440,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 115,
             StatsEnum.SPEED: 80
         },
-        "Mega Gardevoir": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Gardevoir",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -4710,7 +4711,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 50
         },
-        "Mega Sableye": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Sableye",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -4734,7 +4735,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 50
         },
-        "Mega Mawile": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Mawile",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -4784,7 +4785,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 60,
             StatsEnum.SPEED: 50
         },
-        "Mega Aggron": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Aggron",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -4821,7 +4822,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 80
         },
-        "Mega Medicham": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Medicham",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -4858,7 +4859,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 60,
             StatsEnum.SPEED: 105
         },
-        "Mega Manectric": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Manectric",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -4986,7 +4987,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 40,
             StatsEnum.SPEED: 95
         },
-        "Mega Sharpedo": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Sharpedo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -5049,7 +5050,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 40
         },
-        "Mega Camerupt": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Camerupt",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -5203,7 +5204,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 105,
             StatsEnum.SPEED: 80
         },
-        "Mega Altaria": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Altaria",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -5507,7 +5508,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 63,
             StatsEnum.SPEED: 65
         },
-        "Mega Banette": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Banette",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5583,7 +5584,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 60,
             StatsEnum.SPEED: 75
         },
-        "Mega Absol": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Absol",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5633,7 +5634,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 80
         },
-        "Mega Glalie": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Glalie",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5787,7 +5788,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 100
         },
-        "Mega Salamence": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Salamence",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -5837,7 +5838,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 70
         },
-        "Mega Metagross": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Metagross",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -5900,7 +5901,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 130,
             StatsEnum.SPEED: 110
         },
-        "Mega Latias": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Latias",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -5924,7 +5925,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 110,
             StatsEnum.SPEED: 110
         },
-        "Mega Latios": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Latios",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -5996,7 +5997,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 95
         },
-        "Mega Rayquaza": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Rayquaza",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -6656,7 +6657,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 96,
             StatsEnum.SPEED: 105
         },
-        "Mega Lopunny": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Lopunny",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -6888,7 +6889,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 102
         },
-        "Mega Garchomp": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Garchomp",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -6938,7 +6939,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 90
         },
-        "Mega Lucario": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Lucario",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -7105,7 +7106,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 60
         },
-        "Mega Abomasnow": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Abomasnow",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ICE,
@@ -7311,7 +7312,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 115,
             StatsEnum.SPEED: 80
         },
-        "Mega Gallade": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Gallade",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -8160,7 +8161,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 86,
             StatsEnum.SPEED: 50
         },
-        "Mega Audino": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Audino",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -10978,7 +10979,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 150,
             StatsEnum.SPEED: 50
         },
-        "Mega Diancie": {
+        FormEnum.MEGA: {
             PocketMonsterParamEnum.NAME: "Diancie",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
