@@ -867,7 +867,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 40,
             StatsEnum.SPEED: 90
         },
-        "Galarian Meowth": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Meowth",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -1280,7 +1280,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 90
         },
-        "Galarian Ponyta": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Ponyta",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -1304,7 +1304,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 105
         },
-        "Galarian Rapidash": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Rapidash",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -1328,7 +1328,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 40,
             StatsEnum.SPEED: 15
         },
-        "Galarian Slowpoke": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Slowpoke",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -1363,7 +1363,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 30
         },
-        "Galarian Slowbro": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Slowbro",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -1413,7 +1413,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 62,
             StatsEnum.SPEED: 60
         },
-        "Galarian Farfetch'd": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Farfetch'd",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -1852,7 +1852,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 60
         },
-        "Galarian Weezing": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Weezing",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FAIRY,
@@ -2030,7 +2030,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 120,
             StatsEnum.SPEED: 90
         },
-        "Galarian Mr. Mime": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Mr. Mime",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -2404,7 +2404,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 125,
             StatsEnum.SPEED: 85
         },
-        "Galarian Articuno": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Articuno",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -2428,7 +2428,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 100
         },
-        "Galarian Zapdos": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Zapdos",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -2452,7 +2452,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 90
         },
-        "Galarian Moltres": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Moltres",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -3207,7 +3207,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 110,
             StatsEnum.SPEED: 30
         },
-        "Galarian Slowking": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Slowking",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -3572,7 +3572,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 35
         },
-        "Galarian Corsola": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Corsola",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -4171,7 +4171,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 41,
             StatsEnum.SPEED: 60
         },
-        "Galarian Zigzagoon": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Zigzagoon",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -4195,7 +4195,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 61,
             StatsEnum.SPEED: 100
         },
-        "Galarian Linoone": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Linoone",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -8504,7 +8504,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 45,
             StatsEnum.SPEED: 50
         },
-        "Galarian Darumaka": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Darumaka",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -8517,7 +8517,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0555": {
-        "Standard Mode": {
+        FormEnum.STANDARD_MODE: {
             PocketMonsterParamEnum.NAME: "Darmanitan",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -8528,7 +8528,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 95
         },
-        "Zen Mode": {
+        FormEnum.ZEN_MODE: {
             PocketMonsterParamEnum.NAME: "Darmanitan",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -8539,7 +8539,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 105,
             StatsEnum.SPEED: 55
         },
-        "Galarian Standard Mode": {
+        FormEnum.GALARIAN_STANDARD_MODE: {
             PocketMonsterParamEnum.NAME: "Darmanitan",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -8550,7 +8550,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 95
         },
-        "Galarian Zen Mode": {
+        FormEnum.GALARIAN_ZEN_MODE: {
             PocketMonsterParamEnum.NAME: "Darmanitan",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIRE,
@@ -8652,7 +8652,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 30
         },
-        "Galarian Yamask": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Yamask",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -9413,7 +9413,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 99,
             StatsEnum.SPEED: 32
         },
-        "Galarian Stunfisk": {
+        FormEnum.GALARIAN: {
             PocketMonsterParamEnum.NAME: "Stunfisk",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
