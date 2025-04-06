@@ -2,6 +2,7 @@ import unittest
 
 from pocketgram.constants.pocket_monster import POCKET_MONSTERS_DICT
 from pocketgram.enums._types import TypesEnum
+from pocketgram.enums.form import FormEnum
 from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
 
@@ -22,7 +23,7 @@ class TestPocketMonsterDict(unittest.TestCase):
         '''
 
         for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
-            form_types = (str, type(None))
+            form_types = (FormEnum, type(None))
             for form_key in pocket_monsters_dict.keys():
                 self.assertIsInstance(form_key, form_types)
 
