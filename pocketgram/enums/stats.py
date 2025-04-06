@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class StatsEnum(Enum):
-    '''Enum que representa as stats dos monstrinhos
+    '''Enum que representa as stats dos Monstrinhos
 
     HP: Pontos de Vida
     Attack: Usado no cálculo do dano de Movimentos Físicos.

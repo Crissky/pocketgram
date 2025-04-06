@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class NaturesEnum(Enum):
-    '''Enum que representa Natures monstrinhos.
+    '''Enum que representa Natures Monstrinhos.
 
     Cada Natureza aumenta um dos stats em 10% e reduz outro em 10%
     (quando atinge o nível 100).
