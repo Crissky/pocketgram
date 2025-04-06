@@ -6,7 +6,8 @@ if TYPE_CHECKING:
 
 
 class FormEnum(Enum):
-    '''Enum que representa as formas que determinados Monstrinhos podem assumir
+    '''Enum que representa as formas que determinados Monstrinhos
+    podem assumir.
     '''
 
     _10_FORME = '10% Forme'
