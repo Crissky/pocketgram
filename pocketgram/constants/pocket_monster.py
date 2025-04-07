@@ -417,7 +417,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 50,
             StatsEnum.SPEED: 90
         },
-        "Partner Pikachu": {
+        FormEnum.PARTNER: {
             PocketMonsterParamEnum.NAME: "Pikachu",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -2239,7 +2239,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 55
         },
-        "Partner Eevee": {
+        FormEnum.PARTNER: {
             PocketMonsterParamEnum.NAME: "Eevee",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
