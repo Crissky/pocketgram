@@ -2130,7 +2130,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 110
         },
-        "Combat Breed": {
+        FormEnum.COMBAT_BREED: {
             PocketMonsterParamEnum.NAME: "Tauros",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -2141,7 +2141,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 100
         },
-        "Blaze Breed": {
+        FormEnum.BLAZE_BREED: {
             PocketMonsterParamEnum.NAME: "Tauros",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIRE,
@@ -2152,7 +2152,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 100
         },
-        "Aqua Breed": {
+        FormEnum.AQUA_BREED: {
             PocketMonsterParamEnum.NAME: "Tauros",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
