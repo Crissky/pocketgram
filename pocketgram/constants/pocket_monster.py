@@ -967,7 +967,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 50,
             StatsEnum.SPEED: 60
         },
-        "Hisuian Growlithe": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Growlithe",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ROCK,
@@ -991,7 +991,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 95
         },
-        "Hisuian Arcanine": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Arcanine",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ROCK,
@@ -1678,7 +1678,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 100
         },
-        "Hisuian Voltorb": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Voltorb",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -1702,7 +1702,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 150
         },
-        "Hisuian Electrode": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Electrode",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -2628,7 +2628,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 100
         },
-        "Hisuian Typhlosion": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Typhlosion",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -3385,7 +3385,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 85
         },
-        "Hisuian Qwilfish": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Qwilfish",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DARK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -3470,7 +3470,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 115
         },
-        "Hisuian Sneasel": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Sneasel",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -7786,7 +7786,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 70
         },
-        "Hisuian Samurott": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Samurott",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -8406,7 +8406,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 90
         },
-        "Hisuian Lilligant": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Lilligant",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -8767,7 +8767,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 40,
             StatsEnum.SPEED: 65
         },
-        "Hisuian Zorua": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Zorua",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -8791,7 +8791,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 60,
             StatsEnum.SPEED: 105
         },
-        "Hisuian Zoroark": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Zoroark",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -9554,7 +9554,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 80
         },
-        "Hisuian Braviary": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Braviary",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -10676,7 +10676,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 113,
             StatsEnum.SPEED: 60
         },
-        "Hisuian Sliggoo": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Sliggoo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -10700,7 +10700,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 150,
             StatsEnum.SPEED: 80
         },
-        "Hisuian Goodra": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Goodra",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -10868,7 +10868,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 46,
             StatsEnum.SPEED: 28
         },
-        "Hisuian Avalugg": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Avalugg",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ROCK,
@@ -11066,7 +11066,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 70
         },
-        "Hisuian Decidueye": {
+        FormEnum.HISUIAN: {
             PocketMonsterParamEnum.NAME: "Decidueye",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
