@@ -3131,7 +3131,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 25,
             StatsEnum.SPEED: 15
         },
-        "Paldean Wooper": {
+        FormEnum.PALDEAN: {
             PocketMonsterParamEnum.NAME: "Wooper",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -5436,7 +5436,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 70
         },
-        "Sunny Form": {
+        FormEnum.SUNNY_FORM: {
             PocketMonsterParamEnum.NAME: "Castform",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5447,7 +5447,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 70
         },
-        "Rainy Form": {
+        FormEnum.RAINY_FORM: {
             PocketMonsterParamEnum.NAME: "Castform",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5458,7 +5458,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 70
         },
-        "Snowy Form": {
+        FormEnum.SNOWY_FORM: {
             PocketMonsterParamEnum.NAME: "Castform",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5949,7 +5949,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 140,
             StatsEnum.SPEED: 90
         },
-        "Primal Kyogre": {
+        FormEnum.PRIMAL: {
             PocketMonsterParamEnum.NAME: "Kyogre",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -5973,7 +5973,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 90
         },
-        "Primal Groudon": {
+        FormEnum.PRIMAL: {
             PocketMonsterParamEnum.NAME: "Groudon",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIRE,
@@ -6023,7 +6023,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0386": {
-        "Normal Forme": {
+        FormEnum.NORMAL_FORME: {
             PocketMonsterParamEnum.NAME: "Deoxys",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6034,7 +6034,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 50,
             StatsEnum.SPEED: 150
         },
-        "Attack Forme": {
+        FormEnum.ATTACK_FORME: {
             PocketMonsterParamEnum.NAME: "Deoxys",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6045,7 +6045,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 20,
             StatsEnum.SPEED: 150
         },
-        "Defense Forme": {
+        FormEnum.DEFENSE_FORME: {
             PocketMonsterParamEnum.NAME: "Deoxys",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6056,7 +6056,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 160,
             StatsEnum.SPEED: 90
         },
-        "Speed Forme": {
+        FormEnum.SPEED_FORME: {
             PocketMonsterParamEnum.NAME: "Deoxys",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6394,7 +6394,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0412": {
-        "Plant Cloak": {
+        FormEnum.PLANT_CLOAK: {
             PocketMonsterParamEnum.NAME: "Burmy",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6405,7 +6405,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 45,
             StatsEnum.SPEED: 36
         },
-        "Sandy Cloak": {
+        FormEnum.SANDY_CLOAK: {
             PocketMonsterParamEnum.NAME: "Burmy",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6416,7 +6416,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 45,
             StatsEnum.SPEED: 36
         },
-        "Trash Cloak": {
+        FormEnum.TRASH_CLOAK: {
             PocketMonsterParamEnum.NAME: "Burmy",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -6429,7 +6429,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0413": {
-        "Plant Cloak": {
+        FormEnum.PLANT_CLOAK: {
             PocketMonsterParamEnum.NAME: "Wormadam",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -6440,7 +6440,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 105,
             StatsEnum.SPEED: 36
         },
-        "Sandy Cloak": {
+        FormEnum.SANDY_CLOAK: {
             PocketMonsterParamEnum.NAME: "Wormadam",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -6451,7 +6451,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 36
         },
-        "Trash Cloak": {
+        FormEnum.TRASH_CLOAK: {
             PocketMonsterParamEnum.NAME: "Wormadam",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.BUG,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -7375,7 +7375,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 77,
             StatsEnum.SPEED: 91
         },
-        "Heat Rotom": {
+        FormEnum.HEAT: {
             PocketMonsterParamEnum.NAME: "Rotom",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIRE,
@@ -7386,7 +7386,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 107,
             StatsEnum.SPEED: 86
         },
-        "Wash Rotom": {
+        FormEnum.WASH: {
             PocketMonsterParamEnum.NAME: "Rotom",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
@@ -7397,7 +7397,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 107,
             StatsEnum.SPEED: 86
         },
-        "Frost Rotom": {
+        FormEnum.FROST: {
             PocketMonsterParamEnum.NAME: "Rotom",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ICE,
@@ -7408,7 +7408,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 107,
             StatsEnum.SPEED: 86
         },
-        "Fan Rotom": {
+        FormEnum.FAN: {
             PocketMonsterParamEnum.NAME: "Rotom",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -7419,7 +7419,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 107,
             StatsEnum.SPEED: 86
         },
-        "Mow Rotom": {
+        FormEnum.MOW: {
             PocketMonsterParamEnum.NAME: "Rotom",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -7482,7 +7482,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 90
         },
-        "Origin Forme": {
+        FormEnum.ORIGIN_FORME: {
             PocketMonsterParamEnum.NAME: "Dialga",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -7506,7 +7506,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 120,
             StatsEnum.SPEED: 100
         },
-        "Origin Forme": {
+        FormEnum.ORIGIN_FORME: {
             PocketMonsterParamEnum.NAME: "Palkia",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -7545,7 +7545,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0487": {
-        "Altered Forme": {
+        FormEnum.ALTERED_FORME: {
             PocketMonsterParamEnum.NAME: "Giratina",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -7556,7 +7556,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 120,
             StatsEnum.SPEED: 90
         },
-        "Origin Forme": {
+        FormEnum.ORIGIN_FORME: {
             PocketMonsterParamEnum.NAME: "Giratina",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -7621,7 +7621,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0492": {
-        "Land Forme": {
+        FormEnum.LAND_FORME: {
             PocketMonsterParamEnum.NAME: "Shaymin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -7632,7 +7632,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 100
         },
-        "Sky Forme": {
+        FormEnum.SKY_FORME: {
             PocketMonsterParamEnum.NAME: "Shaymin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
