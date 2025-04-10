@@ -8419,7 +8419,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0550": {
-        "Red-Striped Form": {
+        FormEnum.RED_STRIPED_FORM: {
             PocketMonsterParamEnum.NAME: "Basculin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -8430,7 +8430,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 98
         },
-        "Blue-Striped Form": {
+        FormEnum.BLUE_STRIPED_FORM: {
             PocketMonsterParamEnum.NAME: "Basculin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -8441,7 +8441,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 98
         },
-        "White-Striped Form": {
+        FormEnum.WHITE_STRIPED_FORM: {
             PocketMonsterParamEnum.NAME: "Basculin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -9723,7 +9723,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0641": {
-        "Incarnate Forme": {
+        FormEnum.INCARNATE_FORME: {
             PocketMonsterParamEnum.NAME: "Tornadus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FLYING,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -9734,7 +9734,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 111
         },
-        "Therian Forme": {
+        FormEnum.THERIAN_FORME: {
             PocketMonsterParamEnum.NAME: "Tornadus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FLYING,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -9747,7 +9747,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0642": {
-        "Incarnate Forme": {
+        FormEnum.INCARNATE_FORME: {
             PocketMonsterParamEnum.NAME: "Thundurus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -9758,7 +9758,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 111
         },
-        "Therian Forme": {
+        FormEnum.THERIAN_FORME: {
             PocketMonsterParamEnum.NAME: "Thundurus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -9797,7 +9797,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0645": {
-        "Incarnate Forme": {
+        FormEnum.INCARNATE_FORME: {
             PocketMonsterParamEnum.NAME: "Landorus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -9808,7 +9808,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 101
         },
-        "Therian Forme": {
+        FormEnum.THERIAN_FORME: {
             PocketMonsterParamEnum.NAME: "Landorus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -9832,7 +9832,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 95
         },
-        "White Kyurem": {
+        FormEnum.WHITE: {
             PocketMonsterParamEnum.NAME: "Kyurem",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ICE,
@@ -9843,7 +9843,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 95
         },
-        "Black Kyurem": {
+        FormEnum.BLACK: {
             PocketMonsterParamEnum.NAME: "Kyurem",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ICE,
@@ -9856,7 +9856,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0647": {
-        "Ordinary Form": {
+        FormEnum.ORDINARY_FORM: {
             PocketMonsterParamEnum.NAME: "Keldeo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -9867,7 +9867,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 108
         },
-        "Resolute Form": {
+        FormEnum.RESOLUTE_FORM: {
             PocketMonsterParamEnum.NAME: "Keldeo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -9880,7 +9880,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0648": {
-        "Aria Forme": {
+        FormEnum.ARIA_FORME: {
             PocketMonsterParamEnum.NAME: "Meloetta",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.PSYCHIC,
@@ -9891,7 +9891,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 128,
             StatsEnum.SPEED: 90
         },
-        "Pirouette Forme": {
+        FormEnum.PIROUETTE_FORME: {
             PocketMonsterParamEnum.NAME: "Meloetta",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIGHTING,
@@ -13672,7 +13672,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0905": {
-        "Incarnate Forme": {
+        FormEnum.INCARNATE_FORME: {
             PocketMonsterParamEnum.NAME: "Enamorus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FAIRY,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -13683,7 +13683,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 106
         },
-        "Therian Forme": {
+        FormEnum.THERIAN_FORME: {
             PocketMonsterParamEnum.NAME: "Enamorus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FAIRY,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
