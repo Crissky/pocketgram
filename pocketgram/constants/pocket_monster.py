@@ -10032,7 +10032,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 71,
             StatsEnum.SPEED: 122
         },
-        "Ash-Greninja": {
+        FormEnum.ASH: {
             PocketMonsterParamEnum.NAME: "Greninja",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -10292,7 +10292,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0678": {
-        "Male": {
+        FormEnum.MALE: {
             PocketMonsterParamEnum.NAME: "Meowstic",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -10303,7 +10303,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 81,
             StatsEnum.SPEED: 104
         },
-        "Female": {
+        FormEnum.FEMALE: {
             PocketMonsterParamEnum.NAME: "Meowstic",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -10342,7 +10342,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0681": {
-        "Shield Forme": {
+        FormEnum.SHIELD_FORME: {
             PocketMonsterParamEnum.NAME: "Aegislash",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -10353,7 +10353,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 140,
             StatsEnum.SPEED: 60
         },
-        "Blade Forme": {
+        FormEnum.BLADE_FORME: {
             PocketMonsterParamEnum.NAME: "Aegislash",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.STEEL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -10752,7 +10752,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0710": {
-        "Average Size": {
+        FormEnum.AVERAGE_SIZE: {
             PocketMonsterParamEnum.NAME: "Pumpkaboo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10763,7 +10763,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 51
         },
-        "Small Size": {
+        FormEnum.SMALL_SIZE: {
             PocketMonsterParamEnum.NAME: "Pumpkaboo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10774,7 +10774,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 56
         },
-        "Large Size": {
+        FormEnum.LARGE_SIZE: {
             PocketMonsterParamEnum.NAME: "Pumpkaboo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10785,7 +10785,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 55,
             StatsEnum.SPEED: 46
         },
-        "Super Size": {
+        FormEnum.SUPER_SIZE: {
             PocketMonsterParamEnum.NAME: "Pumpkaboo",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10798,7 +10798,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0711": {
-        "Average Size": {
+        FormEnum.AVERAGE_SIZE: {
             PocketMonsterParamEnum.NAME: "Gourgeist",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10809,7 +10809,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 84
         },
-        "Small Size": {
+        FormEnum.SMALL_SIZE: {
             PocketMonsterParamEnum.NAME: "Gourgeist",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10820,7 +10820,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 99
         },
-        "Large Size": {
+        FormEnum.LARGE_SIZE: {
             PocketMonsterParamEnum.NAME: "Gourgeist",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10831,7 +10831,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 69
         },
-        "Super Size": {
+        FormEnum.SUPER_SIZE: {
             PocketMonsterParamEnum.NAME: "Gourgeist",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GRASS,
@@ -10933,7 +10933,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0718": {
-        "50% Forme": {
+        FormEnum._50_FORME: {
             PocketMonsterParamEnum.NAME: "Zygarde",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -10944,7 +10944,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 95
         },
-        "10% Forme": {
+        FormEnum._10_FORME: {
             PocketMonsterParamEnum.NAME: "Zygarde",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -10955,7 +10955,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 115
         },
-        "Complete Forme": {
+        FormEnum.COMPLETE_FORME: {
             PocketMonsterParamEnum.NAME: "Zygarde",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GROUND,
@@ -10992,7 +10992,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0720": {
-        "Hoopa Confined": {
+        FormEnum.CONFINED: {
             PocketMonsterParamEnum.NAME: "Hoopa",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -11003,7 +11003,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 130,
             StatsEnum.SPEED: 70
         },
-        "Hoopa Unbound": {
+        FormEnum.UNBOUND: {
             PocketMonsterParamEnum.NAME: "Hoopa",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
