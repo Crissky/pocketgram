@@ -11287,7 +11287,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0741": {
-        "Baile Style": {
+        FormEnum.BAILE_STYLE: {
             PocketMonsterParamEnum.NAME: "Oricorio",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIRE,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -11298,7 +11298,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 93
         },
-        "Pom-Pom Style": {
+        FormEnum.POM_POM_STYLE: {
             PocketMonsterParamEnum.NAME: "Oricorio",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -11309,7 +11309,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 93
         },
-        "Pa'u Style": {
+        FormEnum.PAU_STYLE: {
             PocketMonsterParamEnum.NAME: "Oricorio",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -11320,7 +11320,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 93
         },
-        "Sensu Style": {
+        FormEnum.SENSU_STYLE: {
             PocketMonsterParamEnum.NAME: "Oricorio",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -11370,7 +11370,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 40,
             StatsEnum.SPEED: 60
         },
-        "Own Tempo Rockruff": {
+        FormEnum.OWN_TEMPO: {
             PocketMonsterParamEnum.NAME: "Rockruff",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -11383,7 +11383,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0745": {
-        "Midday Form": {
+        FormEnum.MIDDAY_FORM: {
             PocketMonsterParamEnum.NAME: "Lycanroc",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -11394,7 +11394,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 65,
             StatsEnum.SPEED: 112
         },
-        "Midnight Form": {
+        FormEnum.MIDNIGHT_FORM: {
             PocketMonsterParamEnum.NAME: "Lycanroc",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -11405,7 +11405,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 82
         },
-        "Dusk Form": {
+        FormEnum.DUSK_FORM: {
             PocketMonsterParamEnum.NAME: "Lycanroc",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -11418,7 +11418,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0746": {
-        "Solo Form": {
+        FormEnum.SOLO_FORM: {
             PocketMonsterParamEnum.NAME: "Wishiwashi",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -11429,7 +11429,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 25,
             StatsEnum.SPEED: 40
         },
-        "School Form": {
+        FormEnum.SCHOOL_FORM: {
             PocketMonsterParamEnum.NAME: "Wishiwashi",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -11793,7 +11793,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0774": {
-        "Meteor Form": {
+        FormEnum.METEOR_FORM: {
             PocketMonsterParamEnum.NAME: "Minior",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -11804,7 +11804,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 100,
             StatsEnum.SPEED: 60
         },
-        "Core Form": {
+        FormEnum.CORE_FORM: {
             PocketMonsterParamEnum.NAME: "Minior",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ROCK,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -12153,7 +12153,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 89,
             StatsEnum.SPEED: 79
         },
-        "Dusk Mane Necrozma": {
+        FormEnum.DUSK_MANE: {
             PocketMonsterParamEnum.NAME: "Necrozma",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -12164,7 +12164,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 109,
             StatsEnum.SPEED: 77
         },
-        "Dawn Wings Necrozma": {
+        FormEnum.DAWN_WINGS: {
             PocketMonsterParamEnum.NAME: "Necrozma",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -12175,7 +12175,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 127,
             StatsEnum.SPEED: 77
         },
-        "Ultra Necrozma": {
+        FormEnum.ULTRA: {
             PocketMonsterParamEnum.NAME: "Necrozma",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
