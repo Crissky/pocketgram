@@ -12812,7 +12812,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0849": {
-        "Amped Form": {
+        FormEnum.AMPED_FORM: {
             PocketMonsterParamEnum.NAME: "Toxtricity",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -12823,7 +12823,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 75
         },
-        "Low Key Form": {
+        FormEnum.LOW_KEY_FORM: {
             PocketMonsterParamEnum.NAME: "Toxtricity",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.POISON,
@@ -13161,7 +13161,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0875": {
-        "Ice Face": {
+        FormEnum.ICE_FACE: {
             PocketMonsterParamEnum.NAME: "Eiscue",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13172,7 +13172,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 90,
             StatsEnum.SPEED: 50
         },
-        "Noice Face": {
+        FormEnum.NOICE_FACE: {
             PocketMonsterParamEnum.NAME: "Eiscue",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ICE,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13185,7 +13185,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0876": {
-        "Male": {
+        FormEnum.MALE: {
             PocketMonsterParamEnum.NAME: "Indeedee",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -13196,7 +13196,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 95
         },
-        "Female": {
+        FormEnum.FEMALE: {
             PocketMonsterParamEnum.NAME: "Indeedee",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -13209,7 +13209,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0877": {
-        "Full Belly Mode": {
+        FormEnum.FULL_BELLY_MODE: {
             PocketMonsterParamEnum.NAME: "Morpeko",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -13220,7 +13220,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 58,
             StatsEnum.SPEED: 97
         },
-        "Hangry Mode": {
+        FormEnum.HANGRY_MODE: {
             PocketMonsterParamEnum.NAME: "Morpeko",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -13363,7 +13363,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0888": {
-        "Hero of Many Battles": {
+        FormEnum.HERO_OF_MANY_BATTLES: {
             PocketMonsterParamEnum.NAME: "Zacian",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FAIRY,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13374,7 +13374,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 115,
             StatsEnum.SPEED: 138
         },
-        "Crowned Sword": {
+        FormEnum.CROWNED_SWORD: {
             PocketMonsterParamEnum.NAME: "Zacian",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FAIRY,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -13387,7 +13387,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0889": {
-        "Hero of Many Battles": {
+        FormEnum.HERO_OF_MANY_BATTLES: {
             PocketMonsterParamEnum.NAME: "Zamazenta",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13398,7 +13398,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 115,
             StatsEnum.SPEED: 138
         },
-        "Crowned Shield": {
+        FormEnum.CROWNED_SHIELD: {
             PocketMonsterParamEnum.NAME: "Zamazenta",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.STEEL,
@@ -13422,7 +13422,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 130
         },
-        "Eternamax": {
+        FormEnum.ETERNAMAX: {
             PocketMonsterParamEnum.NAME: "Eternatus",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.POISON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DRAGON,
@@ -13448,7 +13448,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0892": {
-        "Single Strike Style": {
+        FormEnum.SINGLE_STRIKE_STYLE: {
             PocketMonsterParamEnum.NAME: "Urshifu",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.DARK,
@@ -13459,7 +13459,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 60,
             StatsEnum.SPEED: 97
         },
-        "Rapid Strike Style": {
+        FormEnum.RAPID_STRIKE_STYLE: {
             PocketMonsterParamEnum.NAME: "Urshifu",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.FIGHTING,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
@@ -13548,7 +13548,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 80
         },
-        "Ice Rider": {
+        FormEnum.ICE_RIDER: {
             PocketMonsterParamEnum.NAME: "Calyrex",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ICE,
@@ -13559,7 +13559,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 130,
             StatsEnum.SPEED: 50
         },
-        "Shadow Rider": {
+        FormEnum.SHADOW_RIDER: {
             PocketMonsterParamEnum.NAME: "Calyrex",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.PSYCHIC,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -13609,7 +13609,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 50
         },
-        "Bloodmoon": {
+        FormEnum.BLOODMOON: {
             PocketMonsterParamEnum.NAME: "Ursaluna",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GROUND,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.NORMAL,
@@ -13622,7 +13622,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0902": {
-        "Male": {
+        FormEnum.MALE: {
             PocketMonsterParamEnum.NAME: "Basculegion",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
@@ -13633,7 +13633,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 78
         },
-        "Female": {
+        FormEnum.FEMALE: {
             PocketMonsterParamEnum.NAME: "Basculegion",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.GHOST,
