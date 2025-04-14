@@ -13826,7 +13826,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0916": {
-        "Male": {
+        FormEnum.MALE: {
             PocketMonsterParamEnum.NAME: "Oinkologne",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13837,7 +13837,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 80,
             StatsEnum.SPEED: 65
         },
-        "Female": {
+        FormEnum.FEMALE: {
             PocketMonsterParamEnum.NAME: "Oinkologne",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13954,7 +13954,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0925": {
-        "Family of Four": {
+        FormEnum.FAMILY_OF_FOUR: {
             PocketMonsterParamEnum.NAME: "Maushold",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -13965,7 +13965,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 111
         },
-        "Family of Three": {
+        FormEnum.FAMILY_OF_THREE: {
             PocketMonsterParamEnum.NAME: "Maushold",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -14043,7 +14043,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0931": {
-        "Green Plumage": {
+        FormEnum.GREEN_PLUMAGE: {
             PocketMonsterParamEnum.NAME: "Squawkabilly",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -14054,7 +14054,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 51,
             StatsEnum.SPEED: 92
         },
-        "Blue Plumage": {
+        FormEnum.BLUE_PLUMAGE: {
             PocketMonsterParamEnum.NAME: "Squawkabilly",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -14065,7 +14065,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 51,
             StatsEnum.SPEED: 92
         },
-        "Yellow Plumage": {
+        FormEnum.YELLOW_PLUMAGE: {
             PocketMonsterParamEnum.NAME: "Squawkabilly",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -14076,7 +14076,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 51,
             StatsEnum.SPEED: 92
         },
-        "White Plumage": {
+        FormEnum.WHITE_PLUMAGE: {
             PocketMonsterParamEnum.NAME: "Squawkabilly",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FLYING,
@@ -14505,7 +14505,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0964": {
-        "Zero Form": {
+        FormEnum.ZERO_FORM: {
             PocketMonsterParamEnum.NAME: "Palafin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -14516,7 +14516,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 62,
             StatsEnum.SPEED: 100
         },
-        "Hero Form": {
+        FormEnum.HERO_FORM: {
             PocketMonsterParamEnum.NAME: "Palafin",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.WATER,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -14698,7 +14698,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0978": {
-        "Curly Form": {
+        FormEnum.CURLY_FORM: {
             PocketMonsterParamEnum.NAME: "Tatsugiri",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
@@ -14709,7 +14709,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 82
         },
-        "Droopy Form": {
+        FormEnum.DROOPY_FORM: {
             PocketMonsterParamEnum.NAME: "Tatsugiri",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
@@ -14720,7 +14720,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 95,
             StatsEnum.SPEED: 82
         },
-        "Stretchy Form": {
+        FormEnum.STRETCHY_FORM: {
             PocketMonsterParamEnum.NAME: "Tatsugiri",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.DRAGON,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
@@ -14772,7 +14772,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0982": {
-        "Two-Segment Form": {
+        FormEnum.TWO_SEGMENT_FORM: {
             PocketMonsterParamEnum.NAME: "Dudunsparce",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -14783,7 +14783,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 75,
             StatsEnum.SPEED: 55
         },
-        "Three-Segment Form": {
+        FormEnum.THREE_SEGMENT_FORM: {
             PocketMonsterParamEnum.NAME: "Dudunsparce",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -15004,7 +15004,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "0999": {
-        "Chest Form": {
+        FormEnum.CHEST_FORM: {
             PocketMonsterParamEnum.NAME: "Gimmighoul",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -15015,7 +15015,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 70,
             StatsEnum.SPEED: 10
         },
-        "Roaming Form": {
+        FormEnum.ROAMING_FORM: {
             PocketMonsterParamEnum.NAME: "Gimmighoul",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GHOST,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -15249,7 +15249,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "1017": {
-        "Teal Mask": {
+        FormEnum.TEAL_MASK: {
             PocketMonsterParamEnum.NAME: "Ogerpon",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -15260,7 +15260,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 96,
             StatsEnum.SPEED: 110
         },
-        "Wellspring Mask": {
+        FormEnum.WELLSPRING_MASK: {
             PocketMonsterParamEnum.NAME: "Ogerpon",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.WATER,
@@ -15271,7 +15271,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 96,
             StatsEnum.SPEED: 110
         },
-        "Hearthflame Mask": {
+        FormEnum.HEARTHFLAME_MASK: {
             PocketMonsterParamEnum.NAME: "Ogerpon",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.FIRE,
@@ -15282,7 +15282,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 96,
             StatsEnum.SPEED: 110
         },
-        "Cornerstone Mask": {
+        FormEnum.CORNERSTONE_MASK: {
             PocketMonsterParamEnum.NAME: "Ogerpon",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.GRASS,
             PocketMonsterParamEnum.TYPE_2: TypesEnum.ROCK,
@@ -15373,7 +15373,7 @@ POCKET_MONSTERS_DICT = {
         }
     },
     "1024": {
-        "Normal Form": {
+        FormEnum.NORMAL_FORM: {
             PocketMonsterParamEnum.NAME: "Terapagos",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -15384,7 +15384,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 60
         },
-        "Terastal Form": {
+        FormEnum.TERASTAL_FORM: {
             PocketMonsterParamEnum.NAME: "Terapagos",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
@@ -15395,7 +15395,7 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_DEFENSE: 110,
             StatsEnum.SPEED: 85
         },
-        "Stellar Form": {
+        FormEnum.STELLAR_FORM: {
             PocketMonsterParamEnum.NAME: "Terapagos",
             PocketMonsterParamEnum.TYPE_1: TypesEnum.NORMAL,
             PocketMonsterParamEnum.TYPE_2: None,
