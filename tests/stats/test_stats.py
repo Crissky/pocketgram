@@ -1,3 +1,4 @@
+from pocketgram.functions.enum import get_attr_name_from_enum
 import pytest
 import unittest
 
@@ -241,5 +242,5 @@ class TestStats(unittest.TestCase):
         for stat_enum in StatsEnum:
             self.assertEqual(
                 stats_map[stat_enum],
-                f'_{stat_enum.name.lower()}'
+                get_attr_name_from_enum(stat_enum)
             )

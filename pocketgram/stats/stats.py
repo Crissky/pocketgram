@@ -2,6 +2,7 @@ from enum import Enum
 from typing import Tuple
 
 from pocketgram.enums.stats import StatsEnum
+from pocketgram.functions.enum import get_attr_name_from_enum
 
 
 class Stats:
@@ -12,7 +13,7 @@ class Stats:
 
     __slots__ = [
         'max_value', 'min_value'
-    ] + [f'_{enum.name.lower()}' for enum in StatsEnum]
+    ] + [get_attr_name_from_enum(enum) for enum in StatsEnum]
 
     def __init__(
         self,
@@ -60,7 +61,7 @@ class Stats:
         '''
 
         return {
-            enum_obj: f'_{enum_obj.name.lower()}'
+            enum_obj: get_attr_name_from_enum(enum_obj)
             for enum_class in self.get_set_classes
             for enum_obj in enum_class
         }
