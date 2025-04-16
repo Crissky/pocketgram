@@ -3,12 +3,13 @@ from typing import Union
 from pocketgram.constants.pocket_monster import POCKET_MONSTERS_DICT
 from pocketgram.enums.form import FormEnum
 from pocketgram.enums.natures import NaturesEnum
+from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.pocket_monster import PocketMonster
 
 
 def pocket_monster_factory(
-    number: int,
+    number: Union[int, str],
     level: int,
     nature: Union[NaturesEnum, str],
     ev_hp: int,
@@ -35,10 +36,16 @@ def pocket_monster_factory(
     nickname: str = None,
     form: Union[FormEnum, str] = None,
 ) -> PocketMonster:
+    if isinstance(number, int):
+        number = str(number).zfill(4)
+
     forms_dict = POCKET_MONSTERS_DICT[number]
     pocket_monster_dict = forms_dict[form]
-    name = pocket_monster_dict['Name']
-    _types = [pocket_monster_dict['Type 1'], pocket_monster_dict['Type 2']]
+    name = pocket_monster_dict[PocketMonsterParamEnum.NAME]
+    _types = [
+        pocket_monster_dict[PocketMonsterParamEnum.TYPE_1],
+        pocket_monster_dict[PocketMonsterParamEnum.TYPE_2]
+    ]
     base_hp = pocket_monster_dict[StatsEnum.HP]
     base_attack = pocket_monster_dict[StatsEnum.ATTACK]
     base_defense = pocket_monster_dict[StatsEnum.DEFENSE]
