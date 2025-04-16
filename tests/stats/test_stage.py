@@ -168,17 +168,6 @@ class TestStage(unittest.TestCase):
         self.assertEqual(stage_stats_1.total, 48)
         self.assertEqual(stage_stats_2.total, -48)
 
-    def test_get_multiplier_hp_raises_error(self):
-        '''Teste que verifica se o método get_multiplier levanta uma excessão
-        quando passado StatsEnum.HP.
-        '''
-
-        stage_stats = StageStats()
-        expected_text = 'HP não possui multiplicador.'
-        with self.assertRaises(ValueError) as context:
-            stage_stats.get_multiplier(StatsEnum.HP)
-        self.assertEqual(str(context.exception), expected_text)
-
     def test_get_multiplier_stats_enum(self):
         '''Teste que verifica se o método get_multiplier retorna o valor
         correto para os stats baseados em StatsEnum.

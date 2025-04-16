@@ -66,7 +66,7 @@ class StageStats(Stats):
         '''
 
         if stat_enum == StatsEnum.HP:
-            raise ValueError('HP não possui multiplicador.')
+            return 1.0
 
         stat = self[stat_enum]
         if isinstance(stat_enum, StatsEnum):
