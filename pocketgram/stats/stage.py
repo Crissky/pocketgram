@@ -42,9 +42,9 @@ class StageStats(Stats):
         ''' Retorna uma tupla com as classes dos Enums usados nos Gets e Sets
         '''
 
-        super_enum = super().get_set_classes
+        super_get_set_classes = super().get_set_classes
 
-        return (*super_enum, BattleStatsEnum)
+        return (*super_get_set_classes, BattleStatsEnum)
 
     @property
     def stats_text(self):
