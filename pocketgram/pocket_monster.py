@@ -5,12 +5,17 @@ from pocketgram._types import Types
 from pocketgram.enums._types import TypesEnum
 from pocketgram.enums.form import FormEnum
 from pocketgram.enums.natures import NaturesEnum
+from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
+from pocketgram.functions.enum import get_attr_name_from_enum
 from pocketgram.stats.base import BaseStats
 from pocketgram.stats.ev import EVStats
 from pocketgram.stats.iv import IVStats
 from pocketgram.stats.nature import Nature
 from pocketgram.stats.stage import StageStats
+
+
+GET_AND_SET_ENUM_CLASSES = Union[StatsEnum, PocketMonsterParamEnum]
 
 
 class PocketMonster:
@@ -51,15 +56,15 @@ class PocketMonster:
         nickname: str = None,
         form: Union[FormEnum, str] = None,
     ):
-        check_form = isinstance(form, FormEnum) or form is None
-        self._number = number
-        self._level = level
-        self._name = name
-        self._nickname = nickname
-        self._nature = Nature(nature=nature)
+        form = FormEnum[form] if isinstance(form, str) else form
+        self[PocketMonsterParamEnum.NUMBER] = number
+        self[PocketMonsterParamEnum.LEVEL] = level
+        self[PocketMonsterParamEnum.NAME] = name
+        self[PocketMonsterParamEnum.NICKNAME] = nickname
+        self[PocketMonsterParamEnum.NATURE] = Nature(nature=nature)
         _types = _types if isinstance(_types, list) else [_types]
-        self._types = Types(*_types)
-        self._form = form if check_form else FormEnum[form]
+        self[PocketMonsterParamEnum.TYPES] = Types(*_types)
+        self[PocketMonsterParamEnum.FORM] = form
 
         self._base_stats = BaseStats(
             hp=base_hp,
@@ -124,7 +129,7 @@ class PocketMonster:
         # 0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + Level + 10
     # Other Stats = (floor(
         # 0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + 5) x Nature
-    def __getitem__(self, key: StatsEnum) -> int:
+    def __get_stats(self, key):
         base = self._base_stats[key]
         ev = floor(0.25 * self._ev_stats[key])
         iv = self._iv_stats[key]
@@ -137,6 +142,25 @@ class PocketMonster:
         result = (result + plus_value) * nature
 
         return int(result)
+
+    def __getitem__(self, key: GET_AND_SET_ENUM_CLASSES) -> int:
+        if isinstance(key, StatsEnum):
+            return self.__get_stats(key)
+        elif isinstance(key, PocketMonsterParamEnum):
+            return getattr(self, get_attr_name_from_enum(key))
+        else:
+            raise TypeError(
+                f'Chave "{key}" não é do tipo '
+                f'{StatsEnum.__name__}/{PocketMonsterParamEnum.__name__}.'
+            )
+
+    def __setitem__(self, key: GET_AND_SET_ENUM_CLASSES, value: int) -> int:
+        if isinstance(key, StatsEnum):
+            raise AttributeError(
+                f'Não é possível alterar o valor de {key.value}.'
+            )
+        elif isinstance(key, PocketMonsterParamEnum):
+            setattr(self, get_attr_name_from_enum(key), value)
 
     def __str__(self):
         stats_text = ', '.join([f'{e.value}={self[e]}' for e in StatsEnum])
