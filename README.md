@@ -1,2 +1,2 @@
 # pocketgram
-Bot para o Telegram
+Bot para o Telegram EM CONSTRUÇÃO.
