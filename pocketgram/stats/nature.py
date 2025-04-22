@@ -117,6 +117,9 @@ class Nature(Stats):
     def __setitem__(self, key: StatsEnum, value: int):
         raise AttributeError('Nature não pode ser alterada.')
 
+    def __eq__(self, value):
+        return self._nature == value
+
 
 if __name__ == '__main__':
     for nature_enum in NaturesEnum:
