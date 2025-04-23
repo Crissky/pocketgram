@@ -36,3 +36,8 @@ class NaturesEnum(Enum):
     SASSY = 'Sassy'
     SERIOUS = 'Serious'
     TIMID = 'Timid'
+
+
+class NatureParamEnum(Enum):
+    NATURE = 'nature'
+    STAT_MODIFIERS = 'stat_modifiers'
