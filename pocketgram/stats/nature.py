@@ -1,7 +1,8 @@
 from typing import Dict, List, Union
 
-from pocketgram.enums.natures import NaturesEnum
+from pocketgram.enums.natures import NatureParamEnum, NaturesEnum
 from pocketgram.enums.stats import StatsEnum
+from pocketgram.functions.enum import get_attr_name_from_enum
 from pocketgram.stats.stats import Stats
 
 
@@ -60,8 +61,8 @@ class Nature(Stats):
         if not isinstance(nature, NaturesEnum):
             raise TypeError(f'nature deve ser um NaturesEnum. ({nature})')
 
-        self._nature = nature
-        self._stat_modifiers = self.calculate_stat_modifiers()
+        self[NatureParamEnum.NATURE] = nature
+        self[NatureParamEnum.STAT_MODIFIERS] = self.calculate_stat_modifiers()
 
     def calculate_stat_modifiers(self) -> Dict[StatsEnum, float]:
         modifiers = {}
@@ -105,8 +106,10 @@ class Nature(Stats):
     def __str__(self):
         return f'{self._nature.value} ' + super().__str__()
 
-    def __getitem__(self, key: StatsEnum) -> float:
-        if not isinstance(key, self.get_set_classes):
+    def __getitem__(self, key: Union[NatureParamEnum, StatsEnum]) -> float:
+        if isinstance(key, NatureParamEnum):
+            return getattr(self, get_attr_name_from_enum(key))
+        elif not isinstance(key, self.get_set_classes):
             enum_names = '/'.join([e.__name__ for e in self.get_set_classes])
             error_text = f'Chave "{key}" não é do tipo {enum_names}.'
 
@@ -114,7 +117,10 @@ class Nature(Stats):
 
         return self._stat_modifiers[key]
 
-    def __setitem__(self, key: StatsEnum, value: int):
+    def __setitem__(self, key: Union[NatureParamEnum, StatsEnum], value: int):
+        if isinstance(key, NatureParamEnum):
+            return setattr(self, get_attr_name_from_enum(key), value)
+
         raise AttributeError('Nature não pode ser alterada.')
 
     def __eq__(self, value):
