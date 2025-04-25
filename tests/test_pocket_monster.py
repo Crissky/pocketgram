@@ -2,7 +2,8 @@ import pytest
 import unittest
 
 from pocketgram.enums._types import TypesEnum
-from pocketgram.enums.natures import NaturesEnum
+from pocketgram.enums.natures import NatureParamEnum, NaturesEnum
+from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.pocket_monster import PocketMonster
 
@@ -95,7 +96,7 @@ class TestPocketMonster(unittest.TestCase):
         level = 100
         name = 'Mew'
         nickname = 'Testy'
-        nature = NaturesEnum.MODEST
+        nature_enum = NaturesEnum.MODEST
         _types = TypesEnum.PSYCHIC
         base_stats = {
             'base_hp': 100, 'base_attack': 100,
@@ -113,14 +114,15 @@ class TestPocketMonster(unittest.TestCase):
 
         pm = PocketMonster(
             number=number, level=level, name=name, nickname=nickname,
-            nature=nature, _types=_types, **base_stats, **ev_stats, **iv_stats
+            nature=nature_enum, _types=_types, **base_stats, **ev_stats, **iv_stats
         )
+        nature = pm[PocketMonsterParamEnum.NATURE]
 
-        self.assertEqual(pm._number, number)
-        self.assertEqual(pm._level, level)
-        self.assertEqual(pm._name, name)
-        self.assertEqual(pm._nickname, nickname)
-        self.assertEqual(pm._nature._nature, nature)
+        self.assertEqual(pm[PocketMonsterParamEnum.NUMBER], number)
+        self.assertEqual(pm[PocketMonsterParamEnum.LEVEL], level)
+        self.assertEqual(pm[PocketMonsterParamEnum.NAME], name)
+        self.assertEqual(pm[PocketMonsterParamEnum.NICKNAME], nickname)
+        self.assertEqual(nature[NatureParamEnum.NATURE], nature_enum)
         self.assertEqual(pm.primary_type, TypesEnum.PSYCHIC)
         self.assertIsNone(pm.secondary_type)
         self.assertIsNone(pm._form)
