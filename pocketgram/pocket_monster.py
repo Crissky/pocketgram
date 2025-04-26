@@ -146,6 +146,10 @@ class PocketMonster:
     def __getitem__(self, key: GET_AND_SET_ENUM_CLASSES) -> int:
         if isinstance(key, StatsEnum):
             return self.__get_stats(key)
+        elif key == PocketMonsterParamEnum.TYPE_1:
+            return self[PocketMonsterParamEnum.TYPES].primary
+        elif key == PocketMonsterParamEnum.TYPE_2:
+            return self[PocketMonsterParamEnum.TYPES].secondary
         elif isinstance(key, PocketMonsterParamEnum):
             return getattr(self, get_attr_name_from_enum(key))
         else:
