@@ -114,7 +114,8 @@ class TestPocketMonster(unittest.TestCase):
 
         pm = PocketMonster(
             number=number, level=level, name=name, nickname=nickname,
-            nature=nature_enum, _types=_types, **base_stats, **ev_stats, **iv_stats
+            nature=nature_enum, _types=_types,
+            **base_stats, **ev_stats, **iv_stats
         )
         nature = pm[PocketMonsterParamEnum.NATURE]
 
@@ -123,7 +124,8 @@ class TestPocketMonster(unittest.TestCase):
         self.assertEqual(pm[PocketMonsterParamEnum.NAME], name)
         self.assertEqual(pm[PocketMonsterParamEnum.NICKNAME], nickname)
         self.assertEqual(nature[NatureParamEnum.NATURE], nature_enum)
-        self.assertEqual(pm.primary_type, TypesEnum.PSYCHIC)
+        self.assertEqual(pm[PocketMonsterParamEnum.TYPE_1], TypesEnum.PSYCHIC)
+        self.assertIsNone(pm[PocketMonsterParamEnum.TYPE_2])
         self.assertIsNone(pm.secondary_type)
         self.assertIsNone(pm._form)
 
