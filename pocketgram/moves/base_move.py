@@ -13,7 +13,7 @@ class BaseMove(ABC):
     def __init__(
         self,
         name: str,
-        type: TypesEnum,
+        _type: TypesEnum,
         category: MoveCategoryEnum,
         used_pp: int,
         max_pp: int,
@@ -38,7 +38,7 @@ class BaseMove(ABC):
         '''
 
         self._name = name
-        self._type = type
+        self._type = _type
         self._category = category
         self._used_pp = used_pp
         self._max_pp = max_pp
