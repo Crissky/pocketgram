@@ -1,3 +1,25 @@
+'''
+Prioridade das habilidades atualizado para a GEN9
+
++5: Helping Hand
++4: Baneful Bunker, Detect, Endure, King's Shield, Magic Coat, Max Guard,
+    Obstruct, Protect, Spiky Shield, Burning Bulwark, Silk Trap
++3: Crafty Shield, Fake Out, Quick Guard, Wide Guard, Upper Hand
++2: Ally Switch, Extreme Speed, Feint, First Impression, Follow Me, Rage Powder
++1: Accelerock, Aqua Jet, Baby-Doll Eyes, Bullet Punch,
+    Grassy Glide (when used in Grassy Terrain), Ice Shard, Jet Punch,
+    Mach Punch, Quick Attack, Shadow Sneak, Sucker Punch, Thunderclap,
+    Vacuum Wave, Water Shuriken
+0 : All other moves
+-1: Vital Throw
+-2: None
+-3: Focus Punch, Shell Trap, Beak Blast
+-4: Avalanche, Revenge
+-5: Counter, Mirror Coat
+-6: Circle Throw, Dragon Tail, Roar, Whirlwind, Teleport
+-7: Trick Room
+'''
+
 from abc import ABC
 from typing import List
 
