@@ -77,7 +77,7 @@ class MoveNameEnum(Enum):
     BRINE = 'Brine'
     BRUTAL_SWING = 'Brutal Swing'
     BUBBLE = 'Bubble'
-    BUBBLE BEAM = 'Bubble Beam'
+    BUBBLE_BEAM = 'Bubble Beam'
     BUG_BITE = 'Bug Bite'
     BUG_BUZZ = 'Bug Buzz'
     BULK_UP = 'Bulk Up'
