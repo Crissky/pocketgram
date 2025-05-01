@@ -127,3 +127,54 @@ class TestPocketMonsterFactory(unittest.TestCase):
         self.assertEqual(ivs[StatsEnum.SPECIAL_DEFENSE], iv_special_defense)
         self.assertEqual(ivs[StatsEnum.SPEED], iv_speed)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.FORM], form)
+
+    def test_pocket_monster_factory_3(self):
+        '''Teste se pocket_monster_factory cria uma instância de PocketMonster
+        com atributos corretos, passando os IVs.
+
+        Este teste verifica se a função factory inicializa corretamente um
+        PocketMonster com os parâmetros fornecidos e retorna uma instância
+        com os atributos esperados.
+        '''
+
+        number = 25
+        level = 100
+        nature = NaturesEnum.MODEST
+        nature_str = nature.name
+        ev_hp = 10
+        ev_attack = 20
+        ev_defense = 30
+        ev_special_attack = 40
+        ev_special_defense = 50
+        ev_speed = 60
+        form = None
+
+        pocket_monster = pocket_monster_factory(
+            number=number,
+            level=level,
+            nature=nature_str,
+            ev_hp=ev_hp,
+            ev_attack=ev_attack,
+            ev_defense=ev_defense,
+            ev_special_attack=ev_special_attack,
+            ev_special_defense=ev_special_defense,
+            ev_speed=ev_speed,
+            iv_random_init=True,
+            nickname='Faísca',
+            form=form
+        )
+        evs = pocket_monster._ev_stats
+
+        self.assertIsInstance(pocket_monster, PocketMonster)
+        self.assertEqual(
+            pocket_monster[PocketMonsterParamEnum.NUMBER], f'{number:04}'
+        )
+        self.assertEqual(pocket_monster[PocketMonsterParamEnum.LEVEL], level)
+        self.assertEqual(pocket_monster[PocketMonsterParamEnum.NATURE], nature)
+        self.assertEqual(evs[StatsEnum.HP], ev_hp)
+        self.assertEqual(evs[StatsEnum.ATTACK], ev_attack)
+        self.assertEqual(evs[StatsEnum.DEFENSE], ev_defense)
+        self.assertEqual(evs[StatsEnum.SPECIAL_ATTACK], ev_special_attack)
+        self.assertEqual(evs[StatsEnum.SPECIAL_DEFENSE], ev_special_defense)
+        self.assertEqual(evs[StatsEnum.SPEED], ev_speed)
+        self.assertEqual(pocket_monster[PocketMonsterParamEnum.FORM], form)
