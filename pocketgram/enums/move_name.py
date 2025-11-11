@@ -422,10 +422,10 @@ class MoveNameEnum(Enum):
     JUNGLE_HEALING = 'Jungle Healing'
     KARATE_CHOP = 'Karate Chop'
     KINESIS = 'Kinesis'
-    KINGS_SHIELD =  "King's Shield"
+    KINGS_SHIELD = "King's Shield"
     KNOCK_OFF = 'Knock Off'
     KOWTOW_CLEAVE = 'Kowtow Cleave'
-    LANDS_WRATH =  "Land's Wrath"
+    LANDS_WRATH = "Land's Wrath"
     LASER_FOCUS = 'Laser Focus'
     LASH_OUT = 'Lash Out'
     LAST_RESORT = 'Last Resort'
@@ -438,7 +438,7 @@ class MoveNameEnum(Enum):
     LEECH_LIFE = 'Leech Life'
     LEECH_SEED = 'Leech Seed'
     LEER = 'Leer'
-    LETS_SNUGGLE_FOREVER =  "Let's Snuggle Forever"
+    LETS_SNUGGLE_FOREVER = "Let's Snuggle Forever"
     LICK = 'Lick'
     LIFE_DEW = 'Life Dew'
     LIGHT_OF_RUIN = 'Light of Ruin'
@@ -537,7 +537,7 @@ class MoveNameEnum(Enum):
     NASTY_PLOT = 'Nasty Plot'
     NATURAL_GIFT = 'Natural Gift'
     NATURE_POWER = 'Nature Power'
-    NATURES_MADNESS =  "Nature's Madness"
+    NATURES_MADNESS = "Nature's Madness"
     NEEDLE_ARM = 'Needle Arm'
     NEVER_ENDING_NIGHTMARE = 'Never-Ending Nightmare'
     NIGHT_DAZE = 'Night Daze'
