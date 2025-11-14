@@ -22,9 +22,9 @@ class BaseMoveEffect(ABC):
     @abstractmethod
     def pre_hit_apply(
         self,
-        target: 'PocketMonster',
         power: int,
         total_power: int,
+        *targets: 'PocketMonster',
     ):
         '''Aplica o efeito no alvo antes do ataque seja realizado.
 
@@ -39,9 +39,9 @@ class BaseMoveEffect(ABC):
     @abstractmethod
     def hit_apply(
         self,
-        target: 'PocketMonster',
         power: int,
         total_power: int,
+        *targets: 'PocketMonster',
     ):
         '''Aplica o efeito no alvo se ele foi atingido pelo movimento.
 
@@ -56,10 +56,10 @@ class BaseMoveEffect(ABC):
     @abstractmethod
     def pos_hit_apply(
         self,
-        target: 'PocketMonster',
         damage: int,
-        power: int = None,
-        total_power: int = None,
+        power: int,
+        total_power: int,
+        *targets: 'PocketMonster',
     ):
         '''Aplica o efeito no alvo após o alvo ser atingido.
 
