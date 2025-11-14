@@ -18,6 +18,9 @@ Prioridade das habilidades atualizado para a GEN9
 -5: Counter, Mirror Coat
 -6: Circle Throw, Dragon Tail, Roar, Whirlwind, Teleport
 -7: Trick Room
+
+Referencias:
+GEN 1: https://pokemondb.net/move/generation/1
 '''
 
 from abc import ABC
@@ -35,6 +38,7 @@ class BaseMove(ABC):
     def __init__(
         self,
         name: str,
+        description: str,
         _type: TypesEnum,
         category: MoveCategoryEnum,
         used_pp: int,
@@ -48,6 +52,7 @@ class BaseMove(ABC):
         '''
         Args:
             name: Nome do Movimento.
+            description: Descrição do Movimento.
             type: Enum com o tipo do Movimento.
             category: Categoria do Movimento.
             used_pp: Valor de PP que já foi utilizado.
@@ -60,6 +65,7 @@ class BaseMove(ABC):
         '''
 
         self._name = name
+        self._description = description
         self._type = _type
         self._category = category
         self._used_pp = used_pp
@@ -69,3 +75,17 @@ class BaseMove(ABC):
         self._priority = priority
         self._effect_list = effect_list or []
         self._makes_contact = makes_contact
+
+    def __str__(self):
+        return (
+            f'{self._name.upper()} '
+            f'({self._type.value.upper()}) '
+            f'[{self._category.value.upper()}], '
+            f'PP: {self._used_pp}/{self._max_pp}, '
+            f'POWER: {self._power}, '
+            f'ACCURACY: {self._accuracy}, '
+            f'PRIORITY: {self._priority}'
+        )
+
+    def __repr__(self):
+        return f'Move({self})'
