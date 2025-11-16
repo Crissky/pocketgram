@@ -25,7 +25,22 @@ class leech_life(BaseMove):
 
 
 class pin_missile(BaseMove):
-    ...
+    def __init__(self, used_pp: int):
+        description = 'Fires pins that strike 2-5 times.'
+
+        super().__init__(
+            name=MoveNameEnum.PIN_MISSILE.value,
+            description=description,
+            _type=TypesEnum.BUG,
+            category=MoveCategoryEnum.PHYSICAL,
+            used_pp=used_pp,
+            max_pp=20,
+            power=25,
+            accuracy=95,
+            priority=0,
+            effect_list=None,
+            makes_contact=False,
+        )
 
 
 class string_shot(BaseMove):
