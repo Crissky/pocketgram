@@ -44,7 +44,22 @@ class pin_missile(BaseMove):
 
 
 class string_shot(BaseMove):
-    ...
+    def __init__(self, used_pp: int):
+        description = 'A move that lowers the foe’s SPEED.'
+
+        super().__init__(
+            name=MoveNameEnum.STRING_SHOT.value,
+            description=description,
+            _type=TypesEnum.BUG,
+            category=MoveCategoryEnum.STATUS,
+            used_pp=used_pp,
+            max_pp=40,
+            power=None,
+            accuracy=95,
+            priority=0,
+            effect_list=None,
+            makes_contact=False,
+        )
 
 
 class twineedle(BaseMove):
