@@ -63,4 +63,19 @@ class string_shot(BaseMove):
 
 
 class twineedle(BaseMove):
-    ...
+    def __init__(self, used_pp: int):
+        description = 'Jabs the foe twice using stingers.'
+
+        super().__init__(
+            name=MoveNameEnum.TWINEEDLE.value,
+            description=description,
+            _type=TypesEnum.BUG,
+            category=MoveCategoryEnum.PHYSICAL,
+            used_pp=used_pp,
+            max_pp=20,
+            power=25,
+            accuracy=100,
+            priority=0,
+            effect_list=None,
+            makes_contact=False,
+        )
