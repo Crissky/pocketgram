@@ -104,6 +104,25 @@ class PocketMonster:
             evasiveness=stage_evasiveness,
         )
 
+    def add_damage(self, damage: int) -> int:
+        if damage < 0:
+            raise ValueError('Damage precisa ser um inteiro positivo.')
+
+        total_damage = min(self.damage_points + damage, self[StatsEnum.HP])
+        difference = total_damage - self.damage_points
+        self.damage_points = total_damage
+
+        return difference
+
+    def heal_damage(self, heal: int) -> int:
+        if heal < 0:
+            raise ValueError('Heal precisa ser um inteiro positivo.')
+
+        total_heal = min(self.damage_points, heal)
+        self.damage_points = max(self.damage_points - total_heal, 0)
+
+        return total_heal
+
     @property
     def name(self) -> str:
         return self._nickname or self._name
