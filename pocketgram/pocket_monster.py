@@ -55,6 +55,7 @@ class PocketMonster:
         stage_evasiveness: int = 0,
         nickname: str = None,
         form: Union[FormEnum, str] = None,
+        damage_points: int = 0,
     ):
         form = FormEnum[form] if isinstance(form, str) else form
         self[PocketMonsterParamEnum.NUMBER] = number
@@ -65,6 +66,7 @@ class PocketMonster:
         _types = _types if isinstance(_types, list) else [_types]
         self[PocketMonsterParamEnum.TYPES] = Types(*_types)
         self[PocketMonsterParamEnum.FORM] = form
+        self.damage_points = damage_points
 
         self._base_stats = BaseStats(
             hp=base_hp,
@@ -124,6 +126,22 @@ class PocketMonster:
     @property
     def secondary_type(self) -> TypesEnum:
         return self._types.secondary
+
+    @property
+    def current_hp(self) -> int:
+        return max(self[StatsEnum.HP] - self.damage_points, 0)
+
+    @property
+    def current_hp_percent(self) -> float:
+        return self.current_hp / self[StatsEnum.HP]
+
+    @property
+    def hp_text(self) -> str:
+        return f'{self.current_hp}/{self[StatsEnum.HP]}'
+
+    @property
+    def is_alive(self) -> bool:
+        return self.current_hp > 0
 
     # HP = floor(
         # 0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + Level + 10
