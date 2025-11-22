@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, List
 
 
 if TYPE_CHECKING:
+    from pocketgram.moves.base_move import BaseMove
     from pocketgram.pocket_monster import PocketMonster
 
 
@@ -22,10 +23,11 @@ class BaseMoveEffect(ABC):
     @abstractmethod
     def pre_hit_apply(
         self,
-        power: int,
-        total_power: int,
-        *targets: 'PocketMonster',
-    ):
+        move: 'BaseMove',
+        move_user: 'PocketMonster',
+        allies: List['PocketMonster'],
+        enemies: List['PocketMonster'],
+    ) -> str:
         '''Aplica o efeito no alvo antes do ataque seja realizado.
 
         Args:
@@ -39,10 +41,11 @@ class BaseMoveEffect(ABC):
     @abstractmethod
     def hit_apply(
         self,
-        power: int,
-        total_power: int,
-        *targets: 'PocketMonster',
-    ):
+        move: 'BaseMove',
+        move_user: 'PocketMonster',
+        allies: List['PocketMonster'],
+        enemies: List['PocketMonster'],
+    ) -> str:
         '''Aplica o efeito no alvo se ele foi atingido pelo movimento.
 
         Args:
@@ -57,10 +60,11 @@ class BaseMoveEffect(ABC):
     def pos_hit_apply(
         self,
         damage: int,
-        power: int,
-        total_power: int,
-        *targets: 'PocketMonster',
-    ):
+        move: 'BaseMove',
+        move_user: 'PocketMonster',
+        allies: List['PocketMonster'],
+        enemies: List['PocketMonster'],
+    ) -> str:
         '''Aplica o efeito no alvo após o alvo ser atingido.
 
         Args:
