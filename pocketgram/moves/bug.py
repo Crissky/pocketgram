@@ -1,6 +1,7 @@
 from pocketgram.enums._types import TypesEnum
 from pocketgram.enums.move_category import MoveCategoryEnum
 from pocketgram.enums.move_name import MoveNameEnum
+from pocketgram.move_effects.drain_move_effect import HalfDrainMoveEffect
 from pocketgram.moves.base_move import BaseMove
 
 
@@ -21,7 +22,7 @@ class leech_life(BaseMove):
             power=80,
             accuracy=100,
             priority=0,
-            effect_list=None,
+            effect_list=[HalfDrainMoveEffect],
             makes_contact=True,
         )
 
