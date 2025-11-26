@@ -89,5 +89,8 @@ class DrainBaseMoveEffect(BaseMoveEffect):
 
 
 class HalfDrainMoveEffect(DrainBaseMoveEffect):
+    '''Classe de efeito de Absorver metade do dano causado.
+    '''
+
     def __init__(self, duration = 1):
         super().__init__(duration=duration, percent_drain=0.5)
