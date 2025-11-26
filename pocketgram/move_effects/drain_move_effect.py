@@ -83,8 +83,9 @@ class DrainBaseMoveEffect(BaseMoveEffect):
 
         heal = int(damage * self.percent_drain)
         total_heal = move_user.heal_damage(heal)
+        report_msg = f'{move_user.name} curou {total_heal} de HP.'
 
-        return f'{move_user.name} curou {total_heal} de HP.'
+        return report_msg
 
 
 class HalfDrainMoveEffect(DrainBaseMoveEffect):
