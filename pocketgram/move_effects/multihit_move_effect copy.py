@@ -94,3 +94,10 @@ class MultiHitBaseMoveEffect(BaseMoveEffect):
 
         pass
 
+
+class DoubleHitBaseMoveEffect(MultiHitBaseMoveEffect):
+    '''Classe de efeito de Ataque Duplo.
+    '''
+
+    def __init__(self, duration: int = 1):
+        super.__init__(duration=duration, min_hit_times=2, max_hit_times=2)
