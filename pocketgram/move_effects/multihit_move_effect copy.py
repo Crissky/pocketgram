@@ -26,7 +26,7 @@ class MultiHitBaseMoveEffect(BaseMoveEffect):
             duration: int = 1,
             min_hit_times: int = 1,
             max_hit_times: int = 2
-        ):
+    ):
         '''
         Args:
             duration: Número de turnos que o efeito irá durar.
