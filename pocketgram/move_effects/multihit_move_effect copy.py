@@ -74,6 +74,9 @@ class MultiHitBaseMoveEffect(BaseMoveEffect):
         report_msg = (
             f'{move_user.name} atingiu {total_hit_times} vezes o alvo.'
         )
+        # TODO ADICIONAR O DANO `total_hit_times` VEZES.
+
+        return report_msg
 
     def pos_hit_apply(
         self,
