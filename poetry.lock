@@ -539,15 +539,13 @@ webhooks = ["tornado (>=6.4,<7.0)"]
 
 [[package]]
 name = "pytz"
-version = "2015.2"
+version = "2025.1"
 description = "World timezone definitions, modern and historical"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pytz-2015.2-py2.py3-none-any.whl", hash = "sha256:358b05a0c2605c15cf8337d17016eb95afeaad07c900df9c2cde76e2194a9258"},
-    {file = "pytz-2015.2.tar.bz2", hash = "sha256:3e15b416c9a2039c1a51208b2cd3bb4ffd796cd19e601b1d2657afcb77c3dc90"},
-    {file = "pytz-2015.2.tar.gz", hash = "sha256:73daf0eb44ad929ad56972ad30938cb231b725b27dff105b7168e7b4491e0452"},
-    {file = "pytz-2015.2.zip", hash = "sha256:93f81122d86983cbb056cd12ca7de39d760b6f3e3060e43eff5c5e2034516fa2"},
+    {file = "pytz-2025.1-py2.py3-none-any.whl", hash = "sha256:89dd22dca55b46eac6eda23b2d72721bf1bdfef212645d81513ef5d03038de57"},
+    {file = "pytz-2025.1.tar.gz", hash = "sha256:c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e"},
 ]
 
 [[package]]
@@ -643,4 +641,4 @@ devenv = ["check-manifest", "pytest (>=4.3)", "pytest-cov", "pytest-mock (>=3.3)
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10.1 <3.11.0"
-content-hash = "eb75f185fc506a79c53c0aa1bcfe4eda89caff69eb3982477efeef8f22d78298"
+content-hash = "fa54e460a8ffc79608676067a1d7b9a6e0decce71cb5df9c78f727c189ba2000"
