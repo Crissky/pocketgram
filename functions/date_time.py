@@ -34,3 +34,12 @@ def utc_to_brazil_datetime(dt: datetime) -> datetime:
     dt = dt.astimezone(BRAZIL_TIMEZONE)
 
     return dt
+
+
+def brazil_to_utc_datetime(dt: datetime) -> datetime:
+    dt = replace_tzinfo(dt)
+    delta = timedelta(hours=3)
+
+    return dt + delta
+
+
