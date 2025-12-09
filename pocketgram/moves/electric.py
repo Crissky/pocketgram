@@ -46,7 +46,22 @@ class thunder_punch(BaseMove):
 
 
 class thunder_shock(BaseMove):
-    ...
+    def __init__(self, used_pp: int):
+        description = 'An attack that may cause paralysis.'
+
+        super().__init__(
+            name=MoveNameEnum.THUNDER_SHOCK.value,
+            description=description,
+            _type=TypesEnum.ELECTRIC,
+            category=MoveCategoryEnum.SPECIAL,
+            used_pp=used_pp,
+            max_pp=30,
+            power=40,
+            accuracy=100,
+            priority=0,
+            effect_list=None,
+            makes_contact=False,
+        )
 
 
 class thunder_wave(BaseMove):
