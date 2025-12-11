@@ -1,7 +1,11 @@
 from enum import Enum
 
 
-class MajorStatusEnum(Enum):
+class StatusEnum(Enum):
+    ...
+
+
+class MajorStatusEnum(StatusEnum):
     BADLY_POISONED = 'Badly Poisoned'
     BURN = 'Burn'
     FREEZE = 'Freeze'
@@ -10,5 +14,5 @@ class MajorStatusEnum(Enum):
     SLEEP = 'Sleep'
 
 
-class MinorStatusEnum(Enum):
+class MinorStatusEnum(StatusEnum):
     CONFUSION = 'Confusion'
