@@ -84,4 +84,19 @@ class thunder_wave(BaseMove):
 
 
 class thunderbolt(BaseMove):
-    ...
+    def __init__(self, used_pp: int):
+        description = 'An attack that may cause paralysis.'
+
+        super().__init__(
+            name=MoveNameEnum.THUNDERBOLT.value,
+            description=description,
+            _type=TypesEnum.ELECTRIC,
+            category=MoveCategoryEnum.SPECIAL,
+            used_pp=used_pp,
+            max_pp=15,
+            power=90,
+            accuracy=100,
+            priority=0,
+            effect_list=None,
+            makes_contact=False,
+        )
