@@ -19,7 +19,7 @@ class MongoBase:
                 f"O _id passado é do tipo inválido. ({type(self._id)})"
             )
 
-        if self.created_at is not None or not isinstance(
+        if self.created_at is not None and not isinstance(
             self.created_at, datetime
         ):
             raise TypeError(
@@ -27,7 +27,7 @@ class MongoBase:
                 f"({type(self.created_at)})"
             )
 
-        if self.updated_at is not None or not isinstance(
+        if self.updated_at is not None and not isinstance(
             self.updated_at, datetime
         ):
             raise TypeError(
