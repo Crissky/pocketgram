@@ -1,4 +1,3 @@
-
 from pocketgram.enums.badge import BadgeEnum
 
 
@@ -6,13 +5,15 @@ class Trainer:
 
     def __init__(
         self,
-        name: str,
-        nickname: str,
+        _id: str,
+        user_id: str,
+        user_name: str,
         badge_list: list[BadgeEnum] = None,
     ):
         if badge_list is None:
             badge_list = []
 
-        self.name = name
-        self.nickname = nickname
+        self._id = _id
+        self.user_id = user_id
+        self.user_name = user_name
         self.badge_list = badge_list
