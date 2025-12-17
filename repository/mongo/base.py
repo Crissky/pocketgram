@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass, fields
 from datetime import datetime
 from typing import Union
 
@@ -34,3 +34,9 @@ class MongoBase:
                 "O updated_at passado é do tipo inválido. "
                 f"({type(self.updated_at)})"
             )
+
+    def to_dict(self):
+        data = asdict(self)
+        self_fields = fields(self)
+
+        return {f.name: data[f.name] for f in self_fields if f.init}
