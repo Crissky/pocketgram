@@ -260,83 +260,82 @@ class Model:
     @property
     def populate_fields(self) -> dict:
         """
-                Retorna um dicionário com os campos necessários para criar
-                os objetos de outros modelos necessários para o modelo atual.
+        Retorna um dicionário com os campos necessários para criar
+        os objetos de outros modelos necessários para o modelo atual.
 
-                field_name: Nome do campo que será populado ao criar o objeto.
-                    id_key: caminho do campo usando para buscar o objeto no banco
-                        (aka _id ou alternative_id).
-                    model: Modelo usado para carregar o objeto que populará
-                        o objeto do modelo atual.
-                    subclass: Class que será usada para instanciar novos objetos.
-                        Essa classe usará o objeto carregado pelo `model` como um
-                        dos seus atributos, além dos demais chaves/valores do
-                        dicionário salvo no banco.
-                        Usado quando o campo é salvo no banco do objeto pai como
-                        uma lista de dicionários (Usado no BagModel para usar os
-                        objetos do tipo Equipment/Consumable carregados pelo
-                        ItemModel como atributo da classe Item).
-                    remakeclass: Se existir esse campo, define que a Classe que
-                        será instanciada usando o to_dict() do
-                        objeto carregado do banco pelo `model` como seus
-                        atributos, além dos demais chaves/valores do dicionário
-                        salvo no banco. (Usado pelo StatusModel para modificar
-                        valores que deveriam ser variáveis [como turno e level] da
-                        classe Condition sem alterar os valores padrão [como nome
-                        e descrição]).
-                    factory: Função que ira carregar o atributo a partir de uma
-                    função factory usando como argumentos os campos vindos do
-                    Mongo, ao invés de carregar do banco a partir de um Model.
-                    _class: Atributo só será populado em objetos que
-                        são dessa classe. (Usando em ItemModel para popular
-                        atributo somente da classe Consumable e não tenta na
-                        Classe Equipment, pois levantaria um erro).
+        field_name: Nome do campo que será populado ao criar o objeto.
+        id_key: caminho do campo usando para buscar o objeto no banco
+            (aka _id ou alternative_id).
+        model: Modelo usado para carregar o objeto que populará
+            o objeto do modelo atual.
+        subclass: Class que será usada para instanciar novos objetos.
+            Essa classe usará o objeto carregado pelo `model` como um
+            dos seus atributos, além dos demais chaves/valores do
+            dicionário salvo no banco.
+            Usado quando o campo é salvo no banco do objeto pai como
+            uma lista de dicionários (Usado no BagModel para usar os
+            objetos do tipo Equipment/Consumable carregados pelo
+            ItemModel como atributo da classe Item).
+        remakeclass: Se existir esse campo, define que a Classe que
+            será instanciada usando o to_dict() do
+            objeto carregado do banco pelo `model` como seus
+            atributos, além dos demais chaves/valores do dicionário
+            salvo no banco. (Usado pelo StatusModel para modificar
+            valores que deveriam ser variáveis [como turno e level] da
+            classe Condition sem alterar os valores padrão [como nome
+            e descrição]).
+        factory: Função que ira carregar o atributo a partir de uma
+            função factory usando como argumentos os campos vindos do
+            Mongo, ao invés de carregar do banco a partir de um Model.
+        _class: Atributo só será populado em objetos que
+            são dessa classe. (Usando em ItemModel para popular
+            atributo somente da classe Consumable e não tenta na
+            Classe Equipment, pois levantaria um erro).
 
-                populate_fields = {
-                    'field_name': {
-                        'id_key': string,
-                        'model': Model,
-                        'subclass': Any Class,
-                    },
-                    ...
-                }
-                Exemplo:
-                populate_fields = {
-                    'race': {
-                        'id_key': 'race_name',
-                        'model': RaceModel,
-                    }
-                }
-                Exemplo2:
-                populate_fields = {
-                    'items': {
-                        'id_key': 'items_ids',
-                        'model': ItemModel(),  # Carrega equipamentos e consumíveis
-                        'subclass': Item  # Usa o equipamento/consumível carregado
-                          como atributo ao instanciar a classe Item
-                    }
-                }
-                Exemplo3:
-                populate_fields = {
-                    'conditions': {
-                        'id_key': 'condition_args',
-                        'model': ConditionModel(),
-                        'remakeclass': True,  # Se a Classe será reinstanciada
-                }
-                Exemplo4:
-                'condition': {
-                    'id_key': 'condition_name',
-                    '_class': 'Consumable',  # Atributo 'condition'
-                      só será populado em objetos dessa classe.
-                    'model': ConditionModel()
-                }
-                Exemplo4:
-                'condition': {
-                    'id_key': 'condition_name',
-                    'factory': factory_condition # Função Factory
-                },
+        populate_fields = {
+            'field_name': {
+                'id_key': string,
+                'model': Model,
+                'subclass': Any Class,
+            },
+            ...
+        }
+        Exemplo:
+        populate_fields = {
+            'race': {
+                'id_key': 'race_name',
+                'model': RaceModel,
             }
-        )
+        }
+        Exemplo2:
+        populate_fields = {
+            'items': {
+                'id_key': 'items_ids',
+                'model': ItemModel(),  # Carrega equipamentos e consumíveis
+                'subclass': Item  # Usa o equipamento/consumível carregado
+                    como atributo ao instanciar a classe Item
+            }
+        }
+        Exemplo3:
+        populate_fields = {
+            'conditions': {
+                'id_key': 'condition_args',
+                'model': ConditionModel(),
+                'remakeclass': True,  # Se a Classe será reinstanciada
+            }
+        }
+        Exemplo4:
+        'condition': {
+            'id_key': 'condition_name',
+            '_class': 'Consumable',  # Atributo 'condition'
+                só será populado em objetos dessa classe.
+            'model': ConditionModel()
+        }
+        Exemplo4:
+        'condition': {
+            'id_key': 'condition_name',
+            'factory': factory_condition # Função Factory
+        },
         """
         return {}
 
