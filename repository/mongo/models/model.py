@@ -6,21 +6,15 @@ from functions.date_time import get_brazil_time_now
 from repository.mongo import Database
 
 
-def singleton(cls):
-    class ClassWrapper(cls):
-        _instance = None
-
-        def __new__(c, *args, **kwargs):
-            if not isinstance(c._instance, c):
-                c._instance = cls.__new__(c, *args, **kwargs)
-            return c._instance
-    ClassWrapper.__name__ = cls.__name__
-    return ClassWrapper
-
-
-@singleton
 class Model:
-    '''Classe Base usada para salvar Classes no Banco de Dados MongoDB'''
+    """Classe Base usada para salvar Classes no Banco de Dados MongoDB"""
+
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not isinstance(cls._instance, cls):
+            cls._instance = super().__new__(cls)
+        return cls._instance
 
     def __alt_id_is_valid(self):
         return isinstance(self.alternative_id, str)
