@@ -14,3 +14,5 @@ class PocketMonsterParamEnum(Enum):
     TYPE_1 = 'type_1'
     TYPE_2 = 'type_2'
     TYPES = 'types'
+    HEIGHT = 'height'
+    WEIGHT = 'weight'
