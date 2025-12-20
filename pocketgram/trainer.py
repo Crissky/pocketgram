@@ -25,3 +25,11 @@ class Trainer(MongoBase):
                     f"Tipo: {type(bagde_enum)}"
                 )
 
+    def __str__(self):
+        text = f"Treinador: {self.user_name}\n"
+        text += f"ID: {self.user_id}\n"
+        text += "Badges:\n"
+        for badge in self.badge_list:
+            text += f"  - {badge.value}\n"
+
+        return text
