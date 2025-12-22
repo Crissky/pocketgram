@@ -9,7 +9,10 @@ from pocketgram.moves.base_move import BaseMove
 # =============================================================================
 class bite(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'An attack that may cause flinching.'
+        description = (
+            "The target is bitten with viciously sharp fangs. "
+            "This may also make the target flinch."
+        )
 
         super().__init__(
             name=MoveNameEnum.BITE.value,
