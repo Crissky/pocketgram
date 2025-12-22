@@ -9,7 +9,10 @@ from pocketgram.moves.base_move import BaseMove
 # =============================================================================
 class thunder(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'An attack that may cause paralysis.'
+        description = (
+            "A wicked thunderbolt is dropped on the target to inflict damage. "
+            "This may also leave the target with paralysis."
+        )
 
         super().__init__(
             name=MoveNameEnum.THUNDER.value,
@@ -28,7 +31,10 @@ class thunder(BaseMove):
 
 class thunder_punch(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'An electric punch. It may paralyze.'
+        description = (
+            "The target is attacked with an electrified punch. "
+            "This may also leave the target with paralysis."
+        )
 
         super().__init__(
             name=MoveNameEnum.THUNDER_PUNCH.value,
@@ -47,7 +53,10 @@ class thunder_punch(BaseMove):
 
 class thunder_shock(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'An attack that may cause paralysis.'
+        description = (
+            "The user attacks the target with a jolt of "
+            "electricity. This may also leave the target with paralysis."
+        )
 
         super().__init__(
             name=MoveNameEnum.THUNDER_SHOCK.value,
@@ -66,7 +75,10 @@ class thunder_shock(BaseMove):
 
 class thunder_wave(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'A move that may cause paralysis.'
+        description = (
+            "The user launches a weak jolt of electricity "
+            "that paralyzes the target."
+        )
 
         super().__init__(
             name=MoveNameEnum.THUNDER_WAVE.value,
@@ -85,7 +97,10 @@ class thunder_wave(BaseMove):
 
 class thunderbolt(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'An attack that may cause paralysis.'
+        description = (
+            "The user attacks the target with a strong electric "
+            "blast. This may also leave the target with paralysis."
+        )
 
         super().__init__(
             name=MoveNameEnum.THUNDERBOLT.value,
