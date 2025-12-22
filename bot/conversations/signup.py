@@ -10,10 +10,7 @@ async def signup(update: Update, context: ContextTypes.DEFAULT_TYPE): ...
 
 SIGNUP_HANDLERS = [
     PrefixHandler(
-        PREFIX_COMMANDS,
-        SIGNUP_COMMNADS,
-        signup,
-        BASIC_COMMAND_FILTER
+        PREFIX_COMMANDS, SIGNUP_COMMNADS, signup, BASIC_COMMAND_FILTER
     ),
     CommandHandler(SIGNUP_COMMNADS, signup, BASIC_COMMAND_FILTER),
 ]
