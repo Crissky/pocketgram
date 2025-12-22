@@ -9,7 +9,11 @@ from pocketgram.moves.base_move import BaseMove
 # =============================================================================
 class dragon_rage(BaseMove):
     def __init__(self, used_pp: int):
-        description = 'Always inflicts 40HP damage.'
+        description = (
+            "This move can’t be used. "
+            "It’s recommended that this move is forgotten. "
+            "Once forgotten, this move can’t be remembered."
+        )
 
         super().__init__(
             name=MoveNameEnum.DRAGON_RAGE.value,
