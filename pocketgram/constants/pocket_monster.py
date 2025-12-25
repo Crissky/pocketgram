@@ -523,6 +523,32 @@ POCKET_MONSTERS_DICT = {
             StatsEnum.SPECIAL_ATTACK: 95,
             StatsEnum.SPECIAL_DEFENSE: 85,
             StatsEnum.SPEED: 110
+        },
+        FormEnum.MEGA_X: {
+            PocketMonsterParamEnum.NAME: "Raichu",
+            PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
+            PocketMonsterParamEnum.TYPE_2: None,
+            PocketMonsterParamEnum.HEIGHT: 1.2,
+            PocketMonsterParamEnum.WEIGHT: 38.0,
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 135,
+            StatsEnum.DEFENSE: 95,
+            StatsEnum.SPECIAL_ATTACK: 90,
+            StatsEnum.SPECIAL_DEFENSE: 95,
+            StatsEnum.SPEED: 110
+        },
+        FormEnum.MEGA_Y: {
+            PocketMonsterParamEnum.NAME: "Raichu",
+            PocketMonsterParamEnum.TYPE_1: TypesEnum.ELECTRIC,
+            PocketMonsterParamEnum.TYPE_2: None,
+            PocketMonsterParamEnum.HEIGHT: 1.0,
+            PocketMonsterParamEnum.WEIGHT: 26.0,
+            StatsEnum.HP: 60,
+            StatsEnum.ATTACK: 100,
+            StatsEnum.DEFENSE: 55,
+            StatsEnum.SPECIAL_ATTACK: 160,
+            StatsEnum.SPECIAL_DEFENSE: 80,
+            StatsEnum.SPEED: 130
         }
     },
     "0027": {
