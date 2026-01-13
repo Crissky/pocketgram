@@ -9,6 +9,15 @@ from pocketgram.enums.stats import StatsEnum
 
 class TestPocketMonsterDict(unittest.TestCase):
 
+    SIZE_TEST = 151
+
+    def setUp(self):
+        self.pocket_monsters_dicts = POCKET_MONSTERS_DICT.values()
+        self.enumerate_pocket_monsters_dicts = enumerate(
+            POCKET_MONSTERS_DICT.values(),
+            start=1
+        )
+
     def test_number_keys(self):
         '''Teste que analisa os números (chaves) do POCKET_MONSTERS_DICT.
         '''
@@ -22,7 +31,7 @@ class TestPocketMonsterDict(unittest.TestCase):
         '''Teste que analisa os tipos das formas do POCKET_MONSTERS_DICT.
         '''
 
-        for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
+        for pocket_monsters_dict in self.pocket_monsters_dicts:
             form_types = (FormEnum, type(None))
             for form_key in pocket_monsters_dict.keys():
                 self.assertIsInstance(form_key, form_types)
@@ -31,7 +40,7 @@ class TestPocketMonsterDict(unittest.TestCase):
         '''Testa se as estatísticas dos monstros são do tipo correta.
         '''
 
-        for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
+        for pocket_monsters_dict in self.pocket_monsters_dicts:
             for pm_dict in pocket_monsters_dict.values():
                 for stat_enum in StatsEnum:
                     self.assertIsInstance(pm_dict[stat_enum], int)
@@ -40,7 +49,7 @@ class TestPocketMonsterDict(unittest.TestCase):
         '''Testa se os nomes dos monstros são do tipo correto.
         '''
 
-        for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
+        for pocket_monsters_dict in self.pocket_monsters_dicts:
             for pm_dict in pocket_monsters_dict.values():
                 self.assertIsInstance(
                     pm_dict[PocketMonsterParamEnum.NAME], str
@@ -50,7 +59,7 @@ class TestPocketMonsterDict(unittest.TestCase):
         '''Testa se os tipos 1 dos monstros são do tipo correto.
         '''
 
-        for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
+        for pocket_monsters_dict in self.pocket_monsters_dicts:
             for pm_dict in pocket_monsters_dict.values():
                 self.assertIsInstance(
                     pm_dict[PocketMonsterParamEnum.TYPE_1], TypesEnum
@@ -60,7 +69,7 @@ class TestPocketMonsterDict(unittest.TestCase):
         '''Testa se os tipos 2 dos monstros são do tipo correto.
         '''
 
-        for pocket_monsters_dict in POCKET_MONSTERS_DICT.values():
+        for pocket_monsters_dict in self.pocket_monsters_dicts:
             type_2_types = (TypesEnum, type(None))
             for pm_dict in pocket_monsters_dict.values():
                 self.assertIsInstance(
