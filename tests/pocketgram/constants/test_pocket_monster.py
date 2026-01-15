@@ -75,3 +75,16 @@ class TestPocketMonsterDict(unittest.TestCase):
                 self.assertIsInstance(
                     pm_dict[PocketMonsterParamEnum.TYPE_2], type_2_types
                 )
+
+    def test_height(self):
+        '''Testa se as alturas dos monstros são do tipo correto.
+        '''
+
+        for i, pocket_monsters_dict in self.enumerate_pocket_monsters_dicts:
+            if i > self.SIZE_TEST:
+                break
+            for pm_dict in pocket_monsters_dict.values():
+                self.assertIsInstance(
+                    pm_dict[PocketMonsterParamEnum.HEIGHT], float
+                )
+
