@@ -14,7 +14,7 @@ class MongoBase:
     def __post_init__(self):
         if self._id is None or isinstance(self._id, str):
             self._id = ObjectId(self._id)
-        elif not isinstance(self._id, ObjectId):
+        if not isinstance(self._id, ObjectId):
             raise TypeError(
                 f"O _id passado é do tipo inválido. ({type(self._id)})"
             )
