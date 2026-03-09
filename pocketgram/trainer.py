@@ -15,6 +15,11 @@ class Trainer(MongoBase):
     def __post_init__(self):
         super().__post_init__()
 
+        if self.user_id is not None:
+            self.user_id = str(self.user_id)
+        if self.user_name is not None:
+            self.user_name = str(self.user_name)
+
         for index, bagde_enum in enumerate(self.badge_list):
             if isinstance(bagde_enum, str):
                 self.badge_list[index] = BadgeEnum(bagde_enum)
