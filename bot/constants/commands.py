@@ -1,2 +1,2 @@
 # COMMANDS ====================================================================
-SIGNUP_COMMNADS = ['signup', 'register']
+SIGNUP_COMMNADS = ['signup', 'register', 'cadastro']
