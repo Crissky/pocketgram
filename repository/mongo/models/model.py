@@ -3,7 +3,9 @@ from bson import ObjectId
 from typing import Union, Any, List
 from functions.date_time import get_brazil_time_now
 
-from repository.mongo import Database
+from pocketgram.trainer import Trainer
+from repository.mongo.database import Database
+
 
 
 class Model:
