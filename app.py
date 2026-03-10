@@ -6,6 +6,8 @@ from decouple import config
 
 from telegram.ext import Application
 
+from bot.conversations.signup import SIGNUP_HANDLERS
+
 
 TELEGRAM_TOKEN = config("TELEGRAM_TOKEN")
 MY_GROUP_ID = config('MY_GROUP_ID', cast=int)
@@ -22,7 +24,7 @@ def main() -> None:
     # application.add_handler()
 
     # Add Multiple Handlers ===================================================
-    # application.add_handlers()
+    application.add_handlers(SIGNUP_HANDLERS)
 
     # Run the bot until the user presses Ctrl-C
     application.run_polling()
