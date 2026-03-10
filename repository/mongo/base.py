@@ -19,13 +19,13 @@ class MongoBase:
                 f"O _id passado é do tipo inválido. ({type(self._id)})"
             )
 
-        if isinstance(self.created_at, (datetime, type(None))):
+        if not isinstance(self.created_at, (datetime, type(None))):
             raise TypeError(
                 "O created_at passado é do tipo inválido. "
                 f"({type(self.created_at)})"
             )
 
-        if isinstance(self.updated_at, (datetime, type(None))):
+        if not isinstance(self.updated_at, (datetime, type(None))):
             raise TypeError(
                 "O updated_at passado é do tipo inválido. "
                 f"({type(self.updated_at)})"
