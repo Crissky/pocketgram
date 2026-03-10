@@ -7,7 +7,6 @@ from repository.mongo.base import MongoBase
 
 @dataclass
 class Trainer(MongoBase):
-
     user_id: str
     user_name: str
     badge_list: List[Union[BadgeEnum, str]] = field(default_factory=list)
