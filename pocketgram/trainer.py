@@ -14,8 +14,8 @@ class Trainer(MongoBase):
     def __post_init__(self):
         super().__post_init__()
 
-        if self.user_id is None:
-            raise TypeError(f"O campo user_id não pode ser None.")
+        if not self.user_id:
+            raise ValueError(f"O user_id '{self.user_id}' não é inválido.")
         else:
             self.user_id = str(self.user_id)
         if self.user_name is not None:
