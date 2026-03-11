@@ -21,3 +21,11 @@ def get_trainer_by_id(user_id: str) -> Trainer:
     trainer = trainer_model.get(query={"user_id": user_id})
 
     return trainer
+
+
+def exists_trainer(user_id: str) -> bool:
+    if not isinstance(user_id, str):
+        raise TypeError("user_id precisa ser uma string.")
+    trainer_model = TrainerModel()
+
+    return trainer_model.exists(_id=user_id)
