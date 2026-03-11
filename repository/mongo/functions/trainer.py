@@ -8,8 +8,9 @@ def save_trainer(trainer: Trainer) -> Trainer:
 
     trainer_model = TrainerModel()
     trainer_model.save(trainer)
+    saved_trainer = get_trainer_by_id(trainer.user_id)
 
-    return get_trainer_by_id(trainer.user_id)
+    return saved_trainer
 
 
 def get_trainer_by_id(user_id: str) -> Trainer:
