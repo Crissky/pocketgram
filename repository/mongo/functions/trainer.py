@@ -1,5 +1,10 @@
+import logging
+
 from pocketgram.trainer import Trainer
 from repository.mongo.models.trainer import TrainerModel
+
+
+logger = logging.getLogger(__name__)
 
 
 def save_trainer(trainer: Trainer) -> Trainer:
@@ -9,6 +14,10 @@ def save_trainer(trainer: Trainer) -> Trainer:
     trainer_model = TrainerModel()
     trainer_model.save(trainer)
     saved_trainer = get_trainer_by_id(trainer.user_id)
+    logger.info(
+        f"Trainer '{saved_trainer.user_name}' salvo com "
+        f"id '{saved_trainer.user_id}'"
+    )
 
     return saved_trainer
 
