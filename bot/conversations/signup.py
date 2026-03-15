@@ -5,18 +5,24 @@ from bot.constants.commands import SIGNUP_COMMNADS
 from bot.constants.filters import BASIC_COMMAND_FILTER, PREFIX_COMMANDS
 from functions.bot.user import get_user_name
 from pocketgram.trainer import Trainer
-from repository.mongo.functions.trainer import save_trainer
+from repository.mongo.functions.trainer import save_trainer, exists_trainer
 
 
 async def signup(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     user_name = get_user_name(update=update)
     trainer = Trainer(user_id=user_id, user_name=user_name)
-    new_trainer = save_trainer(trainer)
 
-    await update.message.reply_text(
-        f"Olá {user_name}! Você foi cadastrado com sucesso!\n\n{new_trainer}"
-    )
+    if exists_trainer(trainer.user_id):
+        reply_text = f"Trainer de ID: {trainer.user_id}, já está cadastrado."
+    else:
+        new_trainer = save_trainer(trainer)
+        reply_text = (
+            f"Olá {user_name}! "
+            f"Você foi cadastrado com sucesso!\n\n{new_trainer}"
+        )
+
+    await update.message.reply_text(reply_text)
 
 
 SIGNUP_HANDLERS = [
