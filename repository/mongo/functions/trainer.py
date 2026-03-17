@@ -16,7 +16,7 @@ def save_trainer(trainer: Trainer) -> Trainer:
     saved_trainer = get_trainer_by_id(trainer.user_id)
     logger.info(
         f"Trainer '{saved_trainer.user_name}' salvo com "
-        f"id '{saved_trainer.user_id}'"
+        f"USER ID '{saved_trainer.user_id}'"
     )
 
     return saved_trainer

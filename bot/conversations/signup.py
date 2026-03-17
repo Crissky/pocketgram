@@ -14,7 +14,9 @@ async def signup(update: Update, context: ContextTypes.DEFAULT_TYPE):
     trainer = Trainer(user_id=user_id, user_name=user_name)
 
     if exists_trainer(trainer.user_id):
-        reply_text = f"Trainer de ID: {trainer.user_id}, já está cadastrado."
+        reply_text = (
+            f"Trainer com USER ID: '{trainer.user_id}', já está cadastrado."
+        )
     else:
         new_trainer = save_trainer(trainer)
         reply_text = (
