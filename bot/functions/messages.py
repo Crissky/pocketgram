@@ -12,6 +12,7 @@ from telegram.ext import ContextTypes, ConversationHandler
 
 
 logger = logging.getLogger(__name__)
+BASE_JOB_KWARGS = {"misfire_grace_time": None}
 
 
 # CALL TELEGRAM FUNCTIONs
@@ -67,4 +68,44 @@ async def call_telegram_message_function(
             if skip_retry is True:
                 break
 
+            if isinstance(error, RetryAfter):
+                sleep_time = error.retry_after + randint(1, 3)
+            elif isinstance(error, TimedOut):
+                sleep_time = 5
+
+            if need_response is False:
+                logger.warning(
+                    f"{error_name}{i}({sleep_time}): "
+                    f'creating JOB "{function.__name__}" '
+                )
+                job_name = (
+                    f"{function_caller}->"
+                    "CALL_TELEGRAM_MESSAGE_FUNCTION->"
+                    f"JOB_CALL_TELEGRAM-{ObjectId()}"
+                )
+                context.job_queue.run_once(
+                    callback=job_call_telegram,
+                    when=timedelta(seconds=sleep_time),
+                    data=job_call_telegram_kwargs,
+                    name=job_name,
+                    job_kwargs=BASE_JOB_KWARGS,
+                )
+                return ConversationHandler.END
+
     return response
+
+
+# JOB FUNCTIONs
+# Funções usandas no callback de agendamentos do context.job_queue
+async def job_call_telegram(context: ContextTypes.DEFAULT_TYPE):
+    """Job que chama a função call_telegram_message_function caso ocorra um
+    erro do tipo RetryAfter, TimedOut e o need_response seja False
+    """
+
+    logger.info("JOB_CALL_TELEGRAM()")
+    job = context.job
+    call_telegram_kwargs = job.data
+    call_telegram_kwargs["function_caller"] += " and JOB_CALL_TELEGRAM()"
+    logger.info(call_telegram_kwargs["function_caller"])
+
+    await call_telegram_message_function(**call_telegram_kwargs)
