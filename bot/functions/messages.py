@@ -92,6 +92,13 @@ async def call_telegram_message_function(
                 )
                 return ConversationHandler.END
 
+            logger.warning(
+                f'{error_name}{i}: RETRYING activate "{function.__name__}" '
+                f"from {function_caller} in {sleep_time} seconds."
+            )
+            sleep(sleep_time)
+            continue
+
     return response
 
 
