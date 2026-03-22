@@ -99,6 +99,12 @@ async def call_telegram_message_function(
             sleep(sleep_time)
             continue
 
+    if is_error is True:
+        logger.warning(f"ERROR: {function_caller}")
+        if catched_error:
+            raise catched_error
+        raise Exception(f"Error in {function_caller}")
+
     return response
 
 
