@@ -108,6 +108,37 @@ async def call_telegram_message_function(
     return response
 
 
+async def delete_message_from_context(
+    function_caller: str,
+    context: ContextTypes.DEFAULT_TYPE,
+    message_id: int,
+):
+    """Deleta a mensagem usando context, mas ignora ação caso
+    ocorra um erro BadRequest (Mensagem não encontrada).
+    """
+
+    chat_id = context._chat_id
+    function_caller = f"{function_caller}->DELETE_MESSAGE_FROM_CONTEXT()"
+    try:
+        logger.info("DELETE_MESSAGE_FROM_CONTEXT() TRYING DELETE_MESSAGE")
+        delete_message_kwargs = dict(chat_id=chat_id, message_id=message_id)
+        await call_telegram_message_function(
+            function_caller=function_caller,
+            function=context.bot.delete_message,
+            context=context,
+            need_response=False,
+            **delete_message_kwargs,
+        )
+    except BadRequest as e:
+        logger.warning("DELETE_MESSAGE_FROM_CONTEXT() BADREQUEST EXCEPT")
+        if "Message to delete not found" in e.message:
+            logger.warning(f'\tError Message: "{e.message}"')
+        elif "Message can't be deleted" in e.message:
+            logger.warning(f'\tError Message: "{e.message}" (Sem Permissão)')
+        else:
+            raise e
+
+
 # JOB FUNCTIONs
 # Funções usandas no callback de agendamentos do context.job_queue
 async def job_call_telegram(context: ContextTypes.DEFAULT_TYPE):
