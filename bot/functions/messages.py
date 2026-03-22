@@ -14,6 +14,7 @@ from telegram.ext import ContextTypes, ConversationHandler
 logger = logging.getLogger(__name__)
 
 
+# CALL TELEGRAM FUNCTIONs
 async def call_telegram_message_function(
     function_caller: str,
     function: Callable,
@@ -21,9 +22,9 @@ async def call_telegram_message_function(
     need_response: bool = True,
     skip_retry: bool = False,
     auto_delete_message: Union[bool, int, timedelta] = True,
-    **kwargs
+    **kwargs,
 ) -> Union[Any, Message]:
-    '''Função que chama qualquer função de mensagem do telegram.
+    """Função que chama qualquer função de mensagem do telegram.
     Caso ocorra um erro do tipo RetryAfter ou TimedOut, a função agurdará
     alguns segundos tentará novamente com um número máximo de 3 tentativas.
     Caso a função retorne um objeto do tipo Message, a mensagem será excluída
@@ -43,14 +44,14 @@ async def call_telegram_message_function(
     quantidade de horas igual ao valor passado.
     E se for um timedelta, a mensagem será excluída de acordo com o tempo
     passado no timedelta.
-    '''
+    """
 
-    logger.info(f'{function_caller}->CALL_TELEGRAM_MESSAGE_FUNCTION()')
+    logger.info(f"{function_caller}->CALL_TELEGRAM_MESSAGE_FUNCTION()")
     job_call_telegram_kwargs = dict(
         function_caller=function_caller,
         function=function,
         context=context,
-        **kwargs
+        **kwargs,
     )
     response = None
     is_error = True
