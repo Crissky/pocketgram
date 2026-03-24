@@ -8,6 +8,7 @@ from typing import Any, Callable, Union
 from bson import ObjectId
 from telegram import Message
 from telegram.constants import ChatType
+from telegram.error import BadRequest, RetryAfter, TimedOut
 from telegram.ext import ContextTypes, ConversationHandler
 
 
