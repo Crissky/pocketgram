@@ -7,12 +7,16 @@ from typing import Any, Callable, Union
 
 from bson import ObjectId
 from telegram import Message
-from telegram.error import RetryAfter, TimedOut
+from telegram.constants import ChatType
 from telegram.ext import ContextTypes, ConversationHandler
 
 
 logger = logging.getLogger(__name__)
+
+
+HOURS_DELETE_MESSAGE_FROM_CONTEXT = 4
 BASE_JOB_KWARGS = {"misfire_grace_time": None}
+CHAT_TYPE_GROUPS = (ChatType.GROUP, ChatType.SUPERGROUP)
 
 
 # CALL TELEGRAM FUNCTIONs
@@ -170,6 +174,97 @@ async def job_delete_message_from_context(context: ContextTypes.DEFAULT_TYPE):
 
 
 # SCHEDULE JOB FUNCTIONs
+def schedule_job_delete_message_from_context(
+    function_caller: str,
+    context: ContextTypes.DEFAULT_TYPE,
+    message: Message,
+    when: Union[bool, int, timedelta] = True,
+):
+    """Cria o job que excluirá a mensagem após o tempo passado em `when`."""
+
+    chat_id = message.chat_id
+    message_id = message.message_id
+    job_name = get_job_delete_message_from_context_name(
+        chat_id=chat_id, message_id=message_id
+    )
+    data = {
+        "message_id": message_id,
+        "function_caller": function_caller,
+    }
+    when = get_hours_delete_message_from_context(value=when)
+    if not job_exists(context=context, job_name=job_name):
+        context.job_queue.run_once(
+            callback=job_delete_message_from_context,
+            when=when,
+            data=data,
+            name=job_name,
+            chat_id=chat_id,
+            job_kwargs=BASE_JOB_KWARGS,
+        )
+        logger.info(
+            f"Mensagem de ID {message_id} do chat de ID {chat_id} "
+            f"será excluida em {when}."
+        )
+    else:
+        logger.info(f'Job "{job_name}" já existe.')
+
+
+# SUPPORT FUNCTIONs
+def get_hours_delete_message_from_context(
+    chat_id: int = None,
+    value: Union[bool, int, timedelta] = HOURS_DELETE_MESSAGE_FROM_CONTEXT,
+) -> timedelta:
+    """Retorna o tempo para deletar uma mensagem após um tempo
+    pré determinado.
+    """
+
+    raw_value = value
+    if value is True:
+        value = HOURS_DELETE_MESSAGE_FROM_CONTEXT
+    if isinstance(value, int) and value > 0:
+        value = get_timedelta_from_chat(chat_id=chat_id, hours=value)
+    if isinstance(value, timedelta):
+        return value
+    else:
+        raise TypeError(
+            "value precisa ser do tipo "
+            f'"bool", "int" ou "timedelta" ({type(raw_value)}). '
+            'Caso seja do tipo "bool", deve ser True. '
+            f'Caso seja do tipo "int", deve ser maior que zero ({raw_value}).'
+        )
+
+
+def get_timedelta_from_chat(
+    chat_id: int = None, minutes: int = 0, hours: int = 0
+) -> timedelta:
+    if minutes < 0 or hours < 0:
+        raise ValueError(
+            "Os valores de tempo (minutes e hours) "
+            "não podem ser menores que zero. "
+            f"minutes={minutes} e hours={hours}."
+        )
+    elif minutes == hours == 0:
+        raise ValueError(
+            "minutes e hours não podem ser igual zero simultâneamente."
+        )
+
+    time_multiplier = 1
+    if isinstance(chat_id, int):
+        # TODO alterar `time_multiplier` para o valor do grupo
+        ...
+
+    kwargs = dict(
+        minutes=minutes * time_multiplier,
+        hours=hours * time_multiplier,
+    )
+
+    return timedelta(**kwargs)
+
+
+def get_job_delete_message_from_context_name(chat_id, message_id):
+    return f"DELETE_MESSAGE_FROM_CONTEXT_{chat_id}_{message_id}"
+
+
 def is_chat_group(message: Message = None, chat_type: str = None) -> bool:
     if isinstance(message, Message):
         chat_type = message.chat.type
@@ -182,3 +277,11 @@ def is_chat_group(message: Message = None, chat_type: str = None) -> bool:
     return chat_type in CHAT_TYPE_GROUPS
 
 
+def job_exists(context: ContextTypes.DEFAULT_TYPE, job_name: str) -> bool:
+    """Verifica se o job existe.
+    Retorna True se o job existir, False caso contrário.
+    """
+
+    current_jobs = context.job_queue.get_jobs_by_name(job_name)
+
+    return bool(current_jobs)
