@@ -110,6 +110,21 @@ async def call_telegram_message_function(
             raise catched_error
         raise Exception(f"Error in {function_caller}")
 
+    if (
+        isinstance(response, Message)
+        and is_chat_group(message=response)
+        and auto_delete_message
+    ):
+        complete_function_caller = (
+            f"{function_caller}->" "CALL_TELEGRAM_MESSAGE_FUNCTION()"
+        )
+        schedule_job_delete_message_from_context(
+            function_caller=complete_function_caller,
+            context=context,
+            message=response,
+            when=auto_delete_message,
+        )
+
     return response
 
 
