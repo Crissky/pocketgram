@@ -4,7 +4,7 @@ from telegram.ext import ContextTypes, PrefixHandler, CommandHandler
 from bot.constants.commands import SIGNUP_COMMNADS
 from bot.constants.filters import BASIC_COMMAND_FILTER, PREFIX_COMMANDS
 from bot.functions.messages import call_telegram_message_function
-from functions.bot.user import get_user_name
+from bot.functions.user import get_user_name
 from pocketgram.trainer import Trainer
 from repository.mongo.functions.trainer import save_trainer, exists_trainer
 
