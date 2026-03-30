@@ -2,17 +2,30 @@ from enum import Enum
 
 
 class PocketMonsterParamEnum(Enum):
-    '''Enum que representa os Parâmentros da classe dos Monstrinhos.
-    '''
+    """Enum que representa os Parâmentros da classe dos Monstrinhos."""
 
-    FORM = 'form'
-    LEVEL = 'level'
-    NAME = 'name'
-    NATURE = 'nature'
-    NICKNAME = 'nickname'
-    NUMBER = 'number'
-    TYPE_1 = 'type_1'
-    TYPE_2 = 'type_2'
-    TYPES = 'types'
-    HEIGHT = 'height'
-    WEIGHT = 'weight'
+    ABILITIES = "abilities"
+    BASE_FRIENDSHIP = "base friendship"
+    BASE_EXP = "base exp"
+    BASE_STATS = "base stats"
+    BREEDING = "breeding"
+    CATCH_RATE = "catch rate"
+    EGG_CYCLES = "egg cycles"
+    EGG_GROUP = "egg group"
+    EV_YIELD = "ev yield"
+    FORM = "form"
+    GENDER = "gender"
+    GROWTH_RATE = "growth rate"
+    HEIGHT = "height"
+    HIDDEN_ABILITY = "hidden ability"
+    LEVEL = "level"
+    NAME = "name"
+    NATURE = "nature"
+    NICKNAME = "nickname"
+    NUMBER = "number"
+    SPECIES = "species"
+    TRAINING = "training"
+    TYPE_1 = "type_1"
+    TYPE_2 = "type_2"
+    TYPES = "types"
+    WEIGHT = "weight"
