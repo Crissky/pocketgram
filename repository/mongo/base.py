@@ -1,4 +1,4 @@
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass, field, fields
 from datetime import datetime
 from typing import Union
 
@@ -7,7 +7,7 @@ from bson import ObjectId
 
 @dataclass(kw_only=True)
 class MongoBase:
-    _id: Union[ObjectId, str] = None
+    _id: Union[ObjectId, str] = field(default_factory=ObjectId)
     created_at: datetime = None
     updated_at: datetime = None
 
