@@ -7,7 +7,7 @@ from repository.mongo.base import MongoBase
 
 @dataclass
 class Trainer(MongoBase):
-    user_id: str
+    user_id: Union[int, str]
     user_name: str
     badge_list: List[Union[BadgeEnum, str]] = field(default_factory=list)
 
@@ -15,9 +15,15 @@ class Trainer(MongoBase):
         super().__post_init__()
 
         if not self.user_id:
-            raise ValueError(f"O user_id '{self.user_id}' não é inválido.")
-        else:
+            raise ValueError(f"O user_id '{self.user_id}' não é válido.")
+        elif isinstance(self.user_id, int):
             self.user_id = str(self.user_id)
+        if not isinstance(self.user_id, str):
+            raise TypeError(
+                "O user_id precisa ser do tipo int ou str "
+                f"({type(self.user_id)})."
+            )
+
         if self.user_name is not None:
             self.user_name = str(self.user_name)
 
