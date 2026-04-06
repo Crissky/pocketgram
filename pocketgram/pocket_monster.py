@@ -124,12 +124,16 @@ class PocketMonster:
         return total_heal
 
     @property
-    def name(self) -> str:
-        return self._nickname or self._name
+    def display_name(self) -> str:
+        return (
+            self[PocketMonsterParamEnum.NICKNAME]
+            or
+            self[PocketMonsterParamEnum.NAME]
+        )
 
     @property
-    def number(self) -> str:
-        return f'{self._number:03d}'
+    def display_number(self) -> str:
+        return f'{self[PocketMonsterParamEnum.NUMBER]:04d}'
 
     @property
     def total(self) -> int:

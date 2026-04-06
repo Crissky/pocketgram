@@ -236,7 +236,7 @@ class TestPocketMonster(unittest.TestCase):
             iv_hp=31, iv_attack=31, iv_defense=31,
             iv_special_attack=31, iv_special_defense=31, iv_speed=31
         )
-        self.assertEqual(pm.name, 'Testy')
+        self.assertEqual(pm.display_name, 'Testy')
 
     def test_name_returns_when_nickname_unset(self):
         '''Teste se a propriedade name retorna o name quando
@@ -286,8 +286,8 @@ class TestPocketMonster(unittest.TestCase):
             iv_special_attack=31, iv_special_defense=31, iv_speed=31
         )
 
-        self.assertEqual(pm1.number, '006')
-        self.assertEqual(pm2.number, '025')
+        self.assertEqual(pm1.display_number, '0006')
+        self.assertEqual(pm2.display_number, '0025')
 
     def test_total_returns_sum_of_all_stats(self):
         '''Teste se a propriedade total retorna a soma de todas as

@@ -47,9 +47,7 @@ class TestPocketMonsterFactory(unittest.TestCase):
         evs = pocket_monster._ev_stats
 
         self.assertIsInstance(pocket_monster, PocketMonster)
-        self.assertEqual(
-            pocket_monster[PocketMonsterParamEnum.NUMBER], f'{number:04}'
-        )
+        self.assertEqual(pocket_monster[PocketMonsterParamEnum.NUMBER], 150)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.LEVEL], level)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.NATURE], nature)
         self.assertEqual(evs[StatsEnum.HP], ev_hp)
@@ -109,9 +107,7 @@ class TestPocketMonsterFactory(unittest.TestCase):
         ivs = pocket_monster._iv_stats
 
         self.assertIsInstance(pocket_monster, PocketMonster)
-        self.assertEqual(
-            pocket_monster[PocketMonsterParamEnum.NUMBER], f'{number:04}'
-        )
+        self.assertEqual(pocket_monster[PocketMonsterParamEnum.NUMBER], 6)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.LEVEL], level)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.NATURE], nature)
         self.assertEqual(evs[StatsEnum.HP], ev_hp)
@@ -166,9 +162,7 @@ class TestPocketMonsterFactory(unittest.TestCase):
         evs = pocket_monster._ev_stats
 
         self.assertIsInstance(pocket_monster, PocketMonster)
-        self.assertEqual(
-            pocket_monster[PocketMonsterParamEnum.NUMBER], f'{number:04}'
-        )
+        self.assertEqual(pocket_monster[PocketMonsterParamEnum.NUMBER], 25)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.LEVEL], level)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.NATURE], nature)
         self.assertEqual(evs[StatsEnum.HP], ev_hp)
