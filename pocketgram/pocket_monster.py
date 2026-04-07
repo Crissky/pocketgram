@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from math import floor
 from typing import List, Union
 
@@ -13,95 +14,101 @@ from pocketgram.stats.ev import EVStats
 from pocketgram.stats.iv import IVStats
 from pocketgram.stats.nature import Nature
 from pocketgram.stats.stage import StageStats
+from repository.mongo.base import MongoBase
 
 
 GET_AND_SET_ENUM_CLASSES = Union[StatsEnum, PocketMonsterParamEnum]
 
 
-class PocketMonster:
-    def __init__(
-        self,
-        number: int,
-        level: int,
-        name: str,
-        nature: Union[NaturesEnum, str],
-        _types: Union[List[Union[TypesEnum, str]], Union[TypesEnum, str]],
-        base_hp: int,
-        base_attack: int,
-        base_defense: int,
-        base_special_attack: int,
-        base_special_defense: int,
-        base_speed: int,
-        ev_hp: int,
-        ev_attack: int,
-        ev_defense: int,
-        ev_special_attack: int,
-        ev_special_defense: int,
-        ev_speed: int,
-        iv_hp: int = None,
-        iv_attack: int = None,
-        iv_defense: int = None,
-        iv_special_attack: int = None,
-        iv_special_defense: int = None,
-        iv_speed: int = None,
-        iv_random_init: bool = False,
-        stage_hp: int = 0,
-        stage_attack: int = 0,
-        stage_defense: int = 0,
-        stage_special_attack: int = 0,
-        stage_special_defense: int = 0,
-        stage_speed: int = 0,
-        stage_accuracy: int = 0,
-        stage_evasiveness: int = 0,
-        nickname: str = None,
-        form: Union[FormEnum, str] = None,
-        damage_points: int = 0,
-    ):
-        form = FormEnum[form] if isinstance(form, str) else form
-        self[PocketMonsterParamEnum.NUMBER] = number
-        self[PocketMonsterParamEnum.LEVEL] = level
-        self[PocketMonsterParamEnum.NAME] = name
-        self[PocketMonsterParamEnum.NICKNAME] = nickname
-        self[PocketMonsterParamEnum.NATURE] = Nature(nature=nature)
-        _types = _types if isinstance(_types, list) else [_types]
-        self[PocketMonsterParamEnum.TYPES] = Types(*_types)
-        self[PocketMonsterParamEnum.FORM] = form
-        self.damage_points = damage_points
+@dataclass
+class PocketMonster(MongoBase):
+    number: Union[int, str]
+    level: int
+    name: str
+    nature: Union[NaturesEnum, str]
+    _types: Union[List[Union[TypesEnum, str]]]
+    base_hp: int
+    base_attack: int
+    base_defense: int
+    base_special_attack: int
+    base_special_defense: int
+    base_speed: int
+    ev_hp: int
+    ev_attack: int
+    ev_defense: int
+    ev_special_attack: int
+    ev_special_defense: int
+    ev_speed: int
+    iv_hp: int = None
+    iv_attack: int = None
+    iv_defense: int = None
+    iv_special_attack: int = None
+    iv_special_defense: int = None
+    iv_speed: int = None
+    iv_random_init: bool = False
+    stage_hp: int = 0
+    stage_attack: int = 0
+    stage_defense: int = 0
+    stage_special_attack: int = 0
+    stage_special_defense: int = 0
+    stage_speed: int = 0
+    stage_accuracy: int = 0
+    stage_evasiveness: int = 0
+    nickname: str = None
+    form: Union[FormEnum, str] = None
+    damage_points: int = 0
 
-        self._base_stats = BaseStats(
-            hp=base_hp,
-            attack=base_attack,
-            defense=base_defense,
-            special_attack=base_special_attack,
-            special_defense=base_special_defense,
-            speed=base_speed,
+    def __post_init__(self):
+        super().__post_init__()
+        
+        if isinstance(self.form, str):
+            self.form = FormEnum[self.form]
+        if not isinstance(self._types, list):
+            self._types = [self._types]
+
+        self[PocketMonsterParamEnum.NUMBER] = int(self.number)
+        self[PocketMonsterParamEnum.LEVEL] = self.level
+        self[PocketMonsterParamEnum.NAME] = self.name
+        self[PocketMonsterParamEnum.NICKNAME] = self.nickname
+        self[PocketMonsterParamEnum.NATURE] = Nature(nature=self.nature)
+        self[PocketMonsterParamEnum.TYPES] = Types(*self._types)
+        self[PocketMonsterParamEnum.FORM] = self.form
+        self.damage_points = self.damage_points
+
+        self[PocketMonsterParamEnum.BASE_STATS] = BaseStats(
+            hp=self.base_hp,
+            attack=self.base_attack,
+            defense=self.base_defense,
+            special_attack=self.base_special_attack,
+            special_defense=self.base_special_defense,
+            speed=self.base_speed,
         )
-        self._ev_stats = EVStats(
-            hp=ev_hp,
-            attack=ev_attack,
-            defense=ev_defense,
-            special_attack=ev_special_attack,
-            special_defense=ev_special_defense,
-            speed=ev_speed,
+        self[PocketMonsterParamEnum.EV_STATS] = EVStats(
+            hp=self.ev_hp,
+            attack=self.ev_attack,
+            defense=self.ev_defense,
+            special_attack=self.ev_special_attack,
+            special_defense=self.ev_special_defense,
+            speed=self.ev_speed,
         )
-        self._iv_stats = IVStats(
-            hp=iv_hp,
-            attack=iv_attack,
-            defense=iv_defense,
-            special_attack=iv_special_attack,
-            special_defense=iv_special_defense,
-            speed=iv_speed,
-            random_init=iv_random_init,
+        self[PocketMonsterParamEnum.IV_STATS] = IVStats(
+            hp=self.iv_hp,
+            attack=self.iv_attack,
+            defense=self.iv_defense,
+            special_attack=self.iv_special_attack,
+            special_defense=self.iv_special_defense,
+            speed=self.iv_speed,
+            random_init=self.iv_random_init,
         )
-        self._stage_stats = StageStats(
-            hp=stage_hp,
-            attack=stage_attack,
-            defense=stage_defense,
-            special_attack=stage_special_attack,
-            special_defense=stage_special_defense,
-            speed=stage_speed,
-            accuracy=stage_accuracy,
-            evasiveness=stage_evasiveness,
+        self[PocketMonsterParamEnum.STAGE_STATS] = StageStats(
+            hp=self.stage_hp,
+            attack=self.stage_attack,
+            defense=self.stage_defense,
+            special_attack=self.stage_special_attack,
+            special_defense=self.stage_special_defense,
+            speed=self.stage_speed,
+            accuracy=self.stage_accuracy,
+            evasiveness=self.stage_evasiveness,
         )
 
     def add_damage(self, damage: int) -> int:
@@ -144,11 +151,11 @@ class PocketMonster:
 
     @property
     def primary_type(self) -> TypesEnum:
-        return self._types.primary
+        return self[PocketMonsterParamEnum.TYPES].primary
 
     @property
     def secondary_type(self) -> TypesEnum:
-        return self._types.secondary
+        return self[PocketMonsterParamEnum.TYPES].secondary
 
     @property
     def current_hp(self) -> int:
@@ -171,12 +178,12 @@ class PocketMonster:
     # Other Stats = (floor(
         # 0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + 5) x Nature
     def __get_stats(self, key):
-        base = self._base_stats[key]
-        ev = floor(0.25 * self._ev_stats[key])
-        iv = self._iv_stats[key]
-        level = self._level
+        base = self[PocketMonsterParamEnum.BASE_STATS][key]
+        ev = floor(0.25 * self[PocketMonsterParamEnum.EV_STATS][key])
+        iv = self[PocketMonsterParamEnum.IV_STATS][key]
+        level = self[PocketMonsterParamEnum.LEVEL]
         plus_value = level + 10 if key == StatsEnum.HP else 5
-        nature = self._nature[key]
+        nature = self[PocketMonsterParamEnum.NATURE][key]
         stat = (2 * base) + iv + ev
 
         result = floor(0.01 * stat * level)
@@ -209,16 +216,19 @@ class PocketMonster:
 
     def __str__(self):
         stats_text = ', '.join([f'{e.value}={self[e]}' for e in StatsEnum])
-        form_text = f'form={self._form.value}, ' if self._form else ''
-        form_text = form_text.format(pocket_monster=self._name)
+        form = self[PocketMonsterParamEnum.FORM]
+        form_text = f'form={form.value}, ' if form else ''
+        form_text = form_text.format(
+            pocket_monster=self[PocketMonsterParamEnum.NAME]
+        )
         return (
             f'{self.__class__.__name__}('
-            f'number={self.number}, '
-            f'level={self._level}, '
-            f'name={self._name}, '
+            f'number={self.display_number}, '
+            f'level={self[PocketMonsterParamEnum.LEVEL]}, '
+            f'name={self[PocketMonsterParamEnum.NAME]}, '
             f'{form_text}'
-            f'nickname={self._nickname}, '
-            f'nature={self._nature.value}, '
+            f'nickname={self[PocketMonsterParamEnum.NICKNAME]}, '
+            f'nature={self[PocketMonsterParamEnum.NATURE].value}, '
             f'{stats_text}, '
             f'TOTAL={self.total}'
             f')'
@@ -256,8 +266,8 @@ if __name__ == '__main__':
         form=FormEnum.PARTNER,
         **pika_stats
     )
-    print('base_stats:', pm1._base_stats)
-    print('iv_stats:', pm1._iv_stats)
-    print('ev_stats:', pm1._ev_stats)
+    print('base_stats:', pm1[PocketMonsterParamEnum.BASE_STATS])
+    print('iv_stats:', pm1[PocketMonsterParamEnum.IV_STATS])
+    print('ev_stats:', pm1[PocketMonsterParamEnum.EV_STATS])
     print(pm1)
     print(pm2)
