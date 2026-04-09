@@ -7,7 +7,7 @@ from pocketgram.stats.stats import Stats
 
 
 class Nature(Stats):
-    __slots__ = ['_nature', '_stat_modifiers']
+    __slots__ = ['nature', 'stat_modifiers']
     _DECREASES = {
         StatsEnum.HP: frozenset(),
         StatsEnum.ATTACK: frozenset([
@@ -68,9 +68,9 @@ class Nature(Stats):
         modifiers = {}
         for stat_enum in StatsEnum:
             modifiers[stat_enum] = 1.0
-            if self._nature in self.natures_increase(stat_enum):
+            if self[NatureParamEnum.NATURE] in self.natures_increase(stat_enum):
                 modifiers[stat_enum] += 0.1
-            if self._nature in self.natures_decrease(stat_enum):
+            if self[NatureParamEnum.NATURE] in self.natures_decrease(stat_enum):
                 modifiers[stat_enum] -= 0.1
 
         return modifiers
@@ -97,14 +97,14 @@ class Nature(Stats):
 
     @property
     def name(self) -> str:
-        return self._nature.name
+        return self[NatureParamEnum.NATURE].name
 
     @property
     def value(self) -> str:
-        return self._nature.value
+        return self[NatureParamEnum.NATURE].value
 
     def __str__(self):
-        return f'{self._nature.value} ' + super().__str__()
+        return f'{self.value} ' + super().__str__()
 
     def __getitem__(self, key: Union[NatureParamEnum, StatsEnum]) -> float:
         if isinstance(key, NatureParamEnum):
@@ -115,7 +115,7 @@ class Nature(Stats):
 
             raise TypeError(error_text)
 
-        return self._stat_modifiers[key]
+        return self[NatureParamEnum.STAT_MODIFIERS][key]
 
     def __setitem__(self, key: Union[NatureParamEnum, StatsEnum], value: int):
         if isinstance(key, NatureParamEnum):
@@ -124,7 +124,7 @@ class Nature(Stats):
         raise AttributeError('Nature não pode ser alterada.')
 
     def __eq__(self, value):
-        return self._nature == value
+        return self[NatureParamEnum.NATURE] == value
 
 
 if __name__ == '__main__':

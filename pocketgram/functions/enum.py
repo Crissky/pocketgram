@@ -9,4 +9,4 @@ def get_attr_name_from_enum(enum_value: Enum) -> str:
     if not isinstance(enum_value, Enum):
         raise TypeError('O parâmetro deve ser um Enum.')
 
-    return f'_{enum_value.name.lower()}'
+    return f'{enum_value.name.lower()}'
