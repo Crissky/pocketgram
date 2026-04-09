@@ -2,7 +2,7 @@ from enum import Enum
 from typing import Tuple
 
 from pocketgram.enums.stats import StatsEnum
-from pocketgram.functions.enum import get_attr_name_from_enum
+from pocketgram.functions.enumeration import get_attr_name_from_enum
 
 
 class Stats:

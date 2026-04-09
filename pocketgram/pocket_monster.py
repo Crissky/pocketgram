@@ -8,7 +8,7 @@ from pocketgram.enums.form import FormEnum
 from pocketgram.enums.natures import NaturesEnum
 from pocketgram.enums.pocket_monster import PocketMonsterParamEnum
 from pocketgram.enums.stats import StatsEnum
-from pocketgram.functions.enum import get_attr_name_from_enum
+from pocketgram.functions.enumeration import get_attr_name_from_enum
 from pocketgram.stats.base import BaseStats
 from pocketgram.stats.ev import EVStats
 from pocketgram.stats.iv import IVStats

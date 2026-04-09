@@ -1,4 +1,4 @@
-from pocketgram.functions.enum import get_attr_name_from_enum
+from pocketgram.functions.enumeration import get_attr_name_from_enum
 import pytest
 import unittest
 

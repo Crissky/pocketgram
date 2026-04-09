@@ -2,7 +2,7 @@ from typing import Dict, List, Union
 
 from pocketgram.enums.natures import NatureParamEnum, NaturesEnum
 from pocketgram.enums.stats import StatsEnum
-from pocketgram.functions.enum import get_attr_name_from_enum
+from pocketgram.functions.enumeration import get_attr_name_from_enum
 from pocketgram.stats.stats import Stats
 
 
