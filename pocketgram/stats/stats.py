@@ -1,113 +1,112 @@
 from enum import Enum
-from typing import Tuple
+from typing import Tuple, TYPE_CHECKING
 
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.functions.enumeration import get_attr_name_from_enum
 
+if TYPE_CHECKING:
+    from pocketgram.pocket_monster import PocketMonster
+
 
 class Stats:
-    '''Classe base para os demais Stats
+    """Classe base para os demais Stats
 
     `max_value` é o valor máximo que cada stat pode ter, exibido como "MAX".
-    '''
+    """
 
-    __slots__ = [
-        'max_value', 'min_value'
-    ] + [get_attr_name_from_enum(enum) for enum in StatsEnum]
+    __slots__ = ["pocket_monster", "max_value", "min_value", "prefix", "sufix"]
 
     def __init__(
         self,
-        hp: int,
-        attack: int,
-        defense: int,
-        special_attack: int,
-        special_defense: int,
-        speed: int,
+        pocket_monster: "PocketMonster",
         max_value: int,
         min_value: int = 0,
+        prefix: str = "",
+        sufix: str = "",
     ):
         if max_value <= 0:
-            raise ValueError('max_value deve ser maior que 0.')
+            raise ValueError("max_value deve ser maior que 0.")
         if min_value >= max_value:
             raise ValueError(
-                f'max_value deve ser maior que min_value. '
-                f'max_value={max_value}, min_value={min_value}.'
+                f"max_value deve ser maior que min_value. "
+                f"max_value={max_value}, min_value={min_value}."
             )
 
+        self.pocket_monster = pocket_monster
         self.max_value = int(max_value)
         self.min_value = int(min_value)
-        self[StatsEnum.HP] = hp
-        self[StatsEnum.ATTACK] = attack
-        self[StatsEnum.DEFENSE] = defense
-        self[StatsEnum.SPECIAL_ATTACK] = special_attack
-        self[StatsEnum.SPECIAL_DEFENSE] = special_defense
-        self[StatsEnum.SPEED] = speed
+        self.prefix = prefix
+        self.sufix = sufix
 
     @property
     def total(self) -> int:
-        ''' Retorna a soma de todos os stats.
-        '''
+        """Retorna a soma de todos os stats."""
 
-        return sum([
-            self[enum_obj]
-            for enum_class in self.get_set_classes
-            for enum_obj in enum_class
-        ])
+        return sum(
+            [
+                self[enum_obj]
+                for enum_class in self.get_set_classes
+                for enum_obj in enum_class
+            ]
+        )
 
     @property
     def stats_map(self) -> dict:
-        ''' Retorna um dicionário com os nomes dos stats com base no StatsEnum.
+        """Retorna um dicionário com os nomes dos stats com base no StatsEnum.
         {<StatsEnum>: _StatsEnum.name.lower}
-        '''
+        """
 
         return {
-            enum_obj: get_attr_name_from_enum(enum_obj)
+            enum_obj: get_attr_name_from_enum(
+                enum_obj, prefix=self.prefix, sufix=self.sufix
+            )
             for enum_class in self.get_set_classes
             for enum_obj in enum_class
         }
 
     @property
     def get_set_classes(self) -> Tuple[Enum]:
-        ''' Retorna uma tupla com as classes dos Enums usados nos Gets e Sets
-        '''
+        """Retorna uma tupla com as classes dos Enums usados nos Gets e Sets"""
 
         return (StatsEnum,)
 
     @property
     def stats_text(self):
-        ''' Retorna uma string com os stats e seus valores,
+        """Retorna uma string com os stats e seus valores,
         separados por vírgula.
-        '''
+        """
 
-        return ', '.join([
-            f'{enum_obj.value}={self[enum_obj]}'
-            for enum_class in self.get_set_classes
-            for enum_obj in enum_class
-        ])
+        return ", ".join(
+            [
+                f"{enum_obj.value}={self[enum_obj]}"
+                for enum_class in self.get_set_classes
+                for enum_obj in enum_class
+            ]
+        )
 
     def __repr__(self):
         return self.__str__()
 
     def __str__(self):
         return (
-            f'{self.__class__.__name__}('
-            f'{self.stats_text}, '
-            f'MAX={self.max_value}, '
-            f'MIN={self.min_value}, '
-            f'TOTAL={self.total}'
-            f')'
+            f"{self.__class__.__name__}("
+            f"{self.stats_text}, "
+            f"MAX={self.max_value}, "
+            f"MIN={self.min_value}, "
+            f"TOTAL={self.total}"
+            f")"
         )
 
     def __getitem__(self, key: StatsEnum):
         if not isinstance(key, self.get_set_classes):
-            enum_names = '/'.join([e.__name__ for e in self.get_set_classes])
+            enum_names = "/".join([e.__name__ for e in self.get_set_classes])
             error_text = f'Chave "{key}" não é do tipo {enum_names}.'
 
             raise TypeError(error_text)
 
         try:
             stat_name = self.stats_map[key]
-            return getattr(self, stat_name)
+            return getattr(self.pocket_monster, stat_name)
         except KeyError:
             raise KeyError(f'Chave "{key}" não encontrada.')
 
@@ -115,7 +114,7 @@ class Stats:
         value = int(value)
 
         if not isinstance(key, self.get_set_classes):
-            enum_names = '/'.join([e.__name__ for e in self.get_set_classes])
+            enum_names = "/".join([e.__name__ for e in self.get_set_classes])
             error_text = f'Chave "{key}" não é do tipo {enum_names}.'
 
             raise TypeError(error_text)
@@ -123,27 +122,28 @@ class Stats:
         # Validando o range de value
         if value > self.max_value:
             raise ValueError(
-                f'{key.value} não pode ser maior que {self.max_value}.'
+                f"{key.value} não pode ser maior que {self.max_value}."
             )
         elif value < self.min_value:
             raise ValueError(
-                f'{key.value} não pode ser menor que {self.min_value}.'
+                f"{key.value} não pode ser menor que {self.min_value}."
             )
 
         try:
             stat_name = self.stats_map[key]
-            setattr(self, stat_name, value)
+            setattr(self.pocket_monster, stat_name, value)
         except KeyError:
             raise KeyError(f'Chave "{key}" não encontrada.')
 
 
-if __name__ == '__main__':
-    stats = Stats(100, 100, 100, 100, 100, 100, 100)
+if __name__ == "__main__":
+    from types import SimpleNamespace
+
+    pm = SimpleNamespace(
+        **{s.name.lower(): n for n, s in enumerate(StatsEnum, start=1)}
+    )
+    stats = Stats(pocket_monster=pm, max_value=31)
+    for s in StatsEnum:
+        print(s, stats[s])
+
     print(stats)
-    print(stats.stats_map)
-    print('hp:', stats._hp)
-    print('attack:', stats._attack)
-    print('defense:', stats._defense)
-    print('special_attack:', stats._special_attack)
-    print('special_defense:', stats._special_defense)
-    print('speed:', stats._speed)
