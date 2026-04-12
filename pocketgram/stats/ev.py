@@ -41,7 +41,7 @@ class EVStats(Stats):
             )
 
     @property
-    def max_ev(self) -> int:
+    def MAX_EV(self) -> int:
         return 510
 
     @property

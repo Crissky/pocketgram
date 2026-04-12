@@ -100,7 +100,7 @@ class TestEv(unittest.TestCase):
             hp=0, attack=0, defense=0,
             special_attack=0, special_defense=0, speed=0
         )
-        self.assertEqual(ev_stats.max_ev, self.expected_max_ev)
+        self.assertEqual(ev_stats.MAX_EV, self.expected_max_ev)
 
     def test_remaining_ev(self):
         '''Teste que verifica se o valor restante dos EVs estão sendo
