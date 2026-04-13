@@ -1,13 +1,15 @@
 import logging
+from typing import TYPE_CHECKING
 
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.stats import Stats
 
 
-logging.basicConfig(
-    format='(%(asctime)s) - %(levelname)s - %(message)s',
-    datefmt='%d/%m/%y %H:%M:%S'
-)
+if TYPE_CHECKING:
+    from pocketgram.pocket_monster import PocketMonster
+
+
+logger = logging.getLogger(__name__)
 
 
 class EVStats(Stats):
@@ -15,26 +17,12 @@ class EVStats(Stats):
     Os EVs são valores que iniciam em zero e podem ir até 255.
     '''
 
-    def __init__(
-        self,
-        hp: int,
-        attack: int,
-        defense: int,
-        special_attack: int,
-        special_defense: int,
-        speed: int,
-    ):
+    def __init__(self, pocket_monster: "PocketMonster"):
         super().__init__(
-            hp=hp,
-            attack=attack,
-            defense=defense,
-            special_attack=special_attack,
-            special_defense=special_defense,
-            speed=speed,
-            max_value=255
+            pocket_monster=pocket_monster, max_value=255, prefix="ev_"
         )
 
-        if self.current_ev > self.max_ev:
+        if self.current_ev > self.MAX_EV:
             raise ValueError(
                 f'O valor total dos EVs não pode ser maior que 510. '
                 f'Valor atual: {self.current_ev}.'
@@ -50,12 +38,12 @@ class EVStats(Stats):
 
     @property
     def remaining_ev(self) -> int:
-        return self.max_ev - self.current_ev
+        return self.MAX_EV - self.current_ev
 
     @property
     def show_ev(self) -> str:
         return (
-            f'EVs: {self.current_ev}/{self.max_ev}'
+            f'EVs: {self.current_ev}/{self.MAX_EV}'
             f'({self.remaining_ev} restantes)'
         )
 
@@ -70,19 +58,23 @@ class EVStats(Stats):
                 f'\nValor: {value}.'
                 f'\n{self.show_ev}.'
             )
-            logging.warning(warning_text)
+            logger.warning(warning_text)
             return None
 
         self[key] += value
 
 
 if __name__ == '__main__':
-    stats = EVStats(0, 0, 0, 0, 0, 0)
-    print(stats)
-    print('remaining_ev:', stats.remaining_ev)
-    print(stats.show_ev)
-    stats = EVStats(100, 100, 100, 100, 100, 0)
-    print(stats)
-    print('remaining_ev:', stats.remaining_ev)
-    print(stats.show_ev)
-    stats.add_ev(StatsEnum.HP, 10)
+    from types import SimpleNamespace
+
+    pm = SimpleNamespace(
+        **{
+            f"ev_{s.name.lower()}": n*10
+            for n, s in enumerate(StatsEnum, start=1)
+        }
+    )
+    ev_stats = EVStats(pocket_monster=pm)
+    for s in StatsEnum:
+        print(s, ev_stats[s])
+
+    print(ev_stats)
