@@ -13,9 +13,9 @@ logger = logging.getLogger(__name__)
 
 
 class EVStats(Stats):
-    '''EVs (Effort Values) dos stats que compõem o valor final dos Stats.
+    """EVs (Effort Values) dos stats que compõem o valor final dos Stats.
     Os EVs são valores que iniciam em zero e podem ir até 255.
-    '''
+    """
 
     def __init__(self, pocket_monster: "PocketMonster"):
         super().__init__(
@@ -24,8 +24,8 @@ class EVStats(Stats):
 
         if self.current_ev > self.MAX_EV:
             raise ValueError(
-                f'O valor total dos EVs não pode ser maior que 510. '
-                f'Valor atual: {self.current_ev}.'
+                f"O valor total dos EVs não pode ser maior que 510. "
+                f"Valor atual: {self.current_ev}."
             )
 
     @property
@@ -43,20 +43,20 @@ class EVStats(Stats):
     @property
     def show_ev(self) -> str:
         return (
-            f'EVs: {self.current_ev}/{self.MAX_EV}'
-            f'({self.remaining_ev} restantes)'
+            f"EVs: {self.current_ev}/{self.MAX_EV}"
+            f"({self.remaining_ev} restantes)"
         )
 
     def add_ev(self, key: StatsEnum, value: int):
         value = int(value)
 
         if value < 0:
-            raise ValueError('O valor do EV não pode ser negativo.')
+            raise ValueError("O valor do EV não pode ser negativo.")
         if value > self.remaining_ev:
             warning_text = (
-                f'O valor não pode ser maior que o valor restante do EV.'
-                f'\nValor: {value}.'
-                f'\n{self.show_ev}.'
+                f"O valor não pode ser maior que o valor restante do EV."
+                f"\nValor: {value}."
+                f"\n{self.show_ev}."
             )
             logger.warning(warning_text)
             return None
@@ -64,12 +64,12 @@ class EVStats(Stats):
         self[key] += value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from types import SimpleNamespace
 
     pm = SimpleNamespace(
         **{
-            f"ev_{s.name.lower()}": n*10
+            f"ev_{s.name.lower()}": n * 10
             for n, s in enumerate(StatsEnum, start=1)
         }
     )
