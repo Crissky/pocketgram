@@ -1,8 +1,12 @@
 from enum import Enum
-from typing import Tuple, Union
+from typing import TYPE_CHECKING, Tuple, Union
 
 from pocketgram.enums.stats import BattleStatsEnum, StatsEnum
 from pocketgram.stats.stats import Stats
+
+
+if TYPE_CHECKING:
+    from pocketgram.pocket_monster import PocketMonster
 
 
 class StageStats(Stats):
@@ -13,29 +17,13 @@ class StageStats(Stats):
     diminuir no máximo -6 estágios.
     '''
 
-    def __init__(
-        self,
-        hp: int = 0,
-        attack: int = 0,
-        defense: int = 0,
-        special_attack: int = 0,
-        special_defense: int = 0,
-        speed: int = 0,
-        accuracy: int = 0,
-        evasiveness: int = 0,
-    ):
+    def __init__(self, pocket_monster: "PocketMonster"):
         super().__init__(
-            hp=hp,
-            attack=attack,
-            defense=defense,
-            special_attack=special_attack,
-            special_defense=special_defense,
-            speed=speed,
+            pocket_monster=pocket_monster,
             max_value=6,
-            min_value=-6
+            min_value=-6,
+            prefix="stage_"
         )
-        self[BattleStatsEnum.ACCURACY] = accuracy
-        self[BattleStatsEnum.EVASIVENESS] = evasiveness
 
     @property
     def get_set_classes(self) -> Tuple[Enum]:
@@ -85,14 +73,18 @@ class StageStats(Stats):
 
 
 if __name__ == '__main__':
-    stats = StageStats(
-        hp=-1,
-        attack=0,
-        defense=1,
-        special_attack=2,
-        special_defense=3,
-        speed=4,
-        accuracy=5,
-        evasiveness=6,
+    from itertools import chain
+    from types import SimpleNamespace
+
+    pm = SimpleNamespace(
+        **{
+            f"stage_{s.name.lower()}": n
+            for n, s in enumerate(chain(StatsEnum, BattleStatsEnum), start=-2)
+        }
     )
-    print(stats)
+    stage_stats = StageStats(pocket_monster=pm)
+    for s in chain(StatsEnum, BattleStatsEnum):
+        print(s, stage_stats[s])
+        print('MULTIPLIER', s.name, stage_stats.get_multiplier(s))
+
+    print(stage_stats)
