@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     pm = SimpleNamespace(
         **{
-            f"base_{s.name.lower()}": n*5
+            f"base_{s.name.lower()}": n * 5
             for n, s in enumerate(StatsEnum, start=1)
         }
     )
