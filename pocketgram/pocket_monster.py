@@ -65,51 +65,24 @@ class PocketMonster(MongoBase):
             self.form = FormEnum[self.form]
         if not isinstance(self._types, list):
             self._types = [self._types]
+        pmpe = PocketMonsterParamEnum
 
-        self[PocketMonsterParamEnum.NUMBER] = int(self.number)
-        self[PocketMonsterParamEnum.LEVEL] = self.level
-        self[PocketMonsterParamEnum.NAME] = self.name
-        self[PocketMonsterParamEnum.NICKNAME] = self.nickname
-        self[PocketMonsterParamEnum.NATURE] = Nature(nature=self.nature)
-        self[PocketMonsterParamEnum.TYPES] = Types(*self._types)
-        self[PocketMonsterParamEnum.FORM] = self.form
+        self[pmpe.NUMBER] = int(self.number)
+        self[pmpe.LEVEL] = self.level
+        self[pmpe.NAME] = self.name
+        self[pmpe.NICKNAME] = self.nickname
+        self[pmpe.NATURE] = Nature(nature=self.nature)
+        self[pmpe.TYPES] = Types(*self._types)
+        self[pmpe.FORM] = self.form
         self.damage_points = self.damage_points
 
-        self[PocketMonsterParamEnum.BASE_STATS] = BaseStats(
-            hp=self.base_hp,
-            attack=self.base_attack,
-            defense=self.base_defense,
-            special_attack=self.base_special_attack,
-            special_defense=self.base_special_defense,
-            speed=self.base_speed,
+        self[pmpe.BASE_STATS] = BaseStats(pocket_monster=self)
+        self[pmpe.EV_STATS] = EVStats(pocket_monster=self)
+        self[pmpe.IV_STATS] = IVStats(
+            pocket_monster=self,
+            random_init=self.iv_random_init
         )
-        self[PocketMonsterParamEnum.EV_STATS] = EVStats(
-            hp=self.ev_hp,
-            attack=self.ev_attack,
-            defense=self.ev_defense,
-            special_attack=self.ev_special_attack,
-            special_defense=self.ev_special_defense,
-            speed=self.ev_speed,
-        )
-        self[PocketMonsterParamEnum.IV_STATS] = IVStats(
-            hp=self.iv_hp,
-            attack=self.iv_attack,
-            defense=self.iv_defense,
-            special_attack=self.iv_special_attack,
-            special_defense=self.iv_special_defense,
-            speed=self.iv_speed,
-            random_init=self.iv_random_init,
-        )
-        self[PocketMonsterParamEnum.STAGE_STATS] = StageStats(
-            hp=self.stage_hp,
-            attack=self.stage_attack,
-            defense=self.stage_defense,
-            special_attack=self.stage_special_attack,
-            special_defense=self.stage_special_defense,
-            speed=self.stage_speed,
-            accuracy=self.stage_accuracy,
-            evasiveness=self.stage_evasiveness,
-        )
+        self[pmpe.STAGE_STATS] = StageStats(pocket_monster=self)
 
     def add_damage(self, damage: int) -> int:
         if damage < 0:
