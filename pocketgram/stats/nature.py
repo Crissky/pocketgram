@@ -178,7 +178,17 @@ class Nature(Stats):
         raise AttributeError("Nature não pode ser alterada.")
 
     def __eq__(self, value):
-        return self[NatureParamEnum.NATURE] == value
+        is_equals = False
+        self_nature = self[NatureParamEnum.NATURE]
+        if isinstance(value, str):
+            value = NaturesEnum[value]
+
+        if isinstance(value, NaturesEnum):
+            is_equals = self_nature == value
+        if isinstance(value, Nature):
+            is_equals = self_nature == value[NatureParamEnum.NATURE]
+
+        return is_equals
 
 
 if __name__ == "__main__":
