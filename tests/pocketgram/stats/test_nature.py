@@ -5,7 +5,7 @@ import unittest
 
 from random import choice
 
-from pocketgram.enums.natures import NaturesEnum
+from pocketgram.enums.natures import NatureParamEnum, NaturesEnum
 from pocketgram.enums.stats import StatsEnum
 from pocketgram.stats.nature import Nature
 
@@ -18,8 +18,8 @@ class TestNature(unittest.TestCase):
 
         for nature_enum in NaturesEnum:
             nature = Nature(nature_enum)
-            self.assertIsInstance(nature._nature, NaturesEnum)
-            self.assertEqual(nature._nature, nature_enum)
+            self.assertIsInstance(nature[NatureParamEnum.NATURE], NaturesEnum)
+            self.assertEqual(nature[NatureParamEnum.NATURE], nature_enum)
             self.assertEqual(nature.name, nature_enum.name)
             self.assertEqual(nature.value, nature_enum.value)
             self.assertEqual(nature.max_value, 1.1)
@@ -30,8 +30,8 @@ class TestNature(unittest.TestCase):
 
         for nature_enum in NaturesEnum:
             nature = Nature(nature_enum.name)
-            self.assertIsInstance(nature._nature, NaturesEnum)
-            self.assertEqual(nature._nature, nature_enum)
+            self.assertIsInstance(nature[NatureParamEnum.NATURE], NaturesEnum)
+            self.assertEqual(nature[NatureParamEnum.NATURE], nature_enum)
             self.assertEqual(nature.name, nature_enum.name)
             self.assertEqual(nature.value, nature_enum.value)
             self.assertEqual(nature.max_value, 1.1)
