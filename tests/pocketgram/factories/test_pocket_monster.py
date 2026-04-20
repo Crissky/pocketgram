@@ -44,7 +44,7 @@ class TestPocketMonsterFactory(unittest.TestCase):
             nickname='Frieza',
             form=form
         )
-        evs = pocket_monster._ev_stats
+        evs = pocket_monster[PocketMonsterParamEnum.EV_STATS]
 
         self.assertIsInstance(pocket_monster, PocketMonster)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.NUMBER], 150)
@@ -103,8 +103,8 @@ class TestPocketMonsterFactory(unittest.TestCase):
             nickname='Foguinho',
             form=form
         )
-        evs = pocket_monster._ev_stats
-        ivs = pocket_monster._iv_stats
+        evs = pocket_monster[PocketMonsterParamEnum.EV_STATS]
+        ivs = pocket_monster[PocketMonsterParamEnum.IV_STATS]
 
         self.assertIsInstance(pocket_monster, PocketMonster)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.NUMBER], 6)
@@ -159,7 +159,7 @@ class TestPocketMonsterFactory(unittest.TestCase):
             nickname='Faísca',
             form=form
         )
-        evs = pocket_monster._ev_stats
+        evs = pocket_monster[PocketMonsterParamEnum.EV_STATS]
 
         self.assertIsInstance(pocket_monster, PocketMonster)
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.NUMBER], 25)
