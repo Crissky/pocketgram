@@ -11,13 +11,13 @@ from pocketgram.pocket_monster import PocketMonster
 class TestPocketMonsterFactory(unittest.TestCase):
 
     def test_pocket_monster_factory_1(self):
-        '''Teste se pocket_monster_factory cria uma instância de PocketMonster
+        """Teste se pocket_monster_factory cria uma instância de PocketMonster
         com atributos corretos.
 
         Este teste verifica se a função factory inicializa corretamente um
         PocketMonster com os parâmetros fornecidos e retorna uma instância
         com os atributos esperados.
-        '''
+        """
 
         number = 150
         level = 100
@@ -41,8 +41,8 @@ class TestPocketMonsterFactory(unittest.TestCase):
             ev_special_defense=ev_special_defense,
             ev_speed=ev_speed,
             iv_random_init=True,
-            nickname='Frieza',
-            form=form
+            nickname="Frieza",
+            form=form,
         )
         evs = pocket_monster[PocketMonsterParamEnum.EV_STATS]
 
@@ -59,13 +59,13 @@ class TestPocketMonsterFactory(unittest.TestCase):
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.FORM], form)
 
     def test_pocket_monster_factory_2(self):
-        '''Teste se pocket_monster_factory cria uma instância de PocketMonster
+        """Teste se pocket_monster_factory cria uma instância de PocketMonster
         com atributos corretos, passando os IVs.
 
         Este teste verifica se a função factory inicializa corretamente um
         PocketMonster com os parâmetros fornecidos e retorna uma instância
         com os atributos esperados.
-        '''
+        """
 
         number = 6
         level = 100
@@ -100,8 +100,8 @@ class TestPocketMonsterFactory(unittest.TestCase):
             iv_special_attack=iv_special_attack,
             iv_special_defense=iv_special_defense,
             iv_speed=iv_speed,
-            nickname='Foguinho',
-            form=form
+            nickname="Foguinho",
+            form=form,
         )
         evs = pocket_monster[PocketMonsterParamEnum.EV_STATS]
         ivs = pocket_monster[PocketMonsterParamEnum.IV_STATS]
@@ -125,13 +125,13 @@ class TestPocketMonsterFactory(unittest.TestCase):
         self.assertEqual(pocket_monster[PocketMonsterParamEnum.FORM], form)
 
     def test_pocket_monster_factory_3(self):
-        '''Teste se pocket_monster_factory cria uma instância de PocketMonster
+        """Teste se pocket_monster_factory cria uma instância de PocketMonster
         com atributos corretos, passando os IVs.
 
         Este teste verifica se a função factory inicializa corretamente um
         PocketMonster com os parâmetros fornecidos e retorna uma instância
         com os atributos esperados.
-        '''
+        """
 
         number = 25
         level = 100
@@ -156,8 +156,8 @@ class TestPocketMonsterFactory(unittest.TestCase):
             ev_special_defense=ev_special_defense,
             ev_speed=ev_speed,
             iv_random_init=True,
-            nickname='Faísca',
-            form=form
+            nickname="Faísca",
+            form=form,
         )
         evs = pocket_monster[PocketMonsterParamEnum.EV_STATS]
 
