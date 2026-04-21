@@ -37,6 +37,31 @@ class Stats:
         self.min_value = int(min_value)
         self.prefix = prefix
         self.sufix = sufix
+        self.check_stats()
+
+    def check_stats(self):
+        errors = []
+        for enum_cls in self.get_set_classes:
+            for enum in enum_cls:
+                value = self[enum]
+                if isinstance(value, (int)) and value > self.max_value:
+                    errors.append(
+                        f"{enum.name}={value} > MAX={self.max_value}"
+                    )
+                elif isinstance(value, (int)) and value < self.min_value:
+                    errors.append(
+                        f"{enum.name}={value} > MIN={self.min_value}"
+                    )
+                elif not isinstance(value, (int, type(None))):
+                    errors.append(f"{enum.name}={value} is not int")
+
+        if errors:
+            raise ValueError(
+                f"{self.__class__.__name__} Error: "
+                f"Os seguintes stats estão fora do intervalo "
+                f"[{self.min_value}, {self.max_value}]:\n\t"
+                + "\n\t".join(errors)
+            )
 
     @property
     def total(self) -> int:
